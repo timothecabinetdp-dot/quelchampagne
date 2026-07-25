@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>QuelChampagne — Trouvez le champagne fait pour vous</title>
+<meta name="description" content="Le sélecteur de champagne qui vous oriente vers la cuvée juste en six questions, plus des guides pour bien choisir et servir.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -20,10 +21,10 @@ body{font-family:var(--sans); color:var(--ink); background:var(--bg); line-heigh
 ::selection{background:#E7DABD}
 a{color:inherit; text-decoration:none}
 button{font-family:inherit; cursor:pointer; border:none; background:none; color:inherit}
+img{max-width:100%; display:block}
 .container{max-width:1000px; margin:0 auto; padding:0 26px}
 .narrow{max-width:700px; margin:0 auto; padding:0 26px}
 
-/* buttons — style Apple */
 .btn{display:inline-flex; align-items:center; gap:6px; font-size:16px; font-weight:400; padding:11px 22px; border-radius:980px; transition:background .2s, transform .2s, opacity .2s; white-space:nowrap}
 .btn-primary{background:var(--ink); color:#fff}
 .btn-primary:hover{opacity:.86}
@@ -37,7 +38,6 @@ button{font-family:inherit; cursor:pointer; border:none; background:none; color:
 .chev::after{content:"›"; font-size:18px; line-height:1; transition:transform .2s}
 .chev:hover::after{transform:translateX(3px)}
 
-/* nav */
 .nav{position:sticky; top:0; z-index:50; background:rgba(255,255,255,.72); backdrop-filter:saturate(180%) blur(20px); border-bottom:1px solid var(--line)}
 .nav-in{display:flex; align-items:center; justify-content:space-between; height:52px}
 .logo{display:flex; align-items:center; gap:8px; font-size:19px; font-weight:600; letter-spacing:-.02em; cursor:pointer}
@@ -46,7 +46,6 @@ button{font-family:inherit; cursor:pointer; border:none; background:none; color:
 .nlink{font-size:14px; font-weight:400; color:var(--muted); transition:.18s}
 .nlink:hover,.nlink.on{color:var(--ink)}
 
-/* hero */
 .hero{text-align:center; padding:clamp(64px,10vw,116px) 0 clamp(20px,4vw,44px)}
 h1{font-size:clamp(42px,7vw,80px); font-weight:600; line-height:1.04; letter-spacing:-.035em}
 .hero .lead{font-size:clamp(19px,2.3vw,26px); font-weight:400; color:var(--muted); max-width:24ch; margin:22px auto 0; line-height:1.32; letter-spacing:-.015em}
@@ -55,14 +54,12 @@ h1{font-size:clamp(42px,7vw,80px); font-weight:600; line-height:1.04; letter-spa
 .hero-visual svg,.hero-visual .pimg{height:100%; width:auto; filter:drop-shadow(0 40px 50px rgba(29,29,31,.22))}
 .pimg{object-fit:contain}
 
-/* sections */
 .section{padding:clamp(64px,9vw,116px) 0}
 .section.gray{background:var(--bg2)}
 .sec-head{text-align:center; max-width:640px; margin:0 auto clamp(40px,5vw,64px)}
 .h2{font-size:clamp(30px,4.4vw,52px); font-weight:600; letter-spacing:-.03em; line-height:1.07}
 .sec-head p{font-size:clamp(17px,2vw,22px); color:var(--muted); margin-top:16px; font-weight:400; letter-spacing:-.015em; line-height:1.4}
 
-/* steps */
 .steps{display:grid; grid-template-columns:repeat(3,1fr); gap:22px}
 .step{background:var(--bg); border-radius:24px; padding:40px 32px; text-align:left}
 .section:not(.gray) .step{background:var(--bg2)}
@@ -70,12 +67,10 @@ h1{font-size:clamp(42px,7vw,80px); font-weight:600; line-height:1.04; letter-spa
 .step h3{font-size:23px; font-weight:600; letter-spacing:-.02em; margin-top:18px}
 .step p{color:var(--muted); font-size:16px; margin-top:10px; line-height:1.45; font-weight:400}
 
-/* maisons */
 .maisons{display:flex; flex-wrap:wrap; justify-content:center; gap:14px 40px; max-width:760px; margin:0 auto}
 .maison-name{font-size:clamp(18px,2.2vw,24px); font-weight:500; color:var(--faint); letter-spacing:-.01em; transition:.2s}
 .maison-name:hover{color:var(--ink)}
 
-/* blog cards */
 .cards{display:grid; grid-template-columns:repeat(3,1fr); gap:24px}
 .acard{border-radius:22px; overflow:hidden; background:var(--bg); cursor:pointer; transition:transform .25s; display:flex; flex-direction:column; box-shadow:0 2px 10px rgba(29,29,31,.04)}
 .section.gray .acard{box-shadow:0 4px 20px rgba(29,29,31,.06)}
@@ -91,7 +86,6 @@ h1{font-size:clamp(42px,7vw,80px); font-weight:600; line-height:1.04; letter-spa
 .soon-badge{font-size:12px; font-weight:500; color:var(--faint)}
 .center-cta{text-align:center; margin-top:48px}
 
-/* quiz */
 .quiz{padding:clamp(40px,6vw,72px) 0 clamp(56px,7vw,88px)}
 .qbar{display:flex; align-items:center; gap:16px; margin-bottom:clamp(40px,5vw,56px)}
 .qback{width:40px; height:40px; border-radius:50%; background:var(--bg2); display:grid; place-items:center; color:var(--muted); font-size:17px; transition:.18s; flex:none}
@@ -110,7 +104,6 @@ h1{font-size:clamp(42px,7vw,80px); font-weight:600; line-height:1.04; letter-spa
 .qopt .ql{font-size:19px; font-weight:600; letter-spacing:-.02em}
 .qopt .qd{font-size:14.5px; color:var(--muted); margin-top:2px; font-weight:400}
 
-/* result */
 .result{padding:clamp(44px,6vw,72px) 0 clamp(56px,7vw,88px); animation:fade .5s ease}
 .res-head{text-align:center; max-width:600px; margin:0 auto clamp(40px,5vw,60px)}
 .res-head h2{font-size:clamp(32px,4.6vw,52px); font-weight:600; letter-spacing:-.03em; line-height:1.06}
@@ -118,6 +111,7 @@ h1{font-size:clamp(42px,7vw,80px); font-weight:600; line-height:1.04; letter-spa
 .rcard{display:grid; grid-template-columns:300px 1fr; gap:clamp(28px,5vw,60px); align-items:center; background:var(--bg2); border-radius:30px; padding:clamp(28px,4vw,52px)}
 .rviz{aspect-ratio:3/4; display:grid; place-items:center; position:relative}
 .rviz svg{height:100%; width:auto; filter:drop-shadow(0 30px 36px rgba(29,29,31,.18))}
+.rviz .pimg{height:100%; width:auto; filter:drop-shadow(0 30px 36px rgba(29,29,31,.18))}
 .rmatch{position:absolute; top:0; left:0; font-size:13px; font-weight:500; color:var(--muted)}
 .rbody{display:flex; flex-direction:column}
 .rmaison{font-size:15px; font-weight:500; color:var(--accent-deep)}
@@ -135,6 +129,7 @@ h1{font-size:clamp(42px,7vw,80px); font-weight:600; line-height:1.04; letter-spa
 .alt-top{display:flex; gap:16px; align-items:center}
 .mini{width:48px; height:74px; flex:none; position:relative; display:grid; place-items:center}
 .mini svg{height:100%; width:auto}
+.mini .pimg{height:100%; width:auto}
 .mini .mm{position:absolute; bottom:-6px; left:50%; transform:translateX(-50%); font-size:11px; color:var(--faint); font-weight:500; white-space:nowrap}
 .alt .an{font-size:18px; font-weight:600; letter-spacing:-.02em; line-height:1.1}
 .alt .ah{font-size:13px; color:var(--faint); margin-top:3px}
@@ -142,10 +137,8 @@ h1{font-size:clamp(42px,7vw,80px); font-weight:600; line-height:1.04; letter-spa
 .alt-price{font-size:19px; font-weight:600}
 .res-again{text-align:center; margin-top:clamp(44px,5vw,60px)}
 
-/* blog page */
 .blogpage{padding:clamp(56px,7vw,96px) 0}
 
-/* article */
 .article{padding:clamp(44px,6vw,72px) 0 clamp(64px,8vw,104px); animation:fade .4s ease}
 .a-back{font-size:15px; color:var(--muted); display:inline-flex; gap:6px; margin-bottom:32px}
 .a-back:hover{color:var(--ink)}
@@ -168,8 +161,7 @@ h1{font-size:clamp(42px,7vw,80px); font-weight:600; line-height:1.04; letter-spa
 .article-cta h3{font-size:26px; font-weight:600; letter-spacing:-.025em}
 .article-cta p{color:var(--muted); margin:10px 0 22px; font-size:17px}
 
-/* footer */
-footer{background:var(--bg2); padding:52px 0 46px; margin-top:0}
+footer{background:var(--bg2); padding:52px 0 46px}
 .foot-in{display:flex; justify-content:space-between; gap:28px; flex-wrap:wrap; align-items:flex-start}
 .foot-brand{font-size:18px; font-weight:600; letter-spacing:-.02em}
 .foot-brand p{font-size:14px; color:var(--faint); font-weight:400; margin-top:10px; max-width:36ch; line-height:1.5}
@@ -179,7 +171,6 @@ footer{background:var(--bg2); padding:52px 0 46px; margin-top:0}
 .foot-health{margin-top:36px; padding-top:26px; border-top:1px solid var(--border); font-size:13.5px; font-weight:600; color:var(--ink)}
 .foot-disc{margin-top:12px; font-size:12.5px; color:var(--faint); line-height:1.6}
 
-/* Porte d'âge (loi Évin) */
 .agegate{position:fixed; inset:0; z-index:200; background:rgba(255,255,255,.98); backdrop-filter:blur(6px); display:grid; place-items:center; padding:26px; animation:fade .3s ease}
 .agegate-box{max-width:440px; text-align:center}
 .agegate .g{width:16px; height:16px; border-radius:50%; background:linear-gradient(150deg,#E7D3A0,#9C7A34); margin:0 auto 20px}
@@ -209,63 +200,11 @@ footer{background:var(--bg2); padding:52px 0 46px; margin-top:0}
 <script>
 "use strict";
 
-/* Nom de la marque. Modifiable ici. */
 const BRAND = 'QuelChampagne';
 
 const state = { view:'home', step:0, answers:{}, animKey:0, article:null };
 
-/* ====================== QUESTIONS ====================== */
-function questions(){
-  return [
-    { id:'occasion', label:"01 · L'occasion", q:"Pour quelle occasion ?", hint:"Le moment donne le ton de la bouteille.",
-      opts:[
-        {e:'🥂', tags:['occ_fete'], l:"Une grande célébration", d:"Mariage, anniversaire, réussite"},
-        {e:'🍽️', tags:['occ_diner'], l:"Un dîner raffiné", d:"À table, avec de beaux plats"},
-        {e:'🎉', tags:['occ_apero'], l:"Un apéritif entre amis", d:"Décontracté et convivial"},
-        {e:'🎁', tags:['occ_cadeau'], l:"Un cadeau qui marque", d:"Faire plaisir, impressionner"},
-        {e:'🌹', tags:['occ_romantique'], l:"Un tête-à-tête romantique", d:"À deux, tout en douceur"},
-      ]},
-    { id:'gout', label:"02 · Le goût", q:"Vous aimez plutôt…", hint:"Décrivez le style qui vous fait envie.",
-      opts:[
-        {e:'🍋', tags:['profil_frais_vif'], l:"Frais et vif", d:"Agrumes, tension, minéralité"},
-        {e:'🍑', tags:['profil_fruite'], l:"Fruité et gourmand", d:"Rond, facile, séduisant"},
-        {e:'🥖', tags:['profil_riche_ample'], l:"Riche et vineux", d:"Corps, structure, longueur"},
-        {e:'🌸', tags:['profil_delicat'], l:"Délicat et floral", d:"Finesse, élégance, dentelle"},
-      ]},
-    { id:'bulles', label:"03 · L'effervescence", q:"Et côté bulles ?", hint:"De l'exubérance festive au calme d'un vin tranquille.",
-      opts:[
-        {e:'🍾', tags:['bulles_beaucoup'], l:"Franches et festives", d:"Ça pétille, ça claque"},
-        {e:'✨', tags:['bulles_fines'], l:"Fines et crémeuses", d:"Mousse soyeuse, élégante"},
-        {e:'🍷', tags:['still'], l:"Un vin tranquille", d:"Sans bulles, tout simplement"},
-        {e:'🤷', tags:['any'], l:"Peu importe", d:"Surprenez-moi"},
-      ]},
-    { id:'accord', label:"04 · L'accord", q:"Vous le servez avec…", hint:"On accorde la cuvée à votre table.",
-      opts:[
-        {e:'🫧', tags:['accord_aperitif'], l:"Rien, juste l'apéritif", d:"Pour trinquer"},
-        {e:'🦪', tags:['accord_mer'], l:"Fruits de mer & poissons", d:"Huîtres, sushi, poisson"},
-        {e:'🍗', tags:['accord_volaille'], l:"Volailles & viandes blanches", d:"Chapon, veau, blanc"},
-        {e:'🧀', tags:['accord_fromage'], l:"Des fromages", d:"Plateau, pâtes dures"},
-        {e:'🍮', tags:['accord_dessert'], l:"Un dessert", d:"Fruits rouges, pâtisserie"},
-      ]},
-    { id:'budget', label:"05 · Le budget", q:"Votre budget par bouteille ?", hint:"On reste dans votre fourchette, ou on vise le prestige.",
-      opts:[
-        {e:'💶', tags:['b1'], l:"Moins de 30 €", d:"Le bon rapport plaisir-prix"},
-        {e:'💶', tags:['b2'], l:"30 à 60 €", d:"Les grandes maisons"},
-        {e:'💶', tags:['b3'], l:"60 à 100 €", d:"Cuvées d'exception"},
-        {e:'👑', tags:['b4'], l:"Le meilleur, peu importe", d:"Prestige absolu"},
-      ]},
-    { id:'expertise', label:"06 · Votre profil", q:"Vous diriez que vous êtes…", hint:"Pour ajuster nos suggestions à votre œil.",
-      opts:[
-        {e:'🌱', tags:['novice'], l:"Novice, guidez-moi", d:"Des valeurs sûres, accessibles"},
-        {e:'🎓', tags:['connaisseur'], l:"Connaisseur", d:"Je cherche l'exception"},
-      ]},
-  ];
-}
-
-/* ====================== CATALOGUE ======================
-   Le site charge catalogue.json (généré par build-catalogue.mjs depuis
-   grapeminds + le flux d'affiliation). S'il est absent, on retombe sur
-   la sélection intégrée ci-dessous. Voir INTEGRATION.md. */
+/* ====================== CATALOGUE ====================== */
 let CATALOGUE = null;
 function products(){ return CATALOGUE || FALLBACK_PRODUCTS(); }
 
@@ -330,6 +269,54 @@ function FALLBACK_PRODUCTS(){
 }
 function prod(id){ return products().find(p=>p.id===id); }
 
+/* ====================== QUESTIONS ====================== */
+function questions(){
+  return [
+    { id:'occasion', label:"01 · L'occasion", q:"Pour quelle occasion ?", hint:"Le moment donne le ton de la bouteille.",
+      opts:[
+        {e:'🥂', tags:['occ_fete'], l:"Une grande célébration", d:"Mariage, anniversaire, réussite"},
+        {e:'🍽️', tags:['occ_diner'], l:"Un dîner raffiné", d:"À table, avec de beaux plats"},
+        {e:'🎉', tags:['occ_apero'], l:"Un apéritif entre amis", d:"Décontracté et convivial"},
+        {e:'🎁', tags:['occ_cadeau'], l:"Un cadeau qui marque", d:"Faire plaisir, impressionner"},
+        {e:'🌹', tags:['occ_romantique'], l:"Un tête-à-tête romantique", d:"À deux, tout en douceur"},
+      ]},
+    { id:'gout', label:"02 · Le goût", q:"Vous aimez plutôt…", hint:"Décrivez le style qui vous fait envie.",
+      opts:[
+        {e:'🍋', tags:['profil_frais_vif'], l:"Frais et vif", d:"Agrumes, tension, minéralité"},
+        {e:'🍑', tags:['profil_fruite'], l:"Fruité et gourmand", d:"Rond, facile, séduisant"},
+        {e:'🥖', tags:['profil_riche_ample'], l:"Riche et vineux", d:"Corps, structure, longueur"},
+        {e:'🌸', tags:['profil_delicat'], l:"Délicat et floral", d:"Finesse, élégance, dentelle"},
+      ]},
+    { id:'bulles', label:"03 · L'effervescence", q:"Et côté bulles ?", hint:"De l'exubérance festive au calme d'un vin tranquille.",
+      opts:[
+        {e:'🍾', tags:['bulles_beaucoup'], l:"Franches et festives", d:"Ça pétille, ça claque"},
+        {e:'✨', tags:['bulles_fines'], l:"Fines et crémeuses", d:"Mousse soyeuse, élégante"},
+        {e:'🍷', tags:['still'], l:"Un vin tranquille", d:"Sans bulles, tout simplement"},
+        {e:'🤷', tags:['any'], l:"Peu importe", d:"Surprenez-moi"},
+      ]},
+    { id:'accord', label:"04 · L'accord", q:"Vous le servez avec…", hint:"On accorde la cuvée à votre table.",
+      opts:[
+        {e:'🫧', tags:['accord_aperitif'], l:"Rien, juste l'apéritif", d:"Pour trinquer"},
+        {e:'🦪', tags:['accord_mer'], l:"Fruits de mer & poissons", d:"Huîtres, sushi, poisson"},
+        {e:'🍗', tags:['accord_volaille'], l:"Volailles & viandes blanches", d:"Chapon, veau, blanc"},
+        {e:'🧀', tags:['accord_fromage'], l:"Des fromages", d:"Plateau, pâtes dures"},
+        {e:'🍮', tags:['accord_dessert'], l:"Un dessert", d:"Fruits rouges, pâtisserie"},
+      ]},
+    { id:'budget', label:"05 · Le budget", q:"Votre budget par bouteille ?", hint:"On reste dans votre fourchette, ou on vise le prestige.",
+      opts:[
+        {e:'💶', tags:['b1'], l:"Moins de 30 €", d:"Le bon rapport plaisir-prix"},
+        {e:'💶', tags:['b2'], l:"30 à 60 €", d:"Les grandes maisons"},
+        {e:'💶', tags:['b3'], l:"60 à 100 €", d:"Cuvées d'exception"},
+        {e:'👑', tags:['b4'], l:"Le meilleur, peu importe", d:"Prestige absolu"},
+      ]},
+    { id:'expertise', label:"06 · Votre profil", q:"Vous diriez que vous êtes…", hint:"Pour ajuster nos suggestions à votre œil.",
+      opts:[
+        {e:'🌱', tags:['novice'], l:"Novice, guidez-moi", d:"Des valeurs sûres, accessibles"},
+        {e:'🎓', tags:['connaisseur'], l:"Connaisseur", d:"Je cherche l'exception"},
+      ]},
+  ];
+}
+
 /* ====================== BLOG ====================== */
 function articles(){
   return [
@@ -388,12 +375,156 @@ function articles(){
 <p>Plus structuré, dominante pinot noir : celui qu'on sert quand on veut du corps et de la personnalité.</p>
 <div class="aff-inline"><div class="l">Notre sélection · lien partenaire</div><div class="n">Veuve Clicquot — Brut Yellow Label</div><div class="row"><span style="color:var(--muted);font-size:15px">≈ 48 €</span><a class="btn btn-accent btn-sm" href="#" onclick="return openAff('clicquot')">Découvrir chez la maison ›</a></div></div>`,
       related:['feuillatte','moet','clicquot'] },
-    { id:'blanc-blancs', cat:'Décryptage', cover:'linear-gradient(135deg,#ECEEE9,#E1E5DB)', date:'À venir', read:'', soon:true,
+
+    { id:'mariage', cat:'Guide', cover:'linear-gradient(135deg,#F4EFE6,#EAE0CE)', date:'Juillet 2026', read:'6 min',
+      title:"Quel champagne choisir pour un mariage",
+      excerpt:"Style, quantité, budget : le guide complet pour le champagne de votre grand jour.",
+      body:`<p>Le champagne est au cœur d'un mariage : le vin d'honneur, le toast, parfois le repas entier. Bien le choisir évite le double écueil du flacon trop cher gaspillé et de la cuvée trop quelconque.</p>
+<h3>Quel style servir ?</h3>
+<p>Pour le vin d'honneur et le toast, on veut un champagne <strong>frais et consensuel</strong> qui plaît à tous : un brut d'assemblage ou un blanc de blancs, vif et élégant, comme le <a href="#" onclick="return openAff('ruinart')">Ruinart Blanc de Blancs</a>. Si le champagne accompagne le repas, montez en corps vers une cuvée plus vineuse capable de tenir face aux plats.</p>
+<h3>Combien de bouteilles prévoir ?</h3>
+<p>Comptez qu'une bouteille sert <strong>6 à 8 flûtes</strong>. Pour un vin d'honneur, prévoyez 2 à 3 coupes par personne, soit environ une bouteille pour trois invités. Mieux vaut en prévoir un peu trop : le champagne se conserve.</p>
+<h3>Quel budget ?</h3>
+<p>Sur de grandes quantités, un excellent brut entre 25 et 35 € par bouteille fait parfaitement le travail. Réservez une cuvée de prestige au seul moment du toast si vous voulez marquer le coup, plutôt que sur toute la soirée.</p>
+<h3>La touche rosé</h3>
+<p>Un champagne rosé comme la <a href="#" onclick="return openAff('laurentperrier')">Cuvée Rosé de Laurent-Perrier</a> apporte une note festive et photogénique, idéale pour un mariage.</p>
+<p>Pas sûr du style qui vous correspond ? Notre sélecteur vous oriente en six questions.</p>`,
+      related:['ruinart','clicquot','laurentperrier'] },
+
+    { id:'cadeau', cat:'Guide', cover:'linear-gradient(135deg,#F1EDE4,#E7DECD)', date:'Juillet 2026', read:'5 min',
+      title:"Quel champagne offrir en cadeau",
+      excerpt:"Les valeurs sûres qui font toujours plaisir, par budget et par occasion.",
+      body:`<p>Offrir du champagne ne trompe jamais, à condition de viser juste. Voici comment choisir une bouteille qui fera plaisir sans se ruiner ni se tromper.</p>
+<h3>Misez sur une étiquette reconnaissable</h3>
+<p>Pour un cadeau, la notoriété rassure. Une maison identifiable signale l'attention portée. Le <a href="#" onclick="return openAff('moet')">Moët Impérial</a> ou la Veuve Clicquot Yellow Label sont des valeurs sûres, immédiatement reconnues.</p>
+<h3>Adaptez au budget</h3>
+<p>Autour de 40 à 50 €, les grandes maisons offrent leurs cuvées emblématiques. Entre 60 et 90 €, on passe à des champagnes de caractère comme la <a href="#" onclick="return openAff('bollinger')">Special Cuvée de Bollinger</a>. Au-delà, pour un cadeau qui marque vraiment, un flacon de prestige comme le <a href="#" onclick="return openAff('domperignon')">Dom Pérignon</a> fait son effet.</p>
+<h3>Pensez au profil de la personne</h3>
+<p>Un amateur de fraîcheur appréciera un blanc de blancs ; quelqu'un qui aime les vins de caractère préférera une cuvée vineuse. En cas de doute, un rosé fait presque toujours mouche.</p>
+<h3>Le petit plus</h3>
+<p>Un étui ou un coffret soigne la présentation et transforme la bouteille en vrai cadeau. Pas besoin de dépenser plus, juste de bien présenter.</p>
+<p>Vous hésitez selon la personne à qui offrir ? Lancez le sélecteur et affinez le choix.</p>`,
+      related:['moet','bollinger','domperignon'] },
+
+    { id:'quantite', cat:'Pratique', cover:'linear-gradient(135deg,#EEF0EB,#E3E7DD)', date:'Juillet 2026', read:'3 min',
+      title:"Combien de bouteilles de champagne prévoir ?",
+      excerpt:"La règle simple pour ne jamais manquer, ni trop acheter, selon le nombre d'invités.",
+      body:`<p>Trop peu, et la fête tombe à plat. Trop, et le budget explose. Voici comment calculer juste.</p>
+<h3>La règle de base</h3>
+<p>Une bouteille de 75 cl remplit <strong>6 flûtes</strong> (un peu plus si vous servez raisonnablement). Partez de là et ajustez selon le moment.</p>
+<h3>Selon l'occasion</h3>
+<ul>
+<li><strong>Un simple toast :</strong> 1 coupe par personne, soit une bouteille pour 6 invités.</li>
+<li><strong>Un apéritif :</strong> 2 à 3 coupes par personne, soit une bouteille pour 2 à 3 invités.</li>
+<li><strong>Toute la soirée :</strong> comptez une demi-bouteille par personne, et prévoyez une marge.</li>
+</ul>
+<h3>Repères rapides</h3>
+<p>Pour 10 personnes à l'apéritif : 4 bouteilles. Pour 30 : environ 10 à 12. Pour 50 : une vingtaine. Mieux vaut une bouteille de trop, elle se garde, qu'une de moins.</p>
+<h3>Quel champagne pour ces volumes ?</h3>
+<p>Sur de grandes quantités, privilégiez un bon rapport qualité-prix comme le <a href="#" onclick="return openAff('feuillatte')">Nicolas Feuillatte Réserve Exclusive</a>, généreux et consensuel.</p>`,
+      related:['feuillatte','moet'] },
+
+    { id:'blanc-blancs', cat:'Décryptage', cover:'linear-gradient(135deg,#ECEEE9,#E1E5DB)', date:'Juillet 2026', read:'4 min',
       title:"Blanc de Blancs ou Blanc de Noirs ?",
-      excerpt:"Deux mots, deux mondes. On démêle les cépages et leurs styles.", body:'', related:[] },
-    { id:'servir', cat:'Pratique', cover:'linear-gradient(135deg,#F0ECE6,#E6E0D5)', date:'À venir', read:'', soon:true,
+      excerpt:"Deux mots, deux mondes. On démêle les cépages et leurs styles.",
+      body:`<p>Sur une étiquette de champagne, ces deux mentions racontent le cépage utilisé, et donc le style dans votre verre. Voici comment les distinguer.</p>
+<h3>Blanc de Blancs : la fraîcheur</h3>
+<p>« Blanc de Blancs » signifie un champagne issu uniquement de raisins blancs, soit du <strong>chardonnay</strong> en Champagne. Résultat : des cuvées vives, florales, minérales, tout en finesse. Le <a href="#" onclick="return openAff('ruinart')">Ruinart Blanc de Blancs</a> en est l'exemple emblématique. Idéal à l'apéritif et sur les fruits de mer.</p>
+<h3>Blanc de Noirs : le corps</h3>
+<p>« Blanc de Noirs » désigne un champagne blanc élaboré à partir de raisins noirs (<strong>pinot noir</strong> et <strong>pinot meunier</strong>), vinifiés sans macération. Le style est plus ample, vineux, structuré, parfait à table sur une volaille.</p>
+<h3>Et l'assemblage classique ?</h3>
+<p>La plupart des bruts marient les trois cépages pour équilibrer fraîcheur et corps. C'est le style passe-partout, ni trop léger ni trop puissant.</p>
+<h3>Lequel choisir ?</h3>
+<p>Envie de fraîcheur et de finesse : blanc de blancs. Envie de corps et de gastronomie : blanc de noirs ou une cuvée à dominante pinot comme la <a href="#" onclick="return openAff('bollinger')">Bollinger Special Cuvée</a>.</p>`,
+      related:['ruinart','bollinger'] },
+
+    { id:'servir', cat:'Pratique', cover:'linear-gradient(135deg,#F0ECE6,#E6E0D5)', date:'Juillet 2026', read:'4 min',
       title:"Température, verre, ouverture : servir le champagne",
-      excerpt:"Les gestes simples qui subliment (ou gâchent) une belle bouteille.", body:'', related:[] },
+      excerpt:"Les gestes simples qui subliment, ou gâchent, une belle bouteille.",
+      body:`<p>Un grand champagne mal servi perd la moitié de son charme. Trois gestes suffisent à bien faire les choses.</p>
+<h3>La température</h3>
+<p>Servez entre <strong>8 et 10 °C</strong>, pas plus froid : trop glacé, le champagne s'anesthésie et perd ses arômes. Comptez trois heures au réfrigérateur, ou vingt minutes dans un seau rempli à moitié d'eau et de glace, plus efficace qu'au congélateur.</p>
+<h3>Le verre</h3>
+<p>Oubliez la coupe large, elle laisse filer les bulles et les arômes. Préférez une <strong>flûte</strong>, ou mieux, un <strong>verre à vin blanc</strong> resserré qui concentre le parfum tout en laissant respirer. C'est le choix des amateurs.</p>
+<h3>L'ouverture</h3>
+<p>Ne faites pas sauter le bouchon : c'est spectaculaire mais on perd du vin et de la pression. Tenez le bouchon, tournez la bouteille (pas le bouchon), et accompagnez la sortie dans un léger soupir. Servez en deux temps pour maîtriser la mousse.</p>
+<h3>Dans quel ordre ?</h3>
+<p>Si vous ouvrez plusieurs cuvées, allez du plus léger au plus corsé, et du plus jeune au plus âgé.</p>`,
+      related:['ruinart'] },
+
+    { id:'noel', cat:'Guide', cover:'linear-gradient(135deg,#F3ECE8,#E8DAD2)', date:'Juillet 2026', read:'5 min',
+      title:"Quel champagne pour Noël et les fêtes",
+      excerpt:"Apéritif, repas, minuit : le bon champagne pour chaque moment des fêtes.",
+      body:`<p>Les fêtes, c'est le grand moment du champagne. Mais entre l'apéritif, le repas et le passage à minuit, un seul flacon ne fait pas tout. Voici comment couvrir la soirée sans faute de goût.</p>
+<h3>Pour l'apéritif</h3>
+<p>Ouvrez sur un champagne <strong>frais et vif</strong> qui met en appétit : un brut d'assemblage ou un blanc de blancs. Il lance la soirée sans écraser les papilles avant le repas.</p>
+<h3>Pour le repas de fête</h3>
+<p>Sur un chapon, une volaille ou des Saint-Jacques, montez en corps avec un champagne <strong>vineux à dominante pinot noir</strong>, comme la <a href="#" onclick="return openAff('bollinger')">Special Cuvée de Bollinger</a>, capable de tenir face aux plats riches.</p>
+<h3>Pour le dessert et minuit</h3>
+<p>Sur une bûche ou des fruits, un <strong>demi-sec</strong> ou un <strong>rosé fruité</strong> comme la <a href="#" onclick="return openAff('laurentperrier')">Cuvée Rosé de Laurent-Perrier</a> supporte le sucre et apporte une note festive pour trinquer à minuit.</p>
+<h3>Quel budget prévoir ?</h3>
+<p>Pas besoin de flamber sur toute la soirée : un bon brut pour l'apéritif, une cuvée de caractère pour le repas, et si vous voulez marquer le coup, réservez le prestige pour le toast de minuit.</p>
+<p>Vous recevez et hésitez ? Le sélecteur vous oriente en six questions.</p>`,
+      related:['clicquot','bollinger','laurentperrier'] },
+
+    { id:'moins-30', cat:'Sélection', cover:'linear-gradient(135deg,#EFEDE6,#E5E1D5)', date:'Juillet 2026', read:'4 min',
+      title:"Les meilleurs champagnes à moins de 30 €",
+      excerpt:"Se faire plaisir sans se ruiner : nos valeurs sûres sous la barre des 30 euros.",
+      body:`<p>Oui, on peut boire du bon champagne pour moins de 30 €. Le secret : viser les cuvées régulières des grandes maisons et les alternatives malignes, plutôt que l'étiquette la plus chère.</p>
+<h3>La valeur sûre — Nicolas Feuillatte Réserve Exclusive</h3>
+<p>Vif, fruité, facile à aimer : c'est le champagne à toujours avoir au frais, parfait pour l'apéritif et les grandes tablées.</p>
+<div class="aff-inline"><div class="l">Notre sélection · lien partenaire</div><div class="n">Nicolas Feuillatte — Réserve Exclusive Brut</div><div class="row"><span style="color:var(--muted);font-size:15px">≈ 28 €</span><a class="btn btn-accent btn-sm" href="#" onclick="return openAff('feuillatte')">Découvrir chez la maison ›</a></div></div>
+<h3>L'alternative maligne — un crémant</h3>
+<p>Sous les 20 €, un bon crémant rivalise avec bien des champagnes. Le <a href="#" onclick="return openAff('bouillot')">Louis Bouillot Perle d'Aurore</a>, crémant rosé de Bourgogne, offre fraîcheur et gourmandise pour un tout petit prix.</p>
+<h3>Nos conseils pour trouver le bon</h3>
+<ul>
+<li>Guettez les promotions des grandes maisons, souvent autour des fêtes.</li>
+<li>Regardez du côté des vignerons indépendants, qui maîtrisent tout de la vigne à la bouteille.</li>
+<li>À prix égal, privilégiez le style que vous aimez plutôt que la notoriété de l'étiquette.</li>
+</ul>`,
+      related:['feuillatte','bouillot'] },
+
+    { id:'aperitif', cat:'Guide', cover:'linear-gradient(135deg,#F2EFE7,#E8E1D0)', date:'Juillet 2026', read:'4 min',
+      title:"Quel champagne pour un apéritif",
+      excerpt:"Vif, léger, convivial : le bon champagne pour lancer la soirée sans se tromper.",
+      body:`<p>À l'apéritif, le champagne doit ouvrir l'appétit sans dominer. On cherche la fraîcheur et la vivacité, pas la puissance. Voici comment viser juste.</p>
+<h3>Le bon style</h3>
+<p>Privilégiez un champagne <strong>frais et fruité</strong> : un brut d'assemblage ou un blanc de blancs, tout en tension et en agrumes. Le <a href="#" onclick="return openAff('feuillatte')">Nicolas Feuillatte Réserve Exclusive</a> ou le <a href="#" onclick="return openAff('moet')">Moët Impérial</a> font parfaitement le travail.</p>
+<h3>L'alternative maligne</h3>
+<p>Pour un apéritif décontracté, un bon crémant offre la même fraîcheur pour moins cher. Personne ne fera la différence, et votre budget vous remerciera.</p>
+<h3>Avec quoi le servir ?</h3>
+<p>Sur des toasts, des gougères ou des fruits de mer, un blanc de blancs minéral comme le <a href="#" onclick="return openAff('ruinart')">Ruinart Blanc de Blancs</a> fait merveille. Évitez les bouchées trop sucrées ou vinaigrées qui cassent les bulles.</p>
+<h3>À quelle température ?</h3>
+<p>Servez bien frais, entre 8 et 10 °C, mais pas glacé : trop froid, le champagne perd ses arômes.</p>`,
+      related:['feuillatte','moet','ruinart'] },
+
+    { id:'huitres', cat:'Accords', cover:'linear-gradient(135deg,#EAEEEC,#DDE6E0)', date:'Juillet 2026', read:'4 min',
+      title:"Quel champagne avec des huîtres et des fruits de mer",
+      excerpt:"L'accord iodé par excellence : le style qui sublime coquillages et crustacés.",
+      body:`<p>Huîtres, coquillages, crustacés : peu d'accords sont aussi naturels que celui du champagne et de la mer. Encore faut-il le bon style.</p>
+<h3>Cap sur la minéralité</h3>
+<p>Pour les huîtres, on veut un champagne <strong>vif, tendu et minéral</strong> : un blanc de blancs 100 % chardonnay est l'accord roi. Sa fraîcheur saline prolonge l'iode sans l'écraser. Le <a href="#" onclick="return openAff('ruinart')">Ruinart Blanc de Blancs</a> est une référence.</p>
+<h3>Sec, voire très sec</h3>
+<p>Fuyez les champagnes trop dosés : sur l'iode, le sucre jure. Un brut, ou mieux un extra-brut, est idéal. La tension prime sur la rondeur.</p>
+<h3>Et pour les crustacés cuits ?</h3>
+<p>Sur un homard ou des langoustines plus riches, un champagne un peu plus corsé tient bien. Mais pour l'huître crue, restez sur la fraîcheur pure.</p>
+<h3>L'alternative en vin tranquille</h3>
+<p>Si vous préférez sans bulles, un blanc vif comme un <a href="#" onclick="return openAff('sancerre')">Sancerre</a> joue exactement la même partition minérale sur les fruits de mer.</p>`,
+      related:['ruinart','sancerre','moet'] },
+
+    { id:'anniversaire', cat:'Guide', cover:'linear-gradient(135deg,#F3ECE9,#E9DBD6)', date:'Juillet 2026', read:'5 min',
+      title:"Quel champagne pour un anniversaire",
+      excerpt:"Marquer le coup selon l'ambiance, la personne et le budget.",
+      body:`<p>Un anniversaire appelle un champagne festif, mais le bon choix dépend de l'ambiance et de qui l'on fête. Voici comment viser juste.</p>
+<h3>Pour une ambiance conviviale</h3>
+<p>Entre amis, misez sur un brut généreux et consensuel qui plaît à tous, comme la <a href="#" onclick="return openAff('clicquot')">Veuve Clicquot Yellow Label</a>. Structuré et reconnaissable, il met tout le monde d'accord.</p>
+<h3>Pour une touche festive et gourmande</h3>
+<p>Un champagne rosé apporte de la couleur et de la gaieté, parfait pour souffler les bougies. La <a href="#" onclick="return openAff('laurentperrier')">Cuvée Rosé de Laurent-Perrier</a> est fruitée et séduisante.</p>
+<h3>Pour un anniversaire qui compte</h3>
+<p>Pour un cap important (30, 40, 50 ans), on peut marquer le coup avec une cuvée de prestige comme le <a href="#" onclick="return openAff('domperignon')">Dom Pérignon</a>. L'étiquette fait partie du cadeau.</p>
+<h3>Combien de bouteilles ?</h3>
+<p>Comptez une bouteille pour 3 personnes à l'apéritif, davantage si le champagne accompagne le repas. Mieux vaut en avoir un peu trop.</p>`,
+      related:['clicquot','laurentperrier','domperignon'] },
   ];
 }
 function art(id){ return articles().find(a=>a.id===id); }
@@ -450,9 +581,6 @@ function bottleSVG(p, mode){
     ${cap}${label}
   </svg>`;
 }
-
-/* Affiche la vraie photo produit si le catalogue en fournit une (flux d'affiliation),
-   sinon la bouteille dessinée. */
 function bottleViz(p, mode){
   if(p.image) return `<img class="pimg" src="${p.image}" alt="${p.house} ${p.short}" loading="lazy">`;
   return bottleSVG(p, mode);
@@ -634,9 +762,7 @@ function openArticle(id){ state.article=id; state.view='article'; render(); }
 function openAff(id){ const p=prod(id); if(p) window.open(p.aff,'_blank','noopener'); return false; }
 function track(id){ /* point d'accroche tracking d'affiliation (ex : ?ref=quelchampagne) */ }
 
-/* Charge le catalogue live (catalogue.json) si présent ; sinon on garde la
-   sélection intégrée. Fonctionne en statique une fois le site hébergé.
-   (En ouverture locale file://, le fetch échoue et on reste sur le repli.) */
+/* Charge le catalogue live (catalogue.json) si présent ; sinon sélection intégrée. */
 async function loadCatalogue(){
   try{
     const r = await fetch('./catalogue.json', {cache:'no-store'});
@@ -650,15 +776,14 @@ async function loadCatalogue(){
       }));
       render();
     }
-  }catch(e){ /* repli silencieux sur FALLBACK_PRODUCTS */ }
+  }catch(e){ /* repli silencieux */ }
 }
 
-/* Porte d'âge (loi Évin) : bloque l'accès aux mineurs. Mémorise le choix. */
+/* Porte d'âge (loi Évin). */
 function ageGate(){
   try{ if(localStorage.getItem('qc_age_ok')==='1') return; }catch(e){}
   const el = document.createElement('div');
-  el.className = 'agegate';
-  el.id = 'agegate';
+  el.className = 'agegate'; el.id = 'agegate';
   el.innerHTML = `
     <div class="agegate-box">
       <div class="g"></div>
@@ -673,15 +798,8 @@ function ageGate(){
     </div>`;
   document.body.appendChild(el);
 }
-function ageOK(){
-  try{ localStorage.setItem('qc_age_ok','1'); }catch(e){}
-  const el = document.getElementById('agegate'); if(el) el.remove();
-}
-function ageNo(){
-  const el = document.getElementById('agegate');
-  if(el) el.querySelector('.agegate-box').innerHTML =
-    `<div class="g"></div><h2>À bientôt</h2><p>Ce site est réservé aux personnes majeures. Nous ne pouvons pas vous donner accès au contenu.</p><div class="health">L'abus d'alcool est dangereux pour la santé. À consommer avec modération.</div>`;
-}
+function ageOK(){ try{ localStorage.setItem('qc_age_ok','1'); }catch(e){} const el=document.getElementById('agegate'); if(el) el.remove(); }
+function ageNo(){ const el=document.getElementById('agegate'); if(el) el.querySelector('.agegate-box').innerHTML = `<div class="g"></div><h2>À bientôt</h2><p>Ce site est réservé aux personnes majeures. Nous ne pouvons pas vous donner accès au contenu.</p><div class="health">L'abus d'alcool est dangereux pour la santé. À consommer avec modération.</div>`; }
 
 render();
 loadCatalogue();
