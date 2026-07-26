@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "currency": "EUR",
+  "market": "FR",
+  "defaultFormatMl": 750,
+  "priceFreshnessHours": 72,
+  "availabilityFreshnessHours": 24,
+  "minimumMerchantsForComparison": 2,
+  "publicationRequirements": {
+    "affiliateConfigured": true,
+    "exactProductMatch": true,
+    "exactReleaseMatch": true,
+    "exactFormatMatch": true,
+    "priceFresh": true,
+    "availabilityFresh": true,
+    "publicationStatus": "approved"
+  },
+  "rules": [
+    "Une fourchette éditoriale n’est jamais présentée comme un prix marchand.",
+    "Un relevé expiré reste dans l’historique mais disparaît des prix du jour.",
+    "Le stock et le prix expirent séparément.",
+    "Le format, le coffret et la sortie doivent correspondre exactement avant publication.",
+    "Aucun lien partenaire n’est publié tant que l’affiliation et le relevé ne sont pas validés."
+  ]
+}

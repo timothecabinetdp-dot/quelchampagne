@@ -1,0 +1,51 @@
+id,producer,cuvée,segment,colour,style_principal,profil_cible,occasion_principale,accord_principal,budget_min_eur,budget_max_eur,priority,official_source_url,verification_status
+1,Nicolas Feuillatte,Réserve Exclusive,brut_non_millesime,blanc,fruité_frais,accessible et polyvalent,apéritif,canapés et gougères,28,38,1,https://www.nicolas-feuillatte.com/,à vérifier
+2,Moët & Chandon,Impérial,brut_non_millesime,blanc,fruité_rond,généreux et festif,cadeau,poulet rôti et apéritif,40,50,1,https://www.moet.com/fr-fr/champagne/,à vérifier
+3,Veuve Clicquot,Yellow Label,brut_non_millesime,blanc,structuré_fruité,caractère et valeur sûre,cadeau,volaille et parmesan,45,55,1,https://www.veuveclicquot.com/fr-fr/,à vérifier
+4,Bollinger,Special Cuvée,brut_non_millesime,blanc,vineux_brioche,gastronomique,repas,volaille rôtie et champignons,58,70,1,https://www.champagne-bollinger.com/,à vérifier
+5,Ruinart,Blanc de Blancs,blanc_de_blancs,blanc,frais_floral,élégant et minéral,cadeau,poisson et fruits de mer,70,90,1,https://www.ruinart.com/fr-fr/,à vérifier
+6,Laurent-Perrier,La Cuvée,brut_non_millesime,blanc,frais_délicat,équilibré et fin,apéritif,poisson cru et fruits de mer,42,52,1,https://www.laurent-perrier.com/fr/,à vérifier
+7,Taittinger,Brut Réserve,brut_non_millesime,blanc,frais_brioche,élégant et consensuel,apéritif,fruits de mer,42,52,1,https://www.taittinger.com/,à vérifier
+8,Pol Roger,Brut Réserve,brut_non_millesime,blanc,équilibré_brioche,fin et classique,cadeau,volaille et poissons nobles,48,60,1,https://www.polroger.com/,à vérifier
+9,Piper-Heidsieck,Cuvée Brut,brut_non_millesime,blanc,fruité_tonique,expressif et moderne,apéritif,amuse-bouches,35,45,1,https://www.piper-heidsieck.com/,à vérifier
+10,Pommery,Brut Royal,brut_non_millesime,blanc,vif_frais,droit et rafraîchissant,apéritif,huîtres et coquillages,38,48,1,https://www.vranken-pommery.com/,à vérifier
+11,G.H. Mumm,Cordon Rouge,brut_non_millesime,blanc,fruité_structuré,franc et dynamique,célébration,apéritif salé,35,45,1,https://www.mumm.com/,à vérifier
+12,Charles Heidsieck,Brut Réserve,brut_non_millesime,blanc,riche_brioche,profond et gourmand,repas,volaille et comté,55,70,1,https://www.charlesheidsieck.com/,à vérifier
+13,Deutz,Brut Classic,brut_non_millesime,blanc,fin_fruité,raffiné et discret,cadeau,poisson et apéritif,45,58,1,https://www.champagne-deutz.com/,à vérifier
+14,Gosset,Grande Réserve,brut_non_millesime,blanc,structuré_frais,ample et tendu,repas,saumon et volaille,50,65,1,https://www.champagne-gosset.com/,à vérifier
+15,Billecart-Salmon,Brut Réserve,brut_non_millesime,blanc,frais_harmonieux,fin et polyvalent,cadeau,apéritif et poisson,55,70,1,https://www.billecart-salmon.com/,à vérifier
+16,Louis Roederer,Collection 246,brut_non_millesime,blanc,ample_frais,précis et gastronomique,cadeau,poisson noble,55,70,1,https://www.louis-roederer.com/en/collection246,contrôlée vague 1
+17,Lanson,Le Black Création,brut_non_millesime,blanc,vif_brioche,énergique et complexe,repas,fruits de mer,45,60,1,https://www.champagne-lanson.com/,contrôlée vague 1
+18,Joseph Perrier,Cuvée Royale Brut,brut_non_millesime,blanc,fruité_délicat,fin et floral,apéritif,poisson blanc,42,55,2,https://www.josephperrier.com/en/champagnes-et-cuvees/cuvee-royale-brut/,contrôlée vague 3
+19,Alfred Gratien,Brut,brut_non_millesime,blanc,vineux_frais,traditionnel et racé,repas,volaille et champignons,42,55,2,https://www.alfredgratien.com/en/the-cuvees/brut/,contrôlée vague 3
+20,Drappier,Carte d'Or,brut_non_millesime,blanc,fruité_vineux,généreux et solaire,repas,charcuterie fine et volaille,40,52,1,https://www.champagne-drappier.com/,à vérifier
+21,Palmer & Co,La Réserve,brut_non_millesime,blanc,frais_brioche,net et élégant,apéritif,fruits de mer,40,52,2,https://www.champagne-palmer.fr/,contrôlée vague 3
+22,Philipponnat,Royale Réserve,brut_non_millesime,blanc,vineux_structuré,puissant et gastronomique,repas,volaille et veau,52,65,2,https://www.philipponnat.com/,à vérifier
+23,Henri Giraud,Esprit Nature,brut_non_millesime,blanc,vineux_boise,ample et singulier,repas,volaille crémée,60,80,2,https://www.champagne-giraud.com/,à vérifier
+24,Leclerc Briant,Brut Réserve,biodynamique,blanc,frais_vineux,gastronomique et engagé,repas,poisson sauce légère,55,70,2,https://www.leclercbriant.fr/uploads/brochures/Brut-Reserve-2020-65e5d0200938f.pdf,contrôlée vague 3
+25,Delamotte,Brut,brut_non_millesime,blanc,fin_minéral,élégant et droit,cadeau,crustacés,50,65,2,https://www.champagne-delamotte.com/en/products/brut,contrôlée vague 3
+26,Jacquesson,Cuvée n° 748,brut_non_millesime,blanc,tendu_complexe,amateur averti,repas,poisson et volaille,70,95,2,https://champagnejacquesson.com/en,contrôlée vague 3
+27,Egly-Ouriet,Les Prémices,brut_non_millesime,blanc,vineux_intense,amateur et gastronomie,repas,viande blanche,85,110,2,https://www.egly-ouriet.fr/,à vérifier
+28,Pierre Gimonnet & Fils,Cuis 1er Cru Blanc de Blancs,blanc_de_blancs,blanc,minéral_frais,amateur de chardonnay,apéritif,huîtres,45,60,2,https://www.pierregimonnet.com/,à vérifier
+29,Laherte Frères,Ultradition Brut,brut_non_millesime,blanc,vineux_frais,curieux et exigeant,repas,charcuterie et volaille,45,60,2,https://www.champagne-laherte.com/docs/en/fiche-technique-en-Brut_Ultradition.pdf,contrôlée vague 3
+30,Chartogne-Taillet,Sainte-Anne,brut_non_millesime,blanc,vineux_minéral,terroir et gastronomie,repas,volaille rôtie,55,75,2,https://chartogne-taillet.com/en/vin/sainte-anne/details,contrôlée vague 3
+31,Charles Dufour,Bulles de Comptoir #13 Cuisine du Dimanche,brut_non_millesime,blanc,vineux_naturel,amateur de vigneron,apéritif,fromages et tapas,80,110,2,https://leonandsonwine.com/products/nv-charles-dufour-bulles-de-comptoir-13-extra-brut-champagne-france,contrôlée source secondaire
+32,Pierre Péters,Cuvée de Réserve,blanc_de_blancs,blanc,minéral_ciselé,amateur de blanc de blancs,apéritif,coquillages,60,80,2,https://www.champagne-pierre-peters.com/,à vérifier
+33,Jacques Selosse,Initial,blanc_de_blancs,blanc,vineux_oxydatif,collectionneur et amateur,repas,volaille et vieux comté,300,450,3,https://www.jacquesselosse.com/,à vérifier
+34,Laurent-Perrier,Cuvée Rosé,rose,rosé,fruité_croquant,cadeau rosé,célébration,saumon et dessert aux fruits rouges,80,100,1,https://www.laurent-perrier.com/fr/,à vérifier
+35,Billecart-Salmon,Brut Rosé,rose,rosé,frais_fruits_rouges,rosé raffiné,cadeau,saumon et crustacés,75,95,1,https://www.billecart-salmon.com/,à vérifier
+36,Ruinart,Rosé,rose,rosé,fruité_structuré,rosé de table,repas,thon et canard rosé,85,110,2,https://www.ruinart.com/fr-fr/,à vérifier
+37,Bollinger,Rosé,rose,rosé,vineux_fruits_rouges,rosé de gastronomie,repas,canard et homard,85,110,2,https://www.champagne-bollinger.com/,à vérifier
+38,Veuve Clicquot,Rosé,rose,rosé,fruité_structuré,rosé festif,célébration,saumon et charcuterie fine,55,70,2,https://www.veuveclicquot.com/fr-fr/,à vérifier
+39,Moët & Chandon,Rosé Impérial,rose,rosé,fruité_gourmand,rosé accessible,célébration,apéritif et fruits rouges,50,65,2,https://www.moet.com/fr-fr/champagne/,à vérifier
+40,Pommery,Apanage Rosé,rose,rosé,frais_fruité,rosé élégant,cadeau,poisson et dessert fruité,65,85,2,https://www.vranken-pommery.com/,à vérifier
+41,Charles Heidsieck,Rosé Réserve,rose,rosé,riche_fruits_rouges,rosé gastronomique,repas,volaille et thon rouge,70,90,2,https://www.charlesheidsieck.com/,à vérifier
+42,Krug,Grande Cuvée 174ème Édition,prestige,blanc,complexe_vineux,grand repas ou cadeau,célébration,homard et volaille truffée,220,300,1,https://www.krug.com/en-int/champagne/krug-grande-cuvee-174eme-edition,édition officielle confirmée
+43,Dom Pérignon,Vintage 2015,prestige,blanc,complexe_tendu,grande occasion,cadeau,poisson noble et volaille,200,280,1,https://www.domperignon.com/en-us/product/vintage/2015,millésime officiel confirmé
+44,Louis Roederer,Cristal 2016,prestige,blanc,complexe_minéral,grand cadeau,célébration,caviar et crustacés,300,420,2,https://www.louis-roederer.com/en/cristal2016,millésime officiel confirmé
+45,Perrier-Jouët,Belle Époque 2015,prestige,blanc,floral_élégant,cadeau marquant,célébration,poisson et cuisine fine,160,220,1,https://www.perrier-jouet.com/fr-fr/fiche-produit-relative-aux-qualit%C3%A9s-ou-caract%C3%A9ristiques-environnementales-perrier-jou%C3%ABt,millésime identifié; disponibilité à contrôler
+46,Taittinger,Comtes de Champagne Blanc de Blancs 2013,prestige,blanc,minéral_complexe,amateur de chardonnay,repas,homard et coquillages,220,320,2,https://taittinger.com/en/webzine/comtes-de-champagne-blanc-de-blancs-2013,millésime officiel confirmé
+47,Bollinger,R.D. 2008,prestige,blanc,vineux_complexe,amateur averti,repas,gibier à plume et vieux parmesan,350,520,3,https://www.champagne-bollinger.com/en/wine/bollinger-rd-2008,millésime officiel confirmé
+48,Philipponnat,Clos des Goisses 2015,prestige,blanc,puissant_minéral,grand repas,repas,volaille de Bresse,200,320,3,https://www.philipponnat.com/en/spotlight-on-the-2015-vintage/,millésime officiel confirmé
+49,Salon,Salon 2015,prestige,blanc,minéral_intense,collectionneur,célébration,coquillages et caviar,1000,1600,3,https://www.champagne-salon.fr/en,millésime récent; disponibilité et source officielle directe à contrôler
+50,Dom Pérignon,Rosé 2009,prestige,rosé,complexe_fruits_rouges,grand cadeau rosé,célébration,homard et canard,400,650,3,https://www.domperignon.com/en-us/product/rose/2009,millésime officiel confirmé

@@ -1,0 +1,18 @@
+[
+  {
+    "asset": "/assets/hero-quelchampagne.svg",
+    "type": "original_project_asset",
+    "createdAt": "2026-07-27",
+    "rightsStatus": "cleared",
+    "uses": ["homepage", "social-preview-source"],
+    "notes": "Illustration abstraite originale, sans photographie ni reproduction de packaging de marque."
+  },
+  {
+    "asset": "/assets/og-quelchampagne.png",
+    "type": "derived_from_original_project_asset",
+    "createdAt": "2026-07-27",
+    "rightsStatus": "cleared",
+    "uses": ["open-graph", "social-sharing"],
+    "notes": "Export PNG 1200 × 630 dérivé de hero-quelchampagne.svg."
+  }
+]

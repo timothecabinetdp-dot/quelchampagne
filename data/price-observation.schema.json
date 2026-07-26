@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://quelchampagne.fr/schemas/price-observation.schema.json",
+  "title": "Observation de prix QuelChampagne",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "observationId",
+    "productId",
+    "merchant",
+    "merchantUrl",
+    "formatMl",
+    "packaging",
+    "priceEur",
+    "currency",
+    "availability",
+    "observedAt",
+    "priceFreshUntil",
+    "availabilityFreshUntil",
+    "exactProductMatch",
+    "exactReleaseMatch",
+    "exactFormatMatch",
+    "affiliateStatus",
+    "publicationStatus"
+  ],
+  "properties": {
+    "observationId": {"type": "string", "minLength": 8},
+    "productId": {"type": "string", "minLength": 1},
+    "merchant": {"type": "string", "minLength": 1},
+    "merchantUrl": {"type": "string", "format": "uri", "pattern": "^https://"},
+    "formatMl": {"type": "integer", "minimum": 187},
+    "packaging": {"type": "string", "minLength": 1},
+    "priceEur": {"type": "number", "exclusiveMinimum": 0},
+    "currency": {"const": "EUR"},
+    "availability": {
+      "enum": ["in_stock", "available_to_add", "store_dependent", "out_of_stock", "unknown"]
+    },
+    "observedAt": {"type": "string", "format": "date"},
+    "priceFreshUntil": {"type": "string", "format": "date-time"},
+    "availabilityFreshUntil": {"type": "string", "format": "date-time"},
+    "exactProductMatch": {"type": "boolean"},
+    "exactReleaseMatch": {"type": "boolean"},
+    "exactFormatMatch": {"type": "boolean"},
+    "affiliateStatus": {"enum": ["not_configured", "configured", "verified"]},
+    "publicationStatus": {"enum": ["research_only", "pending_review", "approved", "rejected"]},
+    "notes": {"type": "string"}
+  }
+}
