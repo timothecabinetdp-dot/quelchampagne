@@ -342,8 +342,16 @@ function prod(id){ return products().find(p=>p.id===id); }
    Tant qu'on n'a pas de flux (avec liens produits directs), on renvoie vers
    la recherche Amazon du produit, avec le tag de tracking. */
 const AMAZON_TAG = 'quelchampagne-21';
+/* Fiches produit Amazon (ASIN) pour des liens directs. À mettre à jour si une
+   fiche disparaît. Sans ASIN, on retombe sur une recherche Amazon. */
+const ASINS = {
+  feuillatte:'B0B7XGK1F3', moet:'B00B16HGEU', clicquot:'B0D7RVRTHY', bollinger:'B01CSMX0OA',
+  ruinart:'B0DLX43VSV', laurentperrier:'B009H2RFKK', perrierjouet:'B0G9535PPJ', domperignon:'B0DC6MPNGW',
+  bouillot:'B00734VGCC', sancerre:'B0FNN9R58N', whisperingangel:'B0CX5S23XF',
+};
 function buyLink(p){
   if(p.aff && /tag=|awin1\.com|\/dp\//.test(p.aff)) return p.aff; // vrai lien de flux si présent
+  if(ASINS[p.id]) return 'https://www.amazon.fr/dp/' + ASINS[p.id] + '?tag=' + AMAZON_TAG;
   return 'https://www.amazon.fr/s?k=' + encodeURIComponent(p.house + ' ' + p.name) + '&tag=' + AMAZON_TAG;
 }
 

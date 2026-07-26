@@ -228,7 +228,7 @@ function selecteurHTML(){
 }
 
 // ---------- écriture ----------
-rmSync('dist', { recursive:true, force:true });
+try { rmSync('dist', { recursive:true, force:true }); } catch(e) { /* dossier absent ou verrouillé : sans importance */ }
 function write(path, content){
   const full = 'dist/' + path;
   mkdirSync(full.split('/').slice(0,-1).join('/'), { recursive:true });
