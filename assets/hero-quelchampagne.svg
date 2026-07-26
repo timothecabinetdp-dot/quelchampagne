@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Deux verres de champagne stylisés</title>
+  <desc id="desc">Illustration originale abstraite dans des tons ivoire, or et vert profond.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F7F3E9"/>
+      <stop offset="0.55" stop-color="#EDE5D2"/>
+      <stop offset="1" stop-color="#D8C69D"/>
+    </linearGradient>
+    <linearGradient id="wine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F4D98C"/>
+      <stop offset="1" stop-color="#C99A35"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#FFFDF8" stop-opacity=".92"/>
+      <stop offset="1" stop-color="#FFFDF8" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="24" stdDeviation="22" flood-color="#28382F" flood-opacity=".18"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" rx="42" fill="url(#background)"/>
+  <circle cx="260" cy="160" r="210" fill="url(#glow)"/>
+  <circle cx="980" cy="500" r="260" fill="#284035" opacity=".08"/>
+  <path d="M0 520C250 450 410 540 650 476c210-56 350-26 550 30v124H0Z" fill="#284035" opacity=".94"/>
+  <g fill="none" stroke="#FFFDF8" stroke-linecap="round" filter="url(#shadow)">
+    <path d="M410 124h224l-30 236c-7 55-45 88-82 88s-75-33-82-88Z" stroke-width="12" opacity=".95"/>
+    <path d="M522 448v100M458 552h128" stroke-width="12"/>
+    <path d="M636 162h194l-25 198c-6 45-39 73-72 73s-66-28-72-73Z" stroke-width="10" opacity=".82"/>
+    <path d="M733 433v100M680 537h106" stroke-width="10" opacity=".82"/>
+  </g>
+  <path d="M432 282h180l-10 78c-7 50-42 78-80 78s-73-28-80-78Z" fill="url(#wine)" opacity=".9"/>
+  <path d="M653 286h164l-9 74c-6 42-39 65-75 65s-68-23-74-65Z" fill="url(#wine)" opacity=".68"/>
+  <g fill="#FFFDF8">
+    <circle cx="484" cy="324" r="7"/><circle cx="502" cy="286" r="5"/><circle cx="514" cy="250" r="4"/>
+    <circle cx="551" cy="337" r="6"/><circle cx="568" cy="299" r="4"/><circle cx="575" cy="266" r="3"/>
+    <circle cx="710" cy="326" r="6"/><circle cx="721" cy="292" r="4"/><circle cx="750" cy="342" r="5"/>
+  </g>
+  <g fill="#284035">
+    <circle cx="255" cy="320" r="7" opacity=".55"/>
+    <circle cx="292" cy="284" r="4" opacity=".38"/>
+    <circle cx="921" cy="150" r="6" opacity=".45"/>
+    <circle cx="955" cy="188" r="4" opacity=".3"/>
+  </g>
+</svg>
