@@ -1,0 +1,20 @@
+{
+  "updatedAt": "2026-07-27",
+  "deploymentAuthorized": true,
+  "checks": {
+    "technicalValidation": true,
+    "responsiveVisualReview": true,
+    "publisherIdentityProvided": true,
+    "publicationDirectorProvided": true,
+    "professionalContactProvided": true,
+    "hostIdentityProvided": true,
+    "privacyPolicyFinalized": true,
+    "affiliateDisclosureFinalized": true,
+    "imageRightsRegisterComplete": true,
+    "merchantOffersActivated": true
+  },
+  "notes": {
+    "merchantOffersActivated": "Activation sélective : 6 cuvées à ASIN Amazon vérifié (feuillatte, moet, clicquot, bollinger, ruinart, laurentperrier). Index prix et relevés marchands restent verrouillés (research_only).",
+    "deploymentAuthorized": "Autorisé : identité éditeur Cortexia (SAS, SIREN 107124000, RCS Paris), hébergeur Netlify et confidentialité renseignés ; validations techniques OK."
+  }
+}

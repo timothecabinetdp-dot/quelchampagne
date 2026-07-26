@@ -4,18 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>QuelChampagne — Trouvez le champagne fait pour vous</title>
-<meta name="description" content="Le sélecteur de champagne qui vous oriente vers la cuvée juste en six questions, plus des guides pour bien choisir et servir.">
+<meta name="description" content="Le sélecteur indépendant qui vous oriente vers la cuvée juste en quatre questions, à partir de fiches vérifiées.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="QuelChampagne — Trouvez le champagne fait pour vous">
-<meta property="og:description" content="Six questions, une recommandation sur mesure, plus des guides pour choisir et servir le champagne.">
+<meta property="og:description" content="Quatre questions, une recommandation sur mesure et des fiches reliées à leurs sources.">
 <meta property="og:url" content="https://quelchampagne.fr">
-<meta property="og:image" content="https://images.unsplash.com/photo-1609421141185-8a4f37a5d063?auto=format&fit=crop&w=1200&q=72">
+<meta property="og:image" content="https://quelchampagne.fr/assets/og-quelchampagne.png">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#ffffff">
 <link rel="canonical" href="https://quelchampagne.fr">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M8.4 5H15.6L14.2 12.3A2.7 2.7 0 0 1 9.8 12.3Z' fill='%23F3E7C9' stroke='%239C7A34' stroke-width='1.2'/%3E%3Cline x1='12' y1='15' x2='12' y2='20.2' stroke='%239C7A34' stroke-width='1.3'/%3E%3Cline x1='9' y1='20.6' x2='15' y2='20.6' stroke='%239C7A34' stroke-width='1.3'/%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
   --bg:#FFFFFF; --bg2:#F5F5F7; --ink:#1D1D1F; --muted:#6E6E73; --faint:#86868B;
@@ -30,6 +29,9 @@ body{font-family:var(--sans); color:var(--ink); background:var(--bg); line-heigh
 a{color:inherit; text-decoration:none}
 button{font-family:inherit; cursor:pointer; border:none; background:none; color:inherit}
 img{max-width:100%; display:block}
+.skip-link{position:fixed; left:16px; top:10px; z-index:300; padding:10px 14px; border-radius:10px; background:var(--ink); color:#fff; transform:translateY(-150%); transition:transform .2s}
+.skip-link:focus{transform:none}
+:focus-visible{outline:3px solid #C99A1E; outline-offset:3px}
 .container{max-width:1000px; margin:0 auto; padding:0 26px}
 .narrow{max-width:700px; margin:0 auto; padding:0 26px}
 
@@ -65,6 +67,10 @@ h1{font-size:clamp(42px,7vw,80px); font-weight:600; line-height:1.04; letter-spa
 .hero-visual svg{height:100%; width:auto; margin:0 auto; display:block; filter:drop-shadow(0 40px 50px rgba(29,29,31,.22))}
 .hero-visual .pimg{width:100%; height:100%}
 .pimg{width:100%; height:100%; object-fit:cover; display:block}
+.trust-strip{display:grid; grid-template-columns:repeat(3,1fr); gap:1px; max-width:850px; margin:34px auto 0; overflow:hidden; border:1px solid var(--line); border-radius:20px; background:var(--line)}
+.trust-item{padding:18px; background:var(--bg); text-align:left}
+.trust-item strong{display:block; font-size:15px}
+.trust-item span{display:block; margin-top:4px; color:var(--muted); font-size:13px; line-height:1.4}
 
 .section{padding:clamp(64px,9vw,116px) 0}
 .section.gray{background:var(--bg2)}
@@ -130,6 +136,10 @@ h1{font-size:clamp(42px,7vw,80px); font-weight:600; line-height:1.04; letter-spa
 .rname{font-size:clamp(30px,4vw,46px); font-weight:600; letter-spacing:-.03em; line-height:1.03; margin-top:8px}
 .rsub{color:var(--faint); font-size:15px; margin-top:10px}
 .rnote{color:var(--muted); font-size:17px; line-height:1.5; margin-top:18px; max-width:46ch; font-weight:400; letter-spacing:-.01em}
+.why{margin-top:22px; padding:18px 20px; border-left:4px solid var(--accent); border-radius:0 14px 14px 0; background:var(--bg)}
+.why strong{font-size:14px; color:var(--accent-deep)}
+.why-list{margin:8px 0 0; padding-left:19px; color:var(--muted); font-size:14px}
+.why-list li+li{margin-top:5px}
 .rtags{display:flex; flex-wrap:wrap; gap:8px; margin-top:20px}
 .tag{font-size:13.5px; font-weight:400; color:var(--muted); background:var(--bg); padding:6px 14px; border-radius:999px}
 .rbuy{margin-top:28px; display:flex; align-items:center; gap:20px; flex-wrap:wrap}
@@ -173,9 +183,38 @@ h1{font-size:clamp(42px,7vw,80px); font-weight:600; line-height:1.04; letter-spa
 .article-cta h3{font-size:26px; font-weight:600; letter-spacing:-.025em}
 .article-cta p{color:var(--muted); margin:10px 0 22px; font-size:17px}
 
+/* ---------- Comparateur ---------- */
+.compare-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px}
+.compare-choice{border:1px solid var(--line); border-radius:18px; padding:18px; text-align:left; background:var(--bg); transition:.18s}
+.compare-choice:hover{border-color:var(--border); transform:translateY(-2px)}
+.compare-choice.on{border-color:var(--accent); background:#FBF8F1; box-shadow:0 0 0 2px rgba(156,122,52,.12)}
+.compare-choice strong{display:block; font-size:17px}
+.compare-choice span{display:block; color:var(--muted); font-size:13.5px; margin-top:4px}
+.compare-status{margin:22px 0; padding:16px 18px; border-radius:16px; background:var(--bg2); color:var(--muted)}
+.compare-tools{display:flex; gap:12px; align-items:center; flex-wrap:wrap; margin-top:24px}
+.compare-search{flex:1 1 280px; min-height:46px; border:1px solid var(--border); border-radius:999px; padding:0 18px; font:inherit; color:var(--ink); background:var(--bg)}
+.catalogue-tools{margin:0 0 30px; padding:22px; border:1px solid var(--border); border-radius:22px; background:var(--bg2)}
+.catalogue-search{width:100%; min-height:50px; border:1px solid var(--border); border-radius:14px; padding:0 16px; font:inherit; color:var(--ink); background:var(--bg)}
+.catalogue-filters{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; margin-top:12px}
+.catalogue-filter{display:grid; gap:6px; color:var(--muted); font-size:13px; font-weight:600}
+.catalogue-filter select{width:100%; min-height:44px; border:1px solid var(--border); border-radius:12px; padding:0 12px; color:var(--ink); background:var(--bg); font:inherit}
+.catalogue-summary{display:flex; justify-content:space-between; gap:16px; align-items:center; margin-top:16px; color:var(--muted); font-size:14px}
+.catalogue-empty{padding:36px; border:1px dashed var(--border); border-radius:18px; text-align:center; color:var(--muted)}
+[hidden]{display:none!important}
+.sr-only{position:absolute!important; width:1px!important; height:1px!important; padding:0!important; margin:-1px!important; overflow:hidden!important; clip:rect(0,0,0,0)!important; white-space:nowrap!important; border:0!important}
+.compare-wrap{overflow-x:auto; margin-top:24px}
+.compare-table{width:100%; border-collapse:separate; border-spacing:0; min-width:680px}
+.compare-table th,.compare-table td{padding:16px; border-bottom:1px solid var(--line); text-align:left; vertical-align:top}
+.compare-table th{font-size:13px; color:var(--faint); font-weight:600}
+.compare-table td:first-child{font-weight:600; color:var(--accent-deep); width:150px}
+.duel{display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-top:34px}
+.duel-col{background:var(--bg2); border-radius:24px; padding:30px}
+.duel-col h2{font-size:27px; line-height:1.1}
+.duel-verdict{margin-top:28px; border-left:4px solid var(--accent); padding:20px 24px; background:#FBF8F1; border-radius:0 16px 16px 0}
+
 /* ---------- Bande éditoriale (relief visuel) ---------- */
 .band{position:relative; margin:0; padding:clamp(72px,10vw,132px) 0; color:#F5ECD9; text-align:center; overflow:hidden}
-.band::before{content:""; position:absolute; inset:0; background:linear-gradient(180deg,rgba(20,18,12,.58),rgba(20,18,12,.72)), url('https://images.unsplash.com/photo-1546567075-d7113bee3c4a?auto=format&fit=crop&w=1600&q=70') center/cover no-repeat; z-index:0}
+.band::before{content:""; position:absolute; inset:0; background:radial-gradient(circle at 20% 15%,rgba(224,196,137,.22),transparent 30%),radial-gradient(circle at 82% 74%,rgba(156,122,52,.26),transparent 34%),linear-gradient(145deg,#211D15,#0F0E0B); z-index:0}
 .band>*{position:relative; z-index:1}
 .band .eyebrow-l{font-size:12.5px; font-weight:600; letter-spacing:.18em; text-transform:uppercase; color:#E0C489}
 .band h2{font-size:clamp(28px,4.2vw,46px); font-weight:600; letter-spacing:-.03em; line-height:1.1; margin-top:16px; max-width:18ch; margin-left:auto; margin-right:auto}
@@ -226,17 +265,21 @@ h1{font-size:clamp(42px,7vw,80px); font-weight:600; line-height:1.04; letter-spa
 .acc{background:var(--bg); border-radius:18px; padding:26px}
 .acc-t{font-size:19px; font-weight:600; letter-spacing:-.02em}
 .acc p{font-size:15px; color:var(--muted); line-height:1.55; margin-top:10px}
+.decision-grid{display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:30px}
+.decision{border-radius:18px; padding:26px; text-align:left; background:var(--bg)}
+.decision strong{display:block; font-size:17px; color:var(--accent-deep)}
+.decision p{margin-top:9px; color:var(--muted); font-size:15px; line-height:1.55}
 
 @media(max-width:860px){ .pgrid,.axes,.accs{grid-template-columns:1fr 1fr} .phero{grid-template-columns:1fr; justify-items:center; text-align:center} .phero-img{max-width:300px} .pbuy,.rtags{justify-content:center} }
-@media(max-width:560px){ .pgrid,.axes,.accs{grid-template-columns:1fr} }
+@media(max-width:560px){ .pgrid,.axes,.accs,.decision-grid{grid-template-columns:1fr} }
 
 footer{background:var(--bg2); padding:52px 0 46px}
 .foot-in{display:flex; justify-content:space-between; gap:28px; flex-wrap:wrap; align-items:flex-start}
 .foot-brand{font-size:18px; font-weight:600; letter-spacing:-.02em}
 .foot-brand p{font-size:14px; color:var(--faint); font-weight:400; margin-top:10px; max-width:36ch; line-height:1.5}
 .foot-links{display:flex; gap:32px; font-size:14px; color:var(--muted)}
-.foot-links a{cursor:pointer}
-.foot-links a:hover{color:var(--ink)}
+.foot-links a,.foot-links button{cursor:pointer; font:inherit; color:inherit}
+.foot-links a:hover,.foot-links button:hover{color:var(--ink)}
 .foot-health{margin-top:36px; padding-top:26px; border-top:1px solid var(--border); font-size:13.5px; font-weight:600; color:var(--ink)}
 .foot-disc{margin-top:12px; font-size:12.5px; color:var(--faint); line-height:1.6}
 
@@ -253,17 +296,27 @@ footer{background:var(--bg2); padding:52px 0 46px}
 @keyframes fade{from{opacity:0}to{opacity:1}}
 
 @media(max-width:840px){
-  .steps,.cards,.alts{grid-template-columns:1fr}
+  .steps,.cards,.alts,.compare-grid,.duel,.trust-strip{grid-template-columns:1fr}
   .rcard{grid-template-columns:1fr; justify-items:center; text-align:center}
   .rviz{max-width:240px}
   .rnote{max-width:none}
   .rtags,.rbuy{justify-content:center}
   .rmatch{position:static; margin-bottom:10px}
 }
-@media(max-width:560px){ .nav-links{gap:20px} }
+@media(max-width:700px){
+  .nav-in{height:auto; min-height:58px; align-items:flex-start; padding-top:12px; padding-bottom:10px}
+  .nav-links{max-width:68vw; gap:8px 16px; justify-content:flex-end; flex-wrap:wrap}
+  .nlink{font-size:13px}
+  .catalogue-filters{grid-template-columns:1fr 1fr}
+  .catalogue-summary{align-items:flex-start; flex-direction:column}
+}
+@media(max-width:500px){.catalogue-filters{grid-template-columns:1fr}}
+@media(max-width:420px){.logo-txt{display:none}.nav-links{max-width:82vw}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important; animation-iteration-count:1!important; transition-duration:.01ms!important}}
 </style>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Aller au contenu</a>
 <div id="app"></div>
 
 <script>
@@ -276,6 +329,7 @@ const state = { view:'home', step:0, answers:{}, animKey:0, article:null };
 /* ====================== CATALOGUE ====================== */
 let CATALOGUE = null;
 function products(){ return CATALOGUE || FALLBACK_PRODUCTS(); }
+function setCatalogue(data){ CATALOGUE = Array.isArray(data) ? data : null; }
 
 function FALLBACK_PRODUCTS(){
   return [
@@ -334,7 +388,7 @@ function FALLBACK_PRODUCTS(){
       occ:['occ_apero','occ_romantique','occ_diner'], profil:['profil_frais_vif','profil_fruite','profil_delicat'], bulles:'still', accords:['accord_aperitif','accord_mer','accord_volaille'],
       note:"La référence du rosé de Provence : pêche, agrume et pétale, pâle et sec. Fraîcheur d'été absolue.",
       pair:"apéritif, salades, poisson grillé", tags:['Rosé','Sec','Provence'] },
-  ];
+  ].filter(p=>['feuillatte','moet','clicquot','bollinger','ruinart','laurentperrier'].includes(p.id));
 }
 function prod(id){ return products().find(p=>p.id===id); }
 
@@ -350,9 +404,20 @@ const ASINS = {
   bouillot:'B00734VGCC', sancerre:'B0FNN9R58N', whisperingangel:'B0CX5S23XF',
 };
 function buyLink(p){
+  if(p.commerceReady !== true) return null;
   if(p.aff && /tag=|awin1\.com|\/dp\//.test(p.aff)) return p.aff; // vrai lien de flux si présent
   if(ASINS[p.id]) return 'https://www.amazon.fr/dp/' + ASINS[p.id] + '?tag=' + AMAZON_TAG;
   return 'https://www.amazon.fr/s?k=' + encodeURIComponent(p.house + ' ' + p.name) + '&tag=' + AMAZON_TAG;
+}
+function priceText(p){
+  if(p.priceMin && p.priceMax) return `${p.priceMin}–${p.priceMax} €`;
+  return p.price ? `${p.price} €` : 'Prix à vérifier';
+}
+function productAction(p, label='Voir la fiche officielle'){
+  const link = buyLink(p);
+  if(link) return `<a class="btn btn-accent" href="${link}" target="_blank" rel="sponsored noopener" onclick="track('${p.id}')">Voir l'offre</a>`;
+  if(p.sourceUrl) return `<a class="btn btn-ghost" href="${p.sourceUrl}" target="_blank" rel="noopener">${label}</a>`;
+  return '';
 }
 
 /* ====================== FICHES DÉTAILLÉES (inspiré des grands sites de champagne) ====================== */
@@ -413,7 +478,19 @@ const DETAILS = {
     accords:[{t:'Apéritif', d:"La star des apéritifs d'été, bien frais."},{t:'Salades', d:"Sur une salade estivale ou méditerranéenne."},{t:'Poisson grillé', d:"Idéal sur des grillades de poisson."}],
     maison:"Château d'Esclans a créé avec Whispering Angel le rosé de Provence le plus célèbre au monde, référence du genre pâle et sec." },
 };
-function detail(p){ return DETAILS[p.id] || null; }
+function detail(p){ return p.details || null; }
+
+function decisionGuide(p){
+  let avoid="vous recherchez un style très différent de son profil principal.";
+  if(p.profil.includes('profil_riche_ample')) avoid="vous cherchez avant tout une expression très légère et délicate.";
+  else if(p.profil.includes('profil_delicat')) avoid="vous préférez un champagne puissant et résolument vineux.";
+  else if(p.profil.includes('profil_frais_vif')) avoid="vous recherchez surtout la rondeur et la puissance.";
+  else if(p.profil.includes('profil_fruite')) avoid="vous préférez un registre austère et peu fruité.";
+  return {
+    choose:`vous cherchez une cuvée pour ${p.pair}, dans un registre ${p.tags.slice(0,2).join(' et ').toLowerCase()}.`,
+    avoid
+  };
+}
 
 /* ====================== QUESTIONS ====================== */
 function questions(){
@@ -426,39 +503,25 @@ function questions(){
         {e:'🎁', tags:['occ_cadeau'], l:"Un cadeau qui marque", d:"Faire plaisir, impressionner"},
         {e:'🌹', tags:['occ_romantique'], l:"Un tête-à-tête romantique", d:"À deux, tout en douceur"},
       ]},
-    { id:'gout', label:"02 · Le goût", q:"Vous aimez plutôt…", hint:"Décrivez le style qui vous fait envie.",
+    { id:'gout', label:"02 · Le style", q:"Vous aimez plutôt…", hint:"Décrivez le style qui vous fait envie.",
       opts:[
         {e:'🍋', tags:['profil_frais_vif'], l:"Frais et vif", d:"Agrumes, tension, minéralité"},
         {e:'🍑', tags:['profil_fruite'], l:"Fruité et gourmand", d:"Rond, facile, séduisant"},
         {e:'🥖', tags:['profil_riche_ample'], l:"Riche et vineux", d:"Corps, structure, longueur"},
         {e:'🌸', tags:['profil_delicat'], l:"Délicat et floral", d:"Finesse, élégance, dentelle"},
       ]},
-    { id:'bulles', label:"03 · L'effervescence", q:"Et côté bulles ?", hint:"De l'exubérance festive au calme d'un vin tranquille.",
-      opts:[
-        {e:'🍾', tags:['bulles_beaucoup'], l:"Franches et festives", d:"Ça pétille, ça claque"},
-        {e:'✨', tags:['bulles_fines'], l:"Fines et crémeuses", d:"Mousse soyeuse, élégante"},
-        {e:'🍷', tags:['still'], l:"Un vin tranquille", d:"Sans bulles, tout simplement"},
-        {e:'🤷', tags:['any'], l:"Peu importe", d:"Surprenez-moi"},
-      ]},
-    { id:'accord', label:"04 · L'accord", q:"Vous le servez avec…", hint:"On accorde la cuvée à votre table.",
-      opts:[
-        {e:'🫧', tags:['accord_aperitif'], l:"Rien, juste l'apéritif", d:"Pour trinquer"},
-        {e:'🦪', tags:['accord_mer'], l:"Fruits de mer & poissons", d:"Huîtres, sushi, poisson"},
-        {e:'🍗', tags:['accord_volaille'], l:"Volailles & viandes blanches", d:"Chapon, veau, blanc"},
-        {e:'🧀', tags:['accord_fromage'], l:"Des fromages", d:"Plateau, pâtes dures"},
-        {e:'🍮', tags:['accord_dessert'], l:"Un dessert", d:"Fruits rouges, pâtisserie"},
-      ]},
-    { id:'budget', label:"05 · Le budget", q:"Votre budget par bouteille ?", hint:"On reste dans votre fourchette, ou on vise le prestige.",
+    { id:'budget', label:"03 · Le budget", q:"Votre budget par bouteille ?", hint:"On respecte d'abord votre fourchette.",
       opts:[
         {e:'💶', tags:['b1'], l:"Moins de 30 €", d:"Le bon rapport plaisir-prix"},
         {e:'💶', tags:['b2'], l:"30 à 60 €", d:"Les grandes maisons"},
         {e:'💶', tags:['b3'], l:"60 à 100 €", d:"Cuvées d'exception"},
         {e:'👑', tags:['b4'], l:"Le meilleur, peu importe", d:"Prestige absolu"},
       ]},
-    { id:'expertise', label:"06 · Votre profil", q:"Vous diriez que vous êtes…", hint:"Pour ajuster nos suggestions à votre œil.",
+    { id:'maison', label:"04 · Le producteur", q:"Vous préférez…", hint:"Une signature connue ou une découverte plus confidentielle.",
       opts:[
-        {e:'🌱', tags:['novice'], l:"Novice, guidez-moi", d:"Des valeurs sûres, accessibles"},
-        {e:'🎓', tags:['connaisseur'], l:"Connaisseur", d:"Je cherche l'exception"},
+        {e:'🏛️', tags:['maison'], l:"Une grande maison", d:"Une signature reconnue"},
+        {e:'🌿', tags:['vigneron'], l:"Un champagne de vigneron", d:"Une découverte plus confidentielle"},
+        {e:'✨', tags:['any'], l:"Peu importe", d:"Le meilleur résultat pour mes critères"},
       ]},
   ];
 }
@@ -476,7 +539,7 @@ function articles(){
 <p>Trois grandes familles se dégagent : les champagnes <strong>frais et vifs</strong> (dominante chardonnay, agrumes et minéralité), les <strong>fruités et généreux</strong> (assemblages faciles, ronds), et les <strong>riches et vineux</strong> (pinot noir, corps et longueur, parfaits à table). Un blanc de blancs comme le <a href="#" onclick="return openAff('ruinart')">Ruinart Blanc de Blancs</a> illustre à merveille le premier style.</p>
 <h3>3. Fixez un budget, et respectez-le</h3>
 <p>On trouve d'excellents champagnes dès 25 à 30 €. Entre 30 et 60 €, les grandes maisons déroulent leurs cuvées emblématiques. Au-delà, on entre dans l'exception et le prestige. Le prix ne fait pas tout : à budget égal, le style compte davantage que l'étiquette.</p>
-<p>Pas envie de trancher seul ? Notre sélecteur pose six questions et vous oriente vers la cuvée juste, avec un lien direct vers la maison.</p>`,
+<p>Pas envie de trancher seul ? Notre sélecteur pose quatre questions et vous oriente vers la cuvée juste, avec un lien direct vers la maison.</p>`,
       related:['feuillatte','ruinart','clicquot'] },
     { id:'dosages', cat:'Décryptage', cover:'linear-gradient(135deg,#EAEDE7,#DFE4D8)', date:'Juillet 2026', read:'4 min',
       title:"Brut, Extra-Brut, Demi-Sec : comprendre les dosages",
@@ -514,12 +577,12 @@ function articles(){
       body:`<p>Un grand champagne ne coûte pas forcément une fortune. Voici trois valeurs sûres qui prouvent qu'on peut se faire plaisir sous la barre des 50 €.</p>
 <h3>Le passe-partout — Nicolas Feuillatte Réserve Exclusive</h3>
 <p>Vif, fruité, sans façon : c'est le champagne à toujours avoir au frais. Imbattable pour l'apéritif et les grandes tablées.</p>
-<div class="aff-inline"><div class="l">Notre sélection · lien partenaire</div><div class="n">Nicolas Feuillatte — Réserve Exclusive Brut</div><div class="row"><span style="color:var(--muted);font-size:15px">≈ 28 €</span><a class="btn btn-accent btn-sm" href="#" onclick="return openAff('feuillatte')">Voir sur Amazon ›</a></div></div>
+<div class="aff-inline"><div class="l">Notre sélection · fiche vérifiée</div><div class="n">Nicolas Feuillatte — Réserve Exclusive Brut</div><div class="row"><span style="color:var(--muted);font-size:15px">Budget indicatif : 26–35 €</span><a class="btn btn-ghost btn-sm" href="#" onclick="return openAff('feuillatte')">Voir la fiche officielle ›</a></div></div>
 <h3>L'icône — Moët & Chandon Impérial</h3>
 <p>L'étiquette que tout le monde reconnaît, et pour cause : générosité et régularité au rendez-vous.</p>
 <h3>Le caractère — Veuve Clicquot Yellow Label</h3>
 <p>Plus structuré, dominante pinot noir : celui qu'on sert quand on veut du corps et de la personnalité.</p>
-<div class="aff-inline"><div class="l">Notre sélection · lien partenaire</div><div class="n">Veuve Clicquot — Brut Yellow Label</div><div class="row"><span style="color:var(--muted);font-size:15px">≈ 48 €</span><a class="btn btn-accent btn-sm" href="#" onclick="return openAff('clicquot')">Voir sur Amazon ›</a></div></div>`,
+<div class="aff-inline"><div class="l">Notre sélection · fiche vérifiée</div><div class="n">Veuve Clicquot — Brut Carte Jaune</div><div class="row"><span style="color:var(--muted);font-size:15px">Budget indicatif : 42–58 €</span><a class="btn btn-ghost btn-sm" href="#" onclick="return openAff('clicquot')">Voir la fiche officielle ›</a></div></div>`,
       related:['feuillatte','moet','clicquot'] },
 
     { id:'mariage', cat:'Guide', cover:'linear-gradient(135deg,#F4EFE6,#EAE0CE)', date:'Juillet 2026', read:'6 min',
@@ -534,7 +597,7 @@ function articles(){
 <p>Sur de grandes quantités, un excellent brut entre 25 et 35 € par bouteille fait parfaitement le travail. Réservez une cuvée de prestige au seul moment du toast si vous voulez marquer le coup, plutôt que sur toute la soirée.</p>
 <h3>La touche rosé</h3>
 <p>Un champagne rosé comme la <a href="#" onclick="return openAff('laurentperrier')">Cuvée Rosé de Laurent-Perrier</a> apporte une note festive et photogénique, idéale pour un mariage.</p>
-<p>Pas sûr du style qui vous correspond ? Notre sélecteur vous oriente en six questions.</p>`,
+<p>Pas sûr du style qui vous correspond ? Notre sélecteur vous oriente en quatre questions.</p>`,
       related:['ruinart','clicquot','laurentperrier'] },
 
     { id:'cadeau', cat:'Guide', cover:'linear-gradient(135deg,#F1EDE4,#E7DECD)', date:'Juillet 2026', read:'5 min',
@@ -544,7 +607,7 @@ function articles(){
 <h3>Misez sur une étiquette reconnaissable</h3>
 <p>Pour un cadeau, la notoriété rassure. Une maison identifiable signale l'attention portée. Le <a href="#" onclick="return openAff('moet')">Moët Impérial</a> ou la Veuve Clicquot Yellow Label sont des valeurs sûres, immédiatement reconnues.</p>
 <h3>Adaptez au budget</h3>
-<p>Autour de 40 à 50 €, les grandes maisons offrent leurs cuvées emblématiques. Entre 60 et 90 €, on passe à des champagnes de caractère comme la <a href="#" onclick="return openAff('bollinger')">Special Cuvée de Bollinger</a>. Au-delà, pour un cadeau qui marque vraiment, un flacon de prestige comme le <a href="#" onclick="return openAff('domperignon')">Dom Pérignon</a> fait son effet.</p>
+<p>Autour de 40 à 50 €, les grandes maisons offrent leurs cuvées emblématiques. Entre 60 et 90 €, on passe à des champagnes de caractère comme la <a href="#" onclick="return openAff('bollinger')">Special Cuvée de Bollinger</a>. Au-delà, un millésime précis comme <a href="#" onclick="return openAff('dom-perignon-vintage-2015')">Dom Pérignon Vintage 2015</a> permet de choisir une sortie clairement identifiée.</p>
 <h3>Pensez au profil de la personne</h3>
 <p>Un amateur de fraîcheur appréciera un blanc de blancs ; quelqu'un qui aime les vins de caractère préférera une cuvée vineuse. En cas de doute, un rosé fait presque toujours mouche.</p>
 <h3>Le petit plus</h3>
@@ -610,25 +673,25 @@ function articles(){
 <p>Sur une bûche ou des fruits, un <strong>demi-sec</strong> ou un <strong>rosé fruité</strong> comme la <a href="#" onclick="return openAff('laurentperrier')">Cuvée Rosé de Laurent-Perrier</a> supporte le sucre et apporte une note festive pour trinquer à minuit.</p>
 <h3>Quel budget prévoir ?</h3>
 <p>Pas besoin de flamber sur toute la soirée : un bon brut pour l'apéritif, une cuvée de caractère pour le repas, et si vous voulez marquer le coup, réservez le prestige pour le toast de minuit.</p>
-<p>Vous recevez et hésitez ? Le sélecteur vous oriente en six questions.</p>`,
+<p>Vous recevez et hésitez ? Le sélecteur vous oriente en quatre questions.</p>`,
       related:['clicquot','bollinger','laurentperrier'] },
 
     { id:'moins-30', cat:'Sélection', cover:'linear-gradient(135deg,#EFEDE6,#E5E1D5)', date:'Juillet 2026', read:'4 min',
-      title:"Les meilleurs champagnes à moins de 30 €",
-      excerpt:"Se faire plaisir sans se ruiner : nos valeurs sûres sous la barre des 30 euros.",
-      body:`<p>Oui, on peut boire du bon champagne pour moins de 30 €. Le secret : viser les cuvées régulières des grandes maisons et les alternatives malignes, plutôt que l'étiquette la plus chère.</p>
-<h3>La valeur sûre — Nicolas Feuillatte Réserve Exclusive</h3>
-<p>Vif, fruité, facile à aimer : c'est le champagne à toujours avoir au frais, parfait pour l'apéritif et les grandes tablées.</p>
-<div class="aff-inline"><div class="l">Notre sélection · lien partenaire</div><div class="n">Nicolas Feuillatte — Réserve Exclusive Brut</div><div class="row"><span style="color:var(--muted);font-size:15px">≈ 28 €</span><a class="btn btn-accent btn-sm" href="#" onclick="return openAff('feuillatte')">Voir sur Amazon ›</a></div></div>
-<h3>L'alternative maligne — un crémant</h3>
-<p>Sous les 20 €, un bon crémant rivalise avec bien des champagnes. Le <a href="#" onclick="return openAff('bouillot')">Louis Bouillot Perle d'Aurore</a>, crémant rosé de Bourgogne, offre fraîcheur et gourmandise pour un tout petit prix.</p>
+      title:"Quel champagne choisir autour de 30 € ?",
+      excerpt:"Une méthode et une référence à surveiller dans une zone de prix particulièrement volatile.",
+      body:`<p>Autour de 30 €, les prix et les disponibilités changent vite. Cette sélection indique donc une zone de budget, jamais la promesse d'un prix permanent. Il faut contrôler le format, la cuvée exacte et l'offre au moment de l'achat.</p>
+<h3>La référence à surveiller — Nicolas Feuillatte Réserve Exclusive</h3>
+<p>Son profil frais et fruité en fait une option accessible pour l'apéritif et les grandes tablées lorsque son prix constaté correspond à votre budget.</p>
+<div class="aff-inline"><div class="l">Notre sélection · fiche vérifiée</div><div class="n">Nicolas Feuillatte — Réserve Exclusive Brut</div><div class="row"><span style="color:var(--muted);font-size:15px">Budget indicatif : 26–35 €</span><a class="btn btn-ghost btn-sm" href="#" onclick="return openAff('feuillatte')">Voir la fiche officielle ›</a></div></div>
+<h3>Sous les 20 € : prudence</h3>
+<p>À ce niveau de prix, les offres relevant réellement de l'appellation Champagne sont rares et très variables. Le site préfère ne pas afficher de recommandation tant qu'une bouteille précise, sa disponibilité et son prix n'ont pas été contrôlés.</p>
 <h3>Nos conseils pour trouver le bon</h3>
 <ul>
 <li>Guettez les promotions des grandes maisons, souvent autour des fêtes.</li>
 <li>Regardez du côté des vignerons indépendants, qui maîtrisent tout de la vigne à la bouteille.</li>
 <li>À prix égal, privilégiez le style que vous aimez plutôt que la notoriété de l'étiquette.</li>
 </ul>`,
-      related:['feuillatte','bouillot'] },
+      related:['feuillatte'] },
 
     { id:'aperitif', cat:'Guide', cover:'linear-gradient(135deg,#F2EFE7,#E8E1D0)', date:'Juillet 2026', read:'4 min',
       title:"Quel champagne pour un apéritif",
@@ -637,7 +700,7 @@ function articles(){
 <h3>Le bon style</h3>
 <p>Privilégiez un champagne <strong>frais et fruité</strong> : un brut d'assemblage ou un blanc de blancs, tout en tension et en agrumes. Le <a href="#" onclick="return openAff('feuillatte')">Nicolas Feuillatte Réserve Exclusive</a> ou le <a href="#" onclick="return openAff('moet')">Moët Impérial</a> font parfaitement le travail.</p>
 <h3>L'alternative maligne</h3>
-<p>Pour un apéritif décontracté, un bon crémant offre la même fraîcheur pour moins cher. Personne ne fera la différence, et votre budget vous remerciera.</p>
+<p>Un crémant peut constituer une alternative effervescente moins chère, avec un profil qui lui est propre. Il ne relève toutefois pas de l'appellation Champagne et reste volontairement exclu du sélecteur.</p>
 <h3>Avec quoi le servir ?</h3>
 <p>Sur des toasts, des gougères ou des fruits de mer, un blanc de blancs minéral comme le <a href="#" onclick="return openAff('ruinart')">Ruinart Blanc de Blancs</a> fait merveille. Évitez les bouchées trop sucrées ou vinaigrées qui cassent les bulles.</p>
 <h3>À quelle température ?</h3>
@@ -651,12 +714,12 @@ function articles(){
 <h3>Cap sur la minéralité</h3>
 <p>Pour les huîtres, on veut un champagne <strong>vif, tendu et minéral</strong> : un blanc de blancs 100 % chardonnay est l'accord roi. Sa fraîcheur saline prolonge l'iode sans l'écraser. Le <a href="#" onclick="return openAff('ruinart')">Ruinart Blanc de Blancs</a> est une référence.</p>
 <h3>Sec, voire très sec</h3>
-<p>Fuyez les champagnes trop dosés : sur l'iode, le sucre jure. Un brut, ou mieux un extra-brut, est idéal. La tension prime sur la rondeur.</p>
+<p>Un brut ou un extra-brut est souvent cohérent avec l'iode, car la fraîcheur garde l'accord net. Le dosage n'est cependant qu'un critère : la préparation, la sauce et le profil général de la cuvée comptent aussi.</p>
 <h3>Et pour les crustacés cuits ?</h3>
 <p>Sur un homard ou des langoustines plus riches, un champagne un peu plus corsé tient bien. Mais pour l'huître crue, restez sur la fraîcheur pure.</p>
-<h3>L'alternative en vin tranquille</h3>
-<p>Si vous préférez sans bulles, un blanc vif comme un <a href="#" onclick="return openAff('sancerre')">Sancerre</a> joue exactement la même partition minérale sur les fruits de mer.</p>`,
-      related:['ruinart','sancerre','moet'] },
+<h3>Une sélection strictement Champagne</h3>
+<p>Les alternatives hors Champagne sont volontairement séparées afin de ne jamais les présenter comme des champagnes dans le sélecteur.</p>`,
+      related:['ruinart','moet'] },
 
     { id:'anniversaire', cat:'Guide', cover:'linear-gradient(135deg,#F3ECE9,#E9DBD6)', date:'Juillet 2026', read:'5 min',
       title:"Quel champagne pour un anniversaire",
@@ -667,34 +730,34 @@ function articles(){
 <h3>Pour une touche festive et gourmande</h3>
 <p>Un champagne rosé apporte de la couleur et de la gaieté, parfait pour souffler les bougies. La <a href="#" onclick="return openAff('laurentperrier')">Cuvée Rosé de Laurent-Perrier</a> est fruitée et séduisante.</p>
 <h3>Pour un anniversaire qui compte</h3>
-<p>Pour un cap important (30, 40, 50 ans), on peut marquer le coup avec une cuvée de prestige comme le <a href="#" onclick="return openAff('domperignon')">Dom Pérignon</a>. L'étiquette fait partie du cadeau.</p>
+<p>Pour un cap important (30, 40, 50 ans), on peut marquer le coup avec une sortie précise comme <a href="#" onclick="return openAff('dom-perignon-vintage-2015')">Dom Pérignon Vintage 2015</a>. Le millésime fait partie du choix et doit toujours apparaître sur la fiche.</p>
 <h3>Combien de bouteilles ?</h3>
 <p>Comptez une bouteille pour 3 personnes à l'apéritif, davantage si le champagne accompagne le repas. Mieux vaut en avoir un peu trop.</p>`,
-      related:['clicquot','laurentperrier','domperignon'] },
+      related:['clicquot','laurentperrier','dom-perignon-vintage-2015'] },
 
     { id:'brut-nature', cat:'Décryptage', cover:'linear-gradient(135deg,#EDEFEA,#E2E6DC)', date:'Juillet 2026', read:'4 min',
       title:"Brut Nature : le champagne des puristes",
       excerpt:"Zéro sucre ajouté, tension pure : le style qui monte, décrypté.",
       body:`<p>Sur les cartes des bars à vins et les tables gastronomiques, une mention revient de plus en plus : « Brut Nature ». Aussi appelé « non dosé » ou « dosage zéro », c'est le champagne dans sa version la plus nue.</p>
 <h3>Qu'est-ce que le Brut Nature ?</h3>
-<p>Juste avant le bouchage, la plupart des champagnes reçoivent une « liqueur de dosage », un peu de sucre qui arrondit le vin. Le Brut Nature n'en reçoit pas, ou presque (moins de 3 g/L). Résultat : un champagne <strong>droit, tendu, minéral</strong>, sans aucune rondeur sucrée pour masquer quoi que ce soit.</p>
+<p>Juste avant le bouchage, la plupart des champagnes reçoivent une « liqueur de dosage ». La mention Brut Nature est réservée aux vins dont la teneur en sucre est inférieure à 3 g/L et auxquels aucun sucre n'a été ajouté après la prise de mousse. Le résultat peut paraître plus droit et tendu, selon la cuvée.</p>
 <h3>Pour qui ?</h3>
-<p>C'est le style des amateurs de fraîcheur et de vérité : rien ne se cache derrière le sucre, la qualité du raisin s'exprime crûment. Si vous aimez les vins vifs et salins, vous allez adorer.</p>
+<p>Ce style s'adresse surtout aux amateurs de vins peu dosés et de sensations vives. Il n'est pas automatiquement supérieur à un brut : l'équilibre dépend du vin, de son élevage et de l'accord recherché.</p>
 <h3>Avec quoi le boire ?</h3>
-<p>Parfait à l'apéritif et redoutable sur les huîtres et les fruits de mer, où sa tension prolonge l'iode. Un <a href="#" onclick="return openAff('ruinart')">blanc de blancs</a> non dosé est un sommet du genre.</p>`,
-      related:['ruinart','feuillatte'] },
+<p>À l'apéritif ou avec des fruits de mer, un champagne peu dosé peut prolonger la fraîcheur de l'accord. Pour une piste concrète proche de ce registre, consultez la fiche du <a href="#" onclick="return openAff('larmandier-bernier-latitude')">Latitude de Larmandier-Bernier</a>, présenté comme extra-brut et non comme Brut Nature.</p>`,
+      related:['larmandier-bernier-latitude'] },
 
     { id:'rose-saignee', cat:'Décryptage', cover:'linear-gradient(135deg,#F3E9E7,#E9D6D2)', date:'Juillet 2026', read:'4 min',
       title:"Rosé de saignée ou rosé d'assemblage ?",
       excerpt:"Deux méthodes, deux styles de champagne rosé. On vous explique.",
       body:`<p>Tous les champagnes rosés ne se ressemblent pas, et pour cause : il existe deux façons très différentes de les élaborer. Voici comment les distinguer, et laquelle choisir.</p>
 <h3>Le rosé d'assemblage</h3>
-<p>La méthode la plus courante en Champagne, et une exception dans le monde du vin : on ajoute un peu de <strong>vin rouge</strong> tranquille au vin blanc avant la prise de mousse. Le style est en général <strong>délicat, fruité, élégant</strong>. La <a href="#" onclick="return openAff('laurentperrier')">Cuvée Rosé de Laurent-Perrier</a> en est une référence.</p>
+<p>La méthode la plus courante en Champagne, et une exception dans le monde du vin : on ajoute du <strong>vin rouge</strong> tranquille à l'assemblage avant la prise de mousse. Le style dépend ensuite des raisins et de la vinification. Le <a href="#" onclick="return openAff('billecart-salmon-brut-rose')">Brut Rosé de Billecart-Salmon</a> en donne un exemple.</p>
 <h3>Le rosé de saignée</h3>
-<p>Ici, on laisse macérer les raisins noirs quelques heures pour que le jus se colore, puis on « saigne » la cuve. Le résultat est plus <strong>intense, vineux et structuré</strong>, avec une couleur plus soutenue. Plus rare, plus gastronomique.</p>
+<p>Ici, on laisse macérer les raisins noirs pour que le jus se colore avant de séparer le jus des peaux. La <a href="#" onclick="return openAff('laurentperrier')">Cuvée Rosé de Laurent-Perrier</a>, élaborée par macération, illustre cette famille. L'intensité finale dépend toutefois de chaque cuvée.</p>
 <h3>Lequel choisir ?</h3>
 <p>Pour l'apéritif ou un dessert aux fruits rouges, un rosé d'assemblage tout en finesse. Pour accompagner un plat, un rosé de saignée qui a du corps.</p>`,
-      related:['laurentperrier','bouillot'] },
+      related:['billecart-salmon-brut-rose','laurentperrier'] },
 
     { id:'vigneron', cat:'Décryptage', cover:'linear-gradient(135deg,#ECEEE7,#E1E5D8)', date:'Juillet 2026', read:'5 min',
       title:"Champagne de vigneron ou grande maison ?",
@@ -723,65 +786,46 @@ function articles(){
 <h3>4. Le petit code</h3>
 <p>Les lettres NM, RM, CM en bas indiquent qui a fait le champagne : grande maison (NM), vigneron (RM) ou coopérative (CM).</p>
 <h3>5. La provenance</h3>
-<p>Une mention de cru comme « Grand Cru » ou « Premier Cru » désigne des villages classés pour la qualité de leurs raisins. Un gage de sérieux, comme sur un <a href="#" onclick="return openAff('ruinart')">Ruinart</a>.</p>`,
+<p>Une mention comme « Grand Cru » ou « Premier Cru » renvoie au classement historique des villages d'origine des raisins. Elle renseigne la provenance, mais ne suffit pas à elle seule pour juger une cuvée.</p>`,
       related:['ruinart','clicquot'] },
   ];
 }
 function art(id){ return articles().find(a=>a.id===id); }
 
-/* Photos de couverture (Unsplash, libres de droits). Pour changer une image,
-   remplace simplement l'URL. Le dégradé de l'article sert de repli si l'image manque. */
-const COVER_P = '?auto=format&fit=crop&w=1000&q=70';
-const COVERS = {
-  'guide-2026':  'https://images.unsplash.com/photo-1580657274234-7339717f4541',
-  'dosages':     'https://images.unsplash.com/photo-1613477581402-306fa9dc6b95',
-  'accords':     'https://images.unsplash.com/photo-1628336707631-68131ca720c3',
-  'moins-50':    'https://images.unsplash.com/photo-1621866908556-4f0a830707c9',
-  'mariage':     'https://images.unsplash.com/photo-1546567075-d7113bee3c4a',
-  'cadeau':      'https://images.unsplash.com/photo-1580657264608-44775e61c0a1',
-  'quantite':    'https://images.unsplash.com/photo-1705944601076-ffa84903c6cb',
-  'blanc-blancs':'https://images.unsplash.com/photo-1597075759290-5c29a23c8a16',
-  'servir':      'https://images.unsplash.com/photo-1547595628-c61a29f496f0',
-  'noel':        'https://images.unsplash.com/photo-1609421141185-8a4f37a5d063',
-  'moins-30':    'https://images.unsplash.com/photo-1623073284793-84dc366d4798',
-  'aperitif':    'https://images.unsplash.com/photo-1588138678946-fae725e0b6e1',
-  'huitres':     'https://images.unsplash.com/photo-1578882422378-9ed72be08b5e',
-  'anniversaire':'https://images.unsplash.com/photo-1609421141185-8a4f37a5d063',
-  'brut-nature': 'https://images.unsplash.com/photo-1613477581402-306fa9dc6b95',
-  'rose-saignee':'https://images.unsplash.com/photo-1580657264608-44775e61c0a1',
-  'vigneron':    'https://images.unsplash.com/photo-1623073284793-84dc366d4798',
-  'etiquette':   'https://images.unsplash.com/photo-1597075759290-5c29a23c8a16',
-};
 function coverBg(a){
-  const u = COVERS[a.id];
-  return u ? `url('${u}${COVER_P}') center/cover no-repeat, ${a.cover}` : a.cover;
+  return a.cover;
 }
 
 /* ====================== SCORING ====================== */
-function tierOfBudget(b){ return b==='b1'?1:b==='b2'?2:b==='b3'?3:4; }
+function budgetFitScore(p, budget){
+  const min=Number.isFinite(p.priceMin) ? p.priceMin : p.price;
+  const max=Number.isFinite(p.priceMax) ? p.priceMax : p.price;
+  if(budget==='b4') return p.tier>=4 ? 40 : p.tier===3 ? 30 : p.tier===2 ? 15 : 5;
+  const ranges={b1:[0,30],b2:[30,60],b3:[60,100]};
+  const range=ranges[budget]||ranges.b2, lower=range[0], upper=range[1];
+  const overlaps=max>=lower && min<=upper;
+  if(overlaps) return min>=lower && max<=upper ? 40 : 34;
+  if(min>upper){
+    const over=min-upper;
+    return over<=5 ? 24 : over<=15 ? 10 : 0;
+  }
+  const under=lower-max;
+  return under<=10 ? 24 : under<=25 ? 10 : 0;
+}
 function score(p, a){
-  let s=0;
-  const occ=a.occasion||[], gout=a.gout||[], acc=a.accord||[];
-  const bul=(a.bulles||[])[0], bud=(a.budget||[])[0], exp=(a.expertise||[])[0];
-  if(occ.some(t=>p.occ.includes(t))) s+=3;
-  if(gout.some(t=>p.profil.includes(t))) s+=3;
-  if(acc.some(t=>p.accords.includes(t))) s+=3;
-  const st=p.bulles==='still';
-  if(bul==='still') s+= st?5:-6;
-  else if(bul==='any') s+= st?-1:1;
-  else { if(st) s+=-4; else if(p.bulles===bul) s+=3; else s+=0.5; }
-  if(bud==='b4') s+=p.tier*0.9;
-  else { const tg=tierOfBudget(bud), ec=Math.abs(p.tier-tg);
-    if(p.tier===tg) s+=4; else if(p.tier<tg) s+=2-0.5*ec; else s+=-3.5*ec; }
-  if(exp==='novice'&&p.tier<=2) s+=1;
-  if(exp==='connaisseur'&&p.tier>=3) s+=1;
-  return s;
+  const occ=(a.occasion||[])[0], gout=(a.gout||[])[0], bud=(a.budget||[])[0], pref=(a.maison||[])[0];
+  const budgetScore = budgetFitScore(p, bud);
+  const styleScore = p.profil.includes(gout) ? 25 : 6;
+  const occasionScore = p.occ.includes(occ) ? 20 : 5;
+  const availabilityScore = p.editorialReady ? 10 : 0;
+  const popularityScore = Math.max(0, Math.min(5, ((p.popularity||70)/100)*5));
+  const producerPenalty = pref && pref!=='any' && p.producerType!==pref ? 30 : 0;
+  return budgetScore + styleScore + occasionScore + availabilityScore + popularityScore - producerPenalty;
 }
 function ranked(){
   const sc=products().map(p=>({p,s:score(p,state.answers)}));
-  const mx=Math.max(...sc.map(x=>x.s),1);
-  sc.sort((a,b)=>b.s-a.s);
-  return sc.map(x=>({...x, pct:Math.max(58,Math.min(99,Math.round(70+(x.s/mx)*29)))}));
+  sc.sort((a,b)=>b.s-a.s || (b.p.popularity||0)-(a.p.popularity||0) || a.p.id.localeCompare(b.p.id,'fr'));
+  return sc.map(x=>({...x, pct:Math.max(0,Math.min(99,Math.round(x.s)))}));
 }
 
 /* ====================== BOUTEILLE SVG ====================== */
@@ -809,21 +853,10 @@ function bottleSVG(p, mode){
     ${cap}${label}
   </svg>`;
 }
-/* Photos d'ambiance (Unsplash, libres de droits) par cuvée. Remplacées par les
-   vraies photos produit quand le flux / l'API Amazon seront branchés (champ image). */
-const PHOTOS = {
-  feuillatte:    'https://images.unsplash.com/photo-1580657274234-7339717f4541',
-  moet:          'https://images.unsplash.com/photo-1613477581402-306fa9dc6b95',
-  clicquot:      'https://images.unsplash.com/photo-1608416026650-66b4e0c0c301',
-  bollinger:     'https://images.unsplash.com/photo-1643618829236-a23857519fb6',
-  ruinart:       'https://images.unsplash.com/photo-1602853414980-cb59d9820d45',
-  laurentperrier:'https://images.unsplash.com/photo-1587920710219-f6f9804dc10d',
-  perrierjouet:  'https://images.unsplash.com/photo-1581775120934-9851ea6cf3e4',
-  domperignon:   'https://images.unsplash.com/photo-1565461863445-bc2ae630fc53',
-  bouillot:      'https://images.unsplash.com/photo-1610218588433-227ebd3e8fea',
-  sancerre:      'https://images.unsplash.com/photo-1705944601076-ffa84903c6cb',
-  whisperingangel:'https://images.unsplash.com/photo-1569153482031-a3cebdedf294',
-};
+/* Aucune photographie distante n'est publiée sans registre de droits.
+   Le catalogue utilise les bouteilles SVG originales tant qu'une image validée
+   n'est pas associée explicitement à une fiche. */
+const PHOTOS = {};
 function photoSrc(u, w){ return u.includes('?') ? u : u + '?auto=format&fit=crop&w=' + (w||600) + '&q=72'; }
 function bottleViz(p, mode){
   const img = p.image || PHOTOS[p.id];
@@ -847,28 +880,32 @@ function logoMark(){
 function nav(){
   const on = v => state.view===v ? 'on' : '';
   return `
-  <div class="nav"><div class="container nav-in">
-    <div class="logo" onclick="go('home')">${logoMark()}<span class="logo-txt">Quel<b>Champagne</b></span></div>
-    <div class="nav-links">
-      <a class="nlink ${on('quiz')}" onclick="startQuiz()">Le sélecteur</a>
-      <a class="nlink ${state.view==='shop'||state.view==='product'?'on':''}" onclick="go('shop')">La sélection</a>
-      <a class="nlink ${state.view==='blog'||state.view==='article'?'on':''}" onclick="go('blog')">Blog</a>
-    </div>
-  </div></div>`;
+  <header class="nav"><div class="container nav-in">
+    <a class="logo" href="/" aria-label="Retour à l’accueil">${logoMark()}<span class="logo-txt">Quel<b>Champagne</b></span></a>
+    <nav class="nav-links" aria-label="Navigation principale">
+      <button class="nlink ${on('quiz')}" onclick="startQuiz()">Le sélecteur</button>
+      <a class="nlink ${state.view==='shop'||state.view==='product'?'on':''}" href="/champagnes/">La sélection</a>
+      <a class="nlink" href="/comparateur/">Comparer</a>
+      <a class="nlink ${state.view==='blog'||state.view==='article'?'on':''}" href="/blog/">Blog</a>
+    </nav>
+  </div></header>`;
 }
 function foot(){
   return `
   <footer><div class="container">
     <div class="foot-in">
-      <div class="foot-brand"><span class="foot-brand-name">${logoMark()}${BRAND}</span><p>Le sélecteur de champagne qui vous oriente vers la cuvée juste, en six questions.</p></div>
-      <div class="foot-links">
-        <a onclick="startQuiz()">Le sélecteur</a>
-        <a onclick="go('blog')">Blog</a>
-        <a onclick="go('home')">Accueil</a>
-      </div>
+      <div class="foot-brand"><span class="foot-brand-name">${logoMark()}${BRAND}</span><p>Le sélecteur indépendant qui vous oriente vers la cuvée juste, en quatre questions.</p></div>
+      <nav class="foot-links" aria-label="Navigation secondaire">
+        <button onclick="startQuiz()">Le sélecteur</button>
+        <a href="/comparateur/">Comparer</a>
+        <a href="/notre-methode/">Notre méthode</a>
+        <a href="/a-propos/">À propos</a>
+        <a href="/mentions-legales/">Mentions légales</a>
+        <a href="/confidentialite/">Confidentialité</a>
+      </nav>
     </div>
     <div class="foot-health">L'abus d'alcool est dangereux pour la santé. À consommer avec modération.</div>
-    <div class="foot-disc">Site réservé aux personnes majeures. ${BRAND} présente une sélection éditoriale indépendante à visée informative. En tant que Partenaire Amazon, ${BRAND} réalise un bénéfice sur les achats remplissant les conditions requises, sans surcoût pour vous. Prix indicatifs.</div>
+    <div class="foot-disc">Site réservé aux personnes majeures. ${BRAND} présente une sélection éditoriale indépendante à visée informative. Les liens partenaires ne sont affichés qu'après contrôle du produit, du prix et de la disponibilité. Les fourchettes non marchandes restent indicatives.</div>
   </div></footer>`;
 }
 
@@ -878,45 +915,50 @@ function renderHome(){
   const maisons = ['Dom Pérignon','Ruinart','Bollinger','Veuve Clicquot','Moët & Chandon','Laurent-Perrier','Perrier-Jouët','Nicolas Feuillatte'].map(m=>`<span class="maison-name">${m}</span>`).join('');
   const sel = products().slice(0,3).map(productCard).join('');
   app.innerHTML = nav() + `
-  <section class="hero"><div class="container">
+  <main id="main-content"><section class="hero"><div class="container">
     <h1>Le champagne<br>fait pour vous.</h1>
-    <p class="lead">Six questions suffisent. Nous trouvons la cuvée juste.</p>
+    <p class="lead">Quatre questions suffisent. Nous trouvons la cuvée juste.</p>
     <div class="hero-cta">
-      <button class="btn btn-primary" onclick="startQuiz()">Commencer</button>
-      <a class="chev" onclick="go('blog')">Découvrir le blog</a>
+      <button class="btn btn-primary" onclick="startQuiz()">Trouver mon champagne</button>
+      <a class="chev" href="/notre-methode/">Comprendre notre méthode</a>
     </div>
-    <div class="hero-visual"><img class="pimg" src="https://images.unsplash.com/photo-1609421141185-8a4f37a5d063?auto=format&fit=crop&w=1200&q=72" alt="Deux coupes de champagne" loading="eager"></div>
+    <div class="hero-visual"><img class="pimg" src="/assets/hero-quelchampagne.svg" alt="Deux verres de champagne stylisés" loading="eager" width="1200" height="630"></div>
+    <div class="trust-strip">
+      <div class="trust-item"><strong>${products().length} fiches vérifiées</strong><span>Chaque fait produit renvoie vers une source officielle.</span></div>
+      <div class="trust-item"><strong>Classement indépendant</strong><span>Aucune maison ne paie pour remonter dans le sélecteur.</span></div>
+      <div class="trust-item"><strong>Prix séparés des fiches</strong><span>Une offre n’apparaît qu’après contrôle du format et du stock.</span></div>
+    </div>
   </div></section>
 
   <section class="section gray"><div class="container">
     <div class="sec-head"><div class="h2">Comment ça marche</div><p>Trois étapes, une petite minute.</p></div>
     <div class="steps">
-      <div class="step"><div class="n">01</div><h3>Répondez</h3><p>Six questions sur l'occasion, le goût, les bulles, l'accord et le budget.</p></div>
+      <div class="step"><div class="n">01</div><h3>Répondez</h3><p>Quatre questions sur l'occasion, le style, le budget et le type de producteur.</p></div>
       <div class="step"><div class="n">02</div><h3>Recevez</h3><p>Notre moteur classe le catalogue et fait remonter votre coup de cœur, plus trois alternatives.</p></div>
-      <div class="step"><div class="n">03</div><h3>Découvrez</h3><p>Un clic vous mène directement sur le site de la maison pour commander.</p></div>
+      <div class="step"><div class="n">03</div><h3>Comprenez</h3><p>Le résultat explique les critères retenus et ouvre une fiche reliée à sa source officielle.</p></div>
     </div>
   </div></section>
 
   <section class="band"><div class="container">
-    <div class="eyebrow-l">Six questions, soixante secondes</div>
+    <div class="eyebrow-l">Quatre questions, soixante secondes</div>
     <h2>Le bon champagne ne se devine pas. Il se trouve.</h2>
     <p>Occasion, goût, budget : notre sélecteur fait le tri pour vous, parmi les grandes maisons et les pépites confidentielles.</p>
     <button class="btn btn-accent" onclick="startQuiz()">Lancer le sélecteur</button>
   </div></section>
 
   <section class="section"><div class="container">
-    <div class="sec-head"><div class="h2">La sélection</div><p>Onze cuvées passées au crible, chacune avec sa fiche détaillée et son lien d'achat.</p></div>
+    <div class="sec-head"><div class="h2">La sélection</div><p>${products().length} cuvées vérifiées, chacune reliée à sa source officielle.</p></div>
     <div class="pgrid">${sel}</div>
-    <div class="center-cta"><a class="chev" onclick="go('shop')">Voir toute la sélection</a></div>
+    <div class="center-cta"><a class="chev" href="/champagnes/">Voir toute la sélection</a></div>
     <div class="maisons" style="margin-top:clamp(40px,5vw,60px)">${maisons}</div>
   </div></section>
 
   <section class="section gray"><div class="container">
     <div class="sec-head"><div class="h2">Nos conseils</div><p>Guides, décryptages et sélections pour choisir sans fausse note.</p></div>
     <div class="cards">${arts}</div>
-    <div class="center-cta"><a class="chev" onclick="go('blog')">Voir tous les articles</a></div>
+    <div class="center-cta"><a class="chev" href="/blog/">Voir tous les articles</a></div>
   </div></section>
-  ` + foot();
+  </main>` + foot();
 }
 
 function renderQuiz(){
@@ -925,13 +967,13 @@ function renderQuiz(){
   app.innerHTML = nav() + `
   <section class="quiz"><div class="narrow">
     <div class="qbar">
-      <button class="qback" onclick="qBack()">←</button>
-      <div class="qprog"><i style="width:${pct}%"></i></div>
+      <button class="qback" onclick="qBack()" aria-label="Question précédente">←</button>
+      <div class="qprog" role="progressbar" aria-valuemin="1" aria-valuemax="${qs.length}" aria-valuenow="${state.step+1}"><i style="width:${pct}%"></i></div>
       <div class="qnum">${state.step+1} / ${qs.length}</div>
     </div>
     <div class="qblock" key="${state.animKey}">
       <div class="qlabel">${q.label}</div>
-      <div class="qtitle">${q.q}</div>
+      <h1 class="qtitle">${q.q}</h1>
       <div class="qhint">${q.hint}</div>
       <div class="qopts">${opts}</div>
     </div>
@@ -944,20 +986,33 @@ function summary(){
   return m[occ]||"D'après vos réponses, voici la cuvée faite pour vous.";
 }
 
+function matchReasons(p){
+  const reasons=[];
+  const a=state.answers;
+  if((a.occasion||[]).some(tag=>p.occ.includes(tag))) reasons.push("Cette cuvée correspond à l’occasion choisie.");
+  if((a.gout||[]).some(tag=>p.profil.includes(tag))) reasons.push("Son profil rejoint le style que vous recherchez.");
+  const budget=(a.budget||[])[0];
+  if(budget && budgetFitScore(p,budget)>=34) reasons.push("Sa fourchette éditoriale correspond à votre budget.");
+  const producer=(a.maison||[])[0];
+  if(producer && producer===p.producerType) reasons.push(`Elle correspond à votre préférence pour ${producer==='vigneron'?'un champagne de vigneron':'une grande maison'}.`);
+  return reasons.slice(0,3);
+}
+
 function renderResult(){
   const r=ranked(), top=r[0], tp=top.p, alts=r.slice(1,4);
   const pills=tp.tags.map(t=>`<span class="tag">${t}</span>`).join('');
+  const reasons=matchReasons(tp).map(reason=>`<li>${reason}</li>`).join('');
   const altc=alts.map(a=>{const p=a.p;return `
     <div class="alt">
       <div class="alt-top">
         <div class="mini">${bottleViz(p,'mini')}<span class="mm">${a.pct}%</span></div>
         <div><div class="an">${p.short}</div><div class="ah">${p.house} · ${p.region}</div></div>
       </div>
-      <div class="alt-foot"><div class="alt-price">${p.price} €</div><a class="btn btn-ghost btn-sm" href="${buyLink(p)}" target="_blank" rel="sponsored noopener" onclick="track('${p.id}')">Amazon ›</a></div>
+        <div class="alt-foot"><div class="alt-price">${priceText(p)}</div><a class="chev" href="/champagne/${p.id}/">Voir la fiche</a></div>
     </div>`;}).join('');
   app.innerHTML = nav() + `
   <section class="result"><div class="container">
-    <div class="res-head"><h2>Votre champagne</h2><p>${summary()}</p></div>
+    <div class="res-head"><h1>Votre champagne</h1><p>${summary()}</p></div>
     <div class="rcard">
       <div class="rviz"><span class="rmatch">${top.pct}% de correspondance</span>${bottleViz(tp,'big')}</div>
       <div class="rbody">
@@ -965,13 +1020,14 @@ function renderResult(){
         <div class="rname">${tp.name}</div>
         <div class="rsub">${tp.region} · À servir avec ${tp.pair}</div>
         <p class="rnote">${tp.note}</p>
+        <div class="why"><strong>Pourquoi cette recommandation</strong><ul class="why-list">${reasons}</ul></div>
         <div class="rtags">${pills}</div>
         <div class="rbuy">
-          <div class="rprice">${tp.price} €</div>
-          <a class="btn btn-accent" href="${buyLink(tp)}" target="_blank" rel="sponsored noopener" onclick="track('${tp.id}')">Voir sur Amazon</a>
+          <div class="rprice">${priceText(tp)}</div>
+          ${productAction(tp)}
         </div>
-        <div class="aff-note">Lien Amazon partenaire · En tant que Partenaire Amazon, ${BRAND} réalise un bénéfice sur les achats remplissant les conditions requises, sans surcoût pour vous.</div>
-        <a class="chev" onclick="openProduct('${tp.id}')" style="margin-top:16px; display:inline-flex">Voir la fiche détaillée</a>
+        <div class="aff-note">${tp.commerceReady ? `Lien partenaire · Prix et disponibilité contrôlés.` : `Fourchette éditoriale indicative · offre marchande en cours de vérification.`}</div>
+        <a class="chev" href="/champagne/${tp.id}/" style="margin-top:16px; display:inline-flex">Voir la fiche détaillée</a>
       </div>
     </div>
     <div class="alts-head">Vous aimerez aussi</div>
@@ -982,27 +1038,27 @@ function renderResult(){
 
 function articleCard(a){
   if(a.soon) return `<div class="acard soon"><div class="acard-cover" style="background:${coverBg(a)}"><span class="acard-cat">${a.cat}</span></div><div class="acard-b"><h3>${a.title}</h3><p>${a.excerpt}</p><div class="acard-meta"><span class="soon-badge">Bientôt disponible</span></div></div></div>`;
-  return `<div class="acard" onclick="openArticle('${a.id}')"><div class="acard-cover" style="background:${coverBg(a)}"><span class="acard-cat">${a.cat}</span></div><div class="acard-b"><h3>${a.title}</h3><p>${a.excerpt}</p><div class="acard-meta">${a.date} · ${a.read} de lecture</div></div></div>`;
+  return `<a class="acard" href="/blog/${a.id}/"><div class="acard-cover" style="background:${coverBg(a)}"><span class="acard-cat">${a.cat}</span></div><div class="acard-b"><h3>${a.title}</h3><p>${a.excerpt}</p><div class="acard-meta">${a.date} · ${a.read} de lecture</div></div></a>`;
 }
 
 function productCard(p){
   const d = detail(p) || {};
-  return `<div class="pcard" onclick="openProduct('${p.id}')">
-    <div class="pcard-img">${bottleViz(p,'card')}${d.score?`<span class="pscore">${d.score}<small>/100</small></span>`:''}</div>
+  return `<a class="pcard" href="/champagne/${p.id}/">
+    <div class="pcard-img">${bottleViz(p,'card')}</div>
     <div class="pcard-b">
       <div class="pcard-house">${p.house}</div>
       <div class="pcard-name">${p.short}</div>
       <div class="pcard-note">${p.note}</div>
-      <div class="pcard-foot"><span class="pcard-price">${p.price} €</span><span class="chev">Découvrir</span></div>
+      <div class="pcard-foot"><span class="pcard-price">${priceText(p)}</span><span class="chev">Découvrir</span></div>
     </div>
-  </div>`;
+  </a>`;
 }
 
 function renderShop(){
   const cards = products().map(productCard).join('');
   app.innerHTML = nav() + `
   <section class="section-lead"><div class="container">
-    <div class="lead-head"><div class="h2">La sélection</div><p>Onze cuvées passées au crible, des grandes maisons aux pépites confidentielles. Cliquez sur une bouteille pour sa fiche complète et son lien d'achat.</p></div>
+    <div class="lead-head"><h1 class="h2">La sélection</h1><p>${products().length} champagnes éditorialement prêts, des grandes maisons aux vignerons. Les offres marchandes restent masquées jusqu'à leur contrôle.</p></div>
   </div></section>
   <section class="section" style="padding-top:0"><div class="container">
     <div class="pgrid">${cards}</div>
@@ -1012,6 +1068,7 @@ function renderShop(){
 function renderProduct(){
   const p = prod(state.product); if(!p){ go('shop'); return; }
   const d = detail(p) || {};
+  const guide = decisionGuide(p);
   const axes = d.profil ? [['Fraîcheur',d.profil.fraicheur],['Rondeur',d.profil.rondeur],['Puissance',d.profil.puissance],['Longueur',d.profil.longueur]]
     .map(([t,x])=>`<div class="axe"><div class="axe-t">${t}</div><p>${x}</p></div>`).join('') : '';
   const accords = d.accords ? d.accords.map(a=>`<div class="acc"><div class="acc-t">${a.t}</div><p>${a.d}</p></div>`).join('') : '';
@@ -1019,26 +1076,30 @@ function renderProduct(){
   const others = products().filter(x=>x.id!==p.id).sort(()=>Math.random()-0.5).slice(0,3).map(productCard).join('');
   app.innerHTML = nav() + `
   <section class="product"><div class="container">
-    <a class="a-back" onclick="go('shop')">‹ La sélection</a>
+    <a class="a-back" href="/champagnes/">‹ La sélection</a>
     <div class="phero">
-      <div class="phero-img">${d.score?`<span class="pscore big">${d.score}<small>/100</small></span>`:''}${bottleViz(p,'big')}</div>
+      <div class="phero-img">${bottleViz(p,'big')}</div>
       <div class="phero-b">
         <div class="rmaison">${p.house}</div>
         <h1 class="phero-name">${p.name}</h1>
         <div class="rsub">${p.region} · À servir avec ${p.pair}</div>
-        <p class="phero-note">${d.dego || p.note}</p>
+        <p class="phero-note">${d.advice || p.note}</p>
         <div class="rtags">${tags}</div>
         <div class="pbuy">
-          <div class="rprice">${p.price} €</div>
-          <a class="btn btn-accent" href="${buyLink(p)}" target="_blank" rel="sponsored noopener" onclick="track('${p.id}')">Voir sur Amazon</a>
+          <div class="rprice">${priceText(p)}</div>
+          ${productAction(p)}
         </div>
-        <div class="aff-note">Lien Amazon partenaire · En tant que Partenaire Amazon, ${BRAND} réalise un bénéfice sur les achats remplissant les conditions requises, sans surcoût pour vous.</div>
+        <div class="aff-note">${p.commerceReady ? `Lien partenaire · Prix et disponibilité contrôlés.` : `Fourchette éditoriale indicative · offre marchande en cours de vérification.`}</div>
       </div>
     </div>
 
     ${d.profil?`<div class="pblock"><div class="pblock-eyebrow">Profil aromatique</div><h2 class="pblock-h">La structure de ce champagne</h2><div class="axes">${axes}</div></div>`:''}
 
-    ${d.dego?`<div class="pblock alt"><div class="pblock-eyebrow">La dégustation</div><h2 class="pblock-h">Dans le verre</h2><p class="pblock-p">${d.dego}</p></div>`:''}
+    ${(d.advice||d.dego)?`<div class="pblock alt"><div class="pblock-eyebrow">Notre conseil</div><h2 class="pblock-h">Pourquoi la choisir</h2><p class="pblock-p">${d.advice||d.dego}</p></div>`:''}
+
+    <div class="pblock alt"><div class="pblock-eyebrow">Décision rapide</div><h2 class="pblock-h">Est-ce la bonne cuvée pour vous ?</h2><div class="decision-grid"><div class="decision"><strong>À choisir si…</strong><p>${guide.choose}</p></div><div class="decision"><strong>À éviter si…</strong><p>${guide.avoid}</p></div></div></div>
+
+    ${d.facts?`<div class="pblock"><div class="pblock-eyebrow">Fait vérifié</div><h2 class="pblock-h">Ce qu'il faut retenir</h2><p class="pblock-p">${d.facts}</p><p class="aff-note" style="text-align:center">Source contrôlée le ${p.verifiedAt||'—'}.</p></div>`:''}
 
     ${d.dosage?`<div class="pblock"><div class="pblock-eyebrow">Assemblage & terroir</div><h2 class="pblock-h">La composition</h2>
       <div class="compo">
@@ -1059,7 +1120,7 @@ function renderBlog(){
   const cards=articles().map(articleCard).join('');
   app.innerHTML = nav() + `
   <section class="blogpage"><div class="container">
-    <div class="sec-head" style="text-align:left;margin-left:0"><div class="h2">Le journal</div><p>Guides pratiques, décryptages et sélections pour profiter du champagne sans fausse note.</p></div>
+    <div class="sec-head" style="text-align:left;margin-left:0"><h1 class="h2">Le journal</h1><p>Guides pratiques, décryptages et sélections pour profiter du champagne sans fausse note.</p></div>
     <div class="cards">${cards}</div>
   </div></section>` + foot();
 }
@@ -1070,14 +1131,14 @@ function renderArticle(){
   const relBlock = rel.length ? `
     <div class="article-cta">
       <h3>La cuvée du moment</h3>
-      <p>${rel[0].house} — ${rel[0].name}, ${rel[0].price} €</p>
-      <a class="btn btn-accent" href="${buyLink(rel[0])}" target="_blank" rel="sponsored noopener" onclick="track('${rel[0].id}')">Voir sur Amazon</a>
+      <p>${rel[0].house} — ${rel[0].name}, ${priceText(rel[0])}</p>
+      ${productAction(rel[0])}
     </div>` : '';
   app.innerHTML = nav() + `
   <section class="article"><div class="narrow">
-    <a class="a-back" onclick="go('blog')">‹ Retour au blog</a>
+    <a class="a-back" href="/blog/">‹ Retour au blog</a>
     <div class="a-cat">${a.cat}</div>
-    <div class="a-title">${a.title}</div>
+    <h1 class="a-title">${a.title}</h1>
     <div class="a-meta">${a.date} · ${a.read} de lecture</div>
     <div class="a-cover" style="background:${coverBg(a)}"></div>
     <div class="prose">${a.body}</div>
@@ -1089,6 +1150,8 @@ function renderArticle(){
 /* ====================== ACTIONS ====================== */
 function render(){
   ({home:renderHome, quiz:renderQuiz, result:renderResult, blog:renderBlog, article:renderArticle, shop:renderShop, product:renderProduct}[state.view])();
+  const mainTarget=document.querySelector('#app section');
+  if(mainTarget && !document.getElementById('main-content')) mainTarget.id='main-content';
   window.scrollTo({top:0, behavior:'smooth'});
 }
 function openProduct(id){ state.product=id; state.view='product'; render(); }
@@ -1097,13 +1160,13 @@ function startQuiz(){ state.view='quiz'; state.step=0; state.answers={}; state.a
 function answer(qid,tags){ state.answers[qid]=tags; if(state.step>=questions().length-1){ state.view='result'; } else { state.step++; state.animKey++; } render(); }
 function qBack(){ if(state.step===0){ state.view='home'; } else { state.step--; state.animKey++; } render(); }
 function openArticle(id){ state.article=id; state.view='article'; render(); }
-function openAff(id){ const p=prod(id); if(p) window.open(buyLink(p),'_blank','noopener'); return false; }
+function openAff(id){ const p=prod(id); const link=p&&(buyLink(p)||p.sourceUrl); if(link) window.open(link,'_blank','noopener'); return false; }
 function track(id){ /* point d'accroche tracking d'affiliation (ex : ?ref=quelchampagne) */ }
 
 /* Charge le catalogue live (catalogue.json) si présent ; sinon sélection intégrée. */
 async function loadCatalogue(){
   try{
-    const r = await fetch('./catalogue.json', {cache:'no-store'});
+    const r = await fetch('/catalogue.json', {cache:'no-store'});
     if(!r.ok) return;
     const data = await r.json();
     if(Array.isArray(data) && data.length){
@@ -1117,26 +1180,35 @@ async function loadCatalogue(){
   }catch(e){ /* repli silencieux */ }
 }
 
-/* Porte d'âge (loi Évin). */
+/* Porte d'âge volontaire. */
 function ageGate(){
   try{ if(localStorage.getItem('qc_age_ok')==='1') return; }catch(e){}
   const el = document.createElement('div');
   el.className = 'agegate'; el.id = 'agegate';
+  el.setAttribute('role','dialog'); el.setAttribute('aria-modal','true'); el.setAttribute('aria-labelledby','agegate-title');
   el.innerHTML = `
     <div class="agegate-box">
       <div class="g"></div>
-      <h2>Vous avez 18 ans ou plus ?</h2>
+      <h2 id="agegate-title">Vous avez 18 ans ou plus ?</h2>
       <p>${BRAND} est un site d'information sur le champagne, réservé aux personnes majeures.</p>
       <div class="btns">
-        <button class="btn btn-primary" onclick="ageOK()">Oui, j'ai 18 ans ou plus</button>
-        <button class="btn btn-ghost" onclick="ageNo()">Non</button>
+        <button type="button" class="btn btn-primary" onclick="ageOK()">Oui, j'ai 18 ans ou plus</button>
+        <button type="button" class="btn btn-ghost" onclick="ageNo()">Non</button>
       </div>
       <div class="health">L'abus d'alcool est dangereux pour la santé. À consommer avec modération.</div>
       <small>En entrant, vous confirmez être majeur selon la législation de votre pays.</small>
     </div>`;
   document.body.appendChild(el);
+  document.body.style.overflow='hidden';
+  const controls=[...el.querySelectorAll('button')];
+  if(controls[0]) controls[0].focus();
+  el.addEventListener('keydown',event=>{
+    if(event.key!=='Tab'||controls.length<2) return;
+    if(event.shiftKey&&document.activeElement===controls[0]){event.preventDefault();controls[controls.length-1].focus();}
+    else if(!event.shiftKey&&document.activeElement===controls[controls.length-1]){event.preventDefault();controls[0].focus();}
+  });
 }
-function ageOK(){ try{ localStorage.setItem('qc_age_ok','1'); }catch(e){} const el=document.getElementById('agegate'); if(el) el.remove(); }
+function ageOK(){ try{ localStorage.setItem('qc_age_ok','1'); }catch(e){} const el=document.getElementById('agegate'); if(el) el.remove(); document.body.style.overflow=''; }
 function ageNo(){ const el=document.getElementById('agegate'); if(el) el.querySelector('.agegate-box').innerHTML = `<div class="g"></div><h2>À bientôt</h2><p>Ce site est réservé aux personnes majeures. Nous ne pouvons pas vous donner accès au contenu.</p><div class="health">L'abus d'alcool est dangereux pour la santé. À consommer avec modération.</div>`; }
 
 render();

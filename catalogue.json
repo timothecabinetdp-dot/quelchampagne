@@ -1,0 +1,5429 @@
+[
+  {
+    "id": "feuillatte",
+    "name": "Réserve Exclusive Brut",
+    "short": "Réserve Exclusive",
+    "house": "Nicolas Feuillatte",
+    "region": "Champagne",
+    "price": 28,
+    "priceMin": 26,
+    "priceMax": 35,
+    "tier": 1,
+    "producerType": "maison",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#2f3f6e",
+    "cork": "#7c5c3a",
+    "accent": "#9C7A34",
+    "occ": [
+      "occ_apero",
+      "occ_fete",
+      "occ_cadeau"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_fruite"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_aperitif",
+      "accord_mer",
+      "accord_volaille"
+    ],
+    "note": "Un brut vif et accessible pour l’apéritif, les célébrations et les groupes.",
+    "pair": "apéritif, sushis, toasts",
+    "tags": [
+      "Vif",
+      "Fruité",
+      "Convivial"
+    ],
+    "sourceUrl": "https://www.nicolas-feuillatte.com/",
+    "verifiedAt": "2026-07-26",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 88
+  },
+  {
+    "id": "moet",
+    "name": "Impérial",
+    "short": "Impérial",
+    "house": "Moët & Chandon",
+    "region": "Champagne",
+    "price": 42,
+    "priceMin": 38,
+    "priceMax": 50,
+    "tier": 2,
+    "producerType": "maison",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#c9a85e",
+    "cork": "#7c5c3a",
+    "accent": "#9C7A34",
+    "occ": [
+      "occ_fete",
+      "occ_cadeau",
+      "occ_apero"
+    ],
+    "profil": [
+      "profil_fruite",
+      "profil_frais_vif"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_aperitif",
+      "accord_volaille",
+      "accord_mer"
+    ],
+    "note": "Une bouteille immédiatement reconnaissable pour célébrer sans prendre de risque.",
+    "pair": "apéritif, volaille, poisson",
+    "tags": [
+      "Généreux",
+      "Festif",
+      "Fruité"
+    ],
+    "sourceUrl": "https://www.moet.com/en-int/moet-imperial",
+    "verifiedAt": "2026-07-26",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 95,
+    "details": {
+      "facts": "Assemblage : Pinot Noir 30 à 40 %, Meunier 30 à 40 % et Chardonnay 20 à 30 %. Vins de réserve : 20 à 30 %. Dosage : 7 g/L.",
+      "sourceQuality": "fiche produit officielle",
+      "advice": "Une bouteille immédiatement reconnaissable pour célébrer sans prendre de risque, particulièrement adaptée à l’apéritif et aux événements où une signature connue rassure.",
+      "profil": {
+        "fraicheur": "Fraîche",
+        "rondeur": "Ronde",
+        "puissance": "Équilibrée",
+        "longueur": "Nuancée"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Apéritif"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Volaille"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Poisson"
+        }
+      ]
+    }
+  },
+  {
+    "id": "clicquot",
+    "name": "Brut Carte Jaune",
+    "short": "Carte Jaune",
+    "house": "Veuve Clicquot",
+    "region": "Champagne",
+    "price": 48,
+    "priceMin": 42,
+    "priceMax": 58,
+    "tier": 2,
+    "producerType": "maison",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#f2b21e",
+    "cork": "#7c5c3a",
+    "accent": "#C99A1E",
+    "occ": [
+      "occ_fete",
+      "occ_diner",
+      "occ_cadeau"
+    ],
+    "profil": [
+      "profil_riche_ample",
+      "profil_fruite"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_volaille",
+      "accord_fromage",
+      "accord_aperitif"
+    ],
+    "note": "Un brut charpenté, particulièrement pertinent quand la bouteille doit passer à table.",
+    "pair": "volaille, fromages affinés",
+    "tags": [
+      "Structuré",
+      "Vineux",
+      "Iconique"
+    ],
+    "sourceUrl": "https://www.veuveclicquot.com/fr-fr/",
+    "verifiedAt": "2026-07-26",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 94
+  },
+  {
+    "id": "bollinger",
+    "name": "Special Cuvée",
+    "short": "Special Cuvée",
+    "house": "Bollinger",
+    "region": "Champagne",
+    "price": 62,
+    "priceMin": 55,
+    "priceMax": 72,
+    "tier": 3,
+    "producerType": "maison",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#6b1f2a",
+    "cork": "#7c5c3a",
+    "accent": "#8A6320",
+    "occ": [
+      "occ_diner",
+      "occ_cadeau"
+    ],
+    "profil": [
+      "profil_riche_ample"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_volaille",
+      "accord_fromage"
+    ],
+    "note": "Le réflexe repas : plus vineux et plus ample qu’un brut d’apéritif classique.",
+    "pair": "volaille rôtie, comté",
+    "tags": [
+      "Vineux",
+      "Gastronomique",
+      "Profond"
+    ],
+    "sourceUrl": "https://www.champagne-bollinger.com/en/wine/special-cuvee",
+    "verifiedAt": "2026-07-26",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 91
+  },
+  {
+    "id": "ruinart",
+    "name": "Blanc de Blancs",
+    "short": "Blanc de Blancs",
+    "house": "Ruinart",
+    "region": "Champagne",
+    "price": 78,
+    "priceMin": 70,
+    "priceMax": 90,
+    "tier": 3,
+    "producerType": "maison",
+    "glass": [
+      "#3a4a2e",
+      "#6a7a48"
+    ],
+    "foil": "#d8c57e",
+    "cork": "#7c5c3a",
+    "accent": "#9C7A34",
+    "occ": [
+      "occ_diner",
+      "occ_cadeau",
+      "occ_romantique"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_delicat"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_mer",
+      "accord_aperitif"
+    ],
+    "note": "Pour la fraîcheur, les fruits de mer et un cadeau élégant autour du chardonnay.",
+    "pair": "huîtres, poisson noble",
+    "tags": [
+      "Élégant",
+      "Floral",
+      "Minéral"
+    ],
+    "sourceUrl": "https://www.ruinart.com/fr-fr/",
+    "verifiedAt": "2026-07-26",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 93
+  },
+  {
+    "id": "laurentperrier",
+    "name": "Cuvée Rosé",
+    "short": "Cuvée Rosé",
+    "house": "Laurent-Perrier",
+    "region": "Champagne",
+    "price": 85,
+    "priceMin": 75,
+    "priceMax": 95,
+    "tier": 3,
+    "producerType": "maison",
+    "glass": [
+      "#d98a86",
+      "#f2c9c2"
+    ],
+    "foil": "#c98f88",
+    "cork": "#7c5c3a",
+    "accent": "#C07A72",
+    "occ": [
+      "occ_fete",
+      "occ_cadeau",
+      "occ_romantique"
+    ],
+    "profil": [
+      "profil_fruite",
+      "profil_delicat"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_dessert",
+      "accord_aperitif",
+      "accord_volaille"
+    ],
+    "note": "Un rosé de macération expressif pour une célébration, un cadeau ou les fruits rouges.",
+    "pair": "fruits rouges, dessert",
+    "tags": [
+      "Rosé",
+      "Fruité",
+      "Célébration"
+    ],
+    "sourceUrl": "https://www.laurent-perrier.com/fr/champagnes/cuvee-rose/",
+    "verifiedAt": "2026-07-26",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 90
+  },
+  {
+    "id": "laurent-perrier-la-cuvee",
+    "name": "La Cuvée",
+    "short": "La Cuvée",
+    "house": "Laurent-Perrier",
+    "region": "Champagne",
+    "price": 47,
+    "priceMin": 42,
+    "priceMax": 52,
+    "tier": 2,
+    "producerType": "maison",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#c9a85e",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_apero",
+      "occ_cadeau",
+      "occ_diner",
+      "occ_romantique"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_delicat"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_mer",
+      "accord_dessert",
+      "accord_aperitif"
+    ],
+    "note": "La Cuvée privilégie la fraîcheur et la finesse, avec une part majoritaire de chardonnay et quatre années de vieillissement annoncées par la Maison. C’est une option équilibrée pour l’apéritif, un cadeau classique ou un repas tourné vers les produits de la mer.",
+    "pair": "fruits de mer, poisson cru, gougères",
+    "tags": [
+      "Brut sans année",
+      "Frais",
+      "Fin"
+    ],
+    "sourceUrl": "https://www.laurent-perrier.com/fr/champagnes/la-cuvee/",
+    "verifiedAt": "2026-07-26",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 94,
+    "releaseLabel": "",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "Assemblage : Chardonnay 50%+ / Pinot Noir 30-35% / Meunier 10-15%. Dosage : Brut. Vieillissement 4 ans.",
+      "sourceQuality": "fiche produit officielle",
+      "advice": "La Cuvée privilégie la fraîcheur et la finesse, avec une part majoritaire de chardonnay et quatre années de vieillissement annoncées par la Maison. C’est une option équilibrée pour l’apéritif, un cadeau classique ou un repas tourné vers les produits de la mer.",
+      "profil": {
+        "fraicheur": "Fraîche",
+        "rondeur": "Équilibrée",
+        "puissance": "Légère",
+        "longueur": "Nuancée"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Fruits de mer"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Poisson cru"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Gougères"
+        }
+      ]
+    }
+  },
+  {
+    "id": "taittinger-brut-reserve",
+    "name": "Brut Réserve",
+    "short": "Brut Réserve",
+    "house": "Taittinger",
+    "region": "Champagne",
+    "price": 47,
+    "priceMin": 42,
+    "priceMax": 52,
+    "tier": 2,
+    "producerType": "maison",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#c9a85e",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_apero",
+      "occ_cadeau",
+      "occ_fete"
+    ],
+    "profil": [
+      "profil_frais_vif"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_mer",
+      "accord_dessert",
+      "accord_aperitif"
+    ],
+    "note": "Avec 40 % de chardonnay, plus de quarante crus et quatre années de maturation annoncées, le Brut Réserve de Taittinger vise un équilibre consensuel entre fraîcheur et souplesse. Il convient particulièrement à l’apéritif, aux fruits de mer et aux cadeaux sans prise de risque.",
+    "pair": "fruits de mer, poisson blanc, gougères",
+    "tags": [
+      "Brut sans année",
+      "Élégant",
+      "Polyvalent"
+    ],
+    "sourceUrl": "https://www.taittinger.com/les-champagnes/brut-reserve",
+    "verifiedAt": "2026-07-26",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 94,
+    "releaseLabel": "",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "Assemblage : 40% Chardonnay / 35% Pinot Noir / 25% Meunier. Dosage : 9 g/L. Plus de 40 crus et 4 années.",
+      "sourceQuality": "fiche produit officielle",
+      "advice": "Avec 40 % de chardonnay, plus de quarante crus et quatre années de maturation annoncées, le Brut Réserve de Taittinger vise un équilibre consensuel entre fraîcheur et souplesse. Il convient particulièrement à l’apéritif, aux fruits de mer et aux cadeaux sans prise de risque.",
+      "profil": {
+        "fraicheur": "Fraîche",
+        "rondeur": "Équilibrée",
+        "puissance": "Équilibrée",
+        "longueur": "Nuancée"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Fruits de mer"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Poisson blanc"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Gougères"
+        }
+      ]
+    }
+  },
+  {
+    "id": "pol-roger-brut-reserve",
+    "name": "Brut Réserve",
+    "short": "Brut Réserve",
+    "house": "Pol Roger",
+    "region": "Champagne",
+    "price": 54,
+    "priceMin": 48,
+    "priceMax": 60,
+    "tier": 2,
+    "producerType": "maison",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#c9a85e",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_apero",
+      "occ_cadeau",
+      "occ_diner"
+    ],
+    "profil": [
+      "profil_frais_vif"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_mer",
+      "accord_volaille",
+      "accord_dessert"
+    ],
+    "note": "Le Brut Réserve de Pol Roger réunit les trois cépages champenois dans un style classique et équilibré. Sa position intermédiaire entre finesse, structure et complexité en fait un choix cohérent pour un cadeau, un apéritif soigné ou un repas autour d’un poisson noble.",
+    "pair": "poisson noble, volaille, fruits de mer",
+    "tags": [
+      "Brut sans année",
+      "Classique",
+      "Équilibré"
+    ],
+    "sourceUrl": "https://m.polroger.com/pdf/en/brut-reserve-brut-reserve-4.pdf",
+    "verifiedAt": "2026-07-26",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 94,
+    "releaseLabel": "",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "Assemblage : Pinot Noir / Meunier / Chardonnay. Dosage : Brut.",
+      "sourceQuality": "fiche produit officielle",
+      "advice": "Le Brut Réserve de Pol Roger réunit les trois cépages champenois dans un style classique et équilibré. Sa position intermédiaire entre finesse, structure et complexité en fait un choix cohérent pour un cadeau, un apéritif soigné ou un repas autour d’un poisson noble.",
+      "profil": {
+        "fraicheur": "Fraîche",
+        "rondeur": "Équilibrée",
+        "puissance": "Équilibrée",
+        "longueur": "Complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Poisson noble"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Volaille"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Fruits de mer"
+        }
+      ]
+    }
+  },
+  {
+    "id": "piper-heidsieck-cuvee-brut",
+    "name": "Cuvée Brut",
+    "short": "Cuvée Brut",
+    "house": "Piper-Heidsieck",
+    "region": "Champagne",
+    "price": 40,
+    "priceMin": 35,
+    "priceMax": 45,
+    "tier": 2,
+    "producerType": "maison",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#c9a85e",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_apero",
+      "occ_cadeau",
+      "occ_fete"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_fruite"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_aperitif"
+    ],
+    "note": "Assemblé à partir de plus de cent crus selon la Maison, Piper-Heidsieck Cuvée Brut propose un registre dynamique et accessible. Sa fraîcheur et son caractère fruité le destinent d’abord aux apéritifs, aux célébrations et aux grandes tablées qui recherchent une bouteille expressive.",
+    "pair": "amuse-bouches, charcuterie fine, gougères",
+    "tags": [
+      "Cuvée Brut",
+      "Tonique",
+      "Expressif"
+    ],
+    "sourceUrl": "https://www.piper-heidsieck.com/en/wine/cuvee-brut/",
+    "verifiedAt": "2026-07-26",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 94,
+    "releaseLabel": "",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "Assemblage : Pinot Noir / Meunier / Chardonnay. Dosage : Extra-Brut. Assemblage de plus de 100 crus.",
+      "sourceQuality": "fiche produit officielle",
+      "advice": "Assemblé à partir de plus de cent crus selon la Maison, Piper-Heidsieck Cuvée Brut propose un registre dynamique et accessible. Sa fraîcheur et son caractère fruité le destinent d’abord aux apéritifs, aux célébrations et aux grandes tablées qui recherchent une bouteille expressive.",
+      "profil": {
+        "fraicheur": "Fraîche",
+        "rondeur": "Équilibrée",
+        "puissance": "Équilibrée",
+        "longueur": "Nuancée"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Amuse-bouches"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Charcuterie fine"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Gougères"
+        }
+      ]
+    }
+  },
+  {
+    "id": "pommery-brut-royal",
+    "name": "Brut Royal",
+    "short": "Brut Royal",
+    "house": "Pommery",
+    "region": "Champagne",
+    "price": 43,
+    "priceMin": 38,
+    "priceMax": 48,
+    "tier": 2,
+    "producerType": "maison",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#c9a85e",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_apero",
+      "occ_cadeau",
+      "occ_fete",
+      "occ_romantique"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_delicat"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_mer"
+    ],
+    "note": "Pommery présente Brut Royal autour de la vivacité et de la fraîcheur. Cette orientation en fait une cuvée directe, adaptée à l’apéritif et aux accords iodés, ainsi qu’une alternative pertinente pour qui recherche un brut de grande maison moins ample et plus droit.",
+    "pair": "huîtres, coquillages, poisson blanc",
+    "tags": [
+      "Brut sans année",
+      "Vif",
+      "Rafraîchissant"
+    ],
+    "sourceUrl": "https://www.champagnepommery.com/wines/brut-pommery/cuvee-brut-royal",
+    "verifiedAt": "2026-07-26",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 94,
+    "releaseLabel": "",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "Assemblage : Chardonnay / Pinot Noir / Meunier. Dosage : Brut. Style : vivacité et fraîcheur.",
+      "sourceQuality": "fiche produit officielle",
+      "advice": "Pommery présente Brut Royal autour de la vivacité et de la fraîcheur. Cette orientation en fait une cuvée directe, adaptée à l’apéritif et aux accords iodés, ainsi qu’une alternative pertinente pour qui recherche un brut de grande maison moins ample et plus droit.",
+      "profil": {
+        "fraicheur": "Fraîche",
+        "rondeur": "Droite",
+        "puissance": "Légère",
+        "longueur": "Nuancée"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Huîtres"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Coquillages"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Poisson blanc"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mumm-cordon-rouge",
+    "name": "Cordon Rouge",
+    "short": "Cordon Rouge",
+    "house": "Mumm",
+    "region": "Champagne",
+    "price": 40,
+    "priceMin": 35,
+    "priceMax": 45,
+    "tier": 2,
+    "producerType": "maison",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#c9a85e",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_apero",
+      "occ_cadeau",
+      "occ_fete"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_fruite"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_aperitif"
+    ],
+    "note": "Cordon Rouge assemble pinot noir, meunier et chardonnay dans un brut de grande maison au positionnement franc et dynamique. Son profil fruité et sa fraîcheur en font surtout une bouteille de célébration ou d’apéritif, facile à associer à des bouchées salées.",
+    "pair": "apéritif salé, charcuterie fine, gougères",
+    "tags": [
+      "Brut sans année",
+      "Fruité",
+      "Dynamique"
+    ],
+    "sourceUrl": "https://www.mumm.com/en-gb/product/cordon-rouge-new-design/",
+    "verifiedAt": "2026-07-26",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 94,
+    "releaseLabel": "",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "Assemblage : Pinot Noir / Meunier / Chardonnay. Dosage : Brut.",
+      "sourceQuality": "fiche produit officielle",
+      "advice": "Cordon Rouge assemble pinot noir, meunier et chardonnay dans un brut de grande maison au positionnement franc et dynamique. Son profil fruité et sa fraîcheur en font surtout une bouteille de célébration ou d’apéritif, facile à associer à des bouchées salées.",
+      "profil": {
+        "fraicheur": "Fraîche",
+        "rondeur": "Équilibrée",
+        "puissance": "Équilibrée",
+        "longueur": "Nuancée"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Apéritif salé"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Charcuterie fine"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Gougères"
+        }
+      ]
+    }
+  },
+  {
+    "id": "charles-heidsieck-brut-reserve",
+    "name": "Brut Réserve",
+    "short": "Brut Réserve",
+    "house": "Charles Heidsieck",
+    "region": "Champagne",
+    "price": 63,
+    "priceMin": 55,
+    "priceMax": 70,
+    "tier": 2,
+    "producerType": "maison",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#c9a85e",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_cadeau",
+      "occ_diner",
+      "occ_fete"
+    ],
+    "profil": [
+      "profil_fruite",
+      "profil_riche_ample"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_volaille",
+      "accord_fromage"
+    ],
+    "note": "Le Brut Réserve de Charles Heidsieck associe les trois cépages et peut intégrer jusqu’à 50 % de vins de réserve. Cette construction l’oriente vers davantage de rondeur, de profondeur et de complexité, avec une vraie pertinence à table et sur un cadeau gastronomique.",
+    "pair": "volaille, comté, veau",
+    "tags": [
+      "Brut sans année",
+      "Profond",
+      "Généreux"
+    ],
+    "sourceUrl": "https://charlesheidsieck.com/en/wines/brut-reserve",
+    "verifiedAt": "2026-07-26",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 94,
+    "releaseLabel": "",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "Assemblage : 40% Chardonnay / 40% Pinot Noir / 20% Meunier. Dosage : Brut. Jusqu'à 50% de vins de réserve.",
+      "sourceQuality": "fiche produit officielle",
+      "advice": "Le Brut Réserve de Charles Heidsieck associe les trois cépages et peut intégrer jusqu’à 50 % de vins de réserve. Cette construction l’oriente vers davantage de rondeur, de profondeur et de complexité, avec une vraie pertinence à table et sur un cadeau gastronomique.",
+      "profil": {
+        "fraicheur": "Équilibrée",
+        "rondeur": "Très ronde",
+        "puissance": "Puissante",
+        "longueur": "Très complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Volaille"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Comté"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Veau"
+        }
+      ]
+    }
+  },
+  {
+    "id": "gosset-grande-reserve",
+    "name": "Grande Réserve",
+    "short": "Grande Réserve",
+    "house": "Gosset",
+    "region": "Champagne",
+    "price": 58,
+    "priceMin": 50,
+    "priceMax": 65,
+    "tier": 2,
+    "producerType": "maison",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#c9a85e",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_cadeau",
+      "occ_diner",
+      "occ_fete"
+    ],
+    "profil": [
+      "profil_fruite",
+      "profil_riche_ample"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_volaille",
+      "accord_fromage"
+    ],
+    "note": "Grande Réserve de Gosset s’appuie sur une majorité de pinots complétée par le chardonnay et une maturation minimale de quatre ans annoncée par la Maison. Son profil ample mais tendu se prête au repas, notamment avec le saumon, la volaille et les fromages affinés.",
+    "pair": "saumon, volaille, fromage affiné",
+    "tags": [
+      "Brut sans année",
+      "Structuré",
+      "Gastronomique"
+    ],
+    "sourceUrl": "https://www.champagne-gosset.com/nos-vins-de-champagne/gosset-grande-reserve/",
+    "verifiedAt": "2026-07-26",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 94,
+    "releaseLabel": "",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "Assemblage : Majorité de Pinots et Chardonnay. Dosage : Brut. Maturation minimum 4 ans.",
+      "sourceQuality": "fiche produit officielle",
+      "advice": "Grande Réserve de Gosset s’appuie sur une majorité de pinots complétée par le chardonnay et une maturation minimale de quatre ans annoncée par la Maison. Son profil ample mais tendu se prête au repas, notamment avec le saumon, la volaille et les fromages affinés.",
+      "profil": {
+        "fraicheur": "Équilibrée",
+        "rondeur": "Ronde",
+        "puissance": "Puissante",
+        "longueur": "Complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Saumon"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Volaille"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Fromage affiné"
+        }
+      ]
+    }
+  },
+  {
+    "id": "billecart-salmon-brut-reserve",
+    "name": "Brut Réserve",
+    "short": "Brut Réserve",
+    "house": "Billecart-Salmon",
+    "region": "Champagne",
+    "price": 63,
+    "priceMin": 55,
+    "priceMax": 70,
+    "tier": 2,
+    "producerType": "maison",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#c9a85e",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_apero",
+      "occ_cadeau",
+      "occ_diner",
+      "occ_romantique"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_fruite",
+      "profil_delicat"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_mer",
+      "accord_dessert",
+      "accord_aperitif"
+    ],
+    "note": "Le Brut Réserve de Billecart-Salmon réunit pinot noir, chardonnay et meunier dans un registre présenté comme aérien, subtil et harmonieux. Il constitue une option polyvalente pour l’apéritif, le poisson ou un cadeau élégant, avec moins de puissance qu’un brut résolument vineux.",
+    "pair": "poisson, fruits de mer, gougères",
+    "tags": [
+      "Brut sans année",
+      "Aérien",
+      "Harmonieux"
+    ],
+    "sourceUrl": "https://www.champagne-billecart.fr/fr/collection/brut-reserve",
+    "verifiedAt": "2026-07-26",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 94,
+    "releaseLabel": "",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "Assemblage : Pinot Noir / Chardonnay / Meunier. Dosage : Brut. Service : 8-10 °C. Aérien subtil et harmonieux.",
+      "sourceQuality": "fiche produit officielle",
+      "advice": "Le Brut Réserve de Billecart-Salmon réunit pinot noir, chardonnay et meunier dans un registre présenté comme aérien, subtil et harmonieux. Il constitue une option polyvalente pour l’apéritif, le poisson ou un cadeau élégant, avec moins de puissance qu’un brut résolument vineux.",
+      "profil": {
+        "fraicheur": "Fraîche",
+        "rondeur": "Ronde",
+        "puissance": "Légère",
+        "longueur": "Complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Poisson"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Fruits de mer"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Gougères"
+        }
+      ]
+    }
+  },
+  {
+    "id": "louis-roederer-collection-246",
+    "name": "Collection 246",
+    "short": "Collection 246",
+    "house": "Louis Roederer",
+    "region": "Champagne",
+    "price": 63,
+    "priceMin": 55,
+    "priceMax": 70,
+    "tier": 2,
+    "producerType": "maison",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#c9a85e",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_cadeau",
+      "occ_diner",
+      "occ_fete"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_fruite",
+      "profil_riche_ample"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_mer",
+      "accord_volaille"
+    ],
+    "note": "Collection 246 correspond au 246e assemblage multi-vintage de Louis Roederer. Sa construction et son positionnement en font une bouteille précise et gastronomique, pensée pour les amateurs qui cherchent davantage de complexité qu’un brut d’entrée de gamme, sans basculer dans un millésime de prestige.",
+    "pair": "poisson noble, crustacés, volaille",
+    "tags": [
+      "Multi-vintage",
+      "Précis",
+      "Gastronomique"
+    ],
+    "sourceUrl": "https://www.louis-roederer.com/en/collection246",
+    "verifiedAt": "2026-07-26",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 94,
+    "releaseLabel": "246",
+    "vintageYear": null,
+    "editionNumber": 246,
+    "details": {
+      "facts": "Assemblage : Assemblage multi-vintage. Dosage : Brut. 246e assemblage de la Maison.",
+      "sourceQuality": "fiche produit officielle",
+      "advice": "Collection 246 correspond au 246e assemblage multi-vintage de Louis Roederer. Sa construction et son positionnement en font une bouteille précise et gastronomique, pensée pour les amateurs qui cherchent davantage de complexité qu’un brut d’entrée de gamme, sans basculer dans un millésime de prestige.",
+      "profil": {
+        "fraicheur": "Fraîche",
+        "rondeur": "Ronde",
+        "puissance": "Puissante",
+        "longueur": "Très complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Poisson noble"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Crustacés"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Volaille"
+        }
+      ]
+    }
+  },
+  {
+    "id": "billecart-salmon-brut-rose",
+    "name": "Brut Rosé",
+    "short": "Brut Rosé",
+    "house": "Billecart-Salmon",
+    "region": "Champagne",
+    "price": 85,
+    "priceMin": 75,
+    "priceMax": 95,
+    "tier": 3,
+    "producerType": "maison",
+    "glass": [
+      "#9f514b",
+      "#d98a86"
+    ],
+    "foil": "#c98f88",
+    "accent": "#C07A72",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_cadeau",
+      "occ_diner",
+      "occ_fete",
+      "occ_romantique"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_fruite"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_dessert"
+    ],
+    "note": "Le Brut Rosé de Billecart-Salmon assemble les trois cépages champenois avec une part de chardonnay indiquée à 45 % sur la fiche actuelle. Son positionnement frais et raffiné convient au cadeau, aux crustacés et au saumon, avec un registre plus délicat que vineux.",
+    "pair": "saumon, crustacés, fruits rouges",
+    "tags": [
+      "Rosé brut",
+      "Raffiné",
+      "Fruits rouges"
+    ],
+    "sourceUrl": "https://www.champagne-billecart.fr/fr/collection/brut-rose",
+    "verifiedAt": "2026-07-26",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 94,
+    "releaseLabel": "",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "Assemblage : Chardonnay / Meunier / Pinot Noir. 45% Chardonnay selon la fiche actuelle.",
+      "sourceQuality": "fiche produit officielle",
+      "advice": "Le Brut Rosé de Billecart-Salmon assemble les trois cépages champenois avec une part de chardonnay indiquée à 45 % sur la fiche actuelle. Son positionnement frais et raffiné convient au cadeau, aux crustacés et au saumon, avec un registre plus délicat que vineux.",
+      "profil": {
+        "fraicheur": "Fraîche",
+        "rondeur": "Équilibrée",
+        "puissance": "Légère",
+        "longueur": "Complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Saumon"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Crustacés"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Fruits rouges"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bollinger-rose",
+    "name": "Rosé",
+    "short": "Rosé",
+    "house": "Bollinger",
+    "region": "Champagne",
+    "price": 98,
+    "priceMin": 85,
+    "priceMax": 110,
+    "tier": 3,
+    "producerType": "maison",
+    "glass": [
+      "#9f514b",
+      "#d98a86"
+    ],
+    "foil": "#c98f88",
+    "accent": "#C07A72",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_cadeau",
+      "occ_diner",
+      "occ_fete",
+      "occ_romantique"
+    ],
+    "profil": [
+      "profil_fruite",
+      "profil_riche_ample"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_mer",
+      "accord_volaille"
+    ],
+    "note": "Bollinger Rosé associe 62 % de pinot noir, 24 % de chardonnay et 14 % de meunier, complétés par 5 à 6 % de vin rouge. Cette architecture soutient un rosé structuré et gastronomique, destiné au repas autant qu’aux grandes occasions.",
+    "pair": "canard, homard, saumon",
+    "tags": [
+      "Rosé brut",
+      "Vineux",
+      "Gastronomique"
+    ],
+    "sourceUrl": "https://www.champagne-bollinger.com/en/wine/bollinger-rose",
+    "verifiedAt": "2026-07-26",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 86,
+    "releaseLabel": "",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "Assemblage : 62% Pinot Noir / 24% Chardonnay / 14% Meunier. Ajout de 5 à 6% de vin rouge.",
+      "sourceQuality": "fiche produit officielle",
+      "advice": "Bollinger Rosé associe 62 % de pinot noir, 24 % de chardonnay et 14 % de meunier, complétés par 5 à 6 % de vin rouge. Cette architecture soutient un rosé structuré et gastronomique, destiné au repas autant qu’aux grandes occasions.",
+      "profil": {
+        "fraicheur": "Équilibrée",
+        "rondeur": "Ronde",
+        "puissance": "Puissante",
+        "longueur": "Complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Canard"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Homard"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Saumon"
+        }
+      ]
+    }
+  },
+  {
+    "id": "veuve-clicquot-brut-rose",
+    "name": "Brut Rosé",
+    "short": "Brut Rosé",
+    "house": "Veuve Clicquot",
+    "region": "Champagne",
+    "price": 63,
+    "priceMin": 55,
+    "priceMax": 70,
+    "tier": 2,
+    "producerType": "maison",
+    "glass": [
+      "#9f514b",
+      "#d98a86"
+    ],
+    "foil": "#c98f88",
+    "accent": "#C07A72",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_cadeau",
+      "occ_diner",
+      "occ_fete",
+      "occ_romantique"
+    ],
+    "profil": [
+      "profil_fruite",
+      "profil_riche_ample"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_volaille",
+      "accord_aperitif"
+    ],
+    "note": "Le Brut Rosé de Veuve Clicquot part de l’assemblage Carte Jaune, complété par du vin rouge de pinot noir. Avec cinquante à soixante crus et jusqu’à 45 % de vins de réserve annoncés, il vise un rosé fruité, structuré et adapté aux célébrations.",
+    "pair": "saumon, charcuterie fine, volaille",
+    "tags": [
+      "Rosé brut",
+      "Fruité",
+      "Structuré"
+    ],
+    "sourceUrl": "https://www.veuveclicquot.com/fr-fr/theartofrose.html",
+    "verifiedAt": "2026-07-26",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 86,
+    "releaseLabel": "",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "Assemblage : Base Carte Jaune complétée de vin rouge de Pinot Noir. Assemblage de 50 à 60 crus et jusqu'à 45% de vins de réserve.",
+      "sourceQuality": "fiche produit officielle",
+      "advice": "Le Brut Rosé de Veuve Clicquot part de l’assemblage Carte Jaune, complété par du vin rouge de pinot noir. Avec cinquante à soixante crus et jusqu’à 45 % de vins de réserve annoncés, il vise un rosé fruité, structuré et adapté aux célébrations.",
+      "profil": {
+        "fraicheur": "Équilibrée",
+        "rondeur": "Ronde",
+        "puissance": "Puissante",
+        "longueur": "Nuancée"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Saumon"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Charcuterie fine"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Volaille"
+        }
+      ]
+    }
+  },
+  {
+    "id": "pommery-rose-apanage",
+    "name": "Rosé Apanage",
+    "short": "Rosé Apanage",
+    "house": "Pommery",
+    "region": "Champagne",
+    "price": 75,
+    "priceMin": 65,
+    "priceMax": 85,
+    "tier": 3,
+    "producerType": "maison",
+    "glass": [
+      "#9f514b",
+      "#d98a86"
+    ],
+    "foil": "#c98f88",
+    "accent": "#C07A72",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_apero",
+      "occ_cadeau",
+      "occ_diner",
+      "occ_romantique"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_fruite"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_mer",
+      "accord_dessert"
+    ],
+    "note": "Rosé Apanage occupe chez Pommery un registre élégant et frais. Faute de composition détaillée suffisamment établie dans les données disponibles, la recommandation reste volontairement centrée sur l’usage : cadeau rosé, apéritif soigné ou repas autour d’un poisson et d’un dessert fruité.",
+    "pair": "poisson, dessert fruité, saumon",
+    "tags": [
+      "Rosé brut",
+      "Frais",
+      "Élégant"
+    ],
+    "sourceUrl": "https://www.champagnepommery.com/wines/cuvee-apanage/cuvee-rose-apanage",
+    "verifiedAt": "2026-07-26",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 86,
+    "releaseLabel": "",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "Sélection des meilleurs millésimes de la Maison.",
+      "sourceQuality": "fiche produit officielle",
+      "advice": "Rosé Apanage occupe chez Pommery un registre élégant et frais. Faute de composition détaillée suffisamment établie dans les données disponibles, la recommandation reste volontairement centrée sur l’usage : cadeau rosé, apéritif soigné ou repas autour d’un poisson et d’un dessert fruité.",
+      "profil": {
+        "fraicheur": "Fraîche",
+        "rondeur": "Équilibrée",
+        "puissance": "Équilibrée",
+        "longueur": "Nuancée"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Poisson"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Dessert fruité"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Saumon"
+        }
+      ]
+    }
+  },
+  {
+    "id": "deutz-brut-classic",
+    "name": "Brut Classic",
+    "short": "Brut Classic",
+    "house": "Deutz",
+    "region": "Champagne",
+    "price": 52,
+    "priceMin": 45,
+    "priceMax": 58,
+    "tier": 2,
+    "producerType": "maison",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#c9a85e",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_apero",
+      "occ_cadeau",
+      "occ_diner"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_fruite"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_mer",
+      "accord_dessert",
+      "accord_aperitif"
+    ],
+    "note": "Deutz Brut Classic associe une majorité de chardonnay au pinot noir et au meunier, avec des vins de réserve issus de millésimes choisis et trois années de vieillissement annoncées. Son équilibre entre finesse, fraîcheur et texture soyeuse le destine à l’apéritif comme au cadeau.",
+    "pair": "poisson, fruits de mer, gougères",
+    "tags": [
+      "Brut sans année",
+      "Fin",
+      "Harmonieux"
+    ],
+    "sourceUrl": "https://www.champagne-deutz.com/DEUTZ-Brochure-FR.pdf",
+    "verifiedAt": "2026-07-26",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 94,
+    "releaseLabel": "",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "Assemblage : Majorité Chardonnay / Pinot Noir / Meunier. Dosage : Brut. Vins de réserve de millésimes choisis et 3 ans de vieillissement.",
+      "sourceQuality": "fiche produit officielle",
+      "advice": "Deutz Brut Classic associe une majorité de chardonnay au pinot noir et au meunier, avec des vins de réserve issus de millésimes choisis et trois années de vieillissement annoncées. Son équilibre entre finesse, fraîcheur et texture soyeuse le destine à l’apéritif comme au cadeau.",
+      "profil": {
+        "fraicheur": "Fraîche",
+        "rondeur": "Ronde",
+        "puissance": "Légère",
+        "longueur": "Complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Poisson"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Fruits de mer"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Gougères"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ruinart-rose",
+    "name": "Rosé",
+    "short": "Rosé",
+    "house": "Ruinart",
+    "region": "Champagne",
+    "price": 98,
+    "priceMin": 85,
+    "priceMax": 110,
+    "tier": 3,
+    "producerType": "maison",
+    "glass": [
+      "#9f514b",
+      "#d98a86"
+    ],
+    "foil": "#c98f88",
+    "accent": "#C07A72",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_cadeau",
+      "occ_diner",
+      "occ_fete",
+      "occ_romantique"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_fruite"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_mer",
+      "accord_volaille"
+    ],
+    "note": "Ruinart Rosé associe 45 % de chardonnay à 55 % de pinot noir, dont 12 % vinifié en rouge. Avec trente à quarante crus, 20 à 30 % de vins de réserve et un dosage de 8 g/L, il vise un équilibre entre fraîcheur, rondeur et structure.",
+    "pair": "crustacés, poisson gras, canard",
+    "tags": [
+      "Rosé brut",
+      "Équilibré",
+      "Structuré"
+    ],
+    "sourceUrl": "https://www.ruinart.com/fr-fr/ruinart-rose-bouteille-sans-etui-1084624.html",
+    "verifiedAt": "2026-07-26",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 86,
+    "releaseLabel": "",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "Assemblage : 45% Chardonnay / 43% Pinot Noir vinifié en blanc / 12% Pinot Noir vinifié en rouge. 30 à 40 crus / 20 à 30% de vins de réserve / dosage 8 g/L.",
+      "sourceQuality": "fiche produit officielle",
+      "advice": "Ruinart Rosé associe 45 % de chardonnay à 55 % de pinot noir, dont 12 % vinifié en rouge. Avec trente à quarante crus, 20 à 30 % de vins de réserve et un dosage de 8 g/L, il vise un équilibre entre fraîcheur, rondeur et structure.",
+      "profil": {
+        "fraicheur": "Fraîche",
+        "rondeur": "Ronde",
+        "puissance": "Équilibrée",
+        "longueur": "Complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Crustacés"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Poisson gras"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Canard"
+        }
+      ]
+    }
+  },
+  {
+    "id": "moet-rose-imperial",
+    "name": "Rosé Impérial",
+    "short": "Rosé Impérial",
+    "house": "Moët & Chandon",
+    "region": "Champagne",
+    "price": 58,
+    "priceMin": 50,
+    "priceMax": 65,
+    "tier": 2,
+    "producerType": "maison",
+    "glass": [
+      "#9f514b",
+      "#d98a86"
+    ],
+    "foil": "#c98f88",
+    "accent": "#C07A72",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_apero",
+      "occ_cadeau",
+      "occ_fete",
+      "occ_romantique"
+    ],
+    "profil": [
+      "profil_fruite"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_fromage",
+      "accord_dessert"
+    ],
+    "note": "Moët Rosé Impérial réunit 40 à 50 % de pinot noir, 30 à 40 % de meunier et 10 à 20 % de chardonnay. Complété par 20 à 30 % de vins de réserve et dosé à 7 g/L, ce rosé privilégie l’expression fruitée et la célébration.",
+    "pair": "sushi, fromage crémeux, fruits rouges",
+    "tags": [
+      "Rosé brut",
+      "Fruité",
+      "Festif"
+    ],
+    "sourceUrl": "https://www.moet.com/en-int/rose-imperial",
+    "verifiedAt": "2026-07-26",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 86,
+    "releaseLabel": "",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "Assemblage : Pinot Noir 40-50% / Meunier 30-40% / Chardonnay 10-20%. 20 à 30% de vins de réserve / dosage 7 g/L.",
+      "sourceQuality": "fiche produit officielle",
+      "advice": "Moët Rosé Impérial réunit 40 à 50 % de pinot noir, 30 à 40 % de meunier et 10 à 20 % de chardonnay. Complété par 20 à 30 % de vins de réserve et dosé à 7 g/L, ce rosé privilégie l’expression fruitée et la célébration.",
+      "profil": {
+        "fraicheur": "Équilibrée",
+        "rondeur": "Ronde",
+        "puissance": "Équilibrée",
+        "longueur": "Nuancée"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Sushi"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Fromage crémeux"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Fruits rouges"
+        }
+      ]
+    }
+  },
+  {
+    "id": "joseph-perrier-cuvee-royale-brut",
+    "name": "Cuvée Royale Brut",
+    "short": "Cuvée Royale Brut",
+    "house": "Joseph Perrier",
+    "region": "Champagne",
+    "price": 49,
+    "priceMin": 42,
+    "priceMax": 55,
+    "tier": 2,
+    "producerType": "maison",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#c9a85e",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_apero",
+      "occ_cadeau",
+      "occ_diner"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_fruite"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_mer",
+      "accord_volaille",
+      "accord_aperitif"
+    ],
+    "note": "Un brut équilibré à recommander quand on cherche une bouteille polyvalente, de l’apéritif au début du repas. Son assemblage à parts presque égales donne une lecture accessible du style champenois : fraîcheur du chardonnay, structure du pinot noir et fruit du meunier, sans spécialisation trop marquée.",
+    "pair": "gougères, poisson grillé, volaille",
+    "tags": [
+      "brut sans année",
+      "apéritif",
+      "cadeau"
+    ],
+    "sourceUrl": "https://www.josephperrier.com/en/champagnes-et-cuvees/cuvee-royale-brut/",
+    "verifiedAt": "2026-07-26",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 86,
+    "releaseLabel": "standard",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "35% Chardonnay / 35% Pinot Noir / 30% Meunier",
+      "sourceQuality": "officielle produit",
+      "advice": "Un brut équilibré à recommander quand on cherche une bouteille polyvalente, de l’apéritif au début du repas. Son assemblage à parts presque égales donne une lecture accessible du style champenois : fraîcheur du chardonnay, structure du pinot noir et fruit du meunier, sans spécialisation trop marquée.",
+      "profil": {
+        "fraicheur": "Fraîche",
+        "rondeur": "Équilibrée",
+        "puissance": "Équilibrée",
+        "longueur": "Nuancée"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Gougères"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Poisson grillé"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Volaille"
+        }
+      ]
+    }
+  },
+  {
+    "id": "alfred-gratien-brut",
+    "name": "Brut",
+    "short": "Brut",
+    "house": "Alfred Gratien",
+    "region": "Champagne",
+    "price": 49,
+    "priceMin": 42,
+    "priceMax": 55,
+    "tier": 2,
+    "producerType": "maison",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#c9a85e",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_apero",
+      "occ_cadeau",
+      "occ_diner"
+    ],
+    "profil": [
+      "profil_fruite",
+      "profil_riche_ample"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_volaille",
+      "accord_fromage"
+    ],
+    "note": "Une option de caractère pour l’amateur qui préfère un champagne construit et gastronomique à un profil seulement fruité. L’élevage sous bois apporte du relief, tandis que le service autour de 8 à 10 °C préserve l’équilibre. À choisir pour un apéritif soigné ou une entrée aux saveurs légèrement toastées.",
+    "pair": "feuilleté aux champignons, volaille, comté",
+    "tags": [
+      "brut sans année",
+      "apéritif",
+      "cadeau"
+    ],
+    "sourceUrl": "https://www.alfredgratien.com/en/the-cuvees/brut/",
+    "verifiedAt": "2026-07-26",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 86,
+    "releaseLabel": "standard",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "Élevage sous bois et service conseillé à 8-10 °C",
+      "sourceQuality": "officielle produit",
+      "advice": "Une option de caractère pour l’amateur qui préfère un champagne construit et gastronomique à un profil seulement fruité. L’élevage sous bois apporte du relief, tandis que le service autour de 8 à 10 °C préserve l’équilibre. À choisir pour un apéritif soigné ou une entrée aux saveurs légèrement toastées.",
+      "profil": {
+        "fraicheur": "Équilibrée",
+        "rondeur": "Ronde",
+        "puissance": "Puissante",
+        "longueur": "Complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Feuilleté aux champignons"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Volaille"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Comté"
+        }
+      ]
+    }
+  },
+  {
+    "id": "palmer-co-la-reserve",
+    "name": "La Réserve",
+    "short": "La Réserve",
+    "house": "Palmer & Co",
+    "region": "Champagne",
+    "price": 46,
+    "priceMin": 40,
+    "priceMax": 52,
+    "tier": 2,
+    "producerType": "maison",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#c9a85e",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_apero",
+      "occ_cadeau",
+      "occ_diner"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_fruite"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_mer",
+      "accord_aperitif"
+    ],
+    "note": "La Réserve de Palmer & Co associe une majorité de chardonnay aux deux pinots, avec 30 à 35 % de vins de réserve et trois à quatre années sur lies en bouteille. Son équilibre entre fraîcheur et ampleur en fait une option polyvalente pour l’apéritif, le cadeau ou un repas léger.",
+    "pair": "gougères, poisson grillé, mimolette affinée",
+    "tags": [
+      "brut sans année",
+      "apéritif",
+      "cadeau"
+    ],
+    "sourceUrl": "https://www.champagne-palmer.fr/en/vins/la-reserve/",
+    "verifiedAt": "2026-07-26",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 86,
+    "releaseLabel": "standard",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "50-55% Chardonnay / 30-35% Pinot Noir / 20-25% Meunier / 30-35% de vins de réserve / dosage 6-7 g/L",
+      "sourceQuality": "officielle produit",
+      "advice": "La Réserve de Palmer & Co associe une majorité de chardonnay aux deux pinots, avec 30 à 35 % de vins de réserve et trois à quatre années sur lies en bouteille. Son équilibre entre fraîcheur et ampleur en fait une option polyvalente pour l’apéritif, le cadeau ou un repas léger.",
+      "profil": {
+        "fraicheur": "Fraîche",
+        "rondeur": "Ronde",
+        "puissance": "Équilibrée",
+        "longueur": "Complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Gougères"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Poisson grillé"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Mimolette affinée"
+        }
+      ]
+    }
+  },
+  {
+    "id": "philipponnat-royale-reserve-brut",
+    "name": "Royale Réserve Brut",
+    "short": "Royale Réserve Brut",
+    "house": "Philipponnat",
+    "region": "Champagne",
+    "price": 59,
+    "priceMin": 52,
+    "priceMax": 65,
+    "tier": 2,
+    "producerType": "maison",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#c9a85e",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_cadeau",
+      "occ_diner",
+      "occ_fete"
+    ],
+    "profil": [
+      "profil_fruite",
+      "profil_riche_ample"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_mer",
+      "accord_volaille",
+      "accord_fromage"
+    ],
+    "note": "Un brut à dominante de pinot noir, plus à l’aise à table que dans le rôle d’une simple bulle d’accueil. Sa structure convient aux convives qui aiment les champagnes vineux mais encore faciles d’accès. C’est un bon pont entre une grande maison classique et les cuvées de prestige plus exigeantes.",
+    "pair": "volaille rôtie, poisson en sauce, parmesan",
+    "tags": [
+      "brut sans année",
+      "cadeau",
+      "repas"
+    ],
+    "sourceUrl": "https://www.philipponnat.com/en/end-of-year-accolades/",
+    "verifiedAt": "2026-07-26",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 86,
+    "releaseLabel": "standard",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "Cuvée actuelle à dominante pinot noir et positionnée pour la table",
+      "sourceQuality": "officielle maison",
+      "advice": "Un brut à dominante de pinot noir, plus à l’aise à table que dans le rôle d’une simple bulle d’accueil. Sa structure convient aux convives qui aiment les champagnes vineux mais encore faciles d’accès. C’est un bon pont entre une grande maison classique et les cuvées de prestige plus exigeantes.",
+      "profil": {
+        "fraicheur": "Équilibrée",
+        "rondeur": "Ronde",
+        "puissance": "Puissante",
+        "longueur": "Complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Volaille rôtie"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Poisson en sauce"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Parmesan"
+        }
+      ]
+    }
+  },
+  {
+    "id": "leclerc-briant-brut-reserve-base-2020",
+    "name": "Brut Réserve — base 2020",
+    "short": "Brut Réserve — base 2020",
+    "house": "Leclerc Briant",
+    "region": "Champagne",
+    "price": 63,
+    "priceMin": 55,
+    "priceMax": 70,
+    "tier": 2,
+    "producerType": "maison",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#c9a85e",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_apero",
+      "occ_diner"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_fruite"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_fromage"
+    ],
+    "note": "Cette base 2020 du Brut Réserve de Leclerc Briant assemble 40 % de meunier, 40 % de pinot noir et 20 % de chardonnay, avec un dosage de 4,5 g/L. Son profil frais mais charnu convient à l’apéritif comme à un repas, particulièrement pour découvrir une maison certifiée biologique.",
+    "pair": "jambon de Reims, agneau, comté",
+    "tags": [
+      "extra-brut sans année",
+      "découverte",
+      "apéritif"
+    ],
+    "sourceUrl": "https://www.leclercbriant.fr/uploads/brochures/Brut-Reserve-2020-65e5d0200938f.pdf",
+    "verifiedAt": "2026-07-26",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 86,
+    "releaseLabel": "base-2020",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "Fiche technique officielle avec dosage 4.5 g/L pour la base 2020",
+      "sourceQuality": "officielle technique",
+      "advice": "Cette base 2020 du Brut Réserve de Leclerc Briant assemble 40 % de meunier, 40 % de pinot noir et 20 % de chardonnay, avec un dosage de 4,5 g/L. Son profil frais mais charnu convient à l’apéritif comme à un repas, particulièrement pour découvrir une maison certifiée biologique.",
+      "profil": {
+        "fraicheur": "Fraîche",
+        "rondeur": "Ronde",
+        "puissance": "Équilibrée",
+        "longueur": "Complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Jambon de Reims"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Agneau"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Comté"
+        }
+      ]
+    }
+  },
+  {
+    "id": "delamotte-brut",
+    "name": "Brut",
+    "short": "Brut",
+    "house": "Delamotte",
+    "region": "Champagne",
+    "price": 58,
+    "priceMin": 50,
+    "priceMax": 65,
+    "tier": 2,
+    "producerType": "maison",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#c9a85e",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_apero",
+      "occ_cadeau",
+      "occ_diner",
+      "occ_romantique"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_delicat"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_mer",
+      "accord_fromage"
+    ],
+    "note": "Avec 60 % de chardonnay, ce brut privilégie la finesse et la fraîcheur sans devenir austère. Il fonctionne particulièrement bien pour un cadeau discret, un apéritif élégant ou des fruits de mer. À recommander à ceux qui recherchent une maison moins démonstrative, avec une texture nette et un style facile à associer.",
+    "pair": "huîtres, poisson cru, fromage frais",
+    "tags": [
+      "brut sans année",
+      "apéritif",
+      "cadeau"
+    ],
+    "sourceUrl": "https://www.champagne-delamotte.com/en/products/brut",
+    "verifiedAt": "2026-07-26",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 86,
+    "releaseLabel": "standard",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "60% Chardonnay / 35% Pinot Noir / 5% Meunier sur la fiche actuelle",
+      "sourceQuality": "officielle produit",
+      "advice": "Avec 60 % de chardonnay, ce brut privilégie la finesse et la fraîcheur sans devenir austère. Il fonctionne particulièrement bien pour un cadeau discret, un apéritif élégant ou des fruits de mer. À recommander à ceux qui recherchent une maison moins démonstrative, avec une texture nette et un style facile à associer.",
+      "profil": {
+        "fraicheur": "Fraîche",
+        "rondeur": "Équilibrée",
+        "puissance": "Légère",
+        "longueur": "Nuancée"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Huîtres"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Poisson cru"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Fromage frais"
+        }
+      ]
+    }
+  },
+  {
+    "id": "jacquesson-cuvee-748",
+    "name": "Cuvée n° 748",
+    "short": "Cuvée n° 748",
+    "house": "Jacquesson",
+    "region": "Champagne",
+    "price": 83,
+    "priceMin": 70,
+    "priceMax": 95,
+    "tier": 3,
+    "producerType": "maison",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#c9a85e",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_apero",
+      "occ_cadeau",
+      "occ_diner"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_riche_ample"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_mer",
+      "accord_volaille",
+      "accord_fromage"
+    ],
+    "note": "La Cuvée n° 748 est une sortie précise fondée sur la vendange 2020, complétée par 24 % de vins de réserve. Vinifiée et élevée en foudres sans filtration ni collage, puis dosée à 2 g/L, elle s’adresse aux amateurs de champagnes tendus, complexes et construits pour la table.",
+    "pair": "poisson noble, volaille, vieux comté",
+    "tags": [
+      "extra-brut multi-vintage",
+      "collection",
+      "découverte"
+    ],
+    "sourceUrl": "https://champagnejacquesson.com/oenotheque/2025",
+    "verifiedAt": "2026-07-26",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 86,
+    "releaseLabel": "748",
+    "vintageYear": null,
+    "editionNumber": 748,
+    "details": {
+      "facts": "Base vendange 2020 / 24% de vins de réserve / vinification et élevage en foudres / dosage 2 g/L",
+      "sourceQuality": "officielle produit",
+      "advice": "La Cuvée n° 748 est une sortie précise fondée sur la vendange 2020, complétée par 24 % de vins de réserve. Vinifiée et élevée en foudres sans filtration ni collage, puis dosée à 2 g/L, elle s’adresse aux amateurs de champagnes tendus, complexes et construits pour la table.",
+      "profil": {
+        "fraicheur": "Très fraîche",
+        "rondeur": "Équilibrée",
+        "puissance": "Puissante",
+        "longueur": "Très complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Poisson noble"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Volaille"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Vieux comté"
+        }
+      ]
+    }
+  },
+  {
+    "id": "laherte-freres-ultradition-brut",
+    "name": "Ultradition Brut",
+    "short": "Ultradition Brut",
+    "house": "Laherte Frères",
+    "region": "Champagne",
+    "price": 53,
+    "priceMin": 45,
+    "priceMax": 60,
+    "tier": 2,
+    "producerType": "vigneron",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#c9a85e",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_apero",
+      "occ_diner"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_fruite"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_mer",
+      "accord_volaille",
+      "accord_aperitif"
+    ],
+    "note": "Une porte d’entrée pertinente vers le champagne de vigneron : expressif, travaillé dans plusieurs contenants et dosé sans chercher l’extrême sécheresse. Il offre assez de chair pour accompagner un repas léger, tout en restant vivant à l’apéritif. À proposer aux curieux qui veulent sortir des signatures de grandes maisons.",
+    "pair": "charcuterie fine, poisson rôti, volaille",
+    "tags": [
+      "brut sans année",
+      "découverte",
+      "apéritif"
+    ],
+    "sourceUrl": "https://www.champagne-laherte.com/docs/en/fiche-technique-en-Brut_Ultradition.pdf",
+    "verifiedAt": "2026-07-26",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 86,
+    "releaseLabel": "standard",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "Dosage 7-8 g/L et élevage en cuves / foudres / fûts",
+      "sourceQuality": "officielle technique",
+      "advice": "Une porte d’entrée pertinente vers le champagne de vigneron : expressif, travaillé dans plusieurs contenants et dosé sans chercher l’extrême sécheresse. Il offre assez de chair pour accompagner un repas léger, tout en restant vivant à l’apéritif. À proposer aux curieux qui veulent sortir des signatures de grandes maisons.",
+      "profil": {
+        "fraicheur": "Fraîche",
+        "rondeur": "Ronde",
+        "puissance": "Équilibrée",
+        "longueur": "Complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Charcuterie fine"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Poisson rôti"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Volaille"
+        }
+      ]
+    }
+  },
+  {
+    "id": "chartogne-taillet-sainte-anne",
+    "name": "Sainte-Anne",
+    "short": "Sainte-Anne",
+    "house": "Chartogne-Taillet",
+    "region": "Champagne",
+    "price": 65,
+    "priceMin": 55,
+    "priceMax": 75,
+    "tier": 2,
+    "producerType": "vigneron",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#c9a85e",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_apero",
+      "occ_diner"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_delicat"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_mer"
+    ],
+    "note": "Sainte-Anne s’adresse à l’amateur qui veut percevoir un travail de terroir sans commencer par une cuvée parcellaire rare. L’assemblage de parcelles et de plusieurs vendanges recherche l’équilibre plutôt qu’un effet spectaculaire. Un choix de découverte sérieux, adapté à l’apéritif comme à une cuisine marine ou végétale précise.",
+    "pair": "coquillages, poisson blanc, légumes rôtis",
+    "tags": [
+      "brut multi-vintage",
+      "découverte",
+      "apéritif"
+    ],
+    "sourceUrl": "https://chartogne-taillet.com/en/vin/sainte-anne/details",
+    "verifiedAt": "2026-07-26",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 86,
+    "releaseLabel": "standard",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "Assemblage de parcelles et de plusieurs vendanges",
+      "sourceQuality": "officielle produit",
+      "advice": "Sainte-Anne s’adresse à l’amateur qui veut percevoir un travail de terroir sans commencer par une cuvée parcellaire rare. L’assemblage de parcelles et de plusieurs vendanges recherche l’équilibre plutôt qu’un effet spectaculaire. Un choix de découverte sérieux, adapté à l’apéritif comme à une cuisine marine ou végétale précise.",
+      "profil": {
+        "fraicheur": "Fraîche",
+        "rondeur": "Équilibrée",
+        "puissance": "Équilibrée",
+        "longueur": "Complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Coquillages"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Poisson blanc"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Légumes rôtis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "krug-grande-cuvee-174",
+    "name": "Grande Cuvée 174ème Édition",
+    "short": "Grande Cuvée 174ème Édition",
+    "house": "Krug",
+    "region": "Champagne",
+    "price": 260,
+    "priceMin": 220,
+    "priceMax": 300,
+    "tier": 4,
+    "producerType": "maison",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#c9a85e",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_cadeau",
+      "occ_diner",
+      "occ_fete"
+    ],
+    "profil": [
+      "profil_fruite",
+      "profil_riche_ample"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_mer",
+      "accord_volaille",
+      "accord_fromage"
+    ],
+    "note": "Cette 174ème Édition doit être traitée comme une sortie précise, pas comme un Krug générique. L’assemblage de 143 vins issus de dix années vise profondeur, relief et continuité de style. Une bouteille pour un grand repas ou un cadeau majeur, à servir dans un verre ample et sans la refroidir excessivement.",
+    "pair": "homard, volaille truffée, vieux comté",
+    "tags": [
+      "brut multi-millésime",
+      "grand cadeau",
+      "célébration"
+    ],
+    "sourceUrl": "https://www.krug.com/en-int/champagne/krug-grande-cuvee-174eme-edition",
+    "verifiedAt": "2026-07-26",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 94,
+    "releaseLabel": "174eme-edition",
+    "vintageYear": null,
+    "editionNumber": 174,
+    "details": {
+      "facts": "143 vins issus de 10 années; assemblage annoncé à 54% Pinot Noir / 29% Chardonnay / 17% Meunier",
+      "sourceQuality": "officielle produit",
+      "advice": "Cette 174ème Édition doit être traitée comme une sortie précise, pas comme un Krug générique. L’assemblage de 143 vins issus de dix années vise profondeur, relief et continuité de style. Une bouteille pour un grand repas ou un cadeau majeur, à servir dans un verre ample et sans la refroidir excessivement.",
+      "profil": {
+        "fraicheur": "Équilibrée",
+        "rondeur": "Très ronde",
+        "puissance": "Très puissante",
+        "longueur": "Très complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Homard"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Volaille truffée"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Vieux comté"
+        }
+      ]
+    }
+  },
+  {
+    "id": "dom-perignon-vintage-2015",
+    "name": "Vintage 2015",
+    "short": "Vintage 2015",
+    "house": "Dom Pérignon",
+    "region": "Champagne",
+    "price": 240,
+    "priceMin": 200,
+    "priceMax": 280,
+    "tier": 4,
+    "producerType": "maison",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#c9a85e",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_cadeau",
+      "occ_diner",
+      "occ_fete"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_fruite",
+      "profil_riche_ample"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_volaille"
+    ],
+    "note": "Le Vintage 2015 associe une présence ample à une trame plus fraîche qu’attendu pour un millésime solaire. Il convient aux grandes occasions où la reconnaissance de l’étiquette compte autant que le vin. À privilégier à table, avec une préparation précise, plutôt qu’en simple toast servi trop froid et trop rapidement.",
+    "pair": "turbot, volaille rôtie, champignons",
+    "tags": [
+      "brut millésimé",
+      "grand cadeau",
+      "célébration"
+    ],
+    "sourceUrl": "https://www.domperignon.com/en-us/product/vintage/2015",
+    "verifiedAt": "2026-07-26",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 94,
+    "releaseLabel": "2015",
+    "vintageYear": 2015,
+    "editionNumber": null,
+    "details": {
+      "facts": "La maison ne produit que des champagnes millésimés et présente 2015 comme édition courante",
+      "sourceQuality": "officielle produit",
+      "advice": "Le Vintage 2015 associe une présence ample à une trame plus fraîche qu’attendu pour un millésime solaire. Il convient aux grandes occasions où la reconnaissance de l’étiquette compte autant que le vin. À privilégier à table, avec une préparation précise, plutôt qu’en simple toast servi trop froid et trop rapidement.",
+      "profil": {
+        "fraicheur": "Fraîche",
+        "rondeur": "Très ronde",
+        "puissance": "Puissante",
+        "longueur": "Très complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Turbot"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Volaille rôtie"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Champignons"
+        }
+      ]
+    }
+  },
+  {
+    "id": "louis-roederer-cristal-2016",
+    "name": "Cristal 2016",
+    "short": "Cristal 2016",
+    "house": "Louis Roederer",
+    "region": "Champagne",
+    "price": 360,
+    "priceMin": 300,
+    "priceMax": 420,
+    "tier": 4,
+    "producerType": "maison",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#c9a85e",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_cadeau",
+      "occ_diner",
+      "occ_fete"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_fruite",
+      "profil_riche_ample"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_mer"
+    ],
+    "note": "Cristal 2016 combine concentration, précision et finale saline dans une expression particulièrement complète. C’est le choix prestige pour un amateur sensible à la tension et à la finesse plus qu’à la seule puissance. Il mérite un repas sobre, des produits marins nobles et du temps dans le verre pour révéler sa complexité.",
+    "pair": "caviar, langoustine, poisson noble",
+    "tags": [
+      "brut millésimé",
+      "grand cadeau",
+      "célébration"
+    ],
+    "sourceUrl": "https://www.louis-roederer.com/en/wine/cristal",
+    "verifiedAt": "2026-07-26",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 86,
+    "releaseLabel": "2016",
+    "vintageYear": 2016,
+    "editionNumber": null,
+    "details": {
+      "facts": "Millésime sélectionné sur la fiche Cristal actuelle de la maison",
+      "sourceQuality": "officielle produit",
+      "advice": "Cristal 2016 combine concentration, précision et finale saline dans une expression particulièrement complète. C’est le choix prestige pour un amateur sensible à la tension et à la finesse plus qu’à la seule puissance. Il mérite un repas sobre, des produits marins nobles et du temps dans le verre pour révéler sa complexité.",
+      "profil": {
+        "fraicheur": "Très fraîche",
+        "rondeur": "Ronde",
+        "puissance": "Puissante",
+        "longueur": "Très complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Caviar"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Langoustine"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Poisson noble"
+        }
+      ]
+    }
+  },
+  {
+    "id": "taittinger-comtes-de-champagne-bdb-2013",
+    "name": "Comtes de Champagne Blanc de Blancs 2013",
+    "short": "Comtes de Champagne Blanc de Blancs 2013",
+    "house": "Taittinger",
+    "region": "Champagne",
+    "price": 270,
+    "priceMin": 220,
+    "priceMax": 320,
+    "tier": 4,
+    "producerType": "maison",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#c9a85e",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_cadeau",
+      "occ_diner",
+      "occ_fete",
+      "occ_romantique"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_riche_ample",
+      "profil_delicat"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_mer"
+    ],
+    "note": "Issu uniquement de chardonnays de cinq Grands Crus de la Côte des Blancs, le Comtes 2013 vise la précision, la craie et la longueur. À recommander à un amateur de blancs tendus qui souhaite une bouteille de garde déjà expressive. Son terrain naturel reste les crustacés, les poissons fins et les repas élégants.",
+    "pair": "huîtres, homard, sole",
+    "tags": [
+      "blanc de blancs millésimé",
+      "grand cadeau",
+      "célébration"
+    ],
+    "sourceUrl": "https://taittinger.com/en/webzine/comtes-de-champagne-blanc-de-blancs-2013",
+    "verifiedAt": "2026-07-26",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 86,
+    "releaseLabel": "2013",
+    "vintageYear": 2013,
+    "editionNumber": null,
+    "details": {
+      "facts": "100% Chardonnay provenant de cinq Grands Crus de la Côte des Blancs",
+      "sourceQuality": "officielle produit",
+      "advice": "Issu uniquement de chardonnays de cinq Grands Crus de la Côte des Blancs, le Comtes 2013 vise la précision, la craie et la longueur. À recommander à un amateur de blancs tendus qui souhaite une bouteille de garde déjà expressive. Son terrain naturel reste les crustacés, les poissons fins et les repas élégants.",
+      "profil": {
+        "fraicheur": "Très fraîche",
+        "rondeur": "Équilibrée",
+        "puissance": "Équilibrée",
+        "longueur": "Très complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Huîtres"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Homard"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Sole"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bollinger-rd-2008",
+    "name": "R.D. 2008",
+    "short": "R.D. 2008",
+    "house": "Bollinger",
+    "region": "Champagne",
+    "price": 435,
+    "priceMin": 350,
+    "priceMax": 520,
+    "tier": 4,
+    "producerType": "maison",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#c9a85e",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_cadeau",
+      "occ_diner",
+      "occ_fete"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_fruite",
+      "profil_riche_ample"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_volaille",
+      "accord_fromage"
+    ],
+    "note": "R.D. 2008 réunit la puissance du pinot noir, un très long vieillissement et la fraîcheur d’un dégorgement récent. Son dosage de 3 g/L ne cherche pas la maigreur : il laisse parler une matière intense et complexe. Une bouteille pour amateur averti, pensée pour la table et les accords de grande profondeur.",
+    "pair": "gibier à plume, ris de veau, parmesan affiné",
+    "tags": [
+      "extra-brut millésimé",
+      "collection",
+      "grand repas"
+    ],
+    "sourceUrl": "https://www.champagne-bollinger.com/en/wine/bollinger-rd-2008",
+    "verifiedAt": "2026-07-26",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 78,
+    "releaseLabel": "2008",
+    "vintageYear": 2008,
+    "editionNumber": null,
+    "details": {
+      "facts": "71% Pinot Noir / 29% Chardonnay; dosage annoncé à 3 g/L",
+      "sourceQuality": "officielle produit",
+      "advice": "R.D. 2008 réunit la puissance du pinot noir, un très long vieillissement et la fraîcheur d’un dégorgement récent. Son dosage de 3 g/L ne cherche pas la maigreur : il laisse parler une matière intense et complexe. Une bouteille pour amateur averti, pensée pour la table et les accords de grande profondeur.",
+      "profil": {
+        "fraicheur": "Fraîche",
+        "rondeur": "Ronde",
+        "puissance": "Très puissante",
+        "longueur": "Très complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Gibier à plume"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Ris de veau"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Parmesan affiné"
+        }
+      ]
+    }
+  },
+  {
+    "id": "philipponnat-clos-des-goisses-2015",
+    "name": "Clos des Goisses 2015",
+    "short": "Clos des Goisses 2015",
+    "house": "Philipponnat",
+    "region": "Champagne",
+    "price": 260,
+    "priceMin": 200,
+    "priceMax": 320,
+    "tier": 4,
+    "producerType": "maison",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#c9a85e",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_cadeau",
+      "occ_diner",
+      "occ_fete"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_fruite",
+      "profil_riche_ample"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_mer",
+      "accord_fromage"
+    ],
+    "note": "Clos des Goisses 2015 exprime un coteau unique, très exposé, avec 78 % de pinot noir et une minéralité qui tient tête à la puissance du vin. Ce n’est pas une bouteille d’apéritif : elle prend tout son sens au repas, légèrement aérée, face à des plats savoureux et structurés.",
+    "pair": "homard, poisson iodé, fromage à pâte molle",
+    "tags": [
+      "extra-brut millésimé",
+      "collection",
+      "grand repas"
+    ],
+    "sourceUrl": "https://www.philipponnat.com/wp-content/uploads/2025/03/ft-philipponnat-cdg-2015-en-1.pdf",
+    "verifiedAt": "2026-07-26",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 78,
+    "releaseLabel": "2015",
+    "vintageYear": 2015,
+    "editionNumber": null,
+    "details": {
+      "facts": "78% Pinot Noir / 22% Chardonnay; dosage annoncé à 4.25 g/L",
+      "sourceQuality": "officielle technique",
+      "advice": "Clos des Goisses 2015 exprime un coteau unique, très exposé, avec 78 % de pinot noir et une minéralité qui tient tête à la puissance du vin. Ce n’est pas une bouteille d’apéritif : elle prend tout son sens au repas, légèrement aérée, face à des plats savoureux et structurés.",
+      "profil": {
+        "fraicheur": "Équilibrée",
+        "rondeur": "Ronde",
+        "puissance": "Très puissante",
+        "longueur": "Très complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Homard"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Poisson iodé"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Fromage à pâte molle"
+        }
+      ]
+    }
+  },
+  {
+    "id": "dom-perignon-rose-2009",
+    "name": "Dom Pérignon Rosé 2009",
+    "short": "Dom Pérignon Rosé 2009",
+    "house": "Dom Pérignon",
+    "region": "Champagne",
+    "price": 525,
+    "priceMin": 400,
+    "priceMax": 650,
+    "tier": 4,
+    "producerType": "maison",
+    "glass": [
+      "#9f514b",
+      "#d98a86"
+    ],
+    "foil": "#c98f88",
+    "accent": "#C07A72",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_cadeau",
+      "occ_diner",
+      "occ_fete",
+      "occ_romantique"
+    ],
+    "profil": [
+      "profil_fruite",
+      "profil_riche_ample"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_mer",
+      "accord_volaille"
+    ],
+    "note": "Dom Pérignon Rosé 2009 privilégie la maturité du fruit, la densité et les nuances épicées plutôt qu’un rosé léger d’apéritif. Il convient à un cadeau spectaculaire ou à un repas où le vin peut accompagner des chairs délicates. À servir dans de grands verres, avec une température qui laisse le bouquet s’ouvrir.",
+    "pair": "canard, homard, thon rouge",
+    "tags": [
+      "rosé millésimé",
+      "grand cadeau",
+      "célébration"
+    ],
+    "sourceUrl": "https://www.domperignon.com/en-us/product/rose/2009",
+    "verifiedAt": "2026-07-26",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 78,
+    "releaseLabel": "2009",
+    "vintageYear": 2009,
+    "editionNumber": null,
+    "details": {
+      "facts": "Millésime et fiche actuels confirmés par la maison",
+      "sourceQuality": "officielle produit",
+      "advice": "Dom Pérignon Rosé 2009 privilégie la maturité du fruit, la densité et les nuances épicées plutôt qu’un rosé léger d’apéritif. Il convient à un cadeau spectaculaire ou à un repas où le vin peut accompagner des chairs délicates. À servir dans de grands verres, avec une température qui laisse le bouquet s’ouvrir.",
+      "profil": {
+        "fraicheur": "Équilibrée",
+        "rondeur": "Très ronde",
+        "puissance": "Très puissante",
+        "longueur": "Très complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Canard"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Homard"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Thon rouge"
+        }
+      ]
+    }
+  },
+  {
+    "id": "drappier-carte-d-or",
+    "name": "Carte d’Or",
+    "short": "Carte d’Or",
+    "house": "Drappier",
+    "region": "Champagne",
+    "price": 45,
+    "priceMin": 38,
+    "priceMax": 52,
+    "tier": 2,
+    "producerType": "maison",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#c9a85e",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_apero",
+      "occ_diner",
+      "occ_fete"
+    ],
+    "profil": [
+      "profil_fruite",
+      "profil_riche_ample"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_aperitif",
+      "accord_volaille",
+      "accord_fromage"
+    ],
+    "note": "Une option de maison à privilégier quand on recherche davantage de présence qu’un brut très léger, sans entrer dans une cuvée de prestige. Sa dominante de pinot noir le rend cohérent pour un apéritif généreux, une volaille ou un fromage peu puissant. Une bouteille lisible pour recevoir.",
+    "pair": "gougères, volaille rôtie, comté jeune",
+    "tags": [
+      "brut sans année",
+      "pinot noir majoritaire",
+      "repas"
+    ],
+    "sourceUrl": "https://www.champagne-drappier.com/sites/drappier/files/upload/FT%20CARTE%20D%27OR-ENG.pdf",
+    "verifiedAt": "2026-07-27",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 88,
+    "releaseLabel": "standard",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "Assemblage officiel : 80 % Pinot Noir, 15 % Chardonnay et 5 % Meunier. La fiche indique 40 % de vins de réserve et un dosage de 5 g/L.",
+      "sourceQuality": "fiche technique officielle",
+      "advice": "Une option de maison à privilégier quand on recherche davantage de présence qu’un brut très léger, sans entrer dans une cuvée de prestige. Sa dominante de pinot noir le rend cohérent pour un apéritif généreux, une volaille ou un fromage peu puissant. Une bouteille lisible pour recevoir.",
+      "profil": {
+        "fraicheur": "Équilibrée",
+        "rondeur": "Ronde",
+        "puissance": "Puissante",
+        "longueur": "Complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Gougères"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Volaille rôtie"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Comté jeune"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ayala-rose-majeur",
+    "name": "Rosé Majeur",
+    "short": "Rosé Majeur",
+    "house": "AYALA",
+    "region": "Champagne",
+    "price": 62,
+    "priceMin": 55,
+    "priceMax": 70,
+    "tier": 2,
+    "producerType": "maison",
+    "glass": [
+      "#9f514b",
+      "#d98a86"
+    ],
+    "foil": "#c98f88",
+    "accent": "#C07A72",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_apero",
+      "occ_cadeau",
+      "occ_diner",
+      "occ_romantique"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_fruite"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_mer",
+      "accord_volaille",
+      "accord_dessert"
+    ],
+    "note": "À retenir pour un rosé de maison précis, porté majoritairement par le chardonnay et suffisamment polyvalent pour dépasser l’apéritif. Sa construction convient aux crustacés, à un saumon juste saisi ou à un dessert peu sucré aux fruits rouges. Un cadeau élégant pour quelqu’un qui préfère fraîcheur et fruit.",
+    "pair": "saumon, crustacés, fruits rouges",
+    "tags": [
+      "rosé d’assemblage",
+      "chardonnay majoritaire",
+      "cadeau"
+    ],
+    "sourceUrl": "https://www.champagne-ayala.fr/en/champagne/rose-majeur/",
+    "verifiedAt": "2026-07-27",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 87,
+    "releaseLabel": "standard",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "La page officielle indique 51 % Chardonnay, 39 % Pinot Noir et 10 % Meunier, dont 5 % de vin rouge Grand Cru, avec 3 ans sur lies en moyenne et un dosage de 6 g/L.",
+      "sourceQuality": "fiche produit officielle",
+      "advice": "À retenir pour un rosé de maison précis, porté majoritairement par le chardonnay et suffisamment polyvalent pour dépasser l’apéritif. Sa construction convient aux crustacés, à un saumon juste saisi ou à un dessert peu sucré aux fruits rouges. Un cadeau élégant pour quelqu’un qui préfère fraîcheur et fruit.",
+      "profil": {
+        "fraicheur": "Très fraîche",
+        "rondeur": "Ronde",
+        "puissance": "Équilibrée",
+        "longueur": "Complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Saumon"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Crustacés"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Fruits rouges"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mandois-rose-origine-base-2022",
+    "name": "Rosé Origine — base 2022",
+    "short": "Rosé Origine base 2022",
+    "house": "Mandois",
+    "region": "Champagne",
+    "price": 43,
+    "priceMin": 35,
+    "priceMax": 50,
+    "tier": 2,
+    "producerType": "maison",
+    "glass": [
+      "#9f514b",
+      "#d98a86"
+    ],
+    "foil": "#c98f88",
+    "accent": "#C07A72",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_apero",
+      "occ_fete",
+      "occ_diner"
+    ],
+    "profil": [
+      "profil_fruite",
+      "profil_frais_vif"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_aperitif",
+      "accord_mer",
+      "accord_dessert"
+    ],
+    "note": "Une option accessible pour intégrer un rosé moins attendu au sélecteur, avec une base et des années de réserve clairement publiées. Sa répartition équilibrée entre meunier, pinot noir et chardonnay le destine à un apéritif, un saumon ou des fruits rouges. À choisir pour une célébration sans prestige ostentatoire.",
+    "pair": "apéritif, saumon, fruits rouges",
+    "tags": [
+      "rosé d’assemblage",
+      "base 2022",
+      "célébration"
+    ],
+    "sourceUrl": "https://www.champagne-mandois.fr/en/vin/rose-origine/",
+    "verifiedAt": "2026-07-27",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 79,
+    "releaseLabel": "base-2022",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "La page officielle indique 40 % Meunier, 30 % Pinot Noir et 30 % Chardonnay, sur une base 2022 complétée par les récoltes 2021, 2020 et 2019.",
+      "sourceQuality": "fiche produit officielle de la base 2022",
+      "advice": "Une option accessible pour intégrer un rosé moins attendu au sélecteur, avec une base et des années de réserve clairement publiées. Sa répartition équilibrée entre meunier, pinot noir et chardonnay le destine à un apéritif, un saumon ou des fruits rouges. À choisir pour une célébration sans prestige ostentatoire.",
+      "profil": {
+        "fraicheur": "Fraîche",
+        "rondeur": "Ronde",
+        "puissance": "Équilibrée",
+        "longueur": "Nuancée"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Apéritif"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Saumon"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Fruits rouges"
+        }
+      ]
+    }
+  },
+  {
+    "id": "pierre-gimonnet-cuis-1er-cru",
+    "name": "Cuis 1er Cru Blanc de Blancs",
+    "short": "Cuis 1er Cru",
+    "house": "Pierre Gimonnet & Fils",
+    "region": "Champagne",
+    "price": 50,
+    "priceMin": 42,
+    "priceMax": 58,
+    "tier": 2,
+    "producerType": "vigneron",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#d4c7a1",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_apero",
+      "occ_diner"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_delicat"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_mer",
+      "accord_aperitif"
+    ],
+    "note": "Une bonne porte d’entrée vers les blancs de blancs de vigneron : la cuvée met le chardonnay et l’assemblage de plusieurs récoltes au centre. Elle répond bien à une recherche de fraîcheur pour l’apéritif, les huîtres ou un poisson cru. À éviter si l’on veut surtout puissance et rondeur.",
+    "pair": "huîtres, sashimi, poisson blanc",
+    "tags": [
+      "blanc de blancs",
+      "premier cru",
+      "vigneron"
+    ],
+    "sourceUrl": "https://www.champagne-gimonnet.com/wp-content/themes/gimonnettheme/pdf/brochure-gimonnet-en.pdf",
+    "verifiedAt": "2026-07-27",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 84,
+    "releaseLabel": "standard",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "La brochure officielle identifie Cuis 1er Cru comme un Brut non millésimé Blanc de Blancs, assemblé à partir d’au moins cinq récoltes.",
+      "sourceQuality": "brochure officielle du producteur",
+      "advice": "Une bonne porte d’entrée vers les blancs de blancs de vigneron : la cuvée met le chardonnay et l’assemblage de plusieurs récoltes au centre. Elle répond bien à une recherche de fraîcheur pour l’apéritif, les huîtres ou un poisson cru. À éviter si l’on veut surtout puissance et rondeur.",
+      "profil": {
+        "fraicheur": "Très fraîche",
+        "rondeur": "Droite",
+        "puissance": "Légère",
+        "longueur": "Nuancée"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Huîtres"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Sashimi"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Poisson blanc"
+        }
+      ]
+    }
+  },
+  {
+    "id": "larmandier-bernier-latitude",
+    "name": "Latitude",
+    "short": "Latitude",
+    "house": "Larmandier-Bernier",
+    "region": "Champagne",
+    "price": 63,
+    "priceMin": 55,
+    "priceMax": 70,
+    "tier": 2,
+    "producerType": "vigneron",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#cfbea0",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_apero",
+      "occ_diner",
+      "occ_cadeau"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_fruite"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_mer",
+      "accord_aperitif",
+      "accord_volaille"
+    ],
+    "note": "À proposer quand on veut un blanc de blancs de vigneron sec, mais moins austère qu’un style uniquement construit sur la tension. Le chardonnay de Vertus et la réserve perpétuelle en font une option polyvalente pour un apéritif gastronomique, des crustacés ou une volaille claire. Un cadeau connaisseur accessible.",
+    "pair": "crustacés, gougères, volaille aux agrumes",
+    "tags": [
+      "blanc de blancs",
+      "extra-brut",
+      "vigneron"
+    ],
+    "sourceUrl": "https://larmandier.fr/en/our-champagnes/latitude/",
+    "verifiedAt": "2026-07-27",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 89,
+    "releaseLabel": "standard",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "La page officielle indique 100 % Chardonnay du sud de Vertus, 40 % de réserve perpétuelle commencée en 2004 et un dosage de 2 g/L.",
+      "sourceQuality": "fiche produit officielle",
+      "advice": "À proposer quand on veut un blanc de blancs de vigneron sec, mais moins austère qu’un style uniquement construit sur la tension. Le chardonnay de Vertus et la réserve perpétuelle en font une option polyvalente pour un apéritif gastronomique, des crustacés ou une volaille claire. Un cadeau connaisseur accessible.",
+      "profil": {
+        "fraicheur": "Très fraîche",
+        "rondeur": "Ronde",
+        "puissance": "Équilibrée",
+        "longueur": "Complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Crustacés"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Gougères"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Volaille aux agrumes"
+        }
+      ]
+    }
+  },
+  {
+    "id": "de-sousa-tradition",
+    "name": "Tradition",
+    "short": "Tradition",
+    "house": "De Sousa",
+    "region": "Champagne",
+    "price": 48,
+    "priceMin": 40,
+    "priceMax": 55,
+    "tier": 2,
+    "producerType": "vigneron",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#c9b68a",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_apero",
+      "occ_diner"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_fruite"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_aperitif",
+      "accord_mer"
+    ],
+    "note": "Une cuvée de découverte pertinente pour comparer un vigneron à une grande maison dans la même zone de budget. L’assemblage des trois cépages lui donne une lecture assez complète et facile à placer : apéritif, tapas de la mer ou poisson. À retenir pour initier sans choisir un style trop radical.",
+    "pair": "gougères, crevettes, poisson grillé",
+    "tags": [
+      "brut sans année",
+      "trois cépages",
+      "vigneron"
+    ],
+    "sourceUrl": "https://www.champagnedesousa.com/en/bouteille/tradition/",
+    "verifiedAt": "2026-07-27",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 82,
+    "releaseLabel": "standard",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "La page officielle indique un assemblage de plusieurs années : 50 % Chardonnay, 40 % Pinot Noir et 10 % Meunier.",
+      "sourceQuality": "fiche produit officielle",
+      "advice": "Une cuvée de découverte pertinente pour comparer un vigneron à une grande maison dans la même zone de budget. L’assemblage des trois cépages lui donne une lecture assez complète et facile à placer : apéritif, tapas de la mer ou poisson. À retenir pour initier sans choisir un style trop radical.",
+      "profil": {
+        "fraicheur": "Fraîche",
+        "rondeur": "Ronde",
+        "puissance": "Équilibrée",
+        "longueur": "Nuancée"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Gougères"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Crevettes"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Poisson grillé"
+        }
+      ]
+    }
+  },
+  {
+    "id": "rene-geoffroy-expression-base-2020",
+    "name": "Expression — base 2020",
+    "short": "Expression base 2020",
+    "house": "René Geoffroy",
+    "region": "Champagne",
+    "price": 57,
+    "priceMin": 48,
+    "priceMax": 65,
+    "tier": 2,
+    "producerType": "vigneron",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#b69d70",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_apero",
+      "occ_diner"
+    ],
+    "profil": [
+      "profil_fruite",
+      "profil_riche_ample"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_aperitif",
+      "accord_volaille",
+      "accord_fromage"
+    ],
+    "note": "Une référence utile pour découvrir un assemblage de vigneron où pinot noir, meunier et chardonnay restent visibles sans profil extrême. La base 2020 et la réserve perpétuelle sont clairement identifiées. À servir avec un apéritif nourri, une volaille ou des champignons plutôt qu’avec un accord marin très délicat.",
+    "pair": "charcuterie fine, volaille, champignons",
+    "tags": [
+      "extra-brut",
+      "base 2020",
+      "vigneron"
+    ],
+    "sourceUrl": "https://www.champagne-geoffroy.com/en/featured_item/expression-nv-2/",
+    "verifiedAt": "2026-07-27",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 83,
+    "releaseLabel": "base-2020",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "La fiche officielle indique 40 % Pinot Noir, 35 % Meunier et 25 % Chardonnay, une base composée à 50 % de 2020, une réserve perpétuelle et un dosage de 3,5 g/L.",
+      "sourceQuality": "fiche produit officielle de la base 2020",
+      "advice": "Une référence utile pour découvrir un assemblage de vigneron où pinot noir, meunier et chardonnay restent visibles sans profil extrême. La base 2020 et la réserve perpétuelle sont clairement identifiées. À servir avec un apéritif nourri, une volaille ou des champignons plutôt qu’avec un accord marin très délicat.",
+      "profil": {
+        "fraicheur": "Fraîche",
+        "rondeur": "Ronde",
+        "puissance": "Puissante",
+        "longueur": "Complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Charcuterie fine"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Volaille"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Champignons"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mg-heucq-fossile",
+    "name": "Fossile",
+    "short": "Fossile",
+    "house": "M.G. Heucq",
+    "region": "Champagne",
+    "price": 38,
+    "priceMin": 30,
+    "priceMax": 45,
+    "tier": 2,
+    "producerType": "vigneron",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#b7a278",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_apero",
+      "occ_fete"
+    ],
+    "profil": [
+      "profil_fruite",
+      "profil_riche_ample"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_aperitif",
+      "accord_volaille"
+    ],
+    "note": "Une option de vigneron à budget contenu pour sortir des marques les plus visibles sans aller vers une cuvée parcellaire rare. L’assemblage dominé par le meunier et son dosage brut en font un candidat simple pour l’apéritif, un buffet ou une volaille. Une référence pédagogique pour le comparateur.",
+    "pair": "feuilletés, buffet froid, volaille",
+    "tags": [
+      "brut",
+      "meunier majoritaire",
+      "petit budget"
+    ],
+    "sourceUrl": "https://www.mg-heucq.fr/champagne-mg-heucq/",
+    "verifiedAt": "2026-07-27",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 72,
+    "releaseLabel": "standard",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "Le catalogue officiel indique 50 % Meunier, 30 % Chardonnay et 20 % Pinot Noir, avec 36 mois de vieillissement et un dosage de 7 g/L.",
+      "sourceQuality": "catalogue officiel du producteur",
+      "advice": "Une option de vigneron à budget contenu pour sortir des marques les plus visibles sans aller vers une cuvée parcellaire rare. L’assemblage dominé par le meunier et son dosage brut en font un candidat simple pour l’apéritif, un buffet ou une volaille. Une référence pédagogique pour le comparateur.",
+      "profil": {
+        "fraicheur": "Équilibrée",
+        "rondeur": "Ronde",
+        "puissance": "Équilibrée",
+        "longueur": "Nuancée"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Feuilletés"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Buffet froid"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Volaille"
+        }
+      ]
+    }
+  },
+  {
+    "id": "laurent-lequart-reserve",
+    "name": "Réserve",
+    "short": "Réserve",
+    "house": "Laurent Lequart",
+    "region": "Champagne",
+    "price": 38,
+    "priceMin": 30,
+    "priceMax": 45,
+    "tier": 2,
+    "producerType": "vigneron",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#c6aa72",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_apero",
+      "occ_fete"
+    ],
+    "profil": [
+      "profil_fruite"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_aperitif",
+      "accord_mer"
+    ],
+    "note": "À retenir pour explorer un pur meunier de la Vallée de la Marne dans une zone de prix accessible. Le dosage et l’élevage annoncés orientent vers une expression facile à partager plutôt que vers un extra-brut tranchant. Bon candidat pour l’apéritif, des crevettes marinées ou un saumon peu épicé.",
+    "pair": "crevettes marinées, saumon, bouchées apéritives",
+    "tags": [
+      "pur meunier",
+      "brut",
+      "vigneron"
+    ],
+    "sourceUrl": "https://www.champagne-laurent-lequart.fr/en/category/decouverte-en/",
+    "verifiedAt": "2026-07-27",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 73,
+    "releaseLabel": "standard",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "La page officielle indique 100 % Meunier, un dosage de 9 g/L et 30 mois de vieillissement.",
+      "sourceQuality": "fiche cuvée sur le site officiel",
+      "advice": "À retenir pour explorer un pur meunier de la Vallée de la Marne dans une zone de prix accessible. Le dosage et l’élevage annoncés orientent vers une expression facile à partager plutôt que vers un extra-brut tranchant. Bon candidat pour l’apéritif, des crevettes marinées ou un saumon peu épicé.",
+      "profil": {
+        "fraicheur": "Équilibrée",
+        "rondeur": "Très ronde",
+        "puissance": "Équilibrée",
+        "longueur": "Accessible"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Crevettes marinées"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Saumon"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Bouchées apéritives"
+        }
+      ]
+    }
+  },
+  {
+    "id": "pierre-peters-cuvee-de-reserve",
+    "name": "Cuvée de Réserve Blanc de Blancs",
+    "short": "Cuvée de Réserve",
+    "house": "Pierre Péters",
+    "region": "Champagne",
+    "price": 68,
+    "priceMin": 60,
+    "priceMax": 75,
+    "tier": 3,
+    "producerType": "vigneron",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#c8b891",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_apero",
+      "occ_cadeau",
+      "occ_diner",
+      "occ_romantique"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_delicat"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_mer",
+      "accord_aperitif"
+    ],
+    "note": "Une référence forte pour offrir ou découvrir un blanc de blancs Grand Cru de vigneron sans choisir un millésime. La réserve construite sur plus de vingt récoltes apporte un repère distinctif et vérifiable. À conseiller aux amateurs de fraîcheur avec huîtres, coquillages ou poisson cru, moins aux profils cherchant une grande rondeur.",
+    "pair": "huîtres, coquillages, poisson cru",
+    "tags": [
+      "blanc de blancs",
+      "grand cru",
+      "vigneron"
+    ],
+    "sourceUrl": "https://www.champagne-peters.com/en/cuvee-reserve",
+    "verifiedAt": "2026-07-27",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 90,
+    "releaseLabel": "standard",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "La fiche officielle indique 100 % Chardonnay de villages Grand Cru de la Côte des Blancs, un assemblage de plus de vingt récoltes et un dosage de 6 à 7 g/L.",
+      "sourceQuality": "fiche produit officielle",
+      "advice": "Une référence forte pour offrir ou découvrir un blanc de blancs Grand Cru de vigneron sans choisir un millésime. La réserve construite sur plus de vingt récoltes apporte un repère distinctif et vérifiable. À conseiller aux amateurs de fraîcheur avec huîtres, coquillages ou poisson cru, moins aux profils cherchant une grande rondeur.",
+      "profil": {
+        "fraicheur": "Très fraîche",
+        "rondeur": "Droite",
+        "puissance": "Équilibrée",
+        "longueur": "Très complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Huîtres"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Coquillages"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Poisson cru"
+        }
+      ]
+    }
+  },
+  {
+    "id": "francis-boulard-les-murgiers",
+    "name": "Les Murgiers",
+    "short": "Les Murgiers",
+    "house": "Francis Boulard & Fille",
+    "region": "Champagne",
+    "price": 65,
+    "priceMin": 55,
+    "priceMax": 75,
+    "tier": 2,
+    "producerType": "vigneron",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#b89e74",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_diner",
+      "occ_cadeau"
+    ],
+    "profil": [
+      "profil_fruite",
+      "profil_riche_ample"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_volaille",
+      "accord_fromage"
+    ],
+    "note": "Une bouteille à placer dans le parcours « vignerons » pour les visiteurs qui souhaitent une exploitation familiale engagée dans le bio et une cuvée moins standardisée. Le conseil reste volontairement sobre tant que la fiche technique détaillée n’est pas publiée : repas, volaille ou fromage, avec vérification de l’édition avant achat.",
+    "pair": "volaille, champignons, fromage",
+    "tags": [
+      "champagne biologique",
+      "vigneron",
+      "repas"
+    ],
+    "sourceUrl": "https://www.champagne-boulard.fr/",
+    "verifiedAt": "2026-07-27",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 77,
+    "releaseLabel": "standard",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "Le catalogue officiel du domaine liste Les Murgiers parmi les champagnes de cette maison familiale qui présente sa production comme biologique.",
+      "sourceQuality": "catalogue officiel du producteur ; fiche technique détaillée non publiée",
+      "advice": "Une bouteille à placer dans le parcours « vignerons » pour les visiteurs qui souhaitent une exploitation familiale engagée dans le bio et une cuvée moins standardisée. Le conseil reste volontairement sobre tant que la fiche technique détaillée n’est pas publiée : repas, volaille ou fromage, avec vérification de l’édition avant achat.",
+      "profil": {
+        "fraicheur": "Équilibrée",
+        "rondeur": "Ronde",
+        "puissance": "Puissante",
+        "longueur": "Complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Volaille"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Champignons"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Fromage"
+        }
+      ]
+    }
+  },
+  {
+    "id": "lanson-black-creation-259",
+    "name": "Le Black Création 259",
+    "short": "Le Black Création 259",
+    "house": "Lanson",
+    "region": "Champagne",
+    "price": 41,
+    "priceMin": 34,
+    "priceMax": 48,
+    "priceStatus": "editorial_range",
+    "priceRangeVerifiedAt": "2026-07-27",
+    "tier": 2,
+    "producerType": "maison",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#c9a85e",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_apero",
+      "occ_fete",
+      "occ_diner"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_fruite"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_aperitif",
+      "accord_mer",
+      "accord_volaille"
+    ],
+    "note": "À choisir pour un brut de grande maison frais et polyvalent, avec une sortie précisément identifiée plutôt qu’une cuvée générique. La vinification majoritairement sans fermentation malolactique favorise un profil vif, adapté à l’apéritif, aux crustacés et à une volaille légère. Une valeur lisible sous 50 euros.",
+    "pair": "gougères, crevettes, volaille citronnée",
+    "tags": [
+      "brut",
+      "création 259",
+      "vins de réserve"
+    ],
+    "sourceUrl": "https://lanson.com/en/products/le-black-creation",
+    "verifiedAt": "2026-07-27",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 86,
+    "releaseLabel": "259",
+    "vintageYear": null,
+    "editionNumber": 259,
+    "details": {
+      "facts": "La page officielle présente la Création 259, chaque numéro correspondant au nombre d’assemblages réalisés depuis 1760. Elle mentionne des vins de réserve sur plus de vingt ans, une réserve perpétuelle depuis 2013 et quatre ans de vieillissement en cave.",
+      "sourceQuality": "fiche produit officielle de la sortie 259",
+      "advice": "À choisir pour un brut de grande maison frais et polyvalent, avec une sortie précisément identifiée plutôt qu’une cuvée générique. La vinification majoritairement sans fermentation malolactique favorise un profil vif, adapté à l’apéritif, aux crustacés et à une volaille légère. Une valeur lisible sous 50 euros.",
+      "profil": {
+        "fraicheur": "Très fraîche",
+        "rondeur": "Équilibrée",
+        "puissance": "Équilibrée",
+        "longueur": "Complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Gougères"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Crevettes"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Volaille citronnée"
+        }
+      ]
+    }
+  },
+  {
+    "id": "lanson-rose-creation-68",
+    "name": "Le Rosé Création 68",
+    "short": "Le Rosé Création 68",
+    "house": "Lanson",
+    "region": "Champagne",
+    "price": 57,
+    "priceMin": 48,
+    "priceMax": 65,
+    "priceStatus": "editorial_range",
+    "priceRangeVerifiedAt": "2026-07-27",
+    "tier": 2,
+    "producerType": "maison",
+    "glass": [
+      "#9f514b",
+      "#d98a86"
+    ],
+    "foil": "#c98f88",
+    "accent": "#C07A72",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_apero",
+      "occ_cadeau",
+      "occ_fete",
+      "occ_romantique"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_fruite"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_mer",
+      "accord_dessert",
+      "accord_aperitif"
+    ],
+    "note": "Un rosé de maison à retenir pour une célébration ou un cadeau lorsque l’on souhaite du fruit sans perdre la fraîcheur. Sa construction associe vins rouges et réserves rosées, avec un élevage prolongé en cave. Il accompagne volontiers saumon, crustacés ou fruits rouges peu sucrés.",
+    "pair": "saumon, crustacés, fruits rouges",
+    "tags": [
+      "rosé d’assemblage",
+      "création 68",
+      "cadeau"
+    ],
+    "sourceUrl": "https://lanson.com/en/products/le-rose-creation",
+    "verifiedAt": "2026-07-27",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 85,
+    "releaseLabel": "68",
+    "vintageYear": null,
+    "editionNumber": 68,
+    "details": {
+      "facts": "La page officielle identifie la Création 68 et décrit un rosé d’assemblage utilisant des vins rouges ainsi que des vins de réserve rosés, élevé longuement en cave et élaboré majoritairement sans fermentation malolactique.",
+      "sourceQuality": "fiche produit officielle de la sortie 68",
+      "advice": "Un rosé de maison à retenir pour une célébration ou un cadeau lorsque l’on souhaite du fruit sans perdre la fraîcheur. Sa construction associe vins rouges et réserves rosées, avec un élevage prolongé en cave. Il accompagne volontiers saumon, crustacés ou fruits rouges peu sucrés.",
+      "profil": {
+        "fraicheur": "Très fraîche",
+        "rondeur": "Ronde",
+        "puissance": "Équilibrée",
+        "longueur": "Complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Saumon"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Crustacés"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Fruits rouges"
+        }
+      ]
+    }
+  },
+  {
+    "id": "henriot-brut-souverain",
+    "name": "Brut Souverain",
+    "short": "Brut Souverain",
+    "house": "Henriot",
+    "region": "Champagne",
+    "price": 53,
+    "priceMin": 45,
+    "priceMax": 60,
+    "priceStatus": "editorial_range",
+    "priceRangeVerifiedAt": "2026-07-27",
+    "tier": 2,
+    "producerType": "maison",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#c9a85e",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_apero",
+      "occ_cadeau",
+      "occ_diner"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_fruite"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_aperitif",
+      "accord_mer",
+      "accord_volaille"
+    ],
+    "note": "À retenir pour un brut classique de maison, équilibré entre fraîcheur et maturité, capable de passer de l’apéritif à un repas léger. Sa logique multi-crus et multi-années privilégie la constance plutôt qu’un effet de millésime. Il convient aux gougères, poissons fins et volailles simplement rôties.",
+    "pair": "gougères, poisson fin, volaille rôtie",
+    "tags": [
+      "brut sans année",
+      "multi-crus",
+      "vins de réserve"
+    ],
+    "sourceUrl": "https://www.champagne-henriot.com/en/collection/henriot-brut-souverain",
+    "verifiedAt": "2026-07-27",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 84,
+    "releaseLabel": "standard",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "Henriot présente Brut Souverain comme sa cuvée historique, créée en 1808. La maison décrit une construction multi-crus et multi-années, nourrie par les vins de réserve afin de maintenir le style de la cuvée.",
+      "sourceQuality": "fiche produit et fiche technique officielles",
+      "advice": "À retenir pour un brut classique de maison, équilibré entre fraîcheur et maturité, capable de passer de l’apéritif à un repas léger. Sa logique multi-crus et multi-années privilégie la constance plutôt qu’un effet de millésime. Il convient aux gougères, poissons fins et volailles simplement rôties.",
+      "profil": {
+        "fraicheur": "Fraîche",
+        "rondeur": "Ronde",
+        "puissance": "Équilibrée",
+        "longueur": "Complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Gougères"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Poisson fin"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Volaille rôtie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bruno-paillard-premiere-cuvee-extra-brut",
+    "name": "Première Cuvée Extra-Brut",
+    "short": "Première Cuvée Extra-Brut",
+    "house": "Bruno Paillard",
+    "region": "Champagne",
+    "price": 58,
+    "priceMin": 50,
+    "priceMax": 65,
+    "priceStatus": "editorial_range",
+    "priceRangeVerifiedAt": "2026-07-27",
+    "tier": 2,
+    "producerType": "maison",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#c9a85e",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_apero",
+      "occ_cadeau",
+      "occ_diner",
+      "occ_romantique"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_delicat"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_mer",
+      "accord_aperitif",
+      "accord_fromage"
+    ],
+    "note": "Une cuvée de maison pour qui recherche un champagne sec, précis et suffisamment complexe pour la table. Son dosage inférieur à 6 g/L et son élevage prolongé soutiennent un profil net sans austérité excessive. À proposer avec huîtres, sashimi, gougères ou un parmesan affiné.",
+    "pair": "huîtres, sashimi, parmesan",
+    "tags": [
+      "extra-brut",
+      "assemblage trois cépages",
+      "faible dosage"
+    ],
+    "sourceUrl": "https://champagnebrunopaillard.com/en/champagnes/premiere-cuvee-en/",
+    "verifiedAt": "2026-07-27",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 83,
+    "releaseLabel": "standard",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "La page officielle indique 45 % Pinot Noir, 33 % Chardonnay et 22 % Meunier, au moins trois ans sur lies puis six mois après dégorgement, avec un dosage extra-brut inférieur à 6 g/L.",
+      "sourceQuality": "fiche produit officielle",
+      "advice": "Une cuvée de maison pour qui recherche un champagne sec, précis et suffisamment complexe pour la table. Son dosage inférieur à 6 g/L et son élevage prolongé soutiennent un profil net sans austérité excessive. À proposer avec huîtres, sashimi, gougères ou un parmesan affiné.",
+      "profil": {
+        "fraicheur": "Très fraîche",
+        "rondeur": "Droite",
+        "puissance": "Équilibrée",
+        "longueur": "Très complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Huîtres"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Sashimi"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Parmesan"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bruno-paillard-rose-premiere-cuvee",
+    "name": "Rosé Première Cuvée",
+    "short": "Rosé Première Cuvée",
+    "house": "Bruno Paillard",
+    "region": "Champagne",
+    "price": 70,
+    "priceMin": 60,
+    "priceMax": 80,
+    "priceStatus": "editorial_range",
+    "priceRangeVerifiedAt": "2026-07-27",
+    "tier": 3,
+    "producerType": "maison",
+    "glass": [
+      "#9f514b",
+      "#d98a86"
+    ],
+    "foil": "#c98f88",
+    "accent": "#C07A72",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_cadeau",
+      "occ_fete",
+      "occ_diner",
+      "occ_romantique"
+    ],
+    "profil": [
+      "profil_fruite",
+      "profil_delicat"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_mer",
+      "accord_volaille",
+      "accord_dessert"
+    ],
+    "note": "À choisir pour un rosé raffiné dont la finesse compte davantage que la puissance. La maison garde les proportions exactes confidentielles, mais documente une dominante de pinot noir complétée par du chardonnay. Il vise le cadeau, les crustacés, un canard rosé ou des fruits rouges peu sucrés.",
+    "pair": "langoustines, canard rosé, framboises",
+    "tags": [
+      "rosé",
+      "pinot noir majoritaire",
+      "cadeau"
+    ],
+    "sourceUrl": "https://champagnebrunopaillard.com/en/champagnes/rose-premiere-cuvee-en/",
+    "verifiedAt": "2026-07-27",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 82,
+    "releaseLabel": "standard",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "La page officielle précise que la cuvée provient uniquement de premières presses et qu’elle est composée principalement de Pinot Noir avec une part de Chardonnay. La maison indique volontairement ne pas divulguer les proportions exactes.",
+      "sourceQuality": "fiche produit officielle",
+      "advice": "À choisir pour un rosé raffiné dont la finesse compte davantage que la puissance. La maison garde les proportions exactes confidentielles, mais documente une dominante de pinot noir complétée par du chardonnay. Il vise le cadeau, les crustacés, un canard rosé ou des fruits rouges peu sucrés.",
+      "profil": {
+        "fraicheur": "Fraîche",
+        "rondeur": "Ronde",
+        "puissance": "Équilibrée",
+        "longueur": "Très complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Langoustines"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Canard rosé"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Framboises"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bruno-paillard-blanc-de-blancs-grand-cru",
+    "name": "Blanc de Blancs Grand Cru",
+    "short": "Blanc de Blancs Grand Cru",
+    "house": "Bruno Paillard",
+    "region": "Champagne",
+    "price": 88,
+    "priceMin": 75,
+    "priceMax": 100,
+    "priceStatus": "editorial_range",
+    "priceRangeVerifiedAt": "2026-07-27",
+    "tier": 3,
+    "producerType": "maison",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#c9a85e",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_cadeau",
+      "occ_diner",
+      "occ_romantique"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_delicat"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_mer",
+      "accord_fromage",
+      "accord_aperitif"
+    ],
+    "note": "Un blanc de blancs de maison à réserver à un cadeau important ou à un repas centré sur les produits de la mer. Le chardonnay Grand Cru, les réserves anciennes et le faible dosage composent un profil tendu et complexe. Il demande un verre ample et un service sans précipitation.",
+    "pair": "huîtres, sole, vieux comté",
+    "tags": [
+      "blanc de blancs",
+      "grand cru",
+      "extra-brut"
+    ],
+    "sourceUrl": "https://champagnebrunopaillard.com/en/champagnes/blanc-de-blancs-grand-cru-en/",
+    "verifiedAt": "2026-07-27",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 81,
+    "releaseLabel": "standard",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "La maison indique 100 % Chardonnay de premières presses provenant de Grands Crus de la Côte des Blancs, des vins de réserve remontant à 1985, quatre ans sur lies, dix mois après dégorgement et un dosage de 5 g/L.",
+      "sourceQuality": "fiche produit officielle",
+      "advice": "Un blanc de blancs de maison à réserver à un cadeau important ou à un repas centré sur les produits de la mer. Le chardonnay Grand Cru, les réserves anciennes et le faible dosage composent un profil tendu et complexe. Il demande un verre ample et un service sans précipitation.",
+      "profil": {
+        "fraicheur": "Très fraîche",
+        "rondeur": "Droite",
+        "puissance": "Équilibrée",
+        "longueur": "Très complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Huîtres"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Sole"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Vieux comté"
+        }
+      ]
+    }
+  },
+  {
+    "id": "boizel-brut-reserve",
+    "name": "Brut Réserve",
+    "short": "Brut Réserve",
+    "house": "Boizel",
+    "region": "Champagne",
+    "price": 43,
+    "priceMin": 36,
+    "priceMax": 50,
+    "priceStatus": "editorial_range",
+    "priceRangeVerifiedAt": "2026-07-27",
+    "tier": 2,
+    "producerType": "maison",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#c9a85e",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_apero",
+      "occ_fete",
+      "occ_diner"
+    ],
+    "profil": [
+      "profil_fruite",
+      "profil_frais_vif"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_aperitif",
+      "accord_mer",
+      "accord_volaille"
+    ],
+    "note": "Une option de maison accessible pour recevoir, lorsque l’on veut une cuvée polyvalente plutôt qu’un style extrême. Les trois cépages, une trentaine de crus et une part importante de réserves construisent un ensemble équilibré. Il fonctionne à l’apéritif, avec un poisson ou une volaille légère.",
+    "pair": "gougères, poisson grillé, volaille",
+    "tags": [
+      "brut",
+      "trois cépages",
+      "vins de réserve"
+    ],
+    "sourceUrl": "https://www.boizel.com/en/wine/champagne-brut-reserve/",
+    "verifiedAt": "2026-07-27",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 80,
+    "releaseLabel": "standard",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "La fiche officielle décrit un assemblage des trois cépages champenois provenant d’environ trente crus, uniquement en premières presses, avec 40 % de vins de réserve issus des deux récoltes précédentes.",
+      "sourceQuality": "fiche produit officielle",
+      "advice": "Une option de maison accessible pour recevoir, lorsque l’on veut une cuvée polyvalente plutôt qu’un style extrême. Les trois cépages, une trentaine de crus et une part importante de réserves construisent un ensemble équilibré. Il fonctionne à l’apéritif, avec un poisson ou une volaille légère.",
+      "profil": {
+        "fraicheur": "Fraîche",
+        "rondeur": "Ronde",
+        "puissance": "Équilibrée",
+        "longueur": "Complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Gougères"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Poisson grillé"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Volaille"
+        }
+      ]
+    }
+  },
+  {
+    "id": "telmont-reserve-brut-base-2018",
+    "name": "Réserve Brut — base 2018",
+    "short": "Réserve Brut — base 2018",
+    "house": "Telmont",
+    "region": "Champagne",
+    "price": 57,
+    "priceMin": 48,
+    "priceMax": 65,
+    "priceStatus": "editorial_range",
+    "priceRangeVerifiedAt": "2026-07-27",
+    "tier": 2,
+    "producerType": "maison",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#c9a85e",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_apero",
+      "occ_cadeau",
+      "occ_diner"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_fruite"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_aperitif",
+      "accord_mer",
+      "accord_volaille"
+    ],
+    "note": "À proposer lorsqu’on veut une cuvée de maison avec une base clairement identifiée et un assemblage détaillé. Le chardonnay domine, complété par le meunier et le pinot noir, pour un profil frais mais accessible. Elle convient à un cadeau, à l’apéritif ou à une entrée marine.",
+    "pair": "gougères, crevettes, volaille aux herbes",
+    "tags": [
+      "brut",
+      "base 2018",
+      "assemblage sept années"
+    ],
+    "sourceUrl": "https://champagne-telmont.com/products/reserve-brut",
+    "verifiedAt": "2026-07-27",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 79,
+    "releaseLabel": "base-2018",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "La page officielle consultée indique une base 2018 assemblant sept années distinctes, 43 % Chardonnay, 37 % Meunier et 20 % Pinot Noir, avec trois ans en cave et un dosage de 6,7 g/L.",
+      "sourceQuality": "fiche produit officielle de la base 2018",
+      "advice": "À proposer lorsqu’on veut une cuvée de maison avec une base clairement identifiée et un assemblage détaillé. Le chardonnay domine, complété par le meunier et le pinot noir, pour un profil frais mais accessible. Elle convient à un cadeau, à l’apéritif ou à une entrée marine.",
+      "profil": {
+        "fraicheur": "Fraîche",
+        "rondeur": "Ronde",
+        "puissance": "Équilibrée",
+        "longueur": "Complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Gougères"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Crevettes"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Volaille aux herbes"
+        }
+      ]
+    }
+  },
+  {
+    "id": "billecart-salmon-brut-nature",
+    "name": "Brut Nature",
+    "short": "Brut Nature",
+    "house": "Billecart-Salmon",
+    "region": "Champagne",
+    "price": 65,
+    "priceMin": 55,
+    "priceMax": 75,
+    "priceStatus": "editorial_range",
+    "priceRangeVerifiedAt": "2026-07-27",
+    "tier": 2,
+    "producerType": "maison",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#c9a85e",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_apero",
+      "occ_cadeau",
+      "occ_diner",
+      "occ_romantique"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_delicat"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_mer",
+      "accord_aperitif",
+      "accord_fromage"
+    ],
+    "note": "À privilégier pour un amateur de champagnes sans sucre ajouté au dosage, précis et gastronomiques. La forte part de vins de réserve évite de réduire la cuvée à sa seule sécheresse. Elle est particulièrement cohérente avec huîtres, poissons crus, gougères ou fromages à pâte dure.",
+    "pair": "huîtres, poisson cru, parmesan",
+    "tags": [
+      "brut nature",
+      "zéro dosage",
+      "vins de réserve"
+    ],
+    "sourceUrl": "https://www.champagne-billecart.fr/en/collection/brut-nature",
+    "verifiedAt": "2026-07-27",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 78,
+    "releaseLabel": "standard",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "La fiche officielle indique 30 % Pinot Noir, 30 % Chardonnay et 40 % Meunier, 50 à 60 % de vins de réserve, 48 mois sur lies et aucun sucre ajouté au dosage.",
+      "sourceQuality": "fiche produit et fiche technique officielles",
+      "advice": "À privilégier pour un amateur de champagnes sans sucre ajouté au dosage, précis et gastronomiques. La forte part de vins de réserve évite de réduire la cuvée à sa seule sécheresse. Elle est particulièrement cohérente avec huîtres, poissons crus, gougères ou fromages à pâte dure.",
+      "profil": {
+        "fraicheur": "Très fraîche",
+        "rondeur": "Droite",
+        "puissance": "Équilibrée",
+        "longueur": "Très complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Huîtres"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Poisson cru"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Parmesan"
+        }
+      ]
+    }
+  },
+  {
+    "id": "billecart-salmon-le-sous-bois",
+    "name": "Le Sous Bois",
+    "short": "Le Sous Bois",
+    "house": "Billecart-Salmon",
+    "region": "Champagne",
+    "price": 83,
+    "priceMin": 70,
+    "priceMax": 95,
+    "priceStatus": "editorial_range",
+    "priceRangeVerifiedAt": "2026-07-27",
+    "tier": 3,
+    "producerType": "maison",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#c9a85e",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_cadeau",
+      "occ_diner"
+    ],
+    "profil": [
+      "profil_riche_ample",
+      "profil_fruite"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_volaille",
+      "accord_fromage",
+      "accord_mer"
+    ],
+    "note": "Une cuvée de repas pour qui recherche davantage de texture et de profondeur qu’un brut classique. La vinification intégrale sous bois et l’assemblage des trois cépages lui donnent une vocation gastronomique claire. À servir avec une volaille rôtie, un poisson en sauce ou un fromage affiné.",
+    "pair": "volaille rôtie, turbot, comté affiné",
+    "tags": [
+      "brut",
+      "vinifié sous bois",
+      "gastronomique"
+    ],
+    "sourceUrl": "https://www.champagne-billecart.fr/en/collection/brut-sous-bois",
+    "verifiedAt": "2026-07-27",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 77,
+    "releaseLabel": "standard",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "La maison présente Le Sous Bois comme un assemblage des trois cépages champenois entièrement vinifié sous bois, conçu pour associer la richesse aromatique à la fraîcheur caractéristique de son style.",
+      "sourceQuality": "fiche produit officielle",
+      "advice": "Une cuvée de repas pour qui recherche davantage de texture et de profondeur qu’un brut classique. La vinification intégrale sous bois et l’assemblage des trois cépages lui donnent une vocation gastronomique claire. À servir avec une volaille rôtie, un poisson en sauce ou un fromage affiné.",
+      "profil": {
+        "fraicheur": "Équilibrée",
+        "rondeur": "Très ronde",
+        "puissance": "Puissante",
+        "longueur": "Très complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Volaille rôtie"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Turbot"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Comté affiné"
+        }
+      ]
+    }
+  },
+  {
+    "id": "laurent-perrier-blanc-de-blancs-brut-nature",
+    "name": "Blanc de Blancs Brut Nature",
+    "short": "Blanc de Blancs Brut Nature",
+    "house": "Laurent-Perrier",
+    "region": "Champagne",
+    "price": 88,
+    "priceMin": 75,
+    "priceMax": 100,
+    "priceStatus": "editorial_range",
+    "priceRangeVerifiedAt": "2026-07-27",
+    "tier": 3,
+    "producerType": "maison",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#c9a85e",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_cadeau",
+      "occ_diner",
+      "occ_romantique"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_delicat"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_mer",
+      "accord_fromage",
+      "accord_aperitif"
+    ],
+    "note": "À retenir pour un cadeau ou un repas marin lorsque la priorité va à la précision et à l’absence de dosage. Le chardonnay issu de crus de la Côte des Blancs et de la Montagne de Reims gagne en complexité grâce à huit ans d’élevage. Une cuvée exigeante, non consensuelle.",
+    "pair": "huîtres, homard, parmesan",
+    "tags": [
+      "blanc de blancs",
+      "brut nature",
+      "chardonnay"
+    ],
+    "sourceUrl": "https://www.laurent-perrier.com/en/champagnes/blanc-de-blancs-brut-nature/",
+    "verifiedAt": "2026-07-27",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 76,
+    "releaseLabel": "standard",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "La page officielle indique 100 % Chardonnay, sans dosage, provenant de crus nommés de la Côte des Blancs et de la Montagne de Reims, avec huit ans de vieillissement.",
+      "sourceQuality": "fiche produit officielle",
+      "advice": "À retenir pour un cadeau ou un repas marin lorsque la priorité va à la précision et à l’absence de dosage. Le chardonnay issu de crus de la Côte des Blancs et de la Montagne de Reims gagne en complexité grâce à huit ans d’élevage. Une cuvée exigeante, non consensuelle.",
+      "profil": {
+        "fraicheur": "Très fraîche",
+        "rondeur": "Droite",
+        "puissance": "Équilibrée",
+        "longueur": "Très complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Huîtres"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Homard"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Parmesan"
+        }
+      ]
+    }
+  },
+  {
+    "id": "laurent-perrier-ultra-brut",
+    "name": "Ultra Brut",
+    "short": "Ultra Brut",
+    "house": "Laurent-Perrier",
+    "region": "Champagne",
+    "price": 65,
+    "priceMin": 55,
+    "priceMax": 75,
+    "priceStatus": "editorial_range",
+    "priceRangeVerifiedAt": "2026-07-27",
+    "tier": 2,
+    "producerType": "maison",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#c9a85e",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_apero",
+      "occ_cadeau",
+      "occ_diner",
+      "occ_romantique"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_delicat"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_mer",
+      "accord_aperitif",
+      "accord_fromage"
+    ],
+    "note": "Une référence historique pour découvrir le champagne sans sucre ajouté au dosage. Elle convient aux palais qui recherchent une finale nette et une grande fraîcheur, davantage qu’une texture douce. À proposer avec coquillages, poisson cru ou parmesan, mais pas comme choix universel pour un public novice.",
+    "pair": "coquillages, sashimi, parmesan",
+    "tags": [
+      "brut nature",
+      "sans dosage",
+      "créée en 1981"
+    ],
+    "sourceUrl": "https://www.laurent-perrier.com/en/champagnes/ultra-brut/",
+    "verifiedAt": "2026-07-27",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 75,
+    "releaseLabel": "standard",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "Laurent-Perrier indique que la cuvée, lancée en 1981, ne reçoit aucun sucre ajouté au dosage et n’est élaborée que lorsque l’année offre l’équilibre recherché entre maturité et acidité.",
+      "sourceQuality": "fiche produit officielle",
+      "advice": "Une référence historique pour découvrir le champagne sans sucre ajouté au dosage. Elle convient aux palais qui recherchent une finale nette et une grande fraîcheur, davantage qu’une texture douce. À proposer avec coquillages, poisson cru ou parmesan, mais pas comme choix universel pour un public novice.",
+      "profil": {
+        "fraicheur": "Très fraîche",
+        "rondeur": "Très droite",
+        "puissance": "Légère",
+        "longueur": "Complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Coquillages"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Sashimi"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Parmesan"
+        }
+      ]
+    }
+  },
+  {
+    "id": "palmer-rose-solera",
+    "name": "Rosé Solera",
+    "short": "Rosé Solera",
+    "house": "Palmer & Co",
+    "region": "Champagne",
+    "price": 59,
+    "priceMin": 50,
+    "priceMax": 68,
+    "priceStatus": "editorial_range",
+    "priceRangeVerifiedAt": "2026-07-27",
+    "tier": 2,
+    "producerType": "maison",
+    "glass": [
+      "#9f514b",
+      "#d98a86"
+    ],
+    "foil": "#c98f88",
+    "accent": "#C07A72",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_cadeau",
+      "occ_fete",
+      "occ_diner",
+      "occ_romantique"
+    ],
+    "profil": [
+      "profil_fruite",
+      "profil_riche_ample"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_volaille",
+      "accord_dessert",
+      "accord_mer"
+    ],
+    "note": "À choisir pour un rosé de maison fruité et structuré, capable d’accompagner un repas plutôt que de rester cantonné à l’apéritif. Sa réserve perpétuelle de vin rouge apporte une vraie singularité. Il fonctionne avec saumon, canard rosé ou dessert peu sucré aux fruits rouges.",
+    "pair": "saumon, canard rosé, fruits rouges",
+    "tags": [
+      "rosé d’assemblage",
+      "solera",
+      "réserve perpétuelle"
+    ],
+    "sourceUrl": "https://www.champagne-palmer.fr/en/vins/rose-solera/",
+    "verifiedAt": "2026-07-27",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 74,
+    "releaseLabel": "standard",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "La fiche officielle indique 45 à 50 % Chardonnay, 35 à 40 % Pinot Noir et 15 à 20 % Meunier, 7 à 8 % de réserve perpétuelle de vin rouge, 30 à 35 % de vins de réserve et un dosage de 6 à 7 g/L.",
+      "sourceQuality": "fiche produit et fiche technique officielles",
+      "advice": "À choisir pour un rosé de maison fruité et structuré, capable d’accompagner un repas plutôt que de rester cantonné à l’apéritif. Sa réserve perpétuelle de vin rouge apporte une vraie singularité. Il fonctionne avec saumon, canard rosé ou dessert peu sucré aux fruits rouges.",
+      "profil": {
+        "fraicheur": "Fraîche",
+        "rondeur": "Ronde",
+        "puissance": "Puissante",
+        "longueur": "Complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Saumon"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Canard rosé"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Fruits rouges"
+        }
+      ]
+    }
+  },
+  {
+    "id": "devaux-cuvee-d",
+    "name": "Cuvée D",
+    "short": "Cuvée D",
+    "house": "Devaux",
+    "region": "Champagne",
+    "price": 59,
+    "priceMin": 50,
+    "priceMax": 68,
+    "priceStatus": "editorial_range",
+    "priceRangeVerifiedAt": "2026-07-27",
+    "tier": 2,
+    "producerType": "maison",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#c9a85e",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_cadeau",
+      "occ_diner",
+      "occ_apero"
+    ],
+    "profil": [
+      "profil_fruite",
+      "profil_riche_ample"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_volaille",
+      "accord_fromage",
+      "accord_aperitif"
+    ],
+    "note": "Une cuvée équilibrée pour qui souhaite davantage de maturité qu’un brut d’entrée de gamme sans basculer vers un champagne très puissant. Le pinot noir légèrement majoritaire, les réserves et le long vieillissement lui donnent une vraie polyvalence. Elle accompagne gougères, volaille et fromages affinés.",
+    "pair": "gougères, volaille, comté",
+    "tags": [
+      "brut",
+      "pinot noir majoritaire",
+      "vins de réserve"
+    ],
+    "sourceUrl": "https://www.champagne-devaux.com/cuvee-d",
+    "verifiedAt": "2026-07-27",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 73,
+    "releaseLabel": "standard",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "La fiche officielle indique 55 % Pinot Noir, 45 % Chardonnay, 35 à 40 % de vins de réserve, une fermentation malolactique partielle, cinq ans de vieillissement en bouteille et un dosage de 8 ± 1 g/L.",
+      "sourceQuality": "fiche produit et fiche technique officielles",
+      "advice": "Une cuvée équilibrée pour qui souhaite davantage de maturité qu’un brut d’entrée de gamme sans basculer vers un champagne très puissant. Le pinot noir légèrement majoritaire, les réserves et le long vieillissement lui donnent une vraie polyvalence. Elle accompagne gougères, volaille et fromages affinés.",
+      "profil": {
+        "fraicheur": "Équilibrée",
+        "rondeur": "Ronde",
+        "puissance": "Puissante",
+        "longueur": "Très complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Gougères"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Volaille"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Comté"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ayala-blanc-de-blancs-a19",
+    "name": "Le Blanc de Blancs A/19",
+    "short": "Le Blanc de Blancs A/19",
+    "house": "AYALA",
+    "region": "Champagne",
+    "price": 88,
+    "priceMin": 75,
+    "priceMax": 100,
+    "priceStatus": "editorial_range",
+    "priceRangeVerifiedAt": "2026-07-27",
+    "tier": 3,
+    "producerType": "maison",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#c9a85e",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_cadeau",
+      "occ_diner",
+      "occ_romantique"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_delicat"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_mer",
+      "accord_fromage",
+      "accord_aperitif"
+    ],
+    "note": "Un blanc de blancs millésimé à choisir pour un cadeau important ou un repas centré sur les produits de la mer. La sortie A/19 réunit six crus, un élevage long et un dosage extra-brut. Sa précision demande un service soigné et un verre suffisamment large.",
+    "pair": "huîtres, turbot, vieux comté",
+    "tags": [
+      "blanc de blancs",
+      "millésime 2019",
+      "extra-brut"
+    ],
+    "sourceUrl": "https://www.champagne-ayala.fr/en/champagne/le-blanc-de-blancs/",
+    "verifiedAt": "2026-07-27",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 72,
+    "releaseLabel": "A/19",
+    "vintageYear": 2019,
+    "editionNumber": null,
+    "details": {
+      "facts": "La page officielle identifie la sortie A/19 : 100 % Chardonnay de six Grands et Premiers Crus, issue de la vendange 2019, avec six ans de vieillissement et un dosage extra-brut de 5 g/L.",
+      "sourceQuality": "fiche produit officielle de la sortie A/19",
+      "advice": "Un blanc de blancs millésimé à choisir pour un cadeau important ou un repas centré sur les produits de la mer. La sortie A/19 réunit six crus, un élevage long et un dosage extra-brut. Sa précision demande un service soigné et un verre suffisamment large.",
+      "profil": {
+        "fraicheur": "Très fraîche",
+        "rondeur": "Droite",
+        "puissance": "Équilibrée",
+        "longueur": "Très complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Huîtres"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Turbot"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Vieux comté"
+        }
+      ]
+    }
+  },
+  {
+    "id": "pierre-paillard-les-parcelles-xxi",
+    "name": "Les Parcelles XXI",
+    "short": "Les Parcelles XXI",
+    "house": "Pierre Paillard",
+    "region": "Champagne",
+    "price": 60,
+    "priceMin": 50,
+    "priceMax": 70,
+    "priceStatus": "editorial_range",
+    "priceRangeVerifiedAt": "2026-07-27",
+    "tier": 2,
+    "producerType": "vigneron",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#c9a85e",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_apero",
+      "occ_cadeau",
+      "occ_diner"
+    ],
+    "profil": [
+      "profil_riche_ample",
+      "profil_frais_vif"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_volaille",
+      "accord_fromage",
+      "accord_aperitif"
+    ],
+    "note": "Une porte d’entrée convaincante vers un vigneron de Bouzy, pour un amateur qui apprécie les champagnes secs et structurés. Le pinot noir domine, l’élevage sous bois et le faible dosage renforcent sa vocation de table. Elle accompagne volontiers charcuterie fine, volaille rôtie ou comté.",
+    "pair": "charcuterie fine, volaille rôtie, comté",
+    "tags": [
+      "grand cru",
+      "base 2021",
+      "vigneron"
+    ],
+    "sourceUrl": "https://www.champagne-pierre-paillard.com/en/the-bouzy-terroir/",
+    "verifiedAt": "2026-07-27",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 72,
+    "releaseLabel": "XXI",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "La page officielle indique une majorité de vendange 2021 complétée par 20 % de réserve perpétuelle, 80 % Pinot Noir et 20 % Chardonnay, une vinification sous bois, trois ans sur lies et un dosage de 2 g/L.",
+      "sourceQuality": "fiche cuvée officielle de la sortie XXI",
+      "advice": "Une porte d’entrée convaincante vers un vigneron de Bouzy, pour un amateur qui apprécie les champagnes secs et structurés. Le pinot noir domine, l’élevage sous bois et le faible dosage renforcent sa vocation de table. Elle accompagne volontiers charcuterie fine, volaille rôtie ou comté.",
+      "profil": {
+        "fraicheur": "Très fraîche",
+        "rondeur": "Équilibrée",
+        "puissance": "Puissante",
+        "longueur": "Très complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Charcuterie fine"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Volaille rôtie"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Comté"
+        }
+      ]
+    }
+  },
+  {
+    "id": "pierre-paillard-les-terres-roses-xx",
+    "name": "Les Terres Roses XX",
+    "short": "Les Terres Roses XX",
+    "house": "Pierre Paillard",
+    "region": "Champagne",
+    "price": 71,
+    "priceMin": 60,
+    "priceMax": 82,
+    "priceStatus": "editorial_range",
+    "priceRangeVerifiedAt": "2026-07-27",
+    "tier": 3,
+    "producerType": "vigneron",
+    "glass": [
+      "#9f514b",
+      "#d98a86"
+    ],
+    "foil": "#c98f88",
+    "accent": "#C07A72",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_cadeau",
+      "occ_diner",
+      "occ_fete",
+      "occ_romantique"
+    ],
+    "profil": [
+      "profil_fruite",
+      "profil_frais_vif"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_volaille",
+      "accord_mer",
+      "accord_dessert"
+    ],
+    "note": "Un rosé de vigneron pour amateur averti, plus précis et vineux qu’un rosé simplement festif. Le chardonnay majoritaire, le Bouzy Rouge, le bois et le dosage bas construisent un profil gastronomique. À envisager avec saumon, canard rosé ou fruits rouges sans excès de sucre.",
+    "pair": "saumon, canard rosé, fruits rouges",
+    "tags": [
+      "rosé d’assemblage",
+      "base 2020",
+      "vigneron"
+    ],
+    "sourceUrl": "https://www.champagne-pierre-paillard.com/fr/terroir-de-bouzy/",
+    "verifiedAt": "2026-07-27",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 72,
+    "releaseLabel": "XX",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "La page officielle française décrit la sortie XX sur une majorité de vendange 2020 : 70 % Chardonnay et 30 % Pinot Noir, dont 5 % de Bouzy Rouge, vinification sous bois, trois ans sur lies et dosage de 2 g/L.",
+      "sourceQuality": "fiche cuvée officielle française de la sortie XX",
+      "advice": "Un rosé de vigneron pour amateur averti, plus précis et vineux qu’un rosé simplement festif. Le chardonnay majoritaire, le Bouzy Rouge, le bois et le dosage bas construisent un profil gastronomique. À envisager avec saumon, canard rosé ou fruits rouges sans excès de sucre.",
+      "profil": {
+        "fraicheur": "Très fraîche",
+        "rondeur": "Ronde",
+        "puissance": "Puissante",
+        "longueur": "Très complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Saumon"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Canard rosé"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Fruits rouges"
+        }
+      ]
+    }
+  },
+  {
+    "id": "francoise-bedel-originelle",
+    "name": "Origin’elle",
+    "short": "Origin’elle",
+    "house": "Françoise Bedel",
+    "region": "Champagne",
+    "price": 55,
+    "priceMin": 45,
+    "priceMax": 65,
+    "priceStatus": "editorial_range",
+    "priceRangeVerifiedAt": "2026-07-27",
+    "tier": 2,
+    "producerType": "vigneron",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#c9a85e",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_apero",
+      "occ_diner",
+      "occ_cadeau"
+    ],
+    "profil": [
+      "profil_fruite",
+      "profil_riche_ample"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_aperitif",
+      "accord_volaille",
+      "accord_fromage"
+    ],
+    "note": "À proposer à un amateur curieux d’un champagne de vigneron biodynamique porté par le meunier. Son style de domaine et sa polyvalence en font une bonne bouteille de découverte, aussi pertinente à l’apéritif qu’à table. Elle accompagne gougères, volaille rôtie ou fromage à pâte pressée.",
+    "pair": "gougères, volaille rôtie, comté",
+    "tags": [
+      "brut",
+      "meunier",
+      "biodynamie"
+    ],
+    "sourceUrl": "https://www.champagne-bedel.fr/Vins-de-Champagne-bio-cuvees-Origin-elle-fr-33.html",
+    "verifiedAt": "2026-07-27",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 72,
+    "releaseLabel": "standard",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "La page officielle présente Origin’elle comme une cuvée biologique et biodynamique exprimant le domaine, portée par le Meunier et recommandée aussi bien à l’apéritif qu’au cours d’un repas.",
+      "sourceQuality": "fiche produit officielle",
+      "advice": "À proposer à un amateur curieux d’un champagne de vigneron biodynamique porté par le meunier. Son style de domaine et sa polyvalence en font une bonne bouteille de découverte, aussi pertinente à l’apéritif qu’à table. Elle accompagne gougères, volaille rôtie ou fromage à pâte pressée.",
+      "profil": {
+        "fraicheur": "Équilibrée",
+        "rondeur": "Très ronde",
+        "puissance": "Puissante",
+        "longueur": "Complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Gougères"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Volaille rôtie"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Comté"
+        }
+      ]
+    }
+  },
+  {
+    "id": "roger-coulon-lhommee",
+    "name": "L’Hommée",
+    "short": "L’Hommée",
+    "house": "Roger Coulon",
+    "region": "Champagne",
+    "price": 73,
+    "priceMin": 60,
+    "priceMax": 85,
+    "priceStatus": "editorial_range",
+    "priceRangeVerifiedAt": "2026-07-27",
+    "tier": 3,
+    "producerType": "vigneron",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#c9a85e",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_cadeau",
+      "occ_diner"
+    ],
+    "profil": [
+      "profil_riche_ample",
+      "profil_frais_vif"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_volaille",
+      "accord_fromage",
+      "accord_mer"
+    ],
+    "note": "Une cuvée de vigneron à choisir pour un repas ou un cadeau connaisseur, lorsque l’origine parcellaire et les vieilles vignes comptent davantage que la notoriété de l’étiquette. Son positionnement Premier Cru appelle des plats structurés : volaille, poisson rôti ou fromage affiné plutôt qu’un simple apéritif.",
+    "pair": "volaille rôtie, poisson rôti, comté affiné",
+    "tags": [
+      "premier cru",
+      "vieilles vignes",
+      "vigneron"
+    ],
+    "sourceUrl": "https://www.champagne-coulon.com/en/lhommee",
+    "verifiedAt": "2026-07-27",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 72,
+    "releaseLabel": "standard",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "La page officielle identifie L’Hommée comme une cuvée Premier Cru issue de vieilles vignes situées sur des terroirs historiques du domaine.",
+      "sourceQuality": "fiche produit officielle",
+      "advice": "Une cuvée de vigneron à choisir pour un repas ou un cadeau connaisseur, lorsque l’origine parcellaire et les vieilles vignes comptent davantage que la notoriété de l’étiquette. Son positionnement Premier Cru appelle des plats structurés : volaille, poisson rôti ou fromage affiné plutôt qu’un simple apéritif.",
+      "profil": {
+        "fraicheur": "Fraîche",
+        "rondeur": "Ronde",
+        "puissance": "Puissante",
+        "longueur": "Très complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Volaille rôtie"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Poisson rôti"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Comté affiné"
+        }
+      ]
+    }
+  },
+  {
+    "id": "roger-coulon-roselie",
+    "name": "Rosélie",
+    "short": "Rosélie",
+    "house": "Roger Coulon",
+    "region": "Champagne",
+    "price": 73,
+    "priceMin": 60,
+    "priceMax": 85,
+    "priceStatus": "editorial_range",
+    "priceRangeVerifiedAt": "2026-07-27",
+    "tier": 3,
+    "producerType": "vigneron",
+    "glass": [
+      "#9f514b",
+      "#d98a86"
+    ],
+    "foil": "#c98f88",
+    "accent": "#C07A72",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_cadeau",
+      "occ_diner",
+      "occ_fete",
+      "occ_romantique"
+    ],
+    "profil": [
+      "profil_fruite",
+      "profil_riche_ample"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_volaille",
+      "accord_dessert",
+      "accord_fromage"
+    ],
+    "note": "À retenir pour un rosé de saignée de vigneron, plus vineux et gastronomique qu’un rosé d’assemblage léger. Le meunier de vieilles vignes lui donne une identité nette. Il vise l’amateur averti et peut accompagner canard, charcuterie fine ou dessert très peu sucré aux fruits rouges.",
+    "pair": "canard rosé, charcuterie fine, fruits rouges",
+    "tags": [
+      "rosé de saignée",
+      "meunier",
+      "vigneron"
+    ],
+    "sourceUrl": "https://www.champagne-coulon.com/en/roselie",
+    "verifiedAt": "2026-07-27",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 72,
+    "releaseLabel": "standard",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "La fiche officielle présente Rosélie comme un Rosé de Saignée élaboré à partir de 100 % Meunier provenant de vieilles vignes du domaine.",
+      "sourceQuality": "fiche produit officielle",
+      "advice": "À retenir pour un rosé de saignée de vigneron, plus vineux et gastronomique qu’un rosé d’assemblage léger. Le meunier de vieilles vignes lui donne une identité nette. Il vise l’amateur averti et peut accompagner canard, charcuterie fine ou dessert très peu sucré aux fruits rouges.",
+      "profil": {
+        "fraicheur": "Équilibrée",
+        "rondeur": "Ronde",
+        "puissance": "Très puissante",
+        "longueur": "Très complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Canard rosé"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Charcuterie fine"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Fruits rouges"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mouzon-leroux-latavique-base-2022",
+    "name": "L’Atavique — base 2022",
+    "short": "L’Atavique — base 2022",
+    "house": "Mouzon-Leroux",
+    "region": "Champagne",
+    "price": 55,
+    "priceMin": 45,
+    "priceMax": 65,
+    "priceStatus": "editorial_range",
+    "priceRangeVerifiedAt": "2026-07-27",
+    "tier": 2,
+    "producerType": "vigneron",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#c9a85e",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_apero",
+      "occ_cadeau",
+      "occ_diner"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_riche_ample"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_aperitif",
+      "accord_volaille",
+      "accord_fromage"
+    ],
+    "note": "Une bonne entrée dans l’univers d’un vigneron de Verzy Grand Cru, à conseiller quand on recherche un champagne de terroir avec une base explicitement publiée. La vendange 2022 est complétée par des réserves. Son style convient aux gougères, à une volaille ou à un fromage affiné.",
+    "pair": "gougères, volaille, comté",
+    "tags": [
+      "grand cru",
+      "base 2022",
+      "vigneron"
+    ],
+    "sourceUrl": "https://www.champagne-mouzon-leroux.com/en/latavique.html",
+    "verifiedAt": "2026-07-27",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 72,
+    "releaseLabel": "base-2022",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "La page officielle actuelle présente L’Atavique comme une cuvée 100 % Verzy Grand Cru, assemblant 55 % de vendange 2022 et 45 % de vins de réserve.",
+      "sourceQuality": "fiche produit officielle de la base 2022",
+      "advice": "Une bonne entrée dans l’univers d’un vigneron de Verzy Grand Cru, à conseiller quand on recherche un champagne de terroir avec une base explicitement publiée. La vendange 2022 est complétée par des réserves. Son style convient aux gougères, à une volaille ou à un fromage affiné.",
+      "profil": {
+        "fraicheur": "Très fraîche",
+        "rondeur": "Équilibrée",
+        "puissance": "Puissante",
+        "longueur": "Très complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Gougères"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Volaille"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Comté"
+        }
+      ]
+    }
+  },
+  {
+    "id": "coessens-blanc-de-noirs",
+    "name": "Blanc de Noirs",
+    "short": "Blanc de Noirs",
+    "house": "Coessens",
+    "region": "Champagne",
+    "price": 61,
+    "priceMin": 50,
+    "priceMax": 72,
+    "priceStatus": "editorial_range",
+    "priceRangeVerifiedAt": "2026-07-27",
+    "tier": 2,
+    "producerType": "vigneron",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#c9a85e",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_cadeau",
+      "occ_diner"
+    ],
+    "profil": [
+      "profil_riche_ample",
+      "profil_fruite"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_volaille",
+      "accord_fromage",
+      "accord_aperitif"
+    ],
+    "note": "Un blanc de noirs de vigneron pour qui veut comprendre l’expression du pinot noir sur un seul lieu. Les sous-parcelles Fruit et Fleur sont vinifiées séparément avant assemblage, ce qui donne une lecture plus précise du terroir. À servir avec volaille, charcuterie fine ou comté.",
+    "pair": "volaille, charcuterie fine, comté",
+    "tags": [
+      "blanc de noirs",
+      "pinot noir",
+      "Largillier"
+    ],
+    "sourceUrl": "https://champagne-coessens.com/en/produit/blanc-de-noirs/",
+    "verifiedAt": "2026-07-27",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 72,
+    "releaseLabel": "standard",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "La fiche officielle indique un Pinot Noir issu du monopole Largillier. Les sous-parcelles Fruit et Fleur sont vinifiées séparément puis assemblées ; la fermentation malolactique et l’élevage sur lies sont également mentionnés.",
+      "sourceQuality": "fiche produit officielle",
+      "advice": "Un blanc de noirs de vigneron pour qui veut comprendre l’expression du pinot noir sur un seul lieu. Les sous-parcelles Fruit et Fleur sont vinifiées séparément avant assemblage, ce qui donne une lecture plus précise du terroir. À servir avec volaille, charcuterie fine ou comté.",
+      "profil": {
+        "fraicheur": "Équilibrée",
+        "rondeur": "Ronde",
+        "puissance": "Très puissante",
+        "longueur": "Très complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Volaille"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Charcuterie fine"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Comté"
+        }
+      ]
+    }
+  },
+  {
+    "id": "coessens-rose-de-saignee",
+    "name": "Rosé de Saignée",
+    "short": "Rosé de Saignée",
+    "house": "Coessens",
+    "region": "Champagne",
+    "price": 73,
+    "priceMin": 60,
+    "priceMax": 85,
+    "priceStatus": "editorial_range",
+    "priceRangeVerifiedAt": "2026-07-27",
+    "tier": 3,
+    "producerType": "vigneron",
+    "glass": [
+      "#9f514b",
+      "#d98a86"
+    ],
+    "foil": "#c98f88",
+    "accent": "#C07A72",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_cadeau",
+      "occ_diner",
+      "occ_fete",
+      "occ_romantique"
+    ],
+    "profil": [
+      "profil_fruite",
+      "profil_riche_ample"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_volaille",
+      "accord_dessert",
+      "accord_fromage"
+    ],
+    "note": "Un rosé de saignée parcellaire à réserver aux amateurs de champagnes expressifs et vineux. Le pinot noir d’une seule année et la macération traditionnelle lui donnent une identité très éloignée d’un rosé léger d’apéritif. Il peut accompagner canard, gibier à plume ou fruits rouges peu sucrés.",
+    "pair": "canard, gibier à plume, fruits rouges",
+    "tags": [
+      "rosé de saignée",
+      "pinot noir",
+      "Largillier"
+    ],
+    "sourceUrl": "https://champagne-coessens.com/en/produit/rose-de-saignee/",
+    "verifiedAt": "2026-07-27",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 72,
+    "releaseLabel": "standard",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "La fiche officielle décrit un Pinot Noir d’une seule année provenant de la sous-parcelle Matière du monopole Largillier, élaboré en Rosé de Saignée par macération et foulage traditionnels.",
+      "sourceQuality": "fiche produit officielle",
+      "advice": "Un rosé de saignée parcellaire à réserver aux amateurs de champagnes expressifs et vineux. Le pinot noir d’une seule année et la macération traditionnelle lui donnent une identité très éloignée d’un rosé léger d’apéritif. Il peut accompagner canard, gibier à plume ou fruits rouges peu sucrés.",
+      "profil": {
+        "fraicheur": "Équilibrée",
+        "rondeur": "Ronde",
+        "puissance": "Très puissante",
+        "longueur": "Très complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Canard"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Gibier à plume"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Fruits rouges"
+        }
+      ]
+    }
+  },
+  {
+    "id": "coessens-pinotmaniac-2022",
+    "name": "Pinotmaniac 2022",
+    "short": "Pinotmaniac 2022",
+    "house": "Coessens",
+    "region": "Champagne",
+    "price": 68,
+    "priceMin": 55,
+    "priceMax": 80,
+    "priceStatus": "editorial_range",
+    "priceRangeVerifiedAt": "2026-07-27",
+    "tier": 2,
+    "producerType": "vigneron",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#c9a85e",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_cadeau",
+      "occ_diner"
+    ],
+    "profil": [
+      "profil_riche_ample",
+      "profil_frais_vif"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_volaille",
+      "accord_fromage",
+      "accord_aperitif"
+    ],
+    "note": "Une sortie récente et précisément identifiée pour l’amateur attiré par le pinot noir des Riceys. Quatre parcelles et une seule vendange composent cette première édition, produite pour être lue comme une cuvée singulière. Elle appelle volaille, charcuterie fine ou fromage plutôt qu’un apéritif anonyme.",
+    "pair": "volaille, charcuterie fine, fromage affiné",
+    "tags": [
+      "pinot noir",
+      "millésime 2022",
+      "Les Riceys"
+    ],
+    "sourceUrl": "https://champagne-coessens.com/en/produit/pinotmaniac/",
+    "verifiedAt": "2026-07-27",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 72,
+    "releaseLabel": "2022",
+    "vintageYear": 2022,
+    "editionNumber": null,
+    "details": {
+      "facts": "La fiche officielle indique une première vinification en 2022, commercialisée en 2025, issue uniquement de Pinot Noir de quatre parcelles situées aux Riceys et proposée en bouteille de 75 cl.",
+      "sourceQuality": "fiche produit officielle de la sortie 2022",
+      "advice": "Une sortie récente et précisément identifiée pour l’amateur attiré par le pinot noir des Riceys. Quatre parcelles et une seule vendange composent cette première édition, produite pour être lue comme une cuvée singulière. Elle appelle volaille, charcuterie fine ou fromage plutôt qu’un apéritif anonyme.",
+      "profil": {
+        "fraicheur": "Fraîche",
+        "rondeur": "Ronde",
+        "puissance": "Très puissante",
+        "longueur": "Très complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Volaille"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Charcuterie fine"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Fromage affiné"
+        }
+      ]
+    }
+  },
+  {
+    "id": "coessens-exogyre",
+    "name": "Exogyre",
+    "short": "Exogyre",
+    "house": "Coessens",
+    "region": "Champagne",
+    "price": 83,
+    "priceMin": 70,
+    "priceMax": 95,
+    "priceStatus": "editorial_range",
+    "priceRangeVerifiedAt": "2026-07-27",
+    "tier": 3,
+    "producerType": "vigneron",
+    "glass": [
+      "#243c2e",
+      "#4a6a54"
+    ],
+    "foil": "#c9a85e",
+    "accent": "#9C7A34",
+    "cork": "#7c5c3a",
+    "occ": [
+      "occ_cadeau",
+      "occ_diner"
+    ],
+    "profil": [
+      "profil_riche_ample",
+      "profil_frais_vif"
+    ],
+    "bulles": "bulles_fines",
+    "accords": [
+      "accord_volaille",
+      "accord_fromage",
+      "accord_aperitif"
+    ],
+    "note": "Une cuvée rare pour un amateur qui recherche la profondeur d’une solera de pinot noir plutôt qu’un champagne immédiatement consensuel. Son origine unique à Largillier et sa production très limitée en font surtout un cadeau connaisseur. À ouvrir à table avec volaille, gibier à plume ou vieux fromage.",
+    "pair": "volaille, gibier à plume, vieux comté",
+    "tags": [
+      "pinot noir",
+      "solera",
+      "Largillier"
+    ],
+    "sourceUrl": "https://champagne-coessens.com/en/produit/exogyre/",
+    "verifiedAt": "2026-07-27",
+    "editorialReady": true,
+    "commerceReady": false,
+    "popularity": 72,
+    "releaseLabel": "standard",
+    "vintageYear": null,
+    "editionNumber": null,
+    "details": {
+      "facts": "La fiche officielle présente Exogyre comme un Pinot Noir du monopole Largillier construit en solera à partir de vins anciens. La production peut rester inférieure à mille bouteilles certaines années.",
+      "sourceQuality": "fiche produit officielle",
+      "advice": "Une cuvée rare pour un amateur qui recherche la profondeur d’une solera de pinot noir plutôt qu’un champagne immédiatement consensuel. Son origine unique à Largillier et sa production très limitée en font surtout un cadeau connaisseur. À ouvrir à table avec volaille, gibier à plume ou vieux fromage.",
+      "profil": {
+        "fraicheur": "Fraîche",
+        "rondeur": "Très ronde",
+        "puissance": "Très puissante",
+        "longueur": "Très complexe"
+      },
+      "accords": [
+        {
+          "t": "Premier accord",
+          "d": "Volaille"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Gibier à plume"
+        },
+        {
+          "t": "Pour aller plus loin",
+          "d": "Vieux comté"
+        }
+      ]
+    }
+  }
+]
