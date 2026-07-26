@@ -78,7 +78,7 @@ h1{font-size:clamp(42px,7vw,80px); font-weight:600; line-height:1.04; letter-spa
 .acard.soon{cursor:default; opacity:.6}
 .acard.soon:hover{transform:none}
 .acard-cover{height:158px; position:relative}
-.acard-cat{position:absolute; top:14px; left:16px; font-size:13px; font-weight:500; color:var(--accent-deep)}
+.acard-cat{position:absolute; top:14px; left:14px; font-size:12.5px; font-weight:600; color:var(--ink); background:rgba(255,255,255,.9); padding:4px 11px; border-radius:999px; backdrop-filter:blur(4px)}
 .acard-b{padding:22px 22px 24px; display:flex; flex-direction:column; flex:1}
 .acard-b h3{font-size:21px; font-weight:600; letter-spacing:-.02em; line-height:1.18}
 .acard-b p{color:var(--muted); font-size:15px; margin-top:10px; line-height:1.45; flex:1; font-weight:400}
@@ -529,6 +529,30 @@ function articles(){
 }
 function art(id){ return articles().find(a=>a.id===id); }
 
+/* Photos de couverture (Unsplash, libres de droits). Pour changer une image,
+   remplace simplement l'URL. Le dégradé de l'article sert de repli si l'image manque. */
+const COVER_P = '?auto=format&fit=crop&w=1000&q=70';
+const COVERS = {
+  'guide-2026':  'https://images.unsplash.com/photo-1580657274234-7339717f4541',
+  'dosages':     'https://images.unsplash.com/photo-1613477581402-306fa9dc6b95',
+  'accords':     'https://images.unsplash.com/photo-1628336707631-68131ca720c3',
+  'moins-50':    'https://images.unsplash.com/photo-1621866908556-4f0a830707c9',
+  'mariage':     'https://images.unsplash.com/photo-1546567075-d7113bee3c4a',
+  'cadeau':      'https://images.unsplash.com/photo-1580657264608-44775e61c0a1',
+  'quantite':    'https://images.unsplash.com/photo-1705944601076-ffa84903c6cb',
+  'blanc-blancs':'https://images.unsplash.com/photo-1597075759290-5c29a23c8a16',
+  'servir':      'https://images.unsplash.com/photo-1547595628-c61a29f496f0',
+  'noel':        'https://images.unsplash.com/photo-1609421141185-8a4f37a5d063',
+  'moins-30':    'https://images.unsplash.com/photo-1623073284793-84dc366d4798',
+  'aperitif':    'https://images.unsplash.com/photo-1588138678946-fae725e0b6e1',
+  'huitres':     'https://images.unsplash.com/photo-1578882422378-9ed72be08b5e',
+  'anniversaire':'https://images.unsplash.com/photo-1609421141185-8a4f37a5d063',
+};
+function coverBg(a){
+  const u = COVERS[a.id];
+  return u ? `url('${u}${COVER_P}') center/cover no-repeat, ${a.cover}` : a.cover;
+}
+
 /* ====================== SCORING ====================== */
 function tierOfBudget(b){ return b==='b1'?1:b==='b2'?2:b==='b3'?3:4; }
 function score(p, a){
@@ -714,8 +738,8 @@ function renderResult(){
 }
 
 function articleCard(a){
-  if(a.soon) return `<div class="acard soon"><div class="acard-cover" style="background:${a.cover}"><span class="acard-cat">${a.cat}</span></div><div class="acard-b"><h3>${a.title}</h3><p>${a.excerpt}</p><div class="acard-meta"><span class="soon-badge">Bientôt disponible</span></div></div></div>`;
-  return `<div class="acard" onclick="openArticle('${a.id}')"><div class="acard-cover" style="background:${a.cover}"><span class="acard-cat">${a.cat}</span></div><div class="acard-b"><h3>${a.title}</h3><p>${a.excerpt}</p><div class="acard-meta">${a.date} · ${a.read} de lecture</div></div></div>`;
+  if(a.soon) return `<div class="acard soon"><div class="acard-cover" style="background:${coverBg(a)}"><span class="acard-cat">${a.cat}</span></div><div class="acard-b"><h3>${a.title}</h3><p>${a.excerpt}</p><div class="acard-meta"><span class="soon-badge">Bientôt disponible</span></div></div></div>`;
+  return `<div class="acard" onclick="openArticle('${a.id}')"><div class="acard-cover" style="background:${coverBg(a)}"><span class="acard-cat">${a.cat}</span></div><div class="acard-b"><h3>${a.title}</h3><p>${a.excerpt}</p><div class="acard-meta">${a.date} · ${a.read} de lecture</div></div></div>`;
 }
 
 function renderBlog(){
@@ -742,7 +766,7 @@ function renderArticle(){
     <div class="a-cat">${a.cat}</div>
     <div class="a-title">${a.title}</div>
     <div class="a-meta">${a.date} · ${a.read} de lecture</div>
-    <div class="a-cover" style="background:${a.cover}"></div>
+    <div class="a-cover" style="background:${coverBg(a)}"></div>
     <div class="prose">${a.body}</div>
     ${relBlock}
     <div style="margin-top:40px"><button class="btn btn-primary" onclick="startQuiz()">Trouver mon champagne</button></div>
