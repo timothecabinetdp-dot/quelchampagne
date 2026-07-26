@@ -269,6 +269,15 @@ function FALLBACK_PRODUCTS(){
 }
 function prod(id){ return products().find(p=>p.id===id); }
 
+/* Liens d'achat Amazon Partenaires. Le tag se change ICI, en une ligne.
+   Tant qu'on n'a pas de flux (avec liens produits directs), on renvoie vers
+   la recherche Amazon du produit, avec le tag de tracking. */
+const AMAZON_TAG = 'quelchampagne-21';
+function buyLink(p){
+  if(p.aff && /tag=|awin1\.com|\/dp\//.test(p.aff)) return p.aff; // vrai lien de flux si présent
+  return 'https://www.amazon.fr/s?k=' + encodeURIComponent(p.house + ' ' + p.name) + '&tag=' + AMAZON_TAG;
+}
+
 /* ====================== QUESTIONS ====================== */
 function questions(){
   return [
@@ -368,12 +377,12 @@ function articles(){
       body:`<p>Un grand champagne ne coûte pas forcément une fortune. Voici trois valeurs sûres qui prouvent qu'on peut se faire plaisir sous la barre des 50 €.</p>
 <h3>Le passe-partout — Nicolas Feuillatte Réserve Exclusive</h3>
 <p>Vif, fruité, sans façon : c'est le champagne à toujours avoir au frais. Imbattable pour l'apéritif et les grandes tablées.</p>
-<div class="aff-inline"><div class="l">Notre sélection · lien partenaire</div><div class="n">Nicolas Feuillatte — Réserve Exclusive Brut</div><div class="row"><span style="color:var(--muted);font-size:15px">≈ 28 €</span><a class="btn btn-accent btn-sm" href="#" onclick="return openAff('feuillatte')">Découvrir chez la maison ›</a></div></div>
+<div class="aff-inline"><div class="l">Notre sélection · lien partenaire</div><div class="n">Nicolas Feuillatte — Réserve Exclusive Brut</div><div class="row"><span style="color:var(--muted);font-size:15px">≈ 28 €</span><a class="btn btn-accent btn-sm" href="#" onclick="return openAff('feuillatte')">Voir sur Amazon ›</a></div></div>
 <h3>L'icône — Moët & Chandon Impérial</h3>
 <p>L'étiquette que tout le monde reconnaît, et pour cause : générosité et régularité au rendez-vous.</p>
 <h3>Le caractère — Veuve Clicquot Yellow Label</h3>
 <p>Plus structuré, dominante pinot noir : celui qu'on sert quand on veut du corps et de la personnalité.</p>
-<div class="aff-inline"><div class="l">Notre sélection · lien partenaire</div><div class="n">Veuve Clicquot — Brut Yellow Label</div><div class="row"><span style="color:var(--muted);font-size:15px">≈ 48 €</span><a class="btn btn-accent btn-sm" href="#" onclick="return openAff('clicquot')">Découvrir chez la maison ›</a></div></div>`,
+<div class="aff-inline"><div class="l">Notre sélection · lien partenaire</div><div class="n">Veuve Clicquot — Brut Yellow Label</div><div class="row"><span style="color:var(--muted);font-size:15px">≈ 48 €</span><a class="btn btn-accent btn-sm" href="#" onclick="return openAff('clicquot')">Voir sur Amazon ›</a></div></div>`,
       related:['feuillatte','moet','clicquot'] },
 
     { id:'mariage', cat:'Guide', cover:'linear-gradient(135deg,#F4EFE6,#EAE0CE)', date:'Juillet 2026', read:'6 min',
@@ -473,7 +482,7 @@ function articles(){
       body:`<p>Oui, on peut boire du bon champagne pour moins de 30 €. Le secret : viser les cuvées régulières des grandes maisons et les alternatives malignes, plutôt que l'étiquette la plus chère.</p>
 <h3>La valeur sûre — Nicolas Feuillatte Réserve Exclusive</h3>
 <p>Vif, fruité, facile à aimer : c'est le champagne à toujours avoir au frais, parfait pour l'apéritif et les grandes tablées.</p>
-<div class="aff-inline"><div class="l">Notre sélection · lien partenaire</div><div class="n">Nicolas Feuillatte — Réserve Exclusive Brut</div><div class="row"><span style="color:var(--muted);font-size:15px">≈ 28 €</span><a class="btn btn-accent btn-sm" href="#" onclick="return openAff('feuillatte')">Découvrir chez la maison ›</a></div></div>
+<div class="aff-inline"><div class="l">Notre sélection · lien partenaire</div><div class="n">Nicolas Feuillatte — Réserve Exclusive Brut</div><div class="row"><span style="color:var(--muted);font-size:15px">≈ 28 €</span><a class="btn btn-accent btn-sm" href="#" onclick="return openAff('feuillatte')">Voir sur Amazon ›</a></div></div>
 <h3>L'alternative maligne — un crémant</h3>
 <p>Sous les 20 €, un bon crémant rivalise avec bien des champagnes. Le <a href="#" onclick="return openAff('bouillot')">Louis Bouillot Perle d'Aurore</a>, crémant rosé de Bourgogne, offre fraîcheur et gourmandise pour un tout petit prix.</p>
 <h3>Nos conseils pour trouver le bon</h3>
@@ -694,7 +703,7 @@ function foot(){
       </div>
     </div>
     <div class="foot-health">L'abus d'alcool est dangereux pour la santé. À consommer avec modération.</div>
-    <div class="foot-disc">Site réservé aux personnes majeures. ${BRAND} présente une sélection éditoriale indépendante à visée informative. Certains liens sont des liens partenaires : nous pouvons percevoir une commission si vous achetez chez la maison, sans surcoût pour vous. Prix indicatifs.</div>
+    <div class="foot-disc">Site réservé aux personnes majeures. ${BRAND} présente une sélection éditoriale indépendante à visée informative. En tant que Partenaire Amazon, ${BRAND} réalise un bénéfice sur les achats remplissant les conditions requises, sans surcoût pour vous. Prix indicatifs.</div>
   </div></footer>`;
 }
 
@@ -769,7 +778,7 @@ function renderResult(){
         <div class="mini">${bottleViz(p,'mini')}<span class="mm">${a.pct}%</span></div>
         <div><div class="an">${p.short}</div><div class="ah">${p.house} · ${p.region}</div></div>
       </div>
-      <div class="alt-foot"><div class="alt-price">${p.price} €</div><a class="btn btn-ghost btn-sm" href="${p.aff}" target="_blank" rel="sponsored noopener" onclick="track('${p.id}')">Voir ›</a></div>
+      <div class="alt-foot"><div class="alt-price">${p.price} €</div><a class="btn btn-ghost btn-sm" href="${buyLink(p)}" target="_blank" rel="sponsored noopener" onclick="track('${p.id}')">Amazon ›</a></div>
     </div>`;}).join('');
   app.innerHTML = nav() + `
   <section class="result"><div class="container">
@@ -784,9 +793,9 @@ function renderResult(){
         <div class="rtags">${pills}</div>
         <div class="rbuy">
           <div class="rprice">${tp.price} €</div>
-          <a class="btn btn-accent" href="${tp.aff}" target="_blank" rel="sponsored noopener" onclick="track('${tp.id}')">Découvrir chez ${tp.house}</a>
+          <a class="btn btn-accent" href="${buyLink(tp)}" target="_blank" rel="sponsored noopener" onclick="track('${tp.id}')">Voir sur Amazon</a>
         </div>
-        <div class="aff-note">Lien partenaire · ${BRAND} peut percevoir une commission, sans surcoût pour vous.</div>
+        <div class="aff-note">Lien Amazon partenaire · En tant que Partenaire Amazon, ${BRAND} réalise un bénéfice sur les achats remplissant les conditions requises, sans surcoût pour vous.</div>
       </div>
     </div>
     <div class="alts-head">Vous aimerez aussi</div>
@@ -816,7 +825,7 @@ function renderArticle(){
     <div class="article-cta">
       <h3>La cuvée du moment</h3>
       <p>${rel[0].house} — ${rel[0].name}, ${rel[0].price} €</p>
-      <a class="btn btn-accent" href="${rel[0].aff}" target="_blank" rel="sponsored noopener" onclick="track('${rel[0].id}')">Découvrir chez ${rel[0].house}</a>
+      <a class="btn btn-accent" href="${buyLink(rel[0])}" target="_blank" rel="sponsored noopener" onclick="track('${rel[0].id}')">Voir sur Amazon</a>
     </div>` : '';
   app.innerHTML = nav() + `
   <section class="article"><div class="narrow">
@@ -841,7 +850,7 @@ function startQuiz(){ state.view='quiz'; state.step=0; state.answers={}; state.a
 function answer(qid,tags){ state.answers[qid]=tags; if(state.step>=questions().length-1){ state.view='result'; } else { state.step++; state.animKey++; } render(); }
 function qBack(){ if(state.step===0){ state.view='home'; } else { state.step--; state.animKey++; } render(); }
 function openArticle(id){ state.article=id; state.view='article'; render(); }
-function openAff(id){ const p=prod(id); if(p) window.open(p.aff,'_blank','noopener'); return false; }
+function openAff(id){ const p=prod(id); if(p) window.open(buyLink(p),'_blank','noopener'); return false; }
 function track(id){ /* point d'accroche tracking d'affiliation (ex : ?ref=quelchampagne) */ }
 
 /* Charge le catalogue live (catalogue.json) si présent ; sinon sélection intégrée. */
