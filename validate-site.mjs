@@ -33,6 +33,8 @@ const offers = JSON.parse(read('data/purchase-offers-research.json'));
 const imageRights = JSON.parse(read('data/image-rights-register.json'));
 const registeredPhotos = new Set(imageRights.filter(r => r.source === 'Unsplash').map(r => r.asset));
 const imageRegistry = JSON.parse(read('data/product-images.json'));
+const merchantFeedConfig = JSON.parse(read('data/merchant-feed-config.json'));
+const productIdentityIndex = JSON.parse(read('data/product-identity-index.json'));
 const pricePolicy = JSON.parse(read('data/price-policy.json'));
 const priceIndex = JSON.parse(read('data/price-index.json'));
 const htmlFiles = walk(DIST.pathname).filter(path => path.endsWith('.html'));
@@ -116,6 +118,42 @@ for (const observation of priceIndex.observations) {
     errors.push(`Correspondance produit incomplète : ${observation.observationId}.`);
   }
   if (observation.publicationEligible) errors.push(`Observation marchande publiée avant validation : ${observation.observationId}.`);
+}
+
+if (merchantFeedConfig.publicationMode !== 'research_only') {
+  errors.push('L’import marchand n’est pas verrouillé en mode recherche.');
+}
+if (merchantFeedConfig.defaultFormatMl !== pricePolicy.defaultFormatMl) {
+  errors.push('Le format par défaut des flux marchands diffère de la politique prix.');
+}
+if (productIdentityIndex.productCount !== catalogue.length) {
+  errors.push(`Index d’identité incomplet : ${productIdentityIndex.productCount} sur ${catalogue.length}.`);
+}
+if (new Set(productIdentityIndex.products.map(product => product.productId)).size !== catalogue.length) {
+  errors.push('L’index d’identité contient des identifiants absents ou dupliqués.');
+}
+for (const identity of productIdentityIndex.products) {
+  if (!ids.has(identity.productId)) errors.push(`Identité marchande sans produit catalogue : ${identity.productId}.`);
+  if (!identity.aliases.length || !identity.baseAliases.length) errors.push(`Alias marchand absent : ${identity.productId}.`);
+  if (identity.formatMl !== pricePolicy.defaultFormatMl) errors.push(`Format d’identité inattendu : ${identity.productId}.`);
+}
+const merchantImportsUrl = new URL('data/merchant-imports/', ROOT);
+if (existsSync(merchantImportsUrl)) {
+  for (const name of readdirSync(merchantImportsUrl).filter(file => file.endsWith('.json'))) {
+    const imported = JSON.parse(read(`data/merchant-imports/${name}`));
+    if (imported.publicationMode !== 'research_only') errors.push(`Import marchand publiable : ${name}.`);
+    for (const observation of imported.observations || []) {
+      if (!ids.has(observation.productId)) errors.push(`Import marchand sans produit catalogue : ${observation.productId}.`);
+      if (observation.publicationStatus !== 'research_only' || observation.publicationEligible !== false) {
+        errors.push(`Observation importée publiable trop tôt : ${observation.observationId}.`);
+      }
+    }
+    for (const image of imported.imageCandidates || []) {
+      if (image.status !== 'candidate_only' || image.rightsBasis || image.verifiedAt) {
+        errors.push(`Image marchande approuvée automatiquement : ${image.productId}.`);
+      }
+    }
+  }
 }
 
 const forbidden = [
