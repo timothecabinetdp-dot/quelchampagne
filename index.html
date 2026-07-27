@@ -162,7 +162,6 @@ h1{font-size:clamp(42px,7vw,80px); font-weight:600; line-height:1.04; letter-spa
 .res-head p{color:var(--muted); margin-top:16px; font-size:19px; font-weight:400; letter-spacing:-.015em}
 .rcard{display:grid; grid-template-columns:300px 1fr; gap:clamp(28px,5vw,60px); align-items:center; background:var(--bg2); border-radius:30px; padding:clamp(28px,4vw,52px)}
 .rviz{aspect-ratio:3/4; display:grid; place-items:center; position:relative; border-radius:20px; overflow:hidden; background:#EFEAE0}
-.rviz svg{height:100%; width:auto; filter:drop-shadow(0 30px 36px rgba(29,29,31,.18))}
 .rviz .pimg{height:100%; width:100%; object-fit:cover}
 .rmatch{position:absolute; top:0; left:0; font-size:13px; font-weight:500; color:var(--muted)}
 .rbody{display:flex; flex-direction:column}
@@ -184,7 +183,6 @@ h1{font-size:clamp(42px,7vw,80px); font-weight:600; line-height:1.04; letter-spa
 .alt{background:var(--bg2); border-radius:22px; padding:24px; display:flex; flex-direction:column}
 .alt-top{display:flex; gap:16px; align-items:center}
 .mini{width:52px; height:70px; flex:none; position:relative; display:grid; place-items:center; border-radius:12px; overflow:hidden; background:#EFEAE0}
-.mini svg{height:100%; width:auto}
 .mini .pimg{height:100%; width:100%; object-fit:cover}
 .mini .mm{position:absolute; bottom:-6px; left:50%; transform:translateX(-50%); font-size:11px; color:var(--faint); font-weight:500; white-space:nowrap}
 .alt .an{font-size:18px; font-weight:600; letter-spacing:-.02em; line-height:1.1}
@@ -262,7 +260,7 @@ h1{font-size:clamp(42px,7vw,80px); font-weight:600; line-height:1.04; letter-spa
 .pgrid{display:grid; grid-template-columns:repeat(3,1fr); gap:24px}
 .pcard{background:var(--bg); border-radius:22px; overflow:hidden; cursor:pointer; box-shadow:0 2px 12px rgba(29,29,31,.06); transition:transform .25s, box-shadow .25s; display:flex; flex-direction:column}
 .pcard:hover{transform:translateY(-5px); box-shadow:0 24px 44px -24px rgba(29,29,31,.4)}
-.pcard-img{height:230px; position:relative; background:#EFEAE0}
+.pcard-img{height:230px; min-height:230px; position:relative; overflow:hidden; isolation:isolate; background:#EFEAE0}
 .pcard-img .pimg{height:100%; width:100%; object-fit:cover}
 .pscore{position:absolute; top:14px; right:14px; background:rgba(29,29,31,.82); color:#F3E7C9; font-size:16px; font-weight:600; padding:7px 12px; border-radius:14px; line-height:1; backdrop-filter:blur(4px)}
 .pscore small{font-size:10px; opacity:.7; font-weight:500}
@@ -273,6 +271,29 @@ h1{font-size:clamp(42px,7vw,80px); font-weight:600; line-height:1.04; letter-spa
 .pcard-note{font-size:14px; color:var(--muted); line-height:1.5; margin-top:10px; flex:1}
 .pcard-foot{margin-top:18px; display:flex; align-items:center; justify-content:space-between}
 .pcard-price{font-size:20px; font-weight:600}
+
+/* ---------- Visuels éditoriaux et futurs packshots autorisés ---------- */
+.editorial-visual{--v-deep:#1f352a; --v-accent:#b89243; position:relative; width:100%; height:100%; overflow:hidden; display:flex; flex-direction:column; justify-content:space-between; padding:22px; color:#fff; background:var(--v-deep); background:linear-gradient(145deg,var(--v-deep),color-mix(in srgb,var(--v-deep) 72%,#000)); isolation:isolate}
+.editorial-visual::before{content:""; position:absolute; z-index:-1; width:210px; height:210px; border-radius:50%; right:-76px; top:-96px; border:1px solid rgba(255,255,255,.2); box-shadow:0 0 0 28px rgba(255,255,255,.035),0 0 0 58px rgba(255,255,255,.025)}
+.editorial-visual::after{content:""; position:absolute; z-index:-1; left:22px; right:22px; bottom:18px; height:1px; background:linear-gradient(90deg,var(--v-accent),rgba(255,255,255,.2))}
+.visual-top{display:flex; justify-content:space-between; align-items:center; gap:12px; font-size:10.5px; font-weight:650; letter-spacing:.13em; text-transform:uppercase}
+.visual-kind{padding:6px 9px; border:1px solid rgba(255,255,255,.28); border-radius:999px; background:rgba(255,255,255,.08); backdrop-filter:blur(4px)}
+.visual-region{opacity:.68}
+.visual-copy{max-width:92%; padding-bottom:15px}
+.visual-house{font-size:12px; font-weight:650; letter-spacing:.16em; text-transform:uppercase; color:color-mix(in srgb,var(--v-accent) 72%,#fff)}
+.visual-cuvee{font-size:clamp(24px,2.2vw,32px); font-weight:600; line-height:1.02; letter-spacing:-.035em; margin-top:7px; text-wrap:balance}
+.visual-meta{font-size:11px; line-height:1.3; margin-top:11px; opacity:.72; text-transform:uppercase; letter-spacing:.08em}
+.editorial-visual.visual-big{padding:clamp(26px,4vw,42px)}
+.visual-big .visual-top{font-size:12px}
+.visual-big .visual-house{font-size:14px}
+.visual-big .visual-cuvee{font-size:clamp(32px,4vw,48px); max-width:9ch}
+.visual-big .visual-meta{font-size:12px}
+.editorial-visual.visual-mini{padding:0; display:grid; place-items:center}
+.visual-mini::before{width:72px; height:72px; right:-30px; top:-30px; box-shadow:none}
+.visual-mini::after{left:9px; right:9px; bottom:8px}
+.visual-initials{font-size:16px; font-weight:700; letter-spacing:.04em}
+.product-packshot{object-fit:contain!important; padding:18px; background:#F3F0E9}
+.phero-img .product-packshot,.rviz .product-packshot{padding:clamp(24px,4vw,48px)}
 
 /* ---------- Fiche produit ---------- */
 .product{padding:clamp(40px,5vw,64px) 0 clamp(56px,7vw,88px); animation:fade .4s ease}
@@ -862,40 +883,39 @@ function ranked(){
   return sc.map(x=>({...x, pct:Math.max(0,Math.min(99,Math.round(x.s)))}));
 }
 
-/* ====================== BOUTEILLE SVG ====================== */
-function bottleSVG(p, mode){
-  const showText = mode!=='mini';
-  const d1=p.glass[0], d2=p.glass[1], sp=p.bulles!=='still', uid=p.id+'_'+mode;
-  const body="M62,98 C62,110 42,120 42,152 L42,330 Q42,344 55,344 L85,344 Q98,344 98,330 L98,152 C98,120 78,110 78,98 Z";
-  let cap;
-  if(sp) cap=`<path d="M60,58 Q60,40 70,40 Q80,40 80,58 Z" fill="${p.cork}"/><path d="M58.5,56 L81.5,56 L81.5,98 C81.5,106 87,110 91,118 L49,118 C53,110 58.5,106 58.5,98 Z" fill="${p.foil}"/><rect x="58.5" y="74" width="23" height="2.5" fill="rgba(0,0,0,.15)"/>`;
-  else cap=`<rect x="61.5" y="52" width="17" height="32" rx="1.5" fill="${p.foil}"/><rect x="61.5" y="66" width="17" height="2" fill="rgba(0,0,0,.13)"/>`;
-  const label = showText
-    ? `<rect x="45" y="184" width="50" height="98" rx="4" fill="#FBFAF7" stroke="rgba(0,0,0,.06)"/>
-       <rect x="52" y="199" width="36" height="1.1" fill="${p.accent}"/>
-       <text x="70" y="215" text-anchor="middle" font-family="Inter,-apple-system,sans-serif" font-weight="600" font-size="6" letter-spacing=".5" fill="#5a5450">${p.house.toUpperCase()}</text>
-       <text x="70" y="232" text-anchor="middle" font-family="Inter,-apple-system,sans-serif" font-weight="600" font-size="9.5" letter-spacing="-.2" fill="#1d1d1f">${p.short}</text>
-       <text x="70" y="247" text-anchor="middle" font-family="Inter,-apple-system,sans-serif" font-size="5.2" letter-spacing="1" fill="#9c978c">${p.region.toUpperCase()}</text>
-       <rect x="52" y="263" width="36" height="1.1" fill="${p.accent}"/>`
-    : `<rect x="47" y="196" width="46" height="72" rx="3" fill="#FBFAF7" opacity=".96"/>`;
-  return `<svg viewBox="0 0 140 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${p.house} ${p.short}">
-    <defs><linearGradient id="g_${uid}" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="${d1}"/><stop offset=".38" stop-color="${d2}"/><stop offset=".55" stop-color="${d2}"/><stop offset="1" stop-color="${d1}"/></linearGradient></defs>
-    <ellipse cx="70" cy="351" rx="30" ry="5" fill="rgba(0,0,0,.08)"/>
-    <rect x="62" y="66" width="16" height="40" fill="url(#g_${uid})"/>
-    <path d="${body}" fill="url(#g_${uid})"/>
-    <rect x="51" y="128" width="6" height="196" rx="3" fill="rgba(255,255,255,.24)"/>
-    ${cap}${label}
-  </svg>`;
-}
 /* Aucune photographie distante n'est publiée sans registre de droits.
-   Le catalogue utilise les bouteilles SVG originales tant qu'une image validée
+   Une composition éditoriale remplace le packshot tant qu'une image validée
    n'est pas associée explicitement à une fiche. */
 const PHOTOS = {};
-function photoSrc(u, w){ return u.includes('?') ? u : u + '?auto=format&fit=crop&w=' + (w||600) + '&q=72'; }
+function photoSrc(u, w){
+  if(u.startsWith('/')) return u;
+  return u.includes('?') ? u : u + '?auto=format&fit=crop&w=' + (w||600) + '&q=72';
+}
+function editorialVisual(p, mode){
+  const kind=p.producerType==='vigneron'?'Vigneron':'Maison';
+  const meta=(p.tags||[]).slice(0,2).join(' · ');
+  const initials=p.house.split(/\s+/).map(word=>word[0]).join('').slice(0,3).toUpperCase();
+  const text=`${p.name} ${(p.tags||[]).join(' ')}`.toLowerCase();
+  const palette=text.includes('rosé')
+    ? ['#6E343B','#783F46','#63343F']
+    : text.includes('blanc de blancs')
+      ? ['#34433F','#3C4433','#2E4247']
+      : p.producerType==='vigneron'
+        ? ['#34412D','#473B2D','#29423B']
+        : ['#233B34','#27364A','#40352D','#3E2934'];
+  const paletteIndex=[...p.id].reduce((sum,char)=>sum+char.charCodeAt(0),0)%palette.length;
+  const deep=palette[paletteIndex];
+  const accent=p.accent||'#b89243';
+  if(mode==='mini') return `<div class="editorial-visual visual-mini" style="--v-deep:${deep};--v-accent:${accent}" role="img" aria-label="${p.house} ${p.short}"><span class="visual-initials">${initials}</span></div>`;
+  return `<div class="editorial-visual visual-${mode}" style="--v-deep:${deep};--v-accent:${accent}" role="img" aria-label="Présentation éditoriale de ${p.house} ${p.short}">
+    <div class="visual-top"><span class="visual-kind">${kind}</span><span class="visual-region">Champagne</span></div>
+    <div class="visual-copy"><div class="visual-house">${p.house}</div><div class="visual-cuvee">${p.short}</div><div class="visual-meta">${meta}</div></div>
+  </div>`;
+}
 function bottleViz(p, mode){
   const img = p.image || PHOTOS[p.id];
-  if(img) return `<img class="pimg" src="${photoSrc(img, mode==='mini'?200:600)}" alt="${p.house} ${p.short}" loading="lazy">`;
-  return bottleSVG(p, mode);
+  if(img) return `<img class="pimg product-packshot" src="${photoSrc(img, mode==='mini'?200:600)}" alt="Bouteille ${p.house} ${p.short}" loading="lazy">`;
+  return editorialVisual(p, mode);
 }
 
 /* ====================== VUES ====================== */

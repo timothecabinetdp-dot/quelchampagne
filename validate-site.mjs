@@ -32,6 +32,7 @@ const wave6 = JSON.parse(read('data/catalogue-wave-6.json'));
 const offers = JSON.parse(read('data/purchase-offers-research.json'));
 const imageRights = JSON.parse(read('data/image-rights-register.json'));
 const registeredPhotos = new Set(imageRights.filter(r => r.source === 'Unsplash').map(r => r.asset));
+const imageRegistry = JSON.parse(read('data/product-images.json'));
 const pricePolicy = JSON.parse(read('data/price-policy.json'));
 const priceIndex = JSON.parse(read('data/price-index.json'));
 const htmlFiles = walk(DIST.pathname).filter(path => path.endsWith('.html'));
@@ -136,6 +137,23 @@ for (const profile of editorial) {
 const source = read('index.html');
 if (!source.includes("id:'maison', label:\"04 · Le producteur\"")) errors.push('La quatrième question sur le producteur est absente.');
 if (!source.includes('const producerPenalty')) errors.push('Le critère de préférence producteur est absent du scoring.');
+if (source.includes('function bottleSVG') || source.includes('M62,98 C62,110')) {
+  errors.push('Une ancienne bouteille SVG générique subsiste dans le code source.');
+}
+if (!source.includes('function editorialVisual')) errors.push('Le visuel éditorial de remplacement est absent.');
+for (const image of imageRegistry.records) {
+  if (!ids.has(image.productId)) errors.push(`Image rattachée à un produit inconnu : ${image.productId}.`);
+  if (image.status === 'approved') {
+    if (!image.localPath?.startsWith('/assets/products/')) errors.push(`Chemin local d’image invalide : ${image.productId}.`);
+    if (!image.sourceUrl || !image.rightsBasis || !image.verifiedAt) errors.push(`Droits d’image incomplets : ${image.productId}.`);
+    if (!existsSync(new URL(`dist${image.localPath}`, ROOT))) errors.push(`Fichier image approuvé absent du build : ${image.productId}.`);
+  }
+}
+for (const product of catalogue.filter(item => item.image)) {
+  if (!product.imageRights?.sourceUrl || !product.imageRights?.rightsBasis || !product.imageRights?.verifiedAt) {
+    errors.push(`Packshot publié sans traçabilité complète : ${product.id}.`);
+  }
+}
 const cataloguePage = read('dist/champagnes/index.html');
 for (const control of ['catalogue-search', 'catalogue-budget', 'catalogue-style', 'catalogue-producer', 'catalogue-type', 'catalogue-count']) {
   if (!cataloguePage.includes(`id="${control}"`)) errors.push(`Contrôle de catalogue absent : ${control}.`);

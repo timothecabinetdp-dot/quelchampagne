@@ -306,6 +306,18 @@ export function buildCatalogue({ write = true } = {}) {
     };
   });
 
+  const imageRegistry = JSON.parse(read('data/product-images.json'));
+  const approvedImages = new Map(
+    imageRegistry.records
+      .filter(image =>
+        image.status === 'approved' &&
+        image.localPath &&
+        image.sourceUrl &&
+        image.rightsBasis &&
+        image.verifiedAt
+      )
+      .map(image => [image.productId, image])
+  );
   const result = [...core, ...waveAdditions, ...additions, ...wave5, ...wave6Additions]
     .filter(product => product.editorialReady)
     .map(product => {
@@ -313,9 +325,22 @@ export function buildCatalogue({ write = true } = {}) {
       const romanticEligible =
         product.occ.includes('occ_cadeau') &&
         (product.profil.includes('profil_delicat') || typeText.includes('rosé'));
-      return romanticEligible && !product.occ.includes('occ_romantique')
+      const withOccasion = romanticEligible && !product.occ.includes('occ_romantique')
         ? { ...product, occ: [...product.occ, 'occ_romantique'] }
         : product;
+      const approvedImage = approvedImages.get(product.id);
+      return approvedImage
+        ? {
+            ...withOccasion,
+            image: approvedImage.localPath,
+            imageRights: {
+              sourceUrl: approvedImage.sourceUrl,
+              rightsBasis: approvedImage.rightsBasis,
+              verifiedAt: approvedImage.verifiedAt,
+              attribution: approvedImage.attribution || ''
+            }
+          }
+        : withOccasion;
     });
   // Activation marchande sélective : uniquement les cuvées à ASIN Amazon vérifié.
   // Les fourchettes de prix (vague 6) et l'index prix restent en repli éditorial.
