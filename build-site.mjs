@@ -244,7 +244,7 @@ const MOTION = `<script>
   if(bb && !reduce){
     for(var i=0;i<28;i++){var b=document.createElement('i');var s=(4+Math.random()*13);b.style.left=(Math.random()*100)+'%';b.style.width=s+'px';b.style.height=s+'px';b.style.animationDuration=(6+Math.random()*7).toFixed(2)+'s';b.style.animationDelay=(Math.random()*9).toFixed(2)+'s';bb.appendChild(b);}
   }
-  var els=[].slice.call(document.querySelectorAll('.sec-head, .steps .step, .pgrid > *, .cards > *, .band .container, .trust-item, .duel-col, .article .prose > p, .lead-head'));
+  var els=[].slice.call(document.querySelectorAll('.sec-head, .steps .step, .pgrid > *, .cards > *, .band .container, .trust-item, .duel-col, .article .prose > p'));
   if(reduce || !('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in');});return;}
   els.forEach(function(e,i){e.classList.add('reveal'); e.style.transitionDelay=((i%3)*0.07).toFixed(2)+'s';});
   var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:0.1, rootMargin:'0px 0px -6% 0px'});
