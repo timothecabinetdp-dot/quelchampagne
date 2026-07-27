@@ -14,5 +14,32 @@
     "rightsStatus": "cleared",
     "uses": ["open-graph", "social-sharing"],
     "notes": "Export PNG 1200 × 630 dérivé de hero-quelchampagne.svg."
+  },
+  {
+    "asset": "https://images.unsplash.com/photo-1623428454697-08da4a100602",
+    "type": "third_party_stock_photo",
+    "source": "Unsplash",
+    "license": "Unsplash License (usage commercial gratuit, hotlink autorisé)",
+    "rightsStatus": "cleared",
+    "uses": ["homepage-hero"],
+    "notes": "Champagne versé dans des verres. Aucune marque identifiable mise en avant."
+  },
+  {
+    "asset": "https://images.unsplash.com/photo-1609516142756-7ecef85e76a7",
+    "type": "third_party_stock_photo",
+    "source": "Unsplash",
+    "license": "Unsplash License (usage commercial gratuit, hotlink autorisé)",
+    "rightsStatus": "cleared",
+    "uses": ["selection-header"],
+    "notes": "Bouteille et deux coupes de champagne. Aucune marque identifiable mise en avant."
+  },
+  {
+    "asset": "https://images.unsplash.com/photo-1647905555465-0f9004fbdaed",
+    "type": "third_party_stock_photo",
+    "source": "Unsplash",
+    "license": "Unsplash License (usage commercial gratuit, hotlink autorisé)",
+    "rightsStatus": "cleared",
+    "uses": ["selecteur-reserve"],
+    "notes": "Trinquer avec des flûtes de champagne. Aucune marque identifiable mise en avant."
   }
 ]
