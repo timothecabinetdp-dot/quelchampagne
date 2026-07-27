@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "products": {
+    "moet": {
+      "aliases": ["Moët & Chandon Brut Impérial", "Moët Chandon Impérial", "Moet Imperial"]
+    },
+    "clicquot": {
+      "aliases": ["Veuve Clicquot Carte Jaune", "Veuve Clicquot Brut Carte Jaune"]
+    },
+    "feuillatte": {
+      "aliases": ["Nicolas Feuillatte Réserve Exclusive Brut"]
+    },
+    "ruinart": {
+      "aliases": ["Ruinart Blanc de Blancs"]
+    },
+    "dom-perignon-vintage-2015": {
+      "aliases": ["Dom Pérignon Vintage", "Dom Perignon Vintage"]
+    }
+  }
+}

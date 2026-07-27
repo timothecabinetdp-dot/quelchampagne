@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "publicationMode": "research_only",
+  "defaultFormatMl": 750,
+  "merchants": {
+    "vinatis-tradedoubler": {
+      "name": "Vinatis",
+      "network": "TradeDoubler",
+      "market": "FR",
+      "affiliateStatus": "pending",
+      "sourceRightsStatus": "pending",
+      "fieldAliases": {
+        "externalId": ["productId", "productID", "id", "sku"],
+        "name": ["productName", "name", "title"],
+        "brand": ["brand", "manufacturer"],
+        "description": ["description", "shortDescription"],
+        "productUrl": ["productUrl", "productURL", "url", "deepLink"],
+        "imageUrl": ["imageUrl", "imageURL", "image"],
+        "price": ["price", "salesPrice", "amount"],
+        "currency": ["currency", "currencyCode"],
+        "availability": ["availability", "stockStatus", "inStock"],
+        "gtin": ["gtin", "ean", "ean13", "barcode"]
+      }
+    }
+  }
+}

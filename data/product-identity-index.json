@@ -1,0 +1,1219 @@
+{
+  "version": 1,
+  "generatedFrom": "catalogue.json",
+  "productCount": 75,
+  "products": [
+    {
+      "productId": "feuillatte",
+      "house": "Nicolas Feuillatte",
+      "name": "Réserve Exclusive Brut",
+      "aliases": [
+        "nicolas feuillatte reserve exclusive brut",
+        "nicolas feuillatte reserve exclusive"
+      ],
+      "baseAliases": [
+        "nicolas feuillatte reserve exclusive brut"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "moet",
+      "house": "Moët & Chandon",
+      "name": "Impérial",
+      "aliases": [
+        "moet et chandon imperial",
+        "moet et chandon brut imperial",
+        "moet chandon imperial",
+        "moet imperial"
+      ],
+      "baseAliases": [
+        "moet et chandon imperial",
+        "moet et chandon brut imperial",
+        "moet chandon imperial",
+        "moet imperial"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "clicquot",
+      "house": "Veuve Clicquot",
+      "name": "Brut Carte Jaune",
+      "aliases": [
+        "veuve clicquot brut carte jaune",
+        "veuve clicquot carte jaune"
+      ],
+      "baseAliases": [
+        "veuve clicquot brut carte jaune",
+        "veuve clicquot carte jaune"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "bollinger",
+      "house": "Bollinger",
+      "name": "Special Cuvée",
+      "aliases": [
+        "bollinger special cuvee"
+      ],
+      "baseAliases": [
+        "bollinger special cuvee"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "ruinart",
+      "house": "Ruinart",
+      "name": "Blanc de Blancs",
+      "aliases": [
+        "ruinart blanc de blancs"
+      ],
+      "baseAliases": [
+        "ruinart blanc de blancs"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "laurentperrier",
+      "house": "Laurent-Perrier",
+      "name": "Cuvée Rosé",
+      "aliases": [
+        "laurent perrier cuvee rose"
+      ],
+      "baseAliases": [
+        "laurent perrier cuvee rose"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "laurent-perrier-la-cuvee",
+      "house": "Laurent-Perrier",
+      "name": "La Cuvée",
+      "aliases": [
+        "laurent perrier la cuvee"
+      ],
+      "baseAliases": [
+        "laurent perrier la cuvee"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "taittinger-brut-reserve",
+      "house": "Taittinger",
+      "name": "Brut Réserve",
+      "aliases": [
+        "taittinger brut reserve"
+      ],
+      "baseAliases": [
+        "taittinger brut reserve"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "pol-roger-brut-reserve",
+      "house": "Pol Roger",
+      "name": "Brut Réserve",
+      "aliases": [
+        "pol roger brut reserve"
+      ],
+      "baseAliases": [
+        "pol roger brut reserve"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "piper-heidsieck-cuvee-brut",
+      "house": "Piper-Heidsieck",
+      "name": "Cuvée Brut",
+      "aliases": [
+        "piper heidsieck cuvee brut"
+      ],
+      "baseAliases": [
+        "piper heidsieck cuvee brut"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "pommery-brut-royal",
+      "house": "Pommery",
+      "name": "Brut Royal",
+      "aliases": [
+        "pommery brut royal"
+      ],
+      "baseAliases": [
+        "pommery brut royal"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "mumm-cordon-rouge",
+      "house": "Mumm",
+      "name": "Cordon Rouge",
+      "aliases": [
+        "mumm cordon rouge"
+      ],
+      "baseAliases": [
+        "mumm cordon rouge"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "charles-heidsieck-brut-reserve",
+      "house": "Charles Heidsieck",
+      "name": "Brut Réserve",
+      "aliases": [
+        "charles heidsieck brut reserve"
+      ],
+      "baseAliases": [
+        "charles heidsieck brut reserve"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "gosset-grande-reserve",
+      "house": "Gosset",
+      "name": "Grande Réserve",
+      "aliases": [
+        "gosset grande reserve"
+      ],
+      "baseAliases": [
+        "gosset grande reserve"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "billecart-salmon-brut-reserve",
+      "house": "Billecart-Salmon",
+      "name": "Brut Réserve",
+      "aliases": [
+        "billecart salmon brut reserve"
+      ],
+      "baseAliases": [
+        "billecart salmon brut reserve"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "louis-roederer-collection-246",
+      "house": "Louis Roederer",
+      "name": "Collection 246",
+      "aliases": [
+        "louis roederer collection 246"
+      ],
+      "baseAliases": [
+        "louis roederer collection"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "246",
+      "vintageYear": null,
+      "editionNumber": 246
+    },
+    {
+      "productId": "billecart-salmon-brut-rose",
+      "house": "Billecart-Salmon",
+      "name": "Brut Rosé",
+      "aliases": [
+        "billecart salmon brut rose"
+      ],
+      "baseAliases": [
+        "billecart salmon brut rose"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "bollinger-rose",
+      "house": "Bollinger",
+      "name": "Rosé",
+      "aliases": [
+        "bollinger rose"
+      ],
+      "baseAliases": [
+        "bollinger rose"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "veuve-clicquot-brut-rose",
+      "house": "Veuve Clicquot",
+      "name": "Brut Rosé",
+      "aliases": [
+        "veuve clicquot brut rose"
+      ],
+      "baseAliases": [
+        "veuve clicquot brut rose"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "pommery-rose-apanage",
+      "house": "Pommery",
+      "name": "Rosé Apanage",
+      "aliases": [
+        "pommery rose apanage"
+      ],
+      "baseAliases": [
+        "pommery rose apanage"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "deutz-brut-classic",
+      "house": "Deutz",
+      "name": "Brut Classic",
+      "aliases": [
+        "deutz brut classic"
+      ],
+      "baseAliases": [
+        "deutz brut classic"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "ruinart-rose",
+      "house": "Ruinart",
+      "name": "Rosé",
+      "aliases": [
+        "ruinart rose"
+      ],
+      "baseAliases": [
+        "ruinart rose"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "moet-rose-imperial",
+      "house": "Moët & Chandon",
+      "name": "Rosé Impérial",
+      "aliases": [
+        "moet et chandon rose imperial"
+      ],
+      "baseAliases": [
+        "moet et chandon rose imperial"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "joseph-perrier-cuvee-royale-brut",
+      "house": "Joseph Perrier",
+      "name": "Cuvée Royale Brut",
+      "aliases": [
+        "joseph perrier cuvee royale brut"
+      ],
+      "baseAliases": [
+        "joseph perrier cuvee royale brut"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "alfred-gratien-brut",
+      "house": "Alfred Gratien",
+      "name": "Brut",
+      "aliases": [
+        "alfred gratien brut"
+      ],
+      "baseAliases": [
+        "alfred gratien brut"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "palmer-co-la-reserve",
+      "house": "Palmer & Co",
+      "name": "La Réserve",
+      "aliases": [
+        "palmer et co la reserve"
+      ],
+      "baseAliases": [
+        "palmer et co la reserve"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "philipponnat-royale-reserve-brut",
+      "house": "Philipponnat",
+      "name": "Royale Réserve Brut",
+      "aliases": [
+        "philipponnat royale reserve brut"
+      ],
+      "baseAliases": [
+        "philipponnat royale reserve brut"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "leclerc-briant-brut-reserve-base-2020",
+      "house": "Leclerc Briant",
+      "name": "Brut Réserve — base 2020",
+      "aliases": [
+        "leclerc briant brut reserve base 2020"
+      ],
+      "baseAliases": [
+        "leclerc briant brut reserve"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "base-2020",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "delamotte-brut",
+      "house": "Delamotte",
+      "name": "Brut",
+      "aliases": [
+        "delamotte brut"
+      ],
+      "baseAliases": [
+        "delamotte brut"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "jacquesson-cuvee-748",
+      "house": "Jacquesson",
+      "name": "Cuvée n° 748",
+      "aliases": [
+        "jacquesson cuvee n 748"
+      ],
+      "baseAliases": [
+        "jacquesson cuvee n"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "748",
+      "vintageYear": null,
+      "editionNumber": 748
+    },
+    {
+      "productId": "laherte-freres-ultradition-brut",
+      "house": "Laherte Frères",
+      "name": "Ultradition Brut",
+      "aliases": [
+        "laherte freres ultradition brut"
+      ],
+      "baseAliases": [
+        "laherte freres ultradition brut"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "chartogne-taillet-sainte-anne",
+      "house": "Chartogne-Taillet",
+      "name": "Sainte-Anne",
+      "aliases": [
+        "chartogne taillet sainte anne"
+      ],
+      "baseAliases": [
+        "chartogne taillet sainte anne"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "krug-grande-cuvee-174",
+      "house": "Krug",
+      "name": "Grande Cuvée 174ème Édition",
+      "aliases": [
+        "krug grande cuvee 174eme edition"
+      ],
+      "baseAliases": [
+        "krug grande cuvee"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "174eme-edition",
+      "vintageYear": null,
+      "editionNumber": 174
+    },
+    {
+      "productId": "dom-perignon-vintage-2015",
+      "house": "Dom Pérignon",
+      "name": "Vintage 2015",
+      "aliases": [
+        "dom perignon vintage 2015",
+        "dom perignon vintage"
+      ],
+      "baseAliases": [
+        "dom perignon vintage"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "2015",
+      "vintageYear": 2015,
+      "editionNumber": null
+    },
+    {
+      "productId": "louis-roederer-cristal-2016",
+      "house": "Louis Roederer",
+      "name": "Cristal 2016",
+      "aliases": [
+        "louis roederer cristal 2016"
+      ],
+      "baseAliases": [
+        "louis roederer cristal"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "2016",
+      "vintageYear": 2016,
+      "editionNumber": null
+    },
+    {
+      "productId": "taittinger-comtes-de-champagne-bdb-2013",
+      "house": "Taittinger",
+      "name": "Comtes de Champagne Blanc de Blancs 2013",
+      "aliases": [
+        "taittinger comtes de blanc de blancs 2013"
+      ],
+      "baseAliases": [
+        "taittinger comtes de blanc de blancs"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "2013",
+      "vintageYear": 2013,
+      "editionNumber": null
+    },
+    {
+      "productId": "bollinger-rd-2008",
+      "house": "Bollinger",
+      "name": "R.D. 2008",
+      "aliases": [
+        "bollinger r d 2008"
+      ],
+      "baseAliases": [
+        "bollinger r d"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "2008",
+      "vintageYear": 2008,
+      "editionNumber": null
+    },
+    {
+      "productId": "philipponnat-clos-des-goisses-2015",
+      "house": "Philipponnat",
+      "name": "Clos des Goisses 2015",
+      "aliases": [
+        "philipponnat clos des goisses 2015"
+      ],
+      "baseAliases": [
+        "philipponnat clos des goisses"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "2015",
+      "vintageYear": 2015,
+      "editionNumber": null
+    },
+    {
+      "productId": "dom-perignon-rose-2009",
+      "house": "Dom Pérignon",
+      "name": "Dom Pérignon Rosé 2009",
+      "aliases": [
+        "dom perignon dom perignon rose 2009"
+      ],
+      "baseAliases": [
+        "dom perignon dom perignon rose"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "2009",
+      "vintageYear": 2009,
+      "editionNumber": null
+    },
+    {
+      "productId": "drappier-carte-d-or",
+      "house": "Drappier",
+      "name": "Carte d’Or",
+      "aliases": [
+        "drappier carte d or"
+      ],
+      "baseAliases": [
+        "drappier carte d or"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "ayala-rose-majeur",
+      "house": "AYALA",
+      "name": "Rosé Majeur",
+      "aliases": [
+        "ayala rose majeur"
+      ],
+      "baseAliases": [
+        "ayala rose majeur"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "mandois-rose-origine-base-2022",
+      "house": "Mandois",
+      "name": "Rosé Origine — base 2022",
+      "aliases": [
+        "mandois rose origine base 2022"
+      ],
+      "baseAliases": [
+        "mandois rose origine"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "base-2022",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "pierre-gimonnet-cuis-1er-cru",
+      "house": "Pierre Gimonnet & Fils",
+      "name": "Cuis 1er Cru Blanc de Blancs",
+      "aliases": [
+        "pierre gimonnet et fils cuis 1er cru blanc de blancs",
+        "pierre gimonnet et fils cuis 1er cru"
+      ],
+      "baseAliases": [
+        "pierre gimonnet et fils cuis 1er cru blanc de blancs"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "larmandier-bernier-latitude",
+      "house": "Larmandier-Bernier",
+      "name": "Latitude",
+      "aliases": [
+        "larmandier bernier latitude"
+      ],
+      "baseAliases": [
+        "larmandier bernier latitude"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "de-sousa-tradition",
+      "house": "De Sousa",
+      "name": "Tradition",
+      "aliases": [
+        "de sousa tradition"
+      ],
+      "baseAliases": [
+        "de sousa tradition"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "rene-geoffroy-expression-base-2020",
+      "house": "René Geoffroy",
+      "name": "Expression — base 2020",
+      "aliases": [
+        "rene geoffroy expression base 2020"
+      ],
+      "baseAliases": [
+        "rene geoffroy expression"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "base-2020",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "mg-heucq-fossile",
+      "house": "M.G. Heucq",
+      "name": "Fossile",
+      "aliases": [
+        "m g heucq fossile"
+      ],
+      "baseAliases": [
+        "m g heucq fossile"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "laurent-lequart-reserve",
+      "house": "Laurent Lequart",
+      "name": "Réserve",
+      "aliases": [
+        "laurent lequart reserve"
+      ],
+      "baseAliases": [
+        "laurent lequart reserve"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "pierre-peters-cuvee-de-reserve",
+      "house": "Pierre Péters",
+      "name": "Cuvée de Réserve Blanc de Blancs",
+      "aliases": [
+        "pierre peters cuvee de reserve blanc de blancs",
+        "pierre peters cuvee de reserve"
+      ],
+      "baseAliases": [
+        "pierre peters cuvee de reserve blanc de blancs"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "francis-boulard-les-murgiers",
+      "house": "Francis Boulard & Fille",
+      "name": "Les Murgiers",
+      "aliases": [
+        "francis boulard et fille les murgiers"
+      ],
+      "baseAliases": [
+        "francis boulard et fille les murgiers"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "lanson-black-creation-259",
+      "house": "Lanson",
+      "name": "Le Black Création 259",
+      "aliases": [
+        "lanson le black creation 259"
+      ],
+      "baseAliases": [
+        "lanson le black creation"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "259",
+      "vintageYear": null,
+      "editionNumber": 259
+    },
+    {
+      "productId": "lanson-rose-creation-68",
+      "house": "Lanson",
+      "name": "Le Rosé Création 68",
+      "aliases": [
+        "lanson le rose creation 68"
+      ],
+      "baseAliases": [
+        "lanson le rose creation"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "68",
+      "vintageYear": null,
+      "editionNumber": 68
+    },
+    {
+      "productId": "henriot-brut-souverain",
+      "house": "Henriot",
+      "name": "Brut Souverain",
+      "aliases": [
+        "henriot brut souverain"
+      ],
+      "baseAliases": [
+        "henriot brut souverain"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "bruno-paillard-premiere-cuvee-extra-brut",
+      "house": "Bruno Paillard",
+      "name": "Première Cuvée Extra-Brut",
+      "aliases": [
+        "bruno paillard premiere cuvee extra brut"
+      ],
+      "baseAliases": [
+        "bruno paillard premiere cuvee extra brut"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "bruno-paillard-rose-premiere-cuvee",
+      "house": "Bruno Paillard",
+      "name": "Rosé Première Cuvée",
+      "aliases": [
+        "bruno paillard rose premiere cuvee"
+      ],
+      "baseAliases": [
+        "bruno paillard rose premiere cuvee"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "bruno-paillard-blanc-de-blancs-grand-cru",
+      "house": "Bruno Paillard",
+      "name": "Blanc de Blancs Grand Cru",
+      "aliases": [
+        "bruno paillard blanc de blancs grand cru"
+      ],
+      "baseAliases": [
+        "bruno paillard blanc de blancs grand cru"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "boizel-brut-reserve",
+      "house": "Boizel",
+      "name": "Brut Réserve",
+      "aliases": [
+        "boizel brut reserve"
+      ],
+      "baseAliases": [
+        "boizel brut reserve"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "telmont-reserve-brut-base-2018",
+      "house": "Telmont",
+      "name": "Réserve Brut — base 2018",
+      "aliases": [
+        "telmont reserve brut base 2018"
+      ],
+      "baseAliases": [
+        "telmont reserve brut"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "base-2018",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "billecart-salmon-brut-nature",
+      "house": "Billecart-Salmon",
+      "name": "Brut Nature",
+      "aliases": [
+        "billecart salmon brut nature"
+      ],
+      "baseAliases": [
+        "billecart salmon brut nature"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "billecart-salmon-le-sous-bois",
+      "house": "Billecart-Salmon",
+      "name": "Le Sous Bois",
+      "aliases": [
+        "billecart salmon le sous bois"
+      ],
+      "baseAliases": [
+        "billecart salmon le sous bois"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "laurent-perrier-blanc-de-blancs-brut-nature",
+      "house": "Laurent-Perrier",
+      "name": "Blanc de Blancs Brut Nature",
+      "aliases": [
+        "laurent perrier blanc de blancs brut nature"
+      ],
+      "baseAliases": [
+        "laurent perrier blanc de blancs brut nature"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "laurent-perrier-ultra-brut",
+      "house": "Laurent-Perrier",
+      "name": "Ultra Brut",
+      "aliases": [
+        "laurent perrier ultra brut"
+      ],
+      "baseAliases": [
+        "laurent perrier ultra brut"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "palmer-rose-solera",
+      "house": "Palmer & Co",
+      "name": "Rosé Solera",
+      "aliases": [
+        "palmer et co rose solera"
+      ],
+      "baseAliases": [
+        "palmer et co rose solera"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "devaux-cuvee-d",
+      "house": "Devaux",
+      "name": "Cuvée D",
+      "aliases": [
+        "devaux cuvee d"
+      ],
+      "baseAliases": [
+        "devaux cuvee d"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "ayala-blanc-de-blancs-a19",
+      "house": "AYALA",
+      "name": "Le Blanc de Blancs A/19",
+      "aliases": [
+        "ayala le blanc de blancs a 19"
+      ],
+      "baseAliases": [
+        "ayala le blanc de blancs"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "A/19",
+      "vintageYear": 2019,
+      "editionNumber": null
+    },
+    {
+      "productId": "pierre-paillard-les-parcelles-xxi",
+      "house": "Pierre Paillard",
+      "name": "Les Parcelles XXI",
+      "aliases": [
+        "pierre paillard les parcelles xxi"
+      ],
+      "baseAliases": [
+        "pierre paillard les parcelles"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "XXI",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "pierre-paillard-les-terres-roses-xx",
+      "house": "Pierre Paillard",
+      "name": "Les Terres Roses XX",
+      "aliases": [
+        "pierre paillard les terres roses xx"
+      ],
+      "baseAliases": [
+        "pierre paillard les terres roses"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "XX",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "francoise-bedel-originelle",
+      "house": "Françoise Bedel",
+      "name": "Origin’elle",
+      "aliases": [
+        "francoise bedel origin elle"
+      ],
+      "baseAliases": [
+        "francoise bedel origin elle"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "roger-coulon-lhommee",
+      "house": "Roger Coulon",
+      "name": "L’Hommée",
+      "aliases": [
+        "roger coulon l hommee"
+      ],
+      "baseAliases": [
+        "roger coulon l hommee"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "roger-coulon-roselie",
+      "house": "Roger Coulon",
+      "name": "Rosélie",
+      "aliases": [
+        "roger coulon roselie"
+      ],
+      "baseAliases": [
+        "roger coulon roselie"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "mouzon-leroux-latavique-base-2022",
+      "house": "Mouzon-Leroux",
+      "name": "L’Atavique — base 2022",
+      "aliases": [
+        "mouzon leroux l atavique base 2022"
+      ],
+      "baseAliases": [
+        "mouzon leroux l atavique"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "base-2022",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "coessens-blanc-de-noirs",
+      "house": "Coessens",
+      "name": "Blanc de Noirs",
+      "aliases": [
+        "coessens blanc de noirs"
+      ],
+      "baseAliases": [
+        "coessens blanc de noirs"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "coessens-rose-de-saignee",
+      "house": "Coessens",
+      "name": "Rosé de Saignée",
+      "aliases": [
+        "coessens rose de saignee"
+      ],
+      "baseAliases": [
+        "coessens rose de saignee"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    },
+    {
+      "productId": "coessens-pinotmaniac-2022",
+      "house": "Coessens",
+      "name": "Pinotmaniac 2022",
+      "aliases": [
+        "coessens pinotmaniac 2022"
+      ],
+      "baseAliases": [
+        "coessens pinotmaniac"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "2022",
+      "vintageYear": 2022,
+      "editionNumber": null
+    },
+    {
+      "productId": "coessens-exogyre",
+      "house": "Coessens",
+      "name": "Exogyre",
+      "aliases": [
+        "coessens exogyre"
+      ],
+      "baseAliases": [
+        "coessens exogyre"
+      ],
+      "gtins": [],
+      "formatMl": 750,
+      "releaseLabel": "standard",
+      "vintageYear": null,
+      "editionNumber": null
+    }
+  ]
+}
