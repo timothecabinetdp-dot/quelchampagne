@@ -53,7 +53,7 @@ global.document = { getElementById:()=>({set innerHTML(v){}, get innerHTML(){ret
 global.window = { scrollTo(){}, open(){} };
 global.localStorage = { getItem(){return null;}, setItem(){} };
 global.fetch = () => Promise.reject('x');
-eval(SCRIPT + '; Object.assign(ctx,{products,setCatalogue,articles,prod,art,detail,coverBg,PHOTOS,photoSrc,buyLink,priceText,productAction,bottleViz,logoMark,BRAND,AMAZON_TAG});');
+eval(SCRIPT + '; Object.assign(ctx,{products,setCatalogue,articles,prod,art,detail,coverBg,PHOTOS,photoSrc,buyLink,priceText,productAction,bottleViz,logoMark,BRAND});');
 
 const catalogue = buildCatalogue();
 const priceIndex = buildPriceIndex();
@@ -671,7 +671,7 @@ function legalMain(){
       <h3>Information et responsabilité</h3>
       <p>Les fourchettes de prix sont indicatives et séparées des offres marchandes. Une information peut évoluer après sa date de vérification ; le site met à disposition les sources officielles utilisées pour les faits produit.</p>
       <h3>Affiliation</h3>
-      <p>QuelChampagne participe au Programme Partenaires d’Amazon, un programme d’affiliation permettant de percevoir une rémunération grâce à des liens vers Amazon.fr. Certains boutons « Voir l’offre » sont des liens affiliés, signalés comme tels (attribut <code>rel="sponsored"</code>) à proximité du lien. Cette rémunération éventuelle ne modifie ni le classement éditorial, ni les recommandations du sélecteur. Les prix et disponibilités affichés sur Amazon relèvent d’Amazon et non de QuelChampagne.</p>
+      <p>Aucun lien marchand affilié n’est actuellement publié. QuelChampagne prévoit de nouer des partenariats d’affiliation avec des cavistes spécialisés (par exemple via les réseaux Awin ou TradeDoubler). Le champagne étant une boisson alcoolisée exclue du Programme Partenaires d’Amazon, aucun lien Amazon n’est utilisé. Lorsqu’un lien affilié sera activé, il sera signalé comme tel (attribut <code>rel="sponsored"</code>) à proximité du lien, sans modifier le classement éditorial ni les recommandations du sélecteur. Les prix et disponibilités relèveront alors du marchand et non de QuelChampagne.</p>
     </div>
   </div></section>`;
 }
@@ -685,7 +685,7 @@ function privacyMain(){
       <h3>Confirmation de majorité</h3>
       <p>Après confirmation, le navigateur enregistre localement la valeur technique <code>qc_age_ok</code> afin d’éviter de réafficher immédiatement la porte d’âge. Cette valeur ne contient pas l’âge, l’identité ou les réponses au sélecteur.</p>
       <h3>Services tiers</h3>
-      <p>Le site n’intègre ni régie publicitaire, ni traceur d’audience, ni police externe. Certaines photographies d’illustration (accueil, en-têtes, couvertures d’articles du blog) sont servies par le réseau de diffusion d’Unsplash (images.unsplash.com) ; comme tout hébergeur d’images, Unsplash peut recevoir des données techniques de connexion (adresse IP, type de navigateur) lors du chargement de ces visuels. Aucun cookie n’est déposé par ce biais. Certains boutons « Voir l’offre » renvoient, à votre initiative, vers Amazon.fr dans le cadre du Programme Partenaires d’Amazon ; c’est alors Amazon qui applique sa propre politique de confidentialité et ses cookies. Toute future activation d’un outil de mesure d’audience ou d’un formulaire fera l’objet d’une mise à jour préalable de cette politique et, si nécessaire, d’un mécanisme de consentement.</p>
+      <p>Le site n’intègre ni régie publicitaire, ni traceur d’audience, ni police externe. Certaines photographies d’illustration (accueil, en-têtes, couvertures d’articles du blog) sont servies par le réseau de diffusion d’Unsplash (images.unsplash.com) ; comme tout hébergeur d’images, Unsplash peut recevoir des données techniques de connexion (adresse IP, type de navigateur) lors du chargement de ces visuels. Aucun cookie n’est déposé par ce biais. Aucun lien marchand affilié n’est actuellement actif. En cas de future activation d’un partenariat d’affiliation avec un caviste, d’un outil de mesure d’audience ou d’un formulaire, cette politique sera mise à jour au préalable et, si nécessaire, un mécanisme de consentement sera ajouté.</p>
       <h3>Vos droits et contact</h3>
       <p>Responsable du traitement : CORTEXIA (SAS), 59 rue de Ponthieu, 75008 Paris. Pour toute demande relative à vos données ou l’exercice de vos droits : timothe.cabinetdp@gmail.com. Vous pouvez également saisir la CNIL (www.cnil.fr).</p>
     </div>

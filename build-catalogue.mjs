@@ -2,12 +2,11 @@ import { readFileSync, writeFileSync } from 'node:fs';
 
 const ROOT = new URL('.', import.meta.url);
 
-// Cuvées dont la fiche produit Amazon (ASIN) a été vérifiée une à une et pour
-// lesquelles le lien d'affiliation direct est activé. Toute autre cuvée reste en
-// repli éditorial (« Voir la fiche officielle ») tant que son ASIN n'est pas mappé.
-export const ACTIVATED_COMMERCE_IDS = new Set([
-  'feuillatte', 'moet', 'clicquot', 'bollinger', 'ruinart', 'laurentperrier'
-]);
+// Cuvées dont l'offre marchande affiliée est activée. VIDE pour l'instant :
+// le champagne est exclu du Programme Partenaires Amazon (boissons alcoolisées),
+// on bascule vers l'affiliation caviste (Vinatis via Awin/TradeDoubler, etc.).
+// On réactivera ici, cuvée par cuvée, une fois un flux caviste vérifié en place.
+export const ACTIVATED_COMMERCE_IDS = new Set([]);
 
 function read(name) {
   return readFileSync(new URL(name, ROOT), 'utf8');

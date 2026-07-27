@@ -285,8 +285,8 @@ for (const file of htmlFiles) {
     if (h1Count !== 1) errors.push(`Un seul H1 attendu dans ${relative}, obtenu : ${h1Count}.`);
   }
   for (const m of html.matchAll(/href="(https:[^"]+)"\s+target="_blank"\s+rel="sponsored noopener"/g)) {
-    if (!/amazon\.fr\/.*tag=quelchampagne-21/.test(m[1])) {
-      errors.push(`Lien sponsorisé non conforme (hors Amazon/tag) dans ${relative} : ${m[1]}.`);
+    if (!/awin1\.com|tradedoubler|clk\.|effiliation|kwanko/i.test(m[1])) {
+      errors.push(`Lien sponsorisé non conforme (hors réseau caviste affilié) dans ${relative} : ${m[1]}.`);
     }
   }
   for (const offer of offers) {

@@ -449,22 +449,15 @@ function FALLBACK_PRODUCTS(){
 }
 function prod(id){ return products().find(p=>p.id===id); }
 
-/* Liens d'achat Amazon Partenaires. Le tag se change ICI, en une ligne.
-   Tant qu'on n'a pas de flux (avec liens produits directs), on renvoie vers
-   la recherche Amazon du produit, avec le tag de tracking. */
-const AMAZON_TAG = 'quelchampagne-21';
-/* Fiches produit Amazon (ASIN) pour des liens directs. À mettre à jour si une
-   fiche disparaît. Sans ASIN, on retombe sur une recherche Amazon. */
-const ASINS = {
-  feuillatte:'B0B7XGK1F3', moet:'B00B16HGEU', clicquot:'B0D7RVRTHY', bollinger:'B01CSMX0OA',
-  ruinart:'B0DLX43VSV', laurentperrier:'B009H2RFKK', perrierjouet:'B0G9535PPJ', domperignon:'B0DC6MPNGW',
-  bouillot:'B00734VGCC', sancerre:'B0FNN9R58N', whisperingangel:'B0CX5S23XF',
-};
+/* Lien d'achat affilié. Le champagne est exclu du Programme Partenaires Amazon
+   (boissons alcoolisées non commissionnées sur les sites Amazon UE/UK) : on ne
+   passe donc PAS par Amazon. Un lien n'apparaît que lorsqu'un caviste affilié
+   (Vinatis via Awin/TradeDoubler, Chateaunet, etc.) fournit une URL vérifiée
+   dans p.aff, et que la fiche est marquée commerceReady après contrôle. */
 function buyLink(p){
   if(p.commerceReady !== true) return null;
-  if(p.aff && /tag=|awin1\.com|\/dp\//.test(p.aff)) return p.aff; // vrai lien de flux si présent
-  if(ASINS[p.id]) return 'https://www.amazon.fr/dp/' + ASINS[p.id] + '?tag=' + AMAZON_TAG;
-  return 'https://www.amazon.fr/s?k=' + encodeURIComponent(p.house + ' ' + p.name) + '&tag=' + AMAZON_TAG;
+  if(p.aff && /awin1\.com|tradedoubler|clk\.|effiliation|kwanko/i.test(p.aff)) return p.aff;
+  return null;
 }
 function priceText(p){
   if(p.priceMin && p.priceMax) return `${p.priceMin}–${p.priceMax} €`;

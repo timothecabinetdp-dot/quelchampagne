@@ -11,10 +11,10 @@
     "privacyPolicyFinalized": true,
     "affiliateDisclosureFinalized": true,
     "imageRightsRegisterComplete": true,
-    "merchantOffersActivated": true
+    "merchantOffersActivated": false
   },
   "notes": {
-    "merchantOffersActivated": "Activation sélective : 6 cuvées à ASIN Amazon vérifié (feuillatte, moet, clicquot, bollinger, ruinart, laurentperrier). Index prix et relevés marchands restent verrouillés (research_only).",
+    "merchantOffersActivated": "Amazon retiré (champagne exclu du Programme Partenaires). Réorientation vers affiliation caviste (Vinatis via Awin/TradeDoubler) : offres à réactiver après acceptation et flux vérifié.",
     "deploymentAuthorized": "Autorisé : identité éditeur Cortexia (SAS, SIREN 107124000, RCS Paris), hébergeur Netlify et confidentialité renseignés ; validations techniques OK."
   }
 }
