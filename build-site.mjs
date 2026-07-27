@@ -492,20 +492,28 @@ function landingMain(landing){
 }
 
 function comparateurMain(){
-  const data = products().map(p=>({
-    id:p.id, house:p.house, name:p.name, price:priceText(p),
-    type:p.tags[0]||'Champagne', style:p.tags.slice(1).join(', ')||p.profil.join(', '),
-    occasions:p.occ.map(x=>x.replace('occ_','')).join(', '),
-    accords:p.pair, producerType:p.producerType==='vigneron'?'Vigneron':'Maison',
-    url:`/champagne/${p.id}/`
-  }));
+  const sorted = [...products()].sort((a,b)=>(b.popularity||0)-(a.popularity||0));
+  const data = sorted.map(p=>({ id:p.id, house:p.house, name:p.name, price:priceText(p), type:p.tags[0]||'Champagne', style:p.tags.slice(1).join(', ')||p.profil.join(', '), occasions:p.occ.map(x=>x.replace('occ_','')).join(', '), accords:p.pair, producerType:p.producerType==='vigneron'?'Vigneron':'Maison', url:`/champagne/${p.id}/` }));
   const encoded = JSON.stringify(data).replaceAll('<','\\u003c');
-  const choices = data.map(p=>`<button class="compare-choice" type="button" data-compare="${p.id}" data-search="${`${p.house} ${p.name} ${p.type} ${p.style}`.toLowerCase()}" aria-pressed="false"><strong>${p.house}</strong><span>${p.name} · ${p.price}</span></button>`).join('');
+  const choices = sorted.map((p,i)=>{
+    const search = `${p.house} ${p.name} ${(p.tags||[]).join(' ')}`.toLowerCase().replaceAll('"','&quot;');
+    return `<button class="compare-choice${i>=12?' extra':''}" type="button" data-compare="${p.id}" data-search="${search}" data-price="${p.priceMax||p.price}" data-producer="${p.producerType}" data-occ="${p.occ.join(' ')}" aria-pressed="false"><strong>${p.house}</strong><span>${p.name} · ${priceText(p)}</span></button>`;
+  }).join('');
   return `<section class="section"><div class="container">
-    <div class="lead-head"><h1 class="h2">Comparer jusqu'à 4 champagnes</h1><p>Choisissez vos bouteilles : le tableau met en regard budget, style, usages et accords. Les prix restent indicatifs tant que les offres marchandes ne sont pas contrôlées.</p></div>
-    <div class="compare-tools"><label class="sr-only" for="compare-search">Rechercher une cuvée</label><input class="compare-search" id="compare-search" type="search" placeholder="Rechercher une maison ou une cuvée"><button class="btn btn-ghost btn-sm" id="compare-clear" type="button">Effacer la sélection</button></div>
-    <div class="compare-status" id="compare-status" aria-live="polite">Sélectionnez 2 à 4 champagnes.</div>
-    <div class="compare-grid">${choices}</div>
+    <div class="lead-head"><h1 class="h2">Comparer jusqu'à 4 champagnes</h1><p>Commencez par les cuvées les plus demandées, filtrez selon vos critères, puis mettez 2 à 4 bouteilles en regard. Les prix restent indicatifs tant que les offres marchandes ne sont pas contrôlées.</p></div>
+    <form class="catalogue-tools" id="compare-tools" role="search">
+      <label class="sr-only" for="compare-search">Rechercher une cuvée</label>
+      <input class="catalogue-search" id="compare-search" type="search" placeholder="Rechercher une maison ou une cuvée…">
+      <div class="catalogue-filters">
+        <label class="catalogue-filter">Budget<select id="compare-budget"><option value="">Tous</option><option value="under40">Moins de 40 €</option><option value="40-60">40 à 60 €</option><option value="60-90">60 à 90 €</option><option value="90plus">90 € et plus</option></select></label>
+        <label class="catalogue-filter">Occasion<select id="compare-occ"><option value="">Toutes</option><option value="occ_apero">Apéritif</option><option value="occ_diner">Repas</option><option value="occ_cadeau">Cadeau</option></select></label>
+        <label class="catalogue-filter">Producteur<select id="compare-producer"><option value="">Tous</option><option value="maison">Maison</option><option value="vigneron">Vigneron</option></select></label>
+      </div>
+      <div class="catalogue-summary"><span id="compare-status" aria-live="polite">Sélectionnez 2 à 4 champagnes.</span><button class="btn btn-ghost btn-sm" id="compare-clear" type="button">Effacer la sélection</button></div>
+    </form>
+    <div class="compare-selected" id="compare-selected"></div>
+    <div class="compare-grid" id="compare-grid">${choices}</div>
+    <div style="text-align:center; margin-top:20px"><button class="btn btn-ghost btn-sm" id="compare-showall" type="button">Afficher les ${data.length} cuvées</button></div>
     <div class="compare-wrap" id="compare-result"></div>
   </div></section>
   <script>
@@ -515,17 +523,35 @@ function comparateurMain(){
     const status=document.getElementById('compare-status');
     const result=document.getElementById('compare-result');
     const search=document.getElementById('compare-search');
+    const fb=document.getElementById('compare-budget'), fo=document.getElementById('compare-occ'), fp=document.getElementById('compare-producer');
+    const showAllBtn=document.getElementById('compare-showall');
     const clear=document.getElementById('compare-clear');
+    const selBox=document.getElementById('compare-selected');
+    const buttons=[].slice.call(document.querySelectorAll('[data-compare]'));
+    let showAll=false;
     const labels={price:'Budget indicatif',type:'Type',style:'Style et usages',producerType:'Producteur',occasions:'Occasions',accords:'Accords'};
+    function budgetOk(v){ const b=fb.value; if(!b) return true; v=+v; if(b==='under40') return v<40; if(b==='40-60') return v>=40&&v<=60; if(b==='60-90') return v>60&&v<=90; if(b==='90plus') return v>90; return true; }
+    function filtering(){ return Boolean(search.value.trim()||fb.value||fo.value||fp.value); }
+    function applyFilters(){
+      const q=search.value.trim().toLowerCase(); const active=filtering();
+      buttons.forEach((b,i)=>{
+        let ok=(!q||b.dataset.search.includes(q)) && budgetOk(b.dataset.price) && (!fo.value||(' '+b.dataset.occ+' ').includes(' '+fo.value+' ')) && (!fp.value||b.dataset.producer===fp.value);
+        if(!active && !showAll && i>=12) ok=false;
+        b.hidden=!ok;
+      });
+      showAllBtn.style.display=(active||showAll)?'none':'';
+    }
+    function renderSel(){ selBox.innerHTML=selected.length?selected.map(id=>{const p=products.find(x=>x.id===id);return '<span class="tag">'+p.house+' '+p.name+'</span>';}).join(''):''; }
     function render(){
-      status.textContent=selected.length<2 ? 'Sélectionnez encore '+(2-selected.length)+' champagne'+(2-selected.length>1?'s':'')+'.' : selected.length+'/4 champagnes sélectionnés.';
+      status.textContent=selected.length<2?'Sélectionnez encore '+(2-selected.length)+' champagne'+(2-selected.length>1?'s':'')+'.':selected.length+'/4 champagnes sélectionnés.';
+      renderSel();
       if(selected.length<2){ result.innerHTML=''; return; }
       const picked=selected.map(id=>products.find(p=>p.id===id));
       const head='<tr><th>Critère</th>'+picked.map(p=>'<th><a href="'+p.url+'">'+p.house+'<br>'+p.name+'</a></th>').join('')+'</tr>';
       const rows=Object.keys(labels).map(key=>'<tr><td>'+labels[key]+'</td>'+picked.map(p=>'<td>'+p[key]+'</td>').join('')+'</tr>').join('');
       result.innerHTML='<table class="compare-table"><thead>'+head+'</thead><tbody>'+rows+'</tbody></table>';
     }
-    document.querySelectorAll('[data-compare]').forEach(button=>{
+    buttons.forEach(button=>{
       button.addEventListener('click',()=>{
         const id=button.dataset.compare, index=selected.indexOf(id);
         if(index>=0){ selected.splice(index,1); button.classList.remove('on'); button.setAttribute('aria-pressed','false'); }
@@ -534,16 +560,11 @@ function comparateurMain(){
         render();
       });
     });
-    search.addEventListener('input',()=>{
-      const query=search.value.trim().toLowerCase();
-      document.querySelectorAll('[data-compare]').forEach(button=>{ button.hidden=Boolean(query && !button.dataset.search.includes(query)); });
-    });
-    clear.addEventListener('click',()=>{
-      selected.splice(0);
-      document.querySelectorAll('[data-compare]').forEach(button=>{button.classList.remove('on');button.setAttribute('aria-pressed','false');});
-      render();
-    });
-    render();
+    search.addEventListener('input',applyFilters);
+    [fb,fo,fp].forEach(el=>el.addEventListener('change',applyFilters));
+    showAllBtn.addEventListener('click',()=>{ showAll=true; applyFilters(); });
+    clear.addEventListener('click',()=>{ selected.splice(0); buttons.forEach(b=>{b.classList.remove('on');b.setAttribute('aria-pressed','false');}); render(); });
+    applyFilters(); render();
   })();
   </script>`;
 }
