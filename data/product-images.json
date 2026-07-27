@@ -1,0 +1,5 @@
+{
+  "version": 1,
+  "policy": "Une image n’est intégrée au catalogue que si sa source, son droit d’usage, sa date de contrôle et son fichier local sont documentés.",
+  "records": []
+}
