@@ -335,6 +335,12 @@ h1{font-size:clamp(42px,7vw,80px); font-weight:600; line-height:1.04; letter-spa
 .calc-lbl{font-size:13px; color:var(--muted); margin-top:8px}
 .calc-note{font-size:13.5px; color:var(--muted); margin-top:18px; line-height:1.5}
 @media(max-width:560px){.calc-grid,.calc-out{grid-template-columns:1fr}}
+/* ---------- Tableaux dans les articles ---------- */
+.prose table{width:100%; border-collapse:collapse; margin:24px 0; font-size:15px}
+.prose th,.prose td{text-align:left; padding:12px 14px; border-bottom:1px solid var(--line); vertical-align:top}
+.prose thead th{font-weight:600; color:var(--ink); border-bottom:2px solid var(--line)}
+.prose td a{color:var(--accent-deep); text-decoration:underline}
+@media(max-width:560px){.prose thead{display:none}.prose table,.prose tbody,.prose tr,.prose td{display:block}.prose td{border:none; padding:3px 0}.prose tr{border-bottom:1px solid var(--line); padding:14px 0}}
 .compo{display:flex; gap:20px; justify-content:center; flex-wrap:wrap; margin-top:30px}
 .compo-i{background:var(--bg); border-radius:18px; padding:24px 34px; text-align:center; min-width:200px}
 .compo-v{font-size:22px; font-weight:600; letter-spacing:-.02em}
@@ -674,17 +680,28 @@ function articles(){
     { id:'cadeau', cat:'Guide', cover:'linear-gradient(135deg,#F1EDE4,#E7DECD)', date:'Juillet 2026', read:'5 min',
       title:"Quel champagne offrir en cadeau",
       excerpt:"Les valeurs sûres qui font toujours plaisir, par budget et par occasion.",
-      body:`<p>Offrir du champagne ne trompe jamais, à condition de viser juste. Voici comment choisir une bouteille qui fera plaisir sans se ruiner ni se tromper.</p>
-<h3>Misez sur une étiquette reconnaissable</h3>
-<p>Pour un cadeau, la notoriété rassure. Une maison identifiable signale l'attention portée. Le <a href="#" onclick="return openAff('moet')">Moët Impérial</a> ou la Veuve Clicquot Yellow Label sont des valeurs sûres, immédiatement reconnues.</p>
-<h3>Adaptez au budget</h3>
-<p>Autour de 40 à 50 €, les grandes maisons offrent leurs cuvées emblématiques. Entre 60 et 90 €, on passe à des champagnes de caractère comme la <a href="#" onclick="return openAff('bollinger')">Special Cuvée de Bollinger</a>. Au-delà, un millésime précis comme <a href="#" onclick="return openAff('dom-perignon-vintage-2015')">Dom Pérignon Vintage 2015</a> permet de choisir une sortie clairement identifiée.</p>
-<h3>Pensez au profil de la personne</h3>
-<p>Un amateur de fraîcheur appréciera un blanc de blancs ; quelqu'un qui aime les vins de caractère préférera une cuvée vineuse. En cas de doute, un rosé fait presque toujours mouche.</p>
-<h3>Le petit plus</h3>
-<p>Un étui ou un coffret soigne la présentation et transforme la bouteille en vrai cadeau. Pas besoin de dépenser plus, juste de bien présenter.</p>
-<p>Vous hésitez selon la personne à qui offrir ? Lancez le sélecteur et affinez le choix.</p>`,
-      related:['moet','bollinger','domperignon'] },
+      body:`<p>Offrir du champagne fait toujours plaisir, à condition de viser juste. La bonne bouteille dépend surtout de trois choses : le budget, l'occasion, et ce que la personne aime. Voici comment décider en deux minutes.</p>
+<h3>1. Fixez d'abord le budget</h3>
+<p>C'est lui qui cadre le choix. En dessous de 40 €, on trouve déjà de très bons bruts de grandes maisons, parfaits pour un cadeau simple et sûr. Entre 40 et 70 €, on accède aux cuvées emblématiques et à des champagnes de caractère. Au-delà de 90 €, un millésime précis ou une cuvée de prestige transforme le cadeau en véritable événement.</p>
+<h3>2. Accordez la bouteille à l'occasion</h3>
+<table>
+<thead><tr><th>Occasion</th><th>Budget conseillé</th><th>Type à privilégier</th><th>Exemple de cuvée</th></tr></thead>
+<tbody>
+<tr><td>Remerciement, hôte</td><td>~30–40 €</td><td>Brut classique, consensuel</td><td><a href="/champagne/moet/">Moët Impérial</a></td></tr>
+<tr><td>Anniversaire, félicitations</td><td>~40–60 €</td><td>Brut de caractère</td><td><a href="/champagne/bollinger/">Bollinger Special Cuvée</a></td></tr>
+<tr><td>Cadeau raffiné</td><td>~50–70 €</td><td>Rosé délicat ou blanc de blancs</td><td><a href="/champagne/billecart-salmon-brut-rose/">Billecart-Salmon Brut Rosé</a></td></tr>
+<tr><td>Grande occasion</td><td>90 € et plus</td><td>Millésime identifié</td><td><a href="/champagne/dom-perignon-vintage-2015/">Dom Pérignon 2015</a></td></tr>
+</tbody>
+</table>
+<p>Ces suggestions sont recommandées selon les profils et les sources officielles des maisons, non selon une dégustation de chaque bouteille.</p>
+<h3>3. Tenez compte de la personne</h3>
+<p>Un amateur de fraîcheur sera comblé par un <a href="/champagne/ruinart/">blanc de blancs</a> vif et minéral. Quelqu'un qui aime les vins de caractère préférera une cuvée vineuse et structurée. Pour un palais que vous connaissez mal, un rosé ou un brut équilibré fait presque toujours mouche : ce sont les choix les plus consensuels.</p>
+<h3>4. Maison connue ou vigneron ?</h3>
+<p>Pour rassurer, une grande maison immédiatement reconnaissable est idéale. Pour surprendre un amateur curieux, un champagne de vigneron apporte une vraie singularité et montre que vous avez cherché au-delà des marques. Vous pouvez filtrer les deux dans <a href="/champagnes/">la sélection</a>.</p>
+<h3>Le détail qui change tout</h3>
+<p>Un étui ou un coffret soigne la présentation sans coûter beaucoup plus : il transforme la bouteille en vrai cadeau. Pensez aussi à vérifier le prix du jour chez le marchand, nos fourchettes restant indicatives.</p>
+<p>Vous hésitez encore selon la personne à qui offrir ? Quatre questions suffisent : lancez le sélecteur, il affine le choix pour vous.</p>`,
+      related:['moet','bollinger','dom-perignon-vintage-2015'] },
 
     { id:'quantite', cat:'Pratique', cover:'linear-gradient(135deg,#EEF0EB,#E3E7DD)', date:'Juillet 2026', read:'3 min',
       title:"Combien de bouteilles de champagne prévoir ?",
