@@ -314,6 +314,14 @@ h1{font-size:clamp(42px,7vw,80px); font-weight:600; line-height:1.04; letter-spa
 .axe{background:var(--bg2); border-radius:18px; padding:24px}
 .axe-t{font-size:17px; font-weight:600; letter-spacing:-.02em; color:var(--accent-deep)}
 .axe p{font-size:14.5px; color:var(--muted); line-height:1.5; margin-top:10px}
+.axe-head{display:flex; justify-content:space-between; align-items:baseline; gap:10px}
+.axe-v{font-size:14px; font-weight:500; color:var(--muted)}
+.gauge{margin-top:14px; height:8px; border-radius:999px; background:rgba(156,122,52,.16); overflow:hidden}
+.gauge-fill{display:block; height:100%; width:0; border-radius:999px; background:linear-gradient(90deg,var(--accent),var(--accent-deep)); transition:width 1.1s cubic-bezier(.2,.7,.2,1)}
+.gauge-fill.in{width:var(--lvl)}
+.editorial-visual::before{animation:evfloat 9s ease-in-out infinite}
+@keyframes evfloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+@media(prefers-reduced-motion:reduce){.gauge-fill{transition:none; width:var(--lvl)}.editorial-visual::before{animation:none}}
 .compo{display:flex; gap:20px; justify-content:center; flex-wrap:wrap; margin-top:30px}
 .compo-i{background:var(--bg); border-radius:18px; padding:24px 34px; text-align:center; min-width:200px}
 .compo-v{font-size:22px; font-weight:600; letter-spacing:-.02em}

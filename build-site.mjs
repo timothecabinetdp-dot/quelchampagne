@@ -29,15 +29,15 @@ const SELECTION_PHOTO = 'https://images.unsplash.com/photo-1609516142756-7ecef85
 const QUIZ_PHOTO      = 'https://images.unsplash.com/photo-1647905555465-0f9004fbdaed?q=80&w=2000&auto=format&fit=crop';
 // Couvertures éditoriales du blog (Unsplash, enregistrées dans data/image-rights-register.json).
 const BLOG_PHOTOS = {
-  'guide-2026':'1720070827797-d4f03e228dea', 'dosages':'1653515906764-96bfd5c01141',
+  'guide-2026':'1446822775955-c34f483b410b', 'dosages':'1653515906764-96bfd5c01141',
   'accords':'1758972574954-ab4b5b5baed5', 'moins-50':'1609516142756-7ecef85e76a7',
-  'mariage':'1647905555465-0f9004fbdaed', 'cadeau':'1609516142756-7ecef85e76a7',
-  'quantite':'1628336707631-68131ca720c3', 'blanc-blancs':'1623428454697-08da4a100602',
-  'servir':'1720070827797-d4f03e228dea', 'noel':'1628336707631-68131ca720c3',
-  'moins-30':'1558001373-7b93ee48ffa0', 'aperitif':'1558001373-7b93ee48ffa0',
-  'huitres':'1679694140422-aecfd3d5dd0b', 'anniversaire':'1647905555465-0f9004fbdaed',
-  'brut-nature':'1653515906764-96bfd5c01141', 'rose-saignee':'1673872602569-c9a1c1bfe71f',
-  'vigneron':'1635715070096-b4655b94edee', 'etiquette':'1653515906764-96bfd5c01141'
+  'mariage':'1647905555465-0f9004fbdaed', 'cadeau':'1606728000988-fbbec753b8ce',
+  'quantite':'1580657274234-7339717f4541', 'blanc-blancs':'1623428454697-08da4a100602',
+  'servir':'1720070827797-d4f03e228dea', 'noel':'1608416026650-66b4e0c0c301',
+  'moins-30':'1558001373-7b93ee48ffa0', 'aperitif':'1498429152472-9a433d9ddf3b',
+  'huitres':'1679694140422-aecfd3d5dd0b', 'anniversaire':'1514828980084-9462f7d03afc',
+  'brut-nature':'1619810856355-c5f4e7f8a90e', 'rose-saignee':'1673872602569-c9a1c1bfe71f',
+  'vigneron':'1635715070096-b4655b94edee', 'etiquette':'1628336707631-68131ca720c3'
 };
 function blogPhoto(a, w){ const id = BLOG_PHOTOS[a.id]; return id ? `https://images.unsplash.com/photo-${id}?q=75&w=${w||800}&auto=format&fit=crop` : null; }
 function coverStyle(a, w){ const p = blogPhoto(a, w); return p ? `background:#EFEAE0 url('${p}') center/cover` : `background:${coverBg(a)}`; }
@@ -258,11 +258,14 @@ const MOTION = `<script>
   if(bb && !reduce){
     for(var i=0;i<28;i++){var b=document.createElement('i');var s=(4+Math.random()*13);b.style.left=(Math.random()*100)+'%';b.style.width=s+'px';b.style.height=s+'px';b.style.animationDuration=(6+Math.random()*7).toFixed(2)+'s';b.style.animationDelay=(Math.random()*9).toFixed(2)+'s';bb.appendChild(b);}
   }
-  var els=[].slice.call(document.querySelectorAll('.sec-head, .steps .step, .pgrid > *, .cards > *, .band .container, .trust-item, .duel-col, .article .prose > p'));
-  if(reduce || !('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in');});return;}
+  var gauges=[].slice.call(document.querySelectorAll('.gauge-fill'));
+  var els=[].slice.call(document.querySelectorAll('.sec-head, .steps .step, .pgrid > *, .cards > *, .band .container, .trust-item, .duel-col, .article .prose > p, .product .pblock, .axes > *, .accs > *, .decision-grid > *, .compo'));
+  if(reduce || !('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in');});gauges.forEach(function(g){g.classList.add('in');});return;}
   els.forEach(function(e,i){e.classList.add('reveal'); e.style.transitionDelay=((i%3)*0.07).toFixed(2)+'s';});
   var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:0.1, rootMargin:'0px 0px -6% 0px'});
   els.forEach(function(e){io.observe(e);});
+  var gio=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');gio.unobserve(x.target);}});},{threshold:0.35});
+  gauges.forEach(function(g){gio.observe(g);});
 })();
 </script>`;
 
@@ -579,7 +582,12 @@ function blogMain(){
 function productMain(p){
   const d = detail(p) || {};
   const guide = decisionGuide(p);
-  const axes = d.profil ? [['Fraîcheur',d.profil.fraicheur],['Rondeur',d.profil.rondeur],['Puissance',d.profil.puissance],['Longueur',d.profil.longueur]].map(([t,x])=>`<div class="axe"><div class="axe-t">${t}</div><p>${x}</p></div>`).join('') : '';
+  const AXE_LEVELS = {'très douce':1,'douce':2,'équilibrée':3,'fraîche':4,'très fraîche':5,'très droite':1,'droite':2,'ronde':4,'très ronde':5,'très légère':1,'légère':2,'puissante':4,'très puissante':5,'directe':1,'accessible':2,'nuancée':3,'complexe':4,'très complexe':5};
+  const axeGauge = (t,x) => {
+    const lvl = AXE_LEVELS[String(x).toLowerCase().trim()] || 3;
+    return `<div class="axe"><div class="axe-head"><span class="axe-t">${t}</span><span class="axe-v">${x}</span></div><div class="gauge"><span class="gauge-fill" style="--lvl:${lvl*20}%"></span></div></div>`;
+  };
+  const axes = d.profil ? [['Fraîcheur',d.profil.fraicheur],['Rondeur',d.profil.rondeur],['Puissance',d.profil.puissance],['Longueur',d.profil.longueur]].map(([t,x])=>axeGauge(t,x)).join('') : '';
   const accords = d.accords ? d.accords.map(a=>`<div class="acc"><div class="acc-t">${a.t}</div><p>${a.d}</p></div>`).join('') : '';
   const tags = p.tags.map(t=>`<span class="tag">${t}</span>`).join('');
   const others = products().filter(x=>x.id!==p.id).slice(0,3).map(productCard).join('');
