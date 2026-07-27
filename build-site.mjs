@@ -269,15 +269,15 @@ const MOTION = `<script>
 })();
 </script>`;
 
-function page({title, desc, canonical, ogImage, active, main}){
+function page({title, desc, canonical, ogImage, active, main, graph, noindex}){
   const schema = JSON.stringify({
     '@context':'https://schema.org',
-    '@type':'WebPage',
-    name:title,
-    url:canonical,
-    description:desc,
-    inLanguage:'fr-FR',
-    isPartOf:{'@type':'WebSite',name:'QuelChampagne',url:BASE+'/'}
+    '@graph':[
+      {'@type':'WebSite','@id':BASE+'/#website',name:'QuelChampagne',url:BASE+'/',inLanguage:'fr-FR',publisher:{'@id':BASE+'/#org'}},
+      {'@type':'Organization','@id':BASE+'/#org',name:'QuelChampagne',url:BASE+'/',description:'Sélecteur et guide de champagne indépendant, des grandes maisons aux vignerons.',parentOrganization:{'@type':'Organization',name:'CORTEXIA',legalName:'CORTEXIA (SAS)'}},
+      {'@type':'WebPage','@id':canonical+'#webpage',name:title,url:canonical,description:desc,inLanguage:'fr-FR',isPartOf:{'@id':BASE+'/#website'}},
+      ...(graph||[])
+    ]
   }).replaceAll('<','\\u003c');
   return `<!DOCTYPE html>
 <html lang="fr">
@@ -294,7 +294,7 @@ function page({title, desc, canonical, ogImage, active, main}){
 <meta property="og:image" content="${ogImage||OG}">
 <meta property="og:locale" content="fr_FR">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="robots" content="${noindex?'noindex,follow':'index,follow,max-image-preview:large'}">
 <meta name="theme-color" content="#ffffff">
 <link rel="icon" href="${FAVICON}">
 <script type="application/ld+json">${schema}</script>
@@ -318,8 +318,11 @@ function productCard(p, attributes = ''){
     <div class="pcard-b"><div class="pcard-house">${p.house}</div><div class="pcard-name">${p.short}</div><div class="pcard-note">${p.note}</div><div class="pcard-foot"><span class="pcard-price">${priceText(p)}</span><span class="chev">Découvrir</span></div></div>
   </a>`;
 }
+const BUILD_DATE = new Date().toISOString().slice(0,10);
+function readTime(a){ const w = String(a.body||'').replace(/<[^>]+>/g,' ').split(/\s+/).filter(Boolean).length; return Math.max(1, Math.round(w/200)) + ' min'; }
+function crumbs(items){ return {'@type':'BreadcrumbList',itemListElement:items.map((it,i)=>({'@type':'ListItem',position:i+1,name:it.name,item:it.url}))}; }
 function articleCard(a){
-  return `<a class="acard" href="/blog/${a.id}/"><div class="acard-cover" style="${coverStyle(a,700)}"><span class="acard-cat">${a.cat}</span></div><div class="acard-b"><h3>${a.title}</h3><p>${a.excerpt}</p><div class="acard-meta">${a.date} · ${a.read} de lecture</div></div></a>`;
+  return `<a class="acard" href="/blog/${a.id}/"><div class="acard-cover" style="${coverStyle(a,700)}"><span class="acard-cat">${a.cat}</span></div><div class="acard-b"><h3>${a.title}</h3><p>${a.excerpt}</p><div class="acard-meta">${a.date} · ${readTime(a)} de lecture</div></div></a>`;
 }
 function fixLinks(body){
   return body.replace(/href="#" onclick="return openAff\('([^']+)'\)"/g, (m,id)=>{
@@ -623,7 +626,7 @@ function articleMain(a){
     <a class="a-back" href="/blog/">‹ Retour au blog</a>
     <div class="a-cat">${a.cat}</div>
     <h1 class="a-title">${a.title}</h1>
-    <div class="a-meta">${a.date} · ${a.read} de lecture</div>
+    <div class="a-meta">${a.date} · ${readTime(a)} de lecture</div>
     <div class="a-cover" style="${coverStyle(a,1200)}"></div>
     <div class="prose">${fixLinks(a.body)}</div>
     ${relBlock}
@@ -764,7 +767,9 @@ add(BASE+'/confidentialite/', '0.3', 'yearly');
 write('comparatifs/index.html', page({ title:'Comparatifs de champagnes — QuelChampagne', desc:'Des comparatifs directs pour choisir entre deux champagnes selon le style, l’occasion, les accords et le budget.', canonical:BASE+'/comparatifs/', active:'compare', main:comparisonsMain() }));
 add(BASE+'/comparatifs/', '0.8', 'weekly');
 for(const comparison of COMPARISONS){
-  write(`comparatifs/${comparison.id}/index.html`, page({ title:`${comparison.title} | QuelChampagne`, desc:comparison.verdict.slice(0,155), canonical:`${BASE}/comparatifs/${comparison.id}/`, active:'compare', main:comparisonMain(comparison) }));
+  write(`comparatifs/${comparison.id}/index.html`, page({ title:`${comparison.title} | QuelChampagne`, desc:comparison.verdict.slice(0,155), canonical:`${BASE}/comparatifs/${comparison.id}/`, active:'compare', main:comparisonMain(comparison), graph:[
+    crumbs([{name:'Accueil',url:BASE+'/'},{name:'Comparatifs',url:BASE+'/comparatifs/'},{name:comparison.title,url:`${BASE}/comparatifs/${comparison.id}/`}])
+  ] }));
   add(`${BASE}/comparatifs/${comparison.id}/`, '0.8', 'monthly');
 }
 
@@ -772,7 +777,10 @@ for(const comparison of COMPARISONS){
 for(const p of products()){
   const d = detail(p) || {};
   const desc = (d.advice || p.note).slice(0,155);
-  write(`champagne/${p.id}/index.html`, page({ title:`${p.house} ${p.name} — Conseils, profil et budget | QuelChampagne`, desc, canonical:`${BASE}/champagne/${p.id}/`, ogImage:OG, active:'shop', main:productMain(p) }));
+  write(`champagne/${p.id}/index.html`, page({ title:`${p.house} ${p.name} — Conseils, profil et budget | QuelChampagne`, desc, canonical:`${BASE}/champagne/${p.id}/`, ogImage:OG, active:'shop', main:productMain(p), graph:[
+    {'@type':'Product', name:`${p.house} ${p.name}`, brand:{'@type':'Brand',name:p.house}, category:'Champagne', description:p.note, image:OG},
+    crumbs([{name:'Accueil',url:BASE+'/'},{name:'La sélection',url:BASE+'/champagnes/'},{name:`${p.house} ${p.name}`,url:`${BASE}/champagne/${p.id}/`}])
+  ] }));
   add(`${BASE}/champagne/${p.id}/`, '0.8', 'monthly');
 }
 
@@ -788,14 +796,25 @@ add(BASE+'/blog/', '0.9', 'weekly');
 
 // article pages
 for(const a of articles().filter(a=>!a.soon)){
-  write(`blog/${a.id}/index.html`, page({ title:`${a.title} | QuelChampagne`, desc:a.excerpt.slice(0,155), canonical:`${BASE}/blog/${a.id}/`, active:'blog', main:articleMain(a) }));
+  write(`blog/${a.id}/index.html`, page({ title:`${a.title} | QuelChampagne`, desc:a.excerpt.slice(0,155), canonical:`${BASE}/blog/${a.id}/`, active:'blog', main:articleMain(a), graph:[
+    {'@type':'Article', headline:a.title, description:a.excerpt, articleSection:a.cat, inLanguage:'fr-FR', image:(blogPhoto(a,1200)||OG), datePublished:'2026-07-01', dateModified:BUILD_DATE, author:{'@id':BASE+'/#org'}, publisher:{'@id':BASE+'/#org'}, mainEntityOfPage:`${BASE}/blog/${a.id}/`},
+    crumbs([{name:'Accueil',url:BASE+'/'},{name:'Blog',url:BASE+'/blog/'},{name:a.title,url:`${BASE}/blog/${a.id}/`}])
+  ] }));
   add(`${BASE}/blog/${a.id}/`, '0.7', 'monthly');
 }
+
+// page 404 habillée (Cloudflare Pages sert /404.html avec un vrai statut 404)
+const notFoundMain = () => `<section class="section" style="text-align:center; padding:clamp(70px,12vw,140px) 0">
+  <div class="container" style="max-width:640px">
+    <div class="sec-head"><h1 class="h2">Page introuvable</h1><p>Cette page n'existe pas ou a été retirée. Le champagne, lui, est toujours là.</p></div>
+    <div class="hero-cta" style="justify-content:center; margin-top:30px"><a class="btn btn-primary btn-lg" href="/selecteur/">Trouver mon champagne</a><a class="chev" href="/champagnes/">Voir la sélection</a></div>
+  </div></section>`;
+write('404.html', page({ title:'Page introuvable — QuelChampagne', desc:'La page demandée est introuvable. Retrouvez le sélecteur et la sélection de champagnes de QuelChampagne.', canonical:BASE+'/404', active:'', noindex:true, main:notFoundMain() }));
 
 // sitemap + robots
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls.map(u=>`  <url><loc>${u.loc}</loc><changefreq>${u.freq}</changefreq><priority>${u.prio}</priority></url>`).join('\n')}
+${urls.map(u=>`  <url><loc>${u.loc}</loc><lastmod>${BUILD_DATE}</lastmod><changefreq>${u.freq}</changefreq><priority>${u.prio}</priority></url>`).join('\n')}
 </urlset>`;
 write('sitemap.xml', sitemap);
 write('robots.txt', `User-agent: *\nAllow: /\n\nSitemap: ${BASE}/sitemap.xml\n`);
