@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<products>
+  <product>
+    <productId>synthetic-001</productId>
+    <productName><![CDATA[Moët &amp; Chandon Brut Impérial 75 cl]]></productName>
+    <brand>Moët &amp; Chandon</brand>
+    <description>Bouteille 75 cl</description>
+    <productURL>https://example.invalid/moet-imperial</productURL>
+    <imageURL>https://example.invalid/images/moet-imperial.jpg</imageURL>
+    <price>39.90</price>
+    <currency>EUR</currency>
+    <availability>in stock</availability>
+  </product>
+  <product>
+    <productId>synthetic-002</productId>
+    <productName>Veuve Clicquot Brut Carte Jaune coffret 75 cl</productName>
+    <brand>Veuve Clicquot</brand>
+    <description>Coffret cadeau</description>
+    <productURL>https://example.invalid/clicquot-coffret</productURL>
+    <imageURL>https://example.invalid/images/clicquot-coffret.jpg</imageURL>
+    <price>49,90</price>
+    <currency>EUR</currency>
+    <availability>disponible</availability>
+  </product>
+  <product>
+    <productId>synthetic-003</productId>
+    <productName>Ruinart Blanc de Blancs Magnum 1,5 l</productName>
+    <brand>Ruinart</brand>
+    <description>Magnum de 150 cl</description>
+    <productURL>https://example.invalid/ruinart-magnum</productURL>
+    <imageURL>https://example.invalid/images/ruinart-magnum.jpg</imageURL>
+    <price>189.00</price>
+    <currency>EUR</currency>
+    <availability>in stock</availability>
+  </product>
+  <product>
+    <productId>synthetic-004</productId>
+    <productName>Dom Pérignon Vintage 2013 75 cl</productName>
+    <brand>Dom Pérignon</brand>
+    <description>Millésime 2013</description>
+    <productURL>https://example.invalid/dom-perignon-2013</productURL>
+    <imageURL>https://example.invalid/images/dom-perignon-2013.jpg</imageURL>
+    <price>229.00</price>
+    <currency>EUR</currency>
+    <availability>in stock</availability>
+  </product>
+  <product>
+    <productId>synthetic-005</productId>
+    <productName>Maison Inconnue Cuvée Test 75 cl</productName>
+    <brand>Maison Inconnue</brand>
+    <description>Bouteille 75 cl</description>
+    <productURL>https://example.invalid/unknown</productURL>
+    <imageURL>https://example.invalid/images/unknown.jpg</imageURL>
+    <price>31.00</price>
+    <currency>EUR</currency>
+    <availability>in stock</availability>
+  </product>
+</products>
