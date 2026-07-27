@@ -72,6 +72,40 @@ h1{font-size:clamp(42px,7vw,80px); font-weight:600; line-height:1.04; letter-spa
 .trust-item strong{display:block; font-size:15px}
 .trust-item span{display:block; margin-top:4px; color:var(--muted); font-size:13px; line-height:1.4}
 
+/* ===== Refonte festive : hero photo, bulles, animations ===== */
+.hero-photo{position:relative; overflow:hidden; text-align:center; color:#fff; padding:clamp(104px,15vw,180px) 0 clamp(84px,11vw,132px); display:flex; align-items:center; min-height:clamp(540px,74vh,780px)}
+.hero-photo::before{content:""; position:absolute; inset:0; background-image:var(--hero-img); background-size:cover; background-position:center; z-index:0; animation:heroZoom 20s ease-out forwards}
+.hero-photo::after{content:""; position:absolute; inset:0; background:linear-gradient(180deg, rgba(24,18,8,.58) 0%, rgba(24,18,8,.40) 38%, rgba(24,18,8,.74) 100%); z-index:1}
+.hero-photo .container{position:relative; z-index:3; width:100%}
+@keyframes heroZoom{from{transform:scale(1.16)}to{transform:scale(1.03)}}
+.hero-photo h1{color:#fff; text-shadow:0 2px 34px rgba(0,0,0,.4)}
+.hero-photo .lead{font-size:clamp(19px,2.3vw,27px); font-weight:400; color:rgba(255,255,255,.92); max-width:26ch; margin:22px auto 0; line-height:1.32; letter-spacing:-.015em; text-shadow:0 1px 18px rgba(0,0,0,.35)}
+.hero-photo .hero-cta{margin-top:36px; display:flex; gap:22px; justify-content:center; align-items:center; flex-wrap:wrap}
+.hero-photo .chev{color:#fff}
+.btn-lg{padding:16px 30px; font-size:16px; border-radius:999px}
+/* bulles de champagne */
+.bubbles{position:absolute; inset:0; z-index:2; overflow:hidden; pointer-events:none}
+.bubbles i{position:absolute; bottom:-40px; border-radius:50%; background:radial-gradient(circle at 32% 30%, rgba(255,255,255,.95), rgba(255,238,196,.4) 58%, rgba(255,238,196,0) 72%); opacity:0; animation:rise linear infinite}
+@keyframes rise{0%{transform:translateY(0) scale(.5); opacity:0}12%{opacity:.9}88%{opacity:.6}100%{transform:translateY(-104vh) scale(1); opacity:0}}
+/* CTA quiz dans la nav */
+.nlink-cta{display:inline-flex; align-items:center; gap:6px; padding:9px 17px; border:0; border-radius:999px; background:var(--accent); color:#fff !important; font-family:inherit; font-size:13.5px; font-weight:500; cursor:pointer; line-height:1; transition:transform .18s, background .18s, box-shadow .18s; box-shadow:0 6px 18px -8px rgba(156,122,52,.7)}
+.nlink-cta:hover{background:var(--accent-deep); transform:translateY(-1px); box-shadow:0 11px 24px -8px rgba(126,98,31,.85)}
+/* en-tête de page illustrée (sélection) */
+.page-hero{position:relative; overflow:hidden; color:#fff; padding:clamp(60px,9vw,110px) 0 clamp(42px,6vw,74px); margin-bottom:clamp(18px,3vw,32px)}
+.page-hero::before{content:""; position:absolute; inset:0; background-image:var(--ph-img); background-size:cover; background-position:center; z-index:0}
+.page-hero::after{content:""; position:absolute; inset:0; background:linear-gradient(180deg, rgba(24,18,8,.52), rgba(24,18,8,.80)); z-index:1}
+.page-hero .container{position:relative; z-index:2}
+.page-hero h1{color:#fff}
+.page-hero p{color:rgba(255,255,255,.9) !important}
+.page-hero .tag{background:rgba(255,255,255,.16); color:#fff}
+.page-hero .tag:hover{background:rgba(255,255,255,.30)}
+/* apparitions au scroll */
+.reveal{opacity:0; transform:translateY(28px); transition:opacity .7s cubic-bezier(.2,.7,.2,1), transform .7s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1; transform:none}
+.btn{transition:transform .18s, opacity .18s, background .18s, box-shadow .18s}
+.btn-primary:hover,.btn-accent:hover{transform:translateY(-1px)}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1 !important; transform:none !important}.hero-photo::before{animation:none}.bubbles{display:none}}
+
 .section{padding:clamp(64px,9vw,116px) 0}
 .section.gray{background:var(--bg2)}
 .sec-head{text-align:center; max-width:640px; margin:0 auto clamp(40px,5vw,64px)}
@@ -883,10 +917,10 @@ function nav(){
   <header class="nav"><div class="container nav-in">
     <a class="logo" href="/" aria-label="Retour à l’accueil">${logoMark()}<span class="logo-txt">Quel<b>Champagne</b></span></a>
     <nav class="nav-links" aria-label="Navigation principale">
-      <button class="nlink ${on('quiz')}" onclick="startQuiz()">Le sélecteur</button>
       <a class="nlink ${state.view==='shop'||state.view==='product'?'on':''}" href="/champagnes/">La sélection</a>
       <a class="nlink" href="/comparateur/">Comparer</a>
       <a class="nlink ${state.view==='blog'||state.view==='article'?'on':''}" href="/blog/">Blog</a>
+      <button class="nlink-cta" onclick="startQuiz()">Quel champagne me correspond&nbsp;?</button>
     </nav>
   </div></header>`;
 }

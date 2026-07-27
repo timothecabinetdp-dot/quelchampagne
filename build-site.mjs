@@ -23,6 +23,10 @@ import { buildPriceIndex } from './build-price-index.mjs';
 const BASE = 'https://quelchampagne.fr';
 const HERO = '/assets/hero-quelchampagne.svg';
 const OG   = BASE + '/assets/og-quelchampagne.png';
+// Photos libres de droit (licence Unsplash, hotlink autorisé). Voir data/image-rights-register.json.
+const HERO_PHOTO      = 'https://images.unsplash.com/photo-1623428454697-08da4a100602?q=80&w=2000&auto=format&fit=crop';
+const SELECTION_PHOTO = 'https://images.unsplash.com/photo-1609516142756-7ecef85e76a7?q=80&w=2000&auto=format&fit=crop';
+const QUIZ_PHOTO      = 'https://images.unsplash.com/photo-1647905555465-0f9004fbdaed?q=80&w=2000&auto=format&fit=crop';
 const FAVICON = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M8.4 5H15.6L14.2 12.3A2.7 2.7 0 0 1 9.8 12.3Z' fill='%23F3E7C9' stroke='%239C7A34' stroke-width='1.2'/%3E%3Cline x1='12' y1='15' x2='12' y2='20.2' stroke='%239C7A34' stroke-width='1.3'/%3E%3Cline x1='9' y1='20.6' x2='15' y2='20.6' stroke='%239C7A34' stroke-width='1.3'/%3E%3C/svg%3E";
 
 // ---------- lire index.html : CSS + données ----------
@@ -204,7 +208,7 @@ function header(active){
   const L=(href,label,key)=>`<a class="nlink${active===key?' on':''}" href="${href}"${active===key?' aria-current="page"':''}>${label}</a>`;
   return `<header class="nav"><div class="container nav-in">
     <a class="logo" href="/">${logoMark()}<span class="logo-txt">Quel<b>Champagne</b></span></a>
-    <nav class="nav-links" aria-label="Navigation principale">${L('/selecteur/','Le sélecteur','selecteur')}${L('/champagnes/','La sélection','shop')}${L('/comparateur/','Comparer','compare')}${L('/blog/','Blog','blog')}</nav>
+    <nav class="nav-links" aria-label="Navigation principale">${L('/champagnes/','La sélection','shop')}${L('/comparateur/','Comparer','compare')}${L('/blog/','Blog','blog')}<a class="nlink-cta" href="/selecteur/">Quel champagne me correspond&nbsp;?</a></nav>
   </div></header>`;
 }
 function footer(){
@@ -230,6 +234,21 @@ const AGEGATE = `<script>
   var h=document.createElement('div'); h.className='health'; h.textContent="L'abus d'alcool est dangereux pour la sant\\u00e9. \\u00c0 consommer avec mod\\u00e9ration."; b.appendChild(h);
   w.appendChild(b); document.body.appendChild(w); document.body.style.overflow='hidden'; y.focus();
   var controls=[y,n]; w.addEventListener('keydown',function(event){if(event.key!=='Tab')return;if(event.shiftKey&&document.activeElement===y){event.preventDefault();n.focus();}else if(!event.shiftKey&&document.activeElement===n){event.preventDefault();y.focus();}});
+})();
+</script>`;
+
+const MOTION = `<script>
+(function(){
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+  var bb=document.getElementById('bubbles');
+  if(bb && !reduce){
+    for(var i=0;i<28;i++){var b=document.createElement('i');var s=(4+Math.random()*13);b.style.left=(Math.random()*100)+'%';b.style.width=s+'px';b.style.height=s+'px';b.style.animationDuration=(6+Math.random()*7).toFixed(2)+'s';b.style.animationDelay=(Math.random()*9).toFixed(2)+'s';bb.appendChild(b);}
+  }
+  var els=[].slice.call(document.querySelectorAll('.sec-head, .steps .step, .pgrid > *, .cards > *, .band .container, .trust-item, .duel-col, .article .prose > p, .lead-head'));
+  if(reduce || !('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in');});return;}
+  els.forEach(function(e,i){e.classList.add('reveal'); e.style.transitionDelay=((i%3)*0.07).toFixed(2)+'s';});
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:0.1, rootMargin:'0px 0px -6% 0px'});
+  els.forEach(function(e){io.observe(e);});
 })();
 </script>`;
 
@@ -269,6 +288,7 @@ function page({title, desc, canonical, ogImage, active, main}){
 ${header(active)}
 <main id="main-content">${main}</main>
 ${footer()}
+${MOTION}
 ${AGEGATE}
 </body>
 </html>`;
@@ -298,11 +318,15 @@ function homeMain(){
   const arts = articles().filter(a=>!a.soon).slice(0,3).map(articleCard).join('');
   const maisons = MAISONS.map(m=>`<span class="maison-name">${m}</span>`).join('');
   return `
-  <section class="hero"><div class="container">
-    <h1>Le champagne<br>fait pour vous.</h1>
-    <p class="lead">Quatre questions suffisent. Nous trouvons la cuvée juste.</p>
-    <div class="hero-cta"><a class="btn btn-primary" href="/selecteur/">Trouver mon champagne</a><a class="chev" href="/notre-methode/">Comprendre notre méthode</a></div>
-    <div class="hero-visual"><img class="pimg" src="${HERO}" alt="Deux verres de champagne stylisés" loading="eager" width="1200" height="630"></div>
+  <section class="hero-photo" style="--hero-img:url('${HERO_PHOTO}')">
+    <div class="bubbles" id="bubbles" aria-hidden="true"></div>
+    <div class="container">
+      <h1>Le champagne<br>fait pour vous.</h1>
+      <p class="lead">Quatre questions suffisent. Nous trouvons la cuvée juste.</p>
+      <div class="hero-cta"><a class="btn btn-primary btn-lg" href="/selecteur/">Quel champagne me correspond&nbsp;?</a><a class="chev" href="/notre-methode/">Comprendre notre méthode</a></div>
+    </div>
+  </section>
+  <section class="section"><div class="container">
     <div class="trust-strip">
       <div class="trust-item"><strong>${products().length} fiches vérifiées</strong><span>Chaque fait produit renvoie vers une source officielle.</span></div>
       <div class="trust-item"><strong>Classement indépendant</strong><span>Aucune maison ne paie pour remonter dans le sélecteur.</span></div>
@@ -357,7 +381,7 @@ function champagnesMain(){
   }).join('');
   const guides = SEO_LANDINGS.map(landing=>`<a class="tag" href="/champagne/${landing.id}/">${landing.title}</a>`).join('');
   return `
-  <section class="section-lead"><div class="container"><div class="lead-head"><h1 class="h2">La sélection</h1><p>${products().length} champagnes éditorialement prêts, des grandes maisons aux vignerons. Les offres marchandes restent masquées jusqu'à leur contrôle.</p><div class="rtags" style="margin-top:22px">${guides}</div></div></div></section>
+  <section class="page-hero" style="--ph-img:url('${SELECTION_PHOTO}')"><div class="container"><div class="lead-head"><h1 class="h2">La sélection</h1><p>${products().length} champagnes éditorialement prêts, des grandes maisons aux vignerons. Les offres marchandes restent masquées jusqu'à leur contrôle.</p><div class="rtags" style="margin-top:22px">${guides}</div></div></div></section>
   <section class="section" style="padding-top:0"><div class="container">
     <form class="catalogue-tools" id="catalogue-tools" role="search">
       <label class="sr-only" for="catalogue-search">Rechercher une maison, une cuvée ou un accord</label>
@@ -647,7 +671,7 @@ function privacyMain(){
       <h3>Confirmation de majorité</h3>
       <p>Après confirmation, le navigateur enregistre localement la valeur technique <code>qc_age_ok</code> afin d’éviter de réafficher immédiatement la porte d’âge. Cette valeur ne contient pas l’âge, l’identité ou les réponses au sélecteur.</p>
       <h3>Services tiers</h3>
-      <p>Le site n’intègre ni régie publicitaire, ni traceur d’audience, ni police ou image chargée depuis un serveur tiers au chargement des pages. Certains boutons « Voir l’offre » renvoient, à votre initiative, vers Amazon.fr dans le cadre du Programme Partenaires d’Amazon ; c’est alors Amazon qui applique sa propre politique de confidentialité et ses cookies. Toute future activation d’un outil de mesure d’audience ou d’un formulaire fera l’objet d’une mise à jour préalable de cette politique et, si nécessaire, d’un mécanisme de consentement.</p>
+      <p>Le site n’intègre ni régie publicitaire, ni traceur d’audience, ni police externe. Certaines photographies d’illustration (accueil, en-têtes) sont servies par le réseau de diffusion d’Unsplash (images.unsplash.com) ; comme tout hébergeur d’images, Unsplash peut recevoir des données techniques de connexion (adresse IP, type de navigateur) lors du chargement de ces visuels. Aucun cookie n’est déposé par ce biais. Certains boutons « Voir l’offre » renvoient, à votre initiative, vers Amazon.fr dans le cadre du Programme Partenaires d’Amazon ; c’est alors Amazon qui applique sa propre politique de confidentialité et ses cookies. Toute future activation d’un outil de mesure d’audience ou d’un formulaire fera l’objet d’une mise à jour préalable de cette politique et, si nécessaire, d’un mécanisme de consentement.</p>
       <h3>Vos droits et contact</h3>
       <p>Responsable du traitement : CORTEXIA (SAS), 59 rue de Ponthieu, 75008 Paris. Pour toute demande relative à vos données ou l’exercice de vos droits : timothe.cabinetdp@gmail.com. Vous pouvez également saisir la CNIL (www.cnil.fr).</p>
     </div>

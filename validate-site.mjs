@@ -30,6 +30,8 @@ const editorial = JSON.parse(read('data/editorial-wave-1-2.json'));
 const wave5 = JSON.parse(read('data/catalogue-wave-5.json'));
 const wave6 = JSON.parse(read('data/catalogue-wave-6.json'));
 const offers = JSON.parse(read('data/purchase-offers-research.json'));
+const imageRights = JSON.parse(read('data/image-rights-register.json'));
+const registeredPhotos = new Set(imageRights.filter(r => r.source === 'Unsplash').map(r => r.asset));
 const pricePolicy = JSON.parse(read('data/price-policy.json'));
 const priceIndex = JSON.parse(read('data/price-index.json'));
 const htmlFiles = walk(DIST.pathname).filter(path => path.endsWith('.html'));
@@ -213,8 +215,12 @@ for (const file of htmlFiles) {
   if (!html.includes('class="skip-link" href="#main-content"')) errors.push(`Lien d’évitement absent dans ${relative}.`);
   if (!html.includes('id="main-content"')) errors.push(`Contenu principal non identifié dans ${relative}.`);
   if (/<button[^>]+href=/i.test(html)) errors.push(`Bouton avec attribut href invalide dans ${relative}.`);
-  if (/(?:fonts\.googleapis|fonts\.gstatic|images\.unsplash)/.test(html)) errors.push(`Dépendance visuelle tierce non autorisée dans ${relative}.`);
-  if (/<img[^>]+src="https?:\/\//i.test(html)) errors.push(`Image distante publiée sans registre de droits dans ${relative}.`);
+  if (/(?:fonts\.googleapis|fonts\.gstatic)/.test(html)) errors.push(`Dépendance visuelle tierce non autorisée dans ${relative}.`);
+  // Images distantes : uniquement des photos Unsplash explicitement enregistrées dans le registre de droits.
+  for (const m of html.matchAll(/https:\/\/images\.unsplash\.com\/photo-[0-9]+-[a-z0-9]+/g)) {
+    if (!registeredPhotos.has(m[0])) errors.push(`Image Unsplash non enregistrée dans ${relative} : ${m[0]}.`);
+  }
+  if (/<img[^>]+src="https?:\/\/(?!images\.unsplash\.com)/i.test(html)) errors.push(`Image distante non autorisée dans ${relative}.`);
   const hasDialogRole = html.includes('role="dialog"') || html.includes("setAttribute('role','dialog')");
   const hasModalState = html.includes('aria-modal="true"') || html.includes("setAttribute('aria-modal','true')");
   if (!hasDialogRole || !hasModalState) errors.push(`Porte d’âge sans sémantique de dialogue dans ${relative}.`);
