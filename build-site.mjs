@@ -619,6 +619,44 @@ function productMain(p){
   </div></section>`;
 }
 
+function bottleCalculator(){
+  return `<div class="calc" id="calc">
+    <div class="pblock-eyebrow" style="text-align:left">Outil</div>
+    <h2 class="pblock-h" style="text-align:left; margin-top:6px">Calculez vos bouteilles en 10 secondes</h2>
+    <div class="calc-grid">
+      <div class="calc-field"><label for="c-guests">Nombre d'invités</label><input id="c-guests" type="number" min="1" max="500" step="1" value="10"></div>
+      <div class="calc-field"><label for="c-moment">Moment</label><select id="c-moment"><option value="2">Apéritif seul</option><option value="3" selected>Apéritif + repas</option><option value="4.5">Soirée entière</option></select></div>
+      <div class="calc-field"><label for="c-hours">Durée (heures)</label><input id="c-hours" type="number" min="1" max="12" step="1" value="3"></div>
+      <div class="calc-field"><label for="c-other">Autres boissons servies&nbsp;?</label><select id="c-other"><option value="1">Non, champagne uniquement</option><option value="0.65" selected>Oui, en plus d'autres boissons</option></select></div>
+      <div class="calc-field"><label for="c-price">Budget par bouteille</label><select id="c-price"><option value="25">Entrée de gamme (~25 €)</option><option value="40" selected>Milieu de gamme (~40 €)</option><option value="80">Prestige (~80 €)</option></select></div>
+    </div>
+    <div class="calc-out">
+      <div class="calc-card"><div class="calc-num" id="c-bottles">—</div><div class="calc-lbl">bouteilles conseillées (marge incluse)</div></div>
+      <div class="calc-card"><div class="calc-num" id="c-budget">—</div><div class="calc-lbl">budget estimatif</div></div>
+    </div>
+    <p class="calc-note" id="c-detail" aria-live="polite"></p>
+    <p class="calc-note">Base de calcul : 6 flûtes par bouteille de 75 cl, environ 2 verres par personne à l'apéritif, 3 sur un repas, davantage selon la durée. Une marge de sécurité de 12 % est ajoutée. Ces chiffres restent indicatifs.</p>
+  </div>
+  <script>
+  (function(){
+    var g=document.getElementById('c-guests'),m=document.getElementById('c-moment'),h=document.getElementById('c-hours'),o=document.getElementById('c-other'),p=document.getElementById('c-price');
+    if(!g) return;
+    var fmt=new Intl.NumberFormat('fr-FR');
+    function calc(){
+      var guests=Math.max(1,parseInt(g.value,10)||1);
+      var base=parseFloat(m.value)||3, hours=Math.max(1,parseFloat(h.value)||2), factor=parseFloat(o.value)||1, price=parseFloat(p.value)||40;
+      var perPerson=base+Math.max(0,hours-2)*0.5;
+      var glasses=guests*perPerson*factor;
+      var bottles=Math.max(1,Math.ceil(glasses/6*1.12));
+      document.getElementById('c-bottles').textContent=fmt.format(bottles);
+      document.getElementById('c-budget').textContent=fmt.format(bottles*price)+' €';
+      document.getElementById('c-detail').textContent='Soit environ '+fmt.format(Math.round(glasses))+' flûtes pour '+fmt.format(guests)+' invités. Prévoyez '+fmt.format(bottles)+' bouteilles pour être tranquille.';
+    }
+    [g,m,h,o,p].forEach(function(el){el.addEventListener('input',calc);el.addEventListener('change',calc);});
+    calc();
+  })();
+  </script>`;
+}
 function articleMain(a){
   const rel = (a.related||[]).map(prod).filter(Boolean);
   const relBlock = rel.length ? `<div class="article-cta"><h3>La cuvée du moment</h3><p>${rel[0].house} — ${rel[0].name}, ${priceText(rel[0])}</p>${productAction(rel[0])}</div>` : '';
@@ -629,6 +667,7 @@ function articleMain(a){
     <div class="a-meta">${a.date} · ${readTime(a)} de lecture</div>
     <div class="a-cover" style="${coverStyle(a,1200)}"></div>
     <div class="prose">${fixLinks(a.body)}</div>
+    ${a.id==='quantite'?bottleCalculator():''}
     ${relBlock}
     <div style="margin-top:40px"><a class="btn btn-primary" href="/selecteur/">Trouver mon champagne</a></div>
   </div></section>`;
