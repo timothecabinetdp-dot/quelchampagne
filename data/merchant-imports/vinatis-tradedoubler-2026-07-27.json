@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "merchantId": "vinatis-tradedoubler",
+  "observedAt": "2026-07-27",
+  "publicationMode": "research_only",
+  "observations": [
+    {
+      "observationId": "vinatis-tradedoubler-20260727-0001",
+      "productId": "moet",
+      "merchant": "Vinatis",
+      "merchantId": "vinatis-tradedoubler",
+      "network": "TradeDoubler",
+      "merchantProductId": "synthetic-001",
+      "merchantUrl": "https://example.invalid/moet-imperial",
+      "formatMl": 750,
+      "packaging": "bottle",
+      "priceEur": 39.9,
+      "currency": "EUR",
+      "availability": "in_stock",
+      "observedAt": "2026-07-27",
+      "exactProductMatch": true,
+      "exactReleaseMatch": true,
+      "exactFormatMatch": true,
+      "affiliateStatus": "pending",
+      "publicationStatus": "research_only",
+      "publicationEligible": false
+    }
+  ],
+  "imageCandidates": [
+    {
+      "productId": "moet",
+      "merchantId": "vinatis-tradedoubler",
+      "sourceUrl": "https://example.invalid/images/moet-imperial.jpg",
+      "productUrl": "https://example.invalid/moet-imperial",
+      "status": "candidate_only",
+      "rightsBasis": null,
+      "verifiedAt": null
+    }
+  ]
+}
