@@ -141,5 +141,82 @@
       "blog-general"
     ],
     "notes": "Champagne versé dans deux flûtes. Aucune marque identifiable mise en avant."
+  },
+  {
+    "asset": "https://images.unsplash.com/photo-1446822775955-c34f483b410b",
+    "type": "third_party_stock_photo",
+    "source": "Unsplash",
+    "license": "Unsplash License (usage commercial gratuit, hotlink autorisé)",
+    "rightsStatus": "cleared",
+    "uses": [
+      "blog-guide"
+    ],
+    "notes": "Deux flûtes de champagne au bord de l’eau. Aucune marque identifiable mise en avant."
+  },
+  {
+    "asset": "https://images.unsplash.com/photo-1606728000988-fbbec753b8ce",
+    "type": "third_party_stock_photo",
+    "source": "Unsplash",
+    "license": "Unsplash License (usage commercial gratuit, hotlink autorisé)",
+    "rightsStatus": "cleared",
+    "uses": [
+      "blog-cadeau"
+    ],
+    "notes": "Champagne versé dans un verre. Aucune marque identifiable mise en avant."
+  },
+  {
+    "asset": "https://images.unsplash.com/photo-1580657274234-7339717f4541",
+    "type": "third_party_stock_photo",
+    "source": "Unsplash",
+    "license": "Unsplash License (usage commercial gratuit, hotlink autorisé)",
+    "rightsStatus": "cleared",
+    "uses": [
+      "blog-quantite"
+    ],
+    "notes": "Rangées de flûtes de champagne remplies. Aucune marque identifiable mise en avant."
+  },
+  {
+    "asset": "https://images.unsplash.com/photo-1608416026650-66b4e0c0c301",
+    "type": "third_party_stock_photo",
+    "source": "Unsplash",
+    "license": "Unsplash License (usage commercial gratuit, hotlink autorisé)",
+    "rightsStatus": "cleared",
+    "uses": [
+      "blog-noel"
+    ],
+    "notes": "Étincelles de fête dans la nuit. Aucune marque identifiable mise en avant."
+  },
+  {
+    "asset": "https://images.unsplash.com/photo-1498429152472-9a433d9ddf3b",
+    "type": "third_party_stock_photo",
+    "source": "Unsplash",
+    "license": "Unsplash License (usage commercial gratuit, hotlink autorisé)",
+    "rightsStatus": "cleared",
+    "uses": [
+      "blog-aperitif2"
+    ],
+    "notes": "Trois personnes trinquent avec des flûtes. Aucune marque identifiable mise en avant."
+  },
+  {
+    "asset": "https://images.unsplash.com/photo-1514828980084-9462f7d03afc",
+    "type": "third_party_stock_photo",
+    "source": "Unsplash",
+    "license": "Unsplash License (usage commercial gratuit, hotlink autorisé)",
+    "rightsStatus": "cleared",
+    "uses": [
+      "blog-anniversaire"
+    ],
+    "notes": "Coupes de champagne dorées vues de dessus. Aucune marque identifiable mise en avant."
+  },
+  {
+    "asset": "https://images.unsplash.com/photo-1619810856355-c5f4e7f8a90e",
+    "type": "third_party_stock_photo",
+    "source": "Unsplash",
+    "license": "Unsplash License (usage commercial gratuit, hotlink autorisé)",
+    "rightsStatus": "cleared",
+    "uses": [
+      "blog-brut-nature"
+    ],
+    "notes": "Flûtes de champagne et bouteille au bar. Aucune marque identifiable mise en avant."
   }
 ]
