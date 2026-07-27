@@ -27,6 +27,20 @@ const OG   = BASE + '/assets/og-quelchampagne.png';
 const HERO_PHOTO      = 'https://images.unsplash.com/photo-1623428454697-08da4a100602?q=80&w=2000&auto=format&fit=crop';
 const SELECTION_PHOTO = 'https://images.unsplash.com/photo-1609516142756-7ecef85e76a7?q=80&w=2000&auto=format&fit=crop';
 const QUIZ_PHOTO      = 'https://images.unsplash.com/photo-1647905555465-0f9004fbdaed?q=80&w=2000&auto=format&fit=crop';
+// Couvertures éditoriales du blog (Unsplash, enregistrées dans data/image-rights-register.json).
+const BLOG_PHOTOS = {
+  'guide-2026':'1720070827797-d4f03e228dea', 'dosages':'1653515906764-96bfd5c01141',
+  'accords':'1758972574954-ab4b5b5baed5', 'moins-50':'1609516142756-7ecef85e76a7',
+  'mariage':'1647905555465-0f9004fbdaed', 'cadeau':'1609516142756-7ecef85e76a7',
+  'quantite':'1628336707631-68131ca720c3', 'blanc-blancs':'1623428454697-08da4a100602',
+  'servir':'1720070827797-d4f03e228dea', 'noel':'1628336707631-68131ca720c3',
+  'moins-30':'1558001373-7b93ee48ffa0', 'aperitif':'1558001373-7b93ee48ffa0',
+  'huitres':'1679694140422-aecfd3d5dd0b', 'anniversaire':'1647905555465-0f9004fbdaed',
+  'brut-nature':'1653515906764-96bfd5c01141', 'rose-saignee':'1673872602569-c9a1c1bfe71f',
+  'vigneron':'1635715070096-b4655b94edee', 'etiquette':'1653515906764-96bfd5c01141'
+};
+function blogPhoto(a, w){ const id = BLOG_PHOTOS[a.id]; return id ? `https://images.unsplash.com/photo-${id}?q=75&w=${w||800}&auto=format&fit=crop` : null; }
+function coverStyle(a, w){ const p = blogPhoto(a, w); return p ? `background:#EFEAE0 url('${p}') center/cover` : `background:${coverBg(a)}`; }
 const FAVICON = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M8.4 5H15.6L14.2 12.3A2.7 2.7 0 0 1 9.8 12.3Z' fill='%23F3E7C9' stroke='%239C7A34' stroke-width='1.2'/%3E%3Cline x1='12' y1='15' x2='12' y2='20.2' stroke='%239C7A34' stroke-width='1.3'/%3E%3Cline x1='9' y1='20.6' x2='15' y2='20.6' stroke='%239C7A34' stroke-width='1.3'/%3E%3C/svg%3E";
 
 // ---------- lire index.html : CSS + données ----------
@@ -208,7 +222,7 @@ function header(active){
   const L=(href,label,key)=>`<a class="nlink${active===key?' on':''}" href="${href}"${active===key?' aria-current="page"':''}>${label}</a>`;
   return `<header class="nav"><div class="container nav-in">
     <a class="logo" href="/">${logoMark()}<span class="logo-txt">Quel<b>Champagne</b></span></a>
-    <nav class="nav-links" aria-label="Navigation principale">${L('/champagnes/','La sélection','shop')}${L('/comparateur/','Comparer','compare')}${L('/blog/','Blog','blog')}<a class="nlink-cta" href="/selecteur/">Quel champagne me correspond&nbsp;?</a></nav>
+    <nav class="nav-links" aria-label="Navigation principale">${L('/champagnes/','La sélection','shop')}${L('/comparateur/','Comparer','compare')}${L('/blog/','Blog','blog')}<a class="nlink-cta" href="/selecteur/"><svg width="12" height="15" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.4 5H15.6L14.2 12.3A2.7 2.7 0 0 1 9.8 12.3Z" fill="#F3E7C9" stroke="#9C7A34" stroke-width="1.5"/><line x1="12" y1="14.4" x2="12" y2="20" stroke="#9C7A34" stroke-width="1.5"/><line x1="9" y1="20.4" x2="15" y2="20.4" stroke="#9C7A34" stroke-width="1.5"/></svg>Trouver mon champagne</a></nav>
   </div></header>`;
 }
 function footer(){
@@ -302,7 +316,7 @@ function productCard(p, attributes = ''){
   </a>`;
 }
 function articleCard(a){
-  return `<a class="acard" href="/blog/${a.id}/"><div class="acard-cover" style="background:${coverBg(a)}"><span class="acard-cat">${a.cat}</span></div><div class="acard-b"><h3>${a.title}</h3><p>${a.excerpt}</p><div class="acard-meta">${a.date} · ${a.read} de lecture</div></div></a>`;
+  return `<a class="acard" href="/blog/${a.id}/"><div class="acard-cover" style="${coverStyle(a,700)}"><span class="acard-cat">${a.cat}</span></div><div class="acard-b"><h3>${a.title}</h3><p>${a.excerpt}</p><div class="acard-meta">${a.date} · ${a.read} de lecture</div></div></a>`;
 }
 function fixLinks(body){
   return body.replace(/href="#" onclick="return openAff\('([^']+)'\)"/g, (m,id)=>{
@@ -322,8 +336,8 @@ function homeMain(){
     <div class="bubbles" id="bubbles" aria-hidden="true"></div>
     <div class="container">
       <h1>Le champagne<br>fait pour vous.</h1>
-      <p class="lead">Quatre questions suffisent. Nous trouvons la cuvée juste.</p>
-      <div class="hero-cta"><a class="btn btn-primary btn-lg" href="/selecteur/">Quel champagne me correspond&nbsp;?</a><a class="chev" href="/notre-methode/">Comprendre notre méthode</a></div>
+      <p class="lead">Quatre questions suffisent pour trouver le vôtre.</p>
+      <div class="hero-cta"><a class="btn btn-primary btn-lg" href="/selecteur/">Trouver mon champagne</a><a class="chev" href="/notre-methode/">Comprendre notre méthode</a></div>
     </div>
   </section>
   <section class="section"><div class="container">
@@ -602,7 +616,7 @@ function articleMain(a){
     <div class="a-cat">${a.cat}</div>
     <h1 class="a-title">${a.title}</h1>
     <div class="a-meta">${a.date} · ${a.read} de lecture</div>
-    <div class="a-cover" style="background:${coverBg(a)}"></div>
+    <div class="a-cover" style="${coverStyle(a,1200)}"></div>
     <div class="prose">${fixLinks(a.body)}</div>
     ${relBlock}
     <div style="margin-top:40px"><a class="btn btn-primary" href="/selecteur/">Trouver mon champagne</a></div>
@@ -671,7 +685,7 @@ function privacyMain(){
       <h3>Confirmation de majorité</h3>
       <p>Après confirmation, le navigateur enregistre localement la valeur technique <code>qc_age_ok</code> afin d’éviter de réafficher immédiatement la porte d’âge. Cette valeur ne contient pas l’âge, l’identité ou les réponses au sélecteur.</p>
       <h3>Services tiers</h3>
-      <p>Le site n’intègre ni régie publicitaire, ni traceur d’audience, ni police externe. Certaines photographies d’illustration (accueil, en-têtes) sont servies par le réseau de diffusion d’Unsplash (images.unsplash.com) ; comme tout hébergeur d’images, Unsplash peut recevoir des données techniques de connexion (adresse IP, type de navigateur) lors du chargement de ces visuels. Aucun cookie n’est déposé par ce biais. Certains boutons « Voir l’offre » renvoient, à votre initiative, vers Amazon.fr dans le cadre du Programme Partenaires d’Amazon ; c’est alors Amazon qui applique sa propre politique de confidentialité et ses cookies. Toute future activation d’un outil de mesure d’audience ou d’un formulaire fera l’objet d’une mise à jour préalable de cette politique et, si nécessaire, d’un mécanisme de consentement.</p>
+      <p>Le site n’intègre ni régie publicitaire, ni traceur d’audience, ni police externe. Certaines photographies d’illustration (accueil, en-têtes, couvertures d’articles du blog) sont servies par le réseau de diffusion d’Unsplash (images.unsplash.com) ; comme tout hébergeur d’images, Unsplash peut recevoir des données techniques de connexion (adresse IP, type de navigateur) lors du chargement de ces visuels. Aucun cookie n’est déposé par ce biais. Certains boutons « Voir l’offre » renvoient, à votre initiative, vers Amazon.fr dans le cadre du Programme Partenaires d’Amazon ; c’est alors Amazon qui applique sa propre politique de confidentialité et ses cookies. Toute future activation d’un outil de mesure d’audience ou d’un formulaire fera l’objet d’une mise à jour préalable de cette politique et, si nécessaire, d’un mécanisme de consentement.</p>
       <h3>Vos droits et contact</h3>
       <p>Responsable du traitement : CORTEXIA (SAS), 59 rue de Ponthieu, 75008 Paris. Pour toute demande relative à vos données ou l’exercice de vos droits : timothe.cabinetdp@gmail.com. Vous pouvez également saisir la CNIL (www.cnil.fr).</p>
     </div>

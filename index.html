@@ -88,8 +88,10 @@ h1{font-size:clamp(42px,7vw,80px); font-weight:600; line-height:1.04; letter-spa
 .bubbles i{position:absolute; bottom:-40px; border-radius:50%; background:radial-gradient(circle at 32% 30%, rgba(255,255,255,.95), rgba(255,238,196,.4) 58%, rgba(255,238,196,0) 72%); opacity:0; animation:rise linear infinite}
 @keyframes rise{0%{transform:translateY(0) scale(.5); opacity:0}12%{opacity:.9}88%{opacity:.6}100%{transform:translateY(-104vh) scale(1); opacity:0}}
 /* CTA quiz dans la nav */
-.nlink-cta{display:inline-flex; align-items:center; gap:6px; padding:9px 17px; border:0; border-radius:999px; background:var(--accent); color:#fff !important; font-family:inherit; font-size:13.5px; font-weight:500; cursor:pointer; line-height:1; transition:transform .18s, background .18s, box-shadow .18s; box-shadow:0 6px 18px -8px rgba(156,122,52,.7)}
-.nlink-cta:hover{background:var(--accent-deep); transform:translateY(-1px); box-shadow:0 11px 24px -8px rgba(126,98,31,.85)}
+.nlink-cta{display:inline-flex; align-items:center; gap:7px; padding:0; border:0; background:none; color:var(--ink); font-family:inherit; font-size:14px; font-weight:500; cursor:pointer; line-height:1; letter-spacing:-.01em; transition:color .18s}
+.nlink-cta:hover{color:var(--accent-deep)}
+.nlink-cta svg{flex:none; margin-top:-1px}
+.btn-lg{border-radius:12px}
 /* en-tête de page illustrée (sélection) */
 .page-hero{position:relative; overflow:hidden; color:#fff; padding:clamp(60px,9vw,110px) 0 clamp(42px,6vw,74px); margin-bottom:clamp(18px,3vw,32px)}
 .page-hero::before{content:""; position:absolute; inset:0; background-image:var(--ph-img); background-size:cover; background-position:center; z-index:0}
@@ -940,7 +942,7 @@ function nav(){
       <a class="nlink ${state.view==='shop'||state.view==='product'?'on':''}" href="/champagnes/">La sélection</a>
       <a class="nlink" href="/comparateur/">Comparer</a>
       <a class="nlink ${state.view==='blog'||state.view==='article'?'on':''}" href="/blog/">Blog</a>
-      <button class="nlink-cta" onclick="startQuiz()">Quel champagne me correspond&nbsp;?</button>
+      <button class="nlink-cta" onclick="startQuiz()"><svg width="12" height="15" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.4 5H15.6L14.2 12.3A2.7 2.7 0 0 1 9.8 12.3Z" fill="#F3E7C9" stroke="#9C7A34" stroke-width="1.5"/><line x1="12" y1="14.4" x2="12" y2="20" stroke="#9C7A34" stroke-width="1.5"/><line x1="9" y1="20.4" x2="15" y2="20.4" stroke="#9C7A34" stroke-width="1.5"/></svg>Trouver mon champagne</button>
     </nav>
   </div></header>`;
 }
