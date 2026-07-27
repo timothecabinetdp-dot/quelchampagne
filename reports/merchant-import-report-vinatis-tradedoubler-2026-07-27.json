@@ -1,0 +1,181 @@
+{
+  "version": 1,
+  "importedAt": "2026-07-27T08:41:33.435Z",
+  "observedAt": "2026-07-27",
+  "sourceFile": "tradedoubler-vinatis-sample.xml",
+  "format": "xml",
+  "merchantId": "vinatis-tradedoubler",
+  "merchant": "Vinatis",
+  "publicationMode": "research_only",
+  "sourceRightsStatus": "pending",
+  "totalRecords": 5,
+  "counts": {
+    "matched_exact": 1,
+    "rejected_format": 1,
+    "rejected_packaging": 1,
+    "rejected_release": 1,
+    "unmatched": 1
+  },
+  "observations": [
+    {
+      "observationId": "vinatis-tradedoubler-20260727-0001",
+      "productId": "moet",
+      "merchant": "Vinatis",
+      "merchantId": "vinatis-tradedoubler",
+      "network": "TradeDoubler",
+      "merchantProductId": "synthetic-001",
+      "merchantUrl": "https://example.invalid/moet-imperial",
+      "formatMl": 750,
+      "packaging": "bottle",
+      "priceEur": 39.9,
+      "currency": "EUR",
+      "availability": "in_stock",
+      "observedAt": "2026-07-27",
+      "exactProductMatch": true,
+      "exactReleaseMatch": true,
+      "exactFormatMatch": true,
+      "affiliateStatus": "pending",
+      "publicationStatus": "research_only",
+      "publicationEligible": false
+    }
+  ],
+  "imageCandidates": [
+    {
+      "productId": "moet",
+      "merchantId": "vinatis-tradedoubler",
+      "sourceUrl": "https://example.invalid/images/moet-imperial.jpg",
+      "productUrl": "https://example.invalid/moet-imperial",
+      "status": "candidate_only",
+      "rightsBasis": null,
+      "verifiedAt": null
+    }
+  ],
+  "results": [
+    {
+      "rawExternalId": "synthetic-001",
+      "normalized": {
+        "externalId": "synthetic-001",
+        "name": "Moët & Chandon Brut Impérial 75 cl",
+        "brand": "Moët & Chandon",
+        "description": "Bouteille 75 cl",
+        "productUrl": "https://example.invalid/moet-imperial",
+        "imageUrl": "https://example.invalid/images/moet-imperial.jpg",
+        "priceEur": 39.9,
+        "currency": "EUR",
+        "availability": "in_stock",
+        "gtin": "",
+        "formatMl": 750,
+        "packaging": "bottle",
+        "matchText": "Moët & Chandon Moët & Chandon Brut Impérial 75 cl"
+      },
+      "classification": {
+        "status": "matched_exact",
+        "productId": "moet",
+        "reasons": [
+          "matched_by_alias",
+          "standard_release"
+        ]
+      }
+    },
+    {
+      "rawExternalId": "synthetic-002",
+      "normalized": {
+        "externalId": "synthetic-002",
+        "name": "Veuve Clicquot Brut Carte Jaune coffret 75 cl",
+        "brand": "Veuve Clicquot",
+        "description": "Coffret cadeau",
+        "productUrl": "https://example.invalid/clicquot-coffret",
+        "imageUrl": "https://example.invalid/images/clicquot-coffret.jpg",
+        "priceEur": 49.9,
+        "currency": "EUR",
+        "availability": "in_stock",
+        "gtin": "",
+        "formatMl": 750,
+        "packaging": "special_packaging",
+        "matchText": "Veuve Clicquot Veuve Clicquot Brut Carte Jaune coffret 75 cl"
+      },
+      "classification": {
+        "status": "rejected_packaging",
+        "productId": "clicquot",
+        "reasons": [
+          "special_packaging"
+        ]
+      }
+    },
+    {
+      "rawExternalId": "synthetic-003",
+      "normalized": {
+        "externalId": "synthetic-003",
+        "name": "Ruinart Blanc de Blancs Magnum 1,5 l",
+        "brand": "Ruinart",
+        "description": "Magnum de 150 cl",
+        "productUrl": "https://example.invalid/ruinart-magnum",
+        "imageUrl": "https://example.invalid/images/ruinart-magnum.jpg",
+        "priceEur": 189,
+        "currency": "EUR",
+        "availability": "in_stock",
+        "gtin": "",
+        "formatMl": 1500,
+        "packaging": "bottle",
+        "matchText": "Ruinart Ruinart Blanc de Blancs Magnum 1,5 l"
+      },
+      "classification": {
+        "status": "rejected_format",
+        "productId": "ruinart",
+        "reasons": [
+          "format_1500_instead_of_750"
+        ]
+      }
+    },
+    {
+      "rawExternalId": "synthetic-004",
+      "normalized": {
+        "externalId": "synthetic-004",
+        "name": "Dom Pérignon Vintage 2013 75 cl",
+        "brand": "Dom Pérignon",
+        "description": "Millésime 2013",
+        "productUrl": "https://example.invalid/dom-perignon-2013",
+        "imageUrl": "https://example.invalid/images/dom-perignon-2013.jpg",
+        "priceEur": 229,
+        "currency": "EUR",
+        "availability": "in_stock",
+        "gtin": "",
+        "formatMl": 750,
+        "packaging": "bottle",
+        "matchText": "Dom Pérignon Dom Pérignon Vintage 2013 75 cl"
+      },
+      "classification": {
+        "status": "rejected_release",
+        "productId": "dom-perignon-vintage-2015",
+        "reasons": [
+          "vintage_mismatch:2013,2013"
+        ]
+      }
+    },
+    {
+      "rawExternalId": "synthetic-005",
+      "normalized": {
+        "externalId": "synthetic-005",
+        "name": "Maison Inconnue Cuvée Test 75 cl",
+        "brand": "Maison Inconnue",
+        "description": "Bouteille 75 cl",
+        "productUrl": "https://example.invalid/unknown",
+        "imageUrl": "https://example.invalid/images/unknown.jpg",
+        "priceEur": 31,
+        "currency": "EUR",
+        "availability": "in_stock",
+        "gtin": "",
+        "formatMl": 750,
+        "packaging": "bottle",
+        "matchText": "Maison Inconnue Maison Inconnue Cuvée Test 75 cl"
+      },
+      "classification": {
+        "status": "unmatched",
+        "productId": null,
+        "reasons": [
+          "identity_not_found"
+        ]
+      }
+    }
+  ]
+}
