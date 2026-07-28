@@ -397,6 +397,46 @@ footer{background:var(--bg2); padding:52px 0 46px}
 @media(max-width:500px){.catalogue-filters{grid-template-columns:1fr}}
 @media(max-width:420px){.logo-txt{display:none}.nav-links{max-width:82vw}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important; animation-iteration-count:1!important; transition-duration:.01ms!important}}
+
+/* ============================================================
+   REFONTE EDITORIALE AUDACIEUSE (inspiration Nike)
+   Fond blanc, titres geants en capitales, geometrie franche,
+   police Archivo + Inter, bouchon qui saute au survol.
+   ============================================================ */
+@font-face{font-family:'Archivo';src:url('https://cdn.jsdelivr.net/npm/@fontsource/archivo/files/archivo-latin-800-normal.woff2') format('woff2');font-weight:800;font-display:swap}
+@font-face{font-family:'Archivo';src:url('https://cdn.jsdelivr.net/npm/@fontsource/archivo/files/archivo-latin-900-normal.woff2') format('woff2');font-weight:900;font-display:swap}
+@font-face{font-family:'InterV';src:url('https://cdn.jsdelivr.net/npm/@fontsource/inter/files/inter-latin-400-normal.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'InterV';src:url('https://cdn.jsdelivr.net/npm/@fontsource/inter/files/inter-latin-500-normal.woff2') format('woff2');font-weight:500;font-display:swap}
+@font-face{font-family:'InterV';src:url('https://cdn.jsdelivr.net/npm/@fontsource/inter/files/inter-latin-600-normal.woff2') format('woff2');font-weight:600;font-display:swap}
+@font-face{font-family:'InterV';src:url('https://cdn.jsdelivr.net/npm/@fontsource/inter/files/inter-latin-700-normal.woff2') format('woff2');font-weight:700;font-display:swap}
+:root{--sans:'InterV',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; --display:'Archivo','Arial Narrow',Arial,sans-serif}
+body{letter-spacing:-.006em}
+h1,.hero-photo h1,.page-hero h1{font-family:var(--display);font-weight:900;text-transform:uppercase;letter-spacing:-.025em;line-height:.9}
+.hero-photo h1{font-size:clamp(50px,9vw,122px)}
+.page-hero h1{font-size:clamp(40px,7vw,84px)}
+.h2,.qtitle{font-family:var(--display);font-weight:900;text-transform:uppercase;letter-spacing:-.022em;line-height:.95}
+.phero-name{font-family:var(--display);font-weight:900;text-transform:uppercase;letter-spacing:-.02em;line-height:.92}
+.pblock-h,.acard-b h3,.step h3,.pcard-name{font-family:var(--display);font-weight:800;letter-spacing:-.012em}
+.logo,.logo-txt,.foot-brand-name{font-family:var(--display);font-weight:800;letter-spacing:.005em;text-transform:uppercase}
+.logo-txt{font-weight:500}.logo-txt b{font-weight:900}
+.btn,.btn-lg,.btn-sm{border-radius:2px;font-weight:600;text-transform:uppercase;letter-spacing:.045em;font-size:14px}
+.btn-lg{padding:16px 30px;font-size:15px}
+.acard,.trust-strip,.trust-item,.step,.qopt,.qback,.qprog,.qprog i,.acard-cover,.acard-cat,.pcard,.pcard-img,.editorial-visual,.phero-img,.a-cover,.rviz,.calc,.calc *,.gauge,.gauge-fill,.tag,.mini,.compare-chip,.catalogue-search,.compare-search,.decision,.compo,.acc,.pblock.alt{border-radius:0 !important}
+.acard{border:1px solid var(--line);box-shadow:none}
+.acard:hover{transform:translateY(-6px);box-shadow:0 30px 50px -30px rgba(0,0,0,.32)}
+.pcard{border:1px solid var(--line)}
+.nlink-cta{text-transform:uppercase;letter-spacing:.05em;font-weight:600;font-size:13px}
+.tag{border:1px solid var(--border);font-weight:600;text-transform:uppercase;letter-spacing:.06em;font-size:11px}
+.nav{background:#fff;backdrop-filter:none;border-bottom:1px solid var(--ink)}
+.hero-photo .btn-primary{background:#fff;color:var(--ink);position:relative;overflow:visible}
+.hero-photo .btn-primary:hover{background:#fff;transform:translateY(-2px)}
+.hero-photo .btn-primary::before{content:"";position:absolute;right:18px;top:-3px;width:11px;height:13px;background:#d8b98a;border-radius:3px 3px 1px 1px;opacity:0;pointer-events:none}
+.hero-photo .btn-primary::after{content:"";position:absolute;right:22px;top:0;width:5px;height:5px;border-radius:50%;background:#e7cd8c;opacity:0;pointer-events:none}
+.hero-photo .btn-primary:hover::before{animation:corkFly .85s cubic-bezier(.2,-.4,.3,1)}
+.hero-photo .btn-primary:hover::after{animation:corkFizz .7s ease-out .02s}
+@keyframes corkFly{0%{opacity:1;transform:translate(0,0) rotate(0)}30%{opacity:1;transform:translate(4px,-34px) rotate(130deg)}100%{opacity:0;transform:translate(15px,-70px) rotate(430deg)}}
+@keyframes corkFizz{0%{opacity:1;transform:translate(0,0) scale(1)}100%{opacity:0;transform:translate(9px,-30px) scale(.3)}}
+
 </style>
 </head>
 <body>
