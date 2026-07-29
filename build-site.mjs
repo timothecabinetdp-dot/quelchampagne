@@ -401,7 +401,7 @@ function champagnesMain(){
   }).join('');
   const guides = SEO_LANDINGS.map(landing=>`<a class="tag" href="/champagne/${landing.id}/">${landing.title}</a>`).join('');
   return `
-  <section class="page-hero" style="--ph-img:url('${SELECTION_PHOTO}')"><div class="container"><div class="lead-head"><h1 class="h2">La sélection</h1><p>${products().length} cuvées choisies une à une, des grandes maisons aux vignerons de caractère. Aucune maison ne paie pour remonter.</p><div class="rtags" style="margin-top:22px">${guides}</div></div></div></section>
+  <section class="page-hero" style="--ph-img:url('${SELECTION_PHOTO}')"><div class="container"><div class="lead-head"><h1 class="h2">Sélection de champagnes</h1><p>${products().length} champagnes à comparer : brut, rosé, blanc de blancs, grandes maisons et vignerons indépendants, pour chaque budget et chaque occasion.</p><div class="rtags" style="margin-top:22px">${guides}</div></div></div></section>
   <section class="section" style="padding-top:0"><div class="container">
     <form class="catalogue-tools" id="catalogue-tools" role="search">
       <label class="sr-only" for="catalogue-search">Rechercher une maison, une cuvée ou un accord</label>
@@ -804,7 +804,7 @@ write('selecteur/index.html', selecteurHTML());
 add(BASE+'/selecteur/', '0.8', 'monthly');
 
 // champagnes list
-write('champagnes/index.html', page({ title:'La sélection — QuelChampagne', desc:'Notre sélection de champagnes vérifiés, avec fiche détaillée, profil, occasions, accords et source officielle.', canonical:BASE+'/champagnes/', active:'shop', main:champagnesMain() }));
+write('champagnes/index.html', page({ title:'Quel champagne choisir ? Notre sélection de 75 champagnes | QuelChampagne', desc:'Comparez 75 champagnes, des grandes maisons aux vignerons indépendants. Brut, rosé ou blanc de blancs : trouvez la cuvée idéale selon votre budget et votre occasion.', canonical:BASE+'/champagnes/', active:'shop', main:champagnesMain() }));
 add(BASE+'/champagnes/', '0.9', 'weekly');
 
 // comparateur interactif
