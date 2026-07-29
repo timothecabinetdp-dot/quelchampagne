@@ -321,7 +321,7 @@ function productCard(p, attributes = ''){
 const BUILD_DATE = new Date().toISOString().slice(0,10);
 function readTime(a){ const w = String(a.body||'').replace(/<[^>]+>/g,' ').split(/\s+/).filter(Boolean).length; return Math.max(1, Math.round(w/200)) + ' min'; }
 function crumbs(items){ return {'@type':'BreadcrumbList',itemListElement:items.map((it,i)=>({'@type':'ListItem',position:i+1,name:it.name,item:it.url}))}; }
-function articleCard(a){
+function clip(s,n){ if(!s||s.length<=n) return s||''; return s.slice(0,n).replace(/\s+\S*$/,'')+'…'; } function articleCard(a){
   return `<a class="acard" href="/blog/${a.id}/"><div class="acard-cover" style="${coverStyle(a,700)}"><span class="acard-cat">${a.cat}</span></div><div class="acard-b"><h3>${a.title}</h3><p>${a.excerpt}</p><div class="acard-meta">${a.date} · ${readTime(a)} de lecture</div></div></a>`;
 }
 function fixLinks(body){
@@ -620,8 +620,8 @@ function productMain(p){
     <div class="phero">
       <div class="phero-img">${bottleViz(p,'big')}</div>
       <div class="phero-b">
-        <div class="rmaison">${p.house}</div>
-        <h1 class="phero-name">${p.name}</h1>
+
+        <h1 class="phero-name"><span class="rmaison" style="display:block">${p.house}</span>${p.name}</h1>
         <div class="rsub">${p.region} · À servir avec ${p.pair}</div>
         <p class="phero-note">${d.advice || p.note}</p>
         <div class="rtags">${tags}</div>
@@ -827,7 +827,7 @@ add(BASE+'/confidentialite/', '0.3', 'yearly');
 write('comparatifs/index.html', page({ title:'Comparatifs de champagnes — QuelChampagne', desc:'Des comparatifs directs pour choisir entre deux champagnes selon le style, l’occasion, les accords et le budget.', canonical:BASE+'/comparatifs/', active:'compare', main:comparisonsMain() }));
 add(BASE+'/comparatifs/', '0.8', 'weekly');
 for(const comparison of COMPARISONS){
-  write(`comparatifs/${comparison.id}/index.html`, page({ title:`${comparison.title} | QuelChampagne`, desc:comparison.verdict.slice(0,155), canonical:`${BASE}/comparatifs/${comparison.id}/`, active:'compare', main:comparisonMain(comparison), graph:[
+  write(`comparatifs/${comparison.id}/index.html`, page({ title:`${comparison.title} | QuelChampagne`, desc:clip(comparison.verdict,155), canonical:`${BASE}/comparatifs/${comparison.id}/`, active:'compare', main:comparisonMain(comparison), graph:[
     crumbs([{name:'Accueil',url:BASE+'/'},{name:'Comparatifs',url:BASE+'/comparatifs/'},{name:comparison.title,url:`${BASE}/comparatifs/${comparison.id}/`}])
   ] }));
   add(`${BASE}/comparatifs/${comparison.id}/`, '0.8', 'monthly');
@@ -836,7 +836,7 @@ for(const comparison of COMPARISONS){
 // product pages
 for(const p of products()){
   const d = detail(p) || {};
-  const desc = (d.advice || p.note).slice(0,155);
+  const desc = clip(d.advice || p.note,155);
   write(`champagne/${p.id}/index.html`, page({ title:`${p.house} ${p.name} — Conseils, profil et budget | QuelChampagne`, desc, canonical:`${BASE}/champagne/${p.id}/`, ogImage:OG, active:'shop', main:productMain(p), graph:[
     {'@type':'Product', name:`${p.house} ${p.name}`, brand:{'@type':'Brand',name:p.house}, category:'Champagne', description:p.note, image:OG},
     crumbs([{name:'Accueil',url:BASE+'/'},{name:'La sélection',url:BASE+'/champagnes/'},{name:`${p.house} ${p.name}`,url:`${BASE}/champagne/${p.id}/`}])
@@ -856,7 +856,7 @@ add(BASE+'/blog/', '0.9', 'weekly');
 
 // article pages
 for(const a of articles().filter(a=>!a.soon)){
-  write(`blog/${a.id}/index.html`, page({ title:`${a.title} | QuelChampagne`, desc:a.excerpt.slice(0,155), canonical:`${BASE}/blog/${a.id}/`, active:'blog', main:articleMain(a), graph:[
+  write(`blog/${a.id}/index.html`, page({ title:`${a.title} | QuelChampagne`, desc:clip(a.excerpt,155), canonical:`${BASE}/blog/${a.id}/`, active:'blog', main:articleMain(a), graph:[
     {'@type':'Article', headline:a.title, description:a.excerpt, articleSection:a.cat, inLanguage:'fr-FR', image:(blogPhoto(a,1200)||OG), datePublished:'2026-07-01', dateModified:BUILD_DATE, author:{'@id':BASE+'/#org'}, publisher:{'@id':BASE+'/#org'}, mainEntityOfPage:`${BASE}/blog/${a.id}/`},
     crumbs([{name:'Accueil',url:BASE+'/'},{name:'Blog',url:BASE+'/blog/'},{name:a.title,url:`${BASE}/blog/${a.id}/`}])
   ] }));
