@@ -221,14 +221,14 @@ const SEO_LANDINGS = [
 function header(active){
   const L=(href,label,key)=>`<a class="nlink${active===key?' on':''}" href="${href}"${active===key?' aria-current="page"':''}>${label}</a>`;
   return `<header class="nav"><div class="container nav-in">
-    <a class="logo" href="/">${logoMark()}<span class="logo-txt">Quel<b>Champagne</b></span></a>
+    <a class="logo" href="/"><span class="logo-txt">Quel<b>Champagne</b></span>${logoMark()}</a>
     <nav class="nav-links" aria-label="Navigation principale">${L('/champagnes/','La sélection','shop')}${L('/comparateur/','Comparer','compare')}${L('/blog/','Blog','blog')}<a class="nlink-cta" href="/selecteur/"><svg width="12" height="15" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.4 5H15.6L14.2 12.3A2.7 2.7 0 0 1 9.8 12.3Z" fill="#F3E7C9" stroke="#9C7A34" stroke-width="1.5"/><line x1="12" y1="14.4" x2="12" y2="20" stroke="#9C7A34" stroke-width="1.5"/><line x1="9" y1="20.4" x2="15" y2="20.4" stroke="#9C7A34" stroke-width="1.5"/></svg>Trouver mon champagne</a></nav>
   </div></header>`;
 }
 function footer(){
   return `<footer><div class="container">
     <div class="foot-in">
-      <div class="foot-brand"><span class="foot-brand-name">${logoMark()}${BRAND}</span><p>Le sélecteur indépendant qui vous oriente vers la cuvée juste, en quatre questions.</p></div>
+      <div class="foot-brand"><span class="foot-brand-name">${BRAND}${logoMark()}</span><p>Le sélecteur indépendant qui vous oriente vers la cuvée juste, en quatre questions.</p></div>
       <nav class="foot-links" aria-label="Navigation secondaire"><a href="/selecteur/">Le sélecteur</a><a href="/comparateur/">Comparer</a><a href="/notre-methode/">Notre méthode</a><a href="/a-propos/">À propos</a><a href="/mentions-legales/">Mentions légales</a><a href="/confidentialite/">Confidentialité</a></nav>
     </div>
     <div class="foot-health">L'abus d'alcool est dangereux pour la santé. À consommer avec modération.</div>
