@@ -41,7 +41,7 @@ const BLOG_PHOTOS = {
 };
 function blogPhoto(a, w){ const id = BLOG_PHOTOS[a.id]; return id ? `https://images.unsplash.com/photo-${id}?q=75&w=${w||800}&auto=format&fit=crop` : null; }
 function coverStyle(a, w){ const p = blogPhoto(a, w); return p ? `background:#EFEAE0 url('${p}') center/cover` : `background:${coverBg(a)}`; }
-const FAVICON = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M8.4 5H15.6L14.2 12.3A2.7 2.7 0 0 1 9.8 12.3Z' fill='%23F3E7C9' stroke='%239C7A34' stroke-width='1.2'/%3E%3Cline x1='12' y1='15' x2='12' y2='20.2' stroke='%239C7A34' stroke-width='1.3'/%3E%3Cline x1='9' y1='20.6' x2='15' y2='20.6' stroke='%239C7A34' stroke-width='1.3'/%3E%3C/svg%3E";
+const FAVICON = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 64'%3E%3Cpath d='M8 16C8 7.7 14.7 2 24 2s16 5.5 16 14c0 6.3-3.6 10.2-9 13.8-4.4 3-6.2 5.7-6.2 10.2' fill='none' stroke='%239C7A34' stroke-width='4.8' stroke-linecap='round'/%3E%3Cpath d='M16 47h16c-.7 4.4-3.7 6.8-8 6.8s-7.3-2.4-8-6.8Z' fill='%239C7A34'/%3E%3Cpath d='M24 53.3v6.2M19.5 61.5h9' stroke='%239C7A34' stroke-width='2.2' stroke-linecap='round' fill='none'/%3E%3C/svg%3E";
 
 // ---------- lire index.html : CSS + données ----------
 const HTML = readFileSync('index.html', 'utf8');
@@ -222,7 +222,7 @@ function header(active){
   const L=(href,label,key)=>`<a class="nlink${active===key?' on':''}" href="${href}"${active===key?' aria-current="page"':''}>${label}</a>`;
   return `<header class="nav"><div class="container nav-in">
     <a class="logo" href="/"><span class="logo-txt">Quel<b>Champagne</b></span>${logoMark()}</a>
-    <nav class="nav-links" aria-label="Navigation principale">${L('/champagnes/','La sélection','shop')}${L('/comparateur/','Comparer','compare')}${L('/blog/','Blog','blog')}<a class="nlink-cta" href="/selecteur/"><svg width="12" height="15" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.4 5H15.6L14.2 12.3A2.7 2.7 0 0 1 9.8 12.3Z" fill="#F3E7C9" stroke="#9C7A34" stroke-width="1.5"/><line x1="12" y1="14.4" x2="12" y2="20" stroke="#9C7A34" stroke-width="1.5"/><line x1="9" y1="20.4" x2="15" y2="20.4" stroke="#9C7A34" stroke-width="1.5"/></svg>Trouver mon champagne</a></nav>
+    <nav class="nav-links" aria-label="Navigation principale">${L('/champagnes/','La sélection','shop')}${L('/comparateur/','Comparer','compare')}${L('/blog/','Blog','blog')}<a class="nlink-cta" href="/selecteur/"><svg width="11" height="15" viewBox="0 0 48 64" aria-hidden="true"><path d="M8 16C8 7.7 14.7 2 24 2s16 5.5 16 14c0 6.3-3.6 10.2-9 13.8-4.4 3-6.2 5.7-6.2 10.2" stroke="#9C7A34" stroke-width="4.8" stroke-linecap="round" fill="none"/><path d="M16 47h16c-.7 4.4-3.7 6.8-8 6.8s-7.3-2.4-8-6.8Z" fill="#9C7A34"/><path d="M24 53.3v6.2M19.5 61.5h9" stroke="#9C7A34" stroke-width="2.2" stroke-linecap="round"/></svg>Trouver mon champagne</a></nav>
   </div></header>`;
 }
 function footer(){
