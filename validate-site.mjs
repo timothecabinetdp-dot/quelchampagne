@@ -1,6 +1,7 @@
 import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs';
 import { join } from 'node:path';
 import { ACTIVATED_COMMERCE_IDS } from './build-catalogue.mjs';
+import { PARTNER_CATALOGUE } from './build-partner-catalogue.mjs';
 
 const ROOT = new URL('.', import.meta.url);
 const DIST = new URL('dist/', ROOT);
@@ -32,6 +33,7 @@ const wave6 = JSON.parse(read('data/catalogue-wave-6.json'));
 const offers = JSON.parse(read('data/purchase-offers-research.json'));
 const imageRights = JSON.parse(read('data/image-rights-register.json'));
 const registeredPhotos = new Set(imageRights.filter(r => r.source === 'Unsplash').map(r => r.asset));
+const registeredPartnerImages = new Set(PARTNER_CATALOGUE.map(product => product.image));
 const imageRegistry = JSON.parse(read('data/product-images.json'));
 const merchantFeedConfig = JSON.parse(read('data/merchant-feed-config.json'));
 const productIdentityIndex = JSON.parse(read('data/product-identity-index.json'));
@@ -193,11 +195,14 @@ for (const product of catalogue.filter(item => item.image)) {
   }
 }
 const cataloguePage = read('dist/champagnes/index.html');
-for (const control of ['catalogue-search', 'catalogue-budget', 'catalogue-style', 'catalogue-producer', 'catalogue-type', 'catalogue-count']) {
-  if (!cataloguePage.includes(`id="${control}"`)) errors.push(`Contrôle de catalogue absent : ${control}.`);
+for (const control of ['bqGrid', 'bqSort']) {
+  if (!cataloguePage.includes(`id="${control}"`)) errors.push(`Contrôle de sélection absent : ${control}.`);
 }
-if (!cataloguePage.includes('data-catalogue-card') || !cataloguePage.includes('function budgetMatch')) {
-  errors.push('La recherche multicritère du catalogue n’est pas embarquée.');
+if (!cataloguePage.includes('class="bq-chip') || !cataloguePage.includes("card.getAttribute('data-style')")) {
+  errors.push('Le filtrage par style de la sélection partenaire n’est pas embarqué.');
+}
+if (cataloguePage.includes('target="_blank" rel="sponsored') || cataloguePage.includes('>Acheter</a>')) {
+  errors.push('La sélection redirige encore directement vers le partenaire au lieu des fiches internes.');
 }
 
 const jacquesson = catalogue.find(product => product.id === 'jacquesson-cuvee-748');
@@ -240,16 +245,16 @@ global.window = { scrollTo() {}, open() {} };
 global.localStorage = { getItem() { return null; }, setItem() {} };
 global.fetch = () => Promise.reject(new Error('Réseau désactivé pendant la validation.'));
 eval(`${script}; Object.assign(quiz, { questions, score, setCatalogue });`);
-quiz.setCatalogue(catalogue);
+quiz.setCatalogue(PARTNER_CATALOGUE);
 if (quiz.questions().length !== 4) errors.push(`Questions attendues : 4, obtenues : ${quiz.questions().length}.`);
-const vigneron = catalogue.find(product => product.producerType === 'vigneron');
+const vigneron = PARTNER_CATALOGUE.find(product => product.producerType === 'vigneron');
 if (!vigneron) {
   errors.push('Aucun champagne de vigneron ne permet de tester la préférence producteur.');
 } else {
   const answers = { occasion: vigneron.occ, gout: vigneron.profil, budget: [`b${vigneron.tier}`], maison: ['vigneron'] };
   const preferredScore = quiz.score(vigneron, answers);
   const mismatchedScore = quiz.score({ ...vigneron, producerType: 'maison' }, answers);
-  if (preferredScore - mismatchedScore !== 30) errors.push('La préférence vigneron ne produit pas la pénalité attendue de 30 points.');
+  if (preferredScore - mismatchedScore !== 45) errors.push('La préférence vigneron ne produit pas la pénalité attendue de 45 points.');
 }
 
 for (const file of htmlFiles) {
@@ -276,7 +281,11 @@ for (const file of htmlFiles) {
   for (const m of html.matchAll(/https:\/\/images\.unsplash\.com\/photo-[0-9]+-[a-z0-9]+/g)) {
     if (!registeredPhotos.has(m[0])) errors.push(`Image Unsplash non enregistrée dans ${relative} : ${m[0]}.`);
   }
-  if (/<img[^>]+src="https?:\/\/(?!images\.unsplash\.com)/i.test(html)) errors.push(`Image distante non autorisée dans ${relative}.`);
+  for (const match of html.matchAll(/<img[^>]+src="(https?:\/\/[^"]+)"/gi)) {
+    if (!match[1].startsWith('https://images.unsplash.com/') && !registeredPartnerImages.has(match[1].replaceAll('&amp;','&'))) {
+      errors.push(`Image distante non enregistrée dans ${relative} : ${match[1]}.`);
+    }
+  }
   const hasDialogRole = html.includes('role="dialog"') || html.includes("setAttribute('role','dialog')");
   const hasModalState = html.includes('aria-modal="true"') || html.includes("setAttribute('aria-modal','true')");
   if (!hasDialogRole || !hasModalState) errors.push(`Porte d’âge sans sémantique de dialogue dans ${relative}.`);
@@ -284,8 +293,8 @@ for (const file of htmlFiles) {
     const h1Count = [...html.matchAll(/<h1(?:\s|>)/g)].length;
     if (h1Count !== 1) errors.push(`Un seul H1 attendu dans ${relative}, obtenu : ${h1Count}.`);
   }
-  for (const m of html.matchAll(/href="(https:[^"]+)"\s+target="_blank"\s+rel="sponsored noopener"/g)) {
-    if (!/awin1\.com|tradedoubler|clk\.|effiliation|kwanko/i.test(m[1])) {
+  for (const m of html.matchAll(/href="(https:[^"]+)"\s+target="_blank"\s+rel="[^"]*sponsored[^"]*"/g)) {
+    if (!/awin1\.com|tradedoubler|ikhnaie\.link|clk\.|effiliation|kwanko/i.test(m[1])) {
       errors.push(`Lien sponsorisé non conforme (hors réseau caviste affilié) dans ${relative} : ${m[1]}.`);
     }
   }
@@ -304,7 +313,8 @@ for (const file of htmlFiles) {
 
 const sitemap = read('dist/sitemap.xml');
 const sitemapUrls = [...sitemap.matchAll(/<loc>https:\/\/quelchampagne\.fr([^<]*)<\/loc>/g)];
-if (sitemapUrls.length !== 122) errors.push(`URL sitemap attendues : 122, obtenues : ${sitemapUrls.length}.`);
+const expectedSitemapUrls = 34 + PARTNER_CATALOGUE.length;
+if (sitemapUrls.length !== expectedSitemapUrls) errors.push(`URL sitemap attendues : ${expectedSitemapUrls}, obtenues : ${sitemapUrls.length}.`);
 for (const [, path] of sitemapUrls) {
   const target = localTarget(path || '/');
   if (!target || !existsSync(target)) errors.push(`URL du sitemap sans page : ${path || '/'}.`);
@@ -314,6 +324,25 @@ for (const slug of ['aperitif', 'cadeau', 'repas', 'rose', 'blanc-de-blancs', 'm
   const page = new URL(`dist/champagne/${slug}/index.html`, ROOT);
   if (!existsSync(page)) errors.push(`Page SEO manquante : /champagne/${slug}/.`);
 }
+for (const product of PARTNER_CATALOGUE) {
+  const page = new URL(`dist/champagne/${product.id}/index.html`, ROOT);
+  if (!existsSync(page)) errors.push(`Fiche partenaire manquante : /champagne/${product.id}/.`);
+}
+const partnerIds = new Set(PARTNER_CATALOGUE.map(product=>product.id));
+for (const product of catalogue.filter(product=>!partnerIds.has(product.id))) {
+  const page = new URL(`dist/champagne/${product.id}/index.html`, ROOT);
+  if (existsSync(page)) errors.push(`Ancienne fiche encore publiée : /champagne/${product.id}/.`);
+}
+if (existsSync(new URL('dist/comparatifs/', ROOT))) errors.push('Les anciens comparatifs fondés sur les 75 fiches sont encore publiés.');
+const publicCatalogue=JSON.parse(read('dist/catalogue.json'));
+if (publicCatalogue.length!==PARTNER_CATALOGUE.length || publicCatalogue.some(product=>!partnerIds.has(product.id))) {
+  errors.push('Le catalogue JSON public expose encore des références historiques.');
+}
+const redirects=read('dist/_redirects');
+if (!redirects.includes('/comparatifs/ /comparateur/ 301')) errors.push('La redirection Cloudflare des anciens comparatifs est absente.');
+if (catalogue.filter(product=>!partnerIds.has(product.id)).some(product=>!redirects.includes(`/champagne/${product.id}/ /champagnes/ 301`))) {
+  errors.push('Une ancienne fiche ne possède pas de redirection Cloudflare.');
+}
 
 for (const path of ['notre-methode', 'a-propos']) {
   const trustPage = new URL(`dist/${path}/index.html`, ROOT);
@@ -322,6 +351,10 @@ for (const path of ['notre-methode', 'a-propos']) {
 const selector = read('dist/selecteur/index.html');
 if (!selector.includes('Pourquoi cette recommandation')) errors.push('Le sélecteur n’explique pas sa recommandation.');
 if (!selector.includes('let CATALOGUE = [')) errors.push('Le sélecteur n’embarque pas le catalogue vérifié et risque d’afficher les anciennes données de repli.');
+if (!selector.includes('assets.ikhnaie.link')) errors.push('Le sélecteur n’embarque pas les offres Bottle of Italy.');
+if (/render\(\);\s*loadCatalogue\(\);/.test(selector)) errors.push('Le sélecteur remplace encore le catalogue partenaire par l’ancien catalogue au chargement.');
+if (selector.includes('${productAction(tp)}')) errors.push('Le résultat principal du quiz contourne encore la fiche d’analyse.');
+if (!selector.includes('href="/champagne/${tp.id}/">Voir l’analyse</a>')) errors.push('Le résultat principal du quiz ne mène pas à la fiche d’analyse.');
 if (!selector.includes("const state = { view:'quiz'")) errors.push('Le sélecteur ne démarre pas directement sur le questionnaire.');
 if (!selector.includes('<h1 class="qtitle">${q.q}</h1>')) errors.push('La question active du sélecteur n’est pas exposée comme titre principal.');
 if (!existsSync(new URL('dist/assets/hero-quelchampagne.svg', ROOT))) errors.push('Illustration originale principale absente du build.');
@@ -330,6 +363,13 @@ for (const stale of ['Perle d’Aurore', 'Sancerre « Les Baronnes »', 'Whisper
   if (selector.includes(stale)) errors.push(`Ancienne donnée de démonstration encore exposée dans le sélecteur : ${stale}.`);
 }
 if (source.includes('Un clic vous mène directement sur le site de la maison pour commander.')) errors.push('L’accueil promet encore une commande non disponible.');
+if (PARTNER_CATALOGUE.length !== 48) errors.push(`Catalogue partenaire attendu : 48, obtenu : ${PARTNER_CATALOGUE.length}.`);
+if (new Set(PARTNER_CATALOGUE.map(product=>product.id)).size !== PARTNER_CATALOGUE.length) errors.push('Identifiants du catalogue partenaire dupliqués.');
+if (PARTNER_CATALOGUE.some(product=>!product.commerceReady || product.availability!=='in_stock')) errors.push('Une cuvée partenaire publiée n’est pas disponible.');
+if (PARTNER_CATALOGUE.some(product=>!/ikhnaie\.link/.test(product.aff||'') || /FRutm_source/.test(product.aff))) errors.push('Un lien affilié partenaire est absent ou mal formé.');
+if (PARTNER_CATALOGUE.some(product=>!product.details?.facts || !product.details?.advice || !product.details?.avoid || !product.details?.scores)) errors.push('Une analyse partenaire est incomplète.');
+if (new Set(PARTNER_CATALOGUE.map(product=>product.note)).size < 40) errors.push('Les analyses partenaires restent trop répétitives.');
+if (PARTNER_CATALOGUE.some(product=>product.identityStatus==='merchant_feed_year_to_verify' && /\b(19|20)\d{2}\b/.test(product.name))) errors.push('Un millésime non confirmé est encore présenté comme faisant partie du nom public.');
 for (const file of htmlFiles.filter(path => path.includes('/champagne/') && !path.match(/\/champagne\/(aperitif|cadeau|repas|rose|blanc-de-blancs|moins-de-50-euros|fruits-de-mer)\//))) {
   const html = readFileSync(file, 'utf8');
   if (!html.includes('À choisir si…') || !html.includes('À éviter si…')) errors.push(`Aide à la décision absente de ${file.replace(DIST.pathname, '')}.`);
@@ -341,4 +381,4 @@ if (errors.length) {
   process.exit(1);
 }
 
-console.log(`Validation réussie : ${catalogue.length} champagnes, ${htmlFiles.length} pages HTML, ${sitemapUrls.length} URL, aucun lien interne cassé.`);
+console.log(`Validation réussie : ${PARTNER_CATALOGUE.length} champagnes publiés, ${htmlFiles.length} pages HTML, ${sitemapUrls.length} URL, aucun lien interne cassé.`);

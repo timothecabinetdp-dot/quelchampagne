@@ -42,7 +42,7 @@
     "sourceUrl": "https://www.nicolas-feuillatte.com/",
     "verifiedAt": "2026-07-26",
     "editorialReady": true,
-    "commerceReady": true,
+    "commerceReady": false,
     "popularity": 88
   },
   {
@@ -88,7 +88,7 @@
     "sourceUrl": "https://www.moet.com/en-int/moet-imperial",
     "verifiedAt": "2026-07-26",
     "editorialReady": true,
-    "commerceReady": true,
+    "commerceReady": false,
     "popularity": 95,
     "details": {
       "facts": "Assemblage : Pinot Noir 30 à 40 %, Meunier 30 à 40 % et Chardonnay 20 à 30 %. Vins de réserve : 20 à 30 %. Dosage : 7 g/L.",
@@ -159,7 +159,7 @@
     "sourceUrl": "https://www.veuveclicquot.com/fr-fr/",
     "verifiedAt": "2026-07-26",
     "editorialReady": true,
-    "commerceReady": true,
+    "commerceReady": false,
     "popularity": 94
   },
   {
@@ -202,7 +202,7 @@
     "sourceUrl": "https://www.champagne-bollinger.com/en/wine/special-cuvee",
     "verifiedAt": "2026-07-26",
     "editorialReady": true,
-    "commerceReady": true,
+    "commerceReady": false,
     "popularity": 91
   },
   {
@@ -247,7 +247,7 @@
     "sourceUrl": "https://www.ruinart.com/fr-fr/",
     "verifiedAt": "2026-07-26",
     "editorialReady": true,
-    "commerceReady": true,
+    "commerceReady": false,
     "popularity": 93
   },
   {
@@ -293,7 +293,7 @@
     "sourceUrl": "https://www.laurent-perrier.com/fr/champagnes/cuvee-rose/",
     "verifiedAt": "2026-07-26",
     "editorialReady": true,
-    "commerceReady": true,
+    "commerceReady": false,
     "popularity": 90
   },
   {

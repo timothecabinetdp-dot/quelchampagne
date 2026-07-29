@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-27T08:56:49.807Z",
+  "generatedAt": "2026-07-29T18:48:05.594Z",
   "policyVersion": 1,
   "publicationMode": "blocked_until_review",
   "observations": [
@@ -21,8 +21,8 @@
       "exactFormatMatch": true,
       "affiliateStatus": "not_configured",
       "publicationStatus": "research_only",
-      "priceFresh": true,
-      "availabilityFresh": true,
+      "priceFresh": false,
+      "availabilityFresh": false,
       "publicationEligible": false,
       "notes": "Prix unitaire 75 cl et disponibilité affichés sur la fiche."
     },
@@ -44,8 +44,8 @@
       "exactFormatMatch": true,
       "affiliateStatus": "not_configured",
       "publicationStatus": "research_only",
-      "priceFresh": true,
-      "availabilityFresh": true,
+      "priceFresh": false,
+      "availabilityFresh": false,
       "publicationEligible": false,
       "notes": "Prix et format exacts confirmés ; disponibilité non exposée sans ambiguïté dans la page analysée."
     },
@@ -67,8 +67,8 @@
       "exactFormatMatch": true,
       "affiliateStatus": "not_configured",
       "publicationStatus": "research_only",
-      "priceFresh": true,
-      "availabilityFresh": true,
+      "priceFresh": false,
+      "availabilityFresh": false,
       "publicationEligible": false,
       "notes": "Prix unitaire 75 cl et disponibilité affichés sur la fiche."
     },
@@ -90,8 +90,8 @@
       "exactFormatMatch": true,
       "affiliateStatus": "not_configured",
       "publicationStatus": "research_only",
-      "priceFresh": true,
-      "availabilityFresh": true,
+      "priceFresh": false,
+      "availabilityFresh": false,
       "publicationEligible": false,
       "notes": "Prix et format exacts confirmés ; disponibilité non exposée sans ambiguïté dans la page analysée."
     },
@@ -113,8 +113,8 @@
       "exactFormatMatch": true,
       "affiliateStatus": "not_configured",
       "publicationStatus": "research_only",
-      "priceFresh": true,
-      "availabilityFresh": true,
+      "priceFresh": false,
+      "availabilityFresh": false,
       "publicationEligible": false,
       "notes": "Prix unitaire 75 cl et disponibilité affichés sur la fiche."
     },
@@ -136,8 +136,8 @@
       "exactFormatMatch": true,
       "affiliateStatus": "not_configured",
       "publicationStatus": "research_only",
-      "priceFresh": true,
-      "availabilityFresh": true,
+      "priceFresh": false,
+      "availabilityFresh": false,
       "publicationEligible": false,
       "notes": "La fiche affiche le prix et le bouton Ajouter ; disponibilité susceptible de dépendre de l'adresse."
     },
@@ -159,8 +159,8 @@
       "exactFormatMatch": true,
       "affiliateStatus": "not_configured",
       "publicationStatus": "research_only",
-      "priceFresh": true,
-      "availabilityFresh": true,
+      "priceFresh": false,
+      "availabilityFresh": false,
       "publicationEligible": false,
       "notes": "Prix unitaire 75 cl et disponibilité affichés sur la fiche."
     },
@@ -182,8 +182,8 @@
       "exactFormatMatch": true,
       "affiliateStatus": "not_configured",
       "publicationStatus": "research_only",
-      "priceFresh": true,
-      "availabilityFresh": true,
+      "priceFresh": false,
+      "availabilityFresh": false,
       "publicationEligible": false,
       "notes": "Prix, format, ajout au panier et livraison 24/72 h affichés."
     },
@@ -205,8 +205,8 @@
       "exactFormatMatch": true,
       "affiliateStatus": "not_configured",
       "publicationStatus": "research_only",
-      "priceFresh": true,
-      "availabilityFresh": true,
+      "priceFresh": false,
+      "availabilityFresh": false,
       "publicationEligible": false,
       "notes": "Prix et ajout au panier affichés ; stock à confirmer après sélection d'un magasin."
     },
@@ -228,8 +228,8 @@
       "exactFormatMatch": true,
       "affiliateStatus": "not_configured",
       "publicationStatus": "research_only",
-      "priceFresh": true,
-      "availabilityFresh": true,
+      "priceFresh": false,
+      "availabilityFresh": false,
       "publicationEligible": false,
       "notes": "La fiche affiche 23 produits disponibles, le format et le prix."
     },
@@ -251,8 +251,8 @@
       "exactFormatMatch": true,
       "affiliateStatus": "not_configured",
       "publicationStatus": "research_only",
-      "priceFresh": true,
-      "availabilityFresh": true,
+      "priceFresh": false,
+      "availabilityFresh": false,
       "publicationEligible": false,
       "notes": "Prix unitaire 75 cl et disponibilité affichés sur la fiche."
     },
@@ -274,8 +274,8 @@
       "exactFormatMatch": true,
       "affiliateStatus": "not_configured",
       "publicationStatus": "research_only",
-      "priceFresh": true,
-      "availabilityFresh": true,
+      "priceFresh": false,
+      "availabilityFresh": false,
       "publicationEligible": false,
       "notes": "Prix, format, étui et disponibilité affichés."
     },
@@ -297,8 +297,8 @@
       "exactFormatMatch": true,
       "affiliateStatus": "not_configured",
       "publicationStatus": "research_only",
-      "priceFresh": true,
-      "availabilityFresh": true,
+      "priceFresh": false,
+      "availabilityFresh": false,
       "publicationEligible": false,
       "notes": "Prix, format, étui et disponibilité affichés."
     },
@@ -320,8 +320,8 @@
       "exactFormatMatch": true,
       "affiliateStatus": "not_configured",
       "publicationStatus": "research_only",
-      "priceFresh": true,
-      "availabilityFresh": true,
+      "priceFresh": false,
+      "availabilityFresh": false,
       "publicationEligible": false,
       "notes": "Prix unitaire, format et disponibilité affichés ; remise quantitative distincte non retenue."
     },
@@ -343,8 +343,8 @@
       "exactFormatMatch": true,
       "affiliateStatus": "not_configured",
       "publicationStatus": "research_only",
-      "priceFresh": true,
-      "availabilityFresh": true,
+      "priceFresh": false,
+      "availabilityFresh": false,
       "publicationEligible": false,
       "notes": "Prix unitaire 75 cl et disponibilité affichés sur la fiche."
     },
@@ -366,8 +366,8 @@
       "exactFormatMatch": true,
       "affiliateStatus": "not_configured",
       "publicationStatus": "research_only",
-      "priceFresh": true,
-      "availabilityFresh": true,
+      "priceFresh": false,
+      "availabilityFresh": false,
       "publicationEligible": false,
       "notes": "Prix, format et disponibilité affichés dans la fiche indexée."
     }
@@ -398,8 +398,8 @@
           "exactFormatMatch": true,
           "affiliateStatus": "not_configured",
           "publicationStatus": "research_only",
-          "priceFresh": true,
-          "availabilityFresh": true,
+          "priceFresh": false,
+          "availabilityFresh": false,
           "publicationEligible": false,
           "notes": "Prix unitaire 75 cl et disponibilité affichés sur la fiche."
         },
@@ -421,8 +421,8 @@
           "exactFormatMatch": true,
           "affiliateStatus": "not_configured",
           "publicationStatus": "research_only",
-          "priceFresh": true,
-          "availabilityFresh": true,
+          "priceFresh": false,
+          "availabilityFresh": false,
           "publicationEligible": false,
           "notes": "Prix et format exacts confirmés ; disponibilité non exposée sans ambiguïté dans la page analysée."
         }
@@ -453,8 +453,8 @@
           "exactFormatMatch": true,
           "affiliateStatus": "not_configured",
           "publicationStatus": "research_only",
-          "priceFresh": true,
-          "availabilityFresh": true,
+          "priceFresh": false,
+          "availabilityFresh": false,
           "publicationEligible": false,
           "notes": "Prix unitaire 75 cl et disponibilité affichés sur la fiche."
         },
@@ -476,8 +476,8 @@
           "exactFormatMatch": true,
           "affiliateStatus": "not_configured",
           "publicationStatus": "research_only",
-          "priceFresh": true,
-          "availabilityFresh": true,
+          "priceFresh": false,
+          "availabilityFresh": false,
           "publicationEligible": false,
           "notes": "Prix et format exacts confirmés ; disponibilité non exposée sans ambiguïté dans la page analysée."
         }
@@ -508,8 +508,8 @@
           "exactFormatMatch": true,
           "affiliateStatus": "not_configured",
           "publicationStatus": "research_only",
-          "priceFresh": true,
-          "availabilityFresh": true,
+          "priceFresh": false,
+          "availabilityFresh": false,
           "publicationEligible": false,
           "notes": "Prix unitaire 75 cl et disponibilité affichés sur la fiche."
         },
@@ -531,8 +531,8 @@
           "exactFormatMatch": true,
           "affiliateStatus": "not_configured",
           "publicationStatus": "research_only",
-          "priceFresh": true,
-          "availabilityFresh": true,
+          "priceFresh": false,
+          "availabilityFresh": false,
           "publicationEligible": false,
           "notes": "La fiche affiche le prix et le bouton Ajouter ; disponibilité susceptible de dépendre de l'adresse."
         }
@@ -563,8 +563,8 @@
           "exactFormatMatch": true,
           "affiliateStatus": "not_configured",
           "publicationStatus": "research_only",
-          "priceFresh": true,
-          "availabilityFresh": true,
+          "priceFresh": false,
+          "availabilityFresh": false,
           "publicationEligible": false,
           "notes": "Prix unitaire 75 cl et disponibilité affichés sur la fiche."
         },
@@ -586,8 +586,8 @@
           "exactFormatMatch": true,
           "affiliateStatus": "not_configured",
           "publicationStatus": "research_only",
-          "priceFresh": true,
-          "availabilityFresh": true,
+          "priceFresh": false,
+          "availabilityFresh": false,
           "publicationEligible": false,
           "notes": "Prix, format, ajout au panier et livraison 24/72 h affichés."
         }
@@ -618,8 +618,8 @@
           "exactFormatMatch": true,
           "affiliateStatus": "not_configured",
           "publicationStatus": "research_only",
-          "priceFresh": true,
-          "availabilityFresh": true,
+          "priceFresh": false,
+          "availabilityFresh": false,
           "publicationEligible": false,
           "notes": "Prix et ajout au panier affichés ; stock à confirmer après sélection d'un magasin."
         },
@@ -641,8 +641,8 @@
           "exactFormatMatch": true,
           "affiliateStatus": "not_configured",
           "publicationStatus": "research_only",
-          "priceFresh": true,
-          "availabilityFresh": true,
+          "priceFresh": false,
+          "availabilityFresh": false,
           "publicationEligible": false,
           "notes": "La fiche affiche 23 produits disponibles, le format et le prix."
         }
@@ -673,8 +673,8 @@
           "exactFormatMatch": true,
           "affiliateStatus": "not_configured",
           "publicationStatus": "research_only",
-          "priceFresh": true,
-          "availabilityFresh": true,
+          "priceFresh": false,
+          "availabilityFresh": false,
           "publicationEligible": false,
           "notes": "Prix unitaire 75 cl et disponibilité affichés sur la fiche."
         },
@@ -696,8 +696,8 @@
           "exactFormatMatch": true,
           "affiliateStatus": "not_configured",
           "publicationStatus": "research_only",
-          "priceFresh": true,
-          "availabilityFresh": true,
+          "priceFresh": false,
+          "availabilityFresh": false,
           "publicationEligible": false,
           "notes": "Prix, format, étui et disponibilité affichés."
         }
@@ -728,8 +728,8 @@
           "exactFormatMatch": true,
           "affiliateStatus": "not_configured",
           "publicationStatus": "research_only",
-          "priceFresh": true,
-          "availabilityFresh": true,
+          "priceFresh": false,
+          "availabilityFresh": false,
           "publicationEligible": false,
           "notes": "Prix, format, étui et disponibilité affichés."
         },
@@ -751,8 +751,8 @@
           "exactFormatMatch": true,
           "affiliateStatus": "not_configured",
           "publicationStatus": "research_only",
-          "priceFresh": true,
-          "availabilityFresh": true,
+          "priceFresh": false,
+          "availabilityFresh": false,
           "publicationEligible": false,
           "notes": "Prix unitaire, format et disponibilité affichés ; remise quantitative distincte non retenue."
         }
@@ -783,8 +783,8 @@
           "exactFormatMatch": true,
           "affiliateStatus": "not_configured",
           "publicationStatus": "research_only",
-          "priceFresh": true,
-          "availabilityFresh": true,
+          "priceFresh": false,
+          "availabilityFresh": false,
           "publicationEligible": false,
           "notes": "Prix unitaire 75 cl et disponibilité affichés sur la fiche."
         },
@@ -806,8 +806,8 @@
           "exactFormatMatch": true,
           "affiliateStatus": "not_configured",
           "publicationStatus": "research_only",
-          "priceFresh": true,
-          "availabilityFresh": true,
+          "priceFresh": false,
+          "availabilityFresh": false,
           "publicationEligible": false,
           "notes": "Prix, format et disponibilité affichés dans la fiche indexée."
         }

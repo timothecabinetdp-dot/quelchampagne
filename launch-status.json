@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-27",
+  "updatedAt": "2026-07-29",
   "deploymentAuthorized": true,
   "checks": {
     "technicalValidation": true,
@@ -11,10 +11,10 @@
     "privacyPolicyFinalized": true,
     "affiliateDisclosureFinalized": true,
     "imageRightsRegisterComplete": true,
-    "merchantOffersActivated": false
+    "merchantOffersActivated": true
   },
   "notes": {
-    "merchantOffersActivated": "Amazon retiré (champagne exclu du Programme Partenaires). Réorientation vers affiliation caviste (Vinatis via Awin/TradeDoubler) : offres à réactiver après acceptation et flux vérifié.",
+    "merchantOffersActivated": "48 offres Bottle of Italy activées via Webgains. Les cartes ouvrent d’abord une fiche d’analyse QuelChampagne ; seuls les boutons présents sur les fiches utilisent les liens affiliés.",
     "deploymentAuthorized": "Autorisé : identité éditeur Cortexia (SAS, SIREN 107124000, RCS Paris), hébergeur Netlify et confidentialité renseignés ; validations techniques OK."
   }
 }

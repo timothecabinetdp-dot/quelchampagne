@@ -18,7 +18,9 @@
  */
 import { readFileSync, writeFileSync, mkdirSync, rmSync, cpSync } from 'node:fs';
 import { buildCatalogue } from './build-catalogue.mjs';
-import { buildPriceIndex } from './build-price-index.mjs'; import { boutiqueMain } from './boutique.mjs';
+import { buildPriceIndex } from './build-price-index.mjs';
+import { boutiqueMain, boutiqueProductMain } from './boutique.mjs';
+import { PARTNER_CATALOGUE } from './build-partner-catalogue.mjs';
 
 const BASE = 'https://quelchampagne.fr';
 const HERO = '/assets/hero-quelchampagne.svg';
@@ -56,6 +58,7 @@ global.fetch = () => Promise.reject('x');
 eval(SCRIPT + '; Object.assign(ctx,{products,setCatalogue,articles,prod,art,detail,coverBg,PHOTOS,photoSrc,buyLink,priceText,productAction,bottleViz,logoMark,BRAND});');
 
 const catalogue = buildCatalogue();
+const partnerProducts = PARTNER_CATALOGUE;
 const priceIndex = buildPriceIndex();
 ctx.setCatalogue(catalogue);
 const { products, articles, prod, detail, coverBg, buyLink, priceText, productAction, bottleViz, logoMark, BRAND } = ctx;
@@ -318,23 +321,37 @@ function productCard(p, attributes = ''){
     <div class="pcard-b"><div class="pcard-house">${p.house}</div><div class="pcard-name">${p.short}</div><div class="pcard-note">${p.note}</div><div class="pcard-foot"><span class="pcard-price">${priceText(p)}</span><span class="chev">Découvrir</span></div></div>
   </a>`;
 }
+function partnerHomeCard(p){
+  const price = p.price.toLocaleString('fr-FR',{minimumFractionDigits:2,maximumFractionDigits:2}) + ' €';
+  return `<a class="pcard partner-pcard" href="/champagne/${p.id}/">
+    <div class="pcard-img partner-pcard-img"><img loading="lazy" src="${p.image}" alt="${p.brand} ${p.name}"></div>
+    <div class="pcard-b"><div class="pcard-house">${p.brand}</div><div class="pcard-name">${p.name}</div><div class="pcard-note">${p.note}</div><div class="pcard-foot"><span class="pcard-price">${price}</span><span class="chev">Voir l’analyse</span></div></div>
+  </a>`;
+}
 const BUILD_DATE = new Date().toISOString().slice(0,10);
 function readTime(a){ const w = String(a.body||'').replace(/<[^>]+>/g,' ').split(/\s+/).filter(Boolean).length; return Math.max(1, Math.round(w/200)) + ' min'; }
 function crumbs(items){ return {'@type':'BreadcrumbList',itemListElement:items.map((it,i)=>({'@type':'ListItem',position:i+1,name:it.name,item:it.url}))}; }
 function clip(s,n){ if(!s||s.length<=n) return s||''; return s.slice(0,n).replace(/\s+\S*$/,'')+'…'; } function articleCard(a){
   return `<a class="acard" href="/blog/${a.id}/"><div class="acard-cover" style="${coverStyle(a,700)}"><span class="acard-cat">${a.cat}</span></div><div class="acard-b"><h3>${a.title}</h3><p>${a.excerpt}</p><div class="acard-meta">${a.date} · ${readTime(a)} de lecture</div></div></a>`;
 }
+function boutiqueAnalysisDescription(p){
+  return clip(`Notre analyse du ${p.brand} ${p.name} : ${p.note}`,155);
+}
+function removeLegacyProductLinks(body){
+  const publicIds=new Set([...partnerProducts.map(product=>product.id),...SEO_LANDINGS.map(landing=>landing.id)]);
+  return body.replace(/href="\/champagne\/([a-z0-9-]+)\/"/g,(match,id)=>
+    publicIds.has(id)?match:'href="/champagnes/"'
+  );
+}
 function fixLinks(body){
-  return body.replace(/href="#" onclick="return openAff\('([^']+)'\)"/g, (m,id)=>{
-    const p=prod(id); if(!p) return 'href="/champagnes/"';
-    const link=buyLink(p)||p.sourceUrl||'/champagnes/';
-    return `href="${link}" target="_blank" rel="${p.commerceReady?'sponsored noopener':'noopener'}"`;
-  });
+  const withoutDirectActions=body.replace(/href="#" onclick="return openAff\('[^']+'\)"/g, 'href="/champagnes/"');
+  return removeLegacyProductLinks(withoutDirectActions);
 }
 
 // ---------- pages ----------
 function homeMain(){
-  const sel = products().slice(0,3).map(productCard).join('');
+  const featuredBrands = ['Nicolas Feuillatte','Veuve Clicquot','Perrier-Jouët'];
+  const sel = featuredBrands.map(brand=>partnerProducts.find(p=>p.brand===brand)).filter(Boolean).map(partnerHomeCard).join('');
   const arts = articles().filter(a=>!a.soon).slice(0,3).map(articleCard).join('');
   const maisons = MAISONS.map(m=>`<span class="maison-name">${m}</span>`).join('');
   return `
@@ -348,9 +365,9 @@ function homeMain(){
   </section>
   <section class="section"><div class="container">
     <div class="trust-strip">
-      <div class="trust-item"><strong>${products().length} fiches vérifiées</strong><span>Chaque fait produit renvoie vers une source officielle.</span></div>
+      <div class="trust-item"><strong>Des choix expliqués</strong><span>Chaque fiche présente le style, les accords et les points à vérifier.</span></div>
       <div class="trust-item"><strong>Classement indépendant</strong><span>Aucune maison ne paie pour remonter dans le sélecteur.</span></div>
-      <div class="trust-item"><strong>Prix séparés des fiches</strong><span>Une offre n’apparaît qu’après contrôle du format et du stock.</span></div>
+      <div class="trust-item"><strong>Offres contrôlées</strong><span>Une offre n’apparaît qu’après contrôle du produit, du prix et du stock.</span></div>
     </div>
   </div></section>
   <section class="section gray"><div class="container">
@@ -358,7 +375,7 @@ function homeMain(){
     <div class="steps">
       <div class="step"><div class="n">01</div><h3>Répondez</h3><p>Quatre questions sur l'occasion, le style, le budget et le type de producteur.</p></div>
       <div class="step"><div class="n">02</div><h3>Recevez</h3><p>Notre moteur classe la sélection et fait remonter votre coup de cœur, plus trois alternatives.</p></div>
-      <div class="step"><div class="n">03</div><h3>Comprenez</h3><p>Le résultat explique les critères retenus et ouvre une fiche reliée à sa source officielle.</p></div>
+      <div class="step"><div class="n">03</div><h3>Comprenez</h3><p>Le résultat explique les critères retenus et ouvre une fiche claire avant l’achat.</p></div>
     </div>
   </div></section>
   <section class="band"><div class="container">
@@ -368,7 +385,7 @@ function homeMain(){
     <a class="btn btn-accent" href="/selecteur/">Lancer le sélecteur</a>
   </div></section>
   <section class="section"><div class="container">
-    <div class="sec-head"><div class="h2">La sélection</div><p>${products().length} cuvées vérifiées, chacune reliée à sa source officielle.</p></div>
+    <div class="sec-head"><div class="h2">La sélection</div><p>${partnerProducts.length} champagnes disponibles, analysés pour vous aider à choisir selon vos goûts, votre occasion et votre budget.</p></div>
     <div class="pgrid">${sel}</div>
     <div class="center-cta"><a class="chev" href="/champagnes/">Voir toute la sélection</a></div>
     <div class="maisons" style="margin-top:clamp(40px,5vw,60px)">${maisons}</div>
@@ -377,7 +394,12 @@ function homeMain(){
     <div class="sec-head"><div class="h2">Nos conseils</div><p>Guides, décryptages et sélections pour choisir sans fausse note.</p></div>
     <div class="cards">${arts}</div>
     <div class="center-cta"><a class="chev" href="/blog/">Voir tous les articles</a></div>
-  </div></section>`;
+  </div></section>
+  <style>
+    .partner-pcard-img{background:radial-gradient(100% 85% at 50% 10%,#fff 0%,#f1ede4 100%)}
+    .partner-pcard-img img{width:100%;height:100%;object-fit:contain;padding:16px 24px;mix-blend-mode:multiply}
+    .partner-pcard .pcard-note{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  </style>`;
 }
 
 function champagnesMain(){
@@ -473,7 +495,7 @@ function champagnesMain(){
 }
 
 function landingMain(landing){
-  const selected = products().filter(landing.filter);
+  const selected = partnerProducts.filter(landing.filter);
   const cards = selected.map(productCard).join('');
   return `<section class="section-lead"><div class="container"><div class="lead-head">
     <div class="eyebrow">Guide de sélection</div>
@@ -482,7 +504,7 @@ function landingMain(landing){
     <div style="margin-top:24px"><a class="btn btn-primary" href="/selecteur/">Obtenir une recommandation personnalisée</a></div>
   </div></div></section>
   <section class="section" style="padding-top:0"><div class="container">
-    <div class="sec-head"><div class="h2">${selected.length} cuvées correspondantes</div><p>Chaque fiche est reliée à une source officielle. Les budgets restent indicatifs tant que les offres françaises ne sont pas contrôlées.</p></div>
+    <div class="sec-head"><div class="h2">${selected.length} cuvées correspondantes</div><p>Chaque fiche présente une bouteille disponible, sa photo, son profil et le prix relevé chez notre partenaire.</p></div>
     <div class="pgrid">${cards}</div>
   </div></section>
   <section class="section gray"><div class="container"><div class="narrow">
@@ -492,7 +514,7 @@ function landingMain(landing){
 }
 
 function comparateurMain(){
-  const sorted = [...products()].sort((a,b)=>(b.popularity||0)-(a.popularity||0));
+  const sorted = [...partnerProducts].sort((a,b)=>(b.popularity||0)-(a.popularity||0));
   const data = sorted.map(p=>({ id:p.id, house:p.house, name:p.name, price:priceText(p), type:p.tags[0]||'Champagne', style:p.tags.slice(1).join(', ')||p.profil.join(', '), occasions:p.occ.map(x=>x.replace('occ_','')).join(', '), accords:p.pair, producerType:p.producerType==='vigneron'?'Vigneron':'Maison', url:`/champagne/${p.id}/` }));
   const encoded = JSON.stringify(data).replaceAll('<','\\u003c');
   const choices = sorted.map((p,i)=>{
@@ -679,8 +701,6 @@ function bottleCalculator(){
   </script>`;
 }
 function articleMain(a){
-  const rel = (a.related||[]).map(prod).filter(Boolean);
-  const relBlock = rel.length ? `<div class="article-cta"><h3>La cuvée du moment</h3><p>${rel[0].house} — ${rel[0].name}, ${priceText(rel[0])}</p>${productAction(rel[0])}</div>` : '';
   return `<section class="article"><div class="narrow">
     <a class="a-back" href="/blog/">‹ Retour au blog</a>
     <div class="a-cat">${a.cat}</div>
@@ -689,7 +709,6 @@ function articleMain(a){
     <div class="a-cover" style="${coverStyle(a,1200)}"></div>
     <div class="prose">${fixLinks(a.body)}</div>
     ${a.id==='quantite'?bottleCalculator():''}
-    ${relBlock}
     <div style="margin-top:40px"><a class="btn btn-primary" href="/selecteur/">Trouver mon champagne</a></div>
   </div></section>`;
 }
@@ -699,8 +718,8 @@ function methodMain(){
     <div class="a-cat">Transparence</div><h1 class="a-title">Notre méthode</h1>
     <p class="qhint">Comment QuelChampagne sépare les faits, les conseils et le commerce.</p>
     <div class="prose">
-      <h3>1. Les faits viennent des producteurs</h3>
-      <p>Assemblage, dosage, millésime, édition et méthode d’élaboration ne sont publiés que lorsqu’une source officielle exploitable est conservée avec sa date de vérification. Une référence imprécise ou une sortie non identifiée reste hors catalogue.</p>
+      <h3>1. Les faits sont rattachés à leur source</h3>
+      <p>Assemblage, dosage, millésime, édition et méthode d’élaboration ne sont affirmés que lorsqu’une donnée exploitable est disponible chez le producteur ou le marchand identifié. Une information incertaine est signalée comme telle au lieu d’être présentée comme un fait.</p>
       <h3>2. Le conseil est éditorial</h3>
       <p>QuelChampagne transforme ces faits en critères utiles : occasion, style recherché, budget indicatif, accords et type de producteur. Nous ne prétendons pas avoir dégusté toutes les bouteilles et nous ne recopions pas les descriptions commerciales des marques.</p>
       <h3>3. Le classement n’est pas acheté</h3>
@@ -740,9 +759,9 @@ function legalMain(){
       <h3>Contenu et propriété intellectuelle</h3>
       <p>Les textes, données structurées et visuels originaux de QuelChampagne ne peuvent pas être réutilisés sans autorisation. Les marques citées appartiennent à leurs titulaires respectifs. Leur citation sert uniquement à identifier les cuvées présentées.</p>
       <h3>Information et responsabilité</h3>
-      <p>Les fourchettes de prix sont indicatives et séparées des offres marchandes. Une information peut évoluer après sa date de vérification ; le site met à disposition les sources officielles utilisées pour les faits produit.</p>
+      <p>Les prix et disponibilités peuvent évoluer après leur date de vérification. Les informations techniques distinguent les éléments communiqués par le marchand ou le producteur de l’interprétation éditoriale de QuelChampagne.</p>
       <h3>Affiliation</h3>
-      <p>Aucun lien marchand affilié n’est actuellement publié. QuelChampagne prévoit de nouer des partenariats d’affiliation avec des cavistes spécialisés (par exemple via les réseaux Awin ou TradeDoubler). Le champagne étant une boisson alcoolisée exclue du Programme Partenaires d’Amazon, aucun lien Amazon n’est utilisé. Lorsqu’un lien affilié sera activé, il sera signalé comme tel (attribut <code>rel="sponsored"</code>) à proximité du lien, sans modifier le classement éditorial ni les recommandations du sélecteur. Les prix et disponibilités relèveront alors du marchand et non de QuelChampagne.</p>
+      <p>QuelChampagne participe au programme d’affiliation de Bottle of Italy par l’intermédiaire du réseau Webgains. Certains liens menant vers ce marchand sont des liens affiliés : ils sont signalés à proximité du bouton et portent l’attribut <code>rel="sponsored"</code>. Si un achat est réalisé après un clic, QuelChampagne peut percevoir une commission, sans coût supplémentaire pour l’utilisateur. Cette rémunération ne modifie ni le contenu des analyses, ni le classement des recommandations. Les prix, disponibilités, conditions de vente et livraisons relèvent du marchand.</p>
     </div>
   </div></section>`;
 }
@@ -756,7 +775,7 @@ function privacyMain(){
       <h3>Confirmation de majorité</h3>
       <p>Après confirmation, le navigateur enregistre localement la valeur technique <code>qc_age_ok</code> afin d’éviter de réafficher immédiatement la porte d’âge. Cette valeur ne contient pas l’âge, l’identité ou les réponses au sélecteur.</p>
       <h3>Services tiers</h3>
-      <p>Le site n’intègre ni régie publicitaire, ni traceur d’audience, ni police externe. Certaines photographies d’illustration (accueil, en-têtes, couvertures d’articles du blog) sont servies par le réseau de diffusion d’Unsplash (images.unsplash.com) ; comme tout hébergeur d’images, Unsplash peut recevoir des données techniques de connexion (adresse IP, type de navigateur) lors du chargement de ces visuels. Aucun cookie n’est déposé par ce biais. Aucun lien marchand affilié n’est actuellement actif. En cas de future activation d’un partenariat d’affiliation avec un caviste, d’un outil de mesure d’audience ou d’un formulaire, cette politique sera mise à jour au préalable et, si nécessaire, un mécanisme de consentement sera ajouté.</p>
+      <p>Le site n’intègre ni régie publicitaire, ni traceur d’audience, ni police externe. Certaines photographies d’illustration sont servies par le réseau de diffusion d’Unsplash et les photographies des bouteilles par le réseau de diffusion utilisé par Bottle of Italy. Ces hébergeurs d’images peuvent recevoir des données techniques de connexion (notamment l’adresse IP et le type de navigateur) lors du chargement des visuels. Les liens d’achat passent par le réseau d’affiliation Webgains avant de rediriger vers Bottle of Italy ; le clic et une éventuelle commande sont alors traités selon les politiques de ces services. QuelChampagne ne reçoit pas les données de paiement ni le détail nominatif des commandes.</p>
       <h3>Vos droits et contact</h3>
       <p>Responsable du traitement : CORTEXIA (SAS), 59 rue de Ponthieu, 75008 Paris. Pour toute demande relative à vos données ou l’exercice de vos droits : timothe.cabinetdp@gmail.com. Vous pouvez également saisir la CNIL (www.cnil.fr).</p>
     </div>
@@ -767,11 +786,12 @@ function privacyMain(){
 // liens produit/article et la nav vers les pages statiques.
 function selecteurHTML(){
   let h = HTML;
-  h = h.replace('let CATALOGUE = null;', `let CATALOGUE = ${JSON.stringify(catalogue).replaceAll('<','\\u003c')};`);
+  h = h.replace('let CATALOGUE = null;', `let CATALOGUE = ${JSON.stringify(partnerProducts).replaceAll('<','\\u003c')};`);
   h = h.replace(/function FALLBACK_PRODUCTS\(\)\{[\s\S]*?\n\}\nfunction prod/, "function FALLBACK_PRODUCTS(){ return []; }\nfunction prod");
   h = h.replace(/const DETAILS = \{[\s\S]*?\n\};\nfunction detail/, "const DETAILS = {};\nfunction detail");
   h = h.replace("function openProduct(id){ state.product=id; state.view='product'; render(); }", "function openProduct(id){ location.href='/champagne/'+id+'/'; }");
   h = h.replace("function openArticle(id){ state.article=id; state.view='article'; render(); }", "function openArticle(id){ location.href='/blog/'+id+'/'; }");
+  h = h.replace('\nloadCatalogue();\nageGate();', '\n// Le catalogue partenaire contrôlé est déjà embarqué dans cette page.\nageGate();');
   h = h.replace("const state = { view:'home'", "const state = { view:'quiz'");
   h = h.replace('<title>QuelChampagne — Trouvez le champagne fait pour vous</title>', '<title>Sélecteur de champagne — Une recommandation en 4 questions | QuelChampagne</title>');
   h = h.replace('content="Le sélecteur indépendant qui vous oriente vers la cuvée juste en quatre questions, à partir de fiches vérifiées."', 'content="Répondez à quatre questions sur l’occasion, le style, le budget et le producteur pour obtenir une recommandation de champagne argumentée."');
@@ -780,6 +800,7 @@ function selecteurHTML(){
   h = h.replace('content="https://quelchampagne.fr"', 'content="https://quelchampagne.fr/selecteur/"');
   // canonical
   h = h.replace('<link rel="canonical" href="https://quelchampagne.fr">', '<link rel="canonical" href="https://quelchampagne.fr/selecteur/">');
+  h = removeLegacyProductLinks(h);
   return h;
 }
 
@@ -796,7 +817,7 @@ const urls = [];
 function add(loc, prio, freq){ urls.push({loc, prio, freq}); }
 
 // home
-write('index.html', page({ title:'Quel champagne choisir ? Le guide indépendant | QuelChampagne', desc:'Quel champagne choisir selon l’occasion, le style et le budget ? Notre sélecteur indépendant et nos comparatifs vous orientent vers la bonne cuvée en quatre questions.', canonical:BASE+'/', active:'home', main:homeMain() }));
+write('index.html', page({ title:'Quel champagne choisir ? Le guide indépendant | QuelChampagne', desc:'Quel champagne choisir selon l’occasion, le style et le budget ? Notre sélecteur indépendant et notre comparateur vous orientent vers la bonne cuvée en quatre questions.', canonical:BASE+'/', active:'home', main:homeMain() }));
 add(BASE+'/', '1.0', 'weekly');
 
 // selecteur
@@ -804,7 +825,7 @@ write('selecteur/index.html', selecteurHTML());
 add(BASE+'/selecteur/', '0.8', 'monthly');
 
 // champagnes list
-write('champagnes/index.html', page({ title:'Quel champagne choisir ? Notre sélection de 75 champagnes | QuelChampagne', desc:'Comparez 75 champagnes, des grandes maisons aux vignerons indépendants. Brut, rosé ou blanc de blancs : trouvez la cuvée idéale selon votre budget et votre occasion.', canonical:BASE+'/champagnes/', active:'shop', main:boutiqueMain() }));
+write('champagnes/index.html', page({ title:`Quel champagne choisir ? Notre sélection de ${partnerProducts.length} champagnes | QuelChampagne`, desc:`Analysez ${partnerProducts.length} champagnes disponibles chez notre partenaire : style, occasions, accords et points de vigilance avant de consulter l’offre.`, canonical:BASE+'/champagnes/', active:'shop', main:boutiqueMain(partnerProducts) }));
 add(BASE+'/champagnes/', '0.9', 'weekly');
 
 // comparateur interactif
@@ -814,7 +835,7 @@ add(BASE+'/comparateur/', '0.9', 'weekly');
 write('notre-methode/index.html', page({ title:'Notre méthode — Sources, indépendance et prix | QuelChampagne', desc:'Découvrez comment QuelChampagne vérifie les faits, construit ses recommandations et sépare les données produit des offres marchandes.', canonical:BASE+'/notre-methode/', active:'method', main:methodMain() }));
 add(BASE+'/notre-methode/', '0.7', 'monthly');
 
-write('a-propos/index.html', page({ title:'À propos de QuelChampagne — Le conseiller indépendant', desc:'QuelChampagne aide à choisir une cuvée selon le moment, le style et le budget, à partir de données structurées et de sources officielles.', canonical:BASE+'/a-propos/', active:'about', main:aboutMain() }));
+write('a-propos/index.html', page({ title:'À propos de QuelChampagne — Le conseiller indépendant', desc:'QuelChampagne aide à choisir une cuvée selon le moment, le style et le budget, à partir de données produit contrôlées et d’analyses structurées.', canonical:BASE+'/a-propos/', active:'about', main:aboutMain() }));
 add(BASE+'/a-propos/', '0.6', 'monthly');
 
 write('mentions-legales/index.html', page({ title:'Mentions légales — QuelChampagne', desc:'Informations sur l’éditeur, l’hébergement, les contenus et l’affiliation du site QuelChampagne.', canonical:BASE+'/mentions-legales/', active:'', main:legalMain() }));
@@ -823,25 +844,23 @@ add(BASE+'/mentions-legales/', '0.3', 'yearly');
 write('confidentialite/index.html', page({ title:'Politique de confidentialité — QuelChampagne', desc:'Traitement des données, stockage local de la confirmation de majorité et services tiers utilisés par QuelChampagne.', canonical:BASE+'/confidentialite/', active:'', main:privacyMain() }));
 add(BASE+'/confidentialite/', '0.3', 'yearly');
 
-// comparatifs éditoriaux
-write('comparatifs/index.html', page({ title:'Comparatifs de champagnes — QuelChampagne', desc:'Des comparatifs directs pour choisir entre deux champagnes selon le style, l’occasion, les accords et le budget.', canonical:BASE+'/comparatifs/', active:'compare', main:comparisonsMain() }));
-add(BASE+'/comparatifs/', '0.8', 'weekly');
-for(const comparison of COMPARISONS){
-  write(`comparatifs/${comparison.id}/index.html`, page({ title:`${comparison.title} | QuelChampagne`, desc:clip(comparison.verdict,155), canonical:`${BASE}/comparatifs/${comparison.id}/`, active:'compare', main:comparisonMain(comparison), graph:[
-    crumbs([{name:'Accueil',url:BASE+'/'},{name:'Comparatifs',url:BASE+'/comparatifs/'},{name:comparison.title,url:`${BASE}/comparatifs/${comparison.id}/`}])
-  ] }));
-  add(`${BASE}/comparatifs/${comparison.id}/`, '0.8', 'monthly');
-}
-
-// product pages
-for(const p of products()){
-  const d = detail(p) || {};
-  const desc = clip(d.advice || p.note,155);
-  write(`champagne/${p.id}/index.html`, page({ title:`${p.house} ${p.name} — Conseils, profil et budget | QuelChampagne`, desc, canonical:`${BASE}/champagne/${p.id}/`, ogImage:OG, active:'shop', main:productMain(p), graph:[
-    {'@type':'Product', name:`${p.house} ${p.name}`, brand:{'@type':'Brand',name:p.house}, category:'Champagne', description:p.note, image:OG},
-    crumbs([{name:'Accueil',url:BASE+'/'},{name:'La sélection',url:BASE+'/champagnes/'},{name:`${p.house} ${p.name}`,url:`${BASE}/champagne/${p.id}/`}])
-  ] }));
-  add(`${BASE}/champagne/${p.id}/`, '0.8', 'monthly');
+// Fiches d'analyse des champagnes disponibles chez le partenaire.
+for(const p of partnerProducts){
+  const slug = p.id;
+  const analysis = boutiqueAnalysisDescription(p);
+  write(`champagne/${slug}/index.html`, page({
+    title:`${p.brand} ${p.name} — Avis, profil et accords | QuelChampagne`,
+    desc:analysis,
+    canonical:`${BASE}/champagne/${slug}/`,
+    ogImage:p.image,
+    active:'shop',
+    main:boutiqueProductMain(p, BUILD_DATE, partnerProducts),
+    graph:[
+      {'@type':'Product',name:`${p.brand} ${p.name}`,brand:{'@type':'Brand',name:p.brand},category:'Champagne',description:analysis,image:p.image,offers:{'@type':'Offer',price:p.price,priceCurrency:'EUR',url:p.buyUrl,seller:{'@type':'Organization',name:'Bottle of Italy'}}},
+      crumbs([{name:'Accueil',url:BASE+'/'},{name:'La sélection',url:BASE+'/champagnes/'},{name:`${p.brand} ${p.name}`,url:`${BASE}/champagne/${slug}/`}])
+    ]
+  }));
+  add(`${BASE}/champagne/${slug}/`, '0.8', 'weekly');
 }
 
 // pages SEO par occasion et style
@@ -878,7 +897,18 @@ ${urls.map(u=>`  <url><loc>${u.loc}</loc><lastmod>${BUILD_DATE}</lastmod><change
 </urlset>`;
 write('sitemap.xml', sitemap);
 write('robots.txt', `User-agent: *\nAllow: /\n\nSitemap: ${BASE}/sitemap.xml\n`);
-write('catalogue.json', `${JSON.stringify(catalogue, null, 2)}\n`);
+write('catalogue.json', `${JSON.stringify(partnerProducts, null, 2)}\n`);
+
+// Cloudflare Pages : préserver les anciennes URL sans republier les fiches.
+const partnerIds=new Set(partnerProducts.map(product=>product.id));
+const legacyRedirects=products()
+  .filter(product=>!partnerIds.has(product.id))
+  .map(product=>`/champagne/${product.id}/ /champagnes/ 301`);
+const comparisonRedirects=[
+  '/comparatifs/ /comparateur/ 301',
+  ...COMPARISONS.map(comparison=>`/comparatifs/${comparison.id}/ /comparateur/ 301`)
+];
+write('_redirects', `${[...legacyRedirects,...comparisonRedirects].join('\n')}\n`);
 
 console.log(`✅ Site statique généré dans dist/`);
-console.log(`   ${products().length} fiches champagne · ${articles().filter(a=>!a.soon).length} articles · ${urls.length} URLs au sitemap`);
+console.log(`   ${partnerProducts.length} fiches publiées · ${articles().filter(a=>!a.soon).length} articles · ${urls.length} URLs au sitemap`);

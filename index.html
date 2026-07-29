@@ -516,14 +516,12 @@ function FALLBACK_PRODUCTS(){
 }
 function prod(id){ return products().find(p=>p.id===id); }
 
-/* Lien d'achat affilié. Le champagne est exclu du Programme Partenaires Amazon
-   (boissons alcoolisées non commissionnées sur les sites Amazon UE/UK) : on ne
-   passe donc PAS par Amazon. Un lien n'apparaît que lorsqu'un caviste affilié
-   (Vinatis via Awin/TradeDoubler, Chateaunet, etc.) fournit une URL vérifiée
-   dans p.aff, et que la fiche est marquée commerceReady après contrôle. */
+/* Lien d'achat affilié. Un lien n'apparaît que lorsqu'un caviste affilié
+   fournit une URL de tracking vérifiée dans p.aff et que la fiche est marquée
+   commerceReady après contrôle du produit et de sa disponibilité. */
 function buyLink(p){
   if(p.commerceReady !== true) return null;
-  if(p.aff && /awin1\.com|tradedoubler|clk\.|effiliation|kwanko/i.test(p.aff)) return p.aff;
+  if(p.aff && /awin1\.com|tradedoubler|ikhnaie\.link|clk\.|effiliation|kwanko/i.test(p.aff)) return p.aff;
   return null;
 }
 function priceText(p){
@@ -751,7 +749,7 @@ function articles(){
 <tr><td>Grande occasion</td><td>90 € et plus</td><td>Millésime identifié</td><td><a href="/champagne/dom-perignon-vintage-2015/">Dom Pérignon 2015</a></td></tr>
 </tbody>
 </table>
-<p>Ces suggestions sont recommandées selon les profils et les sources officielles des maisons, non selon une dégustation de chaque bouteille.</p>
+<p>Ces suggestions s’appuient sur les caractéristiques publiées pour chaque cuvée et sur les critères choisis, non sur une dégustation indépendante de chaque bouteille.</p>
 <h3>3. Tenez compte de la personne</h3>
 <p>Un amateur de fraîcheur sera comblé par un <a href="/champagne/ruinart/">blanc de blancs</a> vif et minéral. Quelqu'un qui aime les vins de caractère préférera une cuvée vineuse et structurée. Pour un palais que vous connaissez mal, un rosé ou un brut équilibré fait presque toujours mouche : ce sont les choix les plus consensuels.</p>
 <h3>4. Maison connue ou vigneron ?</h3>
@@ -975,7 +973,7 @@ function score(p, a){
   const occasionScore = p.occ.includes(occ) ? 20 : 5;
   const availabilityScore = p.editorialReady ? 10 : 0;
   const popularityScore = Math.max(0, Math.min(5, ((p.popularity||70)/100)*5));
-  const producerPenalty = pref && pref!=='any' && p.producerType!==pref ? 30 : 0;
+  const producerPenalty = pref && pref!=='any' && p.producerType!==pref ? 45 : 0;
   return budgetScore + styleScore + occasionScore + availabilityScore + popularityScore - producerPenalty;
 }
 function ranked(){
@@ -1077,9 +1075,9 @@ function renderHome(){
     </div>
     <div class="hero-visual"><img class="pimg" src="/assets/hero-quelchampagne.svg" alt="Deux verres de champagne stylisés" loading="eager" width="1200" height="630"></div>
     <div class="trust-strip">
-      <div class="trust-item"><strong>${products().length} fiches vérifiées</strong><span>Chaque fait produit renvoie vers une source officielle.</span></div>
+      <div class="trust-item"><strong>${products().length} bouteilles disponibles</strong><span>Chaque résultat mène vers une analyse détaillée avant l’offre partenaire.</span></div>
       <div class="trust-item"><strong>Classement indépendant</strong><span>Aucune maison ne paie pour remonter dans le sélecteur.</span></div>
-      <div class="trust-item"><strong>Prix séparés des fiches</strong><span>Une offre n’apparaît qu’après contrôle du format et du stock.</span></div>
+      <div class="trust-item"><strong>Offres contrôlées</strong><span>Une offre n’apparaît qu’après contrôle du produit, du prix et du stock.</span></div>
     </div>
   </div></section>
 
@@ -1088,7 +1086,7 @@ function renderHome(){
     <div class="steps">
       <div class="step"><div class="n">01</div><h3>Répondez</h3><p>Quatre questions sur l'occasion, le style, le budget et le type de producteur.</p></div>
       <div class="step"><div class="n">02</div><h3>Recevez</h3><p>Notre moteur classe le catalogue et fait remonter votre coup de cœur, plus trois alternatives.</p></div>
-      <div class="step"><div class="n">03</div><h3>Comprenez</h3><p>Le résultat explique les critères retenus et ouvre une fiche reliée à sa source officielle.</p></div>
+      <div class="step"><div class="n">03</div><h3>Comprenez</h3><p>Le résultat explique les critères retenus et ouvre une analyse détaillée avant l’achat.</p></div>
     </div>
   </div></section>
 
@@ -1100,7 +1098,7 @@ function renderHome(){
   </div></section>
 
   <section class="section"><div class="container">
-    <div class="sec-head"><div class="h2">La sélection</div><p>${products().length} cuvées vérifiées, chacune reliée à sa source officielle.</p></div>
+    <div class="sec-head"><div class="h2">La sélection</div><p>${products().length} cuvées disponibles, avec prix, photo et fiche d’aide au choix.</p></div>
     <div class="pgrid">${sel}</div>
     <div class="center-cta"><a class="chev" href="/champagnes/">Voir toute la sélection</a></div>
     <div class="maisons" style="margin-top:clamp(40px,5vw,60px)">${maisons}</div>
@@ -1177,10 +1175,9 @@ function renderResult(){
         <div class="rtags">${pills}</div>
         <div class="rbuy">
           <div class="rprice">${priceText(tp)}</div>
-          ${productAction(tp)}
+          <a class="btn btn-accent" href="/champagne/${tp.id}/">Voir l’analyse</a>
         </div>
-        <div class="aff-note">${tp.commerceReady ? `Lien partenaire · Prix et disponibilité contrôlés.` : `Fourchette éditoriale indicative · offre marchande en cours de vérification.`}</div>
-        <a class="chev" href="/champagne/${tp.id}/" style="margin-top:16px; display:inline-flex">Voir la fiche détaillée</a>
+        <div class="aff-note">${tp.commerceReady ? `Prix et disponibilité contrôlés · l’offre partenaire se trouve sur la fiche.` : `Fourchette éditoriale indicative · offre marchande en cours de vérification.`}</div>
       </div>
     </div>
     <div class="alts-head">Vous aimerez aussi</div>
@@ -1211,7 +1208,7 @@ function renderShop(){
   const cards = products().map(productCard).join('');
   app.innerHTML = nav() + `
   <section class="section-lead"><div class="container">
-    <div class="lead-head"><h1 class="h2">La sélection</h1><p>${products().length} champagnes éditorialement prêts, des grandes maisons aux vignerons. Les offres marchandes restent masquées jusqu'à leur contrôle.</p></div>
+    <div class="lead-head"><h1 class="h2">La sélection</h1><p>${products().length} champagnes disponibles, des grandes maisons aux vignerons, avec prix, photo et analyse avant l’achat.</p></div>
   </div></section>
   <section class="section" style="padding-top:0"><div class="container">
     <div class="pgrid">${cards}</div>
