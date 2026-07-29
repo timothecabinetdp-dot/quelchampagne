@@ -18,7 +18,7 @@
  */
 import { readFileSync, writeFileSync, mkdirSync, rmSync, cpSync } from 'node:fs';
 import { buildCatalogue } from './build-catalogue.mjs';
-import { buildPriceIndex } from './build-price-index.mjs';
+import { buildPriceIndex } from './build-price-index.mjs'; import { boutiqueMain } from './boutique.mjs';
 
 const BASE = 'https://quelchampagne.fr';
 const HERO = '/assets/hero-quelchampagne.svg';
@@ -804,7 +804,7 @@ write('selecteur/index.html', selecteurHTML());
 add(BASE+'/selecteur/', '0.8', 'monthly');
 
 // champagnes list
-write('champagnes/index.html', page({ title:'Quel champagne choisir ? Notre sélection de 75 champagnes | QuelChampagne', desc:'Comparez 75 champagnes, des grandes maisons aux vignerons indépendants. Brut, rosé ou blanc de blancs : trouvez la cuvée idéale selon votre budget et votre occasion.', canonical:BASE+'/champagnes/', active:'shop', main:champagnesMain() }));
+write('champagnes/index.html', page({ title:'Quel champagne choisir ? Notre sélection de 75 champagnes | QuelChampagne', desc:'Comparez 75 champagnes, des grandes maisons aux vignerons indépendants. Brut, rosé ou blanc de blancs : trouvez la cuvée idéale selon votre budget et votre occasion.', canonical:BASE+'/champagnes/', active:'shop', main:boutiqueMain() }));
 add(BASE+'/champagnes/', '0.9', 'weekly');
 
 // comparateur interactif
