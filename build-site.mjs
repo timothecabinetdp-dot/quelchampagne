@@ -773,9 +773,9 @@ function selecteurHTML(){
   h = h.replace("function openProduct(id){ state.product=id; state.view='product'; render(); }", "function openProduct(id){ location.href='/champagne/'+id+'/'; }");
   h = h.replace("function openArticle(id){ state.article=id; state.view='article'; render(); }", "function openArticle(id){ location.href='/blog/'+id+'/'; }");
   h = h.replace("const state = { view:'home'", "const state = { view:'quiz'");
-  h = h.replace('<title>Quel champagne choisir ? Le guide indépendant | QuelChampagne</title>', '<title>Sélecteur de champagne — Une recommandation en 4 questions | QuelChampagne</title>');
-  h = h.replace('content="Quel champagne choisir selon l’occasion, le style et le budget ? Notre sélecteur indépendant et nos comparatifs vous orientent vers la bonne cuvée en quatre questions."', 'content="Répondez à quatre questions sur l’occasion, le style, le budget et le producteur pour obtenir une recommandation de champagne argumentée."');
-  h = h.replace('content="Quel champagne choisir ? Le guide indépendant | QuelChampagne"', 'content="Sélecteur de champagne — Une recommandation en 4 questions | QuelChampagne"');
+  h = h.replace('<title>QuelChampagne — Trouvez le champagne fait pour vous</title>', '<title>Sélecteur de champagne — Une recommandation en 4 questions | QuelChampagne</title>');
+  h = h.replace('content="Le sélecteur indépendant qui vous oriente vers la cuvée juste en quatre questions, à partir de fiches vérifiées."', 'content="Répondez à quatre questions sur l’occasion, le style, le budget et le producteur pour obtenir une recommandation de champagne argumentée."');
+  h = h.replace('content="QuelChampagne — Trouvez le champagne fait pour vous"', 'content="Sélecteur de champagne — Une recommandation en 4 questions | QuelChampagne"');
   h = h.replace('content="Quatre questions, une recommandation sur mesure et des fiches reliées à leurs sources."', 'content="Répondez à quatre questions sur l’occasion, le style, le budget et le producteur pour obtenir une recommandation de champagne argumentée."');
   h = h.replace('content="https://quelchampagne.fr"', 'content="https://quelchampagne.fr/selecteur/"');
   // canonical
