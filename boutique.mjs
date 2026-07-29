@@ -178,7 +178,7 @@ export function boutiqueProductMain(p, buildDate, catalogue=CHAMPAGNES){
         <p class="bqp-lead">${a.summary}</p>
         <div class="bq-tags">${tags}</div>
         <div class="bqp-price"><strong>${EUR(p.price)}</strong>${old}${saving?`<span class="bq-cut">-${saving}%</span>`:''}</div>
-        <a class="btn btn-primary btn-lg" href="${esc(p.aff||p.buyUrl||'')}" target="_blank" rel="sponsored nofollow noopener">Voir l’offre chez Bottle of Italy</a>
+        <a class="btn btn-primary btn-lg" href="${esc(p.buyUrl)}" target="_blank" rel="sponsored nofollow noopener">Voir l’offre chez Bottle of Italy</a>
         <p class="bqp-partner">Lien affilié · Prix et disponibilité chez le partenaire, relevés le ${formattedDate}.</p>
       </div>
     </div>
@@ -209,7 +209,7 @@ export function boutiqueProductMain(p, buildDate, catalogue=CHAMPAGNES){
 
     <div class="bqp-buy">
       <div><div class="pblock-eyebrow">Offre partenaire</div><h2>${esc(p.brand)} ${esc(p.name)}</h2><p>Vérifiez le prix final, le stock, le millésime et les frais de livraison avant de commander.</p></div>
-      <a class="btn btn-primary btn-lg" href="${esc(p.aff||p.buyUrl||'')}" target="_blank" rel="sponsored nofollow noopener">Consulter l’offre partenaire</a>
+      <a class="btn btn-primary btn-lg" href="${esc(p.buyUrl)}" target="_blank" rel="sponsored nofollow noopener">Consulter l’offre partenaire</a>
     </div>
 
     ${related?`<div class="bqp-related"><div class="sec-head"><h2 class="h2">Dans un style proche</h2><p>Trois alternatives au positionnement comparable.</p></div><div class="bq-grid">${related}</div></div>`:''}
