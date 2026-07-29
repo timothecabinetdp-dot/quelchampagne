@@ -341,7 +341,7 @@ function homeMain(){
   <section class="hero-photo" style="--hero-img:url('${HERO_PHOTO}')">
     <div class="bubbles" id="bubbles" aria-hidden="true"></div>
     <div class="container">
-      <h1>Le champagne<br>fait pour vous.</h1>
+      <h1>Quel champagne<br>est fait pour vous ?</h1>
       <p class="lead">Quatre questions suffisent pour trouver le vôtre.</p>
       <div class="hero-cta"><a class="btn btn-primary btn-lg" href="/selecteur/">Trouver mon champagne</a><a class="chev" href="/notre-methode/">Comprendre notre méthode</a></div>
     </div>
@@ -574,7 +574,7 @@ function comparisonsMain(){
     const a=prod(c.a), b=prod(c.b);
     return `<a class="acard" href="/comparatifs/${c.id}/"><div class="acard-b"><div class="a-cat">Comparatif</div><h3>${c.title}</h3><p>${c.question}</p><div class="acard-meta">${a.house} ${a.name} · ${b.house} ${b.name}</div></div></a>`;
   }).join('');
-  return `<section class="section"><div class="container"><div class="lead-head"><h1 class="h2">Les comparatifs QuelChampagne</h1><p>Des réponses directes à de vraies hésitations d'achat, fondées sur les fiches vérifiées.</p></div><div class="cards" style="margin-top:36px">${cards}</div></div></section>`;
+  return `<section class="section"><div class="container"><div class="lead-head"><h1 class="h2">Comparatifs de champagnes</h1><p>Des réponses directes à de vraies hésitations d'achat, fondées sur les fiches vérifiées.</p></div><div class="cards" style="margin-top:36px">${cards}</div></div></section>`;
 }
 
 function comparisonMain(c){
@@ -598,7 +598,7 @@ function decisionGuide(p){
 function blogMain(){
   const cards = articles().map(articleCard).join('');
   return `<section class="blogpage"><div class="container">
-    <div class="sec-head" style="text-align:left;margin-left:0"><h1 class="h2">Le journal</h1><p>Guides pratiques, décryptages et sélections pour profiter du champagne sans fausse note.</p></div>
+    <div class="sec-head" style="text-align:left;margin-left:0"><h1 class="h2">Le blog du champagne</h1><p>Guides pratiques, décryptages et sélections pour profiter du champagne sans fausse note.</p></div>
     <div class="cards">${cards}</div>
   </div></section>`;
 }
@@ -773,9 +773,9 @@ function selecteurHTML(){
   h = h.replace("function openProduct(id){ state.product=id; state.view='product'; render(); }", "function openProduct(id){ location.href='/champagne/'+id+'/'; }");
   h = h.replace("function openArticle(id){ state.article=id; state.view='article'; render(); }", "function openArticle(id){ location.href='/blog/'+id+'/'; }");
   h = h.replace("const state = { view:'home'", "const state = { view:'quiz'");
-  h = h.replace('<title>QuelChampagne — Trouvez le champagne fait pour vous</title>', '<title>Sélecteur de champagne — Une recommandation en 4 questions | QuelChampagne</title>');
-  h = h.replace('content="Le sélecteur indépendant qui vous oriente vers la cuvée juste en quatre questions, à partir de fiches vérifiées."', 'content="Répondez à quatre questions sur l’occasion, le style, le budget et le producteur pour obtenir une recommandation de champagne argumentée."');
-  h = h.replace('content="QuelChampagne — Trouvez le champagne fait pour vous"', 'content="Sélecteur de champagne — Une recommandation en 4 questions | QuelChampagne"');
+  h = h.replace('<title>Quel champagne choisir ? Le guide indépendant | QuelChampagne</title>', '<title>Sélecteur de champagne — Une recommandation en 4 questions | QuelChampagne</title>');
+  h = h.replace('content="Quel champagne choisir selon l’occasion, le style et le budget ? Notre sélecteur indépendant et nos comparatifs vous orientent vers la bonne cuvée en quatre questions."', 'content="Répondez à quatre questions sur l’occasion, le style, le budget et le producteur pour obtenir une recommandation de champagne argumentée."');
+  h = h.replace('content="Quel champagne choisir ? Le guide indépendant | QuelChampagne"', 'content="Sélecteur de champagne — Une recommandation en 4 questions | QuelChampagne"');
   h = h.replace('content="Quatre questions, une recommandation sur mesure et des fiches reliées à leurs sources."', 'content="Répondez à quatre questions sur l’occasion, le style, le budget et le producteur pour obtenir une recommandation de champagne argumentée."');
   h = h.replace('content="https://quelchampagne.fr"', 'content="https://quelchampagne.fr/selecteur/"');
   // canonical
@@ -796,7 +796,7 @@ const urls = [];
 function add(loc, prio, freq){ urls.push({loc, prio, freq}); }
 
 // home
-write('index.html', page({ title:'QuelChampagne — Trouvez le champagne fait pour vous', desc:'Le sélecteur indépendant qui vous oriente vers la cuvée juste en quatre questions, à partir de fiches vérifiées.', canonical:BASE+'/', active:'home', main:homeMain() }));
+write('index.html', page({ title:'Quel champagne choisir ? Le guide indépendant | QuelChampagne', desc:'Quel champagne choisir selon l’occasion, le style et le budget ? Notre sélecteur indépendant et nos comparatifs vous orientent vers la bonne cuvée en quatre questions.', canonical:BASE+'/', active:'home', main:homeMain() }));
 add(BASE+'/', '1.0', 'weekly');
 
 // selecteur
@@ -851,7 +851,7 @@ for(const landing of SEO_LANDINGS){
 }
 
 // blog list
-write('blog/index.html', page({ title:'Le journal du champagne — QuelChampagne', desc:'Guides, décryptages et sélections pour bien choisir, accorder et servir le champagne.', canonical:BASE+'/blog/', active:'blog', main:blogMain() }));
+write('blog/index.html', page({ title:'Blog champagne : guides, accords et conseils | QuelChampagne', desc:'Guides, décryptages et sélections pour bien choisir, accorder et servir le champagne.', canonical:BASE+'/blog/', active:'blog', main:blogMain() }));
 add(BASE+'/blog/', '0.9', 'weekly');
 
 // article pages
