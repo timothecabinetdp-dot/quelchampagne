@@ -401,7 +401,7 @@ function champagnesMain(){
   }).join('');
   const guides = SEO_LANDINGS.map(landing=>`<a class="tag" href="/champagne/${landing.id}/">${landing.title}</a>`).join('');
   return `
-  <section class="page-hero" style="--ph-img:url('${SELECTION_PHOTO}')"><div class="container"><div class="lead-head"><h1 class="h2">La sélection</h1><p>${products().length} champagnes éditorialement prêts, des grandes maisons aux vignerons. Les offres marchandes restent masquées jusqu'à leur contrôle.</p><div class="rtags" style="margin-top:22px">${guides}</div></div></div></section>
+  <section class="page-hero" style="--ph-img:url('${SELECTION_PHOTO}')"><div class="container"><div class="lead-head"><h1 class="h2">La sélection</h1><p>${products().length} cuvées choisies une à une, des grandes maisons aux vignerons de caractère. Aucune maison ne paie pour remonter.</p><div class="rtags" style="margin-top:22px">${guides}</div></div></div></section>
   <section class="section" style="padding-top:0"><div class="container">
     <form class="catalogue-tools" id="catalogue-tools" role="search">
       <label class="sr-only" for="catalogue-search">Rechercher une maison, une cuvée ou un accord</label>
