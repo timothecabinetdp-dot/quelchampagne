@@ -435,7 +435,7 @@ h1,.hero-photo h1,.page-hero h1{font-family:var(--display);font-weight:900;text-
 .hero-photo .btn-primary:hover::before{animation:corkFly .85s cubic-bezier(.2,-.4,.3,1)}
 .hero-photo .btn-primary:hover::after{animation:corkFizz .7s ease-out .02s}
 @keyframes corkFly{0%{opacity:1;transform:translate(0,0) rotate(0)}30%{opacity:1;transform:translate(4px,-34px) rotate(130deg)}100%{opacity:0;transform:translate(15px,-70px) rotate(430deg)}}
-@keyframes corkFizz{0%{opacity:1;transform:translate(0,0) scale(1)}100%{opacity:0;transform:translate(9px,-30px) scale(.3)}}
+@keyframes corkFizz{0%{opacity:1;transform:translate(0,0) scale(1)}100%{opacity:0;transform:translate(9px,-30px) scale(.3)}}.page-hero::before{display:none!important}.page-hero{background:radial-gradient(130% 130% at 80% -25%,#221d13 0%,#0e0c08 60%)}.page-hero::after{background:linear-gradient(180deg,rgba(13,11,7,.12),rgba(13,11,7,.5))}.page-hero p{max-width:640px}.page-hero .tag{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.22);color:#fff}.page-hero .tag:hover{background:rgba(255,255,255,.14)}
 
 </style>
 </head>
@@ -1039,7 +1039,7 @@ function nav(){
       <a class="nlink ${state.view==='shop'||state.view==='product'?'on':''}" href="/champagnes/">La sélection</a>
       <a class="nlink" href="/comparateur/">Comparer</a>
       <a class="nlink ${state.view==='blog'||state.view==='article'?'on':''}" href="/blog/">Blog</a>
-      <button class="nlink-cta" onclick="startQuiz()"><svg width="12" height="15" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.4 5H15.6L14.2 12.3A2.7 2.7 0 0 1 9.8 12.3Z" fill="#F3E7C9" stroke="#9C7A34" stroke-width="1.5"/><line x1="12" y1="14.4" x2="12" y2="20" stroke="#9C7A34" stroke-width="1.5"/><line x1="9" y1="20.4" x2="15" y2="20.4" stroke="#9C7A34" stroke-width="1.5"/></svg>Trouver mon champagne</button>
+      <button class="nlink-cta" onclick="startQuiz()"><svg width="11" height="15" viewBox="0 0 48 64" aria-hidden="true"><path d="M8 16C8 7.7 14.7 2 24 2s16 5.5 16 14c0 6.3-3.6 10.2-9 13.8-4.4 3-6.2 5.7-6.2 10.2" stroke="#9C7A34" stroke-width="4.8" stroke-linecap="round" fill="none"/><path d="M16 47h16c-.7 4.4-3.7 6.8-8 6.8s-7.3-2.4-8-6.8Z" fill="#9C7A34"/><path d="M24 53.3v6.2M19.5 61.5h9" stroke="#9C7A34" stroke-width="2.2" stroke-linecap="round"/></svg>Trouver mon champagne</button>
     </nav>
   </div></header>`;
 }
