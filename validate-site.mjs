@@ -326,7 +326,19 @@ for (const slug of ['aperitif', 'cadeau', 'repas', 'rose', 'blanc-de-blancs', 'm
 }
 for (const product of PARTNER_CATALOGUE) {
   const page = new URL(`dist/champagne/${product.id}/index.html`, ROOT);
-  if (!existsSync(page)) errors.push(`Fiche partenaire manquante : /champagne/${product.id}/.`);
+  if (!existsSync(page)) {
+    errors.push(`Fiche partenaire manquante : /champagne/${product.id}/.`);
+    continue;
+  }
+  const html=readFileSync(page,'utf8');
+  const sponsoredLinks=[...html.matchAll(/<a[^>]+href="([^"]*)"[^>]+rel="[^"]*sponsored[^"]*"[^>]*>/gi)].map(match=>match[1]);
+  if (sponsoredLinks.length<2) errors.push(`Deux boutons d’achat affiliés attendus : /champagne/${product.id}/.`);
+  if (sponsoredLinks.some(href=>!/^https:\/\/assets\.ikhnaie\.link\//.test(href))) {
+    errors.push(`Bouton d’achat vide ou non affilié : /champagne/${product.id}/.`);
+  }
+  if (html.includes('FRutm_source') || /href="(?:undefined|null)?"/.test(html)) {
+    errors.push(`Lien d’achat mal formé : /champagne/${product.id}/.`);
+  }
 }
 const partnerIds = new Set(PARTNER_CATALOGUE.map(product=>product.id));
 for (const product of catalogue.filter(product=>!partnerIds.has(product.id))) {
@@ -355,6 +367,14 @@ if (!selector.includes('assets.ikhnaie.link')) errors.push('Le sélecteur n’em
 if (/render\(\);\s*loadCatalogue\(\);/.test(selector)) errors.push('Le sélecteur remplace encore le catalogue partenaire par l’ancien catalogue au chargement.');
 if (selector.includes('${productAction(tp)}')) errors.push('Le résultat principal du quiz contourne encore la fiche d’analyse.');
 if (!selector.includes('href="/champagne/${tp.id}/">Voir l’analyse</a>')) errors.push('Le résultat principal du quiz ne mène pas à la fiche d’analyse.');
+if (selector.includes('% de correspondance') || selector.includes('class="mm"')) errors.push('Un pourcentage de correspondance est encore affiché dans le résultat du quiz.');
+if (/\d+(?:[.,]\d+)?\s*€\s*[–-]\s*\d+(?:[.,]\d+)?\s*€/.test(selector)) errors.push('Le quiz affiche encore une fourchette au lieu du prix marchand exact.');
+if (!selector.includes("new Intl.NumberFormat('fr-FR',{style:'currency',currency:'EUR'")) errors.push('Le formatage précis des prix du quiz est absent.');
+if (!selector.includes("--sans:'Archivo'") || selector.includes("font-family:'InterV'")) errors.push('La typographie du contenu n’utilise pas exclusivement Archivo.');
+if (selector.includes('cuvée juste') || selector.includes('fait le tri pour vous')) errors.push('Une formulation artificielle subsiste dans le sélecteur.');
+if (selector.includes('background:radial-gradient(120% 120% at 50% 12%,#ffffff 0%,#f4f2ed 100%)') || selector.includes('background:#F3F0E9')) {
+  errors.push('Un ancien fond crème subsiste derrière les bouteilles du sélecteur.');
+}
 if (!selector.includes("const state = { view:'quiz'")) errors.push('Le sélecteur ne démarre pas directement sur le questionnaire.');
 if (!selector.includes('<h1 class="qtitle">${q.q}</h1>')) errors.push('La question active du sélecteur n’est pas exposée comme titre principal.');
 if (!existsSync(new URL('dist/assets/hero-quelchampagne.svg', ROOT))) errors.push('Illustration originale principale absente du build.');
@@ -374,6 +394,7 @@ for (const file of htmlFiles.filter(path => path.includes('/champagne/') && !pat
   const html = readFileSync(file, 'utf8');
   if (!html.includes('À choisir si…') || !html.includes('À éviter si…')) errors.push(`Aide à la décision absente de ${file.replace(DIST.pathname, '')}.`);
 }
+if (existsSync(new URL('deploy.bat', ROOT))) errors.push('L’ancien script de déploiement Netlify est encore présent.');
 
 if (errors.length) {
   console.error(`Validation échouée (${errors.length} erreur${errors.length > 1 ? 's' : ''}) :`);

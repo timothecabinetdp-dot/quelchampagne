@@ -15,6 +15,6 @@
   },
   "notes": {
     "merchantOffersActivated": "48 offres Bottle of Italy activées via Webgains. Les cartes ouvrent d’abord une fiche d’analyse QuelChampagne ; seuls les boutons présents sur les fiches utilisent les liens affiliés.",
-    "deploymentAuthorized": "Autorisé : identité éditeur Cortexia (SAS, SIREN 107124000, RCS Paris), hébergeur Netlify et confidentialité renseignés ; validations techniques OK."
+    "deploymentAuthorized": "Autorisé : identité éditeur Cortexia (SAS, SIREN 107124000, RCS Paris), hébergement Cloudflare Pages et confidentialité renseignés ; validations techniques OK."
   }
 }

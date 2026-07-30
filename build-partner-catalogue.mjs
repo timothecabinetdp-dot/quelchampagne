@@ -171,21 +171,21 @@ function specificText(product, tags, grapes, aromas, pairings, scores){
   const grapeText=grapes.length ? ` Les cépages mentionnés sont ${grapes.join(', ')}.` : '';
   const pairingText=pairings.length ? pairings.slice(0,3).map(item=>item.label).join(', ') : 'l’apéritif et un repas léger';
   const structure = scores.power>=4
-    ? 'Sa structure la destine davantage à la table qu’à un simple toast.'
+    ? 'Sa structure marquée la rend plus à l’aise à table qu’au seul apéritif.'
     : scores.freshness>=4
-      ? 'Sa fraîcheur attendue en fait une option particulièrement lisible à l’apéritif.'
-      : 'Son équilibre la rend polyvalente entre apéritif et début de repas.';
-  const note=`Un champagne ${style} dont la fiche du marchand fait ressortir ${aromaText}.${grapeText} ${structure}`;
+      ? 'Son profil frais la destine surtout à l’apéritif et aux accords légers.'
+      : 'Son équilibre permet de la servir à l’apéritif comme au début du repas.';
+  const note=`Cette cuvée est présentée comme un champagne ${style}. Les informations disponibles mentionnent ${aromaText}.${grapeText} ${structure}`;
   const freshness=scores.freshness>=4?'une fraîcheur marquée':scores.freshness<=2?'une fraîcheur mesurée':'une fraîcheur équilibrée';
   const structureLabel=scores.power>=4?'une structure affirmée':scores.power<=2?'une structure légère':'une structure équilibrée';
-  const advice=`Choisissez cette cuvée pour ${freshness}, ${structureLabel} et des accords particulièrement cohérents avec ${pairingText}.`;
+  const advice=`À retenir si vous appréciez ${freshness} et ${structureLabel}, notamment avec ${pairingText}.`;
   const avoid=scores.freshness>=4
-    ? `À éviter si vous recherchez avant tout une sensation très ronde et douce : son registre met davantage en avant ${aromas.slice(0,2).join(' et ')||'la tension et la fraîcheur'}.`
+    ? `Elle conviendra moins si vous recherchez surtout un champagne rond et doux : son registre met davantage en avant ${aromas.slice(0,2).join(' et ')||'la tension et la fraîcheur'}.`
     : scores.power>=4
-      ? `À éviter si vous souhaitez un champagne très léger et exclusivement apéritif : sa matière vise plutôt ${pairingText}.`
+      ? `Elle conviendra moins à un apéritif très léger : sa matière appelle plutôt ${pairingText}.`
       : tags.includes('Demi-sec')
-        ? 'À éviter avec des huîtres ou si vous recherchez une finale très sèche : la douceur annoncée appelle plutôt le dessert.'
-        : `À éviter si vous recherchez un style volontairement extrême, très tendu ou très puissant : cette cuvée privilégie la polyvalence autour de ${pairingText}.`;
+        ? 'Elle conviendra moins avec des huîtres ou si vous recherchez une finale très sèche : la douceur annoncée appelle plutôt le dessert.'
+        : `Elle conviendra moins si vous recherchez un style très tendu ou très puissant : cette cuvée privilégie l’équilibre autour de ${pairingText}.`;
   return {note,advice,avoid};
 }
 

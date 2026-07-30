@@ -191,8 +191,8 @@ export function boutiqueProductMain(p, buildDate, catalogue=CHAMPAGNES){
     </div>
 
     <div class="bqp-panel">
-      <div class="pblock-eyebrow">Lecture du style</div><h2>Le profil que suggère la catégorie</h2>
-      <p class="bqp-copy">Style identifié : <strong>${a.style}</strong>. Arômes ou marqueurs mentionnés par le marchand : <strong>${a.expected}</strong>. Notre lecture sert à orienter le choix ; elle distingue les faits fournis par le partenaire de notre interprétation éditoriale.</p>
+      <div class="pblock-eyebrow">Style</div><h2>Profil gustatif</h2>
+      <p class="bqp-copy">D’après les informations disponibles, cette cuvée appartient au registre <strong>${a.style}</strong>. Les arômes signalés sont <strong>${a.expected}</strong>. Ces éléments facilitent la comparaison entre bouteilles ; ils ne remplacent pas une dégustation.</p>
       <div class="bqp-gauges">${gauge('Fraîcheur',a.gauges.fraicheur)}${gauge('Rondeur',a.gauges.rondeur)}${gauge('Puissance',a.gauges.puissance)}${gauge('Facilité d’accès',a.gauges.accessibilite)}</div>
     </div>
 
@@ -202,7 +202,7 @@ export function boutiqueProductMain(p, buildDate, catalogue=CHAMPAGNES){
     </div>
 
     <div class="bqp-panel">
-      <div class="pblock-eyebrow">Transparence</div><h2>Ce qui est vérifié — et ce qui reste à confirmer</h2>
+      <div class="pblock-eyebrow">Transparence</div><h2>Informations vérifiées</h2>
       <div class="bqp-facts"><span class="bqp-fact"><small>Catégorie indiquée</small><strong>${a.style}</strong></span>${classification}${vintage}<span class="bqp-fact"><small>Prix partenaire relevé</small><strong>${EUR(p.price)}</strong></span></div>
       <p class="bqp-muted">${p.details?.facts||'La photo, la dénomination, les catégories et le prix proviennent du flux du partenaire.'} ${p.identityStatus==='merchant_feed_year_to_verify'?'Le millésime affiché dans le flux doit encore être confirmé sur l’étiquette ou par le producteur.':''}</p>
     </div>
@@ -212,19 +212,19 @@ export function boutiqueProductMain(p, buildDate, catalogue=CHAMPAGNES){
       <a class="btn btn-primary btn-lg" href="${esc(p.aff||p.buyUrl||'')}" target="_blank" rel="sponsored nofollow noopener">Consulter l’offre partenaire</a>
     </div>
 
-    ${related?`<div class="bqp-related"><div class="sec-head"><h2 class="h2">Dans un style proche</h2><p>Trois alternatives au positionnement comparable.</p></div><div class="bq-grid">${related}</div></div>`:''}
+    ${related?`<div class="bqp-related"><div class="sec-head"><h2 class="h2">Dans un style proche</h2><p>Trois bouteilles proches par leur style et leur prix.</p></div><div class="bq-grid">${related}</div></div>`:''}
   </div></section>
   <style>
-    .bq-name a{color:inherit;text-decoration:none}.bqp{padding:clamp(36px,6vw,84px) 0 90px;background:#faf8f4;color:#14110c}
+    .bq-name a{color:inherit;text-decoration:none}.bqp{padding:clamp(36px,6vw,84px) 0 90px;background:#F4F4F1;color:#14110c}
     .bqp-hero{display:grid;grid-template-columns:minmax(280px,.85fr) minmax(320px,1.15fr);gap:clamp(34px,7vw,92px);align-items:center;margin-top:28px}
-    .bqp-visual{min-height:540px;border:1px solid #e9e4da;border-radius:24px;background:radial-gradient(100% 80% at 50% 15%,#fff 0%,#f2eee6 100%);display:grid;place-items:center;padding:40px}
-    .bqp-visual img{width:100%;height:500px;object-fit:contain;mix-blend-mode:multiply}.bqp-intro h1{font-family:Georgia,serif;font-size:clamp(40px,5.3vw,72px);line-height:1.02;letter-spacing:-.035em;margin:12px 0 22px}
+    .bqp-visual{min-height:540px;border:1px solid #deded8;background:#fff;display:grid;place-items:center;padding:40px}
+    .bqp-visual img{width:100%;height:500px;object-fit:contain;mix-blend-mode:multiply}.bqp-intro h1{font-family:var(--display);font-size:clamp(40px,5.3vw,72px);font-weight:900;text-transform:uppercase;line-height:.95;letter-spacing:-.025em;margin:12px 0 22px}
     .bqp-lead{font-size:18px;line-height:1.75;color:#5f5a51;max-width:62ch}.bqp-price{display:flex;align-items:center;gap:12px;margin:28px 0 22px}.bqp-price>strong{font-size:30px}.bqp-old{text-decoration:line-through;color:#817a6f}.bqp-partner,.bqp-muted{font-size:13px;line-height:1.65;color:#777067}.bqp-partner{margin-top:12px}
-    .bqp-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:22px;margin-top:22px}.bqp-panel{background:#fff;border:1px solid #e9e4da;border-radius:20px;padding:clamp(24px,4vw,42px);margin-top:22px}.bqp-panel h2,.bqp-buy h2{font-family:Georgia,serif;font-size:clamp(26px,3vw,38px);line-height:1.12;margin:8px 0 18px}.bqp-panel p{line-height:1.75;color:#5f5a51}
-    .bqp-copy{max-width:76ch}.bqp-gauges{display:grid;grid-template-columns:1fr 1fr;gap:22px 34px;margin-top:30px}.bqp-gauge>div:first-child{display:flex;justify-content:space-between;font-size:13px;margin-bottom:8px}.bqp-track{height:7px;border-radius:999px;background:#eee9df;overflow:hidden}.bqp-track i{display:block;height:100%;background:#a9803f;border-radius:inherit}
-    .bqp-list{list-style:none;padding:0;margin:0;display:grid;gap:10px}.bqp-list li{padding:13px 16px;background:#faf8f4;border-radius:10px}.bqp-list li:before{content:'✓';color:#a9803f;font-weight:700;margin-right:10px}
+    .bqp-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:22px;margin-top:22px}.bqp-panel{background:#fff;border:1px solid #deded8;padding:clamp(24px,4vw,42px);margin-top:22px}.bqp-panel h2,.bqp-buy h2{font-family:var(--display);font-size:clamp(26px,3vw,38px);font-weight:800;line-height:1.04;margin:8px 0 18px}.bqp-panel p{line-height:1.75;color:#5f5a51}
+    .bqp-copy{max-width:76ch}.bqp-gauges{display:grid;grid-template-columns:1fr 1fr;gap:22px 34px;margin-top:30px}.bqp-gauge>div:first-child{display:flex;justify-content:space-between;font-size:13px;margin-bottom:8px}.bqp-track{height:7px;background:#e5e5e0;overflow:hidden}.bqp-track i{display:block;height:100%;background:#a9803f}
+    .bqp-list{list-style:none;padding:0;margin:0;display:grid;gap:10px}.bqp-list li{padding:13px 16px;background:#F4F4F1}.bqp-list li:before{content:'✓';color:#a9803f;font-weight:700;margin-right:10px}
     .bqp-facts{display:flex;flex-wrap:wrap;gap:12px;margin:22px 0}.bqp-fact{display:flex;flex-direction:column;gap:3px;padding:13px 16px;border:1px solid #e9e4da;border-radius:12px}.bqp-fact small{color:#777067}.bqp-buy{margin-top:22px;background:#17140f;color:#fff;border-radius:20px;padding:clamp(26px,4vw,44px);display:flex;justify-content:space-between;align-items:center;gap:28px}.bqp-buy p{color:#cbc5bb;margin:0}.bqp-related{margin-top:70px}
-    .bqp-related .bq-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.bqp-related .bq-card{display:flex;flex-direction:column;background:#fff;border:1px solid #e9e4da;border-radius:16px;overflow:hidden;transition:transform .2s ease,box-shadow .2s ease}.bqp-related .bq-card:hover{transform:translateY(-4px);box-shadow:0 18px 40px -22px rgba(20,17,12,.28)}.bqp-related .bq-media{position:relative;display:block;aspect-ratio:1/1;background:radial-gradient(120% 120% at 50% 10%,#fff 0%,#faf8f4 100%);padding:18px}.bqp-related .bq-media img{width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply}.bqp-related .bq-body{display:flex;flex-direction:column;gap:8px;padding:16px 16px 18px;flex:1}.bqp-related .bq-brand{font-size:11px;letter-spacing:.11em;text-transform:uppercase;color:#a9803f;font-weight:700}.bqp-related .bq-name{font-size:15px;line-height:1.32;font-weight:600;margin:0;min-height:2.4em}.bqp-related .bq-tags{display:flex;flex-wrap:wrap;gap:6px}.bqp-related .bq-tag{font-size:11px;color:#6f6a61;border:1px solid #e9e4da;border-radius:999px;padding:3px 9px}.bqp-related .bq-foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:10px;padding-top:12px}.bqp-related .bq-price{display:flex;flex-direction:column;font-weight:700;font-size:16px}.bqp-related .bq-old{font-size:12px;font-weight:500;color:#6f6a61;text-decoration:line-through}.bqp-related .bq-btn{background:#14110c;color:#fff;border-radius:999px;padding:9px 14px;font-size:12px;font-weight:600;text-decoration:none;white-space:nowrap}
+    .bqp-related .bq-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.bqp-related .bq-card{display:flex;flex-direction:column;background:#fff;border:1px solid #deded8;overflow:hidden;transition:transform .2s ease,box-shadow .2s ease}.bqp-related .bq-card:hover{transform:translateY(-4px);box-shadow:0 18px 40px -22px rgba(20,17,12,.28)}.bqp-related .bq-media{position:relative;display:block;aspect-ratio:1/1;background:#fff;padding:18px}.bqp-related .bq-media img{width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply}.bqp-related .bq-body{display:flex;flex-direction:column;gap:8px;padding:16px 16px 18px;flex:1}.bqp-related .bq-brand{font-size:11px;letter-spacing:.11em;text-transform:uppercase;color:#a9803f;font-weight:700}.bqp-related .bq-name{font-size:15px;line-height:1.32;font-weight:600;margin:0;min-height:2.4em}.bqp-related .bq-tags{display:flex;flex-wrap:wrap;gap:6px}.bqp-related .bq-tag{font-size:11px;color:#6f6a61;border:1px solid #deded8;padding:3px 9px}.bqp-related .bq-foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:10px;padding-top:12px}.bqp-related .bq-price{display:flex;flex-direction:column;font-weight:700;font-size:16px}.bqp-related .bq-old{font-size:12px;font-weight:500;color:#6f6a61;text-decoration:line-through}.bqp-related .bq-btn{background:#14110c;color:#fff;padding:9px 14px;font-size:12px;font-weight:600;text-decoration:none;white-space:nowrap}
     @media(max-width:760px){.bqp-hero,.bqp-grid{grid-template-columns:1fr}.bqp-visual{min-height:360px}.bqp-visual img{height:330px}.bqp-gauges{grid-template-columns:1fr}.bqp-buy{align-items:flex-start;flex-direction:column}.bqp-intro h1{font-size:42px}.bqp-related .bq-grid{grid-template-columns:1fr}}
   </style>`;
 }
@@ -266,7 +266,7 @@ export function boutiqueMain(items=CHAMPAGNES){
     .bq-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(232px,1fr));gap:22px}
     .bq-card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--bq-line);border-radius:16px;overflow:hidden;transition:transform .2s ease,box-shadow .2s ease}
     .bq-card:hover{transform:translateY(-4px);box-shadow:0 18px 40px -22px rgba(20,17,12,.28)}
-    .bq-media{position:relative;display:block;aspect-ratio:1/1;background:radial-gradient(120% 120% at 50% 10%,#fff 0%,var(--bq-bg) 100%);padding:18px}
+    .bq-media{position:relative;display:block;aspect-ratio:1/1;background:#fff;padding:18px}
     .bq-media img{width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply}
     .bq-cut{position:absolute;top:12px;left:12px;z-index:2;background:var(--bq-gold);color:#fff;font-size:11px;font-weight:700;letter-spacing:.03em;padding:4px 8px;border-radius:999px}
     .bq-body{display:flex;flex-direction:column;gap:8px;padding:16px 16px 18px;flex:1}
