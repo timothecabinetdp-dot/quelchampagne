@@ -1,5 +1,6 @@
 {
-  "updatedAt": "2026-07-29",
+  "releaseVersion": "4.0.0",
+  "updatedAt": "2026-07-30",
   "deploymentAuthorized": true,
   "checks": {
     "technicalValidation": true,
