@@ -141,9 +141,9 @@ h1{font-size:clamp(42px,7vw,80px); font-weight:600; line-height:1.04; letter-spa
 .soon-badge{font-size:12px; font-weight:500; color:var(--faint)}
 .center-cta{text-align:center; margin-top:48px}
 
-.quiz{min-height:calc(100vh - 52px);padding:clamp(40px,6vw,72px) 0 clamp(56px,7vw,88px);background:#F4F4F1}
+.quiz{min-height:calc(100vh - 52px);padding:clamp(40px,6vw,72px) 0 clamp(56px,7vw,88px);background:#fff}
 .qbar{display:flex; align-items:center; gap:16px; margin-bottom:clamp(40px,5vw,56px)}
-.qback{width:40px; height:40px; border-radius:50%; background:#fff; border:1px solid var(--border); display:grid; place-items:center; color:var(--muted); font-size:17px; transition:.18s; flex:none}
+.qback{width:40px; height:40px; border-radius:50%; background:transparent; border:1px solid var(--border); display:grid; place-items:center; color:var(--muted); font-size:17px; transition:.18s; flex:none}
 .qback:hover{border-color:var(--ink); color:var(--ink)}
 .qprog{flex:1; height:4px; border-radius:999px; background:var(--line); overflow:hidden}
 .qprog i{display:block; height:100%; background:var(--accent); border-radius:999px; transition:width .5s cubic-bezier(.4,0,.2,1)}
@@ -153,25 +153,25 @@ h1{font-size:clamp(42px,7vw,80px); font-weight:600; line-height:1.04; letter-spa
 .qtitle{font-size:clamp(30px,4.6vw,50px); font-weight:600; letter-spacing:-.03em; line-height:1.06; margin-top:12px}
 .qhint{color:var(--muted); font-size:18px; margin-top:14px; font-weight:400; letter-spacing:-.015em}
 .qopts{margin-top:clamp(32px,4vw,44px); display:grid; gap:12px}
-.qopt{text-align:left; padding:22px 24px; border-radius:18px; background:#fff; border:1px solid #D9D9D4; transition:transform .18s, border-color .18s, box-shadow .18s; display:flex; align-items:center; gap:18px}
+.qopt{text-align:left; padding:22px 24px; border-radius:18px; background:#F4F4F1; border:1px solid transparent; transition:transform .18s, border-color .18s, box-shadow .18s; display:flex; align-items:center; gap:18px}
 .qopt:hover{border-color:var(--ink); box-shadow:0 12px 28px -24px rgba(20,20,18,.55); transform:translateY(-2px)}
 .qopt .qe{font-size:12px; font-weight:700; letter-spacing:.08em; color:var(--accent-deep); flex:none; width:34px; text-align:left}
 .qopt .ql{font-size:19px; font-weight:600; letter-spacing:-.02em}
 .qopt .qd{font-size:14.5px; color:var(--muted); margin-top:2px; font-weight:400}
 
-.result{padding:clamp(44px,6vw,72px) 0 clamp(56px,7vw,88px); background:#F4F4F1; animation:fade .5s ease}
+.result{padding:clamp(44px,6vw,72px) 0 clamp(56px,7vw,88px); background:#fff; animation:fade .5s ease}
 .res-head{text-align:center; max-width:600px; margin:0 auto clamp(40px,5vw,60px)}
 .res-head h2{font-size:clamp(32px,4.6vw,52px); font-weight:600; letter-spacing:-.03em; line-height:1.06}
 .res-head p{color:var(--muted); margin-top:16px; font-size:19px; font-weight:400; letter-spacing:-.015em}
-.rcard{display:grid; grid-template-columns:320px 1fr; gap:clamp(28px,5vw,60px); align-items:center; background:#fff; border:1px solid #D9D9D4; box-shadow:0 28px 70px -52px rgba(20,20,18,.5); padding:clamp(28px,4vw,52px)}
-.rviz{aspect-ratio:3/4; display:grid; place-items:center; position:relative; overflow:hidden; background:#fff}
+.rcard{display:grid; grid-template-columns:320px 1fr; gap:clamp(28px,5vw,60px); align-items:center; background:transparent; border-top:1px solid #D9D9D4; border-bottom:1px solid #D9D9D4; padding:clamp(34px,5vw,62px) 0}
+.rviz{height:430px; display:grid; place-items:center; position:relative; overflow:hidden; background:transparent}
 .rviz .pimg{height:100%; width:100%; object-fit:contain}
 .rbody{display:flex; flex-direction:column}
 .rmaison{font-size:15px; font-weight:500; color:var(--accent-deep)}
 .rname{font-size:clamp(30px,4vw,46px); font-weight:600; letter-spacing:-.03em; line-height:1.03; margin-top:8px}
 .rsub{color:var(--faint); font-size:15px; margin-top:10px}
 .rnote{color:var(--muted); font-size:17px; line-height:1.5; margin-top:18px; max-width:46ch; font-weight:400; letter-spacing:-.01em}
-.why{margin-top:22px; padding:18px 20px; border-left:3px solid var(--accent); background:#F4F4F1}
+.why{margin-top:22px; padding:18px 0; border-top:1px solid var(--border); border-bottom:1px solid var(--border); background:transparent}
 .why strong{font-size:14px; color:var(--accent-deep)}
 .why-list{margin:8px 0 0; padding-left:19px; color:var(--muted); font-size:14px}
 .why-list li+li{margin-top:5px}
@@ -182,9 +182,9 @@ h1{font-size:clamp(42px,7vw,80px); font-weight:600; line-height:1.04; letter-spa
 .aff-note{font-size:13px; color:var(--faint); margin-top:14px}
 .alts-head{margin:clamp(48px,6vw,72px) 0 22px; font-size:22px; font-weight:600; letter-spacing:-.02em; text-align:center}
 .alts{display:grid; grid-template-columns:repeat(3,1fr); gap:20px}
-.alt{background:#fff; border:1px solid #D9D9D4; padding:24px; display:flex; flex-direction:column}
+.alt{background:transparent; border-top:1px solid #D9D9D4; border-bottom:1px solid #D9D9D4; padding:24px 0; display:flex; flex-direction:column}
 .alt-top{display:flex; gap:20px; align-items:center}
-.mini{width:86px; height:112px; flex:none; position:relative; display:grid; place-items:center; overflow:hidden; background:#fff}
+.mini{width:86px; height:112px; flex:none; position:relative; display:grid; place-items:center; overflow:hidden; background:transparent}
 .mini .pimg{height:100%; width:100%; object-fit:contain}
 .alt .an{font-size:18px; font-weight:600; letter-spacing:-.02em; line-height:1.1}
 .alt .ah{font-size:13px; color:var(--faint); margin-top:3px}
@@ -245,13 +245,13 @@ h1{font-size:clamp(42px,7vw,80px); font-weight:600; line-height:1.04; letter-spa
 .duel-col h2{font-size:27px; line-height:1.1}
 .duel-verdict{margin-top:28px; border-left:4px solid var(--accent); padding:20px 24px; background:#FBF8F1; border-radius:0 16px 16px 0}
 
-/* ---------- Bande éditoriale (relief visuel) ---------- */
-.band{position:relative; margin:0; padding:clamp(72px,10vw,132px) 0; color:#F5ECD9; text-align:center; overflow:hidden}
-.band::before{content:""; position:absolute; inset:0; background:radial-gradient(circle at 20% 15%,rgba(224,196,137,.22),transparent 30%),radial-gradient(circle at 82% 74%,rgba(156,122,52,.26),transparent 34%),linear-gradient(145deg,#211D15,#0F0E0B); z-index:0}
+/* ---------- Bande éditoriale photographique ---------- */
+.band{position:relative; margin:0; padding:clamp(88px,12vw,160px) 0; color:#fff; text-align:left; overflow:hidden; background:#18140f url('https://images.unsplash.com/photo-1498429152472-9a433d9ddf3b?q=82&w=2000&auto=format&fit=crop') center 48%/cover no-repeat}
+.band::before{content:""; position:absolute; inset:0; background:linear-gradient(90deg,rgba(15,12,8,.88) 0%,rgba(15,12,8,.68) 48%,rgba(15,12,8,.18) 100%); z-index:0}
 .band>*{position:relative; z-index:1}
 .band .eyebrow-l{font-size:12.5px; font-weight:600; letter-spacing:.18em; text-transform:uppercase; color:#E0C489}
-.band h2{font-size:clamp(28px,4.2vw,46px); font-weight:600; letter-spacing:-.03em; line-height:1.1; margin-top:16px; max-width:18ch; margin-left:auto; margin-right:auto}
-.band p{font-size:clamp(16px,2vw,19px); color:#E7DCC6; max-width:44ch; margin:18px auto 0; line-height:1.5}
+.band h2{font-size:clamp(34px,5vw,60px); font-weight:700; letter-spacing:-.035em; line-height:1.02; margin-top:16px; max-width:17ch}
+.band p{font-size:clamp(16px,2vw,19px); color:#F1E7D5; max-width:42ch; margin:20px 0 0; line-height:1.55}
 .band .btn{margin-top:30px}
 
 /* ---------- Catalogue « La sélection » ---------- */
@@ -293,7 +293,7 @@ h1{font-size:clamp(42px,7vw,80px); font-weight:600; line-height:1.04; letter-spa
 .visual-mini::before{width:72px; height:72px; right:-30px; top:-30px; box-shadow:none}
 .visual-mini::after{left:9px; right:9px; bottom:8px}
 .visual-initials{font-size:16px; font-weight:700; letter-spacing:.04em}
-.product-packshot{object-fit:contain!important; padding:18px; background:#fff; mix-blend-mode:multiply}
+.product-packshot{object-fit:contain!important; object-position:center!important; padding:18px; background:transparent; mix-blend-mode:multiply; box-sizing:border-box}
 .phero-img .product-packshot,.rviz .product-packshot{padding:clamp(18px,3vw,34px)}
 
 /* ---------- Fiche produit ---------- */
@@ -526,7 +526,7 @@ function priceText(p){
   if(Number.isFinite(p.priceMin)&&Number.isFinite(p.priceMax)){
     return Math.abs(p.priceMax-p.priceMin)<0.01 ? format(p.priceMin) : `${format(p.priceMin)} – ${format(p.priceMax)}`;
   }
-  return 'Prix à vérifier';
+  return 'Prix indisponible';
 }
 function productAction(p, label='Voir la fiche officielle'){
   const link = buyLink(p);
@@ -660,7 +660,7 @@ const ARTICLE_REWRITES = {
 <h3>Trois erreurs fréquentes</h3>
 <ul><li>Choisir uniquement selon la notoriété de la marque, sans tenir compte du repas.</li><li>Confondre un dosage faible avec une qualité automatiquement supérieure.</li><li>Prendre une recommandation générale pour une vérité universelle : le contexte et les goûts restent décisifs.</li></ul>
 <h3>La méthode QuelChampagne</h3>
-<p>Le sélecteur croise l'occasion, le budget, le style et le repère recherché avec un catalogue de bouteilles disponibles. Chaque résultat ouvre ensuite une fiche d'analyse : profil, accords, raisons de la choisir, raisons de l'écarter et niveau de preuve des données techniques. Vous gardez ainsi la logique du conseil avant de voir l'offre du marchand.</p>
+<p>Le sélecteur croise l'occasion, le budget, le style et le repère recherché avec un catalogue de bouteilles disponibles. Chaque résultat ouvre ensuite une fiche d'analyse : profil, accords, raisons de la choisir, raisons de l'écarter et données techniques. Vous gardez ainsi la logique du conseil avant de voir l'offre du marchand.</p>
 <p>Pour commencer, utilisez le <a href="/selecteur/">sélecteur en quatre questions</a>. Si vous connaissez déjà le style recherché, parcourez directement <a href="/champagnes/">les bouteilles actuellement disponibles</a>.</p>`
   },
   'dosages': {
@@ -733,7 +733,7 @@ const ARTICLE_REWRITES = {
 <h3>Organiser le service</h3>
 <p>Prévoyez plusieurs points de refroidissement et une rotation des bouteilles. Servez autour de 8 à 10 °C, puis laissez le vin gagner légèrement en température dans le verre. Une bouteille ouverte trop tôt perd de son intérêt ; mieux vaut ouvrir progressivement et confier le suivi du stock à une personne identifiée.</p>
 <h3>Choisir avec QuelChampagne</h3>
-<p>Utilisez le <a href="/selecteur/">sélecteur</a> avec l'option célébration et votre budget unitaire. Ouvrez ensuite les fiches des résultats pour vérifier le profil, les accords, le prix précis et le niveau de preuve. Pour un volume important, confirmez toujours le stock directement auprès du partenaire avant de considérer la commande comme acquise.</p>`
+<p>Utilisez le <a href="/selecteur/">sélecteur</a> avec l'option célébration et votre budget unitaire. Ouvrez ensuite les fiches des résultats pour comparer le profil, les accords et le prix précis. Pour un volume important, confirmez le stock directement auprès du partenaire avant de commander.</p>`
   },
   'cadeau': {
     read:'6 min',
@@ -1204,7 +1204,7 @@ function renderHome(){
     <div class="trust-strip">
       <div class="trust-item"><strong>${products().length} bouteilles disponibles</strong><span>Chaque résultat mène vers une analyse détaillée avant l’offre partenaire.</span></div>
       <div class="trust-item"><strong>Classement indépendant</strong><span>Aucune maison ne paie pour remonter dans le sélecteur.</span></div>
-      <div class="trust-item"><strong>Offres contrôlées</strong><span>Une offre n’apparaît qu’après contrôle du produit, du prix et du stock.</span></div>
+      <div class="trust-item"><strong>Prix datés</strong><span>Le prix affiché correspond au dernier relevé chez notre partenaire.</span></div>
     </div>
   </div></section>
 
@@ -1218,9 +1218,9 @@ function renderHome(){
   </div></section>
 
   <section class="band"><div class="container">
-    <div class="eyebrow-l">Quatre questions, soixante secondes</div>
-    <h2>Un choix clair, sans jargon.</h2>
-    <p>Le sélecteur compare les grandes maisons et les vignerons selon les critères qui comptent pour vous.</p>
+    <div class="eyebrow-l">Une minute pour commencer</div>
+    <h2>Trouvez les bouteilles qui correspondent à votre moment.</h2>
+    <p>Le sélecteur croise votre occasion, vos goûts et votre budget, puis explique chaque recommandation.</p>
     <button class="btn btn-accent" onclick="startQuiz()">Lancer le sélecteur</button>
   </div></section>
 
@@ -1271,7 +1271,7 @@ function matchReasons(p){
   if((a.occasion||[]).some(tag=>p.occ.includes(tag))) reasons.push("Elle convient à l’occasion indiquée.");
   if((a.gout||[]).some(tag=>p.profil.includes(tag))) reasons.push("Son profil correspond au style recherché.");
   const budget=(a.budget||[])[0];
-  if(budget && budgetFitScore(p,budget)>=34) reasons.push(p.commerceReady?"Son prix se situe dans la tranche choisie.":"Son positionnement de prix se situe dans la tranche choisie.");
+  if(budget && budgetFitScore(p,budget)>=34) reasons.push(p.commerceReady?"Son prix se situe dans la tranche choisie.":"Son prix indicatif se situe dans la tranche choisie.");
   const signal=(a.repere||[])[0];
   if(signalFit(p,signal)){
     if(signal==='known') reasons.push("Son étiquette fait partie des repères les plus connus de la sélection.");
@@ -1300,7 +1300,7 @@ function renderResult(){
     </div>`;}).join('');
   app.innerHTML = nav() + `
   <section class="result"><div class="container">
-    <div class="res-head"><h1>Notre sélection</h1><p>${summary()}</p></div>
+    <div class="res-head"><h1>Les bouteilles à retenir</h1><p>${summary()}</p></div>
     <div class="rcard">
       <div class="rviz">${bottleViz(tp,'big')}</div>
       <div class="rbody">
@@ -1308,13 +1308,13 @@ function renderResult(){
         <div class="rname">${tp.name}</div>
         <div class="rsub">${tp.region} · À servir avec ${tp.pair}</div>
         <p class="rnote">${tp.note}</p>
-        <div class="why"><strong>Pourquoi cette recommandation</strong><ul class="why-list">${reasons}</ul></div>
+        <div class="why"><strong>Pourquoi elle arrive en tête</strong><ul class="why-list">${reasons}</ul></div>
         <div class="rtags">${pills}</div>
         <div class="rbuy">
           <div class="rprice">${priceText(tp)}</div>
           <a class="btn btn-accent" href="/champagne/${tp.id}/">Voir l’analyse</a>
         </div>
-        <div class="aff-note">${tp.commerceReady ? `Prix et disponibilité contrôlés · l’offre partenaire se trouve sur la fiche.` : `Fourchette éditoriale indicative · offre marchande en cours de vérification.`}</div>
+        <div class="aff-note">${tp.commerceReady ? `Prix relevé chez notre partenaire · l’offre se trouve sur la fiche.` : `Prix indicatif · offre momentanément indisponible.`}</div>
       </div>
     </div>
     <div class="alts-head">Trois autres bouteilles à considérer</div>
@@ -1376,7 +1376,7 @@ function renderProduct(){
           <div class="rprice">${priceText(p)}</div>
           ${productAction(p)}
         </div>
-        <div class="aff-note">${p.commerceReady ? `Lien partenaire · Prix et disponibilité contrôlés.` : `Fourchette éditoriale indicative · offre marchande en cours de vérification.`}</div>
+        <div class="aff-note">${p.commerceReady ? `Lien partenaire · Prix relevé chez le marchand.` : `Offre momentanément indisponible.`}</div>
       </div>
     </div>
 

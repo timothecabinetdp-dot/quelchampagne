@@ -100,7 +100,8 @@
     "rightsStatus": "cleared",
     "uses": [
       "blog-vigneron",
-      "product-scene-vigneron"
+      "product-scene-vigneron",
+      "method-page"
     ],
     "notes": "Bouteilles de champagne au repos en cave. Aucune marque identifiable mise en avant."
   },
@@ -205,7 +206,8 @@
     "uses": [
       "blog-aperitif2",
       "landing-aperitif",
-      "product-scene-service"
+      "product-scene-service",
+      "homepage-selector-band"
     ],
     "notes": "Trois personnes trinquent avec des flûtes. Aucune marque identifiable mise en avant."
   },

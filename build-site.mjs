@@ -366,9 +366,9 @@ function homeMain(){
   </section>
   <section class="section"><div class="container">
     <div class="trust-strip">
-      <div class="trust-item"><strong>Des choix expliqués</strong><span>Chaque fiche présente le style, les accords et les points à vérifier.</span></div>
+      <div class="trust-item"><strong>Des choix expliqués</strong><span>Chaque fiche réunit le style, les accords et le prix du jour.</span></div>
       <div class="trust-item"><strong>Classement indépendant</strong><span>Aucune maison ne paie pour remonter dans le sélecteur.</span></div>
-      <div class="trust-item"><strong>Offres contrôlées</strong><span>Une offre n’apparaît qu’après contrôle du produit, du prix et du stock.</span></div>
+      <div class="trust-item"><strong>Prix datés</strong><span>Le prix affiché correspond au dernier relevé chez notre partenaire.</span></div>
     </div>
   </div></section>
   <section class="section gray"><div class="container">
@@ -380,9 +380,9 @@ function homeMain(){
     </div>
   </div></section>
   <section class="band"><div class="container">
-    <div class="eyebrow-l">Quatre questions, soixante secondes</div>
-    <h2>Un choix clair, sans jargon.</h2>
-    <p>Le sélecteur compare les grandes maisons et les vignerons selon les critères qui comptent pour vous.</p>
+    <div class="eyebrow-l">Une minute pour commencer</div>
+    <h2>Trouvez les bouteilles qui correspondent à votre moment.</h2>
+    <p>Le sélecteur croise votre occasion, vos goûts et votre budget, puis explique chaque recommandation.</p>
     <a class="btn btn-accent" href="/selecteur/">Lancer le sélecteur</a>
   </div></section>
   <section class="section"><div class="container">
@@ -662,7 +662,7 @@ function productMain(p){
         <p class="phero-note">${d.advice || p.note}</p>
         <div class="rtags">${tags}</div>
         <div class="pbuy"><div class="rprice">${priceText(p)}</div>${productAction(p)}</div>
-        <div class="aff-note">${p.commerceReady ? `Lien partenaire · Prix et disponibilité contrôlés.` : `Fourchette éditoriale indicative · offre marchande en cours de vérification.`}</div>
+        <div class="aff-note">${p.commerceReady ? `Lien partenaire · Prix relevé chez le marchand.` : `Offre momentanément indisponible.`}</div>
       </div>
     </div>
     ${d.profil?`<div class="pblock"><div class="pblock-eyebrow">Profil aromatique</div><h2 class="pblock-h">La structure de ce champagne</h2><div class="axes">${axes}</div></div>`:''}
@@ -729,21 +729,20 @@ function articleMain(a){
 
 function methodMain(){
   return `<section class="article"><div class="narrow">
-    <div class="a-cat">Transparence</div><h1 class="a-title">Notre méthode</h1>
-    <p class="qhint">Comment QuelChampagne sépare les faits, les conseils et le commerce.</p>
+    <div class="a-cat">Comment nous travaillons</div><h1 class="a-title">Notre méthode</h1>
+    <p class="qhint">Des données précises, une analyse commune à toutes les cuvées et des prix datés.</p>
+    <div class="a-cover" style="background-image:linear-gradient(90deg,rgba(18,14,9,.16),rgba(18,14,9,.04)),url('https://images.unsplash.com/photo-1635715070096-b4655b94edee?q=82&w=1600&auto=format&fit=crop');background-size:cover;background-position:center"></div>
     <div class="prose">
-      <h3>1. Les faits sont rattachés à leur source</h3>
-      <p>Assemblage, dosage, millésime, édition et méthode d’élaboration ne sont affirmés que lorsqu’une donnée exploitable est disponible chez le producteur ou le marchand identifié. Une information incertaine est signalée comme telle au lieu d’être présentée comme un fait.</p>
-      <h3>2. Le conseil est éditorial</h3>
-      <p>Nos analyses appliquent une grille constante aux données contrôlées : style, fraîcheur, structure, dosage, cépages, accords, occasion et niveau de prix. Chaque cuvée est ainsi comparée selon les mêmes critères, indépendamment de sa notoriété ou de sa rémunération commerciale.</p>
-      <h3>3. Le classement n’est pas acheté</h3>
-      <p>Le sélecteur classe les cuvées selon les réponses données. Une maison ou un marchand ne peut pas payer pour apparaître devant une recommandation plus pertinente.</p>
-      <h3>4. Les prix restent une donnée séparée</h3>
-      <p>Les fourchettes visibles servent à orienter un budget. Un prix marchand est volatil : il doit être relié au produit et au format exacts, daté et accompagné d’un état de disponibilité. Aucun lien partenaire n’est affiché avant ce contrôle.</p>
-      <h3>5. Les images doivent être exploitables légalement</h3>
-      <p>Nous n’utilisons pas de photographie de bouteille sans autorisation, licence ou création originale. Les visuels génériques n’ont pas vocation à reproduire un packaging de marque.</p>
-      <h3>Politique de correction</h3>
-      <p>Lorsqu’une information devient obsolète ou qu’une édition change, la donnée concernée doit être suspendue, vérifiée à nouveau sur une source primaire, puis redatée avant republication. L’historique des offres commerciales ne remplace jamais la fiche produit.</p>
+      <h3>1. Identifier la bouteille exacte</h3>
+      <p>Maison, cuvée, millésime, format et catégorie forment l’identité du produit. Cette identité relie la fiche technique, la photographie et l’offre du marchand sans mélanger deux éditions proches.</p>
+      <h3>2. Lire le style avec la même grille</h3>
+      <p>Fraîcheur, rondeur, puissance, cépages, dosage, arômes et accords composent une grille commune à tout le catalogue. Elle permet de comparer une grande maison et un vigneron sur des critères identiques.</p>
+      <h3>3. Recommander selon votre usage</h3>
+      <p>Le sélecteur croise l’occasion, le goût, le budget et votre préférence entre étiquette connue et découverte. Le résultat expose les raisons du classement et propose trois alternatives proches.</p>
+      <h3>4. Dater chaque offre</h3>
+      <p>Le prix affiché correspond à la bouteille et au format présentés sur la fiche. Sa date de relevé apparaît près du bouton d’achat afin de distinguer l’analyse durable de l’offre commerciale du jour.</p>
+      <h3>5. Séparer conseil et rémunération</h3>
+      <p>Le marchand rémunère QuelChampagne lorsqu’un achat suit un lien partenaire. Cette rémunération ne modifie ni les critères du sélecteur ni l’ordre des recommandations.</p>
     </div>
   </div></section>`;
 }

@@ -390,7 +390,7 @@ for (const path of ['notre-methode', 'a-propos']) {
   if (!existsSync(trustPage)) errors.push(`Page de confiance manquante : /${path}/.`);
 }
 const selector = read('dist/selecteur/index.html');
-if (!selector.includes('Pourquoi cette recommandation')) errors.push('Le sélecteur n’explique pas sa recommandation.');
+if (!selector.includes('Pourquoi elle arrive en tête')) errors.push('Le sélecteur n’explique pas sa recommandation.');
 if (!selector.includes('let CATALOGUE = [')) errors.push('Le sélecteur n’embarque pas le catalogue vérifié et risque d’afficher les anciennes données de repli.');
 if (!selector.includes('assets.ikhnaie.link')) errors.push('Le sélecteur n’embarque pas les offres Bottle of Italy.');
 if (/render\(\);\s*loadCatalogue\(\);/.test(selector)) errors.push('Le sélecteur remplace encore le catalogue partenaire par l’ancien catalogue au chargement.');
@@ -425,12 +425,12 @@ if (PARTNER_CATALOGUE.some(product=>product.priceStatus==='stale' && (product.co
 if (PARTNER_CATALOGUE.some(product=>product.priceStatus!=='fresh' && product.oldPrice)) errors.push('Un ancien prix est affiché au-delà de la période de fraîcheur autorisée.');
 if (!existsSync(new URL('.github/workflows/refresh-catalogue.yml', ROOT))) errors.push('Le workflow quotidien d’actualisation du catalogue est absent.');
 if (PARTNER_CATALOGUE.some(product=>!/ikhnaie\.link/.test(product.aff||'') || /FRutm_source/.test(product.aff))) errors.push('Un lien affilié partenaire est absent ou mal formé.');
-if (PARTNER_CATALOGUE.some(product=>!product.details?.facts || !product.details?.advice || !product.details?.avoid || !product.details?.scores)) errors.push('Une analyse partenaire est incomplète.');
+if (PARTNER_CATALOGUE.some(product=>!product.details?.advice || !product.details?.avoid || !product.details?.scores)) errors.push('Une analyse partenaire est incomplète.');
 if (new Set(PARTNER_CATALOGUE.map(product=>product.note)).size < 40) errors.push('Les analyses partenaires restent trop répétitives.');
 if (PARTNER_CATALOGUE.some(product=>product.identityStatus==='merchant_feed_year_to_verify' && /\b(19|20)\d{2}\b/.test(product.name))) errors.push('Un millésime non confirmé est encore présenté comme faisant partie du nom public.');
 for (const file of htmlFiles.filter(path => path.includes('/champagne/') && !path.match(/\/champagne\/(aperitif|cadeau|repas|rose|blanc-de-blancs|moins-de-50-euros|fruits-de-mer)\//))) {
   const html = readFileSync(file, 'utf8');
-  if (!html.includes('À choisir si…') || !html.includes('À éviter si…')) errors.push(`Aide à la décision absente de ${file.replace(DIST.pathname, '')}.`);
+  if (!html.includes('Ce qui la distingue') || !html.includes('Quand l’écarter')) errors.push(`Aide à la décision absente de ${file.replace(DIST.pathname, '')}.`);
   if (partnerIds.has(file.split('/champagne/')[1]?.split('/')[0]) && !html.includes('class="bqp-scene"')) {
     errors.push(`Visuel éditorial contextuel absent de ${file.replace(DIST.pathname, '')}.`);
   }
@@ -441,7 +441,17 @@ for (const phrase of [
   'ne prétendons pas avoir dégusté',
   'Cette cuvée est présentée comme',
   'D’après les informations disponibles',
-  'interprétation éditoriale QuelChampagne'
+  'interprétation éditoriale QuelChampagne',
+  'informations disponibles',
+  'Le prix en contexte',
+  'Positionnement',
+  'porte d’entrée',
+  'Catégorie communiquée',
+  'Cépages mentionnés',
+  'Repères aromatiques disponibles',
+  'Profil retenu pour',
+  'sans jargon',
+  '>Transparence<'
 ]) {
   if (publishedCopy.includes(phrase)) errors.push(`Formulation éditoriale à supprimer encore publiée : « ${phrase} ».`);
 }

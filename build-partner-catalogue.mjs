@@ -135,7 +135,7 @@ function level(value, axis){
   return labels[axis][value-1];
 }
 
-function styleLabel(tags){
+function styleLabel(tags, productName=''){
   const descriptors=[];
   const colour=tags.includes('Rosé')
     ? 'rosé'
@@ -145,7 +145,7 @@ function styleLabel(tags){
         ? 'blanc de noirs'
         : '';
   const dosage=tags.includes('Extra-brut / nature')
-    ? 'extra-brut ou non dosé'
+    ? /nature|zéro|zero/i.test(productName) ? 'brut nature' : 'extra-brut'
     : tags.includes('Demi-sec')
       ? 'demi-sec'
       : 'brut';
@@ -153,7 +153,7 @@ function styleLabel(tags){
   if(tags.includes('Grand Cru')) descriptors.push('Grand Cru');
   else if(tags.includes('Premier Cru')) descriptors.push('Premier Cru');
   if(tags.includes('Millésimé')) descriptors.push('millésimé');
-  return descriptors.join(', ');
+  return descriptors.join(' ');
 }
 
 function recommendationFields(product, tags, scores, pairings){
@@ -174,34 +174,43 @@ function recommendationFields(product, tags, scores, pairings){
 }
 
 function specificText(product, tags, grapes, aromas, pairings, scores){
-  const style=styleLabel(tags);
-  const aromaText=aromas.length ? aromas.slice(0,4).join(', ') : null;
-  const grapeText=grapes.length ? ` Assemblage documenté : ${grapes.join(', ')}.` : '';
+  const style=styleLabel(tags,product.name);
+  const aromaText=aromas.slice(0,4);
   const pairingText=pairings.length ? pairings.slice(0,3).map(item=>item.label).join(', ') : 'l’apéritif et un repas léger';
-  const structure = scores.power>=4
-    ? 'La structure affirmée appelle plutôt la table qu’un apéritif très léger.'
-    : scores.freshness>=4
-      ? 'La fraîcheur marquée favorise l’apéritif et les accords légers.'
-      : 'L’équilibre autorise l’apéritif comme le début du repas.';
-  const aromaticSentence=aromaText ? ` Repères aromatiques disponibles : ${aromaText}.` : '';
-  const variants=[
-    `${product.name} se place dans le registre ${style}.${aromaticSentence}${grapeText} ${structure}`,
-    `Profil retenu pour ${product.name} : ${style}.${aromaticSentence}${grapeText} ${structure}`,
-    `${style.charAt(0).toUpperCase()+style.slice(1)} : c’est le registre principal de ${product.name}.${aromaticSentence}${grapeText} ${structure}`,
-    `Le profil de ${product.name} privilégie un registre ${style}.${aromaticSentence}${grapeText} ${structure}`
-  ];
-  const variant=[...product.name].reduce((sum,char)=>sum+char.charCodeAt(0),0)%variants.length;
-  const note=variants[variant];
-  const freshness=scores.freshness>=4?'sa fraîcheur marquée':scores.freshness<=2?'sa fraîcheur mesurée':'son équilibre de fraîcheur';
-  const structureLabel=scores.power>=4?'sa structure affirmée':scores.power<=2?'sa structure légère':'sa structure équilibrée';
-  const advice=`Choisissez-la pour ${freshness}, ${structureLabel} et les accords suivants : ${pairingText}.`;
-  const avoid=scores.freshness>=4
-    ? `Moins adaptée si vous recherchez surtout rondeur et douceur : le profil met davantage en avant ${aromas.slice(0,2).join(' et ')||'la tension et la fraîcheur'}.`
-    : scores.power>=4
-      ? `Moins adaptée à un apéritif très léger : sa matière appelle plutôt ${pairingText}.`
-      : tags.includes('Demi-sec')
-        ? 'Moins adaptée avec des huîtres ou si vous recherchez une finale très sèche : la douceur annoncée appelle plutôt le dessert.'
-        : `Moins adaptée si vous recherchez un style très tendu ou très puissant : son intérêt tient à l’équilibre autour de ${pairingText}.`;
+  const character=scores.power>=4 && scores.freshness>=4
+    ? 'vif et structuré'
+    : scores.roundness>=4
+      ? 'rond et généreux'
+      : scores.complexity>=4
+        ? 'nuancé et persistant'
+        : scores.power<=2
+          ? 'léger et délicat'
+          : scores.freshness>=4
+            ? 'frais et précis'
+            : 'équilibré et polyvalent';
+  const sentences=[`Un ${style} au caractère ${character}.`];
+  if(aromaText.length) sentences.push(`Au premier plan : ${aromaText.join(', ')}.`);
+  if(grapes.length) sentences.push(`L’assemblage réunit ${grapes.join(', ')}.`);
+  sentences.push(`À privilégier avec ${pairingText}.`);
+  const note=sentences.join(' ');
+  const advice=scores.power>=4
+    ? `Sa matière affirmée trouve sa place à table, notamment avec ${pairingText}.`
+    : scores.roundness>=4
+      ? `Sa texture ample accompagne volontiers ${pairingText}.`
+      : scores.freshness>=4
+        ? `Sa fraîcheur nette convient particulièrement à ${pairingText}.`
+        : `Son équilibre permet de l’accorder avec ${pairingText}.`;
+  const avoid=tags.includes('Demi-sec')
+    ? 'Écartez-la avec des huîtres ou si vous recherchez une finale très sèche : sa douceur convient davantage au dessert.'
+    : scores.roundness>=4
+      ? 'Écartez-la si vous recherchez une expression austère et tranchante : son profil privilégie l’ampleur.'
+      : scores.power>=4
+        ? `Écartez-la pour un apéritif très léger : sa matière appelle plutôt ${pairingText}.`
+        : scores.freshness>=4
+          ? `Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie ${aromas.slice(0,2).join(' et ')||'la tension et la fraîcheur'}.`
+          : scores.complexity>=4
+            ? 'Écartez-la si vous recherchez une bouteille très simple et immédiatement consensuelle : son profil demande davantage d’attention.'
+            : 'Écartez-la si vous recherchez un style très tendu ou très puissant : elle mise avant tout sur l’équilibre.';
   return {note,advice,avoid};
 }
 
@@ -235,12 +244,6 @@ export function buildPartnerCatalogue(){
     const pair=pairings.slice(0,3).map(item=>item.label).join(', ') || 'apéritif, poisson';
     const tier=price<30?1:price<=60?2:price<=100?3:4;
     const popularity=(WELL_KNOWN.has(source.brand)?84:68) + (tags.includes('Grand Cru')?4:0) + (tags.includes('Millésimé')?3:0);
-    const derivedFacts=[
-      `Catégorie communiquée : ${styleLabel(tags)}.`,
-      grapes.length?`Cépages mentionnés : ${grapes.join(', ')}.`:null,
-      year?`Année indiquée dans le flux partenaire : ${year}${identityStatus==='merchant_feed_year_to_verify'?' — non retenue dans le titre tant qu’elle n’est pas confirmée sur la fiche produit.':'.'}`:null
-    ].filter(Boolean).join(' ');
-    const facts=evidence.facts || derivedFacts;
     const officialConfirmed=Boolean(evidence.officialSourceUrl) && !identityStatus.includes('product_to_document');
 
     return {
@@ -257,14 +260,10 @@ export function buildPartnerCatalogue(){
       commerceReady:offerUsable, popularity, aff:source.buyUrl, image:source.image,
       availability:offerStatus==='stale'?'unknown_stale':source.available?'in_stock':'out_of_stock',
       priceStatus:offerStatus, offerCheckedAt:source.checkedAt,
-      identityStatus, merchantDescription:source.merchantDescription,
+      identityStatus,
       imageRights:{sourceUrl:source.image,rightsBasis:'Flux du programme partenaire Bottle of Italy / Webgains',verifiedAt:checkedDate()},
       details:{
-        facts,
         dosage:evidence.dosage || null,
-        sourceQuality:officialConfirmed
-          ? 'Données de la cuvée confirmées sur le site du producteur, offre contrôlée séparément chez le partenaire'
-          : 'Informations déclarées sur la fiche du partenaire, analyse éditoriale QuelChampagne',
         advice:text.advice, avoid:text.avoid,
         profil:{
           fraicheur:level(scores.freshness,'freshness'),
