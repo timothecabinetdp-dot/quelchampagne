@@ -1,0 +1,13 @@
+QUELCHAMPAGNE — DÉPLOIEMENT V4
+
+Ce fichier sert à identifier le déploiement de la refonte éditoriale V4.
+
+Version : 4.0.0
+Date : 30 juillet 2026
+
+Principales évolutions :
+- refonte éditoriale des 48 fiches ;
+- suppression des formulations défensives ;
+- suppression des sections Transparence et Prix en contexte ;
+- nouvelle présentation du sélecteur ;
+- intégration de photographies réelles documentées.
