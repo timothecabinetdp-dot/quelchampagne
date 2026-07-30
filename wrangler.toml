@@ -1,7 +1,3 @@
 name = "quelchampagne"
 pages_build_output_dir = "./dist"
 compatibility_date = "2026-07-29"
-
-[[analytics_engine_datasets]]
-binding = "QC_ANALYTICS"
-dataset = "quelchampagne_events"

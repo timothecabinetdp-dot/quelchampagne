@@ -51,6 +51,7 @@ sélection actuelle grâce au fichier `dist/_redirects`.
 
 Après le premier déploiement, activer également **Web Analytics** dans
 Cloudflare : Workers & Pages → QuelChampagne → Metrics → Web Analytics.
-Le suivi métier (`quiz_completed`, `recommendation_viewed`,
-`product_analysis_viewed`, `merchant_click`) est envoyé sans cookie ni
-identifiant utilisateur vers le binding Analytics Engine `QC_ANALYTICS`.
+Le point d’entrée du suivi métier fonctionne sans cookie ni identifiant
+utilisateur. Un binding Analytics Engine `QC_ANALYTICS` pourra être ajouté
+ultérieurement pour enregistrer les événements détaillés, sans bloquer le
+déploiement actuel.

@@ -411,7 +411,6 @@ if (!existsSync(new URL('dist/assets/og-quelchampagne.png', ROOT))) errors.push(
 if (!existsSync(new URL('dist/assets/archivo-latin-wght-normal.woff2', ROOT))) errors.push('Police Archivo auto-hébergée absente du build.');
 if (!existsSync(new URL('dist/assets/analytics.js', ROOT))) errors.push('Client de mesure d’audience absent du build.');
 if (!existsSync(new URL('functions/api/events.js', ROOT))) errors.push('Fonction Cloudflare de mesure d’audience absente.');
-if (!read('wrangler.toml').includes('binding = "QC_ANALYTICS"')) errors.push('Binding Analytics Engine absent de la configuration Cloudflare.');
 if (source.includes('cdn.jsdelivr.net/npm/@fontsource')) errors.push('La police dépend encore de jsDelivr.');
 if (!source.includes("window.qcTrack('quiz_completed'")) errors.push('La fin du sélecteur n’est pas mesurée.');
 for (const stale of ['Perle d’Aurore', 'Sancerre « Les Baronnes »', 'Whispering Angel']) {
