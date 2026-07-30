@@ -34,7 +34,7 @@ export function boutiqueAnalysis(p){
 
   let style = 'Brut';
   let expected = 'équilibré, frais et polyvalent';
-  let summary = 'Un brut à envisager comme une bouteille polyvalente, particulièrement lisible pour l’apéritif et les célébrations.';
+  let summary = 'Un brut polyvalent, particulièrement adapté à l’apéritif, aux célébrations et au début du repas.';
   let choose = 'vous cherchez une cuvée polyvalente, facile à placer à l’apéritif comme sur un début de repas.';
   let avoid = 'vous recherchez un style très tranché, très peu dosé ou au contraire franchement doux.';
   let pairings = ['Gougères et feuilletés', 'Poisson ou volaille légère', 'Apéritif'];
@@ -62,7 +62,7 @@ export function boutiqueAnalysis(p){
   } else if(isBdn){
     style='Blanc de noirs';
     expected='ample, vineux et structuré';
-    summary='Un blanc de noirs à regarder en priorité pour la table : sa catégorie annonce généralement davantage de matière qu’un champagne d’apéritif très léger.';
+    summary='Un blanc de noirs ample et structuré, taillé pour la table et les plats qui demandent davantage de matière.';
     choose='vous cherchez de la présence, une texture plus ample et un champagne capable d’accompagner un plat.';
     avoid='vous souhaitez avant tout une expression très légère, citronnée et aérienne.';
     pairings=['Volaille rôtie', 'Champignons', 'Fromage affiné'];
@@ -71,7 +71,7 @@ export function boutiqueAnalysis(p){
   } else if(isBdb){
     style='Blanc de blancs';
     expected='frais, précis et élancé';
-    summary='Un blanc de blancs à envisager pour la fraîcheur et les accords marins, avec un profil attendu plus élancé que puissant.';
+    summary='Un blanc de blancs précis et élancé, particulièrement adapté à l’apéritif, aux coquillages et aux poissons fins.';
     choose='vous recherchez de la fraîcheur, de la précision et une bouteille adaptée aux produits de la mer.';
     avoid='vous préférez un champagne très vineux, ample ou dominé par une sensation de fruits rouges.';
     pairings=['Huîtres et coquillages', 'Crustacés', 'Poisson fin'];
@@ -80,7 +80,7 @@ export function boutiqueAnalysis(p){
   } else if(isNature){
     style='Extra-brut / nature';
     expected='sec, direct et tendu';
-    summary='Une cuvée à faible dosage attendu, destinée aux amateurs de champagnes secs et précis plutôt qu’à ceux qui recherchent d’abord la rondeur.';
+    summary='Une cuvée peu dosée, destinée aux amateurs de champagnes secs et précis plutôt qu’à ceux qui recherchent d’abord la rondeur.';
     choose='vous appréciez les champagnes secs, droits et peu marqués par la liqueur de dosage.';
     avoid='vous recherchez une sensation ronde, douce ou très consensuelle.';
     pairings=['Coquillages', 'Sashimi', 'Fromage frais'];
@@ -108,13 +108,12 @@ export function boutiqueAnalysis(p){
 
 function card(p){
   const old = p.oldPrice ? `<span class="bq-old">${EUR(p.oldPrice)}</span>` : '';
-  const cut = p.oldPrice ? `<span class="bq-cut">-${Math.round((1-p.price/p.oldPrice)*100)}%</span>` : '';
   const tags = p.tags.map(t=>`<span class="bq-tag">${t}</span>`).join('');
   const key = p.tags.join('|').toLowerCase();
   const internalUrl = `/champagne/${p.id && !String(p.id).startsWith('shopify_') ? p.id : boutiqueSlug(p)}/`;
   return `<article class="bq-card" data-style="${key}" data-price="${p.price}">
       <a class="bq-media" href="${internalUrl}" aria-label="Voir l’analyse de ${esc(p.brand)} ${esc(p.name)}">
-        ${cut}<img loading="lazy" src="${esc(p.image)}" alt="${esc(p.brand)} ${esc(p.name)}">
+        <img loading="lazy" src="${esc(p.image)}" alt="${esc(p.brand)} ${esc(p.name)}">
       </a>
       <div class="bq-body">
         <div class="bq-brand">${esc(p.brand)}</div>
@@ -130,6 +129,25 @@ function card(p){
 
 function gauge(label, value){
   return `<div class="bqp-gauge"><div><span>${label}</span><strong>${value}/5</strong></div><div class="bqp-track"><i style="width:${value*20}%"></i></div></div>`;
+}
+
+function editorialScene(p, analysis){
+  const text=`${p.name} ${p.tags.join(' ')}`.toLowerCase();
+  const accords=(p.details?.accords||[]).map(item=>item.token||'');
+  const occasions=p.occ||[];
+  if(text.includes('rosé') || text.includes('rose')){
+    return {image:'https://images.unsplash.com/photo-1673872602569-c9a1c1bfe71f?q=80&w=1800&auto=format&fit=crop',label:'Moment conseillé',title:'À servir à l’apéritif ou avec une cuisine délicatement fruitée'};
+  }
+  if(accords.includes('accord_mer') || /blanc de blancs|extra-brut|nature/.test(text)){
+    return {image:'https://images.unsplash.com/photo-1679694140422-aecfd3d5dd0b?q=80&w=1800&auto=format&fit=crop',label:'Accord privilégié',title:'Une cuvée pensée pour les produits de la mer'};
+  }
+  if(occasions.includes('occ_cadeau') || p.price>=70){
+    return {image:'https://images.unsplash.com/photo-1606728000988-fbbec753b8ce?q=80&w=1800&auto=format&fit=crop',label:'Occasion',title:'Une bouteille à offrir ou à ouvrir pour un moment marquant'};
+  }
+  if(p.producerType==='vigneron'){
+    return {image:'https://images.unsplash.com/photo-1635715070096-b4655b94edee?q=80&w=1800&auto=format&fit=crop',label:'Identité',title:'Le caractère d’un champagne de vigneron'};
+  }
+  return {image:'https://images.unsplash.com/photo-1498429152472-9a433d9ddf3b?q=80&w=1800&auto=format&fit=crop',label:'Service',title:`Un ${analysis.style.toLowerCase()} polyvalent pour l’apéritif et le début du repas`};
 }
 
 export function boutiqueProductMain(p, buildDate, catalogue=CHAMPAGNES){
@@ -157,7 +175,7 @@ export function boutiqueProductMain(p, buildDate, catalogue=CHAMPAGNES){
     isVintage:p.tags.includes('Millésimé')
   } : generic;
   const old = p.oldPrice ? `<span class="bqp-old">${EUR(p.oldPrice)}</span>` : '';
-  const saving = p.oldPrice ? Math.round((1-p.price/p.oldPrice)*100) : 0;
+  const scene=editorialScene(p,a);
   const tags = p.tags.map(t=>`<span class="bq-tag">${esc(t)}</span>`).join('');
   const classification = a.classification ? `<span class="bqp-fact"><small>Classement indiqué</small><strong>${a.classification}</strong></span>` : '';
   const vintage = a.isVintage ? `<span class="bqp-fact"><small>Type</small><strong>Millésimé</strong></span>` : '';
@@ -167,6 +185,13 @@ export function boutiqueProductMain(p, buildDate, catalogue=CHAMPAGNES){
     .slice(0,3).map(card).join('');
   const observedDate=(p.offerCheckedAt||`${buildDate}T12:00:00Z`).slice(0,10);
   const formattedDate = new Intl.DateTimeFormat('fr-FR',{day:'numeric',month:'long',year:'numeric'}).format(new Date(`${observedDate}T12:00:00Z`));
+  const producerSource=p.officialSourceUrl
+    ? `<a class="bqp-source" href="${esc(p.officialSourceUrl)}" target="_blank" rel="noopener">Consulter la source du producteur</a>`
+    : '';
+  const sourceTitle=p.sourceKind==='producer' ? 'Données confirmées par le producteur' : 'Données disponibles';
+  const sourceIntro=p.sourceKind==='producer'
+    ? 'Les éléments techniques ci-dessous sont rapprochés de la documentation du producteur. Le prix, la photo et le stock proviennent séparément du partenaire.'
+    : 'La dénomination, la photo, le prix et les caractéristiques disponibles proviennent de la fiche du partenaire. Les éléments non confirmés par le producteur ne sont pas présentés comme des faits officiels.';
 
   return `<section class="bqp"><div class="container">
     <a class="a-back" href="/champagnes/">‹ Retour à la sélection</a>
@@ -177,8 +202,8 @@ export function boutiqueProductMain(p, buildDate, catalogue=CHAMPAGNES){
         <h1>${esc(p.name)}</h1>
         <p class="bqp-lead">${a.summary}</p>
         <div class="bq-tags">${tags}</div>
-        <div class="bqp-price"><strong>${EUR(p.price)}</strong>${old}${saving?`<span class="bq-cut">-${saving}%</span>`:''}</div>
-        <a class="btn btn-primary btn-lg" href="${esc(p.aff||p.buyUrl||'')}" target="_blank" rel="sponsored nofollow noopener">Voir l’offre chez Bottle of Italy</a>
+        <div class="bqp-price"><strong>${EUR(p.price)}</strong>${old}</div>
+        <a class="btn btn-primary btn-lg" data-product-id="${esc(p.id)}" href="${esc(p.aff||p.buyUrl||'')}" target="_blank" rel="sponsored nofollow noopener">Voir l’offre chez Bottle of Italy</a>
         <p class="bqp-partner">Lien affilié · Prix et disponibilité chez le partenaire, relevés le ${formattedDate}.</p>
       </div>
     </div>
@@ -187,13 +212,17 @@ export function boutiqueProductMain(p, buildDate, catalogue=CHAMPAGNES){
       <article class="bqp-panel bqp-verdict"><div class="pblock-eyebrow">Le verdict QuelChampagne</div><h2>À qui s’adresse cette cuvée ?</h2>
         <div class="decision-grid"><div class="decision"><strong>À choisir si…</strong><p>${a.choose}</p></div><div class="decision"><strong>À éviter si…</strong><p>${a.avoid}</p></div></div>
       </article>
-      <aside class="bqp-panel"><div class="pblock-eyebrow">Positionnement</div><h2>Le prix en contexte</h2><p>${a.pricePosition}</p><p class="bqp-muted">La promotion ne remplace pas l’analyse du style : comparez d’abord l’usage, puis le prix du jour.</p></aside>
+      <aside class="bqp-panel"><div class="pblock-eyebrow">Positionnement</div><h2>Le prix en contexte</h2><p>${a.pricePosition}</p><p class="bqp-muted">Le style, l’occasion et les accords constituent les premiers critères de choix ; le prix permet ensuite de départager les cuvées retenues.</p></aside>
     </div>
 
     <div class="bqp-panel">
       <div class="pblock-eyebrow">Style</div><h2>Profil gustatif</h2>
-      <p class="bqp-copy">D’après les informations disponibles, cette cuvée appartient au registre <strong>${a.style}</strong>. Les arômes signalés sont <strong>${a.expected}</strong>. Ces éléments facilitent la comparaison entre bouteilles ; ils ne remplacent pas une dégustation.</p>
+      <p class="bqp-copy">Cette cuvée exprime un profil <strong>${a.style}</strong>, construit autour d’un registre <strong>${a.expected}</strong>. L’équilibre entre fraîcheur, rondeur et puissance permet de la situer précisément dans la sélection et d’identifier les occasions auxquelles elle convient le mieux.</p>
       <div class="bqp-gauges">${gauge('Fraîcheur',a.gauges.fraicheur)}${gauge('Rondeur',a.gauges.rondeur)}${gauge('Puissance',a.gauges.puissance)}${gauge('Facilité d’accès',a.gauges.accessibilite)}</div>
+    </div>
+
+    <div class="bqp-scene" style="--scene:url('${scene.image}')">
+      <div><div class="pblock-eyebrow">${scene.label}</div><h2>${scene.title}</h2></div>
     </div>
 
     <div class="bqp-grid">
@@ -202,14 +231,16 @@ export function boutiqueProductMain(p, buildDate, catalogue=CHAMPAGNES){
     </div>
 
     <div class="bqp-panel">
-      <div class="pblock-eyebrow">Transparence</div><h2>Informations vérifiées</h2>
+      <div class="pblock-eyebrow">Sources</div><h2>${sourceTitle}</h2>
+      <p class="bqp-muted">${sourceIntro}</p>
       <div class="bqp-facts"><span class="bqp-fact"><small>Catégorie indiquée</small><strong>${a.style}</strong></span>${classification}${vintage}<span class="bqp-fact"><small>Prix partenaire relevé</small><strong>${EUR(p.price)}</strong></span></div>
-      <p class="bqp-muted">${p.details?.facts||'La photo, la dénomination, les catégories et le prix proviennent du flux du partenaire.'} ${p.identityStatus==='merchant_feed_year_to_verify'?'Le millésime affiché dans le flux doit encore être confirmé sur l’étiquette ou par le producteur.':''}</p>
+      <p class="bqp-muted">${p.details?.facts||'La photo, la dénomination, les catégories et le prix proviennent du flux du partenaire.'} ${p.identityStatus.includes('vintage_unconfirmed')||p.identityStatus==='merchant_feed_year_to_verify'?'L’année du flux n’est pas retenue dans le titre tant qu’elle n’est pas confirmée sur la fiche du producteur.':''}</p>
+      ${producerSource}
     </div>
 
     <div class="bqp-buy">
       <div><div class="pblock-eyebrow">Offre partenaire</div><h2>${esc(p.brand)} ${esc(p.name)}</h2><p>Vérifiez le prix final, le stock, le millésime et les frais de livraison avant de commander.</p></div>
-      <a class="btn btn-primary btn-lg" href="${esc(p.aff||p.buyUrl||'')}" target="_blank" rel="sponsored nofollow noopener">Consulter l’offre partenaire</a>
+      <a class="btn btn-primary btn-lg" data-product-id="${esc(p.id)}" href="${esc(p.aff||p.buyUrl||'')}" target="_blank" rel="sponsored nofollow noopener">Consulter l’offre partenaire</a>
     </div>
 
     ${related?`<div class="bqp-related"><div class="sec-head"><h2 class="h2">Dans un style proche</h2><p>Trois bouteilles proches par leur style et leur prix.</p></div><div class="bq-grid">${related}</div></div>`:''}
@@ -217,15 +248,16 @@ export function boutiqueProductMain(p, buildDate, catalogue=CHAMPAGNES){
   <style>
     .bq-name a{color:inherit;text-decoration:none}.bqp{padding:clamp(36px,6vw,84px) 0 90px;background:#F4F4F1;color:#14110c}
     .bqp-hero{display:grid;grid-template-columns:minmax(280px,.85fr) minmax(320px,1.15fr);gap:clamp(34px,7vw,92px);align-items:center;margin-top:28px}
-    .bqp-visual{min-height:540px;border:1px solid #deded8;background:#fff;display:grid;place-items:center;padding:40px}
-    .bqp-visual img{width:100%;height:500px;object-fit:contain;mix-blend-mode:multiply}.bqp-intro h1{font-family:var(--display);font-size:clamp(40px,5.3vw,72px);font-weight:900;text-transform:uppercase;line-height:.95;letter-spacing:-.025em;margin:12px 0 22px}
+    .bqp-visual{height:560px;border:1px solid #deded8;background:#fff;display:grid;place-items:center;padding:34px;overflow:hidden}
+    .bqp-visual img{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain!important;object-position:center;mix-blend-mode:multiply}.bqp-intro h1{font-family:var(--display);font-size:clamp(40px,5.3vw,72px);font-weight:900;text-transform:uppercase;line-height:.95;letter-spacing:-.025em;margin:12px 0 22px}
     .bqp-lead{font-size:18px;line-height:1.75;color:#5f5a51;max-width:62ch}.bqp-price{display:flex;align-items:center;gap:12px;margin:28px 0 22px}.bqp-price>strong{font-size:30px}.bqp-old{text-decoration:line-through;color:#817a6f}.bqp-partner,.bqp-muted{font-size:13px;line-height:1.65;color:#777067}.bqp-partner{margin-top:12px}
     .bqp-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:22px;margin-top:22px}.bqp-panel{background:#fff;border:1px solid #deded8;padding:clamp(24px,4vw,42px);margin-top:22px}.bqp-panel h2,.bqp-buy h2{font-family:var(--display);font-size:clamp(26px,3vw,38px);font-weight:800;line-height:1.04;margin:8px 0 18px}.bqp-panel p{line-height:1.75;color:#5f5a51}
-    .bqp-copy{max-width:76ch}.bqp-gauges{display:grid;grid-template-columns:1fr 1fr;gap:22px 34px;margin-top:30px}.bqp-gauge>div:first-child{display:flex;justify-content:space-between;font-size:13px;margin-bottom:8px}.bqp-track{height:7px;background:#e5e5e0;overflow:hidden}.bqp-track i{display:block;height:100%;background:#a9803f}
-    .bqp-list{list-style:none;padding:0;margin:0;display:grid;gap:10px}.bqp-list li{padding:13px 16px;background:#F4F4F1}.bqp-list li:before{content:'✓';color:#a9803f;font-weight:700;margin-right:10px}
-    .bqp-facts{display:flex;flex-wrap:wrap;gap:12px;margin:22px 0}.bqp-fact{display:flex;flex-direction:column;gap:3px;padding:13px 16px;border:1px solid #e9e4da;border-radius:12px}.bqp-fact small{color:#777067}.bqp-buy{margin-top:22px;background:#17140f;color:#fff;border-radius:20px;padding:clamp(26px,4vw,44px);display:flex;justify-content:space-between;align-items:center;gap:28px}.bqp-buy p{color:#cbc5bb;margin:0}.bqp-related{margin-top:70px}
-    .bqp-related .bq-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.bqp-related .bq-card{display:flex;flex-direction:column;background:#fff;border:1px solid #deded8;overflow:hidden;transition:transform .2s ease,box-shadow .2s ease}.bqp-related .bq-card:hover{transform:translateY(-4px);box-shadow:0 18px 40px -22px rgba(20,17,12,.28)}.bqp-related .bq-media{position:relative;display:block;aspect-ratio:1/1;background:#fff;padding:18px}.bqp-related .bq-media img{width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply}.bqp-related .bq-body{display:flex;flex-direction:column;gap:8px;padding:16px 16px 18px;flex:1}.bqp-related .bq-brand{font-size:11px;letter-spacing:.11em;text-transform:uppercase;color:#a9803f;font-weight:700}.bqp-related .bq-name{font-size:15px;line-height:1.32;font-weight:600;margin:0;min-height:2.4em}.bqp-related .bq-tags{display:flex;flex-wrap:wrap;gap:6px}.bqp-related .bq-tag{font-size:11px;color:#6f6a61;border:1px solid #deded8;padding:3px 9px}.bqp-related .bq-foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:10px;padding-top:12px}.bqp-related .bq-price{display:flex;flex-direction:column;font-weight:700;font-size:16px}.bqp-related .bq-old{font-size:12px;font-weight:500;color:#6f6a61;text-decoration:line-through}.bqp-related .bq-btn{background:#14110c;color:#fff;padding:9px 14px;font-size:12px;font-weight:600;text-decoration:none;white-space:nowrap}
-    @media(max-width:760px){.bqp-hero,.bqp-grid{grid-template-columns:1fr}.bqp-visual{min-height:360px}.bqp-visual img{height:330px}.bqp-gauges{grid-template-columns:1fr}.bqp-buy{align-items:flex-start;flex-direction:column}.bqp-intro h1{font-size:42px}.bqp-related .bq-grid{grid-template-columns:1fr}}
+    .bqp-copy{max-width:76ch}.bqp-gauges{display:grid;grid-template-columns:1fr 1fr;gap:22px 34px;margin-top:30px}.bqp-gauge>div:first-child{display:flex;justify-content:space-between;font-size:13px;margin-bottom:8px}.bqp-track{height:7px;background:#e5e5e0;overflow:hidden}.bqp-track i{display:block;height:100%;background:#806020}
+    .bqp-scene{position:relative;isolation:isolate;min-height:390px;margin-top:22px;padding:clamp(30px,6vw,70px);display:flex;align-items:flex-end;overflow:hidden;background-image:linear-gradient(90deg,rgba(13,11,7,.83),rgba(13,11,7,.18)),var(--scene);background-size:cover;background-position:center;color:#fff}.bqp-scene:after{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,transparent 45%,rgba(13,11,7,.38))}.bqp-scene>div{max-width:720px}.bqp-scene .pblock-eyebrow{color:#e6c777}.bqp-scene h2{font-family:var(--display);font-size:clamp(32px,5vw,58px);font-weight:900;line-height:1;text-transform:uppercase;margin:10px 0 0}
+    .bqp-list{list-style:none;padding:0;margin:0;display:grid;gap:10px}.bqp-list li{padding:13px 16px;background:#F4F4F1}.bqp-list li:before{content:'✓';color:#806020;font-weight:700;margin-right:10px}
+    .bqp-facts{display:flex;flex-wrap:wrap;gap:12px;margin:22px 0}.bqp-fact{display:flex;flex-direction:column;gap:3px;padding:13px 16px;border:1px solid #e9e4da;border-radius:12px}.bqp-fact small{color:#777067}.bqp-source{display:inline-flex;margin-top:18px;color:#6B4D18;font-weight:700;text-decoration:underline;text-underline-offset:3px}.bqp-buy{margin-top:22px;background:#17140f;color:#fff;border-radius:20px;padding:clamp(26px,4vw,44px);display:flex;justify-content:space-between;align-items:center;gap:28px}.bqp-buy p{color:#cbc5bb;margin:0}.bqp-related{margin-top:70px}
+    .bqp-related .bq-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.bqp-related .bq-card{display:flex;flex-direction:column;background:#fff;border:1px solid #deded8;overflow:hidden;transition:transform .2s ease,box-shadow .2s ease}.bqp-related .bq-card:hover{transform:translateY(-4px);box-shadow:0 18px 40px -22px rgba(20,17,12,.28)}.bqp-related .bq-media{position:relative;display:block;height:280px;overflow:hidden;background:#fff;padding:22px}.bqp-related .bq-media img{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain!important;object-position:center;mix-blend-mode:multiply}.bqp-related .bq-body{display:flex;flex-direction:column;gap:8px;padding:16px 16px 18px;flex:1}.bqp-related .bq-brand{font-size:11px;letter-spacing:.11em;text-transform:uppercase;color:#806020;font-weight:700}.bqp-related .bq-name{font-size:15px;line-height:1.32;font-weight:600;margin:0;min-height:2.4em}.bqp-related .bq-tags{display:flex;flex-wrap:wrap;gap:6px}.bqp-related .bq-tag{font-size:11px;color:#6f6a61;border:1px solid #deded8;padding:3px 9px}.bqp-related .bq-foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:10px;padding-top:12px}.bqp-related .bq-price{display:flex;flex-direction:column;font-weight:700;font-size:16px}.bqp-related .bq-old{font-size:12px;font-weight:500;color:#6f6a61;text-decoration:line-through}.bqp-related .bq-btn{background:#14110c;color:#fff;padding:9px 14px;font-size:12px;font-weight:600;text-decoration:none;white-space:nowrap}
+    @media(max-width:760px){.bqp-hero,.bqp-grid{grid-template-columns:1fr}.bqp-visual{height:420px;padding:24px}.bqp-gauges{grid-template-columns:1fr}.bqp-buy{align-items:flex-start;flex-direction:column}.bqp-intro h1{font-size:42px}.bqp-related .bq-grid{grid-template-columns:1fr}.bqp-related .bq-media{height:300px}.bqp-scene{min-height:320px}}
   </style>`;
 }
 
@@ -255,7 +287,7 @@ export function boutiqueMain(items=CHAMPAGNES){
   </div></section>
 
   <style>
-    .boutique{--bq-ink:#14110c;--bq-muted:#6f6a61;--bq-line:#e9e4da;--bq-gold:#a9803f;--bq-bg:#faf8f4;margin-top:26px}
+    .boutique{--bq-ink:#14110c;--bq-muted:#6f6a61;--bq-line:#e9e4da;--bq-gold:#806020;--bq-bg:#faf8f4;margin-top:26px}
     .bq-bar{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;margin-bottom:26px}
     .bq-chips{display:flex;flex-wrap:wrap;gap:8px}
     .bq-chip{border:1px solid var(--bq-line);background:#fff;color:var(--bq-ink);border-radius:999px;padding:8px 15px;font-size:13px;font-weight:500;cursor:pointer;transition:.18s}
@@ -266,9 +298,8 @@ export function boutiqueMain(items=CHAMPAGNES){
     .bq-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(232px,1fr));gap:22px}
     .bq-card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--bq-line);border-radius:16px;overflow:hidden;transition:transform .2s ease,box-shadow .2s ease}
     .bq-card:hover{transform:translateY(-4px);box-shadow:0 18px 40px -22px rgba(20,17,12,.28)}
-    .bq-media{position:relative;display:block;aspect-ratio:1/1;background:#fff;padding:18px}
-    .bq-media img{width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply}
-    .bq-cut{position:absolute;top:12px;left:12px;z-index:2;background:var(--bq-gold);color:#fff;font-size:11px;font-weight:700;letter-spacing:.03em;padding:4px 8px;border-radius:999px}
+    .bq-media{position:relative;display:block;height:340px;overflow:hidden;background:#fff;padding:24px}
+    .bq-media img{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain!important;object-position:center;mix-blend-mode:multiply}
     .bq-body{display:flex;flex-direction:column;gap:8px;padding:16px 16px 18px;flex:1}
     .bq-brand{font-size:11px;letter-spacing:.11em;text-transform:uppercase;color:var(--bq-gold);font-weight:700}
     .bq-name{font-size:15px;line-height:1.32;font-weight:600;color:var(--bq-ink);margin:0;min-height:2.4em}
@@ -280,7 +311,7 @@ export function boutiqueMain(items=CHAMPAGNES){
     .bq-btn{background:var(--bq-ink);color:#fff;border-radius:999px;padding:9px 16px;font-size:13px;font-weight:600;text-decoration:none;white-space:nowrap;transition:.18s}
     .bq-btn:hover{background:var(--bq-gold)}
     .bq-legal{margin-top:30px;font-size:12px;line-height:1.6;color:var(--bq-muted);max-width:70ch}
-    @media(max-width:560px){.bq-grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px}.bq-name{font-size:14px}}
+    @media(max-width:560px){.bq-grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px}.bq-media{height:250px;padding:16px}.bq-name{font-size:14px}}
   </style>
 
   <script>

@@ -1,0 +1,44 @@
+name: Actualiser le catalogue
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 5 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: catalogue-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Actualiser les prix et stocks
+        run: node sync-bottle-of-italy.mjs
+      - name: Reconstruire et contrôler
+        run: |
+          node build-product-evidence.mjs
+          node build-site.mjs
+          node validate-site.mjs
+          node test-recommendations.mjs
+          node test-merchant-import.mjs
+          node test-analytics.mjs
+      - name: Enregistrer uniquement un instantané valide
+        run: |
+          if git diff --quiet -- data/bottle-of-italy-products.json; then
+            echo "Aucun changement."
+            exit 0
+          fi
+          git config user.name "QuelChampagne catalogue"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/bottle-of-italy-products.json data/product-evidence.json reports/product-evidence-review.json
+          git commit -m "Actualiser les prix et disponibilités"
+          git push

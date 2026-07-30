@@ -37,6 +37,7 @@ const registeredPartnerImages = new Set(PARTNER_CATALOGUE.map(product => product
 const imageRegistry = JSON.parse(read('data/product-images.json'));
 const merchantFeedConfig = JSON.parse(read('data/merchant-feed-config.json'));
 const productIdentityIndex = JSON.parse(read('data/product-identity-index.json'));
+const productEvidence = JSON.parse(read('data/product-evidence.json'));
 const pricePolicy = JSON.parse(read('data/price-policy.json'));
 const priceIndex = JSON.parse(read('data/price-index.json'));
 const htmlFiles = walk(DIST.pathname).filter(path => path.endsWith('.html'));
@@ -44,6 +45,22 @@ const ids = new Set(catalogue.map(product => product.id));
 const seenTitles = new Map();
 const seenCanonicals = new Map();
 const seenDescriptions = new Map();
+
+if (productEvidence.productCount !== PARTNER_CATALOGUE.length || productEvidence.records.length !== PARTNER_CATALOGUE.length) {
+  errors.push(`Base de preuves incomplète : ${productEvidence.records.length} sur ${PARTNER_CATALOGUE.length}.`);
+}
+for (const evidence of productEvidence.records) {
+  if (!evidence.merchantSourceUrl || !evidence.merchantCheckedAt || !evidence.status) {
+    errors.push(`Traçabilité marchande incomplète : ${evidence.productId}.`);
+  }
+  if (evidence.status.startsWith('official_') && !evidence.officialSourceUrl) {
+    errors.push(`Statut officiel sans source primaire : ${evidence.productId}.`);
+  }
+}
+const whitePearl=PARTNER_CATALOGUE.find(product=>product.id==='deheurles-white-pearl-blanc-de-blancs-extra-brut');
+if (!whitePearl || whitePearl.brand!=='Daniel Deheurles & Filles' || !whitePearl.details.grapes.includes('Pinot Blanc')) {
+  errors.push('La correction officielle de White Pearl (producteur et Pinot Blanc) est absente.');
+}
 
 if (catalogue.length !== 75) errors.push(`Catalogue attendu : 75, obtenu : ${catalogue.length}.`);
 if (ids.size !== catalogue.length) errors.push('Des identifiants produit sont dupliqués.');
@@ -175,8 +192,8 @@ for (const profile of editorial) {
 }
 
 const source = read('index.html');
-if (!source.includes("id:'maison', label:\"04 · Le producteur\"")) errors.push('La quatrième question sur le producteur est absente.');
-if (!source.includes('const producerPenalty')) errors.push('Le critère de préférence producteur est absent du scoring.');
+if (!source.includes("id:'repere', label:\"04 · Votre repère\"")) errors.push('La quatrième question de départage est absente.');
+if (!source.includes('function signalFit')) errors.push('Le critère de départage du sélecteur est absent du scoring.');
 if (source.includes('function bottleSVG') || source.includes('M62,98 C62,110')) {
   errors.push('Une ancienne bouteille SVG générique subsiste dans le code source.');
 }
@@ -244,17 +261,17 @@ global.document = {
 global.window = { scrollTo() {}, open() {} };
 global.localStorage = { getItem() { return null; }, setItem() {} };
 global.fetch = () => Promise.reject(new Error('Réseau désactivé pendant la validation.'));
-eval(`${script}; Object.assign(quiz, { questions, score, setCatalogue });`);
+eval(`${script}; Object.assign(quiz, { questions, score, signalFit, setCatalogue });`);
 quiz.setCatalogue(PARTNER_CATALOGUE);
 if (quiz.questions().length !== 4) errors.push(`Questions attendues : 4, obtenues : ${quiz.questions().length}.`);
-const vigneron = PARTNER_CATALOGUE.find(product => product.producerType === 'vigneron');
-if (!vigneron) {
-  errors.push('Aucun champagne de vigneron ne permet de tester la préférence producteur.');
+const lowDosage = PARTNER_CATALOGUE.find(product => quiz.signalFit(product,'low_dosage'));
+if (!lowDosage) {
+  errors.push('Aucun champagne peu dosé ne permet de tester le quatrième critère.');
 } else {
-  const answers = { occasion: vigneron.occ, gout: vigneron.profil, budget: [`b${vigneron.tier}`], maison: ['vigneron'] };
-  const preferredScore = quiz.score(vigneron, answers);
-  const mismatchedScore = quiz.score({ ...vigneron, producerType: 'maison' }, answers);
-  if (preferredScore - mismatchedScore !== 45) errors.push('La préférence vigneron ne produit pas la pénalité attendue de 45 points.');
+  const answers = { occasion: lowDosage.occ, gout: lowDosage.profil, budget: [`b${lowDosage.tier}`], repere: ['low_dosage'] };
+  const preferredScore = quiz.score(lowDosage, answers);
+  const mismatchedScore = quiz.score({ ...lowDosage, tags:lowDosage.tags.filter(tag=>tag!=='Extra-brut / nature'), details:{...lowDosage.details,dosage:null} }, answers);
+  if (Math.round(preferredScore - mismatchedScore) !== 24) errors.push('Le critère faible dosage ne produit pas le bonus attendu.');
 }
 
 for (const file of htmlFiles) {
@@ -313,11 +330,20 @@ for (const file of htmlFiles) {
 
 const sitemap = read('dist/sitemap.xml');
 const sitemapUrls = [...sitemap.matchAll(/<loc>https:\/\/quelchampagne\.fr([^<]*)<\/loc>/g)];
-const expectedSitemapUrls = 34 + PARTNER_CATALOGUE.length;
+const expectedSitemapUrls = 22 + PARTNER_CATALOGUE.length;
 if (sitemapUrls.length !== expectedSitemapUrls) errors.push(`URL sitemap attendues : ${expectedSitemapUrls}, obtenues : ${sitemapUrls.length}.`);
 for (const [, path] of sitemapUrls) {
   const target = localTarget(path || '/');
   if (!target || !existsSync(target)) errors.push(`URL du sitemap sans page : ${path || '/'}.`);
+}
+
+for (const file of htmlFiles.filter(path=>path.includes('/blog/') && path.endsWith('/index.html') && !path.endsWith('/blog/index.html'))) {
+  const html=readFileSync(file,'utf8');
+  const prose=html.match(/<div class="prose">([\s\S]*?)<\/div>/)?.[1] || '';
+  const wordCount=prose.replace(/<[^>]+>/g,' ').replace(/&[^;]+;/g,' ').trim().split(/\s+/).filter(Boolean).length;
+  const headingCount=(prose.match(/<h3>/g)||[]).length;
+  if(wordCount<320) errors.push(`Article trop court (${wordCount} mots) : ${file.replace(DIST.pathname,'')}.`);
+  if(headingCount<4) errors.push(`Article insuffisamment structuré : ${file.replace(DIST.pathname,'')}.`);
 }
 
 for (const slug of ['aperitif', 'cadeau', 'repas', 'rose', 'blanc-de-blancs', 'moins-de-50-euros', 'fruits-de-mer']) {
@@ -352,8 +378,11 @@ if (publicCatalogue.length!==PARTNER_CATALOGUE.length || publicCatalogue.some(pr
 }
 const redirects=read('dist/_redirects');
 if (!redirects.includes('/comparatifs/ /comparateur/ 301')) errors.push('La redirection Cloudflare des anciens comparatifs est absente.');
-if (catalogue.filter(product=>!partnerIds.has(product.id)).some(product=>!redirects.includes(`/champagne/${product.id}/ /champagnes/ 301`))) {
-  errors.push('Une ancienne fiche ne possède pas de redirection Cloudflare.');
+if (catalogue.filter(product=>!partnerIds.has(product.id) && product.region==='Champagne').some(product=>!redirects.includes(`/champagne/${product.id}/ /champagnes/ 301`))) {
+  errors.push('Une ancienne fiche Champagne ne possède pas de redirection Cloudflare.');
+}
+if (catalogue.filter(product=>!partnerIds.has(product.id) && product.region!=='Champagne').some(product=>redirects.includes(`/champagne/${product.id}/`))) {
+  errors.push('Une ancienne fiche hors Champagne possède encore une redirection publique.');
 }
 
 for (const path of ['notre-methode', 'a-propos']) {
@@ -379,6 +408,12 @@ if (!selector.includes("const state = { view:'quiz'")) errors.push('Le sélecteu
 if (!selector.includes('<h1 class="qtitle">${q.q}</h1>')) errors.push('La question active du sélecteur n’est pas exposée comme titre principal.');
 if (!existsSync(new URL('dist/assets/hero-quelchampagne.svg', ROOT))) errors.push('Illustration originale principale absente du build.');
 if (!existsSync(new URL('dist/assets/og-quelchampagne.png', ROOT))) errors.push('Image de partage sociale absente du build.');
+if (!existsSync(new URL('dist/assets/archivo-latin-wght-normal.woff2', ROOT))) errors.push('Police Archivo auto-hébergée absente du build.');
+if (!existsSync(new URL('dist/assets/analytics.js', ROOT))) errors.push('Client de mesure d’audience absent du build.');
+if (!existsSync(new URL('functions/api/events.js', ROOT))) errors.push('Fonction Cloudflare de mesure d’audience absente.');
+if (!read('wrangler.toml').includes('binding = "QC_ANALYTICS"')) errors.push('Binding Analytics Engine absent de la configuration Cloudflare.');
+if (source.includes('cdn.jsdelivr.net/npm/@fontsource')) errors.push('La police dépend encore de jsDelivr.');
+if (!source.includes("window.qcTrack('quiz_completed'")) errors.push('La fin du sélecteur n’est pas mesurée.');
 for (const stale of ['Perle d’Aurore', 'Sancerre « Les Baronnes »', 'Whispering Angel']) {
   if (selector.includes(stale)) errors.push(`Ancienne donnée de démonstration encore exposée dans le sélecteur : ${stale}.`);
 }
@@ -386,6 +421,9 @@ if (source.includes('Un clic vous mène directement sur le site de la maison pou
 if (PARTNER_CATALOGUE.length !== 48) errors.push(`Catalogue partenaire attendu : 48, obtenu : ${PARTNER_CATALOGUE.length}.`);
 if (new Set(PARTNER_CATALOGUE.map(product=>product.id)).size !== PARTNER_CATALOGUE.length) errors.push('Identifiants du catalogue partenaire dupliqués.');
 if (PARTNER_CATALOGUE.some(product=>!product.commerceReady || product.availability!=='in_stock')) errors.push('Une cuvée partenaire publiée n’est pas disponible.');
+if (PARTNER_CATALOGUE.some(product=>product.priceStatus==='stale' && (product.commerceReady || product.oldPrice))) errors.push('Une offre périmée reste achetable ou conserve une promotion.');
+if (PARTNER_CATALOGUE.some(product=>product.priceStatus!=='fresh' && product.oldPrice)) errors.push('Un ancien prix est affiché au-delà de la période de fraîcheur autorisée.');
+if (!existsSync(new URL('.github/workflows/refresh-catalogue.yml', ROOT))) errors.push('Le workflow quotidien d’actualisation du catalogue est absent.');
 if (PARTNER_CATALOGUE.some(product=>!/ikhnaie\.link/.test(product.aff||'') || /FRutm_source/.test(product.aff))) errors.push('Un lien affilié partenaire est absent ou mal formé.');
 if (PARTNER_CATALOGUE.some(product=>!product.details?.facts || !product.details?.advice || !product.details?.avoid || !product.details?.scores)) errors.push('Une analyse partenaire est incomplète.');
 if (new Set(PARTNER_CATALOGUE.map(product=>product.note)).size < 40) errors.push('Les analyses partenaires restent trop répétitives.');
@@ -393,9 +431,22 @@ if (PARTNER_CATALOGUE.some(product=>product.identityStatus==='merchant_feed_year
 for (const file of htmlFiles.filter(path => path.includes('/champagne/') && !path.match(/\/champagne\/(aperitif|cadeau|repas|rose|blanc-de-blancs|moins-de-50-euros|fruits-de-mer)\//))) {
   const html = readFileSync(file, 'utf8');
   if (!html.includes('À choisir si…') || !html.includes('À éviter si…')) errors.push(`Aide à la décision absente de ${file.replace(DIST.pathname, '')}.`);
+  if (partnerIds.has(file.split('/champagne/')[1]?.split('/')[0]) && !html.includes('class="bqp-scene"')) {
+    errors.push(`Visuel éditorial contextuel absent de ${file.replace(DIST.pathname, '')}.`);
+  }
 }
-if (existsSync(new URL('deploy.bat', ROOT))) errors.push('L’ancien script de déploiement Netlify est encore présent.');
-
+const publishedCopy = htmlFiles.map(file=>readFileSync(file,'utf8')).join('\n');
+for (const phrase of [
+  'ne remplacent pas une dégustation',
+  'ne prétendons pas avoir dégusté',
+  'Cette cuvée est présentée comme',
+  'D’après les informations disponibles',
+  'interprétation éditoriale QuelChampagne'
+]) {
+  if (publishedCopy.includes(phrase)) errors.push(`Formulation éditoriale à supprimer encore publiée : « ${phrase} ».`);
+}
+if (!source.includes('object-fit:contain!important')) errors.push('La règle prioritaire anti-recadrage des packshots est absente.');
+if (!source.includes('.page-hero::before{display:block!important}')) errors.push('Les visuels des pages de sélection sont encore masqués.');
 if (errors.length) {
   console.error(`Validation échouée (${errors.length} erreur${errors.length > 1 ? 's' : ''}) :`);
   for (const error of errors) console.error(`- ${error}`);

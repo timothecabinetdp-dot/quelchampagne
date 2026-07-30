@@ -1,0 +1,229 @@
+{
+  "reviewedAt": "2026-07-30T11:52:33.867Z",
+  "engine": "Chromium via Playwright",
+  "viewports": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "pages": [
+    {
+      "device": "desktop",
+      "name": "accueil",
+      "path": "/",
+      "title": "Quel champagne choisir ? Le guide indépendant | QuelChampagne",
+      "documentWidth": 1440,
+      "viewportWidth": 1440,
+      "brokenImages": [],
+      "tinyText": [],
+      "horizontalOverflow": false,
+      "passed": true
+    },
+    {
+      "device": "desktop",
+      "name": "selection",
+      "path": "/champagnes/",
+      "title": "Quel champagne choisir ? Notre sélection de 48 champagnes | QuelChampagne",
+      "documentWidth": 1440,
+      "viewportWidth": 1440,
+      "brokenImages": [],
+      "tinyText": [
+        "Jean de La Fontaine",
+        "Brut",
+        "Grand Tour",
+        "Extra-brut / nature",
+        "Maison Labbé",
+        "Brut",
+        "Premier Cru",
+        "Louis Constant",
+        "Brut",
+        "Alain Mercier"
+      ],
+      "horizontalOverflow": false,
+      "passed": true
+    },
+    {
+      "device": "desktop",
+      "name": "selecteur",
+      "path": "/selecteur/",
+      "title": "Sélecteur de champagne — Comparez en 4 questions | QuelChampagne",
+      "documentWidth": 1440,
+      "viewportWidth": 1440,
+      "brokenImages": [],
+      "tinyText": [],
+      "horizontalOverflow": false,
+      "passed": true
+    },
+    {
+      "device": "desktop",
+      "name": "selecteur-result",
+      "path": "/selecteur/",
+      "title": "Sélecteur de champagne — Comparez en 4 questions | QuelChampagne",
+      "documentWidth": 1440,
+      "viewportWidth": 1440,
+      "brokenImages": [],
+      "tinyText": [
+        "Brut"
+      ],
+      "horizontalOverflow": false,
+      "passed": true
+    },
+    {
+      "device": "desktop",
+      "name": "fiche",
+      "path": "/champagne/cattier-brut-premier-cru/",
+      "title": "Cattier Brut Premier Cru — Avis, profil et accords | QuelChampagne",
+      "documentWidth": 1440,
+      "viewportWidth": 1440,
+      "brokenImages": [],
+      "tinyText": [
+        "Vilmart",
+        "Brut",
+        "Premier Cru",
+        "Solemme",
+        "Brut",
+        "Beaumont des Crayères",
+        "Brut"
+      ],
+      "horizontalOverflow": false,
+      "passed": true
+    },
+    {
+      "device": "desktop",
+      "name": "comparateur",
+      "path": "/comparateur/",
+      "title": "Comparateur de champagnes — Comparez jusqu’à 4 cuvées | QuelChampagne",
+      "documentWidth": 1440,
+      "viewportWidth": 1440,
+      "brokenImages": [],
+      "tinyText": [],
+      "horizontalOverflow": false,
+      "passed": true
+    },
+    {
+      "device": "desktop",
+      "name": "article",
+      "path": "/guide/champagne-aperitif/",
+      "title": "",
+      "documentWidth": 1440,
+      "viewportWidth": 1440,
+      "brokenImages": [],
+      "tinyText": [],
+      "horizontalOverflow": false,
+      "passed": true
+    },
+    {
+      "device": "mobile",
+      "name": "accueil",
+      "path": "/",
+      "title": "Quel champagne choisir ? Le guide indépendant | QuelChampagne",
+      "documentWidth": 390,
+      "viewportWidth": 390,
+      "brokenImages": [],
+      "tinyText": [],
+      "horizontalOverflow": false,
+      "passed": true
+    },
+    {
+      "device": "mobile",
+      "name": "selection",
+      "path": "/champagnes/",
+      "title": "Quel champagne choisir ? Notre sélection de 48 champagnes | QuelChampagne",
+      "documentWidth": 390,
+      "viewportWidth": 390,
+      "brokenImages": [],
+      "tinyText": [
+        "Jean de La Fontaine",
+        "Brut",
+        "Grand Tour",
+        "Extra-brut / nature",
+        "Maison Labbé",
+        "Brut",
+        "Premier Cru",
+        "Louis Constant",
+        "Brut",
+        "Alain Mercier"
+      ],
+      "horizontalOverflow": false,
+      "passed": true
+    },
+    {
+      "device": "mobile",
+      "name": "selecteur",
+      "path": "/selecteur/",
+      "title": "Sélecteur de champagne — Comparez en 4 questions | QuelChampagne",
+      "documentWidth": 390,
+      "viewportWidth": 390,
+      "brokenImages": [],
+      "tinyText": [],
+      "horizontalOverflow": false,
+      "passed": true
+    },
+    {
+      "device": "mobile",
+      "name": "selecteur-result",
+      "path": "/selecteur/",
+      "title": "Sélecteur de champagne — Comparez en 4 questions | QuelChampagne",
+      "documentWidth": 390,
+      "viewportWidth": 390,
+      "brokenImages": [],
+      "tinyText": [
+        "Brut"
+      ],
+      "horizontalOverflow": false,
+      "passed": true
+    },
+    {
+      "device": "mobile",
+      "name": "fiche",
+      "path": "/champagne/cattier-brut-premier-cru/",
+      "title": "Cattier Brut Premier Cru — Avis, profil et accords | QuelChampagne",
+      "documentWidth": 390,
+      "viewportWidth": 390,
+      "brokenImages": [],
+      "tinyText": [
+        "Vilmart",
+        "Brut",
+        "Premier Cru",
+        "Solemme",
+        "Brut",
+        "Beaumont des Crayères",
+        "Brut"
+      ],
+      "horizontalOverflow": false,
+      "passed": true
+    },
+    {
+      "device": "mobile",
+      "name": "comparateur",
+      "path": "/comparateur/",
+      "title": "Comparateur de champagnes — Comparez jusqu’à 4 cuvées | QuelChampagne",
+      "documentWidth": 390,
+      "viewportWidth": 390,
+      "brokenImages": [],
+      "tinyText": [],
+      "horizontalOverflow": false,
+      "passed": true
+    },
+    {
+      "device": "mobile",
+      "name": "article",
+      "path": "/guide/champagne-aperitif/",
+      "title": "",
+      "documentWidth": 390,
+      "viewportWidth": 390,
+      "brokenImages": [],
+      "tinyText": [],
+      "horizontalOverflow": false,
+      "passed": true
+    }
+  ],
+  "passed": true
+}

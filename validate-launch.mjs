@@ -1,6 +1,7 @@
 import { existsSync, readFileSync } from 'node:fs';
 
 const status = JSON.parse(readFileSync('launch-status.json', 'utf8'));
+const visualReportPath='reports/visual-review-2026-07-30.json';
 const required = [
   'technicalValidation',
   'responsiveVisualReview',
@@ -16,6 +17,17 @@ const blockers = required.filter(key => status.checks[key] !== true);
 
 for (const asset of ['assets/hero-quelchampagne.svg', 'assets/og-quelchampagne.png', 'data/image-rights-register.json']) {
   if (!existsSync(asset)) blockers.push(`missing:${asset}`);
+}
+
+if (!existsSync(visualReportPath)) {
+  blockers.push('responsive-visual-report-missing');
+} else {
+  const visual=JSON.parse(readFileSync(visualReportPath,'utf8'));
+  const reviewedPages=Array.isArray(visual.pages) ? visual.pages : [];
+  const devices=new Set(reviewedPages.map(page=>page.device));
+  if(visual.passed!==true || reviewedPages.length<12 || !devices.has('desktop') || !devices.has('mobile')){
+    blockers.push('responsive-visual-review-failed');
+  }
 }
 
 const legal = readFileSync('dist/mentions-legales/index.html', 'utf8');

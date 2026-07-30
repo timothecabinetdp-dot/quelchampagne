@@ -39,7 +39,8 @@
     "license": "Unsplash License (usage commercial gratuit, hotlink autorisé)",
     "rightsStatus": "cleared",
     "uses": [
-      "selection-header"
+      "selection-header",
+      "landing-moins-de-50"
     ],
     "notes": "Bouteille et deux coupes de champagne. Aucune marque identifiable mise en avant."
   },
@@ -72,7 +73,9 @@
     "license": "Unsplash License (usage commercial gratuit, hotlink autorisé)",
     "rightsStatus": "cleared",
     "uses": [
-      "blog-huitres"
+      "blog-huitres",
+      "landing-fruits-de-mer",
+      "product-scene-seafood"
     ],
     "notes": "Plateau d’huîtres et fruits de mer sur glace. Aucune marque identifiable mise en avant."
   },
@@ -83,7 +86,9 @@
     "license": "Unsplash License (usage commercial gratuit, hotlink autorisé)",
     "rightsStatus": "cleared",
     "uses": [
-      "blog-rose"
+      "blog-rose",
+      "landing-rose",
+      "product-scene-rose"
     ],
     "notes": "Coupes de champagne rosé et macarons. Aucune marque identifiable mise en avant."
   },
@@ -94,7 +99,8 @@
     "license": "Unsplash License (usage commercial gratuit, hotlink autorisé)",
     "rightsStatus": "cleared",
     "uses": [
-      "blog-vigneron"
+      "blog-vigneron",
+      "product-scene-vigneron"
     ],
     "notes": "Bouteilles de champagne au repos en cave. Aucune marque identifiable mise en avant."
   },
@@ -138,7 +144,9 @@
     "license": "Unsplash License (usage commercial gratuit, hotlink autorisé)",
     "rightsStatus": "cleared",
     "uses": [
-      "blog-general"
+      "blog-general",
+      "landing-repas",
+      "landing-blanc-de-blancs"
     ],
     "notes": "Champagne versé dans deux flûtes. Aucune marque identifiable mise en avant."
   },
@@ -160,7 +168,9 @@
     "license": "Unsplash License (usage commercial gratuit, hotlink autorisé)",
     "rightsStatus": "cleared",
     "uses": [
-      "blog-cadeau"
+      "blog-cadeau",
+      "landing-cadeau",
+      "product-scene-cadeau"
     ],
     "notes": "Champagne versé dans un verre. Aucune marque identifiable mise en avant."
   },
@@ -193,7 +203,9 @@
     "license": "Unsplash License (usage commercial gratuit, hotlink autorisé)",
     "rightsStatus": "cleared",
     "uses": [
-      "blog-aperitif2"
+      "blog-aperitif2",
+      "landing-aperitif",
+      "product-scene-service"
     ],
     "notes": "Trois personnes trinquent avec des flûtes. Aucune marque identifiable mise en avant."
   },

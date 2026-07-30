@@ -242,7 +242,7 @@ export function buildCatalogue({ write = true } = {}) {
       editionNumber: row.edition_number ? +row.edition_number : null,
       details: {
         facts: check?.fait_structurant || '',
-        sourceQuality: check?.qualité_source || 'source officielle',
+        sourceQuality: check?.qualité_source || 'source primaire identifiée',
         advice: row.description_editoriale,
         profil: {
           fraicheur: axisLabel('freshness', row.freshness),

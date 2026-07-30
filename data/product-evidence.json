@@ -1,0 +1,920 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-07-30",
+  "productCount": 48,
+  "summary": {
+    "officialConfirmed": 24,
+    "officialPartial": 12,
+    "merchantOnly": 12
+  },
+  "records": [
+    {
+      "productId": "jean-de-la-fontaine-eloquente-champagne-brut",
+      "brand": "Jean de La Fontaine",
+      "name": "Eloquente Champagne Brut",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/eloquente-champagne-brut-75cl-jean-de-la-fontaine",
+      "merchantCheckedAt": "2026-07-29T12:35:46.053Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Pinot Noir",
+          "Meunier"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "grand-tour-grand-brut-nature",
+      "brand": "Grand Tour",
+      "name": "Grand Brut Nature",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-grand-brut-nature-grand-tour",
+      "merchantCheckedAt": "2026-07-29T12:35:46.053Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Meunier"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "maison-labbe-brut-premier-cru-tradition",
+      "brand": "Maison Labbé",
+      "name": "Brut Premier Cru - Tradition",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-brut-premier-cru-tradition-maison-labbe",
+      "merchantCheckedAt": "2026-07-29T12:35:46.053Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Meunier"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "louis-constant-brut",
+      "brand": "Louis Constant",
+      "name": "Brut",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/campagne-brut-aoc-louis-constant",
+      "merchantCheckedAt": "2026-07-29T12:35:46.053Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Pinot Noir",
+          "Meunier"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "alain-mercier-cuvee-louis-hurtebisse-brut",
+      "brand": "Alain Mercier",
+      "name": "Cuvée Louis Hurtebisse Brut",
+      "status": "official_producer_confirmed_product_to_document",
+      "merchantSourceUrl": "https://champagne-alain-mercier.plugwine.com/",
+      "merchantCheckedAt": "2026-07-29T12:35:46.053Z",
+      "officialSourceUrl": "https://champagne-alain-mercier.plugwine.com/",
+      "officialCheckedAt": "2026-07-30",
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Pinot Noir",
+          "Meunier"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Le domaine et sa boutique officielle sont confirmés ; la fiche primaire exacte de Louis Hurtebisse reste à archiver."
+    },
+    {
+      "productId": "maison-tornay-tradition-brut-premier-cru",
+      "brand": "Maison Tornay",
+      "name": "Tradition Brut Premier Cru",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-tradition-brut-premier-cru-maison-tornay",
+      "merchantCheckedAt": "2026-07-29T12:35:46.053Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Pinot Noir",
+          "Meunier"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "epc-champagne-cuvee-brut",
+      "brand": "EPC Champagne",
+      "name": "Cuvée Brut",
+      "status": "official_confirmed",
+      "merchantSourceUrl": "https://epc-champagne.com/en/produit/brut/",
+      "merchantCheckedAt": "2026-07-29T12:35:46.053Z",
+      "officialSourceUrl": "https://epc-champagne.com/en/produit/brut/",
+      "officialCheckedAt": "2026-07-30",
+      "facts": {
+        "grapes": [
+          "Meunier",
+          "Chardonnay",
+          "Pinot Noir"
+        ],
+        "dosage": null,
+        "summary": "Assemblage officiel : 50 % Meunier, 33 % Chardonnay et 17 % Pinot Noir."
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "maison-burtin-brut",
+      "brand": "Maison Burtin",
+      "name": "Brut",
+      "status": "official_producer_confirmed_product_to_document",
+      "merchantSourceUrl": "https://www.maisonburtin.com/",
+      "merchantCheckedAt": "2026-07-29T12:35:46.053Z",
+      "officialSourceUrl": "https://www.maisonburtin.com/",
+      "officialCheckedAt": "2026-07-30",
+      "facts": {
+        "grapes": [
+          "Chardonnay"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Maison Burtin est confirmée par son site officiel ; la correspondance exacte avec la référence générique « Brut » du marchand reste à documenter."
+    },
+    {
+      "productId": "brisson-lahaye-la-passionnee-blanc-de-noirs-extra-brut",
+      "brand": "Brisson-Lahaye",
+      "name": "La Passionnee Blanc de Noirs Extra Brut",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-la-passionnee-blanc-de-noirs-extra-brut-brisson-lahaye",
+      "merchantCheckedAt": "2026-07-29T12:35:46.053Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "facts": {
+        "grapes": [
+          "Pinot Noir",
+          "Meunier"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "jean-claude-vallois-blanc-de-blancs-brut-assemblage-noble",
+      "brand": "Jean-Claude Vallois",
+      "name": "Blanc de Blancs Brut Assemblage Noble",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-brut-assemblage-noble-jean-claude-vallois",
+      "merchantCheckedAt": "2026-07-29T12:35:46.053Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "daubanton-rose-de-saignee-en-futs-les-vignes-derriere",
+      "brand": "Daubanton",
+      "name": "Rosé de Saignée - En Fûts Les Vignes Derrière",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-rose-de-saignee-en-futs-les-vignes-derriere-daubanton",
+      "merchantCheckedAt": "2026-07-29T12:35:46.053Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "facts": {
+        "grapes": [
+          "Pinot Noir",
+          "Meunier"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "maxime-ponson-cuvee-extra-brut-1er-cru",
+      "brand": "Maxime Ponson",
+      "name": "Cuvée Extra Brut 1er Cru",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-cuvee-extra-brut-1er-cru-maxime-ponson",
+      "merchantCheckedAt": "2026-07-29T12:35:46.053Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "thenevet-delouvin-carte-noir-brut",
+      "brand": "Thévenet-Delouvin",
+      "name": "Carte Noire Brut",
+      "status": "official_confirmed_with_correction",
+      "merchantSourceUrl": "https://www.champagne-thevenet-delouvin.fr/champagnes/carte-noire-brut/",
+      "merchantCheckedAt": "2026-07-29T12:35:46.053Z",
+      "officialSourceUrl": "https://www.champagne-thevenet-delouvin.fr/champagnes/carte-noire-brut/",
+      "officialCheckedAt": "2026-07-30",
+      "facts": {
+        "grapes": [
+          "Meunier",
+          "Pinot Noir"
+        ],
+        "dosage": null,
+        "summary": "Assemblage officiel : 90 % Meunier et 10 % Pinot Noir."
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "maison-yves-loison-cuvee-reserve-clovis",
+      "brand": "Yves Loison",
+      "name": "Cuvée Réserve Clovis",
+      "status": "official_producer_confirmed_product_to_document",
+      "merchantSourceUrl": "https://champagne-yves-loison.com/",
+      "merchantCheckedAt": "2026-07-29T12:35:46.053Z",
+      "officialSourceUrl": "https://champagne-yves-loison.com/",
+      "officialCheckedAt": "2026-07-30",
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Pinot Noir",
+          "Meunier"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Le producteur est confirmé ; la fiche primaire exacte de la cuvée Clovis reste à archiver."
+    },
+    {
+      "productId": "de-vilmont-brut-blanc-de-blancs",
+      "brand": "De Vilmont",
+      "name": "Brut - Blanc de Blancs",
+      "status": "official_confirmed",
+      "merchantSourceUrl": "https://www.champagnedevilmont.com/en/wine/brut-blanc-de-blancs/",
+      "merchantCheckedAt": "2026-07-29T12:35:46.053Z",
+      "officialSourceUrl": "https://www.champagnedevilmont.com/en/wine/brut-blanc-de-blancs/",
+      "officialCheckedAt": "2026-07-30",
+      "facts": {
+        "grapes": [
+          "Chardonnay"
+        ],
+        "dosage": null,
+        "summary": "Le domaine confirme un Blanc de Blancs 100 % Chardonnay élevé trois ans en cave."
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "m-g-heucq-rose-brut-fossile",
+      "brand": "M.G. Heucq",
+      "name": "Rosé Brut - Fossile",
+      "status": "official_producer_confirmed_product_to_document",
+      "merchantSourceUrl": "https://www.mg-heucq.fr/",
+      "merchantCheckedAt": "2026-07-29T12:35:46.053Z",
+      "officialSourceUrl": "https://www.mg-heucq.fr/",
+      "officialCheckedAt": "2026-07-30",
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Pinot Noir",
+          "Meunier"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Le producteur est confirmé ; la fiche primaire exacte de Fossile Rosé reste à archiver."
+    },
+    {
+      "productId": "harlin-pere-et-fils-l-escapade",
+      "brand": "Harlin Père et Fils",
+      "name": "L'Escapade",
+      "status": "official_confirmed",
+      "merchantSourceUrl": "https://www.champagneharlin.fr/champagnes-1-l-escapade.html",
+      "merchantCheckedAt": "2026-07-29T12:35:46.053Z",
+      "officialSourceUrl": "https://www.champagneharlin.fr/champagnes-1-l-escapade.html",
+      "officialCheckedAt": "2026-07-30",
+      "facts": {
+        "grapes": [
+          "Meunier",
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "dosage": null,
+        "summary": "Assemblage officiel : 45 % Meunier, 30 % Pinot Noir et 25 % Chardonnay."
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "beltrand-brigandat-blanc-de-noirs-brut-pierre-brigandat",
+      "brand": "Pierre Brigandat",
+      "name": "Blanc de Noirs Brut",
+      "status": "secondary_identity_confirmed",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-noirs-brut-beltrand-brigandat",
+      "merchantCheckedAt": "2026-07-29T12:35:46.053Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "facts": {
+        "grapes": [
+          "Pinot Noir"
+        ],
+        "dosage": null,
+        "summary": "La fiche commerciale et une documentation professionnelle concordante présentent un Blanc de Noirs 100 % Pinot Noir."
+      },
+      "notes": "Correction d'identité : « Beltrand Brigandat » est une erreur de libellé marchand. La fiche primaire du producteur reste à archiver."
+    },
+    {
+      "productId": "bardiau-cuvee-preface-extra-brut",
+      "brand": "Champagne Bardiaù",
+      "name": "Cuvée Préface Extra Brut",
+      "status": "official_cuvee_confirmed_product_to_document",
+      "merchantSourceUrl": "https://champagne-bardiau.com/",
+      "merchantCheckedAt": "2026-07-29T12:35:46.053Z",
+      "officialSourceUrl": "https://champagne-bardiau.com/",
+      "officialCheckedAt": "2026-07-30",
+      "facts": {
+        "grapes": [],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "La cuvée Préface figure sur le site officiel ; ses données techniques détaillées restent à confirmer sur une fiche primaire."
+    },
+    {
+      "productId": "pierre-legras-orior-brut",
+      "brand": "Pierre Legras",
+      "name": "Orior Brut",
+      "status": "official_producer_confirmed_product_to_document",
+      "merchantSourceUrl": "https://www.champagne-pierre-legras.com/homepage/",
+      "merchantCheckedAt": "2026-07-29T12:35:46.053Z",
+      "officialSourceUrl": "https://www.champagne-pierre-legras.com/homepage/",
+      "officialCheckedAt": "2026-07-30",
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Pinot Noir",
+          "Meunier"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Le producteur est confirmé ; la fiche primaire exacte d'Orior reste à archiver."
+    },
+    {
+      "productId": "benard-pitois-carte-blanche-premier-cru-brut",
+      "brand": "Bénard-Pitois",
+      "name": "Carte Blanche Premier Cru Brut",
+      "status": "official_confirmed",
+      "merchantSourceUrl": "https://www.champagne-benard-pitois.com/boutique/accueil/1-brut-carte-blanche.html",
+      "merchantCheckedAt": "2026-07-29T12:35:46.053Z",
+      "officialSourceUrl": "https://www.champagne-benard-pitois.com/boutique/accueil/1-brut-carte-blanche.html",
+      "officialCheckedAt": "2026-07-30",
+      "facts": {
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay",
+          "Meunier"
+        ],
+        "dosage": null,
+        "summary": "Assemblage officiel : 75 % Pinot Noir, 20 % Chardonnay et 5 % Meunier."
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "domaine-augustin-terre-2021",
+      "brand": "Domaine Augustin",
+      "name": "Terre 2021",
+      "status": "official_producer_confirmed_product_to_document",
+      "merchantSourceUrl": "https://www.champagne-augustin.com/en/",
+      "merchantCheckedAt": "2026-07-29T12:35:46.053Z",
+      "officialSourceUrl": "https://www.champagne-augustin.com/en/",
+      "officialCheckedAt": "2026-07-30",
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Pinot Noir"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Le domaine est confirmé ; l'identité exacte de Terre 2021 reste à rapprocher d'une fiche officielle archivée."
+    },
+    {
+      "productId": "beaumont-des-crayeres-grand-prestige-brut",
+      "brand": "Beaumont des Crayères",
+      "name": "Grand Prestige Brut",
+      "status": "official_confirmed",
+      "merchantSourceUrl": "https://www.champagne-beaumont.com/en/produit/grand-prestige/",
+      "merchantCheckedAt": "2026-07-29T12:35:46.053Z",
+      "officialSourceUrl": "https://www.champagne-beaumont.com/en/produit/grand-prestige/",
+      "officialCheckedAt": "2026-07-30",
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Pinot Noir",
+          "Meunier"
+        ],
+        "dosage": null,
+        "summary": "Assemblage officiel : 40 % Chardonnay, 40 % Pinot Noir et 20 % Meunier."
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "j-charpentier-rose-reserve-brut",
+      "brand": "J. Charpentier",
+      "name": "Rosé Réserve Brut",
+      "status": "official_confirmed",
+      "merchantSourceUrl": "https://jcharpentier.com/produit/rose-brut%E2%80%8B/",
+      "merchantCheckedAt": "2026-07-29T12:35:46.053Z",
+      "officialSourceUrl": "https://jcharpentier.com/produit/rose-brut%E2%80%8B/",
+      "officialCheckedAt": "2026-07-30",
+      "facts": {
+        "grapes": [
+          "Meunier",
+          "Pinot Noir"
+        ],
+        "dosage": null,
+        "summary": "Assemblage officiel : 80 % Meunier et 20 % Pinot Noir."
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "petit-camusat-pinot-blanc-de-blancs-brut",
+      "brand": "Petit Camusat",
+      "name": "Pinot Blanc de Blancs Brut",
+      "status": "official_confirmed",
+      "merchantSourceUrl": "https://champagnepetitcamusat.com/",
+      "merchantCheckedAt": "2026-07-29T12:35:46.053Z",
+      "officialSourceUrl": "https://champagnepetitcamusat.com/",
+      "officialCheckedAt": "2026-07-30",
+      "facts": {
+        "grapes": [
+          "Pinot Blanc"
+        ],
+        "dosage": null,
+        "summary": "Le domaine confirme un Blanc de Blancs Brut non filtré élaboré uniquement à partir de Pinot Blanc."
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "nicolas-feuillatte-reserve-exclusive-brut-rose",
+      "brand": "Nicolas Feuillatte",
+      "name": "Réserve Exclusive Brut Rosé",
+      "status": "official_confirmed",
+      "merchantSourceUrl": "https://nicolas-feuillatte.com/collections/champagnes-roses",
+      "merchantCheckedAt": "2026-07-29T12:35:46.053Z",
+      "officialSourceUrl": "https://nicolas-feuillatte.com/collections/champagnes-roses",
+      "officialCheckedAt": "2026-07-30",
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Pinot Noir",
+          "Meunier"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "La collection officielle confirme la cuvée et son profil rosé."
+    },
+    {
+      "productId": "simplexite-simplexite-rose-brut",
+      "brand": "Alain Mercier & Fils",
+      "name": "Simplexité Brut Rosé",
+      "status": "official_confirmed_with_correction",
+      "merchantSourceUrl": "https://champagne-alain-mercier.plugwine.com/en/vins/champagne-alain-mercier-fils-simplexite-brut-rose/champagne-rose/24354",
+      "merchantCheckedAt": "2026-07-29T12:35:46.053Z",
+      "officialSourceUrl": "https://champagne-alain-mercier.plugwine.com/en/vins/champagne-alain-mercier-fils-simplexite-brut-rose/champagne-rose/24354",
+      "officialCheckedAt": "2026-07-30",
+      "facts": {
+        "grapes": [
+          "Pinot Noir"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Correction d'identité : Simplexité est le nom de la cuvée, produite par Alain Mercier & Fils."
+    },
+    {
+      "productId": "bonnet-gilmert-blanc-de-blancs-cuvee-de-reserve-brut-grand-cru",
+      "brand": "Bonnet Gilmert",
+      "name": "Blanc de Blancs Cuvée de Réserve Brut Grand Cru",
+      "status": "official_confirmed",
+      "merchantSourceUrl": "https://www.champagne-bonnet-gilmert.com/reserve.php",
+      "merchantCheckedAt": "2026-07-29T12:35:46.053Z",
+      "officialSourceUrl": "https://www.champagne-bonnet-gilmert.com/reserve.php",
+      "officialCheckedAt": "2026-07-30",
+      "facts": {
+        "grapes": [
+          "Chardonnay"
+        ],
+        "dosage": "8 g/L",
+        "summary": null
+      },
+      "notes": "La fiche du producteur confirme 100 % Chardonnay, Grand Cru et Brut."
+    },
+    {
+      "productId": "solemme-terre-cuvee-assemblage-brut",
+      "brand": "Solemme",
+      "name": "Terre Brut Premier Cru",
+      "status": "official_confirmed",
+      "merchantSourceUrl": "https://www.champagnesolemme.fr/en/the-vintages/",
+      "merchantCheckedAt": "2026-07-29T12:35:46.053Z",
+      "officialSourceUrl": "https://www.champagnesolemme.fr/en/the-vintages/",
+      "officialCheckedAt": "2026-07-30",
+      "facts": {
+        "grapes": [
+          "Meunier",
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "dosage": "6 g/L",
+        "summary": "Assemblage officiel : 50 % Meunier, 25 % Pinot Noir et 25 % Chardonnay ; dosage 6 g/L."
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "deheurles-white-pearl-blanc-de-blancs-extra-brut",
+      "brand": "Daniel Deheurles & Filles",
+      "name": "White Pearl",
+      "status": "official_confirmed_with_correction",
+      "merchantSourceUrl": "https://www.champagne-daniel-deheurles.com/produit/white-pearl/",
+      "merchantCheckedAt": "2026-07-29T12:35:46.053Z",
+      "officialSourceUrl": "https://www.champagne-daniel-deheurles.com/produit/white-pearl/",
+      "officialCheckedAt": "2026-07-30",
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Pinot Blanc"
+        ],
+        "dosage": null,
+        "summary": "Assemblage officiel : 60 % Chardonnay et 40 % Pinot Blanc."
+      },
+      "notes": "Correction importante : la cuvée n'est pas composée uniquement de Chardonnay."
+    },
+    {
+      "productId": "vilmart-grande-reserve-premier-cru-brut",
+      "brand": "Vilmart",
+      "name": "Grande Réserve Premier Cru Brut",
+      "status": "official_confirmed",
+      "merchantSourceUrl": "https://www.champagnevilmart.fr/vins/grande-reserve-fr/",
+      "merchantCheckedAt": "2026-07-29T12:35:46.053Z",
+      "officialSourceUrl": "https://www.champagnevilmart.fr/vins/grande-reserve-fr/",
+      "officialCheckedAt": "2026-07-30",
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Pinot Noir"
+        ],
+        "dosage": "6 g/L",
+        "summary": "Assemblage officiel : 30 % Chardonnay et 70 % Pinot Noir, classés Premier Cru."
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "cattier-brut-premier-cru",
+      "brand": "Cattier",
+      "name": "Brut Premier Cru",
+      "status": "official_confirmed",
+      "merchantSourceUrl": "https://www.cattier.com/en/champagne/brut-en/",
+      "merchantCheckedAt": "2026-07-29T12:35:46.053Z",
+      "officialSourceUrl": "https://www.cattier.com/en/champagne/brut-en/",
+      "officialCheckedAt": "2026-07-30",
+      "facts": {
+        "grapes": [
+          "Meunier",
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "dosage": "6 g/L",
+        "summary": "Assemblage officiel : 28 % Meunier, 40 % Pinot Noir et 32 % Chardonnay."
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "paul-bara-brut-rose-grand-cru-grand-rose",
+      "brand": "Paul Bara",
+      "name": "Brut Rosé - Grand Cru Grand Rosé",
+      "status": "official_confirmed",
+      "merchantSourceUrl": "https://www.champagnepaulbara.com/en/bara-grand-cru-champagnes/grand-rose/",
+      "merchantCheckedAt": "2026-07-29T12:35:46.053Z",
+      "officialSourceUrl": "https://www.champagnepaulbara.com/en/bara-grand-cru-champagnes/grand-rose/",
+      "officialCheckedAt": "2026-07-30",
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Pinot Noir"
+        ],
+        "dosage": null,
+        "summary": "Assemblage officiel : 18 % Chardonnay, 70 % Pinot Noir et 12 % Bouzy Rouge."
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "lamiable-eclat-d-etoiles-rose-brut-grand-cru-2014",
+      "brand": "Lamiable",
+      "name": "Éclat d’Étoiles Rosé Brut Grand Cru",
+      "status": "official_cuvee_confirmed_vintage_unconfirmed",
+      "merchantSourceUrl": "https://www.champagnelamiable.com/en/the-champagnes/les-elementaires/eclats-d-etoiles.html",
+      "merchantCheckedAt": "2026-07-29T12:35:46.053Z",
+      "officialSourceUrl": "https://www.champagnelamiable.com/en/the-champagnes/les-elementaires/eclats-d-etoiles.html",
+      "officialCheckedAt": "2026-07-30",
+      "facts": {
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "dosage": null,
+        "summary": "La cuvée officielle est un rosé brut composé de 70 % Pinot Noir et 30 % Chardonnay. Le millésime indiqué par le marchand reste traité séparément."
+      },
+      "notes": "Ne pas faire apparaître 2014 dans le titre sans concordance officielle de la sortie."
+    },
+    {
+      "productId": "guy-charlemagne-reserve-blanc-de-blancs-grand-cru-brut",
+      "brand": "Guy Charlemagne",
+      "name": "Réserve Blanc de Blancs Grand Cru Brut",
+      "status": "official_confirmed",
+      "merchantSourceUrl": "https://www.champagne-guy-charlemagne.fr/",
+      "merchantCheckedAt": "2026-07-29T12:35:46.053Z",
+      "officialSourceUrl": "https://www.champagne-guy-charlemagne.fr/",
+      "officialCheckedAt": "2026-07-30",
+      "facts": {
+        "grapes": [
+          "Chardonnay"
+        ],
+        "dosage": null,
+        "summary": "Le producteur présente cette Réserve comme un Blanc de Blancs du Mesnil, classé Grand Cru."
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "sadi-malot-brut-nature-1er-cru",
+      "brand": "Sadi Malot",
+      "name": "Zéro Liqueur Brut Nature Premier Cru",
+      "status": "official_confirmed",
+      "merchantSourceUrl": "https://www.champagne-sadi-malot.com/en/cuvee/zero-liqueur-2/",
+      "merchantCheckedAt": "2026-07-29T12:35:46.053Z",
+      "officialSourceUrl": "https://www.champagne-sadi-malot.com/en/cuvee/zero-liqueur-2/",
+      "officialCheckedAt": "2026-07-30",
+      "facts": {
+        "grapes": [
+          "Chardonnay"
+        ],
+        "dosage": "0 g/L",
+        "summary": "La fiche officielle confirme un Brut Nature Premier Cru 100 % Chardonnay, sans dosage."
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "jean-vesselle-rose-de-saignee-friandise-demi-sec",
+      "brand": "Jean Vesselle",
+      "name": "Rosé de Saignée Friandise Demi-Sec",
+      "status": "official_confirmed",
+      "merchantSourceUrl": "https://www.champagnejeanvesselle.com/en/demi-sec-rose-friandise/champagne/rose-de-saignee-friandise-2",
+      "merchantCheckedAt": "2026-07-29T12:35:46.053Z",
+      "officialSourceUrl": "https://www.champagnejeanvesselle.com/en/demi-sec-rose-friandise/champagne/rose-de-saignee-friandise-2",
+      "officialCheckedAt": "2026-07-30",
+      "facts": {
+        "grapes": [
+          "Pinot Noir"
+        ],
+        "dosage": "32 à 33 g/L",
+        "summary": "Cuvée officielle : 100 % Pinot Noir, rosé demi-sec, dosage annoncé entre 32 et 33 g/L."
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "veuve-clicquot-cuvee-saint-petersbourg",
+      "brand": "Veuve Clicquot",
+      "name": "Cuvée Saint Petersbourg",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-aoc-cuvee-saint-petersbourg-veuve-clicquot",
+      "merchantCheckedAt": "2026-07-29T12:35:46.053Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Pinot Noir",
+          "Meunier"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "jacquart-brut-signature",
+      "brand": "Jacquart",
+      "name": "Brut - Signature",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-brut-signature-astucciato-jacquart",
+      "merchantCheckedAt": "2026-07-29T12:35:46.053Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Meunier"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "j-l-vergnon-blanc-de-blancs-murmure-nature-1er-cru",
+      "brand": "J.L. Vergnon",
+      "name": "Blanc de Blancs Murmure Nature 1er Cru",
+      "status": "official_producer_confirmed_product_to_document",
+      "merchantSourceUrl": "https://www.champagne-jl-vergnon.fr/",
+      "merchantCheckedAt": "2026-07-29T12:35:46.053Z",
+      "officialSourceUrl": "https://www.champagne-jl-vergnon.fr/",
+      "officialCheckedAt": "2026-07-30",
+      "facts": {
+        "grapes": [
+          "Chardonnay"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Le producteur est confirmé ; la fiche primaire exacte de Murmure reste à archiver."
+    },
+    {
+      "productId": "marie-copinet-nos-pas-dans-l-argile-nature",
+      "brand": "Marie Copinet",
+      "name": "Nos Pas Dans l’Argile Nature",
+      "status": "official_confirmed",
+      "merchantSourceUrl": "https://champagne-marie-copinet.com/pdf/fiche_technique_nos_pas_dans_largile.pdf",
+      "merchantCheckedAt": "2026-07-29T12:35:46.053Z",
+      "officialSourceUrl": "https://champagne-marie-copinet.com/pdf/fiche_technique_nos_pas_dans_largile.pdf",
+      "officialCheckedAt": "2026-07-30",
+      "facts": {
+        "grapes": [
+          "Meunier"
+        ],
+        "dosage": "0 g/L",
+        "summary": "La fiche technique officielle confirme un Brut Nature dosé à 0 g/L."
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "vazart-coquart-blanc-de-blancs-zero-grand-cru",
+      "brand": "Vazart-Coquart",
+      "name": "Blanc de Blancs Zero Grand Cru",
+      "status": "official_confirmed",
+      "merchantSourceUrl": "https://www.champagnevazartcoquart.com/?type_champagne=non-millesime",
+      "merchantCheckedAt": "2026-07-29T12:35:46.053Z",
+      "officialSourceUrl": "https://www.champagnevazartcoquart.com/?type_champagne=non-millesime",
+      "officialCheckedAt": "2026-07-30",
+      "facts": {
+        "grapes": [
+          "Chardonnay"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Le site du domaine confirme le Blanc de Blancs Zéro issu de Chouilly Grand Cru."
+    },
+    {
+      "productId": "mouzon-leroux-l-ineffable-extra-brut-grand-cru-2017",
+      "brand": "Mouzon Leroux",
+      "name": "L’Ineffable Extra Brut Grand Cru",
+      "status": "official_cuvee_confirmed_vintage_unconfirmed",
+      "merchantSourceUrl": "https://www.champagne-mouzon-leroux.com/en/lineffable.html",
+      "merchantCheckedAt": "2026-07-29T12:35:46.053Z",
+      "officialSourceUrl": "https://www.champagne-mouzon-leroux.com/en/lineffable.html",
+      "officialCheckedAt": "2026-07-30",
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Pinot Noir"
+        ],
+        "dosage": "2,5 g/L",
+        "summary": "La fiche officielle confirme la cuvée L'Ineffable Grand Cru et un dosage de 2,5 g/L."
+      },
+      "notes": "Le millésime marchand 2017 reste traité séparément tant qu'il n'est pas confirmé sur la fiche primaire."
+    },
+    {
+      "productId": "laherte-freres-les-grandes-crayeres-extra-brut-2021",
+      "brand": "Laherte Frères",
+      "name": "Les Grandes Crayères Extra Brut",
+      "status": "official_cuvee_confirmed_vintage_unconfirmed",
+      "merchantSourceUrl": "https://www.champagne-laherte.com/",
+      "merchantCheckedAt": "2026-07-29T12:35:46.053Z",
+      "officialSourceUrl": "https://www.champagne-laherte.com/",
+      "officialCheckedAt": "2026-07-30",
+      "facts": {
+        "grapes": [
+          "Chardonnay"
+        ],
+        "dosage": "2 g/L",
+        "summary": "La fiche du domaine confirme 100 % Chardonnay, le terroir de Chavot et un dosage de 2 g/L."
+      },
+      "notes": "Le millésime marchand n'est pas repris dans le titre public sans concordance de sortie."
+    },
+    {
+      "productId": "drappier-quattuor",
+      "brand": "Drappier",
+      "name": "Quattuor",
+      "status": "official_confirmed",
+      "merchantSourceUrl": "https://www.champagne-drappier.com/fr/cuvee/quattuor/",
+      "merchantCheckedAt": "2026-07-29T12:35:46.053Z",
+      "officialSourceUrl": "https://www.champagne-drappier.com/fr/cuvee/quattuor/",
+      "officialCheckedAt": "2026-07-30",
+      "facts": {
+        "grapes": [
+          "Arbane",
+          "Petit Meslier",
+          "Pinot Blanc",
+          "Chardonnay"
+        ],
+        "dosage": null,
+        "summary": "Assemblage officiel à parts égales : Arbane, Petit Meslier, Blanc Vrai et Chardonnay."
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "j-m-seleque-soliste-les-charmiers-rose-extra-brut-1er-cru-2019",
+      "brand": "J-M Sélèque",
+      "name": "Soliste Les Charmiers Rosé Extra Brut 1er Cru 2019",
+      "status": "official_cuvee_confirmed_vintage_secondary",
+      "merchantSourceUrl": "https://www.jmseleque.fr/en/produit/soliste-meunier-rose-2/",
+      "merchantCheckedAt": "2026-07-29T12:35:46.053Z",
+      "officialSourceUrl": "https://www.jmseleque.fr/en/produit/soliste-meunier-rose-2/",
+      "officialCheckedAt": "2026-07-30",
+      "facts": {
+        "grapes": [
+          "Meunier"
+        ],
+        "dosage": null,
+        "summary": "La cuvée parcellaire officielle est un 100 % Meunier issu des Charmiers à Pierry Premier Cru."
+      },
+      "notes": "La page actuelle documente une autre récolte ; 2019 reste confirmé par des sources commerciales concordantes."
+    },
+    {
+      "productId": "billecart-salmon-louis-salmon-2009",
+      "brand": "Billecart-Salmon",
+      "name": "Louis Salmon 2009",
+      "status": "official_confirmed",
+      "merchantSourceUrl": "https://www.champagne-billecart.fr/en/millesime/cuvee-louis-salmon-2009",
+      "merchantCheckedAt": "2026-07-29T12:35:46.053Z",
+      "officialSourceUrl": "https://www.champagne-billecart.fr/en/millesime/cuvee-louis-salmon-2009",
+      "officialCheckedAt": "2026-07-30",
+      "facts": {
+        "grapes": [
+          "Chardonnay"
+        ],
+        "dosage": null,
+        "summary": "La Maison confirme le Brut Blanc de Blancs millésimé 2009, issu des grands crus de la Côte des Blancs."
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "perrier-jouet-belle-epoque-2016",
+      "brand": "Perrier-Jouët",
+      "name": "Belle Époque 2016",
+      "status": "official_confirmed",
+      "merchantSourceUrl": "https://www.perrier-jouet.com/en-ww/champagnes/belle-epoque-brut-2016/",
+      "merchantCheckedAt": "2026-07-29T12:35:46.053Z",
+      "officialSourceUrl": "https://www.perrier-jouet.com/en-ww/champagnes/belle-epoque-brut-2016/",
+      "officialCheckedAt": "2026-07-30",
+      "facts": {
+        "grapes": [
+          "Chardonnay"
+        ],
+        "dosage": null,
+        "summary": "La Maison confirme la cuvée Belle Époque Brut issue de la récolte 2016."
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    }
+  ]
+}

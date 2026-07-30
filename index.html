@@ -15,11 +15,12 @@
 <meta name="theme-color" content="#ffffff">
 <link rel="canonical" href="https://quelchampagne.fr">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M8.4 5H15.6L14.2 12.3A2.7 2.7 0 0 1 9.8 12.3Z' fill='%23F3E7C9' stroke='%239C7A34' stroke-width='1.2'/%3E%3Cline x1='12' y1='15' x2='12' y2='20.2' stroke='%239C7A34' stroke-width='1.3'/%3E%3Cline x1='9' y1='20.6' x2='15' y2='20.6' stroke='%239C7A34' stroke-width='1.3'/%3E%3C/svg%3E">
+<script src="/assets/analytics.js" defer></script>
 <style>
 :root{
   --bg:#FFFFFF; --bg2:#F5F5F7; --ink:#1D1D1F; --muted:#6E6E73; --faint:#86868B;
   --border:#D2D2D7; --line:#E8E8ED;
-  --accent:#9C7A34; --accent-deep:#7E621F;
+  --accent:#806020; --accent-deep:#6B4D18;
   --sans:-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif;
 }
 *{box-sizing:border-box; margin:0; padding:0}
@@ -359,7 +360,7 @@ footer{background:var(--bg2); padding:52px 0 46px}
 .foot-in{display:flex; justify-content:space-between; gap:28px; flex-wrap:wrap; align-items:flex-start}
 .foot-brand{font-size:18px; font-weight:600; letter-spacing:-.02em}
 .foot-brand p{font-size:14px; color:var(--faint); font-weight:400; margin-top:10px; max-width:36ch; line-height:1.5}
-.foot-links{display:flex; gap:32px; font-size:14px; color:var(--muted)}
+.foot-links{display:flex; gap:18px 28px; flex-wrap:wrap; justify-content:flex-end; min-width:0; font-size:14px; color:var(--muted)}
 .foot-links a,.foot-links button{cursor:pointer; font:inherit; color:inherit}
 .foot-links a:hover,.foot-links button:hover{color:var(--ink)}
 .foot-health{margin-top:36px; padding-top:26px; border-top:1px solid var(--border); font-size:13.5px; font-weight:600; color:var(--ink)}
@@ -389,6 +390,8 @@ footer{background:var(--bg2); padding:52px 0 46px}
   .nav-in{height:auto; min-height:58px; align-items:flex-start; padding-top:12px; padding-bottom:10px}
   .nav-links{max-width:68vw; gap:8px 16px; justify-content:flex-end; flex-wrap:wrap}
   .nlink{font-size:13px}
+  .foot-in{display:block}
+  .foot-links{justify-content:flex-start; margin-top:28px}
   .catalogue-filters{grid-template-columns:1fr 1fr}
   .catalogue-summary{align-items:flex-start; flex-direction:column}
 }
@@ -401,12 +404,7 @@ footer{background:var(--bg2); padding:52px 0 46px}
    Fond blanc, titres geants en capitales, geometrie franche,
    police Archivo + Inter, bouchon qui saute au survol.
    ============================================================ */
-@font-face{font-family:'Archivo';src:url('https://cdn.jsdelivr.net/npm/@fontsource/archivo/files/archivo-latin-400-normal.woff2') format('woff2');font-weight:400;font-display:swap}
-@font-face{font-family:'Archivo';src:url('https://cdn.jsdelivr.net/npm/@fontsource/archivo/files/archivo-latin-500-normal.woff2') format('woff2');font-weight:500;font-display:swap}
-@font-face{font-family:'Archivo';src:url('https://cdn.jsdelivr.net/npm/@fontsource/archivo/files/archivo-latin-600-normal.woff2') format('woff2');font-weight:600;font-display:swap}
-@font-face{font-family:'Archivo';src:url('https://cdn.jsdelivr.net/npm/@fontsource/archivo/files/archivo-latin-700-normal.woff2') format('woff2');font-weight:700;font-display:swap}
-@font-face{font-family:'Archivo';src:url('https://cdn.jsdelivr.net/npm/@fontsource/archivo/files/archivo-latin-800-normal.woff2') format('woff2');font-weight:800;font-display:swap}
-@font-face{font-family:'Archivo';src:url('https://cdn.jsdelivr.net/npm/@fontsource/archivo/files/archivo-latin-900-normal.woff2') format('woff2');font-weight:900;font-display:swap}
+@font-face{font-family:'Archivo';src:url('/assets/archivo-latin-wght-normal.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
 :root{--sans:'Archivo',Arial,sans-serif; --display:'Archivo','Arial Narrow',Arial,sans-serif}
 body,button,input,select,textarea{font-family:var(--sans);letter-spacing:-.006em}
 h1,.hero-photo h1,.page-hero h1{font-family:var(--display);font-weight:900;text-transform:uppercase;letter-spacing:-.025em;line-height:.9}
@@ -433,7 +431,7 @@ h1,.hero-photo h1,.page-hero h1{font-family:var(--display);font-weight:900;text-
 .hero-photo .btn-primary:hover::before{animation:corkFly .85s cubic-bezier(.2,-.4,.3,1)}
 .hero-photo .btn-primary:hover::after{animation:corkFizz .7s ease-out .02s}
 @keyframes corkFly{0%{opacity:1;transform:translate(0,0) rotate(0)}30%{opacity:1;transform:translate(4px,-34px) rotate(130deg)}100%{opacity:0;transform:translate(15px,-70px) rotate(430deg)}}
-@keyframes corkFizz{0%{opacity:1;transform:translate(0,0) scale(1)}100%{opacity:0;transform:translate(9px,-30px) scale(.3)}}.page-hero::before{display:none!important}.page-hero{background:radial-gradient(130% 130% at 80% -25%,#221d13 0%,#0e0c08 60%)}.page-hero::after{background:linear-gradient(180deg,rgba(13,11,7,.12),rgba(13,11,7,.5))}.page-hero p{max-width:640px}.page-hero .tag{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.22);color:#fff}.page-hero .tag:hover{background:rgba(255,255,255,.14)}
+@keyframes corkFizz{0%{opacity:1;transform:translate(0,0) scale(1)}100%{opacity:0;transform:translate(9px,-30px) scale(.3)}}.page-hero::before{display:block!important}.page-hero{background:#0e0c08}.page-hero::after{background:linear-gradient(90deg,rgba(13,11,7,.86),rgba(13,11,7,.3))}.page-hero p{max-width:640px}.page-hero .tag{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.22);color:#fff}.page-hero .tag:hover{background:rgba(255,255,255,.14)}.page-hero .btn-primary{background:#fff;color:#14110c}
 
 </style>
 </head>
@@ -446,7 +444,7 @@ h1,.hero-photo h1,.page-hero h1{font-family:var(--display);font-weight:900;text-
 
 const BRAND = 'QuelChampagne';
 
-const state = { view:'home', step:0, answers:{}, animKey:0, article:null };
+const state = { view:'home', step:0, answers:{}, animKey:0, article:null, quizStartedTracked:false, resultTrackedFor:null };
 
 /* ====================== CATALOGUE ====================== */
 let CATALOGUE = null;
@@ -623,7 +621,7 @@ function questions(){
     { id:'gout', label:"02 · Le style", q:"Quel style préférez-vous ?", hint:"Sélectionnez le profil que vous appréciez le plus.",
       opts:[
         {e:'01', tags:['profil_frais_vif'], l:"Frais et vif", d:"Agrumes, tension, minéralité"},
-        {e:'02', tags:['profil_fruite'], l:"Fruité et rond", d:"Fruit mûr, souplesse, texture ample"},
+        {e:'02', tags:['profil_fruite'], l:"Rond, acidité mesurée", d:"Fruit mûr, souplesse, sensation moins vive"},
         {e:'03', tags:['profil_riche_ample'], l:"Riche et vineux", d:"Corps, structure, longueur"},
         {e:'04', tags:['profil_delicat'], l:"Délicat et floral", d:"Fleurs blanches, finesse, texture légère"},
       ]},
@@ -634,18 +632,129 @@ function questions(){
         {e:'03', tags:['b3'], l:"60 à 100 €", d:"Des cuvées plus rares"},
         {e:'04', tags:['b4'], l:"Plus de 100 €", d:"Les cuvées de prestige"},
       ]},
-    { id:'maison', label:"04 · Le producteur", q:"Vous préférez…", hint:"Une signature connue ou une découverte plus confidentielle.",
+    { id:'repere', label:"04 · Votre repère", q:"Qu’est-ce qui compte le plus ?", hint:"Ce dernier critère départage les bouteilles encore proches.",
       opts:[
-        {e:'01', tags:['maison'], l:"Une grande maison connue", d:"Une marque largement reconnue"},
-        {e:'02', tags:['vigneron'], l:"Un vigneron à découvrir", d:"Un domaine moins connu"},
-        {e:'03', tags:['any'], l:"Peu importe", d:"Le style et le prix priment"},
+        {e:'01', tags:['known'], l:"Une étiquette reconnue", d:"Un nom facile à identifier"},
+        {e:'02', tags:['discovery'], l:"Une découverte", d:"Une cuvée moins attendue"},
+        {e:'03', tags:['low_dosage'], l:"Un dosage très faible", d:"Extra-brut ou brut nature"},
+        {e:'04', tags:['any'], l:"Aucune préférence", d:"Le style et le prix priment"},
       ]},
   ];
 }
 
 /* ====================== BLOG ====================== */
+const PUBLISHED_ARTICLE_IDS = new Set(['guide-2026','dosages','accords','moins-50','mariage','cadeau']);
+const ARTICLE_REWRITES = {
+  'guide-2026': {
+    read:'7 min',
+    excerpt:"Une méthode claire pour choisir selon l'occasion, le style recherché, le repas et le budget.",
+    body:`<p>Choisir un champagne devient beaucoup plus simple lorsqu'on commence par l'usage plutôt que par la marque. Une bouteille destinée à un apéritif, à un repas ou à un cadeau ne doit pas répondre aux mêmes critères. Notre méthode tient en quatre décisions : le moment, le profil recherché, le budget réel et les personnes qui vont le boire.</p>
+<h3>1. Définir le rôle de la bouteille</h3>
+<p>À l'apéritif, recherchez une cuvée nette, fraîche et facile à servir avec plusieurs bouchées. À table, l'accord avec le plat devient prioritaire : un champagne délicat peut disparaître face à une volaille rôtie, tandis qu'une cuvée très vineuse peut dominer des huîtres. Pour un cadeau, la lisibilité de l'étiquette, l'histoire du producteur et le niveau de connaissance du destinataire comptent autant que le style.</p>
+<h3>2. Traduire ses goûts en critères utiles</h3>
+<p>Les mots « bon » ou « haut de gamme » ne décrivent pas un goût. Demandez-vous plutôt si vous aimez la fraîcheur, les agrumes et une finale droite ; un fruit plus mûr et une bouche ronde ; ou une matière plus ample, briochée et vineuse. Ces préférences permettent de départager des bouteilles au même prix. Les cépages donnent des indications, mais ils ne suffisent pas : l'assemblage, l'élevage, le dosage et l'âge du vin modifient aussi son expression.</p>
+<h3>3. Fixer le budget d'achat, pas un prix théorique</h3>
+<p>Le bon budget est celui que vous accepterez réellement de payer le jour de la commande. Les prix varient selon les stocks et les promotions ; QuelChampagne affiche donc le prix constaté chez le partenaire avec sa date de contrôle. Si votre limite est stricte, conservez une marge de quelques euros afin qu'une petite variation ne rende pas toute la sélection inutilisable.</p>
+<h3>4. Vérifier la cuvée exacte</h3>
+<p>Une maison peut commercialiser plusieurs bruts, rosés, millésimes et formats dont les noms se ressemblent. Avant d'acheter, contrôlez le producteur, le nom complet, l'éventuel millésime et le volume. Nos fiches séparent ces éléments pour éviter de comparer une cuvée permanente à une édition millésimée ou une bouteille de 75 cl à un autre format.</p>
+<h3>Trois erreurs fréquentes</h3>
+<ul><li>Choisir uniquement selon la notoriété de la marque, sans tenir compte du repas.</li><li>Confondre un dosage faible avec une qualité automatiquement supérieure.</li><li>Prendre une recommandation générale pour une vérité universelle : le contexte et les goûts restent décisifs.</li></ul>
+<h3>La méthode QuelChampagne</h3>
+<p>Le sélecteur croise l'occasion, le budget, le style et le repère recherché avec un catalogue de bouteilles disponibles. Chaque résultat ouvre ensuite une fiche d'analyse : profil, accords, raisons de la choisir, raisons de l'écarter et niveau de preuve des données techniques. Vous gardez ainsi la logique du conseil avant de voir l'offre du marchand.</p>
+<p>Pour commencer, utilisez le <a href="/selecteur/">sélecteur en quatre questions</a>. Si vous connaissez déjà le style recherché, parcourez directement <a href="/champagnes/">les bouteilles actuellement disponibles</a>.</p>`
+  },
+  'dosages': {
+    read:'6 min',
+    excerpt:"Comprendre les mentions de dosage et savoir ce qu'elles disent — ou non — du goût d'un champagne.",
+    body:`<p>Le dosage correspond à la quantité de sucres présente après l'ajout éventuel de la liqueur d'expédition, à la fin de l'élaboration. La mention portée sur l'étiquette encadre cette teneur, mais elle ne résume pas à elle seule la sensation en bouche. L'acidité du vin, sa maturité, son élevage et son assemblage modifient fortement la perception du sucre.</p>
+<h3>Les mentions à connaître</h3>
+<table><thead><tr><th>Mention</th><th>Repère réglementaire</th><th>Ce que l'on peut attendre</th></tr></thead><tbody>
+<tr><td>Brut Nature</td><td>moins de 3 g/L, sans ajout de sucre après la prise de mousse</td><td>Expression très droite lorsque le vin possède une acidité marquée</td></tr>
+<tr><td>Extra-Brut</td><td>de 0 à 6 g/L</td><td>Profil généralement sec, précis et adapté aux accords salins</td></tr>
+<tr><td>Brut</td><td>moins de 12 g/L</td><td>La catégorie la plus polyvalente, avec des styles très différents</td></tr>
+<tr><td>Extra-Dry</td><td>de 12 à 17 g/L</td><td>Sensation plus tendre malgré un nom qui peut prêter à confusion</td></tr>
+<tr><td>Sec et Demi-Sec</td><td>à partir de 17 g/L</td><td>Registre plus doux, utile avec certains desserts</td></tr>
+</tbody></table>
+<h3>Pourquoi deux bruts peuvent sembler opposés</h3>
+<p>Un brut dosé à 8 g/L peut paraître très vif si le vin possède une forte acidité. À l'inverse, un extra-brut peut sembler ample lorsque les raisins sont mûrs et l'élevage généreux. Le chiffre doit donc être lu avec le profil aromatique et la structure. Sur les fiches QuelChampagne, le dosage n'est affiché comme fait que lorsqu'il est fourni par une source exploitable.</p>
+<h3>Quel dosage pour l'apéritif ?</h3>
+<p>Un brut équilibré constitue le choix le plus simple pour un groupe aux goûts variés. Un extra-brut ou un brut nature convient davantage si vous recherchez une finale sèche et servez des bouchées peu sucrées. Évitez de sélectionner un dosage zéro uniquement parce qu'il paraît plus expert : une cuvée plus souple peut être plus agréable pour vos invités.</p>
+<h3>Quel dosage à table ?</h3>
+<p>Avec les huîtres, poissons crus et préparations iodées, une expression sèche limite les contrastes sucrés. Avec une volaille, une sauce crémée ou un fromage, la structure du vin et son élevage comptent souvent davantage que quelques grammes de dosage. Pour un dessert, le champagne doit rester au moins aussi doux que le plat ; un demi-sec devient alors plus cohérent qu'un brut très tendu.</p>
+<h3>Le bon réflexe</h3>
+<p>Commencez par votre préférence — très sec, équilibré ou doux — puis vérifiez l'accord et le profil global. La page <a href="/champagne/brut-nature/">Champagnes peu dosés</a> rassemble les références correspondantes actuellement documentées.</p>`
+  },
+  'accords': {
+    read:'7 min',
+    excerpt:"Choisir le style de champagne selon la texture, l'intensité et l'assaisonnement du plat.",
+    body:`<p>Un accord réussi ne consiste pas à chercher une règle absolue, mais à équilibrer l'intensité du plat et celle du vin. La texture, le gras, l'acidité et la sauce comptent souvent davantage que l'ingrédient principal. Le champagne peut accompagner tout un repas à condition de changer de style au bon moment.</p>
+<h3>Apéritif : garder de l'élan</h3>
+<p>Pour ouvrir l'appétit, privilégiez une bouche fraîche, une finale nette et une intensité modérée. Un brut d'assemblage ou un blanc de blancs convient aux gougères, aux poissons fumés et aux bouchées salées. Les préparations très vinaigrées, très pimentées ou sucrées peuvent en revanche durcir le vin.</p>
+<h3>Huîtres, coquillages et poissons crus</h3>
+<p>L'iode appelle une cuvée précise et peu pesante. Un blanc de blancs, un extra-brut ou un brut nature peut prolonger la salinité, à condition de conserver assez de matière. Avec un ceviche très citronné, choisissez un champagne dont l'acidité ne sera pas écrasée par l'assaisonnement. Consultez la sélection <a href="/champagne/fruits-de-mer/">champagnes et fruits de mer</a> pour comparer les profils adaptés.</p>
+<h3>Poissons cuits et crustacés</h3>
+<p>La cuisson et la sauce changent l'accord. Un poisson grillé demande davantage de structure qu'un tartare. Un homard ou des Saint-Jacques avec une sauce beurrée peuvent accueillir une cuvée plus ample, élevée longuement ou dominée par des raisins noirs. Le but est d'accompagner la richesse sans faire disparaître le plat.</p>
+<h3>Volaille, porc et viandes blanches</h3>
+<p>Une cuvée vineuse, un blanc de noirs ou un champagne à dominante Pinot Noir répond bien aux saveurs rôties. Sur une sauce crémeuse, recherchez aussi de la rondeur. Une bouteille choisie uniquement pour sa fraîcheur risque ici de sembler courte.</p>
+<h3>Fromages</h3>
+<p>Les pâtes dures comme le comté ou un gouda affiné s'accordent volontiers avec une cuvée structurée et briochée. Les fromages très puissants ou persillés demandent plus de prudence : leur sel et leur intensité peuvent dominer un champagne délicat. Servez de petites quantités et évitez les chutneys trop sucrés si vous conservez le même vin.</p>
+<h3>Desserts</h3>
+<p>Un dessert plus doux que le vin rend le champagne plus acide. Sur une tarte aux fruits rouges, un rosé fruité ou un demi-sec peut fonctionner. Sur un dessert au chocolat dense, le champagne est rarement le choix le plus simple. Il est souvent préférable de servir la dernière coupe avant le dessert plutôt que de forcer l'accord.</p>
+<h3>Construire un repas complet</h3>
+<p>Si vous prévoyez plusieurs bouteilles, servez-les du profil le plus frais au plus structuré, puis terminez éventuellement par une cuvée plus tendre. Pour une seule bouteille, choisissez le plat central comme point de repère et acceptez qu'elle soit simplement agréable, plutôt que parfaite, sur les autres services. Le <a href="/selecteur/">sélecteur</a> permet d'indiquer l'occasion et le style afin de réduire la liste aux cuvées cohérentes.</p>`
+  },
+  'moins-50': {
+    read:'6 min',
+    excerpt:"Comment repérer une bouteille cohérente sous 50 € sans se fier à une liste de prix vite périmée.",
+    body:`<p>Un budget inférieur à 50 € donne accès à de nombreux bruts non millésimés, à des cuvées de vignerons et à certaines offres ponctuelles de maisons connues. Une sélection sérieuse ne peut toutefois pas figer un palmarès : les prix et les stocks changent, parfois en quelques jours. Il faut donc raisonner par critères puis vérifier le tarif exact.</p>
+<h3>Ce que ce budget permet réellement</h3>
+<p>Dans cette zone, visez d'abord une identité claire, un style adapté à l'usage et une offre provenant d'un marchand identifiable. La rareté, un long vieillissement ou un millésime recherché peuvent faire monter le prix, mais ils ne sont pas indispensables pour un apéritif ou une réception. Un brut bien choisi sera souvent plus pertinent qu'une cuvée prestigieuse mal accordée.</p>
+<h3>Trois profils à comparer</h3>
+<ul><li><strong>Frais et direct :</strong> pour l'apéritif, les fruits de mer et les invités qui aiment une finale nette.</li><li><strong>Fruité et équilibré :</strong> pour une célébration ou un groupe dont vous connaissez peu les préférences.</li><li><strong>Structuré :</strong> pour passer à table, accompagner une volaille ou offrir une bouteille avec davantage de caractère.</li></ul>
+<h3>Les contrôles avant l'achat</h3>
+<p>Vérifiez le format de 75 cl, le nom complet de la cuvée, le millésime lorsqu'il existe, les frais de livraison et le nombre minimal de bouteilles. Une remise importante n'a de sens que si le prix de référence correspond exactement au même produit. QuelChampagne retire les fourchettes artificielles et affiche le prix précis du partenaire au moment du dernier contrôle.</p>
+<h3>Maison connue ou découverte ?</h3>
+<p>Une marque connue rassure pour un cadeau, mais elle n'est pas automatiquement plus adaptée. Un producteur moins célèbre peut proposer un style plus précis ou un meilleur accord avec le repas. La provenance de l'information est alors essentielle : nous distinguons ce qui est confirmé par le producteur de ce qui provient uniquement de la fiche marchande.</p>
+<h3>Voir les bouteilles disponibles</h3>
+<p>La page <a href="/champagne/moins-de-50-euros/">Champagnes à moins de 50 €</a> est construite à partir des prix actuellement présents dans le catalogue. Le <a href="/selecteur/">sélecteur</a> permet ensuite de départager ces références selon l'occasion et le style recherché.</p>`
+  },
+  'mariage': {
+    read:'7 min',
+    excerpt:"Calculer les quantités, choisir un style rassembleur et organiser le service sans dépasser le budget.",
+    body:`<p>Pour un mariage, le meilleur champagne n'est pas nécessairement le plus cher : c'est celui qui correspond au moment du service, plaît à un public large et reste disponible dans la quantité nécessaire. Commencez par séparer le vin d'honneur, le toast et le repas. Une seule cuvée peut couvrir plusieurs usages, mais ce choix doit être assumé dès le calcul du budget.</p>
+<h3>Choisir le style du vin d'honneur</h3>
+<p>Le vin d'honneur demande un champagne accessible, frais et régulier. Un brut équilibré fonctionne avec des gougères, des canapés et des pièces salées variées. Une cuvée très puissante peut fatiguer avant le repas ; un brut nature très tendu peut diviser un groupe important. Si vous souhaitez une bouteille plus marquante, réservez-la au toast des mariés.</p>
+<h3>Prévoir les quantités</h3>
+<p>Une bouteille de 75 cl sert généralement six flûtes confortables. Pour deux coupes par personne, partez sur une bouteille pour trois invités. Ajoutez une marge de 10 à 15 % pour les différences de service, les bouteilles ouvertes et les invités qui reprennent une coupe. Pour 100 personnes, cela représente environ 34 bouteilles, puis 4 ou 5 bouteilles de sécurité. Ajustez à la baisse si d'autres boissons sont servies en même temps.</p>
+<h3>Calculer le budget complet</h3>
+<p>Multipliez le nombre de bouteilles par le prix livré, pas seulement par le prix affiché. Ajoutez les frais de transport, la location éventuelle des verres, la glace et la marge de sécurité. Une économie de 3 € par bouteille devient importante sur plusieurs cartons ; en revanche, changer de cuvée au dernier moment peut créer une rupture de style ou de présentation.</p>
+<h3>Sécuriser la commande</h3>
+<p>Avant de payer, demandez au vendeur de confirmer que toutes les bouteilles correspondent à la même référence et au même format. Vérifiez le délai, les conditions en cas de casse et la possibilité de commander un carton supplémentaire. Pour un événement important, commandez d'abord une bouteille afin de valider le goût et le rendu visuel sur table.</p>
+<h3>Organiser le service</h3>
+<p>Prévoyez plusieurs points de refroidissement et une rotation des bouteilles. Servez autour de 8 à 10 °C, puis laissez le vin gagner légèrement en température dans le verre. Une bouteille ouverte trop tôt perd de son intérêt ; mieux vaut ouvrir progressivement et confier le suivi du stock à une personne identifiée.</p>
+<h3>Choisir avec QuelChampagne</h3>
+<p>Utilisez le <a href="/selecteur/">sélecteur</a> avec l'option célébration et votre budget unitaire. Ouvrez ensuite les fiches des résultats pour vérifier le profil, les accords, le prix précis et le niveau de preuve. Pour un volume important, confirmez toujours le stock directement auprès du partenaire avant de considérer la commande comme acquise.</p>`
+  },
+  'cadeau': {
+    read:'6 min',
+    excerpt:"Choisir un champagne à offrir selon la personne, le message et le niveau de risque acceptable.",
+    body:`<p>Un champagne offert transmet un message avant même d'être ouvert. La notoriété rassure, une cuvée de vigneron intrigue, un millésime marque une date et un rosé apporte une dimension visuelle. Le bon choix dépend donc autant du destinataire que du prix.</p>
+<h3>Lorsque vous connaissez peu ses goûts</h3>
+<p>Choisissez un brut équilibré, avec une identité facile à comprendre et un profil polyvalent. Évitez les styles très tranchés — brut nature austère, demi-sec marqué ou cuvée très vineuse — sauf si vous savez qu'ils correspondent à ses préférences. Une maison reconnue peut être pertinente ici, car la bouteille sera immédiatement identifiable.</p>
+<h3>Pour un amateur curieux</h3>
+<p>Privilégiez une cuvée dont l'assemblage, le terroir ou la méthode sont documentés. Un Blanc de Noirs, un Pinot Blanc rare ou une parcelle identifiée donnent matière à découvrir. La fiche doit expliquer ce qui distingue réellement la bouteille ; un vocabulaire prestigieux sans donnée précise ne suffit pas.</p>
+<h3>Pour marquer une date</h3>
+<p>Un champagne millésimé peut créer un lien avec une année importante, à condition que le millésime exact soit confirmé. Vérifiez aussi qu'il s'agit bien de la sortie décrite sur la fiche et non d'une photo générique. Pour un anniversaire ou une réussite professionnelle, l'histoire racontée par la bouteille compte souvent plus qu'un coffret volumineux.</p>
+<h3>Définir le budget</h3>
+<p>Raisonnez en prix final livré. Sous 50 €, on peut offrir un brut sérieux ou une découverte de producteur. Entre 50 et 100 €, le choix s'élargit vers des cuvées plus singulières. Au-delà, exigez une identité parfaitement documentée : millésime, assemblage, provenance et conditions de vente doivent être clairs.</p>
+<h3>Les détails à vérifier</h3>
+<ul><li>Le nom et le millésime visibles sur la photo correspondent-ils au titre ?</li><li>Le format est-il bien 75 cl ?</li><li>Un coffret est-il réellement inclus ou seulement montré en illustration ?</li><li>Le destinataire pourra-t-il recevoir de l'alcool dans de bonnes conditions ?</li></ul>
+<h3>Réduire le risque de se tromper</h3>
+<p>Dans le <a href="/selecteur/">sélecteur</a>, choisissez « cadeau », votre budget et le style le plus proche des goûts du destinataire. Chaque proposition renvoie vers une analyse interne avant l'offre du marchand. Vous pouvez ainsi comparer les raisons de choisir la cuvée, les situations où elle convient moins et la fiabilité des données techniques.</p>`
+  }
+};
 function articles(){
-  return [
+  const list = [
     { id:'guide-2026', cat:'Guide', cover:'linear-gradient(135deg,#F3EEE2,#E9E0CC)', date:'Juillet 2026', read:'6 min',
       title:"Comment choisir son champagne en 2026",
       excerpt:"Occasion, style, budget : la méthode simple pour ne plus jamais se tromper devant le rayon.",
@@ -751,7 +860,7 @@ function articles(){
 <tr><td>Grande occasion</td><td>90 € et plus</td><td>Millésime identifié</td><td><a href="/champagne/dom-perignon-vintage-2015/">Dom Pérignon 2015</a></td></tr>
 </tbody>
 </table>
-<p>Ces suggestions s’appuient sur les caractéristiques publiées pour chaque cuvée et sur les critères choisis, non sur une dégustation indépendante de chaque bouteille.</p>
+<p>Ces suggestions croisent le profil de chaque cuvée avec le budget, l’occasion et les préférences du destinataire afin de proposer des choix cohérents et faciles à départager.</p>
 <h3>3. Tenez compte de la personne</h3>
 <p>Un amateur de fraîcheur sera comblé par un <a href="/champagne/ruinart/">blanc de blancs</a> vif et minéral. Quelqu'un qui aime les vins de caractère préférera une cuvée vineuse et structurée. Pour un palais que vous connaissez mal, un rosé ou un brut équilibré fait presque toujours mouche : ce sont les choix les plus consensuels.</p>
 <h3>4. Maison connue ou vigneron ?</h3>
@@ -945,6 +1054,10 @@ function articles(){
 <p>Une mention comme « Grand Cru » ou « Premier Cru » renvoie au classement historique des villages d'origine des raisins. Elle renseigne la provenance, mais ne suffit pas à elle seule pour juger une cuvée.</p>`,
       related:['ruinart','clicquot'] },
   ];
+  return list.map(article=>{
+    const rewrite=ARTICLE_REWRITES[article.id] || {};
+    return {...article,...rewrite,soon:!PUBLISHED_ARTICLE_IDS.has(article.id)};
+  });
 }
 function art(id){ return articles().find(a=>a.id===id); }
 
@@ -968,15 +1081,27 @@ function budgetFitScore(p, budget){
   const under=lower-max;
   return under<=10 ? 24 : under<=25 ? 10 : 0;
 }
+function signalFit(p, signal){
+  if(!signal || signal==='any') return true;
+  if(signal==='known') return (p.popularity||0)>=84;
+  if(signal==='discovery') return (p.popularity||0)<84;
+  if(signal==='low_dosage') return p.tags.includes('Extra-brut / nature') || /\b(?:0|1|2|3|4|5|6)(?:[,.]\d+)?\s*g\/L\b/i.test(p.details?.dosage||'');
+  return true;
+}
+function stableVariation(p,a){
+  const seed=`${p.id}|${(a.occasion||[])[0]}|${(a.gout||[])[0]}|${(a.budget||[])[0]}|${(a.repere||[])[0]}`;
+  let hash=0;
+  for(const char of seed) hash=(hash*31+char.charCodeAt(0))>>>0;
+  return (hash%401)/100;
+}
 function score(p, a){
-  const occ=(a.occasion||[])[0], gout=(a.gout||[])[0], bud=(a.budget||[])[0], pref=(a.maison||[])[0];
+  const occ=(a.occasion||[])[0], gout=(a.gout||[])[0], bud=(a.budget||[])[0], signal=(a.repere||[])[0];
   const budgetScore = budgetFitScore(p, bud);
-  const styleScore = p.profil.includes(gout) ? 25 : 6;
-  const occasionScore = p.occ.includes(occ) ? 20 : 5;
+  const styleScore = p.profil.includes(gout) ? 30 : 4;
+  const occasionScore = p.occ.includes(occ) ? 24 : 3;
   const availabilityScore = p.editorialReady ? 10 : 0;
-  const popularityScore = Math.max(0, Math.min(5, ((p.popularity||70)/100)*5));
-  const producerPenalty = pref && pref!=='any' && p.producerType!==pref ? 45 : 0;
-  return budgetScore + styleScore + occasionScore + availabilityScore + popularityScore - producerPenalty;
+  const signalScore = signal==='any' ? 0 : signalFit(p,signal) ? 24 : 0;
+  return budgetScore + styleScore + occasionScore + availabilityScore + signalScore + stableVariation(p,a);
 }
 function ranked(){
   const sc=products().map(p=>({p,s:score(p,state.answers)}));
@@ -1086,7 +1211,7 @@ function renderHome(){
   <section class="section gray"><div class="container">
     <div class="sec-head"><div class="h2">Comment ça marche</div><p>Trois étapes, une petite minute.</p></div>
     <div class="steps">
-      <div class="step"><div class="n">01</div><h3>Répondez</h3><p>Quatre questions sur l'occasion, le style, le budget et le type de producteur.</p></div>
+      <div class="step"><div class="n">01</div><h3>Répondez</h3><p>Quatre questions sur l'occasion, le style, le budget et votre priorité.</p></div>
       <div class="step"><div class="n">02</div><h3>Comparez</h3><p>Le sélecteur confronte vos réponses aux caractéristiques des bouteilles disponibles.</p></div>
       <div class="step"><div class="n">03</div><h3>Comprenez</h3><p>Le résultat explique les critères retenus et ouvre une analyse détaillée avant l’achat.</p></div>
     </div>
@@ -1116,6 +1241,7 @@ function renderHome(){
 
 function renderQuiz(){
   const qs=questions(), q=qs[state.step], pct=(state.step/qs.length)*100;
+  if(window.qcTrack && !state.quizStartedTracked){window.qcTrack('quiz_started',{source:'selector'});state.quizStartedTracked=true;}
   const opts=q.opts.map(o=>`<button class="qopt" onclick='answer(${JSON.stringify(q.id)},${JSON.stringify(o.tags)})'><span class="qe">${o.e}</span><span><span class="ql">${o.l}</span><br><span class="qd">${o.d}</span></span></button>`).join('');
   app.innerHTML = nav() + `
   <section class="quiz"><div class="narrow">
@@ -1146,13 +1272,22 @@ function matchReasons(p){
   if((a.gout||[]).some(tag=>p.profil.includes(tag))) reasons.push("Son profil correspond au style recherché.");
   const budget=(a.budget||[])[0];
   if(budget && budgetFitScore(p,budget)>=34) reasons.push(p.commerceReady?"Son prix se situe dans la tranche choisie.":"Son positionnement de prix se situe dans la tranche choisie.");
-  const producer=(a.maison||[])[0];
-  if(producer && producer===p.producerType) reasons.push(`Elle correspond à votre préférence pour ${producer==='vigneron'?'un champagne de vigneron':'une grande maison'}.`);
+  const signal=(a.repere||[])[0];
+  if(signalFit(p,signal)){
+    if(signal==='known') reasons.push("Son étiquette fait partie des repères les plus connus de la sélection.");
+    if(signal==='discovery') reasons.push("Elle répond à votre envie de découvrir une cuvée moins attendue.");
+    if(signal==='low_dosage') reasons.push("Sa catégorie extra-brut ou brut nature correspond au dosage recherché.");
+  }
   return reasons.slice(0,3);
 }
 
 function renderResult(){
   const r=ranked(), top=r[0], tp=top.p, alts=r.slice(1,4);
+  if(window.qcTrack && state.resultTrackedFor!==tp.id){
+    window.qcTrack('quiz_completed',{product:tp.id,source:'selector'});
+    window.qcTrack('recommendation_viewed',{product:tp.id,source:'selector'});
+    state.resultTrackedFor=tp.id;
+  }
   const pills=tp.tags.map(t=>`<span class="tag">${t}</span>`).join('');
   const reasons=matchReasons(tp).map(reason=>`<li>${reason}</li>`).join('');
   const altc=alts.map(a=>{const p=a.p;return `
@@ -1269,7 +1404,7 @@ function renderProduct(){
 }
 
 function renderBlog(){
-  const cards=articles().map(articleCard).join('');
+  const cards=articles().filter(article=>!article.soon).map(articleCard).join('');
   app.innerHTML = nav() + `
   <section class="blogpage"><div class="container">
     <div class="sec-head" style="text-align:left;margin-left:0"><h1 class="h2">Le journal</h1><p>Guides pratiques, décryptages et sélections pour mieux comprendre le champagne.</p></div>
@@ -1308,8 +1443,8 @@ function render(){
 }
 function openProduct(id){ state.product=id; state.view='product'; render(); }
 function go(v){ state.view=v; render(); }
-function startQuiz(){ state.view='quiz'; state.step=0; state.answers={}; state.animKey++; render(); }
-function answer(qid,tags){ state.answers[qid]=tags; if(state.step>=questions().length-1){ state.view='result'; } else { state.step++; state.animKey++; } render(); }
+function startQuiz(){ state.view='quiz'; state.step=0; state.answers={}; state.quizStartedTracked=false; state.resultTrackedFor=null; state.animKey++; render(); }
+function answer(qid,tags){ state.answers[qid]=tags; if(window.qcTrack)window.qcTrack('quiz_answered',{source:qid,step:state.step+1}); if(state.step>=questions().length-1){ state.view='result'; } else { state.step++; state.animKey++; } render(); }
 function qBack(){ if(state.step===0){ state.view='home'; } else { state.step--; state.animKey++; } render(); }
 function openArticle(id){ state.article=id; state.view='article'; render(); }
 function openAff(id){ const p=prod(id); const link=p&&(buyLink(p)||p.sourceUrl); if(link) window.open(link,'_blank','noopener'); return false; }

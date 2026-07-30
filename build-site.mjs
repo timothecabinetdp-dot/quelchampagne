@@ -165,7 +165,7 @@ const SEO_LANDINGS = [
   {
     id:'aperitif',
     title:'Quel champagne pour l’apéritif ?',
-    desc:'Découvrez les champagnes vérifiés les plus adaptés à l’apéritif selon leur fraîcheur, leur style et votre budget.',
+    desc:'Découvrez les champagnes disponibles les plus adaptés à l’apéritif selon leur fraîcheur, leur style et votre budget.',
     intro:'Pour l’apéritif, la priorité va généralement à la fraîcheur, à la lisibilité du fruit et à une structure qui ne fatigue pas le palais. Cette sélection réunit uniquement les cuvées de notre catalogue explicitement recommandées pour ce moment.',
     advice:'Servez le champagne frais, mais pas glacé, dans un verre suffisamment large pour laisser les arômes s’exprimer. Les cuvées les plus vives accompagnent naturellement les gougères, les coquillages et les bouchées peu épicées.',
     filter:p=>p.occ.includes('occ_apero')
@@ -181,7 +181,7 @@ const SEO_LANDINGS = [
   {
     id:'repas',
     title:'Quel champagne choisir pour un repas ?',
-    desc:'Trouvez un champagne de repas selon la puissance, la fraîcheur et les accords proposés sur chaque fiche vérifiée.',
+    desc:'Trouvez un champagne de repas selon la puissance, la fraîcheur et les accords analysés sur chaque fiche.',
     intro:'À table, le champagne ne doit pas seulement ouvrir le repas : il doit tenir face au plat. Les cuvées plus vineuses ou complexes conviennent aux volailles, poissons en sauce et fromages, tandis que les profils tendus restent particulièrement adaptés aux produits marins.',
     advice:'L’accord dépend davantage de la structure du vin et de la préparation du plat que du prestige de l’étiquette. Utilisez le comparateur pour mettre en regard puissance, profil et accords avant de choisir.',
     filter:p=>p.occ.includes('occ_diner')
@@ -189,15 +189,15 @@ const SEO_LANDINGS = [
   {
     id:'rose',
     title:'Quel champagne rosé choisir ?',
-    desc:'Comparez les champagnes rosés vérifiés : styles délicats, fruités ou gastronomiques, budgets et accords.',
-    intro:'Tous les champagnes rosés ne remplissent pas le même rôle. Certains privilégient la finesse et les crustacés, d’autres l’expression des fruits rouges ou une structure suffisante pour accompagner un repas. La méthode d’élaboration et l’assemblage restent indiqués seulement lorsqu’ils sont officiellement documentés.',
+    desc:'Comparez les champagnes rosés disponibles : styles délicats, fruités ou gastronomiques, budgets et accords.',
+    intro:'Tous les champagnes rosés ne remplissent pas le même rôle. Certains privilégient la finesse et les crustacés, d’autres l’expression des fruits rouges ou une structure suffisante pour accompagner un repas. La méthode d’élaboration et l’assemblage ne sont affirmés que lorsque leur source est indiquée.',
     advice:'Ne choisissez pas un rosé uniquement pour sa couleur. Un profil délicat convient au cadeau et à l’apéritif, tandis qu’une cuvée plus vineuse peut accompagner le saumon, le canard ou une cuisine plus structurée.',
     filter:p=>p.tags.some(tag=>tag.toLowerCase().includes('rosé'))
   },
   {
     id:'blanc-de-blancs',
     title:'Quel champagne blanc de blancs choisir ?',
-    desc:'Découvrez les champagnes blancs de blancs vérifiés, du profil frais et minéral aux cuvées millésimées de prestige.',
+    desc:'Découvrez les champagnes blancs de blancs disponibles, du profil frais et minéral aux cuvées millésimées de prestige.',
     intro:'Un blanc de blancs est élaboré à partir de raisins blancs, le plus souvent exclusivement de chardonnay en Champagne. Le style peut toutefois aller d’un brut frais et accessible à une cuvée millésimée profonde : le nom de la catégorie ne suffit donc pas à prédire l’usage.',
     advice:'Les profils les plus vifs sont particulièrement cohérents avec les huîtres, crustacés et poissons fins. Les sorties millésimées plus complexes demandent davantage de temps dans le verre et peuvent accompagner tout un repas.',
     filter:p=>p.name.toLowerCase().includes('blanc de blancs') || p.tags.some(tag=>tag.toLowerCase().includes('blanc de blancs'))
@@ -213,8 +213,8 @@ const SEO_LANDINGS = [
   {
     id:'fruits-de-mer',
     title:'Quel champagne choisir avec des fruits de mer ?',
-    desc:'Trouvez un champagne pour les huîtres, crustacés et fruits de mer parmi les cuvées aux accords officiellement vérifiés.',
-    intro:'Avec les fruits de mer, la fraîcheur, la précision et une finale nette comptent davantage que la notoriété de l’étiquette. Cette page retient les cuvées dont les accords vérifiés incluent explicitement les produits de la mer.',
+    desc:'Trouvez un champagne pour les huîtres, crustacés et fruits de mer parmi les cuvées analysées pour ces accords.',
+    intro:'Avec les fruits de mer, la fraîcheur, la précision et une finale nette comptent davantage que la notoriété de l’étiquette. Cette page retient les cuvées dont le profil et les accords conseillés correspondent explicitement aux produits de la mer.',
     advice:'Pour les huîtres et coquillages, privilégiez les profils les plus droits et minéraux. Avec des crustacés, une texture plus ronde peut fonctionner, surtout lorsque la préparation comporte du beurre, une sauce ou une cuisson marquée.',
     filter:p=>p.accords.includes('accord_mer')
   }
@@ -300,6 +300,7 @@ function page({title, desc, canonical, ogImage, active, main, graph, noindex}){
 <meta name="robots" content="${noindex?'noindex,follow':'index,follow,max-image-preview:large'}">
 <meta name="theme-color" content="#ffffff">
 <link rel="icon" href="${FAVICON}">
+<script src="/assets/analytics.js" defer></script>
 <script type="application/ld+json">${schema}</script>
 <style>${CSS}</style>
 </head>
@@ -373,7 +374,7 @@ function homeMain(){
   <section class="section gray"><div class="container">
     <div class="sec-head"><div class="h2">Comment ça marche</div><p>Trois étapes, une petite minute.</p></div>
     <div class="steps">
-      <div class="step"><div class="n">01</div><h3>Répondez</h3><p>Quatre questions sur l'occasion, le style, le budget et le type de producteur.</p></div>
+      <div class="step"><div class="n">01</div><h3>Répondez</h3><p>Quatre questions sur l'occasion, le style, le budget et votre priorité.</p></div>
       <div class="step"><div class="n">02</div><h3>Comparez</h3><p>Le sélecteur confronte vos réponses aux caractéristiques des bouteilles disponibles.</p></div>
       <div class="step"><div class="n">03</div><h3>Comprenez</h3><p>Le résultat explique les critères retenus et ouvre une fiche claire avant l’achat.</p></div>
     </div>
@@ -396,8 +397,8 @@ function homeMain(){
     <div class="center-cta"><a class="chev" href="/blog/">Voir tous les articles</a></div>
   </div></section>
   <style>
-    .partner-pcard-img{background:#fff}
-    .partner-pcard-img img{width:100%;height:100%;object-fit:contain;padding:16px 24px;mix-blend-mode:multiply}
+    .partner-pcard-img{height:320px;background:#fff;overflow:hidden}
+    .partner-pcard-img img{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain!important;object-position:center;padding:22px 30px;mix-blend-mode:multiply}
     .partner-pcard .pcard-note{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
   </style>`;
 }
@@ -494,10 +495,23 @@ function champagnesMain(){
   </script>`;
 }
 
+function landingPhoto(landing){
+  const photos={
+    'rose':'https://images.unsplash.com/photo-1673872602569-c9a1c1bfe71f?q=80&w=2000&auto=format&fit=crop',
+    'fruits-de-mer':'https://images.unsplash.com/photo-1679694140422-aecfd3d5dd0b?q=80&w=2000&auto=format&fit=crop',
+    'aperitif':'https://images.unsplash.com/photo-1498429152472-9a433d9ddf3b?q=80&w=2000&auto=format&fit=crop',
+    'cadeau':'https://images.unsplash.com/photo-1606728000988-fbbec753b8ce?q=80&w=2000&auto=format&fit=crop',
+    'repas':'https://images.unsplash.com/photo-1720070827797-d4f03e228dea?q=80&w=2000&auto=format&fit=crop',
+    'blanc-de-blancs':'https://images.unsplash.com/photo-1720070827797-d4f03e228dea?q=80&w=2000&auto=format&fit=crop',
+    'moins-de-50':'https://images.unsplash.com/photo-1609516142756-7ecef85e76a7?q=80&w=2000&auto=format&fit=crop'
+  };
+  return photos[landing.id]||SELECTION_PHOTO;
+}
+
 function landingMain(landing){
   const selected = partnerProducts.filter(landing.filter);
   const cards = selected.map(productCard).join('');
-  return `<section class="section-lead"><div class="container"><div class="lead-head">
+  return `<section class="page-hero" style="--ph-img:url('${landingPhoto(landing)}')"><div class="container"><div class="lead-head">
     <div class="eyebrow">Guide de sélection</div>
     <h1 class="a-title" style="margin-top:12px">${landing.title}</h1>
     <p>${landing.intro}</p>
@@ -618,7 +632,7 @@ function decisionGuide(p){
 }
 
 function blogMain(){
-  const cards = articles().map(articleCard).join('');
+  const cards = articles().filter(article=>!article.soon).map(articleCard).join('');
   return `<section class="blogpage"><div class="container">
     <div class="sec-head" style="text-align:left;margin-left:0"><h1 class="h2">Le blog du champagne</h1><p>Guides pratiques, décryptages et sélections pour mieux comprendre le champagne.</p></div>
     <div class="cards">${cards}</div>
@@ -721,7 +735,7 @@ function methodMain(){
       <h3>1. Les faits sont rattachés à leur source</h3>
       <p>Assemblage, dosage, millésime, édition et méthode d’élaboration ne sont affirmés que lorsqu’une donnée exploitable est disponible chez le producteur ou le marchand identifié. Une information incertaine est signalée comme telle au lieu d’être présentée comme un fait.</p>
       <h3>2. Le conseil est éditorial</h3>
-      <p>QuelChampagne transforme ces faits en critères utiles : occasion, style recherché, budget indicatif, accords et type de producteur. Nous ne prétendons pas avoir dégusté toutes les bouteilles et nous ne recopions pas les descriptions commerciales des marques.</p>
+      <p>Nos analyses appliquent une grille constante aux données contrôlées : style, fraîcheur, structure, dosage, cépages, accords, occasion et niveau de prix. Chaque cuvée est ainsi comparée selon les mêmes critères, indépendamment de sa notoriété ou de sa rémunération commerciale.</p>
       <h3>3. Le classement n’est pas acheté</h3>
       <p>Le sélecteur classe les cuvées selon les réponses données. Une maison ou un marchand ne peut pas payer pour apparaître devant une recommandation plus pertinente.</p>
       <h3>4. Les prix restent une donnée séparée</h3>
@@ -741,8 +755,8 @@ function aboutMain(){
       <p>QuelChampagne est un guide indépendant consacré au Champagne. Il aide à comparer les bouteilles selon l’occasion, le style recherché et le budget, sans confondre conseil éditorial et mise en avant commerciale.</p>
       <h3>Un produit construit autour des données</h3>
       <p>Chaque cuvée relie une maison, une sortie exacte, des faits officiels, un profil éditorial, des usages et, à terme, des offres datées. Cette structure permet de comparer des champagnes réellement comparables et de distinguer une cuvée permanente d’un millésime ou d’une édition numérotée.</p>
-      <h3>Ce que nous refusons</h3>
-      <p>Pas de dégustation inventée, pas de photographie récupérée sans droit, pas de prix présenté comme permanent et pas de recommandation achetée. La profondeur de la base et la qualité des liens entre les informations comptent davantage que le volume de pages.</p>
+      <h3>Nos engagements</h3>
+      <p>Sources identifiées, photographies autorisées, prix datés et classement indépendant : chaque information publiée doit être traçable et utile à la décision. La profondeur de la base et la qualité des liens entre les informations comptent davantage que le volume de pages.</p>
       <div style="margin-top:36px"><a class="btn btn-primary" href="/selecteur/">Essayer le sélecteur</a> <a class="btn btn-ghost" href="/notre-methode/">Lire notre méthode</a></div>
     </div>
   </div></section>`;
@@ -759,7 +773,7 @@ function legalMain(){
       <h3>Contenu et propriété intellectuelle</h3>
       <p>Les textes, données structurées et visuels originaux de QuelChampagne ne peuvent pas être réutilisés sans autorisation. Les marques citées appartiennent à leurs titulaires respectifs. Leur citation sert uniquement à identifier les cuvées présentées.</p>
       <h3>Information et responsabilité</h3>
-      <p>Les prix et disponibilités peuvent évoluer après leur date de vérification. Les informations techniques distinguent les éléments communiqués par le marchand ou le producteur de l’interprétation éditoriale de QuelChampagne.</p>
+      <p>Les prix et disponibilités peuvent évoluer après leur date de vérification. Les informations techniques distinguent les éléments communiqués par le marchand ou le producteur de l’analyse QuelChampagne.</p>
       <h3>Affiliation</h3>
       <p>QuelChampagne participe au programme d’affiliation de Bottle of Italy par l’intermédiaire du réseau Webgains. Certains liens menant vers ce marchand sont des liens affiliés : ils sont signalés à proximité du bouton et portent l’attribut <code>rel="sponsored"</code>. Si un achat est réalisé après un clic, QuelChampagne peut percevoir une commission, sans coût supplémentaire pour l’utilisateur. Cette rémunération ne modifie ni le contenu des analyses, ni le classement des recommandations. Les prix, disponibilités, conditions de vente et livraisons relèvent du marchand.</p>
     </div>
@@ -771,11 +785,13 @@ function privacyMain(){
     <div class="a-cat">Données personnelles</div><h1 class="a-title">Politique de confidentialité</h1>
     <div class="prose">
       <h3>Données actuellement traitées</h3>
-      <p>Le site statique n’intègre actuellement ni compte utilisateur, ni formulaire, ni newsletter, ni outil de mesure d’audience. Les réponses au sélecteur restent dans le navigateur et ne sont pas envoyées à un serveur.</p>
+      <p>Le site statique n’intègre actuellement ni compte utilisateur, ni formulaire, ni newsletter. Les réponses détaillées au sélecteur restent dans le navigateur. Des événements techniques limités sont toutefois comptabilisés pour mesurer le fonctionnement du parcours : lancement et fin du sélecteur, consultation d’une analyse, utilisation du comparateur et clic vers le partenaire.</p>
       <h3>Confirmation de majorité</h3>
       <p>Après confirmation, le navigateur enregistre localement la valeur technique <code>qc_age_ok</code> afin d’éviter de réafficher immédiatement la porte d’âge. Cette valeur ne contient pas l’âge, l’identité ou les réponses au sélecteur.</p>
+      <h3>Mesure d’audience</h3>
+      <p>Les événements du parcours sont envoyés à une fonction hébergée sur le même domaine puis agrégés dans Cloudflare Analytics Engine. Aucun identifiant utilisateur, nom, adresse électronique, réponse libre ou historique individuel n’est enregistré. Le site peut également utiliser Cloudflare Web Analytics pour mesurer les pages vues et les performances techniques, sans déposer de cookie publicitaire.</p>
       <h3>Services tiers</h3>
-      <p>Le site n’intègre ni régie publicitaire, ni traceur d’audience, ni police externe. Certaines photographies d’illustration sont servies par le réseau de diffusion d’Unsplash et les photographies des bouteilles par le réseau de diffusion utilisé par Bottle of Italy. Ces hébergeurs d’images peuvent recevoir des données techniques de connexion (notamment l’adresse IP et le type de navigateur) lors du chargement des visuels. Les liens d’achat passent par le réseau d’affiliation Webgains avant de rediriger vers Bottle of Italy ; le clic et une éventuelle commande sont alors traités selon les politiques de ces services. QuelChampagne ne reçoit pas les données de paiement ni le détail nominatif des commandes.</p>
+      <p>Le site n’intègre ni régie publicitaire, ni police externe. Certaines photographies d’illustration sont servies par le réseau de diffusion d’Unsplash et les photographies des bouteilles par le réseau de diffusion utilisé par Bottle of Italy. Ces hébergeurs d’images peuvent recevoir des données techniques de connexion (notamment l’adresse IP et le type de navigateur) lors du chargement des visuels. Les liens d’achat passent par le réseau d’affiliation Webgains avant de rediriger vers Bottle of Italy ; le clic et une éventuelle commande sont alors traités selon les politiques de ces services. QuelChampagne ne reçoit pas les données de paiement ni le détail nominatif des commandes.</p>
       <h3>Vos droits et contact</h3>
       <p>Responsable du traitement : CORTEXIA (SAS), 59 rue de Ponthieu, 75008 Paris. Pour toute demande relative à vos données ou l’exercice de vos droits : timothe.cabinetdp@gmail.com. Vous pouvez également saisir la CNIL (www.cnil.fr).</p>
     </div>
@@ -789,12 +805,13 @@ function selecteurHTML(){
   h = h.replace('let CATALOGUE = null;', `let CATALOGUE = ${JSON.stringify(partnerProducts).replaceAll('<','\\u003c')};`);
   h = h.replace(/function FALLBACK_PRODUCTS\(\)\{[\s\S]*?\n\}\nfunction prod/, "function FALLBACK_PRODUCTS(){ return []; }\nfunction prod");
   h = h.replace(/const DETAILS = \{[\s\S]*?\n\};\nfunction detail/, "const DETAILS = {};\nfunction detail");
+  h = h.replace(/const PUBLISHED_ARTICLE_IDS[\s\S]*?\nfunction art\(id\)\{ return articles\(\)\.find\(a=>a\.id===id\); \}/, "function articles(){ return []; }\nfunction art(){ return null; }");
   h = h.replace("function openProduct(id){ state.product=id; state.view='product'; render(); }", "function openProduct(id){ location.href='/champagne/'+id+'/'; }");
   h = h.replace("function openArticle(id){ state.article=id; state.view='article'; render(); }", "function openArticle(id){ location.href='/blog/'+id+'/'; }");
   h = h.replace('\nloadCatalogue();\nageGate();', '\n// Le catalogue partenaire contrôlé est déjà embarqué dans cette page.\nageGate();');
   h = h.replace("const state = { view:'home'", "const state = { view:'quiz'");
   h = h.replace('<title>QuelChampagne — Choisir un champagne selon vos critères</title>', '<title>Sélecteur de champagne — Comparez en 4 questions | QuelChampagne</title>');
-  h = h.replace('content="Comparez les champagnes selon l’occasion, vos goûts et votre budget. Quatre questions donnent accès à une sélection expliquée et à des fiches détaillées."', 'content="Répondez à quatre questions sur l’occasion, vos goûts, le budget et le producteur pour comparer les bouteilles disponibles."');
+  h = h.replace('content="Comparez les champagnes selon l’occasion, vos goûts et votre budget. Quatre questions donnent accès à une sélection expliquée et à des fiches détaillées."', 'content="Répondez à quatre questions sur l’occasion, vos goûts, le budget et votre priorité pour comparer les bouteilles disponibles."');
   h = h.replace('content="QuelChampagne — Choisir un champagne selon vos critères"', 'content="Sélecteur de champagne — Comparez en 4 questions | QuelChampagne"');
   h = h.replace('content="Quatre questions pour comparer les champagnes selon l’occasion, vos goûts et votre budget."', 'content="Quatre questions pour comparer les bouteilles disponibles et comprendre les critères de sélection."');
   h = h.replace('content="https://quelchampagne.fr"', 'content="https://quelchampagne.fr/selecteur/"');
@@ -902,7 +919,7 @@ write('catalogue.json', `${JSON.stringify(partnerProducts, null, 2)}\n`);
 // Cloudflare Pages : préserver les anciennes URL sans republier les fiches.
 const partnerIds=new Set(partnerProducts.map(product=>product.id));
 const legacyRedirects=products()
-  .filter(product=>!partnerIds.has(product.id))
+  .filter(product=>!partnerIds.has(product.id) && product.region==='Champagne')
   .map(product=>`/champagne/${product.id}/ /champagnes/ 301`);
 const comparisonRedirects=[
   '/comparatifs/ /comparateur/ 301',

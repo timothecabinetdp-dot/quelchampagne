@@ -10,6 +10,7 @@ import { readFileSync } from 'node:fs';
 import { boutiqueSlug } from './boutique.mjs';
 
 const snapshot = JSON.parse(readFileSync(new URL('data/bottle-of-italy-products.json', import.meta.url), 'utf8'));
+const evidenceRegistry = JSON.parse(readFileSync(new URL('data/product-evidence-overrides.json', import.meta.url), 'utf8'));
 
 const HOUSE_BRANDS = new Set([
   'EPC Champagne','Maison Burtin','Nicolas Feuillatte','Cattier',
@@ -25,6 +26,8 @@ const YEAR_UNCONFIRMED_ON_MERCHANT_PAGE = new Set([
   'Domaine Augustin','Lamiable','Mouzon Leroux','Laherte Frères',
   'Billecart-Salmon','Perrier-Jouët'
 ]);
+const OFFER_WARNING_DAYS = 3;
+const OFFER_EXPIRY_DAYS = 7;
 
 const GRAPES = [
   ['Chardonnay',/\b(chardonnay)\b/i],
@@ -67,6 +70,11 @@ const PAIRINGS = [
 function unique(values){ return [...new Set(values.filter(Boolean))]; }
 function has(text, expression){ return expression.test(text); }
 function checkedDate(){ return snapshot.checkedAt.slice(0,10); }
+function offerAgeDays(checkedAt){
+  const timestamp=Date.parse(checkedAt);
+  if(!Number.isFinite(timestamp)) return Number.POSITIVE_INFINITY;
+  return Math.max(0,(Date.now()-timestamp)/86400000);
+}
 function normalizeBrand(brand){
   if(brand==='Champagne Simplexité Rosé Brut') return 'Simplexité';
   if(brand==='Jean De La Fontaine') return 'Jean de La Fontaine';
@@ -167,71 +175,96 @@ function recommendationFields(product, tags, scores, pairings){
 
 function specificText(product, tags, grapes, aromas, pairings, scores){
   const style=styleLabel(tags);
-  const aromaText=aromas.length ? aromas.slice(0,4).join(', ') : 'fruit, fraîcheur et notes de vieillissement';
-  const grapeText=grapes.length ? ` Les cépages mentionnés sont ${grapes.join(', ')}.` : '';
+  const aromaText=aromas.length ? aromas.slice(0,4).join(', ') : null;
+  const grapeText=grapes.length ? ` Assemblage documenté : ${grapes.join(', ')}.` : '';
   const pairingText=pairings.length ? pairings.slice(0,3).map(item=>item.label).join(', ') : 'l’apéritif et un repas léger';
   const structure = scores.power>=4
-    ? 'Sa structure marquée la rend plus à l’aise à table qu’au seul apéritif.'
+    ? 'La structure affirmée appelle plutôt la table qu’un apéritif très léger.'
     : scores.freshness>=4
-      ? 'Son profil frais la destine surtout à l’apéritif et aux accords légers.'
-      : 'Son équilibre permet de la servir à l’apéritif comme au début du repas.';
-  const note=`Cette cuvée est présentée comme un champagne ${style}. Les informations disponibles mentionnent ${aromaText}.${grapeText} ${structure}`;
-  const freshness=scores.freshness>=4?'une fraîcheur marquée':scores.freshness<=2?'une fraîcheur mesurée':'une fraîcheur équilibrée';
-  const structureLabel=scores.power>=4?'une structure affirmée':scores.power<=2?'une structure légère':'une structure équilibrée';
-  const advice=`À retenir si vous appréciez ${freshness} et ${structureLabel}, notamment avec ${pairingText}.`;
+      ? 'La fraîcheur marquée favorise l’apéritif et les accords légers.'
+      : 'L’équilibre autorise l’apéritif comme le début du repas.';
+  const aromaticSentence=aromaText ? ` Repères aromatiques disponibles : ${aromaText}.` : '';
+  const variants=[
+    `${product.name} se place dans le registre ${style}.${aromaticSentence}${grapeText} ${structure}`,
+    `Profil retenu pour ${product.name} : ${style}.${aromaticSentence}${grapeText} ${structure}`,
+    `${style.charAt(0).toUpperCase()+style.slice(1)} : c’est le registre principal de ${product.name}.${aromaticSentence}${grapeText} ${structure}`,
+    `Le profil de ${product.name} privilégie un registre ${style}.${aromaticSentence}${grapeText} ${structure}`
+  ];
+  const variant=[...product.name].reduce((sum,char)=>sum+char.charCodeAt(0),0)%variants.length;
+  const note=variants[variant];
+  const freshness=scores.freshness>=4?'sa fraîcheur marquée':scores.freshness<=2?'sa fraîcheur mesurée':'son équilibre de fraîcheur';
+  const structureLabel=scores.power>=4?'sa structure affirmée':scores.power<=2?'sa structure légère':'sa structure équilibrée';
+  const advice=`Choisissez-la pour ${freshness}, ${structureLabel} et les accords suivants : ${pairingText}.`;
   const avoid=scores.freshness>=4
-    ? `Elle conviendra moins si vous recherchez surtout un champagne rond et doux : son registre met davantage en avant ${aromas.slice(0,2).join(' et ')||'la tension et la fraîcheur'}.`
+    ? `Moins adaptée si vous recherchez surtout rondeur et douceur : le profil met davantage en avant ${aromas.slice(0,2).join(' et ')||'la tension et la fraîcheur'}.`
     : scores.power>=4
-      ? `Elle conviendra moins à un apéritif très léger : sa matière appelle plutôt ${pairingText}.`
+      ? `Moins adaptée à un apéritif très léger : sa matière appelle plutôt ${pairingText}.`
       : tags.includes('Demi-sec')
-        ? 'Elle conviendra moins avec des huîtres ou si vous recherchez une finale très sèche : la douceur annoncée appelle plutôt le dessert.'
-        : `Elle conviendra moins si vous recherchez un style très tendu ou très puissant : cette cuvée privilégie l’équilibre autour de ${pairingText}.`;
+        ? 'Moins adaptée avec des huîtres ou si vous recherchez une finale très sèche : la douceur annoncée appelle plutôt le dessert.'
+        : `Moins adaptée si vous recherchez un style très tendu ou très puissant : son intérêt tient à l’équilibre autour de ${pairingText}.`;
   return {note,advice,avoid};
 }
 
 export function buildPartnerCatalogue(){
   return snapshot.records.map(source=>{
-    const brand=normalizeBrand(source.brand);
+    const initialBrand=normalizeBrand(source.brand);
+    const initialId=boutiqueSlug({brand:initialBrand,name:source.name});
+    const evidence=evidenceRegistry.records[initialId] || {};
+    const brand=evidence.publicBrand || initialBrand;
     const normalized={...source,brand};
     const tags=correctedTags(source);
     const searchText=`${source.name} ${source.liveTitle} ${source.merchantTags.join(' ')} ${source.merchantDescription}`;
-    const grapes=findValues(searchText,GRAPES);
+    const grapes=evidence.grapes || findValues(searchText,GRAPES);
     const aromas=findValues(searchText,AROMAS);
     const pairings=PAIRINGS.filter(([,expression])=>has(searchText,expression)).map(([label,,token])=>({label,token}));
     const scores=profileScores(source,tags,aromas);
     const rec=recommendationFields(source,tags,scores,pairings);
     const text=specificText(source,tags,grapes,aromas,pairings,scores);
-    const id=boutiqueSlug({brand,name:source.name});
+    const id=initialId;
     const price=source.price;
+    const offerAge=offerAgeDays(source.checkedAt);
+    const offerStatus=offerAge>OFFER_EXPIRY_DAYS ? 'stale' : offerAge>OFFER_WARNING_DAYS ? 'aging' : 'fresh';
+    const offerUsable=source.available && offerStatus!=='stale';
     const year=source.name.match(/\b(19|20)\d{2}\b/)?.[0] || null;
-    const identityStatus=year && YEAR_UNCONFIRMED_ON_MERCHANT_PAGE.has(source.brand) ? 'merchant_feed_year_to_verify' : 'merchant_page_checked';
-    const publicName=identityStatus==='merchant_feed_year_to_verify'
+    const identityStatus=evidence.status || (year && YEAR_UNCONFIRMED_ON_MERCHANT_PAGE.has(source.brand) ? 'merchant_feed_year_to_verify' : 'merchant_page_checked');
+    const publicName=evidence.publicName || (identityStatus.includes('vintage_unconfirmed') || identityStatus==='merchant_feed_year_to_verify'
       ? source.name.replace(new RegExp(`\\s*${year}\\b`),'').trim()
-      : source.name;
+      : source.name);
     const producerType=HOUSE_BRANDS.has(source.brand) ? 'maison' : 'vigneron';
     const accords=unique(pairings.map(item=>item.token));
     const pair=pairings.slice(0,3).map(item=>item.label).join(', ') || 'apéritif, poisson';
     const tier=price<30?1:price<=60?2:price<=100?3:4;
     const popularity=(WELL_KNOWN.has(source.brand)?84:68) + (tags.includes('Grand Cru')?4:0) + (tags.includes('Millésimé')?3:0);
-    const facts=[
+    const derivedFacts=[
       `Catégorie communiquée : ${styleLabel(tags)}.`,
       grapes.length?`Cépages mentionnés : ${grapes.join(', ')}.`:null,
-      year?`Année indiquée dans le flux partenaire : ${year}${identityStatus==='merchant_feed_year_to_verify'?' — à confirmer sur la bouteille ou auprès du producteur.':'.'}`:null
+      year?`Année indiquée dans le flux partenaire : ${year}${identityStatus==='merchant_feed_year_to_verify'?' — non retenue dans le titre tant qu’elle n’est pas confirmée sur la fiche produit.':'.'}`:null
     ].filter(Boolean).join(' ');
+    const facts=evidence.facts || derivedFacts;
+    const officialConfirmed=Boolean(evidence.officialSourceUrl) && !identityStatus.includes('product_to_document');
 
     return {
       id, merchantId:source.id, name:publicName, short:publicName, house:brand, brand,
-      region:'Champagne', price, priceMin:price, priceMax:price, oldPrice:source.oldPrice,
+      region:'Champagne', price, priceMin:price, priceMax:price,
+      oldPrice:offerStatus==='fresh' && source.oldPrice>price ? source.oldPrice : null,
       tier, producerType, occ:rec.occ, profil:rec.profil, accords,
       bulles:'bulles_fines', tags, pair, note:text.note,
-      sourceUrl:source.productUrl, verifiedAt:checkedDate(), editorialReady:true,
-      commerceReady:source.available, popularity, aff:source.buyUrl, image:source.image,
-      availability:source.available?'in_stock':'out_of_stock',
-      priceStatus:'merchant_snapshot', offerCheckedAt:source.checkedAt,
+      sourceUrl:evidence.officialSourceUrl || source.productUrl,
+      merchantSourceUrl:source.productUrl,
+      officialSourceUrl:evidence.officialSourceUrl || null,
+      sourceKind:officialConfirmed?'producer':'merchant',
+      verifiedAt:evidence.officialSourceUrl ? evidenceRegistry.reviewedAt : checkedDate(), editorialReady:true,
+      commerceReady:offerUsable, popularity, aff:source.buyUrl, image:source.image,
+      availability:offerStatus==='stale'?'unknown_stale':source.available?'in_stock':'out_of_stock',
+      priceStatus:offerStatus, offerCheckedAt:source.checkedAt,
       identityStatus, merchantDescription:source.merchantDescription,
       imageRights:{sourceUrl:source.image,rightsBasis:'Flux du programme partenaire Bottle of Italy / Webgains',verifiedAt:checkedDate()},
       details:{
-        facts, sourceQuality:'Données produit et disponibilité du marchand, avec interprétation éditoriale QuelChampagne',
+        facts,
+        dosage:evidence.dosage || null,
+        sourceQuality:officialConfirmed
+          ? 'Données de la cuvée confirmées sur le site du producteur, offre contrôlée séparément chez le partenaire'
+          : 'Informations déclarées sur la fiche du partenaire, analyse éditoriale QuelChampagne',
         advice:text.advice, avoid:text.avoid,
         profil:{
           fraicheur:level(scores.freshness,'freshness'),
