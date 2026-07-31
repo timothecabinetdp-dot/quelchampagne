@@ -425,7 +425,8 @@ function homeMain(){
   </div></section>
   <style>
     .partner-pcard-img{height:320px;background:#fff;overflow:hidden}
-    .partner-pcard-img img{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain!important;object-position:center;padding:22px 30px;mix-blend-mode:multiply}
+    .partner-pcard-img{position:relative;contain:layout paint}
+    .partner-pcard-img img{display:block;position:absolute;inset:22px 30px;width:calc(100% - 60px)!important;height:calc(100% - 44px)!important;max-width:none!important;max-height:none!important;object-fit:contain!important;object-position:center;mix-blend-mode:multiply;margin:0!important}
     .partner-pcard .pcard-note{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
   </style>`;
 }

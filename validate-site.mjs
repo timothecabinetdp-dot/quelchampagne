@@ -528,7 +528,11 @@ for (const phrase of [
 if (!source.includes('object-fit:contain!important')) errors.push('La règle prioritaire anti-recadrage des packshots est absente.');
 if (!source.includes('.rviz>img.product-packshot{position:absolute!important') || !source.includes('height:calc(100% - 36px)!important')) errors.push('La bouteille principale du sélecteur peut encore dépasser de son cadre.');
 if (!source.includes('.mini>img.product-packshot{position:absolute!important') || !source.includes('.alt-main{display:grid; grid-template-columns:86px minmax(0,1fr)')) errors.push('Les bouteilles alternatives peuvent encore chevaucher leur texte.');
-if (!boutiqueSource.includes('width:auto!important;height:auto!important;max-width:100%;max-height:100%')) errors.push('Les cartes marchandes peuvent encore agrandir puis tronquer un packshot.');
+if (!boutiqueSource.includes('.bqp-visual img{display:block;position:absolute') || !boutiqueSource.includes('height:calc(100% - 68px)!important')) errors.push('Le visuel principal des fiches marchandes peut encore sortir de son cadre.');
+if (!boutiqueSource.includes('.bq-media img{display:block;position:absolute') || !boutiqueSource.includes('height:calc(100% - 48px)!important')) errors.push('Les cartes marchandes peuvent encore agrandir puis tronquer un packshot.');
+if (!boutiqueSource.includes('.bqp-intro .bq-tags{display:flex;flex-wrap:wrap;gap:7px')) errors.push('Les catégories des fiches marchandes peuvent encore être concaténées.');
+if (!source.includes('.pcard-img>img.product-packshot,.phero-img>img.product-packshot{position:absolute!important')) errors.push('Les cartes éditoriales peuvent encore laisser dépasser leur bouteille.');
+if (!buildSource.includes('.partner-pcard-img img{display:block;position:absolute')) errors.push('Les bouteilles de la sélection d’accueil peuvent encore sortir de leur cadre.');
 if (!source.includes('.page-hero::before{display:block!important}')) errors.push('Les visuels des pages de sélection sont encore masqués.');
 if (!source.includes('.nav-toggle{display:none') || !source.includes('.nav.is-open .nav-links{display:grid')) errors.push('Le menu mobile accessible est absent.');
 if (!buildSource.includes('aria-controls="primary-navigation"') || !buildSource.includes("event.key==='Escape'")) errors.push('Le comportement du menu mobile est incomplet.');

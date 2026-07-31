@@ -1,5 +1,23 @@
 # QuelChampagne V5 — sélecteur et catalogue professionnel
 
+## Audit complet et stabilisation V5.5
+
+- Les 72 pages générées ont été contrôlées à 320, 360, 390, 430, 768,
+  1024 et 1440 px, soit 504 contrôles de page.
+- Le défaut de dimensionnement identifié sur Perrier-Jouët Belle Époque
+  concernait les 48 fiches marchandes : les images sont désormais enfermées
+  dans un cadre dimensionné et ne peuvent plus recouvrir le contenu.
+- Les bouteilles du catalogue, des pages thématiques, des recommandations et
+  de la sélection d’accueil utilisent la même règle de confinement.
+- Les catégories d’une fiche disposent maintenant d’un espacement réel :
+  « Brut » et « Millésimé » ne peuvent plus être concaténés.
+- Les 18 parcours visuels du sélecteur, les filtres et le tri du catalogue, le
+  comparateur, le menu mobile et le contrôle d’âge ont été testés.
+- Chaque page conserve un seul titre principal, des textes alternatifs sur ses
+  images et une largeur égale à celle de l’écran.
+- Les validations automatiques bloquent le retour des anciens styles qui
+  agrandissaient une image selon son ratio naturel hors de son cadre.
+
 ## Correctif mobile V5.4
 
 - Le symbole de marque n’est plus répété dans le bouton « Trouver mon
