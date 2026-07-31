@@ -225,7 +225,8 @@ function header(active){
   const L=(href,label,key)=>`<a class="nlink${active===key?' on':''}" href="${href}"${active===key?' aria-current="page"':''}>${label}</a>`;
   return `<header class="nav"><div class="container nav-in">
     <a class="logo" href="/"><span class="logo-txt">Quel<b>Champagne</b></span>${logoMark()}</a>
-    <nav class="nav-links" aria-label="Navigation principale">${L('/champagnes/','La sélection','shop')}${L('/comparateur/','Comparer','compare')}${L('/blog/','Blog','blog')}<a class="nlink-cta" href="/selecteur/"><svg width="11" height="15" viewBox="0 0 48 64" aria-hidden="true"><path d="M8 16C8 7.7 14.7 2 24 2s16 5.5 16 14c0 6.3-3.6 10.2-9 13.8-4.4 3-6.2 5.7-6.2 10.2" stroke="#9C7A34" stroke-width="4.8" stroke-linecap="round" fill="none"/><path d="M16 47h16c-.7 4.4-3.7 6.8-8 6.8s-7.3-2.4-8-6.8Z" fill="#9C7A34"/><path d="M24 53.3v6.2M19.5 61.5h9" stroke="#9C7A34" stroke-width="2.2" stroke-linecap="round"/></svg>Trouver mon champagne</a></nav>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Ouvrir le menu"><span></span><span></span></button>
+    <nav class="nav-links" id="primary-navigation" aria-label="Navigation principale">${L('/champagnes/','La sélection','shop')}${L('/comparateur/','Comparer','compare')}${L('/blog/','Blog','blog')}<a class="nlink-cta" href="/selecteur/"><svg width="11" height="15" viewBox="0 0 48 64" aria-hidden="true"><path d="M8 16C8 7.7 14.7 2 24 2s16 5.5 16 14c0 6.3-3.6 10.2-9 13.8-4.4 3-6.2 5.7-6.2 10.2" stroke="#9C7A34" stroke-width="4.8" stroke-linecap="round" fill="none"/><path d="M16 47h16c-.7 4.4-3.7 6.8-8 6.8s-7.3-2.4-8-6.8Z" fill="#9C7A34"/><path d="M24 53.3v6.2M19.5 61.5h9" stroke="#9C7A34" stroke-width="2.2" stroke-linecap="round"/></svg>Trouver mon champagne</a></nav>
   </div></header>`;
 }
 function footer(){
@@ -251,6 +252,31 @@ const AGEGATE = `<script>
   var h=document.createElement('div'); h.className='health'; h.textContent="L'abus d'alcool est dangereux pour la sant\\u00e9. \\u00c0 consommer avec mod\\u00e9ration."; b.appendChild(h);
   w.appendChild(b); document.body.appendChild(w); document.body.style.overflow='hidden'; y.focus();
   var controls=[y,n]; w.addEventListener('keydown',function(event){if(event.key!=='Tab')return;if(event.shiftKey&&document.activeElement===y){event.preventDefault();n.focus();}else if(!event.shiftKey&&document.activeElement===n){event.preventDefault();y.focus();}});
+})();
+</script>`;
+
+const NAVIGATION = `<script>
+(function(){
+  var header=document.querySelector('.nav');
+  var toggle=header&&header.querySelector('.nav-toggle');
+  var links=header&&header.querySelector('.nav-links');
+  if(!header||!toggle||!links)return;
+  function close(){
+    header.classList.remove('is-open');
+    toggle.setAttribute('aria-expanded','false');
+    toggle.setAttribute('aria-label','Ouvrir le menu');
+  }
+  toggle.addEventListener('click',function(){
+    var open=!header.classList.contains('is-open');
+    header.classList.toggle('is-open',open);
+    toggle.setAttribute('aria-expanded',String(open));
+    toggle.setAttribute('aria-label',open?'Fermer le menu':'Ouvrir le menu');
+  });
+  links.addEventListener('click',function(event){if(event.target.closest('a'))close();});
+  document.addEventListener('keydown',function(event){if(event.key==='Escape')close();});
+  document.addEventListener('click',function(event){if(header.classList.contains('is-open')&&!header.contains(event.target))close();});
+  var desktop=window.matchMedia&&window.matchMedia('(min-width:701px)');
+  if(desktop&&desktop.addEventListener)desktop.addEventListener('change',function(event){if(event.matches)close();});
 })();
 </script>`;
 
@@ -309,6 +335,7 @@ function page({title, desc, canonical, ogImage, active, main, graph, noindex}){
 ${header(active)}
 <main id="main-content">${main}</main>
 ${footer()}
+${NAVIGATION}
 ${MOTION}
 ${AGEGATE}
 </body>

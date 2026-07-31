@@ -1,5 +1,22 @@
 # QuelChampagne V5 — sélecteur et catalogue professionnel
 
+## Correctif responsive V5.3
+
+- La navigation mobile sur deux lignes est remplacée par un menu compact,
+  accessible au clavier et refermable avec la touche Échap.
+- Le nom QuelChampagne reste lisible sur les écrans de 320 px.
+- Le débordement horizontal des fiches produit à 360 px est supprimé.
+- Les grands titres, visuels, boutons d’achat et blocs techniques des fiches
+  s’adaptent désormais à la largeur disponible.
+- Le catalogue utilise une carte par ligne sur mobile afin de préserver la
+  lisibilité du prix, du nom et du bouton.
+- Les formulaires, filtres, tableaux comparatifs et articles disposent
+  d’espacements et de tailles de texte adaptés aux petits écrans.
+- Le contrôle d’âge et la fenêtre de préférence d’affiliation restent
+  entièrement accessibles, même sur un écran bas ou étroit.
+- Les parcours principaux ont été contrôlés à 320, 360, 390, 768, 1024 et
+  1440 px sans débordement horizontal.
+
 ## Contrôle éditorial V5.2 — 24 fiches
 
 - Les 24 fiches qui restaient à consolider ont été relues une par une.

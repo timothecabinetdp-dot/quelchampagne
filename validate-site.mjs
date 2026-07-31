@@ -245,6 +245,7 @@ for (const profile of editorial) {
 
 const source = read('index.html');
 const boutiqueSource = read('boutique.mjs');
+const buildSource = read('build-site.mjs');
 if (!source.includes("id:'accord', label:\"02 · Le service\"")) errors.push('La question consacrée à l’accord est absente.');
 if (!source.includes("id:'repere', label:\"05 · La signature\"")) errors.push('La cinquième question de départage est absente.');
 if (!source.includes('function signalFit')) errors.push('Le critère de départage du sélecteur est absent du scoring.');
@@ -528,6 +529,10 @@ if (!source.includes('object-fit:contain!important')) errors.push('La règle pri
 if (!source.includes('.rviz .pimg{width:auto!important; height:auto!important; max-width:100%; max-height:100%')) errors.push('Le résultat du sélecteur peut encore recadrer verticalement une bouteille.');
 if (!boutiqueSource.includes('width:auto!important;height:auto!important;max-width:100%;max-height:100%')) errors.push('Les cartes marchandes peuvent encore agrandir puis tronquer un packshot.');
 if (!source.includes('.page-hero::before{display:block!important}')) errors.push('Les visuels des pages de sélection sont encore masqués.');
+if (!source.includes('.nav-toggle{display:none') || !source.includes('.nav.is-open .nav-links{display:grid')) errors.push('Le menu mobile accessible est absent.');
+if (!buildSource.includes('aria-controls="primary-navigation"') || !buildSource.includes("event.key==='Escape'")) errors.push('Le comportement du menu mobile est incomplet.');
+if (!boutiqueSource.includes('.bqp-hero,.bqp-grid{grid-template-columns:minmax(0,1fr)}')) errors.push('Les fiches produit peuvent encore déborder à 360 px.');
+if (!boutiqueSource.includes('@media(max-width:620px)') || !boutiqueSource.includes('.bq-grid{grid-template-columns:1fr')) errors.push('Le catalogue peut encore afficher des cartes trop étroites sur mobile.');
 if (errors.length) {
   console.error(`Validation échouée (${errors.length} erreur${errors.length > 1 ? 's' : ''}) :`);
   for (const error of errors) console.error(`- ${error}`);

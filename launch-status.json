@@ -1,5 +1,5 @@
 {
-  "releaseVersion": "5.2.0",
+  "releaseVersion": "5.3.0",
   "updatedAt": "2026-07-31",
   "deploymentAuthorized": true,
   "checks": {
@@ -17,6 +17,7 @@
   "notes": {
     "merchantOffersActivated": "48 offres Bottle of Italy activées via Webgains. Les cartes ouvrent d’abord une fiche d’analyse QuelChampagne ; seuls les boutons présents sur les fiches utilisent les liens affiliés.",
     "productEvidenceReview": "Les 24 fiches restantes ont été contrôlées : 17 confirmées ou corrigées, 5 partielles et 2 appuyées sur une documentation secondaire. Les 7 fiches non entièrement confirmées restent en noindex et hors sitemap.",
+    "responsiveReview": "Accueil, sélecteur, catalogue, comparateur, fiches et articles contrôlés de 320 à 1440 px. Aucun débordement horizontal ; menu mobile et dialogues validés.",
     "deploymentAuthorized": "Autorisé : identité éditeur Cortexia (SAS, SIREN 107124000, RCS Paris), hébergement Cloudflare Pages et confidentialité renseignés ; validations techniques OK."
   }
 }

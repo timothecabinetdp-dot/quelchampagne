@@ -58,6 +58,10 @@ node test-analytics.mjs
 node validate-launch.mjs
 ```
 
+Le responsive est contrôlé sur les parcours accueil, sélecteur, catalogue,
+comparateur, fiche produit et article. Les largeurs de référence sont 320, 360,
+390, 768, 1024 et 1440 px. La navigation passe en menu compact sous 701 px.
+
 ## Déploiement Cloudflare Pages
 
 - Commande de construction : `node build-site.mjs`
