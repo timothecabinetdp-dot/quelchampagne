@@ -31,6 +31,18 @@ Les fiches qui ne disposent encore que de la source marchande restent
 consultables depuis le catalogue, mais portent `noindex`. Elles ne rejoignent le
 sitemap qu’après ajout d’une source producteur.
 
+État de la base au 31 juillet 2026 :
+
+- 41 fiches confirmées ou corrigées avec une source primaire ;
+- 5 fiches dont le producteur est confirmé mais dont la fiche technique exacte
+  reste à obtenir ;
+- 2 fiches documentées par une source professionnelle secondaire ;
+- 7 fiches maintenues hors du sitemap et en `noindex`, sans donnée inventée.
+
+Les détails contrôlés sont centralisés dans
+`data/product-evidence-overrides.json`. Le rapport des références qui restent à
+documenter est généré dans `reports/product-evidence-review.json`.
+
 ## Construire et vérifier
 
 ```bash

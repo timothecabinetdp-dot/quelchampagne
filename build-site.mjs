@@ -923,7 +923,7 @@ add(BASE+'/confidentialite/', '0.3', 'yearly');
 for(const p of partnerProducts){
   const slug = p.id;
   const analysis = boutiqueAnalysisDescription(p);
-  const indexable = Boolean(p.officialSourceUrl);
+  const indexable = p.sourceKind === 'producer';
   write(`champagne/${slug}/index.html`, page({
     title:`${p.brand} ${p.name} — Avis, profil et accords | QuelChampagne`,
     desc:analysis,

@@ -57,6 +57,58 @@ for (const evidence of productEvidence.records) {
     errors.push(`Statut officiel sans source primaire : ${evidence.productId}.`);
   }
 }
+const deepReviewIds = new Set([
+  'jean-de-la-fontaine-eloquente-champagne-brut',
+  'grand-tour-grand-brut-nature',
+  'maison-labbe-brut-premier-cru-tradition',
+  'louis-constant-brut',
+  'alain-mercier-cuvee-louis-hurtebisse-brut',
+  'maison-tornay-tradition-brut-premier-cru',
+  'maison-burtin-brut',
+  'brisson-lahaye-la-passionnee-blanc-de-noirs-extra-brut',
+  'jean-claude-vallois-blanc-de-blancs-brut-assemblage-noble',
+  'daubanton-rose-de-saignee-en-futs-les-vignes-derriere',
+  'maxime-ponson-cuvee-extra-brut-1er-cru',
+  'maison-yves-loison-cuvee-reserve-clovis',
+  'm-g-heucq-rose-brut-fossile',
+  'beltrand-brigandat-blanc-de-noirs-brut-pierre-brigandat',
+  'bardiau-cuvee-preface-extra-brut',
+  'pierre-legras-orior-brut',
+  'domaine-augustin-terre-2021',
+  'lamiable-eclat-d-etoiles-rose-brut-grand-cru-2014',
+  'veuve-clicquot-cuvee-saint-petersbourg',
+  'jacquart-brut-signature',
+  'j-l-vergnon-blanc-de-blancs-murmure-nature-1er-cru',
+  'mouzon-leroux-l-ineffable-extra-brut-grand-cru-2017',
+  'laherte-freres-les-grandes-crayeres-extra-brut-2021',
+  'j-m-seleque-soliste-les-charmiers-rose-extra-brut-1er-cru-2019'
+]);
+if (deepReviewIds.size !== 24) errors.push(`Contrôle approfondi attendu sur 24 fiches, obtenu : ${deepReviewIds.size}.`);
+for (const productId of deepReviewIds) {
+  const product = PARTNER_CATALOGUE.find(item => item.id === productId);
+  const evidence = productEvidence.records.find(item => item.productId === productId);
+  if (!product || !evidence) {
+    errors.push(`Fiche du contrôle approfondi absente : ${productId}.`);
+    continue;
+  }
+  if (!product.details?.verifiedFacts) errors.push(`Synthèse factuelle absente : ${productId}.`);
+  if (!product.officialSourceUrl && !product.technicalSourceUrl) errors.push(`Source documentaire absente : ${productId}.`);
+  if (product.verifiedAt !== '2026-07-31') errors.push(`Date du contrôle approfondi incorrecte : ${productId}.`);
+}
+const bardiau = PARTNER_CATALOGUE.find(product => product.id === 'bardiau-cuvee-preface-extra-brut');
+if (!bardiau || bardiau.name !== 'Préface Brut Sans Année' || bardiau.tags.includes('Extra-brut / nature')) {
+  errors.push('La correction officielle de Préface Brut Sans Année est absente.');
+}
+for (const [productId, year] of [
+  ['domaine-augustin-terre-2021','2021'],
+  ['lamiable-eclat-d-etoiles-rose-brut-grand-cru-2014','2014'],
+  ['mouzon-leroux-l-ineffable-extra-brut-grand-cru-2017','2017'],
+  ['laherte-freres-les-grandes-crayeres-extra-brut-2021','2021'],
+  ['j-m-seleque-soliste-les-charmiers-rose-extra-brut-1er-cru-2019','2019']
+]) {
+  const product = PARTNER_CATALOGUE.find(item => item.id === productId);
+  if (!product || product.name.includes(year)) errors.push(`Millésime non confirmé encore publié : ${productId}.`);
+}
 const whitePearl=PARTNER_CATALOGUE.find(product=>product.id==='deheurles-white-pearl-blanc-de-blancs-extra-brut');
 if (!whitePearl || whitePearl.brand!=='Daniel Deheurles & Filles' || !whitePearl.details.grapes.includes('Pinot Blanc')) {
   errors.push('La correction officielle de White Pearl (producteur et Pinot Blanc) est absente.');
@@ -334,7 +386,7 @@ for (const file of htmlFiles) {
 
 const sitemap = read('dist/sitemap.xml');
 const sitemapUrls = [...sitemap.matchAll(/<loc>https:\/\/quelchampagne\.fr([^<]*)<\/loc>/g)];
-const expectedSitemapUrls = 23 + PARTNER_CATALOGUE.filter(product=>product.officialSourceUrl).length;
+const expectedSitemapUrls = 23 + PARTNER_CATALOGUE.filter(product=>product.sourceKind==='producer').length;
 if (sitemapUrls.length !== expectedSitemapUrls) errors.push(`URL sitemap attendues : ${expectedSitemapUrls}, obtenues : ${sitemapUrls.length}.`);
 for (const [, path] of sitemapUrls) {
   const target = localTarget(path || '/');

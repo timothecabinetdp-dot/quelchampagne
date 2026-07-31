@@ -13,6 +13,7 @@ const records=PARTNER_CATALOGUE.map(product=>{
     merchantCheckedAt:product.offerCheckedAt,
     officialSourceUrl:override.officialSourceUrl || null,
     officialCheckedAt:override.officialSourceUrl ? overrides.reviewedAt : null,
+    technicalSourceUrl:override.technicalSourceUrl || null,
     facts:{
       grapes:override.grapes || product.details.grapes || [],
       dosage:override.dosage || null,
@@ -52,6 +53,7 @@ writeFileSync(new URL('reports/product-evidence-review.json',import.meta.url),`$
       product:`${record.brand} — ${record.name}`,
       status:record.status,
       officialSourceUrl:record.officialSourceUrl,
+      technicalSourceUrl:record.technicalSourceUrl,
       nextAction:record.officialSourceUrl
         ? 'Archiver la fiche technique primaire exacte de la cuvée.'
         : 'Obtenir une source producteur ou une fiche technique primaire.'

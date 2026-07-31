@@ -1,101 +1,50 @@
 {
-  "reviewedAt": "2026-07-30",
+  "reviewedAt": "2026-07-31",
   "productCount": 48,
   "summary": {
-    "officialConfirmed": 24,
-    "officialPartial": 12,
-    "merchantOnly": 12
+    "officialConfirmed": 41,
+    "officialPartial": 5,
+    "merchantOnly": 2
   },
   "unresolved": [
     {
       "productId": "jean-de-la-fontaine-eloquente-champagne-brut",
-      "product": "Jean de La Fontaine — Eloquente Champagne Brut",
-      "status": "merchant_only",
-      "officialSourceUrl": null,
-      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
-    },
-    {
-      "productId": "grand-tour-grand-brut-nature",
-      "product": "Grand Tour — Grand Brut Nature",
-      "status": "merchant_only",
-      "officialSourceUrl": null,
-      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
-    },
-    {
-      "productId": "maison-labbe-brut-premier-cru-tradition",
-      "product": "Maison Labbé — Brut Premier Cru - Tradition",
-      "status": "merchant_only",
-      "officialSourceUrl": null,
-      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+      "product": "Jean de La Fontaine — L’Éloquente Brut",
+      "status": "official_producer_confirmed_product_to_document",
+      "officialSourceUrl": "https://www.champagnebaronalbert.fr/",
+      "technicalSourceUrl": "https://www.astrumwinecellars.com/pdf/?slug=jean-de-la-fontaine&type=producer",
+      "nextAction": "Archiver la fiche technique primaire exacte de la cuvée."
     },
     {
       "productId": "louis-constant-brut",
-      "product": "Louis Constant — Brut",
-      "status": "merchant_only",
+      "product": "Louis Constant — Brut Réserve",
+      "status": "secondary_identity_confirmed",
       "officialSourceUrl": null,
+      "technicalSourceUrl": "https://bottleofitaly.com/en-us/products/campagne-brut-aoc-louis-constant",
       "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
     },
     {
       "productId": "alain-mercier-cuvee-louis-hurtebisse-brut",
-      "product": "Alain Mercier — Cuvée Louis Hurtebisse Brut",
+      "product": "Alain Mercier — Louis Hurtebisse Brut Tradition",
       "status": "official_producer_confirmed_product_to_document",
-      "officialSourceUrl": "https://champagne-alain-mercier.plugwine.com/",
+      "officialSourceUrl": "https://www.champagne-alain-mercier.com/",
+      "technicalSourceUrl": "https://www.tannico.com/products/champagne-brut-cuvee-louis-hurtebisse-alain-mercier",
       "nextAction": "Archiver la fiche technique primaire exacte de la cuvée."
-    },
-    {
-      "productId": "maison-tornay-tradition-brut-premier-cru",
-      "product": "Maison Tornay — Tradition Brut Premier Cru",
-      "status": "merchant_only",
-      "officialSourceUrl": null,
-      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
     },
     {
       "productId": "maison-burtin-brut",
       "product": "Maison Burtin — Brut",
       "status": "official_producer_confirmed_product_to_document",
       "officialSourceUrl": "https://www.maisonburtin.com/",
+      "technicalSourceUrl": "https://bottleofitaly.com/en/products/champagne-brut-astucciato-maison-burtin",
       "nextAction": "Archiver la fiche technique primaire exacte de la cuvée."
-    },
-    {
-      "productId": "brisson-lahaye-la-passionnee-blanc-de-noirs-extra-brut",
-      "product": "Brisson-Lahaye — La Passionnee Blanc de Noirs Extra Brut",
-      "status": "merchant_only",
-      "officialSourceUrl": null,
-      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
-    },
-    {
-      "productId": "jean-claude-vallois-blanc-de-blancs-brut-assemblage-noble",
-      "product": "Jean-Claude Vallois — Blanc de Blancs Brut Assemblage Noble",
-      "status": "merchant_only",
-      "officialSourceUrl": null,
-      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
     },
     {
       "productId": "daubanton-rose-de-saignee-en-futs-les-vignes-derriere",
-      "product": "Daubanton — Rosé de Saignée - En Fûts Les Vignes Derrière",
-      "status": "merchant_only",
-      "officialSourceUrl": null,
-      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
-    },
-    {
-      "productId": "maxime-ponson-cuvee-extra-brut-1er-cru",
-      "product": "Maxime Ponson — Cuvée Extra Brut 1er Cru",
-      "status": "merchant_only",
-      "officialSourceUrl": null,
-      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
-    },
-    {
-      "productId": "maison-yves-loison-cuvee-reserve-clovis",
-      "product": "Yves Loison — Cuvée Réserve Clovis",
+      "product": "Daubanton & Fils — Rosé de Saignée en Fûts — Les Vignes Derrière",
       "status": "official_producer_confirmed_product_to_document",
-      "officialSourceUrl": "https://champagne-yves-loison.com/",
-      "nextAction": "Archiver la fiche technique primaire exacte de la cuvée."
-    },
-    {
-      "productId": "m-g-heucq-rose-brut-fossile",
-      "product": "M.G. Heucq — Rosé Brut - Fossile",
-      "status": "official_producer_confirmed_product_to_document",
-      "officialSourceUrl": "https://www.mg-heucq.fr/",
+      "officialSourceUrl": "https://champagnedaubanton.com/",
+      "technicalSourceUrl": "https://www.rinaldi1957.it/en/products/rose-de-saignee-en-futs-les-vignes-derriere/",
       "nextAction": "Archiver la fiche technique primaire exacte de la cuvée."
     },
     {
@@ -103,76 +52,15 @@
       "product": "Pierre Brigandat — Blanc de Noirs Brut",
       "status": "secondary_identity_confirmed",
       "officialSourceUrl": null,
+      "technicalSourceUrl": "https://bonhomiewine.com/wp-content/uploads/2019/07/Brigandat.pdf",
       "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
-    },
-    {
-      "productId": "bardiau-cuvee-preface-extra-brut",
-      "product": "Champagne Bardiaù — Cuvée Préface Extra Brut",
-      "status": "official_cuvee_confirmed_product_to_document",
-      "officialSourceUrl": "https://champagne-bardiau.com/",
-      "nextAction": "Archiver la fiche technique primaire exacte de la cuvée."
-    },
-    {
-      "productId": "pierre-legras-orior-brut",
-      "product": "Pierre Legras — Orior Brut",
-      "status": "official_producer_confirmed_product_to_document",
-      "officialSourceUrl": "https://www.champagne-pierre-legras.com/homepage/",
-      "nextAction": "Archiver la fiche technique primaire exacte de la cuvée."
-    },
-    {
-      "productId": "domaine-augustin-terre-2021",
-      "product": "Domaine Augustin — Terre 2021",
-      "status": "official_producer_confirmed_product_to_document",
-      "officialSourceUrl": "https://www.champagne-augustin.com/en/",
-      "nextAction": "Archiver la fiche technique primaire exacte de la cuvée."
-    },
-    {
-      "productId": "lamiable-eclat-d-etoiles-rose-brut-grand-cru-2014",
-      "product": "Lamiable — Éclat d’Étoiles Rosé Brut Grand Cru",
-      "status": "official_cuvee_confirmed_vintage_unconfirmed",
-      "officialSourceUrl": "https://www.champagnelamiable.com/en/the-champagnes/les-elementaires/eclats-d-etoiles.html",
-      "nextAction": "Archiver la fiche technique primaire exacte de la cuvée."
     },
     {
       "productId": "veuve-clicquot-cuvee-saint-petersbourg",
-      "product": "Veuve Clicquot — Cuvée Saint Petersbourg",
-      "status": "merchant_only",
-      "officialSourceUrl": null,
-      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
-    },
-    {
-      "productId": "jacquart-brut-signature",
-      "product": "Jacquart — Brut - Signature",
-      "status": "merchant_only",
-      "officialSourceUrl": null,
-      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
-    },
-    {
-      "productId": "j-l-vergnon-blanc-de-blancs-murmure-nature-1er-cru",
-      "product": "J.L. Vergnon — Blanc de Blancs Murmure Nature 1er Cru",
+      "product": "Veuve Clicquot — Cuvée Saint-Pétersbourg Brut",
       "status": "official_producer_confirmed_product_to_document",
-      "officialSourceUrl": "https://www.champagne-jl-vergnon.fr/",
-      "nextAction": "Archiver la fiche technique primaire exacte de la cuvée."
-    },
-    {
-      "productId": "mouzon-leroux-l-ineffable-extra-brut-grand-cru-2017",
-      "product": "Mouzon Leroux — L’Ineffable Extra Brut Grand Cru",
-      "status": "official_cuvee_confirmed_vintage_unconfirmed",
-      "officialSourceUrl": "https://www.champagne-mouzon-leroux.com/en/lineffable.html",
-      "nextAction": "Archiver la fiche technique primaire exacte de la cuvée."
-    },
-    {
-      "productId": "laherte-freres-les-grandes-crayeres-extra-brut-2021",
-      "product": "Laherte Frères — Les Grandes Crayères Extra Brut",
-      "status": "official_cuvee_confirmed_vintage_unconfirmed",
-      "officialSourceUrl": "https://www.champagne-laherte.com/",
-      "nextAction": "Archiver la fiche technique primaire exacte de la cuvée."
-    },
-    {
-      "productId": "j-m-seleque-soliste-les-charmiers-rose-extra-brut-1er-cru-2019",
-      "product": "J-M Sélèque — Soliste Les Charmiers Rosé Extra Brut 1er Cru 2019",
-      "status": "official_cuvee_confirmed_vintage_secondary",
-      "officialSourceUrl": "https://www.jmseleque.fr/en/produit/soliste-meunier-rose-2/",
+      "officialSourceUrl": "https://www.veuveclicquot.com/",
+      "technicalSourceUrl": "https://bottleofitaly.com/en/products/champagne-aoc-cuvee-saint-petersbourg-veuve-clicquot",
       "nextAction": "Archiver la fiche technique primaire exacte de la cuvée."
     }
   ]

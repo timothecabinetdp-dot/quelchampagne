@@ -221,7 +221,7 @@ export function buildPartnerCatalogue(){
     const evidence=evidenceRegistry.records[initialId] || {};
     const brand=evidence.publicBrand || initialBrand;
     const normalized={...source,brand};
-    const tags=correctedTags(source);
+    const tags=evidence.tags || correctedTags(source);
     const searchText=`${source.name} ${source.liveTitle} ${source.merchantTags.join(' ')} ${source.merchantDescription}`;
     const grapes=evidence.grapes || findValues(searchText,GRAPES);
     const aromas=findValues(searchText,AROMAS);
@@ -257,8 +257,9 @@ export function buildPartnerCatalogue(){
       sourceUrl:evidence.officialSourceUrl || source.productUrl,
       merchantSourceUrl:source.productUrl,
       officialSourceUrl:evidence.officialSourceUrl || null,
+      technicalSourceUrl:evidence.technicalSourceUrl || null,
       sourceKind:officialConfirmed?'producer':'merchant',
-      verifiedAt:evidence.officialSourceUrl ? evidenceRegistry.reviewedAt : checkedDate(), editorialReady:true,
+      verifiedAt:evidence.officialSourceUrl || evidence.technicalSourceUrl ? evidenceRegistry.reviewedAt : checkedDate(), editorialReady:true,
       commerceReady:offerUsable, popularity, aff:source.buyUrl, image:source.image,
       availability:offerStatus==='stale'?'unknown_stale':source.available?'in_stock':'out_of_stock',
       priceStatus:offerStatus, offerCheckedAt:source.checkedAt,
@@ -266,6 +267,8 @@ export function buildPartnerCatalogue(){
       imageRights:{sourceUrl:source.image,rightsBasis:'Flux du programme partenaire Bottle of Italy / Webgains',verifiedAt:checkedDate()},
       details:{
         dosage:evidence.dosage || null,
+        verifiedFacts:evidence.facts || null,
+        evidenceStatus:identityStatus,
         advice:text.advice, avoid:text.avoid,
         profil:{
           fraicheur:level(scores.freshness,'freshness'),

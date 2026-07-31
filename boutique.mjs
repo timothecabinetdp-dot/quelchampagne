@@ -183,7 +183,13 @@ export function boutiqueProductMain(p, buildDate, catalogue=CHAMPAGNES){
   const observedDate=(p.offerCheckedAt||`${buildDate}T12:00:00Z`).slice(0,10);
   const formattedDate = new Intl.DateTimeFormat('fr-FR',{day:'numeric',month:'long',year:'numeric'}).format(new Date(`${observedDate}T12:00:00Z`));
   const producerSource=p.officialSourceUrl
-    ? `<a class="bqp-source" href="${esc(p.officialSourceUrl)}" target="_blank" rel="noopener">Voir la cuvée chez le producteur</a>`
+    ? `<a class="bqp-source" href="${esc(p.officialSourceUrl)}" target="_blank" rel="noopener">${p.sourceKind==='producer'?'Consulter la fiche officielle':'Consulter le site du producteur'}</a>`
+    : '';
+  const technicalSource=p.technicalSourceUrl
+    ? `<a class="bqp-source" href="${esc(p.technicalSourceUrl)}" target="_blank" rel="noopener">Consulter la documentation technique</a>`
+    : '';
+  const verifiedFacts=p.details?.verifiedFacts
+    ? `<p class="bqp-verified">${esc(p.details.verifiedFacts)}</p>`
     : '';
   const profileCopy=a.expected
     ? `Arômes dominants : ${esc(a.expected)}. ${a.gauges.rondeur>=4?'La rondeur donne de l’ampleur à l’ensemble.':a.gauges.puissance>=4?'La structure soutient une vraie présence à table.':a.gauges.fraicheur>=4?'La fraîcheur conduit l’ensemble.':'L’équilibre reste le trait dominant.'}`
@@ -226,7 +232,8 @@ export function boutiqueProductMain(p, buildDate, catalogue=CHAMPAGNES){
     <div class="bqp-panel bqp-technical">
       <div class="pblock-eyebrow">Fiche technique</div><h2>Les repères essentiels</h2>
       <div class="bqp-facts">${technicalFacts}</div>
-      ${producerSource}
+      ${verifiedFacts}
+      <div class="bqp-sources">${producerSource}${technicalSource}</div>
     </div>
 
     <div class="bqp-buy">
@@ -246,7 +253,7 @@ export function boutiqueProductMain(p, buildDate, catalogue=CHAMPAGNES){
     .bqp-copy{max-width:76ch}.bqp-gauges{display:grid;grid-template-columns:1fr 1fr;gap:22px 34px;margin-top:30px}.bqp-gauge>div:first-child{display:flex;justify-content:space-between;font-size:13px;margin-bottom:8px}.bqp-track{height:7px;background:#e5e5e0;overflow:hidden}.bqp-track i{display:block;height:100%;background:#806020}
     .bqp-scene{position:relative;isolation:isolate;min-height:390px;margin-top:22px;padding:clamp(30px,6vw,70px);display:flex;align-items:flex-end;overflow:hidden;background-image:linear-gradient(90deg,rgba(13,11,7,.83),rgba(13,11,7,.18)),var(--scene);background-size:cover;background-position:center;color:#fff}.bqp-scene:after{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,transparent 45%,rgba(13,11,7,.38))}.bqp-scene>div{max-width:720px}.bqp-scene .pblock-eyebrow{color:#e6c777}.bqp-scene h2{font-family:var(--display);font-size:clamp(32px,5vw,58px);font-weight:900;line-height:1;text-transform:uppercase;margin:10px 0 0}
     .bqp-list{list-style:none;padding:0;margin:0;display:grid;gap:10px}.bqp-list li{padding:13px 16px;background:#F4F4F1}.bqp-list li:before{content:'✓';color:#806020;font-weight:700;margin-right:10px}
-    .bqp-facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:0;margin:24px 0 0}.bqp-fact{display:flex;flex-direction:column;gap:5px;padding:18px 20px 18px 0;border-bottom:1px solid #d7d2c8}.bqp-fact small{color:#777067;text-transform:uppercase;letter-spacing:.08em;font-size:10px}.bqp-source{display:inline-flex;margin-top:22px;color:#6B4D18;font-weight:700;text-decoration:underline;text-underline-offset:3px}.bqp-buy{margin-top:22px;background:#17140f;color:#fff;border-radius:20px;padding:clamp(26px,4vw,44px);display:flex;justify-content:space-between;align-items:center;gap:28px}.bqp-buy p{color:#cbc5bb;margin:0}.bqp-related{margin-top:70px}
+    .bqp-facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:0;margin:24px 0 0}.bqp-fact{display:flex;flex-direction:column;gap:5px;padding:18px 20px 18px 0;border-bottom:1px solid #d7d2c8}.bqp-fact small{color:#777067;text-transform:uppercase;letter-spacing:.08em;font-size:10px}.bqp-verified{max-width:78ch;margin:24px 0 0;padding-left:18px;border-left:3px solid #a77b2d;color:#3f3a33!important;font-size:16px;line-height:1.7}.bqp-sources{display:flex;flex-wrap:wrap;gap:12px 24px}.bqp-source{display:inline-flex;margin-top:22px;color:#6B4D18;font-weight:700;text-decoration:underline;text-underline-offset:3px}.bqp-buy{margin-top:22px;background:#17140f;color:#fff;border-radius:20px;padding:clamp(26px,4vw,44px);display:flex;justify-content:space-between;align-items:center;gap:28px}.bqp-buy p{color:#cbc5bb;margin:0}.bqp-related{margin-top:70px}
     .bqp-related .bq-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.bqp-related .bq-card{display:flex;flex-direction:column;background:#fff;border:1px solid #deded8;overflow:hidden;transition:transform .2s ease,box-shadow .2s ease}.bqp-related .bq-card:hover{transform:translateY(-4px);box-shadow:0 18px 40px -22px rgba(20,17,12,.28)}.bqp-related .bq-media{position:relative;display:flex;align-items:center;justify-content:center;height:280px;overflow:hidden;background:#fff;padding:22px;box-sizing:border-box}.bqp-related .bq-media img{display:block;width:auto!important;height:auto!important;max-width:100%;max-height:100%;object-fit:contain!important;object-position:center;mix-blend-mode:multiply;margin:auto}.bqp-related .bq-body{display:flex;flex-direction:column;gap:8px;padding:16px 16px 18px;flex:1}.bqp-related .bq-brand{font-size:11px;letter-spacing:.11em;text-transform:uppercase;color:#806020;font-weight:700}.bqp-related .bq-name{font-size:15px;line-height:1.32;font-weight:600;margin:0;min-height:2.4em}.bqp-related .bq-tags{display:flex;flex-wrap:wrap;gap:6px}.bqp-related .bq-tag{font-size:11px;color:#6f6a61;border:1px solid #deded8;padding:3px 9px}.bqp-related .bq-foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:10px;padding-top:12px}.bqp-related .bq-price{display:flex;flex-direction:column;font-weight:700;font-size:16px}.bqp-related .bq-btn{background:#14110c;color:#fff;padding:9px 14px;font-size:12px;font-weight:600;text-decoration:none;white-space:nowrap}
     @media(max-width:760px){.bqp-hero,.bqp-grid{grid-template-columns:1fr}.bqp-visual{height:420px;padding:24px}.bqp-gauges{grid-template-columns:1fr}.bqp-buy{align-items:flex-start;flex-direction:column}.bqp-intro h1{font-size:42px}.bqp-related .bq-grid{grid-template-columns:1fr}.bqp-related .bq-media{height:300px}.bqp-scene{min-height:320px}}
   </style>`;

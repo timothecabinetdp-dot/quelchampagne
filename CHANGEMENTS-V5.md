@@ -1,5 +1,25 @@
 # QuelChampagne V5 — sélecteur et catalogue professionnel
 
+## Contrôle éditorial V5.2 — 24 fiches
+
+- Les 24 fiches qui restaient à consolider ont été relues une par une.
+- 17 fiches sont désormais confirmées ou corrigées à partir d’une source
+  producteur ou d’une fiche technique officielle.
+- 5 fiches ont une identité producteur confirmée, mais restent hors du sitemap
+  tant que la fiche technique primaire exacte de la cuvée n’est pas obtenue.
+- 2 fiches reposent encore sur une documentation professionnelle secondaire et
+  restent également en `noindex`.
+- Les millésimes non confirmés ont été retirés des titres publics de Terre,
+  Éclat d’Étoiles, L’Ineffable, Les Grandes Crayères et Soliste Meunier Rosé.
+- Les intitulés de La Passionnée et Préface ont été corrigés selon les
+  informations publiées par leurs producteurs.
+- Chaque fiche contrôlée affiche désormais des faits précis : assemblage,
+  dosage, élevage ou provenance selon les données réellement documentées.
+- Les liens vers la fiche producteur et, lorsqu’elle existe, la documentation
+  technique sont accessibles directement depuis l’analyse.
+- Le site compte maintenant 41 fiches confirmées, 5 fiches partielles et
+  2 fiches documentées uniquement par des sources secondaires.
+
 ## Correctif V5.1
 
 - Les images du résultat principal, des alternatives, des fiches et des cartes
@@ -44,7 +64,7 @@
 - 2 400 combinaisons du sélecteur testées.
 - 26 bouteilles différentes peuvent arriver en première position.
 - 72 pages HTML contrôlées.
-- 59 URL présentes dans le sitemap.
+- 64 URL présentes dans le sitemap.
 - Aucun lien interne cassé.
 - Aucun pourcentage de correspondance, prix en fourchette ou ancien prix barré
   sur les parcours commerciaux.
