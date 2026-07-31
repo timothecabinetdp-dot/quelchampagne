@@ -186,8 +186,8 @@ h1{font-size:clamp(42px,7vw,80px); font-weight:600; line-height:1.04; letter-spa
 .criteria-summary{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:24px}
 .criteria-summary span{border:1px solid var(--border);padding:7px 11px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.045em;color:#514c44}
 .rcard{display:grid; grid-template-columns:320px 1fr; gap:clamp(28px,5vw,60px); align-items:center; background:transparent; border-top:1px solid #D9D9D4; border-bottom:1px solid #D9D9D4; padding:clamp(34px,5vw,62px) 0}
-.rviz{height:430px; display:grid; place-items:center; position:relative; overflow:visible; background:transparent; padding:18px; box-sizing:border-box}
-.rviz .pimg{width:auto!important; height:auto!important; max-width:100%; max-height:100%; object-fit:contain!important; margin:auto}
+.rviz{height:430px; display:grid; place-items:center; position:relative; overflow:hidden; background:transparent; padding:18px; box-sizing:border-box; contain:layout paint}
+.rviz .pimg{width:100%!important; height:100%!important; max-width:100%; max-height:100%; object-fit:contain!important; object-position:center!important; margin:0}
 .rbody{display:flex; flex-direction:column}
 .rmaison{font-size:15px; font-weight:500; color:var(--accent-deep)}
 .rname{font-size:clamp(30px,4vw,46px); font-weight:600; letter-spacing:-.03em; line-height:1.03; margin-top:8px}
@@ -205,12 +205,13 @@ h1{font-size:clamp(42px,7vw,80px); font-weight:600; line-height:1.04; letter-spa
 .alts-head{margin:clamp(48px,6vw,72px) 0 22px; font-size:22px; font-weight:600; letter-spacing:-.02em; text-align:center}
 .alts{display:grid; grid-template-columns:repeat(3,1fr); gap:20px}
 .alt{background:transparent; border-top:1px solid #D9D9D4; border-bottom:1px solid #D9D9D4; padding:24px 0; display:flex; flex-direction:column}
-.alt-top{display:flex; gap:20px; align-items:center}
-.mini{width:86px; height:112px; flex:none; position:relative; display:grid; place-items:center; overflow:visible; background:transparent; padding:4px; box-sizing:border-box}
-.mini .pimg{width:auto!important; height:auto!important; max-width:100%; max-height:100%; object-fit:contain!important; margin:auto}
+.alt-main{display:grid; grid-template-columns:86px minmax(0,1fr); gap:20px; align-items:center}
+.mini{width:86px; height:132px; flex:none; position:relative; display:grid; place-items:center; overflow:hidden; background:transparent; padding:4px; box-sizing:border-box; contain:layout paint}
+.mini .pimg{width:100%!important; height:100%!important; max-width:100%; max-height:100%; object-fit:contain!important; object-position:center!important; margin:0}
+.alt-copy{min-width:0}
 .alt .an{font-size:18px; font-weight:600; letter-spacing:-.02em; line-height:1.1}
 .alt .ah{font-size:13px; color:var(--faint); margin-top:3px}
-.alt-reason{color:var(--muted);font-size:14px;line-height:1.5;margin:18px 0 0;min-height:3em}
+.alt-reason{color:var(--muted);font-size:14px;line-height:1.5;margin:12px 0 0;min-height:3em}
 .alt-foot{margin-top:20px; padding-top:18px; border-top:1px solid var(--border); display:flex; align-items:center; justify-content:space-between}
 .alt-price{font-size:19px; font-weight:600}
 .res-again{text-align:center; margin-top:clamp(44px,5vw,60px)}
@@ -317,6 +318,8 @@ h1{font-size:clamp(42px,7vw,80px); font-weight:600; line-height:1.04; letter-spa
 .visual-mini::after{left:9px; right:9px; bottom:8px}
 .visual-initials{font-size:16px; font-weight:700; letter-spacing:.04em}
 .product-packshot{width:auto!important; height:auto!important; max-width:100%; max-height:100%; object-fit:contain!important; object-position:center!important; padding:0; background:transparent; mix-blend-mode:multiply; box-sizing:border-box; margin:auto}
+.rviz>img.product-packshot{position:absolute!important; inset:18px!important; width:calc(100% - 36px)!important; height:calc(100% - 36px)!important; max-width:none!important; max-height:none!important; object-fit:contain!important; margin:0!important}
+.mini>img.product-packshot{position:absolute!important; inset:4px!important; width:calc(100% - 8px)!important; height:calc(100% - 8px)!important; max-width:none!important; max-height:none!important; object-fit:contain!important; margin:0!important}
 .phero-img,.pcard-img{display:grid; place-items:center}
 .phero-img .product-packshot,.pcard-img .product-packshot{max-width:calc(100% - 36px); max-height:calc(100% - 36px)}
 
@@ -411,11 +414,12 @@ footer{background:var(--bg2); padding:52px 0 46px}
   .rmatch{position:static; margin-bottom:10px}
 }
 @media(max-width:700px){
-  .nav-in{height:60px; min-height:60px; align-items:center; padding-top:0; padding-bottom:0; position:relative}
-  .logo-txt{display:inline}
-  .nav-toggle{display:flex; flex:none}
-  .nav-links{display:none; position:absolute; z-index:60; top:61px; left:-18px; right:-18px; max-width:none; padding:10px 18px 18px; background:#fff; border-bottom:1px solid var(--ink); box-shadow:0 18px 34px rgba(20,17,12,.12)}
-  .nav.is-open .nav-links{display:grid; grid-template-columns:1fr; gap:0}
+  .nav-in{height:60px!important; min-height:60px; align-items:center; padding-top:0; padding-bottom:0; position:relative; flex-wrap:nowrap!important}
+  .logo{min-width:0; white-space:nowrap}
+  .logo-txt{display:inline!important; font-size:16px}
+  .nav-toggle{display:flex!important; flex:none}
+  .nav-links{display:none!important; position:absolute; z-index:60; top:61px; left:-18px; right:-18px; max-width:none; padding:10px 18px 18px; background:#fff; border-bottom:1px solid var(--ink); box-shadow:0 18px 34px rgba(20,17,12,.12)}
+  .nav.is-open .nav-links{display:grid!important; grid-template-columns:1fr; gap:0}
   .nlink,.nlink-cta{display:flex; width:100%; min-height:46px; align-items:center; justify-content:space-between; border-bottom:1px solid var(--line); font-size:14px}
   .nlink-cta{border-bottom:0}
   .nlink-cta svg{order:2; width:14px; height:19px}
@@ -485,6 +489,9 @@ h1,.hero-photo h1,.page-hero h1{font-family:var(--display);font-weight:900;text-
   .qopt .ql{font-size:17px;line-height:1.2}
   .qopt .qd{font-size:14px;line-height:1.4}
   .rviz{height:330px}
+  .rviz>img.product-packshot{inset:12px!important; width:calc(100% - 24px)!important; height:calc(100% - 24px)!important}
+  .rcard{gap:18px}
+  .rbody{width:100%; min-width:0}
   .rbuy{align-items:stretch}
   .rbuy .btn{width:100%;justify-content:center;white-space:normal;text-align:center}
   .alt-foot{align-items:flex-start;gap:14px}
@@ -505,6 +512,23 @@ h1,.hero-photo h1,.page-hero h1{font-family:var(--display);font-weight:900;text-
   footer{padding:44px 0 38px}
 }
 @media(max-width:560px){
+  .result{padding-top:34px}
+  .res-head{margin-bottom:30px}
+  .res-head h1{font-size:clamp(32px,10.5vw,44px)}
+  .rcard{padding:28px 0 34px}
+  .rviz{width:min(100%,220px); max-width:220px; height:300px; padding:8px; margin:0 auto}
+  .rviz>img.product-packshot{inset:8px!important; width:calc(100% - 16px)!important; height:calc(100% - 16px)!important}
+  .rname{font-size:clamp(29px,9vw,38px); overflow-wrap:anywhere}
+  .rsub{line-height:1.45}
+  .alts{gap:14px}
+  .alt{padding:20px 0}
+  .alt-main{grid-template-columns:104px minmax(0,1fr); gap:16px; align-items:center}
+  .mini{width:104px; height:158px; padding:6px}
+  .mini>img.product-packshot{inset:6px!important; width:calc(100% - 12px)!important; height:calc(100% - 12px)!important}
+  .alt .an{font-size:19px; line-height:1.15; overflow-wrap:anywhere}
+  .alt .ah{font-size:14px; line-height:1.4}
+  .alt-reason{min-height:0; margin-top:10px}
+  .alt-foot{margin-top:16px; padding-top:16px; align-items:center}
   .partner-pcard-img{height:280px!important}
   .pcard-b{padding:18px}
   .pcard-foot{align-items:flex-start;gap:12px}
@@ -1248,7 +1272,7 @@ function bottleViz(p, mode){
 const app = document.getElementById('app');
 
 function logoMark(){
-  return `<svg viewBox="0 0 48 64" fill="none" aria-hidden="true" style="width:15px;height:24px;color:#9C7A34;flex:none;overflow:visible;margin-left:3px">
+  return `<svg viewBox="0 0 48 64" fill="none" aria-hidden="true" style="width:15px;height:24px;color:#9C7A34;flex:none;overflow:visible">
     <path d="M8 16C8 7.7 14.7 2 24 2s16 5.5 16 14c0 6.3-3.6 10.2-9 13.8-4.4 3-6.2 5.7-6.2 10.2" stroke="currentColor" stroke-width="4.8" stroke-linecap="round"/>
     <path d="M16 47h16c-.7 4.4-3.7 6.8-8 6.8s-7.3-2.4-8-6.8Z" fill="currentColor"/>
     <path d="M24 53.3v6.2M19.5 61.5h9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
@@ -1259,13 +1283,13 @@ function nav(){
   const on = v => state.view===v ? 'on' : '';
   return `
   <header class="nav"><div class="container nav-in">
-    <a class="logo" href="/" aria-label="Retour à l’accueil"><span class="logo-txt">Quel<b>Champagne</b></span>${logoMark()}</a>
+    <a class="logo" href="/" aria-label="Retour à l’accueil">${logoMark()}<span class="logo-txt">Quel<b>Champagne</b></span></a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Ouvrir le menu" onclick="toggleMobileNav(this)"><span></span><span></span></button>
     <nav class="nav-links" id="primary-navigation" aria-label="Navigation principale">
       <a class="nlink ${state.view==='shop'||state.view==='product'?'on':''}" href="/champagnes/">La sélection</a>
       <a class="nlink" href="/comparateur/">Comparer</a>
       <a class="nlink ${state.view==='blog'||state.view==='article'?'on':''}" href="/blog/">Blog</a>
-      <button class="nlink-cta" onclick="startQuiz()"><svg width="11" height="15" viewBox="0 0 48 64" aria-hidden="true"><path d="M8 16C8 7.7 14.7 2 24 2s16 5.5 16 14c0 6.3-3.6 10.2-9 13.8-4.4 3-6.2 5.7-6.2 10.2" stroke="#9C7A34" stroke-width="4.8" stroke-linecap="round" fill="none"/><path d="M16 47h16c-.7 4.4-3.7 6.8-8 6.8s-7.3-2.4-8-6.8Z" fill="#9C7A34"/><path d="M24 53.3v6.2M19.5 61.5h9" stroke="#9C7A34" stroke-width="2.2" stroke-linecap="round"/></svg>Trouver mon champagne</button>
+      <button class="nlink-cta" onclick="startQuiz()">Trouver mon champagne</button>
     </nav>
   </div></header>`;
 }
@@ -1448,12 +1472,11 @@ function renderResult(){
   const reasons=matchReasons(tp).map(reason=>`<li>${reason}</li>`).join('');
   const altc=alts.map(a=>{const p=a.p;return `
     <div class="alt">
-      <div class="alt-top">
+      <div class="alt-main">
         <div class="mini">${bottleViz(p,'mini')}</div>
-        <div><div class="an">${p.short}</div><div class="ah">${p.house} · ${p.region}</div></div>
+        <div class="alt-copy"><div class="an">${p.short}</div><div class="ah">${p.house} · ${p.region}</div><p class="alt-reason">${alternativeReason(a,top)}</p></div>
       </div>
-        <p class="alt-reason">${alternativeReason(a,top)}</p>
-        <div class="alt-foot"><div class="alt-price">${priceText(p)}</div><a class="chev" href="/champagne/${p.id}/">Voir l’analyse</a></div>
+      <div class="alt-foot"><div class="alt-price">${priceText(p)}</div><a class="chev" href="/champagne/${p.id}/">Voir l’analyse</a></div>
     </div>`;}).join('');
   app.innerHTML = nav() + `
   <section class="result"><div class="container">

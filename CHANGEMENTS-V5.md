@@ -1,5 +1,19 @@
 # QuelChampagne V5 — sélecteur et catalogue professionnel
 
+## Correctif mobile V5.4
+
+- Le symbole de marque n’est plus répété dans le bouton « Trouver mon
+  champagne ».
+- Sur mobile, l’en-tête affiche un seul logo complet et un menu compact.
+- La bouteille principale du résultat est maintenant contenue dans un cadre
+  fermé : elle ne peut plus recouvrir le nom de la cuvée.
+- Les trois alternatives utilisent une véritable composition mobile avec un
+  emplacement réservé à l’image, au titre et au conseil.
+- Les packshots sont dimensionnés par leur cadre puis affichés avec
+  `object-fit: contain`, quelle que soit la proportion de l’image source.
+- Le résultat a été contrôlé à 320, 360, 390 et 430 px sans débordement ni
+  chevauchement.
+
 ## Correctif responsive V5.3
 
 - La navigation mobile sur deux lignes est remplacée par un menu compact,
