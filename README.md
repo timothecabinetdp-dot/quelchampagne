@@ -16,13 +16,20 @@ Les 48 produits sont consolidés dans un catalogue canonique :
 - `build-partner-catalogue.mjs` : identité, classification, profil, accords et analyse ;
 - `boutique.mjs` : composants d’affichage des cartes et des fiches.
 
-Le quiz, le comparateur, la sélection et les 48 fiches utilisent tous ce même
-catalogue. Une page SEO interne est générée avant chaque lien affilié.
+Le sélecteur, le comparateur, la sélection et les 48 fiches utilisent tous ce
+même catalogue. Le sélecteur croise cinq critères : moment, accord, style,
+budget et signature recherchée. Une page d’analyse interne précède toujours le
+lien marchand.
 
-Les offres de plus de 3 jours perdent automatiquement leur ancien prix barré.
-Après 7 jours sans actualisation, l'offre et le lien d'achat sont suspendus.
-Le workflow GitHub `Actualiser le catalogue` rafraîchit l'instantané chaque
+Les anciens prix du flux ne sont jamais affichés, car leur période de référence
+n’est pas documentée. Après 7 jours sans actualisation, l'offre et le lien
+d'achat sont suspendus.
+Le workflow GitHub `Actualiser le catalogue` rafraîchit l’instantané chaque
 matin, puis ne l'enregistre que si la construction et tous les tests réussissent.
+
+Les fiches qui ne disposent encore que de la source marchande restent
+consultables depuis le catalogue, mais portent `noindex`. Elles ne rejoignent le
+sitemap qu’après ajout d’une source producteur.
 
 ## Construire et vérifier
 
@@ -32,8 +39,8 @@ node sync-bottle-of-italy.mjs
 
 node build-product-evidence.mjs
 node build-site.mjs
-node validate-site.mjs
 node test-recommendations.mjs
+node validate-site.mjs
 node test-merchant-import.mjs
 node test-analytics.mjs
 node validate-launch.mjs
@@ -44,6 +51,9 @@ node validate-launch.mjs
 - Commande de construction : `node build-site.mjs`
 - Dossier de sortie : `dist`
 - Version de Node recommandée : 20 ou plus récente
+
+Le dépôt ne contient aucun réglage Netlify. Cloudflare Pages lit directement
+`wrangler.toml` et publie le dossier `dist`.
 
 Le fichier `wrangler.toml` contient la configuration Cloudflare. Les anciennes
 fiches éditoriales ne sont plus publiées : Cloudflare les redirige vers la

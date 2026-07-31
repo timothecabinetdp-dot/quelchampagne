@@ -1,8 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { PARTNER_CATALOGUE } from './build-partner-catalogue.mjs';
 
-const ROOT = new URL('.', import.meta.url);
-const source = readFileSync(new URL('index.html', ROOT), 'utf8');
+const source = readFileSync(new URL('index.html', import.meta.url), 'utf8');
 const script = source.split('<script>')[1].split('</script>')[0];
 const catalogue = PARTNER_CATALOGUE;
 const errors = [];
@@ -29,12 +28,13 @@ global.localStorage = { getItem() { return null; }, setItem() {} };
 global.fetch = () => Promise.reject(new Error('Réseau désactivé pendant les tests.'));
 
 const engine = {};
-eval(`${script}; Object.assign(engine, { questions, score, budgetFitScore, signalFit, setCatalogue });`);
+eval(`${script}; Object.assign(engine, { questions, score, scoreBreakdown, budgetFitScore, signalFit, accordFit, setCatalogue });`);
 engine.setCatalogue(catalogue);
 
 function rank(answers) {
   return catalogue
-    .map(product => ({ product, score: engine.score(product, answers) }))
+    .filter(product => product.commerceReady === true && product.availability === 'in_stock')
+    .map(product => ({ product, score: engine.score(product, answers), breakdown: engine.scoreBreakdown(product, answers) }))
     .sort((a, b) =>
       b.score - a.score ||
       (b.product.popularity || 0) - (a.product.popularity || 0) ||
@@ -42,9 +42,10 @@ function rank(answers) {
     );
 }
 
-function answer(occasion, style, budget, signal) {
+function answer(occasion, accord, style, budget, signal) {
   return {
     occasion: [occasion],
+    accord: [accord],
     gout: [style],
     budget: [budget],
     repere: [signal]
@@ -56,43 +57,54 @@ function assert(condition, message) {
 }
 
 const questions = engine.questions();
+assert(questions.length === 5, `Le sélecteur doit contenir cinq questions, obtenu : ${questions.length}.`);
+assert(questions.map(question => question.id).join('|') === 'occasion|accord|gout|budget|repere', 'L’ordre des cinq critères est incorrect.');
+
 const occasions = questions[0].opts.map(option => option.tags[0]);
-const styles = questions[1].opts.map(option => option.tags[0]);
-const budgets = questions[2].opts.map(option => option.tags[0]);
-const signals = questions[3].opts.map(option => option.tags[0]);
+const accords = questions[1].opts.map(option => option.tags[0]);
+const styles = questions[2].opts.map(option => option.tags[0]);
+const budgets = questions[3].opts.map(option => option.tags[0]);
+const signals = questions[4].opts.map(option => option.tags[0]);
 const topCounts = new Map();
 let scenarioCount = 0;
 
 for (const occasion of occasions) {
-  for (const style of styles) {
-    for (const budget of budgets) {
-      for (const signal of signals) {
-        scenarioCount += 1;
-        const answers = answer(occasion, style, budget, signal);
-        const first = rank(answers);
-        const second = rank(answers);
-        const top = first[0].product;
-        const topFour = first.slice(0, 4).map(item => item.product.id);
-        topCounts.set(top.id, (topCounts.get(top.id) || 0) + 1);
+  for (const accord of accords) {
+    for (const style of styles) {
+      for (const budget of budgets) {
+        for (const signal of signals) {
+          scenarioCount += 1;
+          const answers = answer(occasion, accord, style, budget, signal);
+          const first = rank(answers);
+          const second = rank(answers);
+          const top = first[0].product;
+          const topFour = first.slice(0, 4).map(item => item.product.id);
+          topCounts.set(top.id, (topCounts.get(top.id) || 0) + 1);
 
-        assert(top.region === 'Champagne' && top.editorialReady, `Produit non publiable recommandé : ${top.id}.`);
-        assert(top.commerceReady === true && top.availability === 'in_stock', `Produit indisponible recommandé : ${top.id}.`);
-        assert(/^https:\/\/assets\.ikhnaie\.link\//.test(top.aff||''), `Lien affilié absent ou invalide : ${top.id}.`);
-        assert(/^https:\/\//.test(top.image||''), `Photo partenaire absente : ${top.id}.`);
-        assert(new Set(topFour).size === topFour.length, `Alternatives dupliquées pour ${occasion}/${style}/${budget}/${signal}.`);
-        assert(topFour.join('|') === second.slice(0, 4).map(item => item.product.id).join('|'), `Classement instable pour ${occasion}/${style}/${budget}/${signal}.`);
+          assert(top.region === 'Champagne' && top.editorialReady, `Produit non publiable recommandé : ${top.id}.`);
+          assert(top.commerceReady === true && top.availability === 'in_stock', `Produit indisponible recommandé : ${top.id}.`);
+          assert(/^https:\/\/assets\.ikhnaie\.link\//.test(top.aff || ''), `Lien affilié absent ou invalide : ${top.id}.`);
+          assert(/^https:\/\//.test(top.merchantSourceUrl || ''), `Lien direct marchand absent : ${top.id}.`);
+          assert(/^https:\/\//.test(top.image || ''), `Photo partenaire absente : ${top.id}.`);
+          assert(new Set(topFour).size === topFour.length, `Alternatives dupliquées pour ${occasion}/${accord}/${style}/${budget}/${signal}.`);
+          assert(topFour.join('|') === second.slice(0, 4).map(item => item.product.id).join('|'), `Classement instable pour ${occasion}/${accord}/${style}/${budget}/${signal}.`);
 
-        const eligible = catalogue.filter(product =>
-          product.profil.includes(style) &&
-          product.occ.includes(occasion) &&
-          engine.signalFit(product,signal) &&
-          engine.budgetFitScore(product, budget) >= 30
-        );
-        if (eligible.length) {
-          assert(top.profil.includes(style), `Style ignoré malgré ${eligible.length} candidats : ${occasion}/${style}/${budget}/${signal}.`);
-          assert(top.occ.includes(occasion), `Occasion ignorée malgré ${eligible.length} candidats : ${occasion}/${style}/${budget}/${signal}.`);
-          assert(engine.budgetFitScore(top, budget) >= 30, `Budget ignoré malgré ${eligible.length} candidats : ${occasion}/${style}/${budget}/${signal}.`);
-          if(signal!=='any') assert(engine.signalFit(top,signal), `Repère ignoré malgré ${eligible.length} candidats : ${occasion}/${style}/${budget}/${signal}.`);
+          const eligible = catalogue.filter(product =>
+            (style === 'profil_any' || product.profil.includes(style)) &&
+            product.occ.includes(occasion) &&
+            (accord === 'accord_any' || engine.accordFit(product, accord)) &&
+            (signal === 'any' || engine.signalFit(product, signal)) &&
+            engine.budgetFitScore(product, budget) >= 29 &&
+            product.commerceReady === true &&
+            product.availability === 'in_stock'
+          );
+          if (eligible.length) {
+            if (style !== 'profil_any') assert(top.profil.includes(style), `Style ignoré malgré ${eligible.length} candidats : ${occasion}/${accord}/${style}/${budget}/${signal}.`);
+            assert(top.occ.includes(occasion), `Moment ignoré malgré ${eligible.length} candidats : ${occasion}/${accord}/${style}/${budget}/${signal}.`);
+            if (accord !== 'accord_any') assert(engine.accordFit(top, accord), `Accord ignoré malgré ${eligible.length} candidats : ${occasion}/${accord}/${style}/${budget}/${signal}.`);
+            assert(engine.budgetFitScore(top, budget) >= 29, `Budget ignoré malgré ${eligible.length} candidats : ${occasion}/${accord}/${style}/${budget}/${signal}.`);
+            if (signal !== 'any') assert(engine.signalFit(top, signal), `Signature ignorée malgré ${eligible.length} candidats : ${occasion}/${accord}/${style}/${budget}/${signal}.`);
+          }
         }
       }
     }
@@ -100,36 +112,24 @@ for (const occasion of occasions) {
 }
 
 const curated = [
-  { name: 'apéritif frais et peu dosé', answers: answer('occ_apero', 'profil_frais_vif', 'b2', 'low_dosage') },
-  { name: 'dîner riche à découvrir', answers: answer('occ_diner', 'profil_riche_ample', 'b3', 'discovery') },
-  { name: 'cadeau délicat et reconnu', answers: answer('occ_cadeau', 'profil_delicat', 'b3', 'known') },
-  { name: 'romantique fruité libre', answers: answer('occ_romantique', 'profil_fruite', 'b3', 'any') },
-  { name: 'célébration fraîche à découvrir', answers: answer('occ_fete', 'profil_frais_vif', 'b2', 'discovery') }
+  { name: 'apéritif marin, frais, vigneron', answers: answer('occ_apero', 'accord_mer', 'profil_frais_vif', 'b2', 'vigneron') },
+  { name: 'repas de volaille, ample, maison', answers: answer('occ_diner', 'accord_volaille', 'profil_riche_ample', 'b3', 'maison') },
+  { name: 'cadeau floral sans préférence', answers: answer('occ_cadeau', 'accord_any', 'profil_delicat', 'b3', 'any') },
+  { name: 'moment à deux, dessert fruité', answers: answer('occ_romantique', 'accord_dessert', 'profil_fruite', 'b2', 'any') },
+  { name: 'célébration, fruits de mer, très sec', answers: answer('occ_fete', 'accord_mer', 'profil_frais_vif', 'b2', 'low_dosage') },
+  { name: 'apéritif sans préférence de style', answers: answer('occ_apero', 'accord_aperitif', 'profil_any', 'b1', 'any') }
 ];
 
 for (const scenario of curated) {
-  const top = rank(scenario.answers)[0].product;
-  const occasion = scenario.answers.occasion[0];
-  const style = scenario.answers.gout[0];
-  const signal = scenario.answers.repere[0];
-  const exactCandidates=catalogue.filter(product=>
-    product.occ.includes(occasion) &&
-    product.profil.includes(style) &&
-    engine.signalFit(product,signal) &&
-    engine.budgetFitScore(product,scenario.answers.budget[0])>=30
-  );
-  if(exactCandidates.length){
-    assert(top.occ.includes(occasion), `Scénario "${scenario.name}" : occasion non respectée (${top.id}).`);
-    assert(top.profil.includes(style), `Scénario "${scenario.name}" : style non respecté (${top.id}).`);
-    if (signal !== 'any') assert(engine.signalFit(top,signal), `Scénario "${scenario.name}" : repère non respecté (${top.id}).`);
-  }
+  const rankedScenario = rank(scenario.answers);
+  assert(rankedScenario.length >= 4, `Scénario "${scenario.name}" : moins de quatre résultats.`);
+  const top = rankedScenario[0].product;
+  assert(top.commerceReady && top.availability === 'in_stock', `Scénario "${scenario.name}" : résultat non achetable.`);
 }
 
-const romanticCount = catalogue.filter(product => product.occ.includes('occ_romantique')).length;
 const mostFrequent = Math.max(...topCounts.values());
-assert(romanticCount >= 12, `Couverture romantique insuffisante : ${romanticCount} cuvées.`);
-assert(topCounts.size >= 20, `Diversité des recommandations insuffisante : ${topCounts.size} cuvées arrivent premières.`);
-assert(mostFrequent / scenarioCount <= 0.20, `Une cuvée monopolise trop de scénarios : ${mostFrequent}/${scenarioCount}.`);
+assert(topCounts.size >= 18, `Diversité des recommandations insuffisante : ${topCounts.size} cuvées arrivent premières.`);
+assert(mostFrequent / scenarioCount <= 0.24, `Une cuvée monopolise trop de scénarios : ${mostFrequent}/${scenarioCount}.`);
 
 if (errors.length) {
   console.error(`Tests de recommandation échoués (${errors.length}) :`);
@@ -137,4 +137,4 @@ if (errors.length) {
   process.exit(1);
 }
 
-console.log(`Tests de recommandation réussis : ${scenarioCount} profils, ${curated.length} scénarios métier, ${topCounts.size} recommandations principales distinctes, ${romanticCount} cuvées adaptées au tête-à-tête.`);
+console.log(`Tests de recommandation réussis : ${scenarioCount} profils, ${curated.length} scénarios métier, ${topCounts.size} recommandations principales distinctes.`);

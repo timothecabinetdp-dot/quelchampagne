@@ -249,7 +249,9 @@ export function buildPartnerCatalogue(){
     return {
       id, merchantId:source.id, name:publicName, short:publicName, house:brand, brand,
       region:'Champagne', price, priceMin:price, priceMax:price,
-      oldPrice:offerStatus==='fresh' && source.oldPrice>price ? source.oldPrice : null,
+      // Le flux fournit parfois un ancien prix sans documenter sa période de
+      // référence. QuelChampagne publie uniquement le prix actuel contrôlé.
+      oldPrice:null,
       tier, producerType, occ:rec.occ, profil:rec.profil, accords,
       bulles:'bulles_fines', tags, pair, note:text.note,
       sourceUrl:evidence.officialSourceUrl || source.productUrl,

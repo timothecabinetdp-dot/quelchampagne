@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>QuelChampagne — Choisir un champagne selon vos critères</title>
-<meta name="description" content="Comparez les champagnes selon l’occasion, vos goûts et votre budget. Quatre questions donnent accès à une sélection expliquée et à des fiches détaillées.">
+<meta name="description" content="Comparez les champagnes selon le moment, le repas, vos goûts et votre budget. Cinq choix donnent accès à une sélection expliquée et à des fiches détaillées.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="QuelChampagne — Choisir un champagne selon vos critères">
-<meta property="og:description" content="Quatre questions pour comparer les champagnes selon l’occasion, vos goûts et votre budget.">
+<meta property="og:description" content="Cinq choix pour comparer les champagnes selon le moment, le repas, vos goûts et votre budget.">
 <meta property="og:url" content="https://quelchampagne.fr">
 <meta property="og:image" content="https://quelchampagne.fr/assets/og-quelchampagne.png">
 <meta property="og:locale" content="fr_FR">
@@ -158,11 +158,29 @@ h1{font-size:clamp(42px,7vw,80px); font-weight:600; line-height:1.04; letter-spa
 .qopt .qe{font-size:12px; font-weight:700; letter-spacing:.08em; color:var(--accent-deep); flex:none; width:34px; text-align:left}
 .qopt .ql{font-size:19px; font-weight:600; letter-spacing:-.02em}
 .qopt .qd{font-size:14.5px; color:var(--muted); margin-top:2px; font-weight:400}
+.selector-guide{padding:clamp(64px,8vw,108px) 0;background:#F4F4F1;border-top:1px solid #D9D9D4}
+.selector-guide-head{max-width:850px}
+.selector-guide-head h2{font-family:var(--display);font-size:clamp(34px,5.5vw,68px);font-weight:900;text-transform:uppercase;letter-spacing:-.025em;line-height:.95;margin-top:12px}
+.selector-guide-head>p{max-width:68ch;color:var(--muted);font-size:18px;line-height:1.65;margin-top:24px}
+.selector-guide-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:48px;border-top:1px solid #CFCAC0;border-bottom:1px solid #CFCAC0}
+.selector-guide-grid article{padding:26px 22px 30px;border-right:1px solid #CFCAC0}
+.selector-guide-grid article:last-child{border-right:0}
+.selector-guide-grid span{font-size:12px;font-weight:800;letter-spacing:.12em;color:var(--accent-deep)}
+.selector-guide-grid h3{font-size:19px;margin-top:18px}
+.selector-guide-grid p{color:var(--muted);font-size:14px;line-height:1.55;margin-top:10px}
+.selector-faq{max-width:850px;margin-top:46px;border-top:1px solid #CFCAC0}
+.selector-faq details{border-bottom:1px solid #CFCAC0;padding:19px 0}
+.selector-faq summary{cursor:pointer;font-weight:700;font-size:17px;list-style:none;display:flex;justify-content:space-between;gap:20px}
+.selector-faq summary::after{content:'+';color:var(--accent-deep);font-size:22px;font-weight:400}
+.selector-faq details[open] summary::after{content:'–'}
+.selector-faq details p{color:var(--muted);max-width:70ch;line-height:1.6;margin-top:12px}
 
 .result{padding:clamp(44px,6vw,72px) 0 clamp(56px,7vw,88px); background:#fff; animation:fade .5s ease}
-.res-head{text-align:center; max-width:600px; margin:0 auto clamp(40px,5vw,60px)}
-.res-head h2{font-size:clamp(32px,4.6vw,52px); font-weight:600; letter-spacing:-.03em; line-height:1.06}
+.res-head{text-align:center; max-width:880px; margin:0 auto clamp(40px,5vw,60px)}
+.res-head h1{font-family:var(--display);font-size:clamp(34px,5.5vw,66px);font-weight:900;text-transform:uppercase;letter-spacing:-.03em;line-height:.96;margin-top:12px}
 .res-head p{color:var(--muted); margin-top:16px; font-size:19px; font-weight:400; letter-spacing:-.015em}
+.criteria-summary{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:24px}
+.criteria-summary span{border:1px solid var(--border);padding:7px 11px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.045em;color:#514c44}
 .rcard{display:grid; grid-template-columns:320px 1fr; gap:clamp(28px,5vw,60px); align-items:center; background:transparent; border-top:1px solid #D9D9D4; border-bottom:1px solid #D9D9D4; padding:clamp(34px,5vw,62px) 0}
 .rviz{height:430px; display:grid; place-items:center; position:relative; overflow:hidden; background:transparent}
 .rviz .pimg{height:100%; width:100%; object-fit:contain}
@@ -188,6 +206,7 @@ h1{font-size:clamp(42px,7vw,80px); font-weight:600; line-height:1.04; letter-spa
 .mini .pimg{height:100%; width:100%; object-fit:contain}
 .alt .an{font-size:18px; font-weight:600; letter-spacing:-.02em; line-height:1.1}
 .alt .ah{font-size:13px; color:var(--faint); margin-top:3px}
+.alt-reason{color:var(--muted);font-size:14px;line-height:1.5;margin:18px 0 0;min-height:3em}
 .alt-foot{margin-top:20px; padding-top:18px; border-top:1px solid var(--border); display:flex; align-items:center; justify-content:space-between}
 .alt-price{font-size:19px; font-weight:600}
 .res-again{text-align:center; margin-top:clamp(44px,5vw,60px)}
@@ -432,6 +451,8 @@ h1,.hero-photo h1,.page-hero h1{font-family:var(--display);font-weight:900;text-
 .hero-photo .btn-primary:hover::after{animation:corkFizz .7s ease-out .02s}
 @keyframes corkFly{0%{opacity:1;transform:translate(0,0) rotate(0)}30%{opacity:1;transform:translate(4px,-34px) rotate(130deg)}100%{opacity:0;transform:translate(15px,-70px) rotate(430deg)}}
 @keyframes corkFizz{0%{opacity:1;transform:translate(0,0) scale(1)}100%{opacity:0;transform:translate(9px,-30px) scale(.3)}}.page-hero::before{display:block!important}.page-hero{background:#0e0c08}.page-hero::after{background:linear-gradient(90deg,rgba(13,11,7,.86),rgba(13,11,7,.3))}.page-hero p{max-width:640px}.page-hero .tag{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.22);color:#fff}.page-hero .tag:hover{background:rgba(255,255,255,.14)}.page-hero .btn-primary{background:#fff;color:#14110c}
+@media(max-width:900px){.selector-guide-grid{grid-template-columns:1fr 1fr}.selector-guide-grid article{border-bottom:1px solid #CFCAC0}.selector-guide-grid article:nth-child(2n){border-right:0}.selector-guide-grid article:last-child{grid-column:1/-1;border-bottom:0}}
+@media(max-width:560px){.selector-guide-grid{grid-template-columns:1fr}.selector-guide-grid article,.selector-guide-grid article:nth-child(2n){border-right:0}.selector-guide-grid article:last-child{grid-column:auto}.criteria-summary{justify-content:flex-start}.res-head{text-align:left}}
 
 </style>
 </head>
@@ -610,34 +631,44 @@ function decisionGuide(p){
 /* ====================== QUESTIONS ====================== */
 function questions(){
   return [
-    { id:'occasion', label:"01 · L'occasion", q:"Pour quelle occasion ?", hint:"Choisissez l’usage principal.",
+    { id:'occasion', label:"01 · Le moment", q:"À quel moment ouvrirez-vous la bouteille ?", hint:"Le contexte détermine d’abord le style de champagne à privilégier.",
       opts:[
-        {e:'01', tags:['occ_fete'], l:"Une grande célébration", d:"Mariage, anniversaire ou réussite"},
-        {e:'02', tags:['occ_diner'], l:"Un repas à table", d:"Pour accompagner plusieurs plats"},
-        {e:'03', tags:['occ_apero'], l:"Un apéritif entre amis", d:"Simple et convivial"},
-        {e:'04', tags:['occ_cadeau'], l:"Un cadeau", d:"Pour un amateur ou une occasion spéciale"},
-        {e:'05', tags:['occ_romantique'], l:"Un moment à deux", d:"Un style plus délicat"},
+        {e:'01', tags:['occ_apero'], l:"À l’apéritif", d:"Une bouteille conviviale, facile à partager"},
+        {e:'02', tags:['occ_diner'], l:"Pendant un repas", d:"Un champagne capable d’accompagner les plats"},
+        {e:'03', tags:['occ_fete'], l:"Pour une célébration", d:"Mariage, anniversaire ou grande réussite"},
+        {e:'04', tags:['occ_cadeau'], l:"Pour l’offrir", d:"Une bouteille qui marque l’attention"},
+        {e:'05', tags:['occ_romantique'], l:"Pour un moment à deux", d:"Une cuvée élégante et expressive"},
       ]},
-    { id:'gout', label:"02 · Le style", q:"Quel style préférez-vous ?", hint:"Sélectionnez le profil que vous appréciez le plus.",
+    { id:'accord', label:"02 · Le service", q:"Qu’allez-vous servir avec ?", hint:"Choisissez l’accord principal. Vous pourrez affiner ensuite sur la fiche.",
       opts:[
-        {e:'01', tags:['profil_frais_vif'], l:"Frais et vif", d:"Agrumes, tension, minéralité"},
-        {e:'02', tags:['profil_fruite'], l:"Rond, acidité mesurée", d:"Fruit mûr, souplesse, sensation moins vive"},
-        {e:'03', tags:['profil_riche_ample'], l:"Riche et vineux", d:"Corps, structure, longueur"},
-        {e:'04', tags:['profil_delicat'], l:"Délicat et floral", d:"Fleurs blanches, finesse, texture légère"},
+        {e:'01', tags:['accord_aperitif'], l:"Des bouchées apéritives", d:"Gougères, tapas, charcuterie fine"},
+        {e:'02', tags:['accord_mer'], l:"Poisson ou fruits de mer", d:"Huîtres, crustacés, sushi ou poisson"},
+        {e:'03', tags:['accord_volaille'], l:"Une volaille ou un plat cuisiné", d:"Un accord qui demande davantage de structure"},
+        {e:'04', tags:['accord_fromage'], l:"Du fromage", d:"Comté, parmesan ou pâte affinée"},
+        {e:'05', tags:['accord_dessert'], l:"Un dessert", d:"Fruits, pâtisserie ou fin de repas"},
+        {e:'06', tags:['accord_any'], l:"Rien de précis", d:"Le champagne sera dégusté pour lui-même"},
       ]},
-    { id:'budget', label:"03 · Le budget", q:"Quel budget par bouteille ?", hint:"Indiquez le prix maximum prévu.",
+    { id:'gout', label:"03 · Le style", q:"Quelle sensation recherchez-vous ?", hint:"Il n’y a pas de bonne réponse : choisissez ce qui vous donne le plus envie.",
       opts:[
-        {e:'01', tags:['b1'], l:"Moins de 30 €", d:"Une sélection accessible"},
-        {e:'02', tags:['b2'], l:"30 à 60 €", d:"Le cœur de la sélection"},
-        {e:'03', tags:['b3'], l:"60 à 100 €", d:"Des cuvées plus rares"},
+        {e:'01', tags:['profil_frais_vif'], l:"Fraîche et précise", d:"Agrumes, minéralité, finale nette"},
+        {e:'02', tags:['profil_fruite'], l:"Fruitée et souple", d:"Fruit mûr, rondeur, acidité mesurée"},
+        {e:'03', tags:['profil_riche_ample'], l:"Ample et vineuse", d:"Corps, matière, notes briochées"},
+        {e:'04', tags:['profil_delicat'], l:"Fine et florale", d:"Fleurs blanches, légèreté, élégance"},
+        {e:'05', tags:['profil_any'], l:"Je n’ai pas de préférence", d:"L’occasion, l’accord et le budget décideront"},
+      ]},
+    { id:'budget', label:"04 · Le budget", q:"Quel budget souhaitez-vous consacrer à la bouteille ?", hint:"Le prix utilisé est celui relevé chez le partenaire, hors éventuels frais de livraison.",
+      opts:[
+        {e:'01', tags:['b1'], l:"Moins de 40 €", d:"Les bouteilles les plus accessibles de la sélection"},
+        {e:'02', tags:['b2'], l:"De 40 à 60 €", d:"Le cœur de l’offre actuelle"},
+        {e:'03', tags:['b3'], l:"De 60 à 100 €", d:"Des cuvées plus singulières"},
         {e:'04', tags:['b4'], l:"Plus de 100 €", d:"Les cuvées de prestige"},
       ]},
-    { id:'repere', label:"04 · Votre repère", q:"Qu’est-ce qui compte le plus ?", hint:"Ce dernier critère départage les bouteilles encore proches.",
+    { id:'repere', label:"05 · La signature", q:"Quel type de bouteille vous attire le plus ?", hint:"Ce choix départage les cuvées qui répondent déjà à vos critères.",
       opts:[
-        {e:'01', tags:['known'], l:"Une étiquette reconnue", d:"Un nom facile à identifier"},
-        {e:'02', tags:['discovery'], l:"Une découverte", d:"Une cuvée moins attendue"},
-        {e:'03', tags:['low_dosage'], l:"Un dosage très faible", d:"Extra-brut ou brut nature"},
-        {e:'04', tags:['any'], l:"Aucune préférence", d:"Le style et le prix priment"},
+        {e:'01', tags:['maison'], l:"Une maison reconnue", d:"Une signature lisible et rassurante"},
+        {e:'02', tags:['vigneron'], l:"Un champagne de vigneron", d:"Une bouteille plus personnelle à découvrir"},
+        {e:'03', tags:['low_dosage'], l:"Un style très sec", d:"Extra-brut ou brut nature"},
+        {e:'04', tags:['any'], l:"Je vous laisse choisir", d:"La cohérence avec mes autres réponses prime"},
       ]},
   ];
 }
@@ -648,7 +679,7 @@ const ARTICLE_REWRITES = {
   'guide-2026': {
     read:'7 min',
     excerpt:"Une méthode claire pour choisir selon l'occasion, le style recherché, le repas et le budget.",
-    body:`<p>Choisir un champagne devient beaucoup plus simple lorsqu'on commence par l'usage plutôt que par la marque. Une bouteille destinée à un apéritif, à un repas ou à un cadeau ne doit pas répondre aux mêmes critères. Notre méthode tient en quatre décisions : le moment, le profil recherché, le budget réel et les personnes qui vont le boire.</p>
+    body:`<p>Choisir un champagne devient beaucoup plus simple lorsqu'on commence par l'usage plutôt que par la marque. Une bouteille destinée à un apéritif, à un repas ou à un cadeau ne doit pas répondre aux mêmes critères. Notre méthode tient compte du moment, de l’accord, du profil recherché, du budget réel et du type de producteur qui vous attire.</p>
 <h3>1. Définir le rôle de la bouteille</h3>
 <p>À l'apéritif, recherchez une cuvée nette, fraîche et facile à servir avec plusieurs bouchées. À table, l'accord avec le plat devient prioritaire : un champagne délicat peut disparaître face à une volaille rôtie, tandis qu'une cuvée très vineuse peut dominer des huîtres. Pour un cadeau, la lisibilité de l'étiquette, l'histoire du producteur et le niveau de connaissance du destinataire comptent autant que le style.</p>
 <h3>2. Traduire ses goûts en critères utiles</h3>
@@ -660,8 +691,8 @@ const ARTICLE_REWRITES = {
 <h3>Trois erreurs fréquentes</h3>
 <ul><li>Choisir uniquement selon la notoriété de la marque, sans tenir compte du repas.</li><li>Confondre un dosage faible avec une qualité automatiquement supérieure.</li><li>Prendre une recommandation générale pour une vérité universelle : le contexte et les goûts restent décisifs.</li></ul>
 <h3>La méthode QuelChampagne</h3>
-<p>Le sélecteur croise l'occasion, le budget, le style et le repère recherché avec un catalogue de bouteilles disponibles. Chaque résultat ouvre ensuite une fiche d'analyse : profil, accords, raisons de la choisir, raisons de l'écarter et données techniques. Vous gardez ainsi la logique du conseil avant de voir l'offre du marchand.</p>
-<p>Pour commencer, utilisez le <a href="/selecteur/">sélecteur en quatre questions</a>. Si vous connaissez déjà le style recherché, parcourez directement <a href="/champagnes/">les bouteilles actuellement disponibles</a>.</p>`
+<p>Le sélecteur croise le moment, l’accord, le budget, le style et la signature recherchée avec un catalogue de bouteilles disponibles. Chaque résultat ouvre ensuite une fiche d'analyse : profil, accords, raisons de la choisir, raisons de l'écarter et données techniques. Vous gardez ainsi la logique du conseil avant de voir l'offre du marchand.</p>
+<p>Pour commencer, utilisez le <a href="/selecteur/">sélecteur en cinq choix</a>. Si vous connaissez déjà le style recherché, parcourez directement <a href="/champagnes/">les bouteilles actuellement disponibles</a>.</p>`
   },
   'dosages': {
     read:'6 min',
@@ -765,7 +796,7 @@ function articles(){
 <p>Trois grandes familles se dégagent : les champagnes <strong>frais et vifs</strong> (dominante chardonnay, agrumes et minéralité), les <strong>fruités et généreux</strong> (assemblages faciles, ronds), et les <strong>riches et vineux</strong> (pinot noir, corps et longueur, parfaits à table). Un blanc de blancs comme le <a href="#" onclick="return openAff('ruinart')">Ruinart Blanc de Blancs</a> illustre à merveille le premier style.</p>
 <h3>3. Fixez un budget, et respectez-le</h3>
 <p>On trouve d'excellents champagnes dès 25 à 30 €. Entre 30 et 60 €, les grandes maisons déroulent leurs cuvées emblématiques. Au-delà, on entre dans l'exception et le prestige. Le prix ne fait pas tout : à budget égal, le style compte davantage que l'étiquette.</p>
-<p>Pour comparer plus rapidement, le sélecteur pose quatre questions puis présente les bouteilles les plus proches de vos critères.</p>`,
+<p>Pour comparer plus rapidement, le sélecteur examine le moment, l’accord, le style, le budget et la signature recherchée avant de présenter les bouteilles les plus cohérentes.</p>`,
       related:['feuillatte','ruinart','clicquot'] },
     { id:'dosages', cat:'Décryptage', cover:'linear-gradient(135deg,#EAEDE7,#DFE4D8)', date:'Juillet 2026', read:'4 min',
       title:"Brut, Extra-Brut, Demi-Sec : comprendre les dosages",
@@ -841,7 +872,7 @@ function articles(){
 <p>Sur de grandes quantités, un excellent brut entre 25 et 35 € par bouteille fait parfaitement le travail. Plutôt que de servir une cuvée de prestige toute la soirée, réservez-la au seul moment du toast : l'effet est le même, la facture bien plus douce.</p>
 <h3>Un conseil d'organisation</h3>
 <p>Prévenez votre caviste du volume à l'avance : le stock d'une même cuvée sur plusieurs dizaines de bouteilles n'est pas toujours immédiat. Et gardez quelques bouteilles au frais en réserve pour les retardataires.</p>
-<p>Si vous hésitez entre plusieurs styles, le sélecteur permet de les départager en quatre questions.</p>`,
+<p>Si vous hésitez entre plusieurs styles, le sélecteur les départage à partir de cinq critères concrets.</p>`,
       related:['ruinart','clicquot','laurentperrier'] },
 
     { id:'cadeau', cat:'Guide', cover:'linear-gradient(135deg,#F1EDE4,#E7DECD)', date:'Juillet 2026', read:'5 min',
@@ -867,7 +898,7 @@ function articles(){
 <p>Pour rassurer, une grande maison immédiatement reconnaissable est idéale. Pour surprendre un amateur curieux, un champagne de vigneron apporte une vraie singularité et montre que vous avez cherché au-delà des marques. Vous pouvez filtrer les deux dans <a href="/champagnes/">la sélection</a>.</p>
 <h3>Le détail qui change tout</h3>
 <p>Un étui ou un coffret soigne la présentation sans coûter beaucoup plus : il transforme la bouteille en vrai cadeau. Pensez aussi à vérifier le prix du jour chez le marchand, nos fourchettes restant indicatives.</p>
-<p>Vous hésitez encore selon la personne à qui offrir ? Quatre questions suffisent : lancez le sélecteur, il affine le choix pour vous.</p>`,
+<p>Vous hésitez encore selon la personne à qui offrir ? Le sélecteur confronte le contexte, le style et le budget pour faire ressortir les bouteilles les plus cohérentes.</p>`,
       related:['moet','bollinger','dom-perignon-vintage-2015'] },
 
     { id:'quantite', cat:'Pratique', cover:'linear-gradient(135deg,#EEF0EB,#E3E7DD)', date:'Juillet 2026', read:'3 min',
@@ -1069,44 +1100,55 @@ function coverBg(a){
 function budgetFitScore(p, budget){
   const min=Number.isFinite(p.priceMin) ? p.priceMin : p.price;
   const max=Number.isFinite(p.priceMax) ? p.priceMax : p.price;
-  if(budget==='b4') return p.tier>=4 ? 40 : p.tier===3 ? 30 : p.tier===2 ? 15 : 5;
-  const ranges={b1:[0,30],b2:[30,60],b3:[60,100]};
+  if(budget==='b4') return min>=100 ? 34 : min>=80 ? 25 : min>=60 ? 12 : 3;
+  const ranges={b1:[0,40],b2:[40,60],b3:[60,100]};
   const range=ranges[budget]||ranges.b2, lower=range[0], upper=range[1];
   const overlaps=max>=lower && min<=upper;
-  if(overlaps) return min>=lower && max<=upper ? 40 : 34;
+  if(overlaps) return min>=lower && max<=upper ? 34 : 29;
   if(min>upper){
     const over=min-upper;
-    return over<=5 ? 24 : over<=15 ? 10 : 0;
+    return over<=5 ? 20 : over<=12 ? 8 : 0;
   }
   const under=lower-max;
-  return under<=10 ? 24 : under<=25 ? 10 : 0;
+  return under<=10 ? 20 : under<=25 ? 8 : 0;
 }
 function signalFit(p, signal){
   if(!signal || signal==='any') return true;
-  if(signal==='known') return (p.popularity||0)>=84;
-  if(signal==='discovery') return (p.popularity||0)<84;
+  if(signal==='maison') return p.producerType==='maison';
+  if(signal==='vigneron') return p.producerType==='vigneron';
   if(signal==='low_dosage') return p.tags.includes('Extra-brut / nature') || /\b(?:0|1|2|3|4|5|6)(?:[,.]\d+)?\s*g\/L\b/i.test(p.details?.dosage||'');
   return true;
 }
-function stableVariation(p,a){
-  const seed=`${p.id}|${(a.occasion||[])[0]}|${(a.gout||[])[0]}|${(a.budget||[])[0]}|${(a.repere||[])[0]}`;
-  let hash=0;
-  for(const char of seed) hash=(hash*31+char.charCodeAt(0))>>>0;
-  return (hash%401)/100;
+function accordFit(p, accord){
+  if(!accord || accord==='accord_any') return true;
+  return (p.accords||[]).includes(accord);
+}
+function evidenceScore(p){
+  if(p.officialSourceUrl && /^official_confirmed/.test(p.identityStatus||'')) return 6;
+  if(p.officialSourceUrl) return 4;
+  return 1;
+}
+function scoreBreakdown(p,a){
+  const occ=(a.occasion||[])[0], gout=(a.gout||[])[0], accord=(a.accord||[])[0];
+  const budget=(a.budget||[])[0], signal=(a.repere||[])[0];
+  return {
+    budget:budgetFitScore(p,budget),
+    style:gout==='profil_any' ? 12 : p.profil.includes(gout) ? 27 : 3,
+    occasion:p.occ.includes(occ) ? 21 : 2,
+    accord:accord==='accord_any' ? 10 : accordFit(p,accord) ? 22 : 2,
+    signature:signal==='any' ? 8 : signalFit(p,signal) ? 17 : 0,
+    availability:p.commerceReady===true && p.availability==='in_stock' ? 10 : 0,
+    evidence:evidenceScore(p)
+  };
 }
 function score(p, a){
-  const occ=(a.occasion||[])[0], gout=(a.gout||[])[0], bud=(a.budget||[])[0], signal=(a.repere||[])[0];
-  const budgetScore = budgetFitScore(p, bud);
-  const styleScore = p.profil.includes(gout) ? 30 : 4;
-  const occasionScore = p.occ.includes(occ) ? 24 : 3;
-  const availabilityScore = p.editorialReady ? 10 : 0;
-  const signalScore = signal==='any' ? 0 : signalFit(p,signal) ? 24 : 0;
-  return budgetScore + styleScore + occasionScore + availabilityScore + signalScore + stableVariation(p,a);
+  return Object.values(scoreBreakdown(p,a)).reduce((sum,value)=>sum+value,0);
 }
 function ranked(){
-  const sc=products().map(p=>({p,s:score(p,state.answers)}));
+  const eligible=products().filter(p=>p.commerceReady===true && p.availability==='in_stock');
+  const sc=eligible.map(p=>({p,s:score(p,state.answers),breakdown:scoreBreakdown(p,state.answers)}));
   sc.sort((a,b)=>b.s-a.s || (b.p.popularity||0)-(a.p.popularity||0) || a.p.id.localeCompare(b.p.id,'fr'));
-  return sc.map(x=>({...x, pct:Math.max(0,Math.min(99,Math.round(x.s)))}));
+  return sc;
 }
 
 /* Aucune photographie distante n'est publiée sans registre de droits.
@@ -1178,12 +1220,14 @@ function foot(){
         <a href="/comparateur/">Comparer</a>
         <a href="/notre-methode/">Notre méthode</a>
         <a href="/a-propos/">À propos</a>
+        <a href="/partenaires/">Professionnels</a>
         <a href="/mentions-legales/">Mentions légales</a>
         <a href="/confidentialite/">Confidentialité</a>
+        <button onclick="window.qcAffiliatePreferences&&window.qcAffiliatePreferences()">Préférence d’affiliation</button>
       </nav>
     </div>
     <div class="foot-health">L'abus d'alcool est dangereux pour la santé. À consommer avec modération.</div>
-    <div class="foot-disc">Site réservé aux personnes majeures. ${BRAND} propose des informations et des conseils indépendants. Les liens partenaires ne sont affichés qu’après contrôle du produit, du prix et de la disponibilité. Les prix sans offre partenaire restent indicatifs.</div>
+    <div class="foot-disc">Site réservé aux personnes majeures. ${BRAND} propose des informations et des conseils indépendants. Chaque prix affiché correspond au dernier relevé de l’offre présentée et porte sa date de contrôle.</div>
   </div></footer>`;
 }
 
@@ -1209,18 +1253,18 @@ function renderHome(){
   </div></section>
 
   <section class="section gray"><div class="container">
-    <div class="sec-head"><div class="h2">Comment ça marche</div><p>Trois étapes, une petite minute.</p></div>
+    <div class="sec-head"><div class="h2">Comment ça marche</div><p>Cinq choix simples pour obtenir une sélection argumentée.</p></div>
     <div class="steps">
-      <div class="step"><div class="n">01</div><h3>Répondez</h3><p>Quatre questions sur l'occasion, le style, le budget et votre priorité.</p></div>
+      <div class="step"><div class="n">01</div><h3>Précisez</h3><p>Le moment, ce que vous servez, le style recherché, le budget et la signature souhaitée.</p></div>
       <div class="step"><div class="n">02</div><h3>Comparez</h3><p>Le sélecteur confronte vos réponses aux caractéristiques des bouteilles disponibles.</p></div>
       <div class="step"><div class="n">03</div><h3>Comprenez</h3><p>Le résultat explique les critères retenus et ouvre une analyse détaillée avant l’achat.</p></div>
     </div>
   </div></section>
 
   <section class="band"><div class="container">
-    <div class="eyebrow-l">Une minute pour commencer</div>
-    <h2>Trouvez les bouteilles qui correspondent à votre moment.</h2>
-    <p>Le sélecteur croise votre occasion, vos goûts et votre budget, puis explique chaque recommandation.</p>
+    <div class="eyebrow-l">Votre sélection personnalisée</div>
+    <h2>Choisissez avec des critères qui changent vraiment le résultat.</h2>
+    <p>Le sélecteur tient compte du moment, du repas, de vos goûts, du budget et du type de producteur recherché.</p>
     <button class="btn btn-accent" onclick="startQuiz()">Lancer le sélecteur</button>
   </div></section>
 
@@ -1256,7 +1300,30 @@ function renderQuiz(){
       <div class="qhint">${q.hint}</div>
       <div class="qopts">${opts}</div>
     </div>
-  </div></section>` + foot();
+  </div></section>
+  ${selectorGuide()}` + foot();
+}
+
+function selectorGuide(){
+  return `<section class="selector-guide" aria-labelledby="selector-guide-title"><div class="container">
+    <div class="selector-guide-head">
+      <div class="eyebrow-l">Comment le choix est construit</div>
+      <h2 id="selector-guide-title">Une recommandation fondée sur l’usage, le goût et l’offre disponible.</h2>
+      <p>Le sélecteur ne classe pas les maisons dans l’absolu. Il rapproche vos réponses des caractéristiques de chaque cuvée, puis conserve uniquement les bouteilles disponibles chez notre partenaire au moment du dernier relevé.</p>
+    </div>
+    <div class="selector-guide-grid">
+      <article><span>01</span><h3>Le moment</h3><p>Une bouteille destinée à l’apéritif ne répond pas aux mêmes attentes qu’un champagne de repas ou qu’un cadeau.</p></article>
+      <article><span>02</span><h3>L’accord</h3><p>La fraîcheur, la rondeur et la puissance sont confrontées au plat ou au type de service indiqué.</p></article>
+      <article><span>03</span><h3>Le style</h3><p>Votre préférence sensorielle départage les cuvées fraîches, fruitées, vineuses ou florales.</p></article>
+      <article><span>04</span><h3>Le budget</h3><p>Le classement utilise le prix relevé pour la bouteille de 75 cl présentée, sans prix barré ni remise reconstituée.</p></article>
+      <article><span>05</span><h3>La signature</h3><p>Vous pouvez privilégier une maison, un vigneron, un dosage très faible ou laisser les autres critères décider.</p></article>
+    </div>
+    <div class="selector-faq">
+      <details><summary>Pourquoi plusieurs bouteilles sont-elles proposées ?</summary><p>La première est la combinaison la plus cohérente avec vos réponses. Les trois suivantes permettent de comparer des options proches en prix ou en style avant de choisir.</p></details>
+      <details><summary>Le résultat dépend-il de la commission du marchand ?</summary><p>Non. La rémunération intervient uniquement après un clic suivi d’un achat et ne modifie pas le calcul du classement.</p></details>
+      <details><summary>Les prix sont-ils à jour ?</summary><p>Chaque fiche indique la date du dernier relevé. Le montant final et la disponibilité sont confirmés sur le site du vendeur.</p></details>
+    </div>
+  </div></section>`;
 }
 
 function summary(){
@@ -1269,16 +1336,37 @@ function matchReasons(p){
   const reasons=[];
   const a=state.answers;
   if((a.occasion||[]).some(tag=>p.occ.includes(tag))) reasons.push("Elle convient à l’occasion indiquée.");
+  const accord=(a.accord||[])[0];
+  if(accordFit(p,accord) && accord!=='accord_any') reasons.push("Son profil soutient l’accord que vous avez choisi.");
   if((a.gout||[]).some(tag=>p.profil.includes(tag))) reasons.push("Son profil correspond au style recherché.");
   const budget=(a.budget||[])[0];
-  if(budget && budgetFitScore(p,budget)>=34) reasons.push(p.commerceReady?"Son prix se situe dans la tranche choisie.":"Son prix indicatif se situe dans la tranche choisie.");
+  if(budget && budgetFitScore(p,budget)>=29) reasons.push("Son prix se situe dans la tranche choisie.");
   const signal=(a.repere||[])[0];
   if(signalFit(p,signal)){
-    if(signal==='known') reasons.push("Son étiquette fait partie des repères les plus connus de la sélection.");
-    if(signal==='discovery') reasons.push("Elle répond à votre envie de découvrir une cuvée moins attendue.");
+    if(signal==='maison') reasons.push("Elle correspond à votre préférence pour une maison établie.");
+    if(signal==='vigneron') reasons.push("Elle répond à votre envie d’un champagne de vigneron.");
     if(signal==='low_dosage') reasons.push("Sa catégorie extra-brut ou brut nature correspond au dosage recherché.");
   }
-  return reasons.slice(0,3);
+  return reasons.slice(0,4);
+}
+
+function selectedCriteria(){
+  const labels={};
+  questions().forEach(question=>question.opts.forEach(option=>{labels[option.tags[0]]=option.l;}));
+  return ['occasion','accord','gout','budget','repere']
+    .map(key=>(state.answers[key]||[])[0])
+    .filter(Boolean)
+    .map(value=>`<span>${labels[value]||value}</span>`)
+    .join('');
+}
+
+function alternativeReason(candidate,top){
+  const p=candidate.p;
+  if(p.price < top.p.price-5) return `Une option plus accessible, à ${priceText(p)}.`;
+  if(p.producerType!==top.p.producerType) return p.producerType==='vigneron' ? "Une alternative de vigneron, plus tournée vers la découverte." : "Une alternative issue d’une maison établie.";
+  const style=(state.answers.gout||[])[0];
+  if(style!=='profil_any' && p.profil.includes(style)) return "Le même registre de goût, avec une autre expression.";
+  return "Une bouteille proche par son usage et sa tranche de prix.";
 }
 
 function renderResult(){
@@ -1296,11 +1384,12 @@ function renderResult(){
         <div class="mini">${bottleViz(p,'mini')}</div>
         <div><div class="an">${p.short}</div><div class="ah">${p.house} · ${p.region}</div></div>
       </div>
-        <div class="alt-foot"><div class="alt-price">${priceText(p)}</div><a class="chev" href="/champagne/${p.id}/">Voir la fiche</a></div>
+        <p class="alt-reason">${alternativeReason(a,top)}</p>
+        <div class="alt-foot"><div class="alt-price">${priceText(p)}</div><a class="chev" href="/champagne/${p.id}/">Voir l’analyse</a></div>
     </div>`;}).join('');
   app.innerHTML = nav() + `
   <section class="result"><div class="container">
-    <div class="res-head"><h1>Les bouteilles à retenir</h1><p>${summary()}</p></div>
+    <div class="res-head"><div class="eyebrow-l">Votre sélection</div><h1>La bouteille la plus cohérente avec vos réponses</h1><p>${summary()}</p><div class="criteria-summary">${selectedCriteria()}</div></div>
     <div class="rcard">
       <div class="rviz">${bottleViz(tp,'big')}</div>
       <div class="rbody">
@@ -1308,16 +1397,16 @@ function renderResult(){
         <div class="rname">${tp.name}</div>
         <div class="rsub">${tp.region} · À servir avec ${tp.pair}</div>
         <p class="rnote">${tp.note}</p>
-        <div class="why"><strong>Pourquoi elle arrive en tête</strong><ul class="why-list">${reasons}</ul></div>
+        <div class="why"><strong>Pourquoi nous la retenons</strong><ul class="why-list">${reasons}</ul></div>
         <div class="rtags">${pills}</div>
         <div class="rbuy">
           <div class="rprice">${priceText(tp)}</div>
           <a class="btn btn-accent" href="/champagne/${tp.id}/">Voir l’analyse</a>
         </div>
-        <div class="aff-note">${tp.commerceReady ? `Prix relevé chez notre partenaire · l’offre se trouve sur la fiche.` : `Prix indicatif · offre momentanément indisponible.`}</div>
+        <div class="aff-note">${tp.commerceReady ? `Prix relevé chez notre partenaire · l’offre se trouve sur la fiche.` : `Offre momentanément indisponible.`}</div>
       </div>
     </div>
-    <div class="alts-head">Trois autres bouteilles à considérer</div>
+    <div class="alts-head">Trois alternatives à comparer</div>
     <div class="alts">${altc}</div>
     <div class="res-again"><button class="btn btn-ghost" onclick="startQuiz()">Refaire le test</button></div>
   </div></section>` + foot();

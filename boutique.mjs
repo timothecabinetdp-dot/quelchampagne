@@ -99,7 +99,7 @@ export function boutiqueAnalysis(p){
 }
 
 function card(p){
-  const old = p.oldPrice ? `<span class="bq-old">${EUR(p.oldPrice)}</span>` : '';
+  const old = '';
   const tags = p.tags.map(t=>`<span class="bq-tag">${t}</span>`).join('');
   const key = p.tags.join('|').toLowerCase();
   const internalUrl = `/champagne/${p.id && !String(p.id).startsWith('shopify_') ? p.id : boutiqueSlug(p)}/`;
@@ -166,7 +166,7 @@ export function boutiqueProductMain(p, buildDate, catalogue=CHAMPAGNES){
     classification:p.tags.includes('Grand Cru')?'Grand Cru':p.tags.includes('Premier Cru')?'Premier Cru':null,
     isVintage:p.tags.includes('Millésimé')
   } : generic;
-  const old = p.oldPrice ? `<span class="bqp-old">${EUR(p.oldPrice)}</span>` : '';
+  const old = '';
   const scene=editorialScene(p,a);
   const tags = p.tags.map(t=>`<span class="bq-tag">${esc(t)}</span>`).join('');
   const technicalFacts=[
@@ -199,7 +199,7 @@ export function boutiqueProductMain(p, buildDate, catalogue=CHAMPAGNES){
         <p class="bqp-lead">${a.summary}</p>
         <div class="bq-tags">${tags}</div>
         <div class="bqp-price"><strong>${EUR(p.price)}</strong>${old}</div>
-        <a class="btn btn-primary btn-lg" data-product-id="${esc(p.id)}" href="${esc(p.aff||p.buyUrl||'')}" target="_blank" rel="sponsored nofollow noopener">Voir l’offre chez Bottle of Italy</a>
+        <a class="btn btn-primary btn-lg" data-product-id="${esc(p.id)}" data-direct-url="${esc(p.merchantSourceUrl||p.productUrl||'')}" href="${esc(p.aff||p.buyUrl||'')}" target="_blank" rel="sponsored nofollow noopener">Voir l’offre chez Bottle of Italy</a>
         <p class="bqp-partner">Lien affilié · Prix et disponibilité chez le partenaire, relevés le ${formattedDate}.</p>
       </div>
     </div>
@@ -231,7 +231,7 @@ export function boutiqueProductMain(p, buildDate, catalogue=CHAMPAGNES){
 
     <div class="bqp-buy">
       <div><div class="pblock-eyebrow">Offre partenaire</div><h2>${esc(p.brand)} ${esc(p.name)}</h2><p>Vérifiez le prix final, le stock, le millésime et les frais de livraison avant de commander.</p></div>
-      <a class="btn btn-primary btn-lg" data-product-id="${esc(p.id)}" href="${esc(p.aff||p.buyUrl||'')}" target="_blank" rel="sponsored nofollow noopener">Consulter l’offre partenaire</a>
+      <a class="btn btn-primary btn-lg" data-product-id="${esc(p.id)}" data-direct-url="${esc(p.merchantSourceUrl||p.productUrl||'')}" href="${esc(p.aff||p.buyUrl||'')}" target="_blank" rel="sponsored nofollow noopener">Consulter l’offre partenaire</a>
     </div>
 
     ${related?`<div class="bqp-related"><div class="sec-head"><h2 class="h2">Dans un style proche</h2><p>Trois bouteilles proches par leur style et leur prix.</p></div><div class="bq-grid">${related}</div></div>`:''}
@@ -241,13 +241,13 @@ export function boutiqueProductMain(p, buildDate, catalogue=CHAMPAGNES){
     .bqp-hero{display:grid;grid-template-columns:minmax(280px,.85fr) minmax(320px,1.15fr);gap:clamp(34px,7vw,92px);align-items:center;margin-top:28px}
     .bqp-visual{height:560px;border:1px solid #deded8;background:#fff;display:grid;place-items:center;padding:34px;overflow:hidden}
     .bqp-visual img{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain!important;object-position:center;mix-blend-mode:multiply}.bqp-intro h1{font-family:var(--display);font-size:clamp(40px,5.3vw,72px);font-weight:900;text-transform:uppercase;line-height:.95;letter-spacing:-.025em;margin:12px 0 22px}
-    .bqp-lead{font-size:18px;line-height:1.75;color:#5f5a51;max-width:62ch}.bqp-price{display:flex;align-items:center;gap:12px;margin:28px 0 22px}.bqp-price>strong{font-size:30px}.bqp-old{text-decoration:line-through;color:#817a6f}.bqp-partner,.bqp-muted{font-size:13px;line-height:1.65;color:#777067}.bqp-partner{margin-top:12px}
+    .bqp-lead{font-size:18px;line-height:1.75;color:#5f5a51;max-width:62ch}.bqp-price{display:flex;align-items:center;gap:12px;margin:28px 0 22px}.bqp-price>strong{font-size:30px}.bqp-partner,.bqp-muted{font-size:13px;line-height:1.65;color:#777067}.bqp-partner{margin-top:12px}
     .bqp-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:22px}.bqp-panel{background:transparent;border:0;border-top:1px solid #d7d2c8;padding:clamp(28px,4vw,44px) 0;margin-top:22px}.bqp-panel h2,.bqp-buy h2{font-family:var(--display);font-size:clamp(26px,3vw,38px);font-weight:800;line-height:1.04;margin:8px 0 18px}.bqp-panel p{line-height:1.7;color:#514c44}
     .bqp-copy{max-width:76ch}.bqp-gauges{display:grid;grid-template-columns:1fr 1fr;gap:22px 34px;margin-top:30px}.bqp-gauge>div:first-child{display:flex;justify-content:space-between;font-size:13px;margin-bottom:8px}.bqp-track{height:7px;background:#e5e5e0;overflow:hidden}.bqp-track i{display:block;height:100%;background:#806020}
     .bqp-scene{position:relative;isolation:isolate;min-height:390px;margin-top:22px;padding:clamp(30px,6vw,70px);display:flex;align-items:flex-end;overflow:hidden;background-image:linear-gradient(90deg,rgba(13,11,7,.83),rgba(13,11,7,.18)),var(--scene);background-size:cover;background-position:center;color:#fff}.bqp-scene:after{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,transparent 45%,rgba(13,11,7,.38))}.bqp-scene>div{max-width:720px}.bqp-scene .pblock-eyebrow{color:#e6c777}.bqp-scene h2{font-family:var(--display);font-size:clamp(32px,5vw,58px);font-weight:900;line-height:1;text-transform:uppercase;margin:10px 0 0}
     .bqp-list{list-style:none;padding:0;margin:0;display:grid;gap:10px}.bqp-list li{padding:13px 16px;background:#F4F4F1}.bqp-list li:before{content:'✓';color:#806020;font-weight:700;margin-right:10px}
     .bqp-facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:0;margin:24px 0 0}.bqp-fact{display:flex;flex-direction:column;gap:5px;padding:18px 20px 18px 0;border-bottom:1px solid #d7d2c8}.bqp-fact small{color:#777067;text-transform:uppercase;letter-spacing:.08em;font-size:10px}.bqp-source{display:inline-flex;margin-top:22px;color:#6B4D18;font-weight:700;text-decoration:underline;text-underline-offset:3px}.bqp-buy{margin-top:22px;background:#17140f;color:#fff;border-radius:20px;padding:clamp(26px,4vw,44px);display:flex;justify-content:space-between;align-items:center;gap:28px}.bqp-buy p{color:#cbc5bb;margin:0}.bqp-related{margin-top:70px}
-    .bqp-related .bq-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.bqp-related .bq-card{display:flex;flex-direction:column;background:#fff;border:1px solid #deded8;overflow:hidden;transition:transform .2s ease,box-shadow .2s ease}.bqp-related .bq-card:hover{transform:translateY(-4px);box-shadow:0 18px 40px -22px rgba(20,17,12,.28)}.bqp-related .bq-media{position:relative;display:block;height:280px;overflow:hidden;background:#fff;padding:22px}.bqp-related .bq-media img{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain!important;object-position:center;mix-blend-mode:multiply}.bqp-related .bq-body{display:flex;flex-direction:column;gap:8px;padding:16px 16px 18px;flex:1}.bqp-related .bq-brand{font-size:11px;letter-spacing:.11em;text-transform:uppercase;color:#806020;font-weight:700}.bqp-related .bq-name{font-size:15px;line-height:1.32;font-weight:600;margin:0;min-height:2.4em}.bqp-related .bq-tags{display:flex;flex-wrap:wrap;gap:6px}.bqp-related .bq-tag{font-size:11px;color:#6f6a61;border:1px solid #deded8;padding:3px 9px}.bqp-related .bq-foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:10px;padding-top:12px}.bqp-related .bq-price{display:flex;flex-direction:column;font-weight:700;font-size:16px}.bqp-related .bq-old{font-size:12px;font-weight:500;color:#6f6a61;text-decoration:line-through}.bqp-related .bq-btn{background:#14110c;color:#fff;padding:9px 14px;font-size:12px;font-weight:600;text-decoration:none;white-space:nowrap}
+    .bqp-related .bq-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.bqp-related .bq-card{display:flex;flex-direction:column;background:#fff;border:1px solid #deded8;overflow:hidden;transition:transform .2s ease,box-shadow .2s ease}.bqp-related .bq-card:hover{transform:translateY(-4px);box-shadow:0 18px 40px -22px rgba(20,17,12,.28)}.bqp-related .bq-media{position:relative;display:block;height:280px;overflow:hidden;background:#fff;padding:22px}.bqp-related .bq-media img{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain!important;object-position:center;mix-blend-mode:multiply}.bqp-related .bq-body{display:flex;flex-direction:column;gap:8px;padding:16px 16px 18px;flex:1}.bqp-related .bq-brand{font-size:11px;letter-spacing:.11em;text-transform:uppercase;color:#806020;font-weight:700}.bqp-related .bq-name{font-size:15px;line-height:1.32;font-weight:600;margin:0;min-height:2.4em}.bqp-related .bq-tags{display:flex;flex-wrap:wrap;gap:6px}.bqp-related .bq-tag{font-size:11px;color:#6f6a61;border:1px solid #deded8;padding:3px 9px}.bqp-related .bq-foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:10px;padding-top:12px}.bqp-related .bq-price{display:flex;flex-direction:column;font-weight:700;font-size:16px}.bqp-related .bq-btn{background:#14110c;color:#fff;padding:9px 14px;font-size:12px;font-weight:600;text-decoration:none;white-space:nowrap}
     @media(max-width:760px){.bqp-hero,.bqp-grid{grid-template-columns:1fr}.bqp-visual{height:420px;padding:24px}.bqp-gauges{grid-template-columns:1fr}.bqp-buy{align-items:flex-start;flex-direction:column}.bqp-intro h1{font-size:42px}.bqp-related .bq-grid{grid-template-columns:1fr}.bqp-related .bq-media{height:300px}.bqp-scene{min-height:320px}}
   </style>`;
 }
@@ -273,7 +273,7 @@ export function boutiqueMain(items=CHAMPAGNES){
 
       <div class="bq-grid" id="bqGrid">${cards}</div>
 
-      <p class="bq-legal">Liens sponsorisés vers notre partenaire <strong>Bottle of Italy</strong>. Les prix sont indicatifs, affichés à titre informatif et susceptibles de varier. L'abus d'alcool est dangereux pour la santé, à consommer avec modération. Vente réservée aux personnes majeures.</p>
+      <p class="bq-legal">Liens sponsorisés vers notre partenaire <strong>Bottle of Italy</strong>. Chaque prix correspond au dernier relevé de l’offre présentée ; le vendeur confirme le montant final et la disponibilité. L'abus d'alcool est dangereux pour la santé, à consommer avec modération. Vente réservée aux personnes majeures.</p>
     </div>
   </div></section>
 
@@ -298,7 +298,6 @@ export function boutiqueMain(items=CHAMPAGNES){
     .bq-tag{font-size:11px;color:var(--bq-muted);border:1px solid var(--bq-line);border-radius:999px;padding:3px 9px}
     .bq-foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:10px;padding-top:12px}
     .bq-price{display:flex;flex-direction:column;line-height:1.15;font-weight:700;color:var(--bq-ink);font-size:16px}
-    .bq-old{font-size:12px;font-weight:500;color:var(--bq-muted);text-decoration:line-through}
     .bq-btn{background:var(--bq-ink);color:#fff;border-radius:999px;padding:9px 16px;font-size:13px;font-weight:600;text-decoration:none;white-space:nowrap;transition:.18s}
     .bq-btn:hover{background:var(--bq-gold)}
     .bq-legal{margin-top:30px;font-size:12px;line-height:1.6;color:var(--bq-muted);max-width:70ch}
