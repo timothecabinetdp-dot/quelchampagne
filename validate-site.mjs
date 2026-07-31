@@ -192,6 +192,7 @@ for (const profile of editorial) {
 }
 
 const source = read('index.html');
+const boutiqueSource = read('boutique.mjs');
 if (!source.includes("id:'accord', label:\"02 · Le service\"")) errors.push('La question consacrée à l’accord est absente.');
 if (!source.includes("id:'repere', label:\"05 · La signature\"")) errors.push('La cinquième question de départage est absente.');
 if (!source.includes('function signalFit')) errors.push('Le critère de départage du sélecteur est absent du scoring.');
@@ -472,6 +473,8 @@ for (const phrase of [
   if (publishedCopy.includes(phrase)) errors.push(`Formulation éditoriale à supprimer encore publiée : « ${phrase} ».`);
 }
 if (!source.includes('object-fit:contain!important')) errors.push('La règle prioritaire anti-recadrage des packshots est absente.');
+if (!source.includes('.rviz .pimg{width:auto!important; height:auto!important; max-width:100%; max-height:100%')) errors.push('Le résultat du sélecteur peut encore recadrer verticalement une bouteille.');
+if (!boutiqueSource.includes('width:auto!important;height:auto!important;max-width:100%;max-height:100%')) errors.push('Les cartes marchandes peuvent encore agrandir puis tronquer un packshot.');
 if (!source.includes('.page-hero::before{display:block!important}')) errors.push('Les visuels des pages de sélection sont encore masqués.');
 if (errors.length) {
   console.error(`Validation échouée (${errors.length} erreur${errors.length > 1 ? 's' : ''}) :`);

@@ -1,5 +1,15 @@
 # QuelChampagne V5 — sélecteur et catalogue professionnel
 
+## Correctif V5.1
+
+- Les images du résultat principal, des alternatives, des fiches et des cartes
+  ne sont plus forcées simultanément à `width: 100%` et `height: 100%`.
+- Chaque packshot conserve désormais son ratio naturel avec des limites
+  `max-width` et `max-height`, centrées dans le cadre.
+- Le fichier EPC, qui est complet chez le marchand mais pouvait être agrandi
+  sur la largeur puis coupé en bas, est maintenant affiché entièrement.
+- Une validation automatique bloque toute réintroduction de l’ancienne règle.
+
 ## Ce qui change
 
 - Le sélecteur utilise désormais cinq critères qui modifient réellement le

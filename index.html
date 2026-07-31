@@ -182,8 +182,8 @@ h1{font-size:clamp(42px,7vw,80px); font-weight:600; line-height:1.04; letter-spa
 .criteria-summary{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:24px}
 .criteria-summary span{border:1px solid var(--border);padding:7px 11px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.045em;color:#514c44}
 .rcard{display:grid; grid-template-columns:320px 1fr; gap:clamp(28px,5vw,60px); align-items:center; background:transparent; border-top:1px solid #D9D9D4; border-bottom:1px solid #D9D9D4; padding:clamp(34px,5vw,62px) 0}
-.rviz{height:430px; display:grid; place-items:center; position:relative; overflow:hidden; background:transparent}
-.rviz .pimg{height:100%; width:100%; object-fit:contain}
+.rviz{height:430px; display:grid; place-items:center; position:relative; overflow:visible; background:transparent; padding:18px; box-sizing:border-box}
+.rviz .pimg{width:auto!important; height:auto!important; max-width:100%; max-height:100%; object-fit:contain!important; margin:auto}
 .rbody{display:flex; flex-direction:column}
 .rmaison{font-size:15px; font-weight:500; color:var(--accent-deep)}
 .rname{font-size:clamp(30px,4vw,46px); font-weight:600; letter-spacing:-.03em; line-height:1.03; margin-top:8px}
@@ -202,8 +202,8 @@ h1{font-size:clamp(42px,7vw,80px); font-weight:600; line-height:1.04; letter-spa
 .alts{display:grid; grid-template-columns:repeat(3,1fr); gap:20px}
 .alt{background:transparent; border-top:1px solid #D9D9D4; border-bottom:1px solid #D9D9D4; padding:24px 0; display:flex; flex-direction:column}
 .alt-top{display:flex; gap:20px; align-items:center}
-.mini{width:86px; height:112px; flex:none; position:relative; display:grid; place-items:center; overflow:hidden; background:transparent}
-.mini .pimg{height:100%; width:100%; object-fit:contain}
+.mini{width:86px; height:112px; flex:none; position:relative; display:grid; place-items:center; overflow:visible; background:transparent; padding:4px; box-sizing:border-box}
+.mini .pimg{width:auto!important; height:auto!important; max-width:100%; max-height:100%; object-fit:contain!important; margin:auto}
 .alt .an{font-size:18px; font-weight:600; letter-spacing:-.02em; line-height:1.1}
 .alt .ah{font-size:13px; color:var(--faint); margin-top:3px}
 .alt-reason{color:var(--muted);font-size:14px;line-height:1.5;margin:18px 0 0;min-height:3em}
@@ -312,8 +312,9 @@ h1{font-size:clamp(42px,7vw,80px); font-weight:600; line-height:1.04; letter-spa
 .visual-mini::before{width:72px; height:72px; right:-30px; top:-30px; box-shadow:none}
 .visual-mini::after{left:9px; right:9px; bottom:8px}
 .visual-initials{font-size:16px; font-weight:700; letter-spacing:.04em}
-.product-packshot{object-fit:contain!important; object-position:center!important; padding:18px; background:transparent; mix-blend-mode:multiply; box-sizing:border-box}
-.phero-img .product-packshot,.rviz .product-packshot{padding:clamp(18px,3vw,34px)}
+.product-packshot{width:auto!important; height:auto!important; max-width:100%; max-height:100%; object-fit:contain!important; object-position:center!important; padding:0; background:transparent; mix-blend-mode:multiply; box-sizing:border-box; margin:auto}
+.phero-img,.pcard-img{display:grid; place-items:center}
+.phero-img .product-packshot,.pcard-img .product-packshot{max-width:calc(100% - 36px); max-height:calc(100% - 36px)}
 
 /* ---------- Fiche produit ---------- */
 .product{padding:clamp(40px,5vw,64px) 0 clamp(56px,7vw,88px); animation:fade .4s ease}
@@ -400,7 +401,7 @@ footer{background:var(--bg2); padding:52px 0 46px}
 @media(max-width:840px){
   .steps,.cards,.alts,.compare-grid,.duel,.trust-strip{grid-template-columns:1fr}
   .rcard{grid-template-columns:1fr; justify-items:center; text-align:center}
-  .rviz{max-width:240px}
+  .rviz{width:min(100%,260px); max-width:260px; height:390px; padding:12px}
   .rnote{max-width:none}
   .rtags,.rbuy{justify-content:center}
   .rmatch{position:static; margin-bottom:10px}
