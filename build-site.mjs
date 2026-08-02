@@ -20,7 +20,7 @@ import { readFileSync, writeFileSync, mkdirSync, rmSync, cpSync } from 'node:fs'
 import { buildCatalogue } from './build-catalogue.mjs';
 import { buildPriceIndex } from './build-price-index.mjs';
 import { boutiqueMain, boutiqueProductMain } from './boutique.mjs';
-import { PARTNER_CATALOGUE } from './build-partner-catalogue.mjs';
+import { PARTNER_CATALOGUE, AVAILABLE_PARTNER_CATALOGUE } from './build-partner-catalogue.mjs';
 
 const BASE = 'https://quelchampagne.fr';
 const HERO = '/assets/hero-quelchampagne.svg';
@@ -58,7 +58,8 @@ global.fetch = () => Promise.reject('x');
 eval(SCRIPT + '; Object.assign(ctx,{products,setCatalogue,articles,prod,art,detail,coverBg,PHOTOS,photoSrc,buyLink,priceText,productAction,bottleViz,logoMark,BRAND});');
 
 const catalogue = buildCatalogue();
-const partnerProducts = PARTNER_CATALOGUE;
+const allPartnerProducts = PARTNER_CATALOGUE;
+const partnerProducts = AVAILABLE_PARTNER_CATALOGUE;
 const priceIndex = buildPriceIndex();
 ctx.setCatalogue(catalogue);
 const { products, articles, prod, detail, coverBg, buyLink, priceText, productAction, bottleViz, logoMark, BRAND } = ctx;
@@ -366,7 +367,7 @@ function boutiqueAnalysisDescription(p){
   return clip(`Notre analyse du ${p.brand} ${p.name} : ${p.note}`,155);
 }
 function removeLegacyProductLinks(body){
-  const publicIds=new Set([...partnerProducts.map(product=>product.id),...SEO_LANDINGS.map(landing=>landing.id)]);
+  const publicIds=new Set([...allPartnerProducts.map(product=>product.id),...SEO_LANDINGS.map(landing=>landing.id)]);
   return body.replace(/href="\/champagne\/([a-z0-9-]+)\/"/g,(match,id)=>
     publicIds.has(id)?match:'href="/champagnes/"'
   );
@@ -379,7 +380,12 @@ function fixLinks(body){
 // ---------- pages ----------
 function homeMain(){
   const featuredBrands = ['Nicolas Feuillatte','Veuve Clicquot','Perrier-Jouët'];
-  const sel = featuredBrands.map(brand=>partnerProducts.find(p=>p.brand===brand)).filter(Boolean).map(partnerHomeCard).join('');
+  const featured = featuredBrands.map(brand=>partnerProducts.find(p=>p.brand===brand)).filter(Boolean);
+  for(const product of [...partnerProducts].sort((a,b)=>(b.popularity||0)-(a.popularity||0))){
+    if(featured.length>=3) break;
+    if(!featured.some(item=>item.id===product.id)) featured.push(product);
+  }
+  const sel = featured.map(partnerHomeCard).join('');
   const arts = articles().filter(a=>!a.soon).slice(0,3).map(articleCard).join('');
   const maisons = MAISONS.map(m=>`<span class="maison-name">${m}</span>`).join('');
   return `
@@ -424,10 +430,10 @@ function homeMain(){
     <div class="center-cta"><a class="chev" href="/blog/">Voir tous les articles</a></div>
   </div></section>
   <style>
-    .partner-pcard-img{height:320px;background:#fff;overflow:hidden}
-    .partner-pcard-img{position:relative;contain:layout paint}
-    .partner-pcard-img img{display:block;position:absolute;inset:22px 30px;width:calc(100% - 60px)!important;height:calc(100% - 44px)!important;max-width:none!important;max-height:none!important;object-fit:contain!important;object-position:center;mix-blend-mode:multiply;margin:0!important}
+    .partner-pcard-img{height:360px;background:#fff;overflow:hidden;display:flex;align-items:center;justify-content:center;contain:layout paint}
+    .partner-pcard-img img{display:block;position:static!important;width:auto!important;height:auto!important;max-width:82%!important;max-height:300px!important;object-fit:contain!important;object-position:center;mix-blend-mode:multiply;margin:0!important;transform:none!important}
     .partner-pcard .pcard-note{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+    @media(max-width:760px){.partner-pcard-img{height:320px!important}.partner-pcard-img img{max-width:86%!important;max-height:270px!important}}
   </style>`;
 }
 
@@ -948,7 +954,7 @@ write('confidentialite/index.html', page({ title:'Politique de confidentialité 
 add(BASE+'/confidentialite/', '0.3', 'yearly');
 
 // Fiches d'analyse des champagnes disponibles chez le partenaire.
-for(const p of partnerProducts){
+for(const p of allPartnerProducts){
   const slug = p.id;
   const analysis = boutiqueAnalysisDescription(p);
   const indexable = p.sourceKind === 'producer';
@@ -1005,7 +1011,7 @@ write('robots.txt', `User-agent: *\nAllow: /\n\nSitemap: ${BASE}/sitemap.xml\n`)
 write('catalogue.json', `${JSON.stringify(partnerProducts, null, 2)}\n`);
 
 // Cloudflare Pages : préserver les anciennes URL sans republier les fiches.
-const partnerIds=new Set(partnerProducts.map(product=>product.id));
+const partnerIds=new Set(allPartnerProducts.map(product=>product.id));
 const legacyRedirects=products()
   .filter(product=>!partnerIds.has(product.id) && product.region==='Champagne')
   .map(product=>`/champagne/${product.id}/ /champagnes/ 301`);
@@ -1016,4 +1022,4 @@ const comparisonRedirects=[
 write('_redirects', `${[...legacyRedirects,...comparisonRedirects].join('\n')}\n`);
 
 console.log(`✅ Site statique généré dans dist/`);
-console.log(`   ${partnerProducts.length} fiches publiées · ${articles().filter(a=>!a.soon).length} articles · ${urls.length} URLs au sitemap`);
+console.log(`   ${allPartnerProducts.length} fiches d’analyse · ${partnerProducts.length} offres disponibles · ${articles().filter(a=>!a.soon).length} articles · ${urls.length} URLs au sitemap`);

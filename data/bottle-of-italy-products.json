@@ -2,7 +2,7 @@
   "version": 1,
   "merchant": "Bottle of Italy",
   "network": "Webgains",
-  "checkedAt": "2026-07-29T12:35:46.053Z",
+  "checkedAt": "2026-08-02T19:22:59.090Z",
   "count": 48,
   "records": [
     {
@@ -35,6 +35,7 @@
         "qualita-prezzo",
         "sciabolare",
         "sushi",
+        "tavola-ferragosto",
         "vini",
         "vini-francia"
       ],
@@ -45,7 +46,7 @@
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_42716336685273&productname=Eloquente+Champagne+Brut+-+Jean+De+La+Fontaine&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Feloquente-champagne-brut-75cl-jean-de-la-fontaine%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/eloquente-champagne-brut-75cl-jean-de-la-fontaine",
       "merchantDescription": "« Eloquente » est un Champagne extrêmement fruité, une cuvée en parfait équilibre entre 65% Pinot Meunier, 30% Chardonnay, et 5% Pinot Noir.\nUne splendide étiquette inspirée du conte \"La poule aux oeufs d'or\", authentique et avec une touche d'histoire ; la Maison produit fidèlement la plus ancienne Cuvée de la Vallée de la Marne. Elégant, frais et séduisant, ce Champagne est le compagnon idéal de toutes les occasions !\nUne bulle qui étonne par son excellent rapport qualité-prix, dû à l'utilisation d'une marque encore de niche. Issu d'une petite ferme familiale, Eloquente fait preuve de grandes qualités de fraîcheur et d'acidité, invitées à être récompensées par une dégustation qui pourrait vous laisser sans voix.\nFrais, élégant, structuré, la vinification est réalisée en cuves inox dans la noble tradition champenoise, avec un élevage de 3 à 4 ans en fûts de chêne. Dans le verre on l'admire dans sa robe jaune dorée, avec un perlage assez fin et long. Des arômes fruités de pomme verte et de poire mûre arrivent au nez, avec des notes d'agrumes et des notes d'amandes, de douces notes de brioche et de miel. En bouche, la gorgée est résolument généreuse et riche.\nIdéal à l'apéritif mais aussi avec des crustacés, des sushis ou avec un gâteau au citron meringué.",
-      "checkedAt": "2026-07-29T12:35:46.053Z"
+      "checkedAt": "2026-08-02T19:22:59.090Z"
     },
     {
       "id": "shopify_FR_49273787482450",
@@ -72,6 +73,7 @@
         "pinot-meunier",
         "pinot-nero",
         "speciale-bollicine",
+        "tavola-ferragosto",
         "vini",
         "vini-francia"
       ],
@@ -82,7 +84,7 @@
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_49273787482450&productname=Champagne+Grand+Brut+Nature+-+Grand+Tour&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-grand-brut-nature-grand-tour%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-grand-brut-nature-grand-tour",
       "merchantDescription": "Le Champagne Grand Brut Nature de Grand Tour est une expression transparente et pure du terroir de la région de Champagne. Caractérisé par une absence totale de dosage, ce champagne se distingue par sa naturalité et l'intégrité des raisins utilisés. Le perlage est fin et persistant, et au nez, des arômes intrigants d’agrumes, de pain grillé et de fleurs blanches se libèrent, témoignant de la sophistication et de la complexité de ce vin mousseux.\nEn bouche, la fraîcheur est le trait dominant, équilibrée par une richesse et une texture que seule une maturation prolongée sur lies peut conférer. Les notes de citron, pomme verte et minéralité saline s’entrelacent dans une finale longue et nette, qui invite à une nouvelle gorgée.\nIdéal en apéritif, le Champagne Grand Brut Nature de Grand Tour est également parfait pour accompagner des plats délicats tels que des huîtres ou des carpaccios de poisson. Son élégance et sa structure en font également un excellent candidat pour les occasions spéciales et les célébrations importantes.",
-      "checkedAt": "2026-07-29T12:35:46.053Z"
+      "checkedAt": "2026-08-02T19:22:59.090Z"
     },
     {
       "id": "shopify_FR_50742403072338",
@@ -108,6 +110,7 @@
         "pinot-nero",
         "rin-",
         "sped-2-5",
+        "tavola-ferragosto",
         "vini"
       ],
       "price": 35.46,
@@ -117,7 +120,7 @@
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50742403072338&productname=Champagne+Brut+Premier+Cru+-+Tradition+-+Maison+Labb%C3%A9&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-brut-premier-cru-tradition-maison-labbe%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-brut-premier-cru-tradition-maison-labbe",
       "merchantDescription": "Le Champagne Brut Premier Cru - Tradition - Maison Labbé est un exemple raffiné du savoir-faire artisanal des terres de Champagne. Issu de vignobles Premier Cru, cette cuvée exprime l'élégance et la complexité typiques du terroir, mêlant harmonieusement les cépages classiques de la région. L'affinage attentif en bouteille confère à ce champagne un perlage fin et persistant, tandis que le nez dévoile de délicates notes de fruits blancs mûrs, de croûte de pain et des arômes floraux qui en rehaussent la fraîcheur.\nEn bouche, la structure équilibrée et l'acidité vibrante le rendent parfait pour accompagner des apéritifs raffinés ou des plats à base de poisson et de crustacés. La tradition de Maison Labbé s'exprime à chaque gorgée, offrant une expérience sensorielle qui honore la complexité et la vivacité du Champagne, le rendant idéal pour des moments spéciaux et des célébrations.",
-      "checkedAt": "2026-07-29T12:35:46.053Z"
+      "checkedAt": "2026-08-02T19:22:59.090Z"
     },
     {
       "id": "shopify_FR_42148320575705",
@@ -148,6 +151,7 @@
         "pinot-meunier",
         "pinot-nero",
         "sushi",
+        "tavola-ferragosto",
         "vini",
         "vini-francia"
       ],
@@ -158,7 +162,7 @@
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_42148320575705&productname=Champagne+Brut+AOC+-+Louis+Constant&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fcampagne-brut-aoc-louis-constant%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/campagne-brut-aoc-louis-constant",
       "merchantDescription": "Le Champagne Brut AOC de Louis Constant est une expression raffinée et élégante de l'un des vins pétillants les plus célébrés au monde. Ce champagne provient de la prestigieuse région de Champagne en France, célèbre pour sa tradition de production de vins pétillants de haute qualité.\nAvec sa couleur dorée éclatante et son perlage très fin, le Champagne Brut de Louis Constant présente un bouquet aromatique où se mêlent des notes de pomme verte, d'agrumes et de pain brioché, sur un délicat fond de fleurs blanches et d'amande. En bouche, il se distingue par sa vivacité et sa complexité aromatique. Sa structure est bien équilibrée, avec une acidité fraîche qui mène à une agréable persistance en finale.\nLa vinification suit rigoureusement les méthodes traditionnelles de la région de Champagne, incluant la seconde fermentation en bouteille et une période de maturation appropriée sur les levures, qui contribuent à développer sa remarquable complexité et sa texture crémeuse. L'utilisation de raisins sélectionnés principalement des cépages Pinot Noir et Chardonnay, fait de ce champagne un excellent représentant du style Brut, caractérisé par un dosage modéré qui préserve la pureté et la fraîcheur du fruit.\nIdéal comme apéritif, le Champagne Brut de Louis Constant est aussi un excellent accompagnant pour des plats délicats comme les fruits de mer, le sushi ou une légère salade caprese. Sa finesse et son élégance en font également le choix parfait pour célébrer des occasions spéciales ou pour offrir un moment de pur plaisir effervescent.\nEn résumé, ce Champagne Brut de Louis Constant exprime au mieux la tradition et l'artisanat de la région de Champagne, offrant une expérience sensorielle capable de satisfaire même les palais les plus exigeants.",
-      "checkedAt": "2026-07-29T12:35:46.053Z"
+      "checkedAt": "2026-08-02T19:22:59.090Z"
     },
     {
       "id": "shopify_FR_47895549903186",
@@ -184,6 +188,7 @@
         "pinot-nero",
         "prezzo-cartone",
         "sped-2-5",
+        "tavola-ferragosto",
         "vini",
         "vini-francia"
       ],
@@ -194,7 +199,7 @@
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895549903186&productname=Champagne+Cuv%C3%A9e+Louis+Hurtebisse+Brut+-+Alain+Mercier&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-cuvee-louis-hurtebisse-brut-alain-mercier%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-cuvee-louis-hurtebisse-brut-alain-mercier",
       "merchantDescription": "Lo Champagne Cuvée Louis Hurtebisse Brut di Alain Mercier rappresenta una raffinata espressione della tradizione champenoise. Prodotto utilizzando uve selezionate prevalentemente da vitigni di Chardonnay, Pinot Noir e Pinot Meunier, questo champagne si distingue per il suo equilibrio armonioso e la sua eleganza. Alla vista, si presenta con un colore giallo dorato, arricchito da un perlage fine e persistente, segno di una lunga rifermentazione in bottiglia, come previsto dal metodo Champenoise.\nAl naso, emergono immediatamente note floreali e fruttate, con sentori di mela verde, scorza di agrumi e delicate sfumature di pesca bianca. Una leggera nuance di mandorla tostata e brioche apporta complessità e raffinatezza al bouquet aromatico. In bocca, è vibrante e fresco, con un’acidità ben bilanciata che supporta il corpo cremoso e avvolgente del vino. La mineralità, caratteristica del terroir da cui proviene, aggiunge struttura e profondità al palato.\nIl finale è lungo e persistente, con un piacevole retrogusto di frutti freschi e una leggera nota di lievito. Questo Champagne Brut è ideale da gustare come aperitivo, ma si presta magnificamente anche ad accompagnare piatti di pesce, crostacei e formaggi a pasta molle. Un’etichetta che racchiude l'essenza del territorio e il savoir-faire della maison Alain Mercier, perfetta per celebrare momenti speciali con stile e raffinatezza.",
-      "checkedAt": "2026-07-29T12:35:46.053Z"
+      "checkedAt": "2026-08-02T19:22:59.090Z"
     },
     {
       "id": "shopify_FR_50742404284754",
@@ -219,6 +224,7 @@
         "pinot-noir",
         "rin-",
         "sped-2-5",
+        "tavola-ferragosto",
         "vini"
       ],
       "price": 38.18,
@@ -228,7 +234,7 @@
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50742404284754&productname=Champagne+Tradition+Brut+Premier+Cru+-+Maison+Tornay&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-tradition-brut-premier-cru-maison-tornay%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-tradition-brut-premier-cru-maison-tornay",
       "merchantDescription": "Le Champagne Tradition Brut Premier Cru de Maison Tornay naît au cœur de la région Champagne, une zone célèbre pour la production de bulles de haute qualité. Réalisé avec des raisins provenant de vignobles classés Premier Cru, ce champagne exprime l’équilibre parfait entre élégance et vivacité grâce à un assemblage harmonieux de Chardonnay, Pinot Noir et Pinot Meunier, caractéristiques de l’appellation. La méthode traditionnelle, avec une refermentation en bouteille et un affinage prolongé sur lies, confère au vin une complexité aromatique raffinée et une mousse fine et persistante.\nAu verre, il se présente avec une couleur jaune paille lumineuse, accompagnée de parfums délicats de fleurs blanches, croûte de pain et une légère touche de fruit à chair blanche. Le goût se distingue par une fraîcheur vibrante, soutenue par une agréable minéralité et une finale légèrement salée. Parfait avec des amuse-bouches de la mer, crustacés ou des plats à base de poisson noble, c’est un compagnon idéal pour des toasts raffinés.",
-      "checkedAt": "2026-07-29T12:35:46.053Z"
+      "checkedAt": "2026-08-02T19:22:59.090Z"
     },
     {
       "id": "shopify_FR_50502043140434",
@@ -254,6 +260,7 @@
         "pinot-meunier",
         "pinot-nero",
         "sped-2-5",
+        "tavola-ferragosto",
         "vini",
         "vini-francia"
       ],
@@ -264,7 +271,7 @@
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50502043140434&productname=Champagne+Cuv%C3%A9e+Brut+-+EPC+Champagne&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-cuvee-brut-epc-champagne%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-cuvee-brut-epc-champagne",
       "merchantDescription": "Le Champagne Cuvée Brut de EPC Champagne naît au cœur de la région de Champagne, un territoire célèbre pour l’excellence dans la production de vins mousseux prestigieux. Réalisée selon la méthode classique, cette cuvée assemble habilement différents cépages typiques de l’appellation, dont Pinot Noir, Chardonnay et Pinot Meunier, pour obtenir un équilibre parfait entre fraîcheur et complexité.\nSon vieillissement prolongé sur lies lui confère une mousse fine et persistante, tandis qu’au nez il libère des arômes élégants de pomme verte, d’agrumes et de légères notes de croûte de pain. En bouche, il se présente frais, harmonieux, avec une acidité agréable qui soutient une structure équilibrée et une finale nette et raffinée.\nIdéal en apéritif ou en accompagnement de préparations à base de poisson, crustacés et fromages frais, ce Champagne révèle tout l’art et la tradition du territoire français, valorisant la qualité et la typicité d’une appellation unique au monde.",
-      "checkedAt": "2026-07-29T12:35:46.053Z"
+      "checkedAt": "2026-08-02T19:22:59.090Z"
     },
     {
       "id": "shopify_FR_52901515886930",
@@ -288,6 +295,7 @@
         "novita",
         "pinot-nero",
         "sped-2-5",
+        "tavola-ferragosto",
         "vini"
       ],
       "price": 40.85,
@@ -297,7 +305,7 @@
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_52901515886930&productname=Champagne+Brut+-+Maison+Burtin&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-brut-maison-burtin%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-brut-maison-burtin",
       "merchantDescription": "Élégant et immédiatement séduisant, ce Champagne Brut de la Maison Burtin se présente avec des bulles fines et un bouquet discret alternant agrumes lumineux, fruits à chair blanche et légères notes de croûte de pain. Le profil est soutenu par une fraîcheur vibrante et une minéralité subtile qui donnent de l'élan à la dégustation sans l'alourdir ; la trame aromatique reste linéaire et bien définie, agréable tant au premier abord que dans son développement.\nEn bouche, le vin présente un corps moyen, une onctuosité équilibrée et une sapidité qui prolonge la persistance en laissant une finale sèche et légèrement noisettée. Le perlage, fin et constant, met en valeur la structure et rend la dégustation très fluide : idéal en ouverture pour éveiller l'appétit, il s'accorde avec grâce aux fruits de mer, au poisson cru ou aux préparations délicates, mais tient aussi face à des entrées plus structurées. Il est conseillé de le servir bien frais pour en exalter la vivacité et la netteté.",
-      "checkedAt": "2026-07-29T12:35:46.053Z"
+      "checkedAt": "2026-08-02T19:22:59.090Z"
     },
     {
       "id": "shopify_FR_47245068697938",
@@ -325,6 +333,7 @@
         "pinot-meunier",
         "pinot-nero",
         "speciale-bollicine",
+        "tavola-ferragosto",
         "vini",
         "vini-francia"
       ],
@@ -335,7 +344,7 @@
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47245068697938&productname=Champagne+La+Passionnee+Blanc+de+Noirs+Extra+Brut+-+Brisson-Lahaye&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-la-passionnee-blanc-de-noirs-extra-brut-brisson-lahaye%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-la-passionnee-blanc-de-noirs-extra-brut-brisson-lahaye",
       "merchantDescription": "Le Champagne La Passionnée Blanc de Noirs Extra Brut de Brisson-Lahaye est une expression sublime d'élégance et de complexité, obtenue à partir de raisins Pinot Nero soigneusement sélectionnés. Originaire de la célèbre région de Champagne en France, ce vin pétillant se distingue par son caractère affirmé et sa fraîcheur surprenante.\nÀ l'aspect, il présente une couleur dorée intense et une effervescence très fine et persistante, signe d'une haute qualité et d'une vinification méticuleuse. Au nez, le bouquet est riche et séduisant, avec des notes de fruits rouges mûrs tels que la fraise et la cerise, des accents d'amande grillée et de légères touches de brioche, dues à la longue maturation sur les levures.\nEn bouche, La Passionnée révèle une structure robuste mais équilibrée, avec une acidité vive qui se mélange parfaitement à la crémosité de la dégustation. Le goût est persistant, avec une agréable complexité aromatique qui évoque les fruits rouges et les nuances de fruits secs, culminant dans une finale longue et nette.\nCe Champagne est parfait en tant qu'apéritif, mais il a la structure pour accompagner également des plats plus riches, comme des rôtis de viande blanche ou des poissons savoureux. Son élégance exceptionnelle en fait également le choix idéal pour des occasions spéciales, célébrant les moments les plus significatifs avec beaucoup de style.\nLa cave Brisson-Lahaye, avec son dévouement à la qualité et son attention aux détails, garantit que chaque bouteille de La Passionnée Blanc de Noirs Extra Brut est une véritable expression de la passion et de l'art du champagne. Un trésor à découvrir et à savourer, qui continue d'étonner les connaisseurs du monde entier.",
-      "checkedAt": "2026-07-29T12:35:46.053Z"
+      "checkedAt": "2026-08-02T19:22:59.090Z"
     },
     {
       "id": "shopify_FR_50742402810194",
@@ -359,6 +368,7 @@
         "pesce",
         "rin-",
         "sped-2-5",
+        "tavola-ferragosto",
         "vini"
       ],
       "price": 42,
@@ -368,7 +378,7 @@
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50742402810194&productname=Champagne+Blanc+de+Blancs+Brut+Assemblage+Noble+-+Jean-Claude+Vallois&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-blanc-de-blancs-brut-assemblage-noble-jean-claude-vallois%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-brut-assemblage-noble-jean-claude-vallois",
       "merchantDescription": "Champagne Blanc de Blancs Brut Assemblage Noble - Jean-Claude Vallois est une expression élégante de la tradition de la Côte des Blancs, cœur historique de la Champagne situé en France. Obtenu exclusivement à partir de raisins Chardonnay, ce champagne se distingue par sa pureté et sa finesse, caractéristiques typiques du cépage et du terroir. L'élevage prolongé sur lies confère une complexité olfactive, avec des arômes délicats d'agrumes, de fleurs blanches et des notes minérales, qui s'estompent dans un goût frais, vibrant et d'un développement harmonieux.\nAu palais, la vivacité des bulles soutient une structure légère mais persistante, offrant un équilibre parfait entre acidité et douceur. Idéal en apéritif, il s'accorde magnifiquement avec les crustacés, le poisson cru ou les fromages frais, sublimant chaque association par son élégance et sa structure élancée. Un toast raffiné qui raconte le dévouement artisanal de Jean-Claude Vallois à mettre en valeur le terroir avec délicatesse et maîtrise.",
-      "checkedAt": "2026-07-29T12:35:46.053Z"
+      "checkedAt": "2026-08-02T19:22:59.090Z"
     },
     {
       "id": "shopify_FR_50742406185298",
@@ -391,6 +401,7 @@
         "rin-",
         "rosati",
         "sped-2-5",
+        "tavola-ferragosto",
         "vini",
         "vini-rosati"
       ],
@@ -401,7 +412,7 @@
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50742406185298&productname=Champagne+Ros%C3%A9+de+Saign%C3%A9e+-+En+F%C3%BBts+Les+Vignes+Derri%C3%A8re+-+Daubanton&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-rose-de-saignee-en-futs-les-vignes-derriere-daubanton%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-rose-de-saignee-en-futs-les-vignes-derriere-daubanton",
       "merchantDescription": "Le Champagne Rosé de Saignée de En Fûts Les Vignes Derrière, produit par la maison Daubanton, représente une excellence dans l’art du champagne rosé traditionnel. Provenant de la célèbre région de Champagne, ce vin est obtenu grâce à la technique de la saignée, qui permet d’extraire un maximum de couleur et d’arômes des peaux des raisins Pinot Noir et Pinot Meunier, conférant une structure intense et un caractère vif.\nLe long élevage en fûts de bois met en valeur la complexité olfactive, où s’entrelacent des notes de petits fruits rouges, de cerise et des touches épicées délicates, complétées par une élégante fraîcheur minérale. En bouche, il se révèle harmonieux et équilibré, avec une effervescence raffinée qui nettoie le palais et invite à de nouvelles dégustations.\nParfait en apéritif ou accompagné de plats de la mer, crustacés et mets épicés, ce Champagne Rosé est une expérience sensorielle qui célèbre le terroir et la tradition viticole de la Champagne sous un jour innovant.",
-      "checkedAt": "2026-07-29T12:35:46.053Z"
+      "checkedAt": "2026-08-02T19:22:59.090Z"
     },
     {
       "id": "shopify_FR_47895568122194",
@@ -425,6 +436,7 @@
         "mondo",
         "prezzo-cartone",
         "sped-2-5",
+        "tavola-ferragosto",
         "vini",
         "vini-francia"
       ],
@@ -435,7 +447,7 @@
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895568122194&productname=Champagne+Cuv%C3%A9e+Extra+Brut+1er+Cru+-+Maxime+Ponson&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-cuvee-extra-brut-1er-cru-maxime-ponson%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-cuvee-extra-brut-1er-cru-maxime-ponson",
       "merchantDescription": "Lo Champagne Cuvée Extra Brut 1er Cru di Maxime Ponson rappresenta una delle espressioni più raffinate della tradizione champenoise. Questo Champagne è realizzato con uve provenienti da vigneti situati in Premier Cru, che garantiscono frutti di qualità eccelsa. Con un dosage estremamente basso, la cuvée Extra Brut si distingue per la sua purezza e precisione aromatica.\nNel calice, il vino si presenta con un luminoso colore dorato e un perlage fine e persistente. Al naso, offre un bouquet complesso ed elegante, caratterizzato da note di agrumi, mela verde, fiori bianchi e un leggero tocco di pan brioche, che testimonia una vinificazione accurata e una maturazione sui lieviti rilevante.\nIn bocca, lo Champagne rivela una straordinaria freschezza e una mineralità marcata, con una vivace acidità che equilibra perfettamente la struttura. I sentori fruttati e floreali percepiti al naso si ripropongono con grande coerenza al palato, accompagnati da una piacevole nota di mandorla tostata.\nIl finale è lungo e pulito, lasciando una sensazione di eleganza e freschezza che invita a un altro sorso. Ideale come aperitivo, questo Champagne si abbina magnificamente anche a piatti di pesce, crostacei e tartare di tonno. Una scelta perfetta per chi cerca un prodotto di alta qualità, che esprima appieno la maestria e il savoir-faire di Maxime Ponson.",
-      "checkedAt": "2026-07-29T12:35:46.053Z"
+      "checkedAt": "2026-08-02T19:22:59.090Z"
     },
     {
       "id": "shopify_FR_47245069287762",
@@ -461,6 +473,7 @@
         "pinot-meunier",
         "pinot-nero",
         "speciale-bollicine",
+        "tavola-ferragosto",
         "vini",
         "vini-francia"
       ],
@@ -471,7 +484,7 @@
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47245069287762&productname=Champagne+Carte+Noir+Brut+-+Thenevet+Delouvin&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-carte-noir-brut-thenevet-delouvin%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-carte-noir-brut-thenevet-delouvin",
       "merchantDescription": "Originaire des vallées renommées de Champagne, le Carte Noir Brut de Thenevet Delouvin représente une expression impeccable de l'artisanat français dans le monde des vins pétillants. Produit selon la méthode traditionnelle champenoise, ce champagne est un assemblage raffiné de cépages Pinot Noir, Pinot Meunier et Chardonnay, cultivés avec dévouement et soin dans les sols calcaires caractéristiques de la région.\nAu nez, le Carte Noir Brut dévoile un bouquet complexe et enveloppant, avec des notes de fruits frais tels que la pêche et l'abricot qui se mélangent avec des nuances élégantes de brioche et de vanille, grâce à un vieillissement prolongé sur lies. La vivacité de ses bulles accentue les sensations olfactives, introduisant une fraîcheur qui invite à la dégustation.\nEn bouche, l'attaque est vive et fraîche. La structure est équilibrée et bien façonnée, avec une texture crémeuse qui s'accompagne d'un retour des fruits à chair blanche et des touches d'agrumes. La finale est persistante et nette, avec une légère note minérale qui enrichit l'expérience gustative.\nIdéal en apéritif, le Carte Noir Brut de Thenevet Delouvin se marie également à merveille avec une variété de plats, de la cuisine à base de poisson aux antipasti raffinés. Ce champagne est un hommage à l'élégance et à la tradition, parfait pour célébrer des moments spéciaux ou pour ajouter une touche de classe à chaque occasion.\nAvec sa présentation élégante et son goût inoubliable, le Carte Noir Brut est un excellent choix pour ceux qui recherchent dans leur verre non seulement un vin, mais une véritable expérience sensorielle. Un incontournable pour les amateurs de champagne qui valorisent la qualité et la finesse.",
-      "checkedAt": "2026-07-29T12:35:46.053Z"
+      "checkedAt": "2026-08-02T19:22:59.090Z"
     },
     {
       "id": "shopify_FR_50742403268946",
@@ -495,6 +508,7 @@
         "pinot-nero",
         "rin-",
         "sped-2-5",
+        "tavola-ferragosto",
         "vini"
       ],
       "price": 42.82,
@@ -504,7 +518,7 @@
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50742403268946&productname=Champagne+Cuv%C3%A9e+R%C3%A9serve+-+Clovis+-+Maison+Yves+Loison&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-cuvee-reserve-clovis-maison-yves-loison%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-cuvee-reserve-clovis-maison-yves-loison",
       "merchantDescription": "Champagne Cuvée Réserve - Clovis - Maison Yves Loison, produit dans la renommée région de Champagne, incarne l’élégance du Chardonnay alliée à la structure du Pinot Noir et au caractère du Pinot Meunier. Cette cuvée, fruit d’un savant assemblage, vieillit patiemment plusieurs mois en cave, développant une complexité aromatique distinctive. Au nez, elle présente des arômes de fruits blancs mûrs, de légères notes florales et une pointe de croûte de pain, typique de la fermentation en bouteille. En bouche, elle révèle une fine et persistante effervescence qui soutient un équilibre entre fraîcheur vibrante et douceur harmonieuse, conférant une agréable sensation d’élégance et de légèreté.\nIdéale en apéritif ou en accompagnement de plats à base de poisson et crustacés, ce Champagne exprime le caractère authentique du terroir de Champagne, respectant sa tradition et sa finesse. Un choix raffiné pour ceux qui aiment un verre riche et complexe, capable de raconter des histoires de terroir et de passion vinicole.",
-      "checkedAt": "2026-07-29T12:35:46.053Z"
+      "checkedAt": "2026-08-02T19:22:59.090Z"
     },
     {
       "id": "shopify_FR_43760601956569",
@@ -533,6 +547,7 @@
         "mondo",
         "pesce",
         "sciabolare",
+        "tavola-ferragosto",
         "vini",
         "vini-francia"
       ],
@@ -543,7 +558,7 @@
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_43760601956569&productname=Champagne+AOC+Brut+-+Blanc+de+Blancs+-+De+Vilmont&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-aoc-brut-blanc-de-blancs-de-vilmont%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-aoc-brut-blanc-de-blancs-de-vilmont",
       "merchantDescription": "Le Champagne AOC Brut - Blanc de Blancs produit par la renommée cave De Vilmont est un exemplaire extraordinaire incarnant l'élégance et le raffinement de la région Champagne. Ce vin, élaboré exclusivement à partir de raisins de Chardonnay, soigneusement sélectionnés, reflète un terroir unique et une passion incomparable pour la viticulture de haute qualité.\nLa vinification suit les protocoles stricts de l'appellation AOC (Appellation d'Origine Contrôlée), garantissant un haut standard à chaque étape du processus. La catégorie \"Brut\" indique un dosage limité de sucre, résultant en un profil gustatif plus sec et intensément pur.\nVisuellement, le Blanc de Blancs de De Vilmont se présente avec une couleur jaune paille brillante, parsemée d'une fine et persistante effervescence, symbole de son excellente fermentation et maturation en cave. Au nez, des fragrances délicates de fleurs blanches, des notes d'agrumes et une touche de minéralité, caractéristiques distinctives des meilleures cuvées de Chardonnay, émergent.\nEn bouche, l'expérience est vive mais équilibrée, avec une fraîcheur qui s'harmonise parfaitement avec une structure crémeuse et une complexité qui évolue à chaque gorgée. Des saveurs de pomme verte, poire et levure se fondent dans une finale longue et nette, avec un arrière-goût rappelant la croûte de pain fraîchement sorti du four, typique des meilleurs Champagnes.\nIdéal en apéritif, le Champagne AOC Brut - Blanc de Blancs - De Vilmont est également un compagnon parfait pour des plats raffinés tels que les huîtres, les entrées à base de poisson et les fromages de chèvre délicats. Sa polyvalence et son élégance en font un excellent choix pour célébrer des occasions spéciales ou pour ajouter une touche de luxe à tout repas. Ce champagne est, sans aucun doute, un témoignage de l'art de la vinification française et un joyau dans la couronne de De Vilmont.",
-      "checkedAt": "2026-07-29T12:35:46.053Z"
+      "checkedAt": "2026-08-02T19:22:59.090Z"
     },
     {
       "id": "shopify_FR_50742403793234",
@@ -568,6 +583,7 @@
         "rin-",
         "rosati",
         "sped-2-5",
+        "tavola-ferragosto",
         "vini",
         "vini-rosati"
       ],
@@ -578,7 +594,7 @@
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50742403793234&productname=Champagne+Ros%C3%A9+Brut+-+Fossile+-+M.G.+Heucq&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-rose-brut-fossile-m-g-heucq%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-rose-brut-fossile-m-g-heucq",
       "merchantDescription": "Le Champagne Rosé Brut - Fossile - M.G. Heucq, produit par la maison M.G. Heucq dans la célèbre région de Champagne, représente l'excellence du terroir français. Ce rosé raffiné naît d'une sélection experte des cépages classiques de l’appellation, Pinot Noir et Chardonnay, cultivés avec soin dans le climat frais et argileux de la zone, qui confère au vin structure et minéralité.\nLa méthode classique de fermentation et l’affinage sur lies pendant une période prolongée donnent à ce champagne une complexité olfactive raffinée, avec de légères notes de fraise, de cerise et une délicate nuance florale. En bouche, il montre un équilibre parfait entre la fraîcheur acidulée vive et une onctuosité enveloppante, enrichie d’un perlage fin et persistant.\nIdéal pour accompagner des plats à base de poisson, crustacés ou viandes blanches délicates, ce rosé élégant et polyvalent sublime chaque moment festif avec sa personnalité vibrante et raffinée.",
-      "checkedAt": "2026-07-29T12:35:46.053Z"
+      "checkedAt": "2026-08-02T19:22:59.090Z"
     },
     {
       "id": "shopify_FR_50459393425746",
@@ -604,6 +620,7 @@
         "pinot-noir",
         "prezzo-cartone",
         "sped-2-5",
+        "tavola-ferragosto",
         "vini",
         "vini-francia"
       ],
@@ -614,7 +631,7 @@
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50459393425746&productname=Champagne+L%27Escapade+-+Harlin+P%C3%A8re+et+Fils&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-lescapade-harlin-pere-et-fils%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-lescapade-harlin-pere-et-fils",
       "merchantDescription": "Le Champagne L'Escapade de Harlin Père et Fils naît au cœur de la Champagne, une terre célèbre pour ses collines calcaires et son climat frais, idéal à la culture de cépages historiques comme le Chardonnay, le Pinot Noir et le Pinot Meunier. Ce champagne se distingue par son élégance et sa fraîcheur, fruit d'une vinification méticuleuse et d'un affinage qui met en valeur la finesse des bulles et les arômes délicats de fruits blancs et de fleurs des champs.\nAu verre, il se présente avec un perlage très fin qui accompagne des notes de pomme verte, d'agrumes et de légères nuances de croûte de pain, signe d'une fermentation en bouteille réalisée avec maîtrise. En bouche, il est harmonieux et vif, avec un équilibre parfait entre acidité et douceur qui le rend idéal en apéritif ou en accompagnement de plats de poisson délicats et de fromages frais. L'Escapade est un voyage sensoriel au cœur du territoire de la Champagne, évoquant sa tradition et son innovation.",
-      "checkedAt": "2026-07-29T12:35:46.053Z"
+      "checkedAt": "2026-08-02T19:22:59.090Z"
     },
     {
       "id": "shopify_FR_47895597515090",
@@ -638,6 +655,7 @@
         "pinot-noir",
         "prezzo-cartone",
         "sped-2-5",
+        "tavola-ferragosto",
         "vini",
         "vini-francia"
       ],
@@ -648,7 +666,7 @@
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895597515090&productname=Champagne+Blanc+de+Noirs+Brut+-+Pierre+Brigandat&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-blanc-de-noirs-brut-beltrand-brigandat%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-noirs-brut-beltrand-brigandat",
       "merchantDescription": "Il Champagne Blanc de Noirs Brut di Pierre Brigandat è un'esperienza enologica di grande eleganza e raffinatezza. Prodotto interamente da uve Pinot Noir, questo champagne riflette la pura espressione di questo vitigno rinomato per la sua profondità e complessità. Alla vista, si presenta con un colore dorato luminoso e brillanti bollicine persistenti.\nAl naso, è immediatamente fragrante con note di frutta rossa matura, come ciliegie e fragole, integrate da delicate sfumature di fiori bianchi e leggere note di crosta di pane, frutto dell'affinamento sui lieviti. Nuanced aromi di frutta secca e delicate sfumature minerali aggiungono ulteriore strato al profilo aromatico.\nIn bocca, il Champagne Blanc de Noirs Brut offre una struttura piena e rotonda, con un equilibrio perfetto tra freschezza e complessità. I sapori di frutti di bosco si fondono armoniosamente con note di agrumi, conferendo una vivace acidità che pulisce il palato. La texture è cremosa, con una piacevole effervescenza che solletica le papille gustative, mentre il finale lungo e persistente lascia una sensazione di freschezza e pulizia.\nQuesto champagne è versatile negli abbinamenti gastronomici: si sposa magnificamente con piatti di pesce, crostacei, ma anche con carni bianche e formaggi a pasta molle. Pierre Brigandat ha creato con il suo Blanc de Noirs Brut una cuvée che celebra l'autenticità e la finezza del Pinot Noir, rendendolo un'opzione eccellente per le occasioni speciali o per momenti di puro piacere enologico.",
-      "checkedAt": "2026-07-29T12:35:46.053Z"
+      "checkedAt": "2026-08-02T19:22:59.090Z"
     },
     {
       "id": "shopify_FR_47245072630098",
@@ -672,6 +690,7 @@
         "happy-hour",
         "mondo",
         "speciale-bollicine",
+        "tavola-ferragosto",
         "vini",
         "vini-francia"
       ],
@@ -682,7 +701,7 @@
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47245072630098&productname=Champagne+Cuve%CC%80e+Preface+Extra+Brut+-+Bardia%C3%B9&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-cuvee-preface-extra-brut-bardiau%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-cuvee-preface-extra-brut-bardiau",
       "merchantDescription": "Champagne Cuvée Préface Extra Brut - Bardiaù est un choix exemplaire pour ceux qui apprécient un Champagne de haute qualité avec un caractère distinctif. Produit par la célèbre cave Bardiaù, cette cuvée représente l'excellence de l'art vinicole dans le domaine des Champagnes.\nCe Champagne Extra Brut est remarquablement apprécié pour son profil aromatique riche et complexe. Au nez, on peut percevoir des notes vibrantes d'agrumes, de fruits blancs comme la poire et de légères nuances de fleurs blanches, qui se mêlent à des arômes plus évolués de pain brioché et d'amandes grillées, résultant de la longue période de maturation sur lies.\nEn bouche, le Cuvée Préface Extra Brut révèle une structure élégante et une acidité bien équilibrée. Son effervescence est fine et persistante, un signe distinctif du soin et de la précision dans la production. Les saveurs d'agrumes et de fruits frais enveloppent le palais, suivies d'une finale longue et rafraîchissante sur une note minérale.\nMaturé pendant au moins 36 mois en cave avant le dégorgement, ce Champagne montre un excellent potentiel de vieillissement, mais est également délicieux à déguster maintenant. Sa nature Extra Brut, avec un très faible ajout de sucre après la seconde fermentation, le rend particulièrement adapté aux amateurs de vins mousseux très secs, tout en conservant une excellente complexité aromatique et gustative.\nIdéal en apéritif, il se marie aussi magnifiquement avec des entrées légères, des fruits de mer et des plats à base de poisson. Le Champagne Cuvée Préface Extra Brut de Bardiaù est sans aucun doute une expression raffinée et de grande excellence, parfait pour célébrer des moments spéciaux ou pour élever une soirée ordinaire avec une touche d'élégance et de sophistication.",
-      "checkedAt": "2026-07-29T12:35:46.053Z"
+      "checkedAt": "2026-08-02T19:22:59.090Z"
     },
     {
       "id": "shopify_FR_47245071647058",
@@ -709,6 +728,7 @@
         "pinot-meunier",
         "pinot-nero",
         "speciale-bollicine",
+        "tavola-ferragosto",
         "vini",
         "vini-francia"
       ],
@@ -719,7 +739,7 @@
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47245071647058&productname=Champagne+Orior+Brut+-+Pierre+Legras&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-orior-brut-pierre-legras%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-orior-brut-pierre-legras",
       "merchantDescription": "Le Champagne Orior Brut de la maison Pierre Legras est un exemplaire exceptionnel qui capture l'essence de l'élégance et du raffinement. Ce Champagne est produit dans la prestigieuse région de Chouilly, classifiée Grand Cru dans la célèbre Côte des Blancs, confirmant son haut standard de qualité.\nLa cuvée Orior Brut est composée d'un assemblage soigneusement sélectionné de Pinot Noir, Pinot Meunier et Chardonnay, où ce dernier prédomine apportant fraîcheur et vivacité au palais. La maturation d'au moins 36 mois sur les levures dans les caves de la maison enrichit le profil aromatique de ce vin, lui conférant complexité et une texture crémeuse qui séduit le palais.\nVisuellement, le Champagne Orior Brut se présente avec une couleur jaune doré brillant et un perlage fin et incessant, qui anticipe la qualité de la dégustation. Au nez se déploient des arômes de fruits à chair blanche tels que poire et pêche, des notes d'agrumes et des nuances de fleurs blanches, le tout enrichi par de délicates veines de pain grillé et de brioche, témoignages de sa longue maturation.\nEn bouche, la structure est riche et complexe, magnifiquement équilibrée par une acidité vive qui conduit à une finale longue et persistante, marquée par un élégant arrière-goût fruité avec des touches de minéralité. L'Orior Brut est idéal en apéritif, mais il a la stature pour accompagner une variété de plats, allant des entrées délicates aux plats à base de poisson ou de volaille.\nUn choix superbe pour les amateurs de champagne qui recherchent un produit capable d'offrir une complexité surprenante et un charme indiscutable. L'Orior Brut de Pierre Legras ne manquera pas d'impressionner lors de chaque occasion spéciale.",
-      "checkedAt": "2026-07-29T12:35:46.053Z"
+      "checkedAt": "2026-08-02T19:22:59.090Z"
     },
     {
       "id": "shopify_FR_53712156590418",
@@ -749,6 +769,7 @@
         "pinot-meunier",
         "pinot-nero",
         "premier-cru",
+        "tavola-ferragosto",
         "vini"
       ],
       "price": 45.46,
@@ -758,7 +779,7 @@
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_53712156590418&productname=Champagne+Carte+Blanche+Premier+Cru+Brut+-+Benard+Pitois&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-carte-blanche-premier-cru-brut-benard-pitois%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-carte-blanche-premier-cru-brut-benard-pitois",
       "merchantDescription": "La bulle est fine et vivace, prête à soutenir un bouquet qui joue entre des notes d'agrumes et des accents de pomme verte, avec une légère touche florale qui apporte de la fraîcheur. En même temps, se dégagent des suggestions plus douces de panier chaud et de levure, qui n'étouffent pas la tension acide mais l'accompagnent, conférant équilibre et une impression générale de pureté gustative.\nEn bouche, il est sapide et vif, avec un corps contenu mais affirmé : la structure tient bien sans jamais être lourde, laissant place à une crémeuseté agréable et à une finale persistante et sèche. Excellent en apéritif, il s'accorde avec les fruits de mer, les huîtres et les préparations légères à base de poisson ; servir frais pour mettre en valeur son élégance et sa buvabilité. Une cuvée qui interprète avec mesure le caractère du Premier Cru, idéale pour qui recherche finesse et précision en bouche.",
-      "checkedAt": "2026-07-29T12:35:46.053Z"
+      "checkedAt": "2026-08-02T19:22:59.090Z"
     },
     {
       "id": "shopify_FR_50794939580754",
@@ -781,6 +802,7 @@
         "pesce",
         "pinot-nero",
         "sped-2-5",
+        "tavola-ferragosto",
         "velier",
         "vini"
       ],
@@ -791,7 +813,7 @@
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50794939580754&productname=Champagne+Terre+-+Domaine+Augustin+2021&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-terre-domaine-augustin%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-terre-domaine-augustin",
       "merchantDescription": "Champagne Terre de Domaine Augustin naît dans la célèbre région de la Champagne, cœur battant de la production vitivinicole française dédiée à ce prestigieux vin mousseux. Ce Champagne est principalement élaboré avec des raisins Chardonnay et Pinot Noir, cultivés avec un soin extrême dans des vignobles situés sur des sols calcaires qui confèrent au vin une structure fine et une sapidité élégante.\nLa méthode de vinification suit rigoureusement la tradition champenoise : une seconde fermentation en bouteille qui offre des bulles raffinées, crémeuses et persistantes. L’affinage sur lies, c’est-à-dire sur les levures, apporte de la complexité au bouquet, riche en arômes de fruits blancs mûrs, d’agrumes frais et de délicates notes de pain grillé et de levure, résultat d’une longue prise de mousse. En bouche, Champagne Terre s’exprime avec une extrême harmonie et fraîcheur, offrant un équilibre parfait entre acidité vibrante et rondeur.\nIdéal en apéritif ou en accompagnement de plats de poisson, crustacés et fromages frais, ce Champagne représente une excellence du terroir champenois, capable d’émouvoir par son élégance et sa profondeur gustative. Un choix raffiné pour ceux qui souhaitent vivre l’authenticité et la finesse d’un grand Méthode Classique.",
-      "checkedAt": "2026-07-29T12:35:46.053Z"
+      "checkedAt": "2026-08-02T19:22:59.090Z"
     },
     {
       "id": "shopify_FR_48453987369298",
@@ -813,6 +835,7 @@
         "happy-hour",
         "pesce",
         "sped-2-5",
+        "tavola-ferragosto",
         "vini",
         "vini-francia"
       ],
@@ -823,7 +846,7 @@
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_48453987369298&productname=Champagne+Grand+Prestige+Brut+-+4+anni+-+Beaumont+des+Crayeres&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-grand-prestige-brut-4-anni-beaumont-des-crayeres%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-grand-prestige-brut-4-anni-beaumont-des-crayeres",
       "merchantDescription": "Le Champagne Grand Prestige Brut de la renommée cave Beaumont des Crayeres est une sélection exclusive qui promet d'élever chaque occasion. Mûri pendant quatre ans, ce champagne se distingue par sa raffinement et complexité. La couleur est d'un jaune paille brillant avec des reflets dorés, signe d'une bonne maturation. Au nez, il s'ouvre sur un bouquet vibrant de fleurs blanches et de fruits frais, comme la pêche et la pomme verte, suivis de notes de levure et de pain toasté à la française, témoignant de sa noblesse.\nEn bouche, le Grand Prestige Brut offre un équilibre parfait entre acidité et onctuosité, avec un perlage très fin qui caresse le palais, laissant un arrière-goût persistant qui invite à une autre gorgée. Les notes d'agrumes et de fruits à chair blanche se mêlent à des nuances d'amande et de brioche, faisant de ce champagne une excellence à déguster pur ou en accompagnement de plats sophistiqués tels que des huîtres ou des risottos aux fruits de mer.\nCe champagne représente non seulement l'art de la vinification de Beaumont des Crayeres, mais témoigne également du terroir unique d'où il provient, en faisant un incontournable pour les amateurs du genre.",
-      "checkedAt": "2026-07-29T12:35:46.053Z"
+      "checkedAt": "2026-08-02T19:22:59.090Z"
     },
     {
       "id": "shopify_FR_47895554261330",
@@ -849,6 +872,7 @@
         "prezzo-cartone",
         "rosati",
         "sped-2-5",
+        "tavola-ferragosto",
         "vini",
         "vini-francia",
         "vini-rosati"
@@ -860,7 +884,7 @@
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895554261330&productname=Champagne+Ros%C3%A9+R%C3%A9serve+Brut+-+J.Charpentier&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-rose-reserve-brut-j-charpentier%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-rose-reserve-brut-j-charpentier",
       "merchantDescription": "Lo Champagne Rosé Réserve Brut di J. Charpentier è un'esperienza sensoriale che inizia con una tonalità rosa tenue nel bicchiere, esaltata da una bollicina fine e persistente. Questo champagne è ottenuto attraverso un accurato assemblaggio di uve Chardonnay, Pinot Noir e Meunier, rappresentando al meglio la tradizione della maison J. Charpentier.\nAl naso, si percepiscono delicati aromi di frutti rossi, tra cui fragoline di bosco, lamponi e ribes, accompagnati da note floreali e una leggera vena di agrumi. Il bouquet aromatico è complesso e sfaccettato, promettendo una degustazione vivace e ricca.\nAl palato, il Rosé Réserve Brut si distingue per la sua freschezza e vivacità. La struttura è armoniosa, con una piacevole acidità che bilancia perfettamente la dolcezza del frutto. Le sensazioni gustative riflettono le note olfattive, ampliandosi in una persistenza elegante e distintiva.\nQuesto Champagne rosé è perfetto per momenti speciali e celebrazioni, ma si presta anche ad accompagnare una vasta gamma di piatti, dagli antipasti a base di pesce ai dessert fruttati. La bottiglia, rifinita con cura, riflette la qualità artigianale e l'eleganza che J. Charpentier infonde in ogni suo prodotto. Una scelta raffinata per chi cerca un'esperienza di degustazione memorabile e di alta classe.",
-      "checkedAt": "2026-07-29T12:35:46.053Z"
+      "checkedAt": "2026-08-02T19:22:59.090Z"
     },
     {
       "id": "shopify_FR_47895603151186",
@@ -882,6 +906,7 @@
         "mondo",
         "prezzo-cartone",
         "sped-2-5",
+        "tavola-ferragosto",
         "vini",
         "vini-francia"
       ],
@@ -892,7 +917,7 @@
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895603151186&productname=Champagne+Pinot+Blanc+de+Blancs+Brut+-+Petit+Camusat&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-pinot-blanc-de-blancs-brut-petit-camusat%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-pinot-blanc-de-blancs-brut-petit-camusat",
       "merchantDescription": "Lo Champagne Pinot Blanc de Blancs Brut prodotto dalla rinomata cantina Petit Camusat è un prodotto di alta qualità che rappresenta appieno l'eccellenza del terroir di questa regione esclusiva. Realizzato interamente con uve Pinot Blanc, questo champagne offre un'esperienza sensoriale unica e raffinata.\nIl colore è di un giallo paglierino brillante con riflessi dorati, assumendo una tonalità vivace e luminosa. Al naso si presenta elegante e delicato, con sentori di fiori bianchi, agrumi e un accenno di pesca bianca, che si arricchiscono ulteriormente con note di mandorla e pane tostato. Questi aromi complessi sono il risultato di una vinificazione attenta e rispettosa delle tradizioni champenoise.\nAl palato, lo Champagne Pinot Blanc de Blancs Brut rivela una freschezza vibrante e una mineralità marcata, caratteristiche distintive delle uve da cui è prodotto. La bollicina è fine e persistente, conferendo un dinamismo che esalta ulteriormente i sapori fruttati e floreali già presenti all'olfatto. Il finale è lungo e piacevolmente secco, con una leggera nota sapida che invita al sorso successivo.\nQuesto champagne è perfetto per un aperitivo sofisticato o per accompagnare piatti delicati a base di pesce e frutti di mare. La cura e la maestria della cantina Petit Camusat nel coltivare e vinificare le uve Pinot Blanc garantiscono un prodotto che incanterà tanto gli appassionati quanto i neofiti del mondo dello champagne.",
-      "checkedAt": "2026-07-29T12:35:46.053Z"
+      "checkedAt": "2026-08-02T19:22:59.090Z"
     },
     {
       "id": "shopify_FR_50341299487058",
@@ -918,6 +943,7 @@
         "pinot-nero",
         "pinot-noir",
         "speciale-bollicine",
+        "tavola-ferragosto",
         "vini",
         "vini-francia",
         "vini-rosati"
@@ -929,7 +955,7 @@
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50341299487058&productname=Champagne+R%C3%A9serve+Exclusive+Brut+Ros%C3%A9+-+Nicolas+Feuillatte&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-reserve-exclusive-rose-nicolas-feuillatte%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-reserve-exclusive-rose-nicolas-feuillatte",
       "merchantDescription": "Le Champagne Réserve Exclusive Brut Rosé - Nicolas Feuillatte naît dans la région élégante et renommée de la Champagne, une terre fertile et riche d'histoire vitivinicole. Ce rosé est le fruit d'un assemblage savant de cépages traditionnels tels que le Pinot Noir, le Pinot Meunier et une touche de Chardonnay, qui confèrent au vin un équilibre parfait entre fraîcheur et structure.\nLa méthode classique de refermentation en bouteille sublime les bulles fines et persistantes, qui accompagnent un bouquet raffiné où se distinguent des notes de fruits rouges – fraises des bois et cerises – harmonisées par de délicates nuances florales. En bouche, il s’exprime avec une acidité plaisante et une trame crémeuse, offrant une finale élégante et vibrante.\nIdéal avec des plats à base de crustacés ou de viandes blanches légères, ce Champagne représente un choix sûr pour ceux qui désirent une expérience gustative raffinée et captivante, symbole d’un terroir unique et d’un art pétillant intemporel.",
-      "checkedAt": "2026-07-29T12:35:46.053Z"
+      "checkedAt": "2026-08-02T19:22:59.090Z"
     },
     {
       "id": "shopify_FR_47895552426322",
@@ -953,6 +979,7 @@
         "pinot-nero",
         "prezzo-cartone",
         "sped-2-5",
+        "tavola-ferragosto",
         "vini",
         "vini-francia",
         "vini-rosati"
@@ -964,7 +991,7 @@
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895552426322&productname=Champagne+Simplexit%C3%A9+Ros%C3%A9+Brut&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-simplexite-rose-brut%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-simplexite-rose-brut",
       "merchantDescription": "Lo Champagne Simplexité Rosé Brut è un elegante esempio della maestria enologica della cantina Simplexité. Questo prestigioso rosé è ottenuto da un'attenta selezione dei migliori vigneti della regione della Champagne, utilizzando principalmente uve Pinot Noir, il che conferisce al vino il suo caratteristico colore rosa tenue e il profilo aromatico complesso.\nAll'olfatto, si distingue per i suoi accattivanti aromi di frutti rossi freschi, come fragola, lampone e ribes rosso, oltre a delicate note di agrumi e di fiori bianchi. Al palato, lo Champagne Simplexité Rosé Brut sorprende per la sua vivacità e freschezza, con una spuma fine e persistente che esalta la complessità degli aromi fruttati. La struttura è equilibrata, con un'acidità ben integrata che conferisce al vino una straordinaria bevibilità e un finale lungo e armonioso.\nIdeale come aperitivo, questo Champagne rosé si abbina splendidamente con piatti a base di pesce, frutti di mare e carni bianche, nonché con dessert leggeri a base di frutta. Perfetto per occasioni speciali e momenti di festa, il Champagne Simplexité Rosé Brut rappresenta un'esperienza sensoriale indimenticabile per gli amanti del vino più esigenti.",
-      "checkedAt": "2026-07-29T12:35:46.053Z"
+      "checkedAt": "2026-08-02T19:22:59.090Z"
     },
     {
       "id": "shopify_FR_47895593419090",
@@ -988,6 +1015,7 @@
         "mondo",
         "prezzo-cartone",
         "sped-2-5",
+        "tavola-ferragosto",
         "vini",
         "vini-francia"
       ],
@@ -998,7 +1026,7 @@
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895593419090&productname=Champagne+Blanc+de+Blancs+Cuv%C3%A9e+de+R%C3%A9serve+Brut+Grand+Cru+-+Bonnet+Gilmert&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-blanc-de-blancs-cuvee-de-reserve-brut-grand-cru-bonnet-gilmert%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-cuvee-de-reserve-brut-grand-cru-bonnet-gilmert",
       "merchantDescription": "Il Champagne Blanc de Blancs Cuvée de Réserve Brut Grand Cru della storica cantina Bonnet Gilmert rappresenta un'eccellenza nel mondo degli champagne. Prodotto esclusivamente con uve Chardonnay provenienti da vigneti classificati come Grand Cru, questo champagne si distingue per la sua purezza e raffinatezza. Alla vista, si presenta con un colore giallo paglierino brillante con riflessi verdi, indicativo della sua freschezza e giovinezza.\nL'aroma è intenso e complesso, con note dominanti di fiori bianchi, mela verde, agrumi e un leggero sentore di nocciola, caratteristiche tipiche delle migliori espressioni di Chardonnay della regione. Oltre a queste, si possono percepire sfumature di crosta di pane e brioche, conferite dal lungo affinamento sui lieviti.\nAl palato, il Blanc de Blancs Cuvée de Réserve Brut Grand Cru si rivela fresco e vivace, con una fine effervescenza che solletica elegantemente il palato. La mineralità del terroir Grand Cru emerge chiaramente, dando struttura e profondità al vino. La sapidità ben bilanciata e il finale lungo e persistente rendono questo champagne un accompagnamento ideale per piatti di pesce, frutti di mare e ostriche.\nBonnet Gilmert, con la sua lunga tradizione vitivinicola e attenzione ai dettagli, ha creato un champagne che incarna l'eleganza e la raffinatezza di questa rinomata regione vinicola, rendendolo una scelta eccellente sia per celebrazioni che per momenti di piacere intimo.",
-      "checkedAt": "2026-07-29T12:35:46.053Z"
+      "checkedAt": "2026-08-02T19:22:59.090Z"
     },
     {
       "id": "shopify_FR_47245069091154",
@@ -1022,6 +1050,7 @@
         "happy-hour",
         "mondo",
         "speciale-bollicine",
+        "tavola-ferragosto",
         "vini",
         "vini-francia"
       ],
@@ -1032,7 +1061,7 @@
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47245069091154&productname=Champagne+Terre+cuvee+assemblage+Brut+-+Solemme&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-terre-cuvee-assemblage-brut-solemme%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-terre-cuvee-assemblage-brut-solemme",
       "merchantDescription": "Produit dans la prestigieuse région de Champagne, en France, le Champagne Terre cuvée assemblage Brut de Solemme est une sublime expression du terroir d'où il provient. Ce vin effervescent se distingue par sa complexité raffinée et son élégance, résultat d'un processus de vinification soigné.\nLe blend utilisé pour ce Champagne est classique, combinant Pinot Noir, Chardonnay et Pinot Meunier, qui contribuent à créer un équilibre parfait entre corps et fraîcheur. La cuvée passe par un processus méticuleux de fermentation en bouteille selon la méthode traditionnelle champenoise, qui comprend une période de maturation sur les levures pendant au moins trois ans. Ce procédé confère au vin des nuances de pain grillé et de levure, enrichissant sa complexité.\nÀ l'examen visuel, le Terre cuvée assemblage Brut présente une couleur jaune paille brillante et un perlage très fin et persistant, signe indiscutable de haute qualité. Au nez, des notes délicates d'agrumes, de pomme verte et de fleurs blanches se dévoilent, avec un voile de minéralité qui rappelle la craie typique du terroir champenois.\nEn bouche, il est vibrant et frais, avec une belle acidité qui équilibre la structure du vin. Les arômes de fruits frais et les notes subtiles de brioche se mêlent dans une finale propre et persistante, qui invite à une autre gorgée.\nLe Champagne Terre cuvée assemblage Brut de Solemme est idéal en apéritif, mais possède la structure pour accompagner également des plats raffinés comme des huîtres, du tartare de saumon ou des entrées à base de fruits de mer. Un véritable joyau pour célébrer des moments spéciaux ou pour rendre unique le début d'une soirée élégante.",
-      "checkedAt": "2026-07-29T12:35:46.053Z"
+      "checkedAt": "2026-08-02T19:22:59.090Z"
     },
     {
       "id": "shopify_FR_47245072531794",
@@ -1058,6 +1087,7 @@
         "happy-hour",
         "mondo",
         "speciale-bollicine",
+        "tavola-ferragosto",
         "vini",
         "vini-francia"
       ],
@@ -1068,7 +1098,7 @@
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47245072531794&productname=Champagne+White+Pearl+Blanc+de+Blancs+Extra+Brut+-+Deheurles&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-white-pearl-blanc-de-blancs-extra-brut-deheurles%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-white-pearl-blanc-de-blancs-extra-brut-deheurles",
       "merchantDescription": "Provenant des vignobles renommés de la région Champagne en France, le Champagne White Pearl Blanc de Blancs Extra Brut de la cave Deheurles est une expression élégante et sophistiquée du cépage Chardonnay dont il est rigoureusement produit. Situé sur des sols calcaires qui accentuent la fraîcheur et la minéralité de ce cépage, Deheurles offre un champagne qui reflète l'essence de la pureté et de la finesse.\nCe champagne se distingue par son processus de production soigneux et méticuleux. La vendange est manuelle et sélectionnée, suivie d'une fermentation lente et d'une longue maturation sur lies en bouteille, qui se conclut par un dosage très bas, le classant comme Extra Brut. Cette attention aux détails confère au Champagne White Pearl une complexité aromatique rare et une élégance intemporelle.\nDu point de vue organoleptique, la couleur est un jaune doré pâle avec des reflets lumineux, annonçant une perlage fine et persistante qui caresse le palais. Au nez, des notes vibrantes d'agrumes, de pomme verte et de fleurs blanches émergent, suivies de nuances d'amande et de brioche, fruits de la longue maturation. En bouche, le vin est vif et frais, avec une structure équilibrée et une finale longue et intensément minérale qui laisse place à des souvenirs de croûte de pain et de sel marin.\nExcellent comme apéritif, le Champagne White Pearl Blanc de Blancs Extra Brut de Deheurles est également un compagnon idéal pour des plats à base de poisson, de fruits de mer ou même avec une sélection de fromages délicats. Ce champagne n'est pas seulement une boisson, mais une célébration de moments spéciaux, qui promet d'élever toute occasion avec sa distinction élégante et sa raffinerie.",
-      "checkedAt": "2026-07-29T12:35:46.053Z"
+      "checkedAt": "2026-08-02T19:22:59.090Z"
     },
     {
       "id": "shopify_FR_53712154100050",
@@ -1098,6 +1128,7 @@
         "pinot-nero",
         "premier-cru",
         "speciale-bollicine",
+        "tavola-ferragosto",
         "vini"
       ],
       "price": 48.59,
@@ -1107,7 +1138,7 @@
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_53712154100050&productname=Champagne+Grande+Reserve+Premier+Cru+Brut+-+Vilmart&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-grande-reserve-premier-cru-brut-vilmart%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-grande-reserve-premier-cru-brut-vilmart",
       "merchantDescription": "Lumineux et composé, avec un pérlage fin qui soutient un profil parfumé sans ostentation. Au nez, on perçoit des notes de fruits blancs mûrs et d'agrumes frais, accompagnées de nuances de pain tout juste cuit et d'une touche florale discrète. L'impression est d'équilibre, avec une acidité vive mais bien intégrée dans une structure qui tend vers la douceur ; la dégustation est fluide, précise et non excessivement opulente.\nEn bouche, il confirme la promesse olfactive, montrant une onctuosité au palais et une ligne sapide qui prolonge la gorgée avec une agréable persistance. Le caractère est raffiné, adapté aussi bien comme apéritif de classe que pour accompagner des plats de la mer délicats, des crustacés ou des fromages frais où la fraîcheur et la finesse aromatique peuvent s'exprimer. Il est conseillé de le servir bien frais ; c'est un choix de bonne polyvalence pour qui recherche un Champagne élégant et mesuré, capable d'accompagner des moments conviviaux sans s'imposer.",
-      "checkedAt": "2026-07-29T12:35:46.053Z"
+      "checkedAt": "2026-08-02T19:22:59.090Z"
     },
     {
       "id": "shopify_FR_43760854302937",
@@ -1137,6 +1168,7 @@
         "pinot-meunier",
         "pinot-nero",
         "sciabolare",
+        "tavola-ferragosto",
         "vini",
         "vini-francia"
       ],
@@ -1147,7 +1179,7 @@
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_43760854302937&productname=Champagne+AOC+-+Brut+Premier+Cru+-+Cattier&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-aoc-brut-premier-cru-cattier%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-aoc-brut-premier-cru-cattier",
       "merchantDescription": "Il Champagne AOC Brut Premier Cru di Cattier è un'espressione sofisticata e raffinata del terroir della Champagne. Questa cuvée, realizzata con le uve dei vigneti Premier Cru, rappresenta l'eccellenza della storica cantina Cattier, nota per la sua dedizione alla qualità e alla tradizione.\nIl Brut Premier Cru si presenta con un colore giallo dorato brillante e un perlage fine e persistente. Al naso, gli aromi sono complessi e invitanti, con note di frutta bianca e gialla, come mela e pera, accompagnate da sentori di fiori bianchi e una delicata fragranza di crosta di pane e brioche, dovuta all'affinamento sui lieviti.\nAl palato, questo Champagne si distingue per la sua freschezza e vivacità. La struttura è elegante, sostenuta da una piacevole acidità che ne esalta la beva. I sapori fruttati ritornano, arricchiti da una sottile nota minerale e da una leggera cremosità che dona equilibrio e armonia al sorso. Il finale è lungo, pulito e con una persistenza aromatica che lascia un ricordo piacevolmente fresco.\nNonostante l'etichetta danneggiata, che non pregiudica in alcun modo la qualità del prodotto, questo Champagne è perfetto per celebrare occasioni speciali o per accompagnare piatti raffinati di pesce, crostacei e antipasti delicati. Un'opportunità da non perdere per degustare un'eccellenza della Champagne a un prezzo altamente competitivo.",
-      "checkedAt": "2026-07-29T12:35:46.053Z"
+      "checkedAt": "2026-08-02T19:22:59.090Z"
     },
     {
       "id": "shopify_FR_42029373063385",
@@ -1179,6 +1211,7 @@
         "rose",
         "sciabolare",
         "speciale-bollicine",
+        "tavola-ferragosto",
         "val-",
         "vini",
         "vini-francia",
@@ -1191,7 +1224,7 @@
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_42029373063385&productname=Champagne+Brut+Ros%C3%A8+-+Grand+Cru+Grand+Ros%C3%A9+-+Paul+Bara&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fpaul-bara-champagne-brut-grand-cru-grand-rose%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/paul-bara-champagne-brut-grand-cru-grand-rose",
       "merchantDescription": "L'envoûtant Champagne Brut Rosé Grand Cru \"Grand Rosé\" de Paul Bara est une véritable expression d'élégance et de raffinement. Ce vin champagne, produit exclusivement dans la prestigieuse région de Champagne, France, par la maison historique Paul Bara, est un brillant exemple du savoir-faire et de la tradition viticole de cette zone réputée.\nLe \"Grand Rosé\" se dévoile avec une couleur rose éclatante et séduisante, exhalant un parfum intensément aromatique qui évoque des notes de petits fruits rouges frais, tels que la fraise et la framboise, enrichies par une délicate nuance de croûte de pain et de levures, résultat de la longue maturation sur levures en bouteille. La complexité olfactive est complétée par des nuances florales qui rendent le bouquet extrêmement invitant et sophistiqué.\nEn bouche, ce Champagne Brut Rosé montre un équilibre impeccable entre une acidité croquante et une structure généreuse, qui se traduit par une sensation de fraîcheur vive et persistante. Les bulles sont fines et persistantes, tissant une texture élégante qui emplit le palais. L'arrière-goût est long et caractérisé par une agréable persistance aromatique qui rappelle les fruits rouges et une légère touche minérale.\nParfait en apéritif, le \"Grand Rosé\" de Paul Bara s'associe également à merveille avec des plats de poisson, des sushis et des carpaccios de viande. Sa versatilité le rend également idéal pour accompagner un dîner romantique ou un moment spécial à célébrer.\nChaque gorgée de ce Champagne Brut Rosé est une célébration de la tradition champenoise, en faisant un excellent choix pour ceux qui recherchent un vin de prestige pour des occasions mémorables. Un hommage à la passion et au dévouement que la famille Bara met dans la création de vins d'une qualité exceptionnelle.",
-      "checkedAt": "2026-07-29T12:35:46.053Z"
+      "checkedAt": "2026-08-02T19:22:59.090Z"
     },
     {
       "id": "shopify_FR_47895587815762",
@@ -1218,6 +1251,7 @@
         "pinot-noir",
         "prezzo-cartone",
         "sped-2-5",
+        "tavola-ferragosto",
         "vini",
         "vini-francia"
       ],
@@ -1228,7 +1262,7 @@
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895587815762&productname=Champagne+%C3%89clat+d%E2%80%99%C3%89toiles+Ros%C3%A9+Brut+Grand+Cru+Astucciato+-+Lamiable+2014&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-eclat-d-etoiles-rose-brut-grand-cru-lamiable%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-eclat-d-etoiles-rose-brut-grand-cru-lamiable",
       "merchantDescription": "Elegante e raffinato, il Champagne Eclat d’Étoiles Rosé Brut Grand Cru di Lamiable rappresenta una perfetta sinfonia di gusto e tradizione. Questo rosé è prodotto esclusivamente con uve Grand Cru, provenienti dai migliori vigneti della regione della Champagne, sinonimo di eccellenza e qualità superiore.\nIl colore rosa tenue con riflessi ramati di questo Champagne cattura immediatamente l’attenzione, riflettendo la cura e l’artigianalità poste nella sua elaborazione. Al naso si presenta con un bouquet complesso e seducente, che spazia da eleganti note di frutti rossi come fragoline e lamponi, a delicate sfumature di fiori bianchi e lievi accenni di pasticceria e crosta di pane, grazie alla lunga maturazione sui lieviti.\nIn bocca, l'Eclat d’Étoiles Rosé Brut Grand Cru avvolge il palato con una struttura armoniosa e cremosa, bilanciata da una freschezza vibrante e una mineralità incisiva. Le bollicine sono fini e persistenti, delineando una texture setosa e invitante che esalta ulteriormente le note fruttate e floreali percepite al naso.\nPerfetto da gustare in occasione di momenti speciali, questo Champagne si abbina meravigliosamente a piatti di pesce crudo, tartare di salmone e carpacci di tonno, ma anche con dessert a base di frutti rossi. Lamiable ha creato un capolavoro enologico che rappresenta un'esperienza di degustazione unica e memorabile.",
-      "checkedAt": "2026-07-29T12:35:46.053Z"
+      "checkedAt": "2026-08-02T19:22:59.090Z"
     },
     {
       "id": "shopify_FR_47245071843666",
@@ -1254,6 +1288,7 @@
         "mondo",
         "over-50",
         "speciale-bollicine",
+        "tavola-ferragosto",
         "vini",
         "vini-francia"
       ],
@@ -1264,7 +1299,7 @@
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47245071843666&productname=Champagne+Reserve+Blanc+de+Blancs+Grand+Cru+Brut+-+Guy+Charlemagne&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-reserve-blanc-de-blancs-grand-cru-brut-guy-charlemagne%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-reserve-blanc-de-blancs-grand-cru-brut-guy-charlemagne",
       "merchantDescription": "Le Champagne Reserve Blanc de Blancs Grand Cru Brut de Guy Charlemagne est une expression raffinée et distinctive du style et du terroir de la région Champagne, en France. Produit exclusivement avec des raisins Chardonnay sélectionnés de vignobles classés Grand Cru - les plus prestigieux selon la classification de la région - ce champagne se distingue par sa pureté et son élégance.\nLa vinification suit des méthodes traditionnelles, avec une fermentation initiale suivie d'une longue maturation sur lies en bouteille qui contribue à développer la complexité et la finesse des bulles. La couleur est un délicat jaune paille avec des reflets brillants, symbole de fraîcheur et de vitalité.\nAu nez, le Reserve Blanc de Blancs offre un bouquet intrigant d'arômes, avec des notes de fleurs blanches, d’agrumes mûrs, de pomme verte et une veine minérale subtile qui reflète le sol riche en calcaire d'où proviennent les raisins. Ces arômes s'intègrent parfaitement avec des nuances de pain grillé et de levure, donnant au champagne une richesse aromatique fascinante.\nEn bouche, l'acidité vivace est magnifiquement équilibrée par une structure pleine et une crémosité séduisante, avec une effervescence très fine qui persiste dans une finition longue et raffinée. Ce Blanc de Blancs est parfait en apéritif mais peut aussi magnifiquement accompagner une variété de plats, de la cuisine de mer à des plats plus élaborés à base de volailles ou des plats végétariens délicats.\nUn véritable joyau pour les amateurs de vins effervescents haut de gamme, le Guy Charlemagne Reserve Blanc de Blancs Grand Cru Brut est un exemple emblématique du luxe et de la tradition champenoise, promettant une expérience dégustative inoubliable. Idéalement, servir à une température entre 8 et 10°C pour en exalter au mieux les qualités.",
-      "checkedAt": "2026-07-29T12:35:46.053Z"
+      "checkedAt": "2026-08-02T19:22:59.090Z"
     },
     {
       "id": "shopify_FR_47895579525458",
@@ -1288,6 +1323,7 @@
         "over-50",
         "prezzo-cartone",
         "sped-2-5",
+        "tavola-ferragosto",
         "vini",
         "vini-francia"
       ],
@@ -1298,7 +1334,7 @@
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895579525458&productname=Champagne+Brut+Nature+1er+Cru+-+Sadi+Malot&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-brut-nature-1er-cru-sadi-malot%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-brut-nature-1er-cru-sadi-malot",
       "merchantDescription": "Un vero gioiello enologico, lo Champagne Brut Nature 1er Cru di Sadi Malot incarna la purezza e l'eleganza che ci si aspetta da uno Champagne di primo livello. Prodotto esclusivamente con uve provenienti da vigneti 1er Cru, questo Champagne è non dosato, cioè senza aggiunta di zuccheri, il che lo rende particolarmente asciutto e sincero nel suo sapore.\nAll'occhio, si presenta di un brillante colore dorato, con una fine e persistente effervescenza che cattura immediatamente l'attenzione. Al naso, esplode in un bouquet sfaccettato di aromi: note di agrumi freschi, mela verde e tocchi di frutta secca, unite a sottili accenti floreali di biancospino e zagara.\nIn bocca, il Brut Nature 1er Cru di Sadi Malot rivela tutta la sua complessità e raffinatezza. La vivace acidità e la mineralità caratteristica dei terreni gessosi della regione di Champagne emergono con forza, accompagnate da sapori di limone, pompelmo e una delicata salinità che lo rendono perfetto per gli amanti degli Champagne più secchi e diretti.\nIl finale è lungo e pulito, con un eco di mandorle tostate e un retrogusto sapido che invita ad un altro sorso. Ideale come aperitivo, questo Champagne accompagna splendidamente anche frutti di mare, ostriche e piatti di pesce crudo, esaltando ogni boccone con la sua freschezza e profondità.",
-      "checkedAt": "2026-07-29T12:35:46.053Z"
+      "checkedAt": "2026-08-02T19:22:59.090Z"
     },
     {
       "id": "shopify_FR_47895586210130",
@@ -1323,6 +1359,7 @@
         "pinot-noir",
         "prezzo-cartone",
         "sped-2-5",
+        "tavola-ferragosto",
         "vini",
         "vini-francia"
       ],
@@ -1333,7 +1370,7 @@
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895586210130&productname=Champagne+Ros%C3%A9+de+Saign%C3%A9e+Friandise+Demi-Sec+-+Jean+Vesselle&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-rose-de-saignee-friandise-demi-sec-jean-vesselle%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-rose-de-saignee-friandise-demi-sec-jean-vesselle",
       "merchantDescription": "Champagne Rosé de Saignée Friandise Demi-Sec di Jean Vesselle è un autentico capolavoro enologico che incanta per il suo carattere unico e complesso. Questo champagne rosé viene prodotto con il metodo tradizionale \"saignée\", che prevede una macerazione delle bucce a contatto con il mosto per un breve periodo, donando al vino un colore rosa intenso e una maggiore struttura.\nIl profumo è affascinante e ricco, con note di frutti rossi maturi come fragole, lamponi e ciliegie, accompagnate da sottili sentori di petali di rosa e tocchi di spezie dolci. In bocca, il Friandise Demi-Sec si distingue per la sua dolcezza equilibrata, con una effervescenza fine e persistente che accarezza il palato. La sua morbidezza e rotondità sono perfettamente bilanciate da una piacevole freschezza, rendendo ogni sorso armonioso e avvolgente.\nQuesto champagne è ideale per chi cerca un vino versatile e raffinato, perfetto da gustare sia come aperitivo che in abbinamento a una varietà di dessert, come torte alla frutta o dolci alla crema. L'esperienza sensoriale offerta dal Rosé de Saignée Friandise Demi-Sec di Jean Vesselle è indimenticabile, un invito a rendere ogni momento speciale e indimenticabile.",
-      "checkedAt": "2026-07-29T12:35:46.053Z"
+      "checkedAt": "2026-08-02T19:22:59.090Z"
     },
     {
       "id": "shopify_FR_43760860201177",
@@ -1365,6 +1402,7 @@
         "pinot-nero",
         "sciabolare",
         "sushi",
+        "tavola-ferragosto",
         "vini",
         "vini-francia"
       ],
@@ -1375,7 +1413,7 @@
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_43760860201177&productname=Champagne+AOC+-+Cuv%C3%A9e+Saint+Petersbourg+-+Veuve+Clicquot&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-aoc-cuvee-saint-petersbourg-veuve-clicquot%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-aoc-cuvee-saint-petersbourg-veuve-clicquot",
       "merchantDescription": "Le Champagne AOC - Cuvée Saint Petersbourg de Veuve Clicquot est une expression somptueuse de l'héritage et de l'artisanat de l'emblématique maison de Reims. Cette cuvée porte le nom de la fascinante ville de Saint-Pétersbourg, reflétant le lien historique entre cette métropole russe et la maison Veuve Clicquot, qui a commencé à exporter ses champagnes en Russie au début du XIXe siècle.\nLa Cuvée Saint Petersbourg est principalement composée de raisins Pinot Noir, ce qui lui confère une structure robuste et des arômes intenses, tandis que la présence de Chardonnay arrondit le bouquet avec des notes élégantes de fruits à chair blanche et des nuances florales subtiles. L'ajout d'un petit pourcentage de Pinot Meunier enrichit encore le profil aromatique avec des accents de fruits rouges frais.\nVisuellement, il se présente avec une couleur dorée brillante et une effervescence fine et persistante, signe d'une maturation méticuleuse. Au nez, des sensations complexes et séductrices de fruits mûrs, d'épices douces et de légers accents de brioche toastée émergent, confirmant le raffinement qui caractérise les produits de cette maison historique.\nEn bouche, le Champagne AOC - Cuvée Saint Petersbourg impressionne par sa crémeux, soutenu par une acidité vibrante qui prolonge la finale, le rendant agréablement persistant. C’est un champagne qui se prête magnifiquement aux occasions spéciales, parfait comme apéritif ou en accompagnement de plats élégants comme des huîtres, un carpaccio de saumon ou de délicats soufflés au fromage.\nCe champagne ne raconte pas seulement l’histoire d’un lien intrinsèque avec la Russie tsariste, mais il témoigne également de la recherche continue de l'excellence et de l'innovation de Veuve Clicquot. Une addition prestigieuse pour tout collectionneur ou amateur de champagnes haut de gamme.",
-      "checkedAt": "2026-07-29T12:35:46.053Z"
+      "checkedAt": "2026-08-02T19:22:59.090Z"
     },
     {
       "id": "shopify_FR_50742399205714",
@@ -1400,6 +1438,7 @@
         "pinot-nero",
         "rin-",
         "sped-2-5",
+        "tavola-ferragosto",
         "vini"
       ],
       "price": 62.73,
@@ -1409,7 +1448,7 @@
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50742399205714&productname=Champagne+Brut+-+Signature+-+Astucciato+-+Jacquart&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-brut-signature-astucciato-jacquart%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-brut-signature-astucciato-jacquart",
       "merchantDescription": "Élégant et mesuré, ce Champagne Brut Signature de Jacquart se présente avec un perlage fin et une belle luminosité dans le verre. Au nez s'ouvrent des sensations de pomme verte et d'agrumes mûrs, accompagnées de légères notes de croûte de pain et de fleurs blanches ; la trame est tendue et vibrante, avec une fraîche acidité qui soutient la gorgée sans l'alourdir. Le profil est équilibré, de corps moyen et de sapidité discrète, avec une persistance plaisante qui invite à un second verre.\nEn bouche, il montre une rondeur maîtrisée et une pureté gustative qui le rend versatile : c'est un excellent apéritif mais il accompagne aussi des fruits de mer, du poisson grillé et des plats à base de crustacés ; il fonctionne également bien avec une cuisine légèrement épicée ou des fritures délicates. Servir bien frais, autour de 8–10 °C, pour en apprécier la fraîcheur et le perlage. Le coffret ajoute une touche d'élégance, faisant de ce Champagne un choix pratique pour un cadeau ou une célébration informelle.",
-      "checkedAt": "2026-07-29T12:35:46.053Z"
+      "checkedAt": "2026-08-02T19:22:59.090Z"
     },
     {
       "id": "shopify_FR_47895594041682",
@@ -1433,6 +1472,7 @@
         "over-50",
         "prezzo-cartone",
         "sped-2-5",
+        "tavola-ferragosto",
         "vini",
         "vini-francia"
       ],
@@ -1443,7 +1483,7 @@
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895594041682&productname=Champagne+Blanc+de+Blancs+Murmure+Nature+1er+Cru+-+J.L.+Vergnon&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-blanc-de-blancs-murmure-nature-1er-cru-j-l-vergon%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-murmure-nature-1er-cru-j-l-vergon",
       "merchantDescription": "Il Champagne Blanc de Blancs Murmure Nature 1er Cru di J.L. Vergnon è una vera espressione di raffinatezza e precisione. Prodotto esclusivamente con uve Chardonnay provenienti da vigneti Premier Cru, questo champagne si distingue per la sua purezza e la sua eleganza. La vinificazione avviene senza l'aggiunta di zuccheri, creando uno champagne secco e autentico, che esalta le caratteristiche tipiche del terroir di origine.\nAll'olfatto, il Murmure Nature si apre con un bouquet raffinato di note floreali, agrumi freschi e sentori minerali. Al palato, la sua finezza e freschezza sono perfettamente bilanciate da una vivace acidità e una texture cremosa. Le bollicine sono fini e persistenti, conferendo una piacevole sensazione tattile. I sapori di mela verde, lime e una leggera sfumatura di mandorla tostata si fondono armoniosamente, portando a un finale lungo e pulito con un leggero accenno di sapidità minerale.\nQuesto champagne è ideale per accompagnare piatti a base di pesce, frutti di mare e formaggi freschi, ma si presta anche per essere gustato da solo, in momenti di pura contemplazione. La cura e l'attenzione per i dettagli di J.L. Vergnon garantiscono una qualità costante e una degustazione memorabile.",
-      "checkedAt": "2026-07-29T12:35:46.053Z"
+      "checkedAt": "2026-08-02T19:22:59.090Z"
     },
     {
       "id": "shopify_FR_47895596826962",
@@ -1466,6 +1506,7 @@
         "pinot-meunier",
         "prezzo-cartone",
         "sped-2-5",
+        "tavola-ferragosto",
         "vini",
         "vini-francia"
       ],
@@ -1476,7 +1517,7 @@
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895596826962&productname=Champagne+Nos+Pas+Dans+l%E2%80%99Argile+Nature+-+Marie+Copinet&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-nos-pas-dans-l-argile-nature-marie-copinet%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-nos-pas-dans-l-argile-nature-marie-copinet",
       "merchantDescription": "Il Champagne Nos Pas Dans l’Argile Nature della Maison Marie Copinet rappresenta una straordinaria espressione della terra di origine, grazie alla sua produzione attenta e rispettosa dell’ambiente. Questo champagne Nature, non dosato, permette di apprezzare pienamente la purezza e l’autenticità del terroir argilloso.\nIl profilo aromatico è complesso e raffinato, con note di agrumi freschi come il limone e il pompelmo, accompagnate da sfumature di mela verde e fiori bianchi. Al palato, si distingue per la sua freschezza vibrante e la sua finezza, con una bollicina persistente e delicata che accarezza il palato. La mineralità e la sapidità sono ben pronunciate, regalando una sensazione di equilibrio e armonia.\nIl Nos Pas Dans l’Argile Nature si presenta con una veste giallo paglierino brillante, rifinita da riflessi dorati che esprimono eleganza e luminosità. Ideale come aperitivo, questo champagne si abbina magnificamente a carni bianche, crostacei e frutti di mare, esaltando i sapori senza sovrastarli.\nL’attenzione ai dettagli nella vinificazione e la filosofia orientata al minimo intervento fanno di questo champagne una scelta eccellente per gli amanti dei prodotti autentici e raffinati. Una bottiglia che celebra la purezza della natura e la maestria della cantina Marie Copinet.",
-      "checkedAt": "2026-07-29T12:35:46.053Z"
+      "checkedAt": "2026-08-02T19:22:59.090Z"
     },
     {
       "id": "shopify_FR_47895590011218",
@@ -1500,6 +1541,7 @@
         "over-50",
         "prezzo-cartone",
         "sped-2-5",
+        "tavola-ferragosto",
         "vini",
         "vini-francia"
       ],
@@ -1510,7 +1552,7 @@
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895590011218&productname=Champagne+Blanc+de+Blancs+Zero+Grand+Cru+-+Vazart-Coquart&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-blanc-de-blancs-zero-grand-cru-vazarat-coquart%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-zero-grand-cru-vazarat-coquart",
       "merchantDescription": "Il Champagne Blanc de Blancs Zero Grand Cru di Vazart-Coquart è un vero capolavoro dell'arte spumantistica. Proveniente esclusivamente dai migliori vigneti Grand Cru della regione della Champagne, questo Blanc de Blancs è ottenuto unicamente da uve Chardonnay. La scelta del dosaggio zero esalta la purezza e la freschezza naturale del vino, rivelando un'eleganza cristallina accompagnata da una complessità notevole.\nNel calice, si presenta con un colore giallo paglierino brillante e un perlage estremamente fine e persistente. Al naso, emana raffinate fragranze di agrumi freschi, fiori bianchi, con sottili note di frutta secca e mandorla tostata. Il palato, invece, si apre con una vibrante acidità che bilancia perfettamente la struttura delicata del vino. Sentori di mela verde, limone e lievi accenni minerali danzano sul palato, offrendo una sensazione di persistente freschezza.\nLa sua eleganza e l'equilibrio rigoroso lo rendono un eccellente accompagnamento per piatti a base di pesce, crostacei e ostriche, ma è perfetto anche come aperitivo per occasioni speciali. Il Champagne Blanc de Blancs Zero Grand Cru di Vazart-Coquart è una pura espressione di raffinatezza e artigianalità, rappresentando il meglio della tradizione Champenoise.",
-      "checkedAt": "2026-07-29T12:35:46.053Z"
+      "checkedAt": "2026-08-02T19:22:59.090Z"
     },
     {
       "id": "shopify_FR_47895579165010",
@@ -1536,6 +1578,7 @@
         "pinot-noir",
         "prezzo-cartone",
         "sped-2-5",
+        "tavola-ferragosto",
         "vini",
         "vini-francia"
       ],
@@ -1546,7 +1589,7 @@
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895579165010&productname=Champagne+L%E2%80%99Ineffable+Extra+Brut+Grand+Cru+-+Mouzon+Leroux+2017&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-l-ineffable-extra-brut-grand-cru-mouzon-leroux%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-l-ineffable-extra-brut-grand-cru-mouzon-leroux",
       "merchantDescription": "Lo Champagne L’Ineffable Extra Brut Grand Cru di Mouzon Leroux è un'autentica espressione dell'eccellenza enologica della maison. Questo Champagne, elaborato esclusivamente con uve provenienti da vigneti classificati Grand Cru, offre un'esperienza sensoriale di grande raffinatezza. Realizzato con una combinazione di uve Chardonnay e Pinot Nero, L’Ineffable Extra Brut presenta un perlage fine e persistente che indica la cura meticolosa riservata alla sua elaborazione.\nAl naso si apre con un bouquet complesso e seducente, dove sentori di agrumi, fiori bianchi e note minerali si fondono armoniosamente. Al palato, rivela una struttura elegante e ben bilanciata, con una vivace freschezza che esalta i componenti fruttati e floreali, accompagnata da sfumature di mandorla tostata e brioche grazie all'affinamento sui lieviti. Il finale lungo e raffinato lascia un retrogusto pulito, che invoglia a un ulteriore assaggio.\nPerfetto per chi apprezza i Champagne di grande carattere, L’Ineffable Extra Brut Grand Cru di Mouzon Leroux si presta magnificamente come aperitivo ma anche in abbinamento a piatti di pesce pregiati, crostacei e ostriche, esaltando al meglio le note marine e delicate delle pietanze. Questo Champagne è un'ottima scelta per le occasioni speciali, o per regalarsi un momento di pura eleganza.",
-      "checkedAt": "2026-07-29T12:35:46.053Z"
+      "checkedAt": "2026-08-02T19:22:59.090Z"
     },
     {
       "id": "shopify_FR_47895561797970",
@@ -1572,6 +1615,7 @@
         "over-50",
         "prezzo-cartone",
         "sped-2-5",
+        "tavola-ferragosto",
         "vini",
         "vini-francia"
       ],
@@ -1582,7 +1626,7 @@
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895561797970&productname=Champagne+Les+Grandes+Cray%C3%A8res+Extra+Brut+-+Laherte+Fr%C3%A8res+2021&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-les-grandes-crayeres-extra-brut-laherte-freres%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-les-grandes-crayeres-extra-brut-laherte-freres",
       "merchantDescription": "Lo Champagne Les Grandes Crayères Extra Brut di Laherte Frères è un prestigioso esempio della maestria enologica della Maison Laherte, situata nella rinomata regione della Champagne. Questo champagne è un connubio di eleganza e complessità, perfetto per gli intenditori più raffinati.\nProdotto principalmente da uve Chardonnay e Pinot Noir, Les Grandes Crayères offre un bouquet aromatico ricco e variegato, con note floreali, agrumate e di frutta secca che si intrecciano armoniosamente. Al naso si percepiscono subito delicate sfumature di fiori bianchi, limone e mela verde, seguite da sentori più evoluti di mandorla tostata e brioche.\nAl palato, questo champagne si distingue per la sua freschezza e mineralità, caratteristiche tipiche dei terreni calcarei da cui provengono le uve. La bollicina fine e persistente aggiunge un ulteriore tocco di raffinatezza, mentre la struttura ben equilibrata e l'acidità vivace conducono a un finale pulito e prolungato.\nLaherte Frères ha scelto un dosaggio Extra Brut per esaltare la purezza e la naturalezza delle sue uve, riducendo al minimo l'aggiunta di zuccheri. Questo rende Les Grandes Crayères un vino versatile, ideale tanto per un aperitivo chic quanto per accompagnare piatti a base di pesce, crostacei o formaggi freschi.\nLes Grandes Crayères Extra Brut è una scelta eccellente per chi cerca uno champagne che esprima l'essenza del terroir champenoise con eleganza e precisione. Perfetto per celebrare momenti speciali con un tocco di classe in più.",
-      "checkedAt": "2026-07-29T12:35:46.053Z"
+      "checkedAt": "2026-08-02T19:22:59.090Z"
     },
     {
       "id": "shopify_FR_42150252085465",
@@ -1611,6 +1655,7 @@
         "over-9",
         "par-",
         "sciabolare",
+        "tavola-ferragosto",
         "vini",
         "vini-francia"
       ],
@@ -1621,7 +1666,7 @@
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_42150252085465&productname=Champagne+Quattuor+AOC+-+Drappier&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-quattuor-aoc-drappier%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-quattuor-aoc-drappier",
       "merchantDescription": "L'expression la plus raffinée de l'excellence, le \"Champagne Quattuor AOC - Drappier\", se distingue dans le paysage des vins effervescents par sa composition unique et son élégance extraordinaire. Ce champagne, issu de l'une des caves les plus estimées de la région de Champagne, est un rare exemple de maîtrise œnologique.\nÉlaboré avec une combinaison inhabituelle de quatre variétés de raisins blancs : Arbane, Petit Meslier, Blanc Vrai et Chardonnay, le Quattuor est un hommage à la biodiversité et à l'histoire viticole de la cave Drappier. Chaque variété apporte ses caractéristiques distinctives, créant un bouquet complexe et séduisant. Le Petit Meslier offre une fraîche acidité, l'Arbane présente des notes florales, le Blanc Vrai ajoute de la richesse et de la structure, tandis que le Chardonnay confère élégance et finition crémeuse.\nEn dégustant le Champagne Quattuor AOC de Drappier, on remarque immédiatement la finesse des bulles, petites et persistantes, qui dansent dans le verre. Au nez, se dégagent des arômes d'agrumes mûrs et de fleurs blanches, enrichis de nuances de miel et de noisettes. En bouche, le vin se révèle complexe et stratifié, avec un équilibre parfait entre fraîcheur et crémosité, laissant place à une longue et agréable persistance.\nIdéal pour des occasions spéciales ou comme apéritif luxueux, le Champagne Quattuor AOC s'accorde merveilleusement avec des plats délicats tels que des huîtres, des sushis ou une sélection de fromages frais. Ce champagne n'est pas seulement une boisson, mais un véritable symbole de célébration et de raffinement.",
-      "checkedAt": "2026-07-29T12:35:46.053Z"
+      "checkedAt": "2026-08-02T19:22:59.090Z"
     },
     {
       "id": "shopify_FR_47895567106386",
@@ -1645,6 +1690,7 @@
         "over-50",
         "prezzo-cartone",
         "sped-2-5",
+        "tavola-ferragosto",
         "vini",
         "vini-francia"
       ],
@@ -1655,7 +1701,7 @@
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895567106386&productname=Champagne+Soliste+Les+Charmiers+Ros%C3%A9+Extra+Brut+1er+Cru+-+J-M+Seleque+2019&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-soliste-les-charmiers-rose-extra-brut-1er-cru-j-m-seleque%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-soliste-les-charmiers-rose-extra-brut-1er-cru-j-m-seleque",
       "merchantDescription": "Lo Champagne Soliste Les Charmiers Rosé Extra Brut 1er Cru di J-M Seleque è un'autentica espressione di raffinatezza e complessità enologica. Prodotto dalle storiche vigne situate nei Premier Cru della Maison, questo champagne rosé extra brut cattura l'essenza del terroir di Les Charmiers.\nDai colori rosa salmone con riflessi ramati, all'olfatto sprigiona note di frutta rossa come fragoline di bosco e lamponi, con un delicato accenno di fiori bianchi e una sottile tostatura. Al palato, la sua freschezza è esaltata da un perlage fine e persistente, che accompagna sapori di agrumi canditi e un accenno minerale unico. La struttura si presenta equilibrata con una vivace acidità che pulisce il palato, lasciando spazio a un finale lungo e armonioso.\nProdotto da uve accuratamente selezionate e vinificato secondo metodi tradizionali, il Soliste Les Charmiers Rosé vanta una maturazione sui lieviti prolungata, conferendogli complessità e profondità. Ottimo come aperitivo, si abbina splendidamente a crostacei, pesce affumicato e carni bianche.\nUn'opera d'arte enologica di J-M Seleque, questo champagne rappresenta una scelta eccellente per celebrare momenti speciali con un tocco di eleganza e originalità.",
-      "checkedAt": "2026-07-29T12:35:46.053Z"
+      "checkedAt": "2026-08-02T19:22:59.090Z"
     },
     {
       "id": "shopify_FR_50794913464658",
@@ -1680,6 +1726,7 @@
         "pinot-meunier",
         "pinot-nero",
         "sped-2-5",
+        "tavola-ferragosto",
         "velier",
         "vini"
       ],
@@ -1690,7 +1737,7 @@
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50794913464658&productname=Champagne+Louis+Salmon+-+Billecart-Salmon+2009&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-louis-salmon-billecart-salmon%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-louis-salmon-billecart-salmon",
       "merchantDescription": "Le Champagne Louis Salmon de Billecart-Salmon naît dans la renommée région de Champagne, cœur battant de l’art des vins effervescents français. Cette cuvée est un hommage à l’élégance et à la finesse, une expression pure d’un terroir parmi les plus adaptés à la production de grandes bulles.\nLe vignoble, principalement cultivé avec des cépages autochtones comme le Chardonnay, le Pinot Noir et le Pinot Meunier, garantit un équilibre parfait entre fraîcheur, structure et complexité aromatique. Après la vendange, les raisins sont soumis à une pressurage délicate, et le processus de fermentation se déroule en cuves inox et fûts de bois pour exalter les arômes et conserver la fraîcheur typique du territoire. L’affinage sur lies se prolonge pendant une période étendue, conférant au Champagne Louis Salmon une finesse crémeuse et une persistance gustative remarquable.\nAu verre, il se présente avec un perlage fin et persistant, tandis qu’au nez il offre des suggestions de fruits blancs mûrs, de fleurs d’acacia et une légère note minérale. En bouche, il est équilibré et vibrant, avec une finale harmonieuse et délicatement acidulée. Parfait en accompagnement de plats de poisson cru, crustacés ou lors de moments de célébration raffinés.",
-      "checkedAt": "2026-07-29T12:35:46.053Z"
+      "checkedAt": "2026-08-02T19:22:59.090Z"
     },
     {
       "id": "shopify_FR_53093687427410",
@@ -1717,16 +1764,17 @@
         "pesce",
         "pinot-nero",
         "sped-2-5",
+        "tavola-ferragosto",
         "vini"
       ],
       "price": 223.99,
       "oldPrice": 286.08,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-BelleEpoque-Astucciato-Perrier-Jouea_A_t-min_06c3cec4-3ca2-4ec1-960e-f01a00e20602.jpg?v=1775138181",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_53093687427410&productname=Champagne+-+Belle+Epoque+-+Astucciato+-+Perrier-Jou%C3%ABt+2016&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-belle-epoque-astucciato-perrier-jouet%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-belle-epoque-astucciato-perrier-jouet",
       "merchantDescription": "Élégant et lumineux, ce Champagne présenté en étui par la Maison Perrier-Jouët se distingue par une finesse aromatique raffinée : au verre, les bulles sont fines et vibrantes, le bouquet alterne fleurs blanches et délicates notes de fruits à chair blanche, avec une légère évocation de pain juste toasté qui ne masque pas la fraîcheur globale. La texture en bouche mise sur la linéarité et sur une sapidité douce qui soutient la gorgée, donnant une impression d'équilibre et de précision plutôt que de puissance, qualité qui le rend immédiatement agréable sans renoncer à la complexité.\nLa dégustation, fluide, se caractérise par une bonne structure et une persistance qui laisse des souvenirs floraux et d'agrumes ; la finale est nette et mesurée. Conditionné dans un étui sobre, il se prête naturellement à l'apéritif raffiné et accompagne avec élégance poissons délicats, crustacés, huîtres et fromages frais ; c'est aussi un choix adapté pour les cadeaux et les moments de célébration. Servir bien frais dans de grands verres pour apprécier son nez et la finesse de son perlage.",
-      "checkedAt": "2026-07-29T12:35:46.053Z"
+      "checkedAt": "2026-08-02T19:22:59.090Z"
     }
   ]
 }

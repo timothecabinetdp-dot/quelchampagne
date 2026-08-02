@@ -291,3 +291,6 @@ export function buildPartnerCatalogue(){
 }
 
 export const PARTNER_CATALOGUE = buildPartnerCatalogue();
+export const AVAILABLE_PARTNER_CATALOGUE = PARTNER_CATALOGUE.filter(product=>
+  product.commerceReady === true && product.availability === 'in_stock'
+);

@@ -1,5 +1,21 @@
 # QuelChampagne V5 — sélecteur et catalogue professionnel
 
+## Correctif desktop et catalogue automatique V5.6
+
+- Les trois bouteilles de la sélection d’accueil ne reposent plus sur une
+  image étirée aux dimensions de son cadre. Elles conservent leur ratio avec
+  une hauteur maximale explicite, ce qui évite tout recadrage sur ordinateur.
+- Le flux partenaire peut désormais signaler une rupture de stock sans faire
+  échouer la construction du site.
+- Une cuvée hors stock est retirée de l’accueil, du catalogue public, du
+  comparateur et du sélecteur jusqu’à son retour.
+- Sa fiche d’analyse reste accessible, affiche clairement l’indisponibilité et
+  ne conserve aucun bouton d’achat.
+- La sélection d’accueil complète automatiquement ses trois emplacements avec
+  une autre cuvée disponible.
+- Le workflow quotidien a été reproduit localement avec le flux du 2 août
+  2026 : 48 analyses, 47 offres disponibles et tous les contrôles validés.
+
 ## Audit complet et stabilisation V5.5
 
 - Les 72 pages générées ont été contrôlées à 320, 360, 390, 430, 768,

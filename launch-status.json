@@ -1,6 +1,6 @@
 {
-  "releaseVersion": "5.5.0",
-  "updatedAt": "2026-07-31",
+  "releaseVersion": "5.6.0",
+  "updatedAt": "2026-08-02",
   "deploymentAuthorized": true,
   "checks": {
     "technicalValidation": true,
@@ -15,9 +15,9 @@
     "merchantOffersActivated": true
   },
   "notes": {
-    "merchantOffersActivated": "48 offres Bottle of Italy activées via Webgains. Les cartes ouvrent d’abord une fiche d’analyse QuelChampagne ; seuls les boutons présents sur les fiches utilisent les liens affiliés.",
+    "merchantOffersActivated": "48 références Bottle of Italy synchronisées via Webgains, dont 47 disponibles au relevé du 2 août 2026. Les cartes ouvrent d’abord une fiche d’analyse QuelChampagne ; seuls les boutons des offres en stock utilisent les liens affiliés.",
     "productEvidenceReview": "Les 24 fiches restantes ont été contrôlées : 17 confirmées ou corrigées, 5 partielles et 2 appuyées sur une documentation secondaire. Les 7 fiches non entièrement confirmées restent en noindex et hors sitemap.",
-    "responsiveReview": "Audit V5.5 : les 72 pages ont été contrôlées à 7 largeurs, de 320 à 1440 px. Les 48 fiches, le catalogue, les pages thématiques, le sélecteur et l’accueil confinent désormais chaque bouteille dans son cadre ; aucun chevauchement ni débordement horizontal.",
+    "responsiveReview": "Audit V5.6 : les packshots de l’accueil utilisent désormais une hauteur maximale explicite et restent entièrement visibles sur ordinateur comme sur mobile. Les offres hors stock sont exclues de l’accueil, du catalogue et du sélecteur sans supprimer leur fiche d’analyse.",
     "deploymentAuthorized": "Autorisé : identité éditeur Cortexia (SAS, SIREN 107124000, RCS Paris), hébergement Cloudflare Pages et confidentialité renseignés ; validations techniques OK."
   }
 }

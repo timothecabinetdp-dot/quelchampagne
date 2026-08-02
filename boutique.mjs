@@ -194,6 +194,19 @@ export function boutiqueProductMain(p, buildDate, catalogue=CHAMPAGNES){
   const profileCopy=a.expected
     ? `Arômes dominants : ${esc(a.expected)}. ${a.gauges.rondeur>=4?'La rondeur donne de l’ampleur à l’ensemble.':a.gauges.puissance>=4?'La structure soutient une vraie présence à table.':a.gauges.fraicheur>=4?'La fraîcheur conduit l’ensemble.':'L’équilibre reste le trait dominant.'}`
     : a.summary;
+  const offerAvailable=p.commerceReady===true && p.availability==='in_stock';
+  const primaryOffer=offerAvailable
+    ? `<a class="btn btn-primary btn-lg" data-product-id="${esc(p.id)}" data-direct-url="${esc(p.merchantSourceUrl||p.productUrl||'')}" href="${esc(p.aff||p.buyUrl||'')}" target="_blank" rel="sponsored nofollow noopener">Voir l’offre chez Bottle of Italy</a>
+        <p class="bqp-partner">Lien affilié · Prix et disponibilité chez le partenaire, relevés le ${formattedDate}.</p>`
+    : `<div class="bqp-unavailable" role="status"><strong>Offre momentanément indisponible</strong><span>Cette cuvée reste analysée, mais elle n’est plus proposée par notre partenaire au relevé du ${formattedDate}.</span></div>`;
+  const purchasePanel=offerAvailable
+    ? `<div class="bqp-buy">
+      <div><div class="pblock-eyebrow">Offre partenaire</div><h2>${esc(p.brand)} ${esc(p.name)}</h2><p>Vérifiez le prix final, le stock, le millésime et les frais de livraison avant de commander.</p></div>
+      <a class="btn btn-primary btn-lg" data-product-id="${esc(p.id)}" data-direct-url="${esc(p.merchantSourceUrl||p.productUrl||'')}" href="${esc(p.aff||p.buyUrl||'')}" target="_blank" rel="sponsored nofollow noopener">Consulter l’offre partenaire</a>
+    </div>`
+    : `<div class="bqp-buy bqp-buy-unavailable">
+      <div><div class="pblock-eyebrow">Disponibilité</div><h2>Cette offre n’est plus en stock</h2><p>La fiche reste consultable pour comparer le style et les accords. La cuvée reviendra automatiquement dans le sélecteur dès que le partenaire la signalera de nouveau disponible.</p></div>
+    </div>`;
 
   return `<section class="bqp"><div class="container">
     <a class="a-back" href="/champagnes/">‹ Retour à la sélection</a>
@@ -205,8 +218,7 @@ export function boutiqueProductMain(p, buildDate, catalogue=CHAMPAGNES){
         <p class="bqp-lead">${a.summary}</p>
         <div class="bq-tags">${tags}</div>
         <div class="bqp-price"><strong>${EUR(p.price)}</strong>${old}</div>
-        <a class="btn btn-primary btn-lg" data-product-id="${esc(p.id)}" data-direct-url="${esc(p.merchantSourceUrl||p.productUrl||'')}" href="${esc(p.aff||p.buyUrl||'')}" target="_blank" rel="sponsored nofollow noopener">Voir l’offre chez Bottle of Italy</a>
-        <p class="bqp-partner">Lien affilié · Prix et disponibilité chez le partenaire, relevés le ${formattedDate}.</p>
+        ${primaryOffer}
       </div>
     </div>
 
@@ -236,10 +248,7 @@ export function boutiqueProductMain(p, buildDate, catalogue=CHAMPAGNES){
       <div class="bqp-sources">${producerSource}${technicalSource}</div>
     </div>
 
-    <div class="bqp-buy">
-      <div><div class="pblock-eyebrow">Offre partenaire</div><h2>${esc(p.brand)} ${esc(p.name)}</h2><p>Vérifiez le prix final, le stock, le millésime et les frais de livraison avant de commander.</p></div>
-      <a class="btn btn-primary btn-lg" data-product-id="${esc(p.id)}" data-direct-url="${esc(p.merchantSourceUrl||p.productUrl||'')}" href="${esc(p.aff||p.buyUrl||'')}" target="_blank" rel="sponsored nofollow noopener">Consulter l’offre partenaire</a>
-    </div>
+    ${purchasePanel}
 
     ${related?`<div class="bqp-related"><div class="sec-head"><h2 class="h2">Dans un style proche</h2><p>Trois bouteilles proches par leur style et leur prix.</p></div><div class="bq-grid">${related}</div></div>`:''}
   </div></section>
@@ -254,7 +263,7 @@ export function boutiqueProductMain(p, buildDate, catalogue=CHAMPAGNES){
     .bqp-copy{max-width:76ch}.bqp-gauges{display:grid;grid-template-columns:1fr 1fr;gap:22px 34px;margin-top:30px}.bqp-gauge>div:first-child{display:flex;justify-content:space-between;font-size:13px;margin-bottom:8px}.bqp-track{height:7px;background:#e5e5e0;overflow:hidden}.bqp-track i{display:block;height:100%;background:#806020}
     .bqp-scene{position:relative;isolation:isolate;min-height:390px;margin-top:22px;padding:clamp(30px,6vw,70px);display:flex;align-items:flex-end;overflow:hidden;background-image:linear-gradient(90deg,rgba(13,11,7,.83),rgba(13,11,7,.18)),var(--scene);background-size:cover;background-position:center;color:#fff}.bqp-scene:after{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,transparent 45%,rgba(13,11,7,.38))}.bqp-scene>div{max-width:720px}.bqp-scene .pblock-eyebrow{color:#e6c777}.bqp-scene h2{font-family:var(--display);font-size:clamp(32px,5vw,58px);font-weight:900;line-height:1;text-transform:uppercase;margin:10px 0 0}
     .bqp-list{list-style:none;padding:0;margin:0;display:grid;gap:10px}.bqp-list li{padding:13px 16px;background:#F4F4F1}.bqp-list li:before{content:'✓';color:#806020;font-weight:700;margin-right:10px}
-    .bqp-facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:0;margin:24px 0 0}.bqp-fact{display:flex;flex-direction:column;gap:5px;padding:18px 20px 18px 0;border-bottom:1px solid #d7d2c8}.bqp-fact small{color:#777067;text-transform:uppercase;letter-spacing:.08em;font-size:10px}.bqp-verified{max-width:78ch;margin:24px 0 0;padding-left:18px;border-left:3px solid #a77b2d;color:#3f3a33!important;font-size:16px;line-height:1.7}.bqp-sources{display:flex;flex-wrap:wrap;gap:12px 24px}.bqp-source{display:inline-flex;margin-top:22px;color:#6B4D18;font-weight:700;text-decoration:underline;text-underline-offset:3px}.bqp-buy{margin-top:22px;background:#17140f;color:#fff;border-radius:20px;padding:clamp(26px,4vw,44px);display:flex;justify-content:space-between;align-items:center;gap:28px}.bqp-buy p{color:#cbc5bb;margin:0}.bqp-related{margin-top:70px}
+    .bqp-facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:0;margin:24px 0 0}.bqp-fact{display:flex;flex-direction:column;gap:5px;padding:18px 20px 18px 0;border-bottom:1px solid #d7d2c8}.bqp-fact small{color:#777067;text-transform:uppercase;letter-spacing:.08em;font-size:10px}.bqp-verified{max-width:78ch;margin:24px 0 0;padding-left:18px;border-left:3px solid #a77b2d;color:#3f3a33!important;font-size:16px;line-height:1.7}.bqp-sources{display:flex;flex-wrap:wrap;gap:12px 24px}.bqp-source{display:inline-flex;margin-top:22px;color:#6B4D18;font-weight:700;text-decoration:underline;text-underline-offset:3px}.bqp-unavailable{display:flex;flex-direction:column;gap:5px;margin-top:20px;padding:16px 18px;border-left:3px solid #8a6a2c;background:#ebe8e0;color:#312d27}.bqp-unavailable span{font-size:14px;line-height:1.5;color:#625c53}.bqp-buy{margin-top:22px;background:#17140f;color:#fff;border-radius:20px;padding:clamp(26px,4vw,44px);display:flex;justify-content:space-between;align-items:center;gap:28px}.bqp-buy p{color:#cbc5bb;margin:0}.bqp-buy-unavailable{background:#33302a}.bqp-related{margin-top:70px}
     .bqp-related .bq-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.bqp-related .bq-card{display:flex;flex-direction:column;background:#fff;border:1px solid #deded8;overflow:hidden;transition:transform .2s ease,box-shadow .2s ease}.bqp-related .bq-card:hover{transform:translateY(-4px);box-shadow:0 18px 40px -22px rgba(20,17,12,.28)}.bqp-related .bq-media{position:relative;display:flex;align-items:center;justify-content:center;height:280px;overflow:hidden;background:#fff;padding:22px;box-sizing:border-box;contain:layout paint}.bqp-related .bq-media img{display:block;position:absolute;inset:22px;width:calc(100% - 44px)!important;height:calc(100% - 44px)!important;max-width:none!important;max-height:none!important;object-fit:contain!important;object-position:center;mix-blend-mode:multiply;margin:0!important}.bqp-related .bq-body{display:flex;flex-direction:column;gap:8px;padding:16px 16px 18px;flex:1}.bqp-related .bq-brand{font-size:11px;letter-spacing:.11em;text-transform:uppercase;color:#806020;font-weight:700}.bqp-related .bq-name{font-size:15px;line-height:1.32;font-weight:600;margin:0;min-height:2.4em}.bqp-related .bq-tags{display:flex;flex-wrap:wrap;gap:6px}.bqp-related .bq-tag{font-size:11px;color:#6f6a61;border:1px solid #deded8;padding:3px 9px}.bqp-related .bq-foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:10px;padding-top:12px}.bqp-related .bq-price{display:flex;flex-direction:column;font-weight:700;font-size:16px}.bqp-related .bq-btn{background:#14110c;color:#fff;padding:9px 14px;font-size:12px;font-weight:600;text-decoration:none;white-space:nowrap}
     @media(max-width:760px){.bqp-hero,.bqp-grid{grid-template-columns:minmax(0,1fr)}.bqp-hero>*,.bqp-intro{min-width:0}.bqp-visual{width:100%;height:400px;padding:22px}.bqp-visual img{inset:22px;width:calc(100% - 44px)!important;height:calc(100% - 44px)!important}.bqp-gauges{grid-template-columns:1fr}.bqp-buy{align-items:flex-start;flex-direction:column}.bqp-intro h1{font-size:clamp(32px,10.5vw,42px);overflow-wrap:anywhere}.bqp-lead{font-size:17px}.bqp-related .bq-grid{grid-template-columns:1fr}.bqp-related .bq-media{height:290px}.bqp-scene{min-height:300px;padding:28px 20px}.bqp-buy .btn,.bqp-intro>.btn{width:100%;justify-content:center;white-space:normal;text-align:center}.bqp-price{flex-wrap:wrap}.bqp-source{overflow-wrap:anywhere}}
     @media(max-width:420px){.bqp{padding-top:22px}.bqp-hero{margin-top:18px;gap:28px}.bqp-visual{height:350px;padding:16px}.bqp-visual img{inset:16px;width:calc(100% - 32px)!important;height:calc(100% - 32px)!important}.bqp-intro h1{font-size:clamp(31px,10vw,38px);line-height:.98}.bqp-panel{padding:28px 0}.bqp-facts{grid-template-columns:1fr}.bqp-scene h2{font-size:32px}.bqp-related{margin-top:52px}}

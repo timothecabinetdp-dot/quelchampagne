@@ -1,9 +1,9 @@
 import { readFileSync } from 'node:fs';
-import { PARTNER_CATALOGUE } from './build-partner-catalogue.mjs';
+import { AVAILABLE_PARTNER_CATALOGUE } from './build-partner-catalogue.mjs';
 
 const source = readFileSync(new URL('index.html', import.meta.url), 'utf8');
 const script = source.split('<script>')[1].split('</script>')[0];
-const catalogue = PARTNER_CATALOGUE;
+const catalogue = AVAILABLE_PARTNER_CATALOGUE;
 const errors = [];
 
 global.document = {

@@ -1,7 +1,7 @@
 import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs';
 import { join } from 'node:path';
 import { ACTIVATED_COMMERCE_IDS } from './build-catalogue.mjs';
-import { PARTNER_CATALOGUE } from './build-partner-catalogue.mjs';
+import { PARTNER_CATALOGUE, AVAILABLE_PARTNER_CATALOGUE } from './build-partner-catalogue.mjs';
 
 const ROOT = new URL('.', import.meta.url);
 const DIST = new URL('dist/', ROOT);
@@ -318,9 +318,9 @@ global.window = { scrollTo() {}, open() {} };
 global.localStorage = { getItem() { return null; }, setItem() {} };
 global.fetch = () => Promise.reject(new Error('Réseau désactivé pendant la validation.'));
 eval(`${script}; Object.assign(quiz, { questions, score, signalFit, accordFit, setCatalogue });`);
-quiz.setCatalogue(PARTNER_CATALOGUE);
+quiz.setCatalogue(AVAILABLE_PARTNER_CATALOGUE);
 if (quiz.questions().length !== 5) errors.push(`Questions attendues : 5, obtenues : ${quiz.questions().length}.`);
-const lowDosage = PARTNER_CATALOGUE.find(product => quiz.signalFit(product,'low_dosage'));
+const lowDosage = AVAILABLE_PARTNER_CATALOGUE.find(product => quiz.signalFit(product,'low_dosage'));
 if (!lowDosage) {
   errors.push('Aucun champagne peu dosé ne permet de tester la signature recherchée.');
 } else {
@@ -415,12 +415,16 @@ for (const product of PARTNER_CATALOGUE) {
   }
   const html=readFileSync(page,'utf8');
   const sponsoredLinks=[...html.matchAll(/<a[^>]+href="([^"]*)"[^>]+rel="[^"]*sponsored[^"]*"[^>]*>/gi)].map(match=>match[1]);
-  if (sponsoredLinks.length<2) errors.push(`Deux boutons d’achat affiliés attendus : /champagne/${product.id}/.`);
-  if (sponsoredLinks.some(href=>!/^https:\/\/assets\.ikhnaie\.link\//.test(href))) {
+  const available=product.commerceReady===true && product.availability==='in_stock';
+  if (available && sponsoredLinks.length<2) errors.push(`Deux boutons d’achat affiliés attendus : /champagne/${product.id}/.`);
+  if (available && sponsoredLinks.some(href=>!/^https:\/\/assets\.ikhnaie\.link\//.test(href))) {
     errors.push(`Bouton d’achat vide ou non affilié : /champagne/${product.id}/.`);
   }
-  if ((html.match(/data-direct-url="https:\/\/bottleofitaly\.com/g)||[]).length<2) {
+  if (available && (html.match(/data-direct-url="https:\/\/bottleofitaly\.com/g)||[]).length<2) {
     errors.push(`Lien marchand sans suivi absent : /champagne/${product.id}/.`);
+  }
+  if (!available && (sponsoredLinks.length || !html.includes('Offre momentanément indisponible'))) {
+    errors.push(`Une fiche hors stock conserve un bouton d’achat ou n’explique pas son indisponibilité : /champagne/${product.id}/.`);
   }
   if (html.includes('class="bqp-old"') || /text-decoration:\s*line-through/.test(html)) {
     errors.push(`Un ancien prix barré reste publié : /champagne/${product.id}/.`);
@@ -439,8 +443,9 @@ for (const product of catalogue.filter(product=>!partnerIds.has(product.id))) {
 }
 if (existsSync(new URL('dist/comparatifs/', ROOT))) errors.push('Les anciens comparatifs fondés sur les 75 fiches sont encore publiés.');
 const publicCatalogue=JSON.parse(read('dist/catalogue.json'));
-if (publicCatalogue.length!==PARTNER_CATALOGUE.length || publicCatalogue.some(product=>!partnerIds.has(product.id))) {
-  errors.push('Le catalogue JSON public expose encore des références historiques.');
+const availablePartnerIds=new Set(AVAILABLE_PARTNER_CATALOGUE.map(product=>product.id));
+if (publicCatalogue.length!==AVAILABLE_PARTNER_CATALOGUE.length || publicCatalogue.some(product=>!availablePartnerIds.has(product.id))) {
+  errors.push('Le catalogue JSON public expose une référence historique ou indisponible.');
 }
 const redirects=read('dist/_redirects');
 if (!redirects.includes('/comparatifs/ /comparateur/ 301')) errors.push('La redirection Cloudflare des anciens comparatifs est absente.');
@@ -489,7 +494,7 @@ for (const stale of ['Perle d’Aurore', 'Sancerre « Les Baronnes »', 'Whisper
 if (source.includes('Un clic vous mène directement sur le site de la maison pour commander.')) errors.push('L’accueil promet encore une commande non disponible.');
 if (PARTNER_CATALOGUE.length !== 48) errors.push(`Catalogue partenaire attendu : 48, obtenu : ${PARTNER_CATALOGUE.length}.`);
 if (new Set(PARTNER_CATALOGUE.map(product=>product.id)).size !== PARTNER_CATALOGUE.length) errors.push('Identifiants du catalogue partenaire dupliqués.');
-if (PARTNER_CATALOGUE.some(product=>!product.commerceReady || product.availability!=='in_stock')) errors.push('Une cuvée partenaire publiée n’est pas disponible.');
+if (AVAILABLE_PARTNER_CATALOGUE.some(product=>!product.commerceReady || product.availability!=='in_stock')) errors.push('Le catalogue public contient une cuvée indisponible.');
 if (PARTNER_CATALOGUE.some(product=>product.priceStatus==='stale' && (product.commerceReady || product.oldPrice))) errors.push('Une offre périmée reste achetable ou conserve une promotion.');
 if (PARTNER_CATALOGUE.some(product=>product.priceStatus!=='fresh' && product.oldPrice)) errors.push('Un ancien prix est affiché au-delà de la période de fraîcheur autorisée.');
 if (PARTNER_CATALOGUE.some(product=>product.oldPrice!==null)) errors.push('Le catalogue public conserve encore des anciens prix non documentés.');
@@ -532,7 +537,7 @@ if (!boutiqueSource.includes('.bqp-visual img{display:block;position:absolute') 
 if (!boutiqueSource.includes('.bq-media img{display:block;position:absolute') || !boutiqueSource.includes('height:calc(100% - 48px)!important')) errors.push('Les cartes marchandes peuvent encore agrandir puis tronquer un packshot.');
 if (!boutiqueSource.includes('.bqp-intro .bq-tags{display:flex;flex-wrap:wrap;gap:7px')) errors.push('Les catégories des fiches marchandes peuvent encore être concaténées.');
 if (!source.includes('.pcard-img>img.product-packshot,.phero-img>img.product-packshot{position:absolute!important')) errors.push('Les cartes éditoriales peuvent encore laisser dépasser leur bouteille.');
-if (!buildSource.includes('.partner-pcard-img img{display:block;position:absolute')) errors.push('Les bouteilles de la sélection d’accueil peuvent encore sortir de leur cadre.');
+if (!buildSource.includes('.partner-pcard-img img{display:block;position:static!important') || !buildSource.includes('max-height:300px!important')) errors.push('Les bouteilles de la sélection d’accueil peuvent encore être recadrées sur ordinateur.');
 if (!source.includes('.page-hero::before{display:block!important}')) errors.push('Les visuels des pages de sélection sont encore masqués.');
 if (!source.includes('.nav-toggle{display:none') || !source.includes('.nav.is-open .nav-links{display:grid')) errors.push('Le menu mobile accessible est absent.');
 if (!buildSource.includes('aria-controls="primary-navigation"') || !buildSource.includes("event.key==='Escape'")) errors.push('Le comportement du menu mobile est incomplet.');
@@ -545,4 +550,4 @@ if (errors.length) {
   process.exit(1);
 }
 
-console.log(`Validation réussie : ${PARTNER_CATALOGUE.length} champagnes publiés, ${htmlFiles.length} pages HTML, ${sitemapUrls.length} URL, aucun lien interne cassé.`);
+console.log(`Validation réussie : ${PARTNER_CATALOGUE.length} analyses, ${AVAILABLE_PARTNER_CATALOGUE.length} offres disponibles, ${htmlFiles.length} pages HTML, ${sitemapUrls.length} URL, aucun lien interne cassé.`);
