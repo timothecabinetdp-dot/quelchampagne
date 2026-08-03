@@ -1,0 +1,16 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://engine.quelchampagne.fr/schemas/competition-result.schema.json",
+  "title":"Résultat de dégustation ou concours",
+  "type":"object",
+  "required":["organization","edition","result","sourceId"],
+  "properties":{
+    "organization":{"type":"string"},
+    "edition":{"type":["string","integer"]},
+    "result":{"type":"string"},
+    "score":{"type":["number","null"],"minimum":0,"maximum":100},
+    "medal":{"type":["string","null"]},
+    "tastedBlind":{"type":["boolean","null"]},
+    "sourceId":{"type":"string"}
+  }
+}

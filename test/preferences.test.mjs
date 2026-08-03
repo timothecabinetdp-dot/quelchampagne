@@ -1,0 +1,5 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {KnowledgeStore} from '../src/store.mjs';import {buildTasteProfile,personalizeRequest} from '../src/preferences.mjs';
+const store=await KnowledgeStore.fromFile();const products=store.all().slice(0,6);
+test('profil en apprentissage avant cinq signaux',()=>{const profile=buildTasteProfile([{productId:products[0].id,signal:'like'}],store);assert.equal(profile.status,'learning');});
+test('profil utilisable et borné',()=>{const events=products.map(product=>({productId:product.id,signal:'like'}));const profile=buildTasteProfile(events,store);assert.equal(profile.status,'usable');assert.ok(Object.values(profile.axes).every(value=>value>=1&&value<=5));});
+test('préférence explicite et profil sont combinés',()=>{const profile=buildTasteProfile(products.map(product=>({productId:product.id,signal:'like'})),store);const request=personalizeRequest({axes:{freshness:5}},profile);assert.ok(request.personalization);assert.ok(request.axes.freshness<=5);});

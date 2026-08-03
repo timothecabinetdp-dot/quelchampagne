@@ -1,0 +1,12 @@
+import {readFile,writeFile,mkdir} from 'node:fs/promises';import {resolve,basename} from 'node:path';
+import {KnowledgeStore} from '../src/store.mjs';import {ingestCandidates} from '../src/ingestion.mjs';
+const inputArg=process.argv.find(arg=>arg.startsWith('--input='))?.slice(8);if(!inputArg)throw new Error('Utilisation : node scripts/prepare-import.mjs --input=fichier.json');
+const input=resolve(process.cwd(),inputArg);const payload=JSON.parse(await readFile(input,'utf8'));
+if(!payload.source?.id||!payload.source?.url||!payload.source?.checkedAt)throw new Error('Métadonnées de source incomplètes.');
+if(payload.source.reuseStatus!=='authorized'&&payload.source.reuseStatus!=='facts_only')throw new Error('Import bloqué : statut de réutilisation non autorisé.');
+const store=await KnowledgeStore.fromFile();const result=ingestCandidates(store,payload.records||[],payload.source);
+await mkdir('data/staging',{recursive:true});await mkdir('data/quarantine',{recursive:true});
+const stamp=new Date().toISOString().replace(/[:.]/g,'-');const name=basename(input).replace(/\.json$/,'');
+await writeFile(`data/staging/${name}-${stamp}.json`,JSON.stringify({source:payload.source,accepted:result.accepted,updates:result.updates},null,2)+'\n');
+await writeFile(`data/quarantine/${name}-${stamp}.json`,JSON.stringify({source:payload.source,review:result.review,rejected:result.rejected},null,2)+'\n');
+console.log(JSON.stringify(result.summary,null,2));

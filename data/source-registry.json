@@ -1,0 +1,12 @@
+{
+  "updatedAt":"2026-08-02",
+  "sources":[
+    {"id":"comite-champagne-directory","name":"Annuaire du Comité Champagne","type":"interprofession","url":"https://www.champagne.fr/fr/visiter-la-champagne/annuaire-des-professionnels","intendedFields":["producer identity","commune","producer type","certifications"],"reuseStatus":"permission_to_confirm","priority":1},
+    {"id":"producer-sites","name":"Sites officiels des producteurs","type":"producer","url":"https://www.champagne.fr/","intendedFields":["cuvée identity","grapes","dosage","vinification","ageing"],"reuseStatus":"facts_only","priority":1},
+    {"id":"iwc-results","name":"International Wine Challenge Results","type":"competition","url":"https://www.internationalwinechallenge.com/canopy/search_results","intendedFields":["result","score","medal","vintage","grapes"],"reuseStatus":"permission_to_confirm","priority":2},
+    {"id":"cmb-results","name":"Concours Mondial de Bruxelles Results","type":"competition","url":"https://resultats.concoursmondial.com/en/results","intendedFields":["result","medal","edition"],"reuseStatus":"permission_to_confirm","priority":2},
+    {"id":"decanter-awards","name":"Decanter World Wine Awards","type":"competition","url":"https://www.decanter.com/decanter-awards/","intendedFields":["score","medal","edition"],"reuseStatus":"permission_or_license_required","priority":3},
+    {"id":"jancis-api","name":"Jancis Robinson API","type":"critic_licensed","url":"https://www.jancisrobinson.com/jancis-api","intendedFields":["score","tasting date","drinking window","licensed note"],"reuseStatus":"paid_license_required","priority":4},
+    {"id":"merchant-feeds","name":"Flux marchands partenaires","type":"merchant","url":"urn:quelchampagne:merchant-feeds","intendedFields":["price","stock","image","affiliate URL"],"reuseStatus":"contract_required","priority":2}
+  ]
+}

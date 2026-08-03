@@ -1,0 +1,11 @@
+{
+  "generatedAt": "2026-08-03T09:37:24.470Z",
+  "scenarioCount": 1440,
+  "totalRecommendations": 4128,
+  "distinctRecommendations": 38,
+  "coveragePercent": 67.9,
+  "topResultConcentrationPercent": 11.4,
+  "constraintViolations": [],
+  "emptyScenarios": [],
+  "status": "passed"
+}

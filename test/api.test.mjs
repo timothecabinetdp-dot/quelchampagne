@@ -1,0 +1,10 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {KnowledgeStore} from '../src/store.mjs';import {handleRequest} from '../src/api.mjs';
+const store=await KnowledgeStore.fromFile();
+test('santé API',async()=>{const response=await handleRequest(store,{url:'/health'});assert.equal(response.status,200);assert.equal(JSON.parse(response.body).records,store.size);});
+test('qualité API',async()=>{const response=await handleRequest(store,{url:'/v1/quality'});assert.equal(JSON.parse(response.body).total,store.size);});
+test('recherche catalogue',async()=>{const response=await handleRequest(store,{url:'/v1/champagnes?q=veuve&limit=3'});assert.equal(response.status,200);assert.ok(JSON.parse(response.body).records.length);});
+test('recommandation API',async()=>{const response=await handleRequest(store,{method:'POST',url:'/v1/recommendations',body:JSON.stringify({request:{preset:'complex',budgetMax:250},limit:3})});assert.equal(JSON.parse(response.body).results.length,3);});
+test('référence absente',async()=>{assert.equal((await handleRequest(store,{url:'/v1/champagnes/inconnue'})).status,404);});
+test('recommandation personnalisée',async()=>{const events=store.all().slice(0,6).map(record=>({productId:record.id,signal:'like'}));const response=await handleRequest(store,{method:'POST',url:'/v1/personalized-recommendations',body:JSON.stringify({request:{budgetMax:100},events})});const payload=JSON.parse(response.body);assert.equal(payload.profile.status,'usable');assert.equal(payload.results.length,3);});
+test('agrégation de dégustations vide',async()=>{const response=await handleRequest(store,{method:'POST',url:'/v1/tastings/aggregate',body:'{"tastings":[]}'});assert.deepEqual(JSON.parse(response.body).panels,[]);});

@@ -1,0 +1,16 @@
+{
+  "name": "quelchampagne-engine",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "description": "Base de connaissances et moteur de recommandation indépendant pour le Champagne.",
+  "scripts": {
+    "import:seed": "node scripts/import-seed.mjs",
+    "validate": "node scripts/validate-data.mjs",
+    "test": "node --test",
+    "start": "node src/server.mjs",
+    "evaluate": "node scripts/evaluate-engine.mjs",
+    "check": "npm run validate && npm test && npm run evaluate"
+  },
+  "engines": {"node": ">=20"}
+}

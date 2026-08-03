@@ -1,0 +1,16 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://engine.quelchampagne.fr/schemas/source.schema.json",
+  "title":"Source QuelChampagne Engine",
+  "type":"object",
+  "required":["id","type","url","checkedAt","usage"],
+  "properties":{
+    "id":{"type":"string","minLength":1},
+    "type":{"enum":["producer","interprofession","public_dataset","competition","critic_licensed","merchant","editorial","community"]},
+    "url":{"type":"string","minLength":1},
+    "checkedAt":{"type":"string","format":"date"},
+    "usage":{"type":"string","minLength":1},
+    "license":{"type":["string","null"]}
+  },
+  "additionalProperties":true
+}

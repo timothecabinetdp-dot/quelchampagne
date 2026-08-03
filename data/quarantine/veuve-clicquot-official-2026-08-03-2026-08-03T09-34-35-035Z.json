@@ -1,0 +1,13 @@
+{
+  "source": {
+    "id": "producer-email:veuve-clicquot:2026-08-03",
+    "type": "producer",
+    "url": "urn:email:veuve-clicquot:2026-08-03",
+    "checkedAt": "2026-08-03",
+    "usage": "technical_facts_received_directly_from_producer",
+    "evidenceLevel": "primary",
+    "reuseStatus": "facts_only"
+  },
+  "review": [],
+  "rejected": []
+}
