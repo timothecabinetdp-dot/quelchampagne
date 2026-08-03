@@ -50,7 +50,7 @@ for(const path of pages){
 const productPages=pages.filter(path=>/dist\/champagne\/[^/]+\/index\.html$/.test(path) && !/\/(aperitif|cadeau|repas|rose|fruits-de-mer|moins-de-50-euros|blanc-de-blancs)\//.test(path));
 for(const path of productPages){
   const html=readFileSync(path,'utf8');
-  for(const marker of ['Toutes les caractéristiques','Profil aromatique','Réponses pratiques','FAQPage','additionalProperty']){
+  for(const marker of ['Les caractéristiques essentielles','Afficher toutes les caractéristiques','Profil aromatique','Réponses pratiques','FAQPage','additionalProperty']){
     if(!html.includes(marker)) fail.push(`${path}: bloc manquant « ${marker} »`);
   }
   if(/name="robots" content="noindex/.test(html)) fail.push(`${path}: fiche enrichie encore en noindex`);

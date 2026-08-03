@@ -102,9 +102,11 @@ function card(p){
   const old = '';
   const tags = p.tags.map(t=>`<span class="bq-tag">${t}</span>`).join('');
   const key = p.tags.join('|').toLowerCase();
+  const visualLabel=p.tags.includes('Rosé')?'Rosé':p.tags.includes('Blanc de blancs')?'Blanc de blancs':p.tags.includes('Blanc de noirs')?'Blanc de noirs':p.tags.includes('Extra-brut / nature')?'Très sec':'Brut';
   const internalUrl = `/champagne/${p.id && !String(p.id).startsWith('shopify_') ? p.id : boutiqueSlug(p)}/`;
   return `<article class="bq-card" data-style="${key}" data-price="${p.price}">
       <a class="bq-media" href="${internalUrl}" aria-label="Voir l’analyse de ${esc(p.brand)} ${esc(p.name)}">
+        <span class="bq-visual-badge">${icon('bottle')}<span>${visualLabel}</span></span>
         <img loading="lazy" src="${esc(p.image)}" alt="${esc(p.brand)} ${esc(p.name)}">
       </a>
       <div class="bq-body">
@@ -121,6 +123,54 @@ function card(p){
 
 function gauge(label, value){
   return `<div class="bqp-gauge"><div><span>${label}</span><strong>${value}/5</strong></div><div class="bqp-track"><i style="width:${value*20}%"></i></div></div>`;
+}
+
+const ICONS={
+  style:'<path d="M4 15c4-8 12-8 16 0"/><path d="M7 15c3-4 7-4 10 0"/><path d="M12 4v3"/>',
+  dosage:'<path d="m5 8 7-4 7 4v8l-7 4-7-4Z"/><path d="m5 8 7 4 7-4M12 12v8"/>',
+  service:'<path d="M10 4v10a4 4 0 1 0 4 0V4a2 2 0 0 0-4 0Z"/><path d="M12 8v7"/>',
+  accord:'<path d="M7 3v7M4 3v5a3 3 0 0 0 6 0V3M7 10v11M16 3v18M16 3c4 2 4 7 0 9"/>',
+  eye:'<path d="M2.5 12s3.5-6 9.5-6 9.5 6 9.5 6-3.5 6-9.5 6S2.5 12 2.5 12Z"/><circle cx="12" cy="12" r="2.5"/>',
+  nose:'<path d="M13 3c-1 5-3 8-3 11 0 2 1 3 3 3h2M9 20c2 1 4 1 6 0"/>',
+  palate:'<path d="M5 7c1 8 3 12 7 12s6-4 7-12"/><path d="M8 11h8M12 19v3"/>',
+  finish:'<path d="M4 12h11"/><path d="m12 8 4 4-4 4"/><path d="M18 6h2M18 12h4M18 18h2"/>',
+  grape:'<circle cx="9" cy="8" r="2"/><circle cx="13" cy="8" r="2"/><circle cx="7" cy="12" r="2"/><circle cx="11" cy="12" r="2"/><circle cx="15" cy="12" r="2"/><circle cx="9" cy="16" r="2"/><circle cx="13" cy="16" r="2"/><path d="M12 6c0-2 2-3 4-3"/>',
+  bottle:'<path d="M10 3h4v5l2 3v9H8v-9l2-3Z"/><path d="M10 6h4M9 14h6"/>',
+  glass:'<path d="M7 3h10l-1 7a4 4 0 0 1-8 0Z"/><path d="M12 14v7M8 21h8"/>',
+  time:'<circle cx="12" cy="12" r="9"/><path d="M12 7v6l4 2"/>',
+  producer:'<path d="M4 20V9l8-5 8 5v11"/><path d="M8 20v-6h8v6M9 10h.01M15 10h.01"/>',
+  info:'<circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7h.01"/>',
+  check:'<path d="m5 12 4 4L19 6"/>',
+  compare:'<path d="M7 4v16M7 4 3 8M7 4l4 4M17 20V4M17 20l-4-4M17 20l4-4"/>',
+  list:'<path d="M9 6h11M9 12h11M9 18h11"/><circle cx="4" cy="6" r="1"/><circle cx="4" cy="12" r="1"/><circle cx="4" cy="18" r="1"/>'
+};
+function icon(name, className=''){
+  return `<svg class="qc-icon ${className}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICONS[name]||ICONS.info}</svg>`;
+}
+function factIcon(label=''){
+  if(/Cépages|Assemblage|aromatique/i.test(label)) return 'grape';
+  if(/Dosage/i.test(label)) return 'dosage';
+  if(/Température/i.test(label)) return 'service';
+  if(/Verre/i.test(label)) return 'glass';
+  if(/Maturation|Élaboration/i.test(label)) return 'time';
+  if(/Producteur|Cuvée/i.test(label)) return 'producer';
+  if(/Accords/i.test(label)) return 'accord';
+  if(/Degré|Format|Appellation|Type|Robe/i.test(label)) return 'bottle';
+  return 'info';
+}
+function questionIcon(question=''){
+  if(/plats|associer/i.test(question)) return 'accord';
+  if(/sec|doux/i.test(question)) return 'dosage';
+  if(/température/i.test(question)) return 'service';
+  if(/verre/i.test(question)) return 'glass';
+  if(/style/i.test(question)) return 'style';
+  if(/temps|mûri/i.test(question)) return 'time';
+  if(/cépages/i.test(question)) return 'grape';
+  if(/élabore/i.test(question)) return 'producer';
+  return 'info';
+}
+function blockTitle(iconName, eyebrow, title){
+  return `<div class="bqp-section-head"><span class="bqp-section-icon">${icon(iconName)}</span><div><div class="pblock-eyebrow">${eyebrow}</div><h2>${title}</h2></div></div>`;
 }
 
 function editorialScene(p, analysis){
@@ -169,7 +219,10 @@ export function boutiqueProductMain(p, buildDate, catalogue=CHAMPAGNES){
   } : generic;
   const old = '';
   const tags = p.tags.map(t=>`<span class="bq-tag">${esc(t)}</span>`).join('');
-  const technicalFacts=(e?.facts||[]).map(([label,value])=>`<div class="bqp-fact-row"><dt>${esc(label)}</dt><dd>${esc(value)}</dd></div>`).join('');
+  const allFacts=e?.facts||[];
+  const factRow=([label,value])=>`<div class="bqp-fact-row" role="listitem"><span class="bqp-fact-icon">${icon(factIcon(label))}</span><div><span class="bqp-fact-label">${esc(label)}</span><strong class="bqp-fact-value">${esc(value)}</strong></div></div>`;
+  const technicalFacts=allFacts.slice(0,6).map(factRow).join('');
+  const secondaryFacts=allFacts.slice(6).map(factRow).join('');
   const relatedProducts=catalogue.filter(x=>x.id!==p.id).map(x=>{
     const commonTags=x.tags.filter(tag=>p.tags.includes(tag)).length;
     const commonGrapes=(x.details?.grapes||[]).filter(grape=>(p.details?.grapes||[]).includes(grape)).length;
@@ -185,12 +238,12 @@ export function boutiqueProductMain(p, buildDate, catalogue=CHAMPAGNES){
   const tastingPalate=e?.mouth || 'La bouche équilibre fraîcheur, fruit et structure.';
   const tastingFinish=e?.finish || 'La finale est nette et harmonieuse.';
   const quickFacts=[
-    ['Style',e?.character||a.style],
-    ['Dosage',e?.dosage||p.details?.dosage||a.style],
-    ['Service',e?.temperature||'8–10 °C'],
-    ['Accord phare',e?.pairings?.[0]||a.pairings[0]]
-  ].map(([label,value])=>`<div><small>${esc(label)}</small><strong>${esc(value)}</strong></div>`).join('');
-  const answers=(e?.answers||[]).map(([question,answer])=>`<details class="bqp-answer"><summary>${esc(question)}</summary><p>${esc(answer)}</p></details>`).join('');
+    ['style','Style',e?.character||a.style],
+    ['dosage','Dosage',e?.dosage||p.details?.dosage||a.style],
+    ['service','Service',e?.temperature||'8–10 °C'],
+    ['accord','Accord phare',e?.pairings?.[0]||a.pairings[0]]
+  ].map(([iconName,label,value])=>`<div><span class="bqp-qf-icon">${icon(iconName)}</span><span><small>${esc(label)}</small><strong>${esc(value)}</strong></span></div>`).join('');
+  const answers=(e?.answers||[]).map(([question,answer],index)=>`<details class="bqp-answer" style="--delay:${index*45}ms"><summary><span class="bqp-answer-icon">${icon(questionIcon(question))}</span><span>${esc(question)}</span><i aria-hidden="true"></i></summary><div class="bqp-answer-body"><p>${esc(answer)}</p></div></details>`).join('');
   const alternativeNames=relatedProducts.map(item=>`${item.brand} ${item.name}`).join(' · ');
   const offerAvailable=p.commerceReady===true && p.availability==='in_stock';
   const primaryOffer=offerAvailable
@@ -222,53 +275,60 @@ export function boutiqueProductMain(p, buildDate, catalogue=CHAMPAGNES){
 
     <div class="bqp-quickfacts">${quickFacts}</div>
 
-    <article class="bqp-panel bqp-verdict"><div class="pblock-eyebrow">Le verdict QuelChampagne</div><h2>À qui s’adresse cette cuvée ?</h2>
-      <div class="decision-grid"><div class="decision"><strong>Choisissez-la pour</strong><p>${a.choose}</p></div><div class="decision"><strong>Préférez une autre bouteille si</strong><p>${a.avoid}</p></div></div>
+    <article class="bqp-panel bqp-verdict">${blockTitle('compare','Le verdict QuelChampagne','À qui s’adresse cette cuvée ?')}
+      <div class="decision-grid"><div class="decision decision-yes"><span class="decision-icon">${icon('check')}</span><div><strong>Choisissez-la pour</strong><p>${a.choose}</p></div></div><div class="decision decision-alt"><span class="decision-icon">${icon('compare')}</span><div><strong>Préférez une autre bouteille si</strong><p>${a.avoid}</p></div></div></div>
     </article>
 
     <div class="bqp-panel bqp-identity">
-      <div class="pblock-eyebrow">Comprendre la cuvée</div><h2>Assemblage et élaboration</h2>
-      <div class="bqp-editorial-grid"><p>${esc(e?.overview||a.summary)}</p><p>${esc(e?.vinification||'Seconde fermentation en bouteille selon la méthode traditionnelle champenoise.')}</p></div>
+      ${blockTitle('grape','Comprendre la cuvée','Assemblage et élaboration')}
+      <div class="bqp-editorial-grid"><div class="bqp-copy-card"><span>${icon('grape')}</span><p>${esc(e?.overview||a.summary)}</p></div><div class="bqp-copy-card"><span>${icon('time')}</span><p>${esc(e?.vinification||'Seconde fermentation en bouteille selon la méthode traditionnelle champenoise.')}</p></div></div>
     </div>
 
     <div class="bqp-panel">
-      <div class="pblock-eyebrow">Dans le verre</div><h2>La dégustation</h2>
-      <div class="bqp-tasting"><div><small>Œil</small><p>${esc(tastingEye)}</p></div><div><small>Nez</small><p>${esc(tastingNose)}</p></div><div><small>Bouche</small><p>${esc(tastingPalate)}</p></div><div><small>Finale</small><p>${esc(tastingFinish)}</p></div></div>
+      ${blockTitle('glass','Dans le verre','La dégustation')}
+      <div class="bqp-tasting"><div><span class="tasting-icon">${icon('eye')}</span><small>Œil</small><p>${esc(tastingEye)}</p></div><div><span class="tasting-icon">${icon('nose')}</span><small>Nez</small><p>${esc(tastingNose)}</p></div><div><span class="tasting-icon">${icon('palate')}</span><small>Bouche</small><p>${esc(tastingPalate)}</p></div><div><span class="tasting-icon">${icon('finish')}</span><small>Finale</small><p>${esc(tastingFinish)}</p></div></div>
       <div class="bqp-gauges">${gauge('Fraîcheur',a.gauges.fraicheur)}${gauge('Rondeur',a.gauges.rondeur)}${gauge('Puissance',a.gauges.puissance)}${gauge('Facilité d’accès',a.gauges.accessibilite)}</div>
     </div>
 
     <div class="bqp-grid">
-      <article class="bqp-panel"><div class="pblock-eyebrow">À table</div><h2>Accords conseillés</h2><ul class="bqp-list">${(e?.pairings?.length?e.pairings:a.pairings).map(x=>`<li>${esc(x)}</li>`).join('')}</ul></article>
-      <article class="bqp-panel"><div class="pblock-eyebrow">Service</div><h2>Comment la servir</h2><p>${esc(e?.serving||`Servir à 8–10 °C dans un verre tulipe.`)}</p></article>
+      <article class="bqp-panel bqp-mini-panel">${blockTitle('accord','À table','Accords conseillés')}<ul class="bqp-list">${(e?.pairings?.length?e.pairings:a.pairings).map(x=>`<li><span>${icon('check')}</span>${esc(x)}</li>`).join('')}</ul></article>
+      <article class="bqp-panel bqp-mini-panel">${blockTitle('service','Service','Comment la servir')}<div class="bqp-service-copy"><span>${icon('glass')}</span><p>${esc(e?.serving||`Servir à 8–10 °C dans un verre tulipe.`)}</p></div></article>
     </div>
 
     <div class="bqp-panel bqp-technical">
-      <div class="pblock-eyebrow">Fiche technique</div><h2>Toutes les caractéristiques</h2>
-      <dl class="bqp-facts">${technicalFacts}</dl>
+      ${blockTitle('list','Fiche technique','Les caractéristiques essentielles')}
+      <div class="bqp-facts" role="list">${technicalFacts}</div>
+      ${secondaryFacts?`<details class="bqp-more-facts"><summary>${icon('list')}<span>Afficher toutes les caractéristiques</span><i aria-hidden="true"></i></summary><div class="bqp-facts bqp-facts-more" role="list">${secondaryFacts}</div></details>`:''}
     </div>
 
-    <div class="bqp-panel bqp-questions"><div class="pblock-eyebrow">Réponses pratiques</div><h2>Tout savoir avant de choisir</h2><div class="bqp-answer-grid">${answers}</div></div>
+    <div class="bqp-panel bqp-questions">${blockTitle('info','Réponses pratiques','Les réponses en un coup d’œil')}<p class="bqp-section-intro">Ouvrez uniquement les sujets qui vous intéressent.</p><div class="bqp-answer-grid">${answers}</div></div>
 
     ${purchasePanel}
 
     ${related?`<div class="bqp-related"><div class="sec-head"><h2 class="h2">Trois alternatives pertinentes</h2><p>${esc(alternativeNames)}</p></div><div class="bq-grid">${related}</div></div>`:''}
   </div></section>
   <style>
-    .bq-name a{color:inherit;text-decoration:none}.bqp{padding:clamp(36px,6vw,84px) 0 90px;background:#F4F4F1;color:#14110c}
+    .bq-name a{color:inherit;text-decoration:none}.qc-icon{display:block;width:22px;height:22px;flex:0 0 auto}.bqp{padding:clamp(36px,6vw,84px) 0 90px;background:linear-gradient(180deg,#f8f7f3 0,#f2f0ea 38%,#f8f7f3 100%);color:#14110c;overflow:hidden}
     .bqp-hero{display:grid;grid-template-columns:minmax(280px,.85fr) minmax(320px,1.15fr);gap:clamp(34px,7vw,92px);align-items:center;margin-top:28px}
-    .bqp-visual{position:relative;height:560px;border:1px solid #deded8;background:#fff;display:grid;place-items:center;padding:34px;overflow:hidden;box-sizing:border-box;contain:layout paint}
+    .bqp-visual{position:relative;height:560px;border:1px solid #e4dfd5;border-radius:28px;background:radial-gradient(circle at 50% 42%,#fff 0,#fff 48%,#f3efe6 100%);display:grid;place-items:center;padding:34px;overflow:hidden;box-sizing:border-box;contain:layout paint;box-shadow:0 28px 70px -46px rgba(29,22,12,.38)}.bqp-visual:before,.bqp-visual:after{content:'';position:absolute;border-radius:50%;border:1px solid rgba(156,122,52,.16)}.bqp-visual:before{width:320px;height:320px;right:-190px;top:-140px}.bqp-visual:after{width:170px;height:170px;left:-105px;bottom:-80px}
     .bqp-visual img{display:block;position:absolute;inset:34px;width:calc(100% - 68px)!important;height:calc(100% - 68px)!important;max-width:none!important;max-height:none!important;object-fit:contain!important;object-position:center;mix-blend-mode:multiply;margin:0!important}.bqp-intro h1{font-family:var(--display);font-size:clamp(40px,5.3vw,72px);font-weight:900;text-transform:uppercase;line-height:.95;letter-spacing:-.025em;margin:12px 0 22px}
     .bqp-intro .bq-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:18px}.bqp-intro .bq-tag{display:inline-flex;font-size:11px;color:#6f6a61;border:1px solid #deded8;padding:4px 10px;text-transform:uppercase;letter-spacing:.055em;line-height:1.2}
     .bqp-lead{font-size:18px;line-height:1.75;color:#5f5a51;max-width:62ch}.bqp-price{display:flex;align-items:center;gap:12px;margin:28px 0 22px}.bqp-price>strong{font-size:30px}.bqp-partner,.bqp-muted{font-size:13px;line-height:1.65;color:#777067}.bqp-partner{margin-top:12px}
-    .bqp-quickfacts{display:grid;grid-template-columns:repeat(4,1fr);margin-top:42px;border:1px solid #d7d2c8;background:#fff}.bqp-quickfacts>div{display:flex;flex-direction:column;gap:7px;padding:22px;border-right:1px solid #d7d2c8}.bqp-quickfacts>div:last-child{border-right:0}.bqp-quickfacts small{color:#806020;text-transform:uppercase;letter-spacing:.1em;font-size:10px;font-weight:800}.bqp-quickfacts strong{font-size:15px;line-height:1.35}
-    .bqp-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:22px}.bqp-panel{background:transparent;border:0;border-top:1px solid #d7d2c8;padding:clamp(28px,4vw,44px) 0;margin-top:22px}.bqp-panel h2,.bqp-buy h2{font-family:var(--display);font-size:clamp(26px,3vw,38px);font-weight:800;line-height:1.04;margin:8px 0 18px}.bqp-panel p{line-height:1.7;color:#514c44}.bqp-editorial-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,70px);max-width:1100px}.bqp-editorial-grid p{font-size:17px;margin:0}
-    .bqp-copy{max-width:76ch}.bqp-tasting{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#d7d2c8;border:1px solid #d7d2c8;margin-top:28px}.bqp-tasting>div{background:#fff;padding:24px}.bqp-tasting small{display:block;color:#806020;text-transform:uppercase;letter-spacing:.12em;font-size:10px;font-weight:800;margin-bottom:9px}.bqp-tasting p{margin:0;color:#514c44;line-height:1.55}.bqp-gauges{display:grid;grid-template-columns:1fr 1fr;gap:22px 34px;margin-top:30px}.bqp-gauge>div:first-child{display:flex;justify-content:space-between;font-size:13px;margin-bottom:8px}.bqp-track{height:7px;background:#e5e5e0;overflow:hidden}.bqp-track i{display:block;height:100%;background:#806020}
+    .bqp-quickfacts{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:38px}.bqp-quickfacts>div{display:flex;align-items:center;gap:14px;min-width:0;padding:18px;border:1px solid #e5dfd4;border-radius:16px;background:rgba(255,255,255,.86);box-shadow:0 12px 30px -27px rgba(20,17,12,.7);transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}.bqp-quickfacts>div:hover{transform:translateY(-3px);border-color:#cbb98f;box-shadow:0 18px 34px -27px rgba(20,17,12,.65)}.bqp-qf-icon{width:42px;height:42px;border-radius:13px;background:#f3ead6;color:#8b681e;display:grid;place-items:center;flex:0 0 auto}.bqp-qf-icon .qc-icon{width:21px;height:21px}.bqp-quickfacts>div>span:last-child{display:grid;gap:5px;min-width:0}.bqp-quickfacts small{color:#8b681e;text-transform:uppercase;letter-spacing:.1em;font-size:9px;font-weight:800}.bqp-quickfacts strong{font-size:14px;line-height:1.35;overflow-wrap:anywhere}
+    .bqp-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}.bqp-panel{background:transparent;border:0;border-top:1px solid #ddd6ca;padding:clamp(32px,4vw,50px) 0;margin-top:24px}.bqp-panel h2,.bqp-buy h2{font-family:var(--display);font-size:clamp(26px,3vw,38px);font-weight:800;line-height:1.04;margin:6px 0 0}.bqp-panel p{line-height:1.7;color:#514c44}.bqp-section-head{display:flex;align-items:center;gap:15px;margin-bottom:24px}.bqp-section-head>div{min-width:0}.bqp-section-icon{width:48px;height:48px;border-radius:15px;background:#17140f;color:#e5c77c;display:grid;place-items:center;flex:0 0 auto;box-shadow:0 12px 24px -18px rgba(20,17,12,.8)}.bqp-section-icon .qc-icon{width:24px;height:24px}.bqp-editorial-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:1100px}.bqp-copy-card{display:flex;align-items:flex-start;gap:16px;padding:24px;border-radius:18px;background:rgba(255,255,255,.82);border:1px solid #e5dfd4}.bqp-copy-card>span{width:38px;height:38px;border-radius:12px;background:#f3ead6;color:#8b681e;display:grid;place-items:center;flex:0 0 auto}.bqp-copy-card>span .qc-icon{width:19px;height:19px}.bqp-editorial-grid p{font-size:16px;margin:0}
+    .bqp-copy{max-width:76ch}.bqp-tasting{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:22px}.bqp-tasting>div{position:relative;background:#fff;padding:22px;border:1px solid #e5dfd4;border-radius:18px;overflow:hidden;transition:transform .2s ease,box-shadow .2s ease}.bqp-tasting>div:hover{transform:translateY(-3px);box-shadow:0 18px 34px -27px rgba(20,17,12,.65)}.tasting-icon{width:38px;height:38px;border-radius:12px;background:#f3ead6;color:#8b681e;display:grid;place-items:center;margin-bottom:18px}.tasting-icon .qc-icon{width:20px;height:20px}.bqp-tasting small{display:block;color:#806020;text-transform:uppercase;letter-spacing:.12em;font-size:10px;font-weight:800;margin-bottom:9px}.bqp-tasting p{margin:0;color:#514c44;line-height:1.55;font-size:14px}.bqp-gauges{display:grid;grid-template-columns:1fr 1fr;gap:20px 34px;margin-top:28px;padding:24px;border-radius:18px;background:#17140f;color:#fff}.bqp-gauge>div:first-child{display:flex;justify-content:space-between;font-size:13px;margin-bottom:8px}.bqp-track{height:6px;border-radius:999px;background:#373229;overflow:hidden}.bqp-track i{display:block;height:100%;border-radius:999px;background:linear-gradient(90deg,#9e7624,#e5c77c);transform-origin:left;animation:bqp-grow .8s ease both}
+    .bqp-verdict .decision-grid{gap:14px;margin-top:4px}.bqp-verdict .decision{display:flex;align-items:flex-start;gap:14px;padding:22px;border:1px solid #e5dfd4;border-radius:18px!important;background:rgba(255,255,255,.82)}.bqp-verdict .decision-icon{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;flex:0 0 auto}.bqp-verdict .decision-icon .qc-icon{width:20px;height:20px}.bqp-verdict .decision-yes .decision-icon{background:#e6efe6;color:#36663b}.bqp-verdict .decision-alt .decision-icon{background:#f3ead6;color:#8b681e}.bqp-verdict .decision strong{font-size:15px;color:#14110c}.bqp-verdict .decision p{margin:7px 0 0;font-size:14px;line-height:1.55}
     .bqp-scene{position:relative;isolation:isolate;min-height:390px;margin-top:22px;padding:clamp(30px,6vw,70px);display:flex;align-items:flex-end;overflow:hidden;background-image:linear-gradient(90deg,rgba(13,11,7,.83),rgba(13,11,7,.18)),var(--scene);background-size:cover;background-position:center;color:#fff}.bqp-scene:after{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,transparent 45%,rgba(13,11,7,.38))}.bqp-scene>div{max-width:720px}.bqp-scene .pblock-eyebrow{color:#e6c777}.bqp-scene h2{font-family:var(--display);font-size:clamp(32px,5vw,58px);font-weight:900;line-height:1;text-transform:uppercase;margin:10px 0 0}
-    .bqp-list{list-style:none;padding:0;margin:0;display:grid;gap:10px}.bqp-list li{padding:13px 16px;background:#F4F4F1}.bqp-list li:before{content:'✓';color:#806020;font-weight:700;margin-right:10px}
-    .bqp-facts{display:grid;grid-template-columns:1fr 1fr;margin:24px 0 0;border-top:1px solid #d7d2c8}.bqp-fact-row{display:grid;grid-template-columns:minmax(120px,.7fr) 1.3fr;gap:18px;padding:16px 20px 16px 0;border-bottom:1px solid #d7d2c8}.bqp-fact-row:nth-child(odd){margin-right:28px}.bqp-fact-row dt{color:#777067}.bqp-fact-row dd{margin:0;font-weight:700;line-height:1.4}.bqp-answer-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px 20px}.bqp-answer{background:#fff;border:1px solid #deded8}.bqp-answer summary{cursor:pointer;padding:18px 48px 18px 18px;font-weight:700;position:relative;list-style:none}.bqp-answer summary:after{content:'+';position:absolute;right:18px;color:#806020;font-size:22px;top:13px}.bqp-answer[open] summary:after{content:'−'}.bqp-answer p{margin:0;padding:0 18px 18px}.bqp-unavailable{display:flex;flex-direction:column;gap:5px;margin-top:20px;padding:16px 18px;border-left:3px solid #8a6a2c;background:#ebe8e0;color:#312d27}.bqp-unavailable span{font-size:14px;line-height:1.5;color:#625c53}.bqp-buy{margin-top:22px;background:#17140f;color:#fff;border-radius:20px;padding:clamp(26px,4vw,44px);display:flex;justify-content:space-between;align-items:center;gap:28px}.bqp-buy p{color:#cbc5bb;margin:0}.bqp-buy-unavailable{background:#33302a}.bqp-related{margin-top:70px}
-    .bqp-related .bq-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.bqp-related .bq-card{display:flex;flex-direction:column;background:#fff;border:1px solid #deded8;overflow:hidden;transition:transform .2s ease,box-shadow .2s ease}.bqp-related .bq-card:hover{transform:translateY(-4px);box-shadow:0 18px 40px -22px rgba(20,17,12,.28)}.bqp-related .bq-media{position:relative;display:flex;align-items:center;justify-content:center;height:280px;overflow:hidden;background:#fff;padding:22px;box-sizing:border-box;contain:layout paint}.bqp-related .bq-media img{display:block;position:absolute;inset:22px;width:calc(100% - 44px)!important;height:calc(100% - 44px)!important;max-width:none!important;max-height:none!important;object-fit:contain!important;object-position:center;mix-blend-mode:multiply;margin:0!important}.bqp-related .bq-body{display:flex;flex-direction:column;gap:8px;padding:16px 16px 18px;flex:1}.bqp-related .bq-brand{font-size:11px;letter-spacing:.11em;text-transform:uppercase;color:#806020;font-weight:700}.bqp-related .bq-name{font-size:15px;line-height:1.32;font-weight:600;margin:0;min-height:2.4em}.bqp-related .bq-tags{display:flex;flex-wrap:wrap;gap:6px}.bqp-related .bq-tag{font-size:11px;color:#6f6a61;border:1px solid #deded8;padding:3px 9px}.bqp-related .bq-foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:10px;padding-top:12px}.bqp-related .bq-price{display:flex;flex-direction:column;font-weight:700;font-size:16px}.bqp-related .bq-btn{background:#14110c;color:#fff;padding:9px 14px;font-size:12px;font-weight:600;text-decoration:none;white-space:nowrap}
-    @media(max-width:760px){.bqp-hero,.bqp-grid,.bqp-editorial-grid{grid-template-columns:minmax(0,1fr)}.bqp-hero>*,.bqp-intro{min-width:0}.bqp-visual{width:100%;height:400px;padding:22px}.bqp-visual img{inset:22px;width:calc(100% - 44px)!important;height:calc(100% - 44px)!important}.bqp-quickfacts{grid-template-columns:1fr 1fr}.bqp-quickfacts>div:nth-child(2){border-right:0}.bqp-quickfacts>div:nth-child(-n+2){border-bottom:1px solid #d7d2c8}.bqp-gauges,.bqp-tasting,.bqp-facts,.bqp-answer-grid{grid-template-columns:1fr}.bqp-fact-row:nth-child(odd){margin-right:0}.bqp-buy{align-items:flex-start;flex-direction:column}.bqp-intro h1{font-size:clamp(32px,10.5vw,42px);overflow-wrap:anywhere}.bqp-lead{font-size:17px}.bqp-related .bq-grid{grid-template-columns:1fr}.bqp-related .bq-media{height:290px}.bqp-buy .btn,.bqp-intro>.btn{width:100%;justify-content:center;white-space:normal;text-align:center}.bqp-price{flex-wrap:wrap}}
-    @media(max-width:420px){.bqp{padding-top:22px}.bqp-hero{margin-top:18px;gap:28px}.bqp-visual{height:350px;padding:16px}.bqp-visual img{inset:16px;width:calc(100% - 32px)!important;height:calc(100% - 32px)!important}.bqp-intro h1{font-size:clamp(31px,10vw,38px);line-height:.98}.bqp-panel{padding:28px 0}.bqp-facts{grid-template-columns:1fr}.bqp-scene h2{font-size:32px}.bqp-related{margin-top:52px}}
+    .bqp-mini-panel{margin-top:0;padding:28px;border:1px solid #e5dfd4;border-top:1px solid #e5dfd4;border-radius:22px;background:rgba(255,255,255,.78)}.bqp-mini-panel .bqp-section-head{margin-bottom:20px}.bqp-mini-panel .bqp-section-icon{width:42px;height:42px;border-radius:13px}.bqp-list{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:9px}.bqp-list li{display:flex;align-items:center;gap:7px;padding:9px 12px;border-radius:999px;background:#f3ead6;color:#614b1d;font-size:13px;font-weight:650}.bqp-list li>span{color:#8b681e}.bqp-list li .qc-icon{width:15px;height:15px}.bqp-service-copy{display:flex;align-items:flex-start;gap:14px}.bqp-service-copy>span{width:38px;height:38px;border-radius:12px;background:#f3ead6;color:#8b681e;display:grid;place-items:center;flex:0 0 auto}.bqp-service-copy>span .qc-icon{width:19px;height:19px}.bqp-service-copy p{margin:0}
+    .bqp-facts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:24px 0 0}.bqp-fact-row{display:flex;align-items:flex-start;gap:12px;min-width:0;padding:17px;border:1px solid #e5dfd4;border-radius:16px;background:rgba(255,255,255,.82)}.bqp-fact-row>div{display:grid;gap:5px;min-width:0}.bqp-fact-icon{width:36px;height:36px;border-radius:11px;background:#f3ead6;color:#8b681e;display:grid;place-items:center;flex:0 0 auto}.bqp-fact-icon .qc-icon{width:18px;height:18px}.bqp-fact-label{color:#867f74;font-size:11px;text-transform:uppercase;letter-spacing:.07em}.bqp-fact-value{font-weight:700;font-size:14px;line-height:1.35;overflow-wrap:anywhere}.bqp-more-facts{margin-top:14px}.bqp-more-facts>summary{display:flex;align-items:center;justify-content:center;gap:10px;width:max-content;max-width:100%;margin:0 auto;padding:12px 17px;border:1px solid #d8cfbe;border-radius:999px;background:#fff;color:#4e4638;font-size:13px;font-weight:700;cursor:pointer;list-style:none;transition:background .2s ease,border-color .2s ease}.bqp-more-facts>summary::-webkit-details-marker{display:none}.bqp-more-facts>summary:hover{background:#f3ead6;border-color:#cbb98f}.bqp-more-facts>summary .qc-icon{width:18px;height:18px;color:#8b681e}.bqp-more-facts>summary i{width:8px;height:8px;border-right:2px solid #8b681e;border-bottom:2px solid #8b681e;transform:rotate(45deg);transition:transform .2s ease;margin:-4px 2px 0 3px}.bqp-more-facts[open]>summary i{transform:rotate(225deg);margin-top:4px}.bqp-facts-more{animation:bqp-reveal .28s ease both}
+    .bqp-section-intro{margin:-11px 0 22px;max-width:54ch;font-size:14px}.bqp-answer-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.bqp-answer{background:rgba(255,255,255,.88);border:1px solid #e5dfd4;border-radius:16px;overflow:hidden;animation:bqp-rise .45s ease both;animation-delay:var(--delay);transition:border-color .2s ease,box-shadow .2s ease,transform .2s ease}.bqp-answer:hover{border-color:#cbb98f;transform:translateY(-2px);box-shadow:0 16px 30px -28px rgba(20,17,12,.75)}.bqp-answer[open]{border-color:#c8ad70;background:#fff;box-shadow:0 18px 38px -30px rgba(20,17,12,.68)}.bqp-answer summary{display:grid;grid-template-columns:40px 1fr 18px;align-items:center;gap:12px;cursor:pointer;padding:13px 15px;font-weight:750;position:relative;list-style:none;font-size:14px;line-height:1.35}.bqp-answer summary::-webkit-details-marker{display:none}.bqp-answer summary:focus-visible,.bqp-more-facts>summary:focus-visible{outline:3px solid rgba(156,122,52,.35);outline-offset:-3px}.bqp-answer-icon{width:38px;height:38px;border-radius:12px;background:#f3ead6;color:#8b681e;display:grid;place-items:center}.bqp-answer-icon .qc-icon{width:19px;height:19px}.bqp-answer summary i{width:8px;height:8px;border-right:2px solid #8b681e;border-bottom:2px solid #8b681e;transform:rotate(45deg);transition:transform .22s ease;justify-self:center;margin-top:-4px}.bqp-answer[open] summary i{transform:rotate(225deg);margin-top:4px}.bqp-answer-body{display:grid;grid-template-rows:0fr;transition:grid-template-rows .28s ease}.bqp-answer[open] .bqp-answer-body{grid-template-rows:1fr}.bqp-answer-body p{overflow:hidden;margin:0;padding:0 17px 0 67px;color:#655e53;font-size:14px;line-height:1.55}.bqp-answer[open] .bqp-answer-body p{padding-bottom:17px}.bqp-unavailable{display:flex;flex-direction:column;gap:5px;margin-top:20px;padding:16px 18px;border-left:3px solid #8a6a2c;background:#ebe8e0;color:#312d27}.bqp-unavailable span{font-size:14px;line-height:1.5;color:#625c53}.bqp-buy{margin-top:30px;background:linear-gradient(135deg,#17140f,#302717);color:#fff;border-radius:22px;padding:clamp(26px,4vw,44px);display:flex;justify-content:space-between;align-items:center;gap:28px;box-shadow:0 26px 55px -38px rgba(20,17,12,.85)}.bqp-buy p{color:#cbc5bb;margin:0}.bqp-buy-unavailable{background:#33302a}.bqp-related{margin-top:70px}
+    .bqp-related .bq-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.bqp-related .bq-card{display:flex;flex-direction:column;background:#fff;border:1px solid #deded8;border-radius:18px;overflow:hidden;transition:transform .2s ease,box-shadow .2s ease}.bqp-related .bq-card:hover{transform:translateY(-4px);box-shadow:0 18px 40px -22px rgba(20,17,12,.28)}.bqp-related .bq-media{position:relative;display:flex;align-items:center;justify-content:center;height:280px;overflow:hidden;background:#fff;padding:22px;box-sizing:border-box;contain:layout paint}.bqp-related .bq-media img{display:block;position:absolute;inset:22px;width:calc(100% - 44px)!important;height:calc(100% - 44px)!important;max-width:none!important;max-height:none!important;object-fit:contain!important;object-position:center;mix-blend-mode:multiply;margin:0!important;transition:transform .3s ease}.bqp-related .bq-card:hover .bq-media img{transform:scale(1.025)}.bqp-related .bq-visual-badge{position:absolute;z-index:2;left:14px;top:14px;display:flex;align-items:center;gap:6px;padding:7px 9px;border-radius:999px;background:rgba(247,242,231,.94);color:#755719;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;backdrop-filter:blur(8px)}.bqp-related .bq-visual-badge .qc-icon{width:14px;height:14px}.bqp-related .bq-body{display:flex;flex-direction:column;gap:8px;padding:16px 16px 18px;flex:1}.bqp-related .bq-brand{font-size:11px;letter-spacing:.11em;text-transform:uppercase;color:#806020;font-weight:700}.bqp-related .bq-name{font-size:15px;line-height:1.32;font-weight:600;margin:0;min-height:2.4em}.bqp-related .bq-tags{display:flex;flex-wrap:wrap;gap:6px}.bqp-related .bq-tag{font-size:11px;color:#6f6a61;border:1px solid #deded8;padding:3px 9px}.bqp-related .bq-foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:10px;padding-top:12px}.bqp-related .bq-price{display:flex;flex-direction:column;font-weight:700;font-size:16px}.bqp-related .bq-btn{background:#14110c;color:#fff;padding:9px 14px;font-size:12px;font-weight:600;text-decoration:none;white-space:nowrap}
+    @keyframes bqp-grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}@keyframes bqp-rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}@keyframes bqp-reveal{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
+    @media(max-width:900px){.bqp-quickfacts{grid-template-columns:1fr 1fr}.bqp-tasting{grid-template-columns:1fr 1fr}.bqp-facts{grid-template-columns:1fr 1fr}}
+    @media(max-width:760px){.bqp-hero,.bqp-grid,.bqp-editorial-grid{grid-template-columns:minmax(0,1fr)}.bqp-hero>*,.bqp-intro{min-width:0}.bqp-visual{width:100%;height:400px;padding:22px;border-radius:22px}.bqp-visual img{inset:22px;width:calc(100% - 44px)!important;height:calc(100% - 44px)!important}.bqp-answer-grid{grid-template-columns:1fr}.bqp-gauges{grid-template-columns:1fr;padding:20px}.bqp-buy{align-items:flex-start;flex-direction:column}.bqp-intro h1{font-size:clamp(32px,10.5vw,42px);overflow-wrap:anywhere}.bqp-lead{font-size:17px}.bqp-related .bq-grid{grid-template-columns:1fr}.bqp-related .bq-media{height:290px}.bqp-buy .btn,.bqp-intro>.btn{width:100%;justify-content:center;white-space:normal;text-align:center}.bqp-price{flex-wrap:wrap}.bqp-mini-panel{padding:22px}}
+    @media(max-width:520px){.bqp-quickfacts,.bqp-tasting,.bqp-facts{grid-template-columns:1fr}.bqp-quickfacts{gap:9px}.bqp-quickfacts>div{padding:14px}.bqp-tasting>div{padding:18px}.bqp-section-head{align-items:flex-start}.bqp-section-icon{width:42px;height:42px;border-radius:13px}.bqp-copy-card{padding:18px}.bqp-verdict .decision{padding:18px}.bqp-answer summary{grid-template-columns:36px 1fr 16px;padding:12px}.bqp-answer-icon{width:34px;height:34px}.bqp-answer-body p{padding-left:60px}.bqp-more-facts>summary{width:100%;box-sizing:border-box}}
+    @media(max-width:420px){.bqp{padding-top:22px}.bqp-hero{margin-top:18px;gap:28px}.bqp-visual{height:350px;padding:16px}.bqp-visual img{inset:16px;width:calc(100% - 32px)!important;height:calc(100% - 32px)!important}.bqp-intro h1{font-size:clamp(31px,10vw,38px);line-height:.98}.bqp-panel{padding:30px 0}.bqp-related{margin-top:52px}}
+    @media(prefers-reduced-motion:reduce){.bqp *{animation:none!important;transition:none!important}.bqp-answer:hover,.bqp-tasting>div:hover,.bqp-quickfacts>div:hover{transform:none}}
   </style>`;
 }
 
@@ -307,10 +367,10 @@ export function boutiqueMain(items=CHAMPAGNES){
     .bq-sort{display:flex;align-items:center;gap:8px;color:var(--bq-muted);font-size:13px}
     .bq-sort select{border:1px solid var(--bq-line);border-radius:999px;padding:8px 12px;background:#fff;font:inherit;font-size:13px;color:var(--bq-ink);cursor:pointer}
     .bq-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(232px,1fr));gap:22px}
-    .bq-card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--bq-line);border-radius:16px;overflow:hidden;transition:transform .2s ease,box-shadow .2s ease}
+    .bq-card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--bq-line);border-radius:16px;overflow:hidden;animation:bq-card-in .45s ease both;transition:transform .2s ease,box-shadow .2s ease}
     .bq-card:hover{transform:translateY(-4px);box-shadow:0 18px 40px -22px rgba(20,17,12,.28)}
     .bq-media{position:relative;display:flex;align-items:center;justify-content:center;height:340px;overflow:hidden;background:#fff;padding:24px;box-sizing:border-box}
-    .bq-media img{display:block;position:absolute;inset:24px;width:calc(100% - 48px)!important;height:calc(100% - 48px)!important;max-width:none!important;max-height:none!important;object-fit:contain!important;object-position:center;mix-blend-mode:multiply;margin:0!important}
+    .bq-media img{display:block;position:absolute;inset:24px;width:calc(100% - 48px)!important;height:calc(100% - 48px)!important;max-width:none!important;max-height:none!important;object-fit:contain!important;object-position:center;mix-blend-mode:multiply;margin:0!important;transition:transform .3s ease}.bq-card:hover .bq-media img{transform:scale(1.025)}.bq-visual-badge{position:absolute;z-index:2;left:14px;top:14px;display:flex;align-items:center;gap:6px;padding:7px 9px;border-radius:999px;background:rgba(247,242,231,.94);color:#755719;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;backdrop-filter:blur(8px)}.bq-visual-badge .qc-icon{width:14px;height:14px}
     .bq-body{display:flex;flex-direction:column;gap:8px;padding:16px 16px 18px;flex:1}
     .bq-brand{font-size:11px;letter-spacing:.11em;text-transform:uppercase;color:var(--bq-gold);font-weight:700}
     .bq-name{font-size:15px;line-height:1.32;font-weight:600;color:var(--bq-ink);margin:0;min-height:2.4em}
@@ -320,7 +380,7 @@ export function boutiqueMain(items=CHAMPAGNES){
     .bq-price{display:flex;flex-direction:column;line-height:1.15;font-weight:700;color:var(--bq-ink);font-size:16px}
     .bq-btn{background:var(--bq-ink);color:#fff;border-radius:999px;padding:9px 16px;font-size:13px;font-weight:600;text-decoration:none;white-space:nowrap;transition:.18s}
     .bq-btn:hover{background:var(--bq-gold)}
-    .bq-legal{margin-top:30px;font-size:12px;line-height:1.6;color:var(--bq-muted);max-width:70ch}
+    .bq-legal{margin-top:30px;font-size:12px;line-height:1.6;color:var(--bq-muted);max-width:70ch}@keyframes bq-card-in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
     @media(max-width:620px){.bq-bar{align-items:stretch}.bq-chips{gap:7px}.bq-sort{width:100%;justify-content:space-between}.bq-sort select{flex:1;max-width:230px}.bq-grid{grid-template-columns:1fr;gap:18px}.bq-media{height:300px;padding:20px}.bq-media img{inset:20px;width:calc(100% - 40px)!important;height:calc(100% - 40px)!important}.bq-name{font-size:16px}.bq-foot{gap:14px}.bq-btn{padding:10px 15px}}
   </style>
 

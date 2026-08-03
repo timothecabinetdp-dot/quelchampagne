@@ -514,7 +514,7 @@ if (PARTNER_CATALOGUE.some(product=>product.identityStatus==='merchant_feed_year
 for (const file of htmlFiles.filter(path => path.includes('/champagne/') && !path.match(/\/champagne\/(aperitif|cadeau|repas|rose|blanc-de-blancs|moins-de-50-euros|fruits-de-mer)\//))) {
   const html = readFileSync(file, 'utf8');
   if (!html.includes('Choisissez-la pour') || !html.includes('Préférez une autre bouteille si')) errors.push(`Aide à la décision absente de ${file.replace(DIST.pathname, '')}.`);
-  if (!html.includes('Comprendre la cuvée') || !html.includes('Toutes les caractéristiques') || !html.includes('Réponses pratiques')) {
+  if (!html.includes('Comprendre la cuvée') || !html.includes('Les caractéristiques essentielles') || !html.includes('Afficher toutes les caractéristiques') || !html.includes('Réponses pratiques')) {
     errors.push(`Fiche enrichie incomplète : ${file.replace(DIST.pathname, '')}.`);
   }
   if (!html.includes('Œil') || !html.includes('Nez') || !html.includes('Bouche') || !html.includes('Finale')) {
