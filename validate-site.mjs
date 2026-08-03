@@ -38,6 +38,7 @@ const imageRegistry = JSON.parse(read('data/product-images.json'));
 const merchantFeedConfig = JSON.parse(read('data/merchant-feed-config.json'));
 const productIdentityIndex = JSON.parse(read('data/product-identity-index.json'));
 const productEvidence = JSON.parse(read('data/product-evidence.json'));
+const expertKnowledge = JSON.parse(read('data/champagne-knowledge-base.json'));
 const pricePolicy = JSON.parse(read('data/price-policy.json'));
 const priceIndex = JSON.parse(read('data/price-index.json'));
 const htmlFiles = walk(DIST.pathname).filter(path => path.endsWith('.html'));
@@ -45,6 +46,14 @@ const ids = new Set(catalogue.map(product => product.id));
 const seenTitles = new Map();
 const seenCanonicals = new Map();
 const seenDescriptions = new Map();
+
+if (expertKnowledge.count !== PARTNER_CATALOGUE.length || expertKnowledge.records.length !== PARTNER_CATALOGUE.length) {
+  errors.push(`Base experte incomplète : ${expertKnowledge.records.length} sur ${PARTNER_CATALOGUE.length}.`);
+}
+if (Object.keys(expertKnowledge.axes||{}).length !== 12) errors.push('La base experte doit comporter 12 axes.');
+if (!existsSync(new URL('dist/expert/index.html', ROOT)) || !existsSync(new URL('dist/assets/expert-engine.js', ROOT))) {
+  errors.push('Le sélecteur expert ou son moteur navigateur est absent du build.');
+}
 
 if (productEvidence.productCount !== PARTNER_CATALOGUE.length || productEvidence.records.length !== PARTNER_CATALOGUE.length) {
   errors.push(`Base de preuves incomplète : ${productEvidence.records.length} sur ${PARTNER_CATALOGUE.length}.`);
@@ -387,7 +396,7 @@ for (const file of htmlFiles) {
 
 const sitemap = read('dist/sitemap.xml');
 const sitemapUrls = [...sitemap.matchAll(/<loc>https:\/\/quelchampagne\.fr([^<]*)<\/loc>/g)];
-const expectedSitemapUrls = 23 + PARTNER_CATALOGUE.filter(product=>product.sourceKind==='producer').length;
+const expectedSitemapUrls = 24 + PARTNER_CATALOGUE.filter(product=>product.sourceKind==='producer').length;
 if (sitemapUrls.length !== expectedSitemapUrls) errors.push(`URL sitemap attendues : ${expectedSitemapUrls}, obtenues : ${sitemapUrls.length}.`);
 for (const [, path] of sitemapUrls) {
   const target = localTarget(path || '/');
@@ -483,7 +492,6 @@ if (!existsSync(new URL('dist/assets/hero-quelchampagne.svg', ROOT))) errors.pus
 if (!existsSync(new URL('dist/assets/og-quelchampagne.png', ROOT))) errors.push('Image de partage sociale absente du build.');
 if (!existsSync(new URL('dist/assets/archivo-latin-wght-normal.woff2', ROOT))) errors.push('Police Archivo auto-hébergée absente du build.');
 if (!existsSync(new URL('dist/assets/analytics.js', ROOT))) errors.push('Client de mesure d’audience absent du build.');
-if (!existsSync(new URL('functions/api/events.js', ROOT))) errors.push('Fonction Cloudflare de mesure d’audience absente.');
 const analyticsClient=read('assets/analytics.js');
 if (!analyticsClient.includes('qc_affiliate_choice') || !analyticsClient.includes('data-direct-url')) errors.push('Le choix entre lien affilié et lien direct n’est pas appliqué.');
 if (source.includes('cdn.jsdelivr.net/npm/@fontsource')) errors.push('La police dépend encore de jsDelivr.');

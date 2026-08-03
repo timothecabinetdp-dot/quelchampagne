@@ -21,6 +21,8 @@ import { buildCatalogue } from './build-catalogue.mjs';
 import { buildPriceIndex } from './build-price-index.mjs';
 import { boutiqueMain, boutiqueProductMain } from './boutique.mjs';
 import { PARTNER_CATALOGUE, AVAILABLE_PARTNER_CATALOGUE } from './build-partner-catalogue.mjs';
+import { buildKnowledgeBase } from './expert-engine.mjs';
+import { expertMain } from './expert-page.mjs';
 
 const BASE = 'https://quelchampagne.fr';
 const HERO = '/assets/hero-quelchampagne.svg';
@@ -60,6 +62,7 @@ eval(SCRIPT + '; Object.assign(ctx,{products,setCatalogue,articles,prod,art,deta
 const catalogue = buildCatalogue();
 const allPartnerProducts = PARTNER_CATALOGUE;
 const partnerProducts = AVAILABLE_PARTNER_CATALOGUE;
+const expertKnowledgeBase = buildKnowledgeBase(allPartnerProducts);
 const priceIndex = buildPriceIndex();
 ctx.setCatalogue(catalogue);
 const { products, articles, prod, detail, coverBg, buyLink, priceText, productAction, bottleViz, logoMark, BRAND } = ctx;
@@ -227,14 +230,14 @@ function header(active){
   return `<header class="nav"><div class="container nav-in">
     <a class="logo" href="/">${logoMark()}<span class="logo-txt">Quel<b>Champagne</b></span></a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Ouvrir le menu"><span></span><span></span></button>
-    <nav class="nav-links" id="primary-navigation" aria-label="Navigation principale">${L('/champagnes/','La sélection','shop')}${L('/comparateur/','Comparer','compare')}${L('/blog/','Blog','blog')}<a class="nlink-cta" href="/selecteur/">Trouver mon champagne</a></nav>
+    <nav class="nav-links" id="primary-navigation" aria-label="Navigation principale">${L('/champagnes/','La sélection','shop')}${L('/comparateur/','Comparer','compare')}${L('/blog/','Blog','blog')}<a class="nlink-cta" href="/expert/">Sélecteur expert</a></nav>
   </div></header>`;
 }
 function footer(){
   return `<footer><div class="container">
     <div class="foot-in">
       <div class="foot-brand"><span class="foot-brand-name">${BRAND}${logoMark()}</span><p>Un conseil indépendant pour choisir selon l’occasion, vos goûts et votre budget.</p></div>
-      <nav class="foot-links" aria-label="Navigation secondaire"><a href="/selecteur/">Le sélecteur</a><a href="/comparateur/">Comparer</a><a href="/notre-methode/">Notre méthode</a><a href="/a-propos/">À propos</a><a href="/partenaires/">Professionnels</a><a href="/mentions-legales/">Mentions légales</a><a href="/confidentialite/">Confidentialité</a><button onclick="window.qcAffiliatePreferences&&window.qcAffiliatePreferences()">Préférence d’affiliation</button></nav>
+      <nav class="foot-links" aria-label="Navigation secondaire"><a href="/expert/">Le sélecteur expert</a><a href="/selecteur/">Le sélecteur rapide</a><a href="/comparateur/">Comparer</a><a href="/notre-methode/">Notre méthode</a><a href="/a-propos/">À propos</a><a href="/partenaires/">Professionnels</a><a href="/mentions-legales/">Mentions légales</a><a href="/confidentialite/">Confidentialité</a><button onclick="window.qcAffiliatePreferences&&window.qcAffiliatePreferences()">Préférence d’affiliation</button></nav>
     </div>
     <div class="foot-health">L'abus d'alcool est dangereux pour la santé. À consommer avec modération.</div>
     <div class="foot-disc">Site réservé aux personnes majeures. ${BRAND} propose des informations et des conseils indépendants. Chaque prix affiché correspond au dernier relevé de l’offre présentée et porte sa date de contrôle.</div>
@@ -552,7 +555,7 @@ function landingMain(landing){
     <div style="margin-top:24px"><a class="btn btn-primary" href="/selecteur/">Obtenir une recommandation personnalisée</a></div>
   </div></div></section>
   <section class="section" style="padding-top:0"><div class="container">
-    <div class="sec-head"><div class="h2">${selected.length} cuvées correspondantes</div><p>Chaque fiche présente une bouteille disponible, sa photo, son profil et le prix relevé chez notre partenaire.</p></div>
+    <div class="sec-head"><div class="h2">${selected.length} cuvées correspondantes</div><p>Chaque fiche présente une bouteille disponible, sa photo, son analyse et le prix relevé chez notre partenaire.</p></div>
     <div class="pgrid">${cards}</div>
   </div></section>
   <section class="section gray"><div class="container"><div class="narrow">
@@ -562,12 +565,30 @@ function landingMain(landing){
 }
 
 function comparateurMain(){
+  const profileLabels={
+    profil_frais_vif:'Vif et précis',
+    profil_fruite:'Fruité et expressif',
+    profil_riche_ample:'Ample et structuré',
+    profil_delicat:'Fin et délicat'
+  };
+  const pairingLabels={accord_mer:'Produits de la mer',accord_volaille:'Volaille',accord_fromage:'Fromages',accord_dessert:'Dessert',accord_aperitif:'Apéritif'};
+  const humanStyle=p=>{
+    const labels=(p.profil||[]).map(token=>profileLabels[token]).filter(Boolean);
+    return labels.length?labels.join(' · '):(p.tags||[]).filter(tag=>tag!=='Brut').slice(0,2).join(' · ')||'Équilibré et polyvalent';
+  };
+  const mainPairing=p=>{
+    const detailed=p.details?.accords?.map(item=>item.d).filter(Boolean)||[];
+    if(detailed.length)return detailed[0];
+    return (p.accords||[]).map(token=>pairingLabels[token]).find(Boolean)||'Apéritif et début de repas';
+  };
+  const dosage=p=>p.details?.dosage||(p.tags||[]).find(tag=>/extra-brut|nature|demi-sec|brut/i.test(tag))||'Brut';
+  const grapes=p=>p.details?.grapes?.length?p.details.grapes.join(', '):'Non communiqué par le producteur';
   const sorted = [...partnerProducts].sort((a,b)=>(b.popularity||0)-(a.popularity||0));
-  const data = sorted.map(p=>({ id:p.id, house:p.house, name:p.name, price:priceText(p), type:p.tags[0]||'Champagne', style:p.tags.slice(1).join(', ')||p.profil.join(', '), occasions:p.occ.map(x=>x.replace('occ_','')).join(', '), accords:p.pair, producerType:p.producerType==='vigneron'?'Vigneron':'Maison', url:`/champagne/${p.id}/` }));
+  const data = sorted.map(p=>({ id:p.id, house:p.house, name:p.name, image:p.image, price:priceText(p), type:p.tags[0]||'Champagne', expression:humanStyle(p), dosage:dosage(p), grapes:grapes(p), pairing:mainPairing(p), producerType:p.producerType==='vigneron'?'Vigneron indépendant':'Maison de Champagne', url:`/champagne/${p.id}/` }));
   const encoded = JSON.stringify(data).replaceAll('<','\\u003c');
   const choices = sorted.map((p,i)=>{
     const search = `${p.house} ${p.name} ${(p.tags||[]).join(' ')}`.toLowerCase().replaceAll('"','&quot;');
-    return `<button class="compare-choice${i>=12?' extra':''}" type="button" data-compare="${p.id}" data-search="${search}" data-price="${p.priceMax||p.price}" data-producer="${p.producerType}" data-occ="${p.occ.join(' ')}" aria-pressed="false"><strong>${p.house}</strong><span>${p.name} · ${priceText(p)}</span></button>`;
+    return `<button class="compare-choice${i>=12?' extra':''}" type="button" data-compare="${p.id}" data-search="${search}" data-price="${p.priceMax||p.price}" data-producer="${p.producerType}" data-occ="${p.occ.join(' ')}" aria-pressed="false"><img src="${p.image}" alt="" loading="lazy"><span><strong>${p.house}</strong><small>${p.name} · ${priceText(p)}</small></span></button>`;
   }).join('');
   return `<section class="section"><div class="container">
     <div class="lead-head"><h1 class="h2">Comparer jusqu'à 4 champagnes</h1><p>Filtrez les bouteilles disponibles, puis mettez 2 à 4 cuvées en regard. Chaque prix correspond au dernier relevé de l’offre présentée.</p></div>
@@ -599,7 +620,7 @@ function comparateurMain(){
     const selBox=document.getElementById('compare-selected');
     const buttons=[].slice.call(document.querySelectorAll('[data-compare]'));
     let showAll=false;
-    const labels={price:'Prix relevé',type:'Type',style:'Style et usages',producerType:'Producteur',occasions:'Occasions',accords:'Accords'};
+    const labels={price:'Prix relevé',type:'Catégorie',expression:'Expression',dosage:'Dosage',grapes:'Cépages',pairing:'Accord conseillé',producerType:'Élaboré par'};
     function budgetOk(v){ const b=fb.value; if(!b) return true; v=+v; if(b==='under40') return v<40; if(b==='40-60') return v>=40&&v<=60; if(b==='60-90') return v>60&&v<=90; if(b==='90plus') return v>90; return true; }
     function filtering(){ return Boolean(search.value.trim()||fb.value||fo.value||fp.value); }
     function applyFilters(){
@@ -617,7 +638,7 @@ function comparateurMain(){
       renderSel();
       if(selected.length<2){ result.innerHTML=''; return; }
       const picked=selected.map(id=>products.find(p=>p.id===id));
-      const head='<tr><th>Critère</th>'+picked.map(p=>'<th><a href="'+p.url+'">'+p.house+'<br>'+p.name+'</a></th>').join('')+'</tr>';
+      const head='<tr><th>Critère</th>'+picked.map(p=>'<th><a class="compare-product-head" href="'+p.url+'"><span class="compare-product-image"><img src="'+p.image+'" alt=""></span><span>'+p.house+'<br><strong>'+p.name+'</strong></span></a></th>').join('')+'</tr>';
       const rows=Object.keys(labels).map(key=>'<tr><td>'+labels[key]+'</td>'+picked.map(p=>'<td>'+p[key]+'</td>').join('')+'</tr>').join('');
       result.innerHTML='<table class="compare-table"><thead>'+head+'</thead><tbody>'+rows+'</tbody></table>';
     }
@@ -636,7 +657,11 @@ function comparateurMain(){
     clear.addEventListener('click',()=>{ selected.splice(0); buttons.forEach(b=>{b.classList.remove('on');b.setAttribute('aria-pressed','false');}); render(); });
     applyFilters(); render();
   })();
-  </script>`;
+  </script>
+  <style>
+    .compare-choice{display:flex!important;align-items:center;gap:12px;text-align:left}.compare-choice>img{width:42px;height:64px;object-fit:contain;background:#fff;flex:0 0 auto}.compare-choice>span{display:grid;gap:3px}.compare-choice small{font-size:13px;color:#6b665e;line-height:1.3}.compare-product-head{display:grid;justify-items:center;gap:10px;text-align:center;text-decoration:none;color:inherit}.compare-product-image{display:grid;place-items:center;width:100%;height:150px;background:#fff}.compare-product-image img{width:100%;height:138px;object-fit:contain}.compare-table tbody td:not(:first-child){line-height:1.45}.compare-table tbody tr:nth-child(even){background:#faf9f6}
+    @media(max-width:720px){.compare-product-image{height:110px}.compare-product-image img{height:100px}.compare-table{min-width:720px}}
+  </style>`;
 }
 
 function comparisonsMain(){
@@ -913,6 +938,7 @@ function selecteurHTML(){
 // ---------- écriture ----------
 try { rmSync('dist', { recursive:true, force:true }); } catch(e) { /* dossier absent ou verrouillé : sans importance */ }
 cpSync('assets', 'dist/assets', { recursive:true });
+cpSync('expert-engine.mjs', 'dist/assets/expert-engine.js');
 function write(path, content){
   const full = 'dist/' + path;
   mkdirSync(full.split('/').slice(0,-1).join('/'), { recursive:true });
@@ -929,6 +955,17 @@ add(BASE+'/', '1.0', 'weekly');
 // selecteur
 write('selecteur/index.html', selecteurHTML());
 add(BASE+'/selecteur/', '0.8', 'monthly');
+
+// moteur expert autonome : profils multidimensionnels et recommandations explicables
+write('expert/index.html', page({
+  title:'Sélecteur expert de champagne — Recommandations personnalisées | QuelChampagne',
+  desc:'Décrivez le moment, l’accord, le style et le budget recherchés. Le moteur expert compare les cuvées disponibles sur douze dimensions et explique chaque choix.',
+  canonical:BASE+'/expert/',
+  active:'expert',
+  main:expertMain(expertKnowledgeBase),
+  graph:[{'@type':'WebApplication',name:'Sélecteur expert QuelChampagne',url:BASE+'/expert/',applicationCategory:'LifestyleApplication',operatingSystem:'Web',inLanguage:'fr-FR',description:'Moteur de recommandation de champagne fondé sur douze dimensions de style, les usages et les contraintes de budget.'}]
+}));
+add(BASE+'/expert/', '0.9', 'weekly');
 
 // champagnes list
 write('champagnes/index.html', page({ title:`Quel champagne choisir ? Notre sélection de ${partnerProducts.length} champagnes | QuelChampagne`, desc:`Analysez ${partnerProducts.length} champagnes disponibles chez notre partenaire : style, occasions, accords et points de vigilance avant de consulter l’offre.`, canonical:BASE+'/champagnes/', active:'shop', main:boutiqueMain(partnerProducts) }));
@@ -959,7 +996,7 @@ for(const p of allPartnerProducts){
   const analysis = boutiqueAnalysisDescription(p);
   const indexable = p.sourceKind === 'producer';
   write(`champagne/${slug}/index.html`, page({
-    title:`${p.brand} ${p.name} — Avis, profil et accords | QuelChampagne`,
+    title:`${p.brand} ${p.name} — Analyse et accords | QuelChampagne`,
     desc:analysis,
     canonical:`${BASE}/champagne/${slug}/`,
     ogImage:p.image,
@@ -1009,6 +1046,7 @@ ${urls.map(u=>`  <url><loc>${u.loc}</loc><lastmod>${BUILD_DATE}</lastmod><change
 write('sitemap.xml', sitemap);
 write('robots.txt', `User-agent: *\nAllow: /\n\nSitemap: ${BASE}/sitemap.xml\n`);
 write('catalogue.json', `${JSON.stringify(partnerProducts, null, 2)}\n`);
+write('data/champagne-knowledge-base.json', `${JSON.stringify(expertKnowledgeBase, null, 2)}\n`);
 
 // Cloudflare Pages : préserver les anciennes URL sans republier les fiches.
 const partnerIds=new Set(allPartnerProducts.map(product=>product.id));

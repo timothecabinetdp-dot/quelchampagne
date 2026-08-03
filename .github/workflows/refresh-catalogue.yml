@@ -26,8 +26,10 @@ jobs:
       - name: Reconstruire et contrôler
         run: |
           node build-product-evidence.mjs
+          node build-expert-knowledge.mjs
           node build-site.mjs
           node validate-site.mjs
+          node test-expert-engine.mjs
           node test-recommendations.mjs
           node test-merchant-import.mjs
           node test-analytics.mjs

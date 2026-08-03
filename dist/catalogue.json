@@ -1,0 +1,4681 @@
+[
+  {
+    "id": "jean-de-la-fontaine-eloquente-champagne-brut",
+    "merchantId": "shopify_FR_42716336685273",
+    "name": "L’Éloquente Brut",
+    "short": "L’Éloquente Brut",
+    "house": "Jean de La Fontaine",
+    "brand": "Jean de La Fontaine",
+    "region": "Champagne",
+    "price": 28.16,
+    "priceMin": 28.16,
+    "priceMax": 28.16,
+    "oldPrice": null,
+    "tier": 1,
+    "producerType": "vigneron",
+    "occ": [
+      "occ_fete",
+      "occ_apero",
+      "occ_diner"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_fruite"
+    ],
+    "accords": [
+      "accord_mer",
+      "accord_dessert",
+      "accord_aperitif"
+    ],
+    "bulles": "bulles_fines",
+    "tags": [
+      "Brut"
+    ],
+    "pair": "crustacés, sushis, poisson",
+    "note": "Un brut au caractère rond et généreux. Au premier plan : agrumes, pomme, poire, brioche. L’assemblage réunit Chardonnay, Pinot Noir, Meunier. À privilégier avec crustacés, sushis, poisson.",
+    "sourceUrl": "https://www.champagnebaronalbert.fr/",
+    "merchantSourceUrl": "https://bottleofitaly.com/fr/products/eloquente-champagne-brut-75cl-jean-de-la-fontaine",
+    "officialSourceUrl": "https://www.champagnebaronalbert.fr/",
+    "technicalSourceUrl": "https://www.astrumwinecellars.com/pdf/?slug=jean-de-la-fontaine&type=producer",
+    "sourceKind": "merchant",
+    "verifiedAt": "2026-07-31",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 68,
+    "aff": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_42716336685273&productname=Eloquente+Champagne+Brut+-+Jean+De+La+Fontaine&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Feloquente-champagne-brut-75cl-jean-de-la-fontaine%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
+    "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/products/Champagne-Brut-Jean-De-La-Fontaine-75-cl-bottle-of-italy.jpg?v=1658248962",
+    "availability": "in_stock",
+    "priceStatus": "fresh",
+    "offerCheckedAt": "2026-08-02T19:22:59.090Z",
+    "identityStatus": "official_producer_confirmed_product_to_document",
+    "imageRights": {
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0538/2268/5356/products/Champagne-Brut-Jean-De-La-Fontaine-75-cl-bottle-of-italy.jpg?v=1658248962",
+      "rightsBasis": "Flux du programme partenaire Bottle of Italy / Webgains",
+      "verifiedAt": "2026-08-02"
+    },
+    "details": {
+      "dosage": null,
+      "verifiedFacts": "L’Éloquente est un Brut non millésimé de la gamme Jean de La Fontaine, élaborée par la Maison Baron Albert à Charly-sur-Marne.",
+      "evidenceStatus": "official_producer_confirmed_product_to_document",
+      "advice": "Sa texture ample accompagne volontiers crustacés, sushis, poisson.",
+      "avoid": "Écartez-la si vous recherchez une expression austère et tranchante : son profil privilégie l’ampleur.",
+      "profil": {
+        "fraicheur": "Fraîche",
+        "rondeur": "Ronde",
+        "puissance": "Équilibrée",
+        "longueur": "Nuancée"
+      },
+      "scores": {
+        "freshness": 4,
+        "roundness": 4,
+        "power": 3,
+        "complexity": 3
+      },
+      "aromas": [
+        "agrumes",
+        "pomme",
+        "poire",
+        "brioche",
+        "miel"
+      ],
+      "grapes": [
+        "Chardonnay",
+        "Pinot Noir",
+        "Meunier"
+      ],
+      "accords": [
+        {
+          "t": "Accord prioritaire",
+          "d": "Crustacés"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Sushis"
+        },
+        {
+          "t": "Pour varier",
+          "d": "Poisson"
+        }
+      ],
+      "merchant": "Bottle of Italy",
+      "merchantTitle": "Eloquente Champagne Brut - Jean De La Fontaine"
+    }
+  },
+  {
+    "id": "grand-tour-grand-brut-nature",
+    "merchantId": "shopify_FR_49273787482450",
+    "name": "Grand Tour Nature",
+    "short": "Grand Tour Nature",
+    "house": "Grand Tour",
+    "brand": "Grand Tour",
+    "region": "Champagne",
+    "price": 34.26,
+    "priceMin": 34.26,
+    "priceMax": 34.26,
+    "oldPrice": null,
+    "tier": 2,
+    "producerType": "vigneron",
+    "occ": [
+      "occ_fete",
+      "occ_apero",
+      "occ_diner"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_riche_ample"
+    ],
+    "accords": [
+      "accord_mer",
+      "accord_aperitif"
+    ],
+    "bulles": "bulles_fines",
+    "tags": [
+      "Extra-brut / nature"
+    ],
+    "pair": "huîtres, poisson, apéritif",
+    "note": "Un brut nature au caractère nuancé et persistant. Au premier plan : agrumes, pomme, fleurs blanches, salinité. L’assemblage réunit Pinot Noir, Chardonnay. À privilégier avec huîtres, poisson, apéritif.",
+    "sourceUrl": "https://www.tenutasetteponti.it/wp-content/uploads/doc/st_champagne_brut_nature.pdf",
+    "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-grand-brut-nature-grand-tour",
+    "officialSourceUrl": "https://www.tenutasetteponti.it/wp-content/uploads/doc/st_champagne_brut_nature.pdf",
+    "technicalSourceUrl": null,
+    "sourceKind": "producer",
+    "verifiedAt": "2026-07-31",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 68,
+    "aff": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_49273787482450&productname=Champagne+Grand+Brut+Nature+-+Grand+Tour&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-grand-brut-nature-grand-tour%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
+    "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/champagne-brut-nature-grand-tour-bottle-of-italy.jpg?v=1726214878",
+    "availability": "in_stock",
+    "priceStatus": "fresh",
+    "offerCheckedAt": "2026-08-02T19:22:59.090Z",
+    "identityStatus": "official_confirmed_with_correction",
+    "imageRights": {
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/champagne-brut-nature-grand-tour-bottle-of-italy.jpg?v=1726214878",
+      "rightsBasis": "Flux du programme partenaire Bottle of Italy / Webgains",
+      "verifiedAt": "2026-08-02"
+    },
+    "details": {
+      "dosage": "2,9 g/L",
+      "verifiedFacts": "La fiche technique confirme 85 % de Pinot Noir et 15 % de Chardonnay, un élevage de 20 mois en bouteille et un dosage de 2,9 g/L.",
+      "evidenceStatus": "official_confirmed_with_correction",
+      "advice": "Sa fraîcheur nette convient particulièrement à huîtres, poisson, apéritif.",
+      "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et pomme.",
+      "profil": {
+        "fraicheur": "Très fraîche",
+        "rondeur": "Droite",
+        "puissance": "Équilibrée",
+        "longueur": "Complexe"
+      },
+      "scores": {
+        "freshness": 5,
+        "roundness": 2,
+        "power": 3,
+        "complexity": 4
+      },
+      "aromas": [
+        "agrumes",
+        "pomme",
+        "fleurs blanches",
+        "salinité"
+      ],
+      "grapes": [
+        "Pinot Noir",
+        "Chardonnay"
+      ],
+      "accords": [
+        {
+          "t": "Accord prioritaire",
+          "d": "Huîtres"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Poisson"
+        },
+        {
+          "t": "Pour varier",
+          "d": "Apéritif"
+        }
+      ],
+      "merchant": "Bottle of Italy",
+      "merchantTitle": "Champagne Grand Brut Nature - Grand Tour"
+    }
+  },
+  {
+    "id": "maison-labbe-brut-premier-cru-tradition",
+    "merchantId": "shopify_FR_50742403072338",
+    "name": "Brut Tradition Premier Cru",
+    "short": "Brut Tradition Premier Cru",
+    "house": "Champagne Labbé & Fils",
+    "brand": "Champagne Labbé & Fils",
+    "region": "Champagne",
+    "price": 35.46,
+    "priceMin": 35.46,
+    "priceMax": 35.46,
+    "oldPrice": null,
+    "tier": 2,
+    "producerType": "vigneron",
+    "occ": [
+      "occ_fete",
+      "occ_apero",
+      "occ_diner"
+    ],
+    "profil": [
+      "profil_riche_ample"
+    ],
+    "accords": [
+      "accord_mer",
+      "accord_aperitif"
+    ],
+    "bulles": "bulles_fines",
+    "tags": [
+      "Brut",
+      "Premier Cru"
+    ],
+    "pair": "crustacés, poisson, apéritif",
+    "note": "Un brut Premier Cru au caractère nuancé et persistant. Au premier plan : brioche. L’assemblage réunit Pinot Noir, Meunier, Chardonnay. À privilégier avec crustacés, poisson, apéritif.",
+    "sourceUrl": "https://www.champagnelabbe.com/",
+    "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-brut-premier-cru-tradition-maison-labbe",
+    "officialSourceUrl": "https://www.champagnelabbe.com/",
+    "technicalSourceUrl": null,
+    "sourceKind": "producer",
+    "verifiedAt": "2026-07-31",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 68,
+    "aff": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50742403072338&productname=Champagne+Brut+Premier+Cru+-+Tradition+-+Maison+Labb%C3%A9&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-brut-premier-cru-tradition-maison-labbe%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
+    "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/57550-maison-labbe-tradition-brut-premier-cru-1002x1536-min.jpg?v=1747380388",
+    "availability": "in_stock",
+    "priceStatus": "fresh",
+    "offerCheckedAt": "2026-08-02T19:22:59.090Z",
+    "identityStatus": "official_confirmed_with_correction",
+    "imageRights": {
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/57550-maison-labbe-tradition-brut-premier-cru-1002x1536-min.jpg?v=1747380388",
+      "rightsBasis": "Flux du programme partenaire Bottle of Italy / Webgains",
+      "verifiedAt": "2026-08-02"
+    },
+    "details": {
+      "dosage": null,
+      "verifiedFacts": "Assemblage officiel : 65 % Pinot Noir, 20 % Meunier et 15 % Chardonnay, issus de l’ensemble du parcellaire de l’exploitation.",
+      "evidenceStatus": "official_confirmed_with_correction",
+      "advice": "Son équilibre permet de l’accorder avec crustacés, poisson, apéritif.",
+      "avoid": "Écartez-la si vous recherchez une bouteille très simple et immédiatement consensuelle : son profil demande davantage d’attention.",
+      "profil": {
+        "fraicheur": "Équilibrée",
+        "rondeur": "Équilibrée",
+        "puissance": "Équilibrée",
+        "longueur": "Complexe"
+      },
+      "scores": {
+        "freshness": 3,
+        "roundness": 3,
+        "power": 3,
+        "complexity": 4
+      },
+      "aromas": [
+        "brioche"
+      ],
+      "grapes": [
+        "Pinot Noir",
+        "Meunier",
+        "Chardonnay"
+      ],
+      "accords": [
+        {
+          "t": "Accord prioritaire",
+          "d": "Crustacés"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Poisson"
+        },
+        {
+          "t": "Pour varier",
+          "d": "Apéritif"
+        }
+      ],
+      "merchant": "Bottle of Italy",
+      "merchantTitle": "Champagne Brut Premier Cru - Tradition - Maison Labbé"
+    }
+  },
+  {
+    "id": "louis-constant-brut",
+    "merchantId": "shopify_FR_42148320575705",
+    "name": "Brut Réserve",
+    "short": "Brut Réserve",
+    "house": "Louis Constant",
+    "brand": "Louis Constant",
+    "region": "Champagne",
+    "price": 36.5,
+    "priceMin": 36.5,
+    "priceMax": 36.5,
+    "oldPrice": null,
+    "tier": 2,
+    "producerType": "vigneron",
+    "occ": [
+      "occ_fete",
+      "occ_apero",
+      "occ_diner"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_fruite"
+    ],
+    "accords": [
+      "accord_mer",
+      "accord_aperitif"
+    ],
+    "bulles": "bulles_fines",
+    "tags": [
+      "Brut"
+    ],
+    "pair": "sushis, poisson, apéritif",
+    "note": "Un brut au caractère rond et généreux. Au premier plan : agrumes, pomme, fleurs blanches, amande. L’assemblage réunit Chardonnay, Pinot Noir, Meunier. À privilégier avec sushis, poisson, apéritif.",
+    "sourceUrl": "https://bottleofitaly.com/fr/products/campagne-brut-aoc-louis-constant",
+    "merchantSourceUrl": "https://bottleofitaly.com/fr/products/campagne-brut-aoc-louis-constant",
+    "officialSourceUrl": null,
+    "technicalSourceUrl": "https://bottleofitaly.com/en-us/products/campagne-brut-aoc-louis-constant",
+    "sourceKind": "merchant",
+    "verifiedAt": "2026-07-31",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 68,
+    "aff": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_42148320575705&productname=Champagne+Brut+AOC+-+Louis+Constant&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fcampagne-brut-aoc-louis-constant%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
+    "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/products/Champagne-Brut-AOC-75-cl-Cantina-Louis-Constant-bottle-of-italy.jpg?v=1643622967",
+    "availability": "in_stock",
+    "priceStatus": "fresh",
+    "offerCheckedAt": "2026-08-02T19:22:59.090Z",
+    "identityStatus": "secondary_identity_confirmed",
+    "imageRights": {
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0538/2268/5356/products/Champagne-Brut-AOC-75-cl-Cantina-Louis-Constant-bottle-of-italy.jpg?v=1643622967",
+      "rightsBasis": "Flux du programme partenaire Bottle of Italy / Webgains",
+      "verifiedAt": "2026-08-02"
+    },
+    "details": {
+      "dosage": null,
+      "verifiedFacts": "La bouteille commercialisée est un Brut Réserve non millésimé issu des trois cépages principaux de la Champagne.",
+      "evidenceStatus": "secondary_identity_confirmed",
+      "advice": "Sa texture ample accompagne volontiers sushis, poisson, apéritif.",
+      "avoid": "Écartez-la si vous recherchez une expression austère et tranchante : son profil privilégie l’ampleur.",
+      "profil": {
+        "fraicheur": "Fraîche",
+        "rondeur": "Ronde",
+        "puissance": "Équilibrée",
+        "longueur": "Nuancée"
+      },
+      "scores": {
+        "freshness": 4,
+        "roundness": 4,
+        "power": 3,
+        "complexity": 3
+      },
+      "aromas": [
+        "agrumes",
+        "pomme",
+        "fleurs blanches",
+        "amande"
+      ],
+      "grapes": [
+        "Chardonnay",
+        "Pinot Noir",
+        "Meunier"
+      ],
+      "accords": [
+        {
+          "t": "Accord prioritaire",
+          "d": "Sushis"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Poisson"
+        },
+        {
+          "t": "Pour varier",
+          "d": "Apéritif"
+        }
+      ],
+      "merchant": "Bottle of Italy",
+      "merchantTitle": "Champagne Brut AOC - Louis Constant"
+    }
+  },
+  {
+    "id": "alain-mercier-cuvee-louis-hurtebisse-brut",
+    "merchantId": "shopify_FR_47895549903186",
+    "name": "Louis Hurtebisse Brut Tradition",
+    "short": "Louis Hurtebisse Brut Tradition",
+    "house": "Alain Mercier",
+    "brand": "Alain Mercier",
+    "region": "Champagne",
+    "price": 37.06,
+    "priceMin": 37.06,
+    "priceMax": 37.06,
+    "oldPrice": null,
+    "tier": 2,
+    "producerType": "vigneron",
+    "occ": [
+      "occ_fete",
+      "occ_apero",
+      "occ_diner"
+    ],
+    "profil": [
+      "profil_fruite"
+    ],
+    "accords": [
+      "accord_mer",
+      "accord_fromage",
+      "accord_aperitif"
+    ],
+    "bulles": "bulles_fines",
+    "tags": [
+      "Brut"
+    ],
+    "pair": "crustacés, poisson, fromages",
+    "note": "Un brut au caractère équilibré et polyvalent. Au premier plan : agrumes, pomme, pêche, brioche. L’assemblage réunit Meunier, Pinot Noir, Chardonnay. À privilégier avec crustacés, poisson, fromages.",
+    "sourceUrl": "https://www.champagne-alain-mercier.com/",
+    "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-cuvee-louis-hurtebisse-brut-alain-mercier",
+    "officialSourceUrl": "https://www.champagne-alain-mercier.com/",
+    "technicalSourceUrl": "https://www.tannico.com/products/champagne-brut-cuvee-louis-hurtebisse-alain-mercier",
+    "sourceKind": "merchant",
+    "verifiedAt": "2026-07-31",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 68,
+    "aff": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895549903186&productname=Champagne+Cuv%C3%A9e+Louis+Hurtebisse+Brut+-+Alain+Mercier&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-cuvee-louis-hurtebisse-brut-alain-mercier%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
+    "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Cuvee-Louis-Hurtebisse-Brut-Alain-Mercier-bottle-of-italy.jpg?v=1714475533",
+    "availability": "in_stock",
+    "priceStatus": "fresh",
+    "offerCheckedAt": "2026-08-02T19:22:59.090Z",
+    "identityStatus": "official_producer_confirmed_product_to_document",
+    "imageRights": {
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Cuvee-Louis-Hurtebisse-Brut-Alain-Mercier-bottle-of-italy.jpg?v=1714475533",
+      "rightsBasis": "Flux du programme partenaire Bottle of Italy / Webgains",
+      "verifiedAt": "2026-08-02"
+    },
+    "details": {
+      "dosage": null,
+      "verifiedFacts": "Les documentations commerciales concordent sur un assemblage de 40 % Meunier, 40 % Pinot Noir et 20 % Chardonnay.",
+      "evidenceStatus": "official_producer_confirmed_product_to_document",
+      "advice": "Son équilibre permet de l’accorder avec crustacés, poisson, fromages.",
+      "avoid": "Écartez-la si vous recherchez un style très tendu ou très puissant : elle mise avant tout sur l’équilibre.",
+      "profil": {
+        "fraicheur": "Équilibrée",
+        "rondeur": "Équilibrée",
+        "puissance": "Équilibrée",
+        "longueur": "Nuancée"
+      },
+      "scores": {
+        "freshness": 3,
+        "roundness": 3,
+        "power": 3,
+        "complexity": 3
+      },
+      "aromas": [
+        "agrumes",
+        "pomme",
+        "pêche",
+        "brioche",
+        "amande"
+      ],
+      "grapes": [
+        "Meunier",
+        "Pinot Noir",
+        "Chardonnay"
+      ],
+      "accords": [
+        {
+          "t": "Accord prioritaire",
+          "d": "Crustacés"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Poisson"
+        },
+        {
+          "t": "Pour varier",
+          "d": "Fromages"
+        }
+      ],
+      "merchant": "Bottle of Italy",
+      "merchantTitle": "Champagne Cuvée Louis Hurtebisse Brut - Alain Mercier"
+    }
+  },
+  {
+    "id": "maison-tornay-tradition-brut-premier-cru",
+    "merchantId": "shopify_FR_50742404284754",
+    "name": "Tradition Brut Premier Cru",
+    "short": "Tradition Brut Premier Cru",
+    "house": "Champagne Tornay-Hutasse",
+    "brand": "Champagne Tornay-Hutasse",
+    "region": "Champagne",
+    "price": 38.18,
+    "priceMin": 38.18,
+    "priceMax": 38.18,
+    "oldPrice": null,
+    "tier": 2,
+    "producerType": "vigneron",
+    "occ": [
+      "occ_fete",
+      "occ_apero",
+      "occ_diner"
+    ],
+    "profil": [
+      "profil_riche_ample"
+    ],
+    "accords": [
+      "accord_mer",
+      "accord_aperitif"
+    ],
+    "bulles": "bulles_fines",
+    "tags": [
+      "Brut",
+      "Premier Cru"
+    ],
+    "pair": "crustacés, poisson, apéritif",
+    "note": "Un brut Premier Cru au caractère nuancé et persistant. Au premier plan : fleurs blanches, brioche. L’assemblage réunit Pinot Noir, Chardonnay. À privilégier avec crustacés, poisson, apéritif.",
+    "sourceUrl": "https://www.champagne-tornay.fr/en/our-cuvees/monsieur-s-cellar/premier-cru",
+    "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-tradition-brut-premier-cru-maison-tornay",
+    "officialSourceUrl": "https://www.champagne-tornay.fr/en/our-cuvees/monsieur-s-cellar/premier-cru",
+    "technicalSourceUrl": null,
+    "sourceKind": "producer",
+    "verifiedAt": "2026-07-31",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 68,
+    "aff": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50742404284754&productname=Champagne+Tradition+Brut+Premier+Cru+-+Maison+Tornay&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-tradition-brut-premier-cru-maison-tornay%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
+    "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/57700-maison-tornay-brut-tradition-premier-cru-1002x1536-min.jpg?v=1747325023",
+    "availability": "in_stock",
+    "priceStatus": "fresh",
+    "offerCheckedAt": "2026-08-02T19:22:59.090Z",
+    "identityStatus": "official_confirmed_with_correction",
+    "imageRights": {
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/57700-maison-tornay-brut-tradition-premier-cru-1002x1536-min.jpg?v=1747325023",
+      "rightsBasis": "Flux du programme partenaire Bottle of Italy / Webgains",
+      "verifiedAt": "2026-08-02"
+    },
+    "details": {
+      "dosage": "8 g/L",
+      "verifiedFacts": "Assemblage officiel : 70 % Pinot Noir et 30 % Chardonnay ; vinification en cuves inox thermorégulées, dosage 8 g/L et trois ans minimum en cave.",
+      "evidenceStatus": "official_confirmed_with_correction",
+      "advice": "Son équilibre permet de l’accorder avec crustacés, poisson, apéritif.",
+      "avoid": "Écartez-la si vous recherchez une bouteille très simple et immédiatement consensuelle : son profil demande davantage d’attention.",
+      "profil": {
+        "fraicheur": "Équilibrée",
+        "rondeur": "Équilibrée",
+        "puissance": "Équilibrée",
+        "longueur": "Complexe"
+      },
+      "scores": {
+        "freshness": 3,
+        "roundness": 3,
+        "power": 3,
+        "complexity": 4
+      },
+      "aromas": [
+        "fleurs blanches",
+        "brioche"
+      ],
+      "grapes": [
+        "Pinot Noir",
+        "Chardonnay"
+      ],
+      "accords": [
+        {
+          "t": "Accord prioritaire",
+          "d": "Crustacés"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Poisson"
+        },
+        {
+          "t": "Pour varier",
+          "d": "Apéritif"
+        }
+      ],
+      "merchant": "Bottle of Italy",
+      "merchantTitle": "Champagne Tradition Brut Premier Cru - Maison Tornay"
+    }
+  },
+  {
+    "id": "epc-champagne-cuvee-brut",
+    "merchantId": "shopify_FR_50502043140434",
+    "name": "Cuvée Brut",
+    "short": "Cuvée Brut",
+    "house": "EPC Champagne",
+    "brand": "EPC Champagne",
+    "region": "Champagne",
+    "price": 39.79,
+    "priceMin": 39.79,
+    "priceMax": 39.79,
+    "oldPrice": null,
+    "tier": 2,
+    "producerType": "maison",
+    "occ": [
+      "occ_fete",
+      "occ_apero",
+      "occ_diner"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_riche_ample"
+    ],
+    "accords": [
+      "accord_mer",
+      "accord_fromage",
+      "accord_aperitif"
+    ],
+    "bulles": "bulles_fines",
+    "tags": [
+      "Brut"
+    ],
+    "pair": "crustacés, poisson, fromages",
+    "note": "Un brut au caractère nuancé et persistant. Au premier plan : agrumes, pomme, brioche. L’assemblage réunit Meunier, Chardonnay, Pinot Noir. À privilégier avec crustacés, poisson, fromages.",
+    "sourceUrl": "https://epc-champagne.com/en/produit/brut/",
+    "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-cuvee-brut-epc-champagne",
+    "officialSourceUrl": "https://epc-champagne.com/en/produit/brut/",
+    "technicalSourceUrl": null,
+    "sourceKind": "producer",
+    "verifiedAt": "2026-07-31",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 68,
+    "aff": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50502043140434&productname=Champagne+Cuv%C3%A9e+Brut+-+EPC+Champagne&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-cuvee-brut-epc-champagne%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
+    "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/cuvee-brut-epc-champagne-bottle-of-italy-min.jpg?v=1742978760",
+    "availability": "in_stock",
+    "priceStatus": "fresh",
+    "offerCheckedAt": "2026-08-02T19:22:59.090Z",
+    "identityStatus": "official_confirmed",
+    "imageRights": {
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/cuvee-brut-epc-champagne-bottle-of-italy-min.jpg?v=1742978760",
+      "rightsBasis": "Flux du programme partenaire Bottle of Italy / Webgains",
+      "verifiedAt": "2026-08-02"
+    },
+    "details": {
+      "dosage": null,
+      "verifiedFacts": "Assemblage officiel : 50 % Meunier, 33 % Chardonnay et 17 % Pinot Noir.",
+      "evidenceStatus": "official_confirmed",
+      "advice": "Sa fraîcheur nette convient particulièrement à crustacés, poisson, fromages.",
+      "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et pomme.",
+      "profil": {
+        "fraicheur": "Fraîche",
+        "rondeur": "Équilibrée",
+        "puissance": "Équilibrée",
+        "longueur": "Complexe"
+      },
+      "scores": {
+        "freshness": 4,
+        "roundness": 3,
+        "power": 3,
+        "complexity": 4
+      },
+      "aromas": [
+        "agrumes",
+        "pomme",
+        "brioche"
+      ],
+      "grapes": [
+        "Meunier",
+        "Chardonnay",
+        "Pinot Noir"
+      ],
+      "accords": [
+        {
+          "t": "Accord prioritaire",
+          "d": "Crustacés"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Poisson"
+        },
+        {
+          "t": "Pour varier",
+          "d": "Fromages"
+        }
+      ],
+      "merchant": "Bottle of Italy",
+      "merchantTitle": "Champagne Cuvée Brut - EPC Champagne"
+    }
+  },
+  {
+    "id": "maison-burtin-brut",
+    "merchantId": "shopify_FR_52901515886930",
+    "name": "Brut",
+    "short": "Brut",
+    "house": "Maison Burtin",
+    "brand": "Maison Burtin",
+    "region": "Champagne",
+    "price": 40.85,
+    "priceMin": 40.85,
+    "priceMax": 40.85,
+    "oldPrice": null,
+    "tier": 2,
+    "producerType": "maison",
+    "occ": [
+      "occ_fete",
+      "occ_apero",
+      "occ_diner"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_riche_ample"
+    ],
+    "accords": [
+      "accord_mer"
+    ],
+    "bulles": "bulles_fines",
+    "tags": [
+      "Brut"
+    ],
+    "pair": "poisson",
+    "note": "Un brut au caractère vif et structuré. Au premier plan : agrumes, brioche. L’assemblage réunit Meunier, Chardonnay, Pinot Noir. À privilégier avec poisson.",
+    "sourceUrl": "https://www.maisonburtin.com/",
+    "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-brut-maison-burtin",
+    "officialSourceUrl": "https://www.maisonburtin.com/",
+    "technicalSourceUrl": "https://bottleofitaly.com/en/products/champagne-brut-astucciato-maison-burtin",
+    "sourceKind": "merchant",
+    "verifiedAt": "2026-07-31",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 68,
+    "aff": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_52901515886930&productname=Champagne+Brut+-+Maison+Burtin&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-brut-maison-burtin%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
+    "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/ChampagneBrut-MaisonBurtin-min.jpg?v=1774007744",
+    "availability": "in_stock",
+    "priceStatus": "fresh",
+    "offerCheckedAt": "2026-08-02T19:22:59.090Z",
+    "identityStatus": "official_producer_confirmed_product_to_document",
+    "imageRights": {
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/ChampagneBrut-MaisonBurtin-min.jpg?v=1774007744",
+      "rightsBasis": "Flux du programme partenaire Bottle of Italy / Webgains",
+      "verifiedAt": "2026-08-02"
+    },
+    "details": {
+      "dosage": null,
+      "verifiedFacts": "La référence marchande est un Brut non millésimé assemblant Meunier, Chardonnay et Pinot Noir.",
+      "evidenceStatus": "official_producer_confirmed_product_to_document",
+      "advice": "Sa matière affirmée trouve sa place à table, notamment avec poisson.",
+      "avoid": "Écartez-la pour un apéritif très léger : sa matière appelle plutôt poisson.",
+      "profil": {
+        "fraicheur": "Fraîche",
+        "rondeur": "Équilibrée",
+        "puissance": "Puissante",
+        "longueur": "Nuancée"
+      },
+      "scores": {
+        "freshness": 4,
+        "roundness": 3,
+        "power": 4,
+        "complexity": 3
+      },
+      "aromas": [
+        "agrumes",
+        "brioche"
+      ],
+      "grapes": [
+        "Meunier",
+        "Chardonnay",
+        "Pinot Noir"
+      ],
+      "accords": [
+        {
+          "t": "Accord prioritaire",
+          "d": "Poisson"
+        }
+      ],
+      "merchant": "Bottle of Italy",
+      "merchantTitle": "Champagne Brut - Maison Burtin"
+    }
+  },
+  {
+    "id": "brisson-lahaye-la-passionnee-blanc-de-noirs-extra-brut",
+    "merchantId": "shopify_FR_47245068697938",
+    "name": "La Passionnée Brut Blanc de Noirs",
+    "short": "La Passionnée Brut Blanc de Noirs",
+    "house": "Brisson-Lahaye",
+    "brand": "Brisson-Lahaye",
+    "region": "Champagne",
+    "price": 40.85,
+    "priceMin": 40.85,
+    "priceMax": 40.85,
+    "oldPrice": null,
+    "tier": 2,
+    "producerType": "vigneron",
+    "occ": [
+      "occ_fete",
+      "occ_apero",
+      "occ_diner"
+    ],
+    "profil": [
+      "profil_fruite",
+      "profil_riche_ample"
+    ],
+    "accords": [
+      "accord_mer",
+      "accord_dessert",
+      "accord_aperitif"
+    ],
+    "bulles": "bulles_fines",
+    "tags": [
+      "Brut",
+      "Blanc de noirs"
+    ],
+    "pair": "poisson, fruits rouges, apéritif",
+    "note": "Un blanc de noirs brut au caractère rond et généreux. Au premier plan : fruits rouges, brioche, amande. L’assemblage réunit Pinot Noir, Meunier. À privilégier avec poisson, fruits rouges, apéritif.",
+    "sourceUrl": "https://www.champagne-brisson-lahaye.com/la-gamme/",
+    "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-la-passionnee-blanc-de-noirs-extra-brut-brisson-lahaye",
+    "officialSourceUrl": "https://www.champagne-brisson-lahaye.com/la-gamme/",
+    "technicalSourceUrl": "https://bottleofitaly.com/en-us/products/champagne-la-passionnee-blanc-de-noirs-extra-brut-brisson-lahaye",
+    "sourceKind": "producer",
+    "verifiedAt": "2026-07-31",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 68,
+    "aff": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47245068697938&productname=Champagne+La+Passionnee+Blanc+de+Noirs+Extra+Brut+-+Brisson-Lahaye&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-la-passionnee-blanc-de-noirs-extra-brut-brisson-lahaye%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
+    "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-La-Passionnee-Blanc-de-Noirs-Extra-Brut-Brisson-Lahaye-bottle-of-Italy.jpg?v=1699611236",
+    "availability": "in_stock",
+    "priceStatus": "fresh",
+    "offerCheckedAt": "2026-08-02T19:22:59.090Z",
+    "identityStatus": "official_confirmed_with_correction",
+    "imageRights": {
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-La-Passionnee-Blanc-de-Noirs-Extra-Brut-Brisson-Lahaye-bottle-of-Italy.jpg?v=1699611236",
+      "rightsBasis": "Flux du programme partenaire Bottle of Italy / Webgains",
+      "verifiedAt": "2026-08-02"
+    },
+    "details": {
+      "dosage": null,
+      "verifiedFacts": "La cuvée officielle est un Brut Blanc de Noirs, frais et structuré, élaboré à partir de cépages noirs avec une part de vins passés en fûts.",
+      "evidenceStatus": "official_confirmed_with_correction",
+      "advice": "Sa matière affirmée trouve sa place à table, notamment avec poisson, fruits rouges, apéritif.",
+      "avoid": "Écartez-la si vous recherchez une expression austère et tranchante : son profil privilégie l’ampleur.",
+      "profil": {
+        "fraicheur": "Équilibrée",
+        "rondeur": "Ronde",
+        "puissance": "Très puissante",
+        "longueur": "Complexe"
+      },
+      "scores": {
+        "freshness": 3,
+        "roundness": 4,
+        "power": 5,
+        "complexity": 4
+      },
+      "aromas": [
+        "fruits rouges",
+        "brioche",
+        "amande"
+      ],
+      "grapes": [
+        "Pinot Noir",
+        "Meunier"
+      ],
+      "accords": [
+        {
+          "t": "Accord prioritaire",
+          "d": "Poisson"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Fruits rouges"
+        },
+        {
+          "t": "Pour varier",
+          "d": "Apéritif"
+        }
+      ],
+      "merchant": "Bottle of Italy",
+      "merchantTitle": "Champagne La Passionnee Blanc de Noirs Extra Brut - Brisson-Lahaye"
+    }
+  },
+  {
+    "id": "jean-claude-vallois-blanc-de-blancs-brut-assemblage-noble",
+    "merchantId": "shopify_FR_50742402810194",
+    "name": "Assemblage Noble Brut Blanc de Blancs",
+    "short": "Assemblage Noble Brut Blanc de Blancs",
+    "house": "Jean-Claude Vallois",
+    "brand": "Jean-Claude Vallois",
+    "region": "Champagne",
+    "price": 42,
+    "priceMin": 42,
+    "priceMax": 42,
+    "oldPrice": null,
+    "tier": 2,
+    "producerType": "vigneron",
+    "occ": [
+      "occ_fete",
+      "occ_apero",
+      "occ_diner",
+      "occ_romantique"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_riche_ample",
+      "profil_delicat"
+    ],
+    "accords": [
+      "accord_mer",
+      "accord_fromage",
+      "accord_aperitif"
+    ],
+    "bulles": "bulles_fines",
+    "tags": [
+      "Brut",
+      "Blanc de blancs"
+    ],
+    "pair": "crustacés, poisson, fromages",
+    "note": "Un blanc de blancs brut au caractère nuancé et persistant. Au premier plan : agrumes, fleurs blanches. L’assemblage réunit Chardonnay. À privilégier avec crustacés, poisson, fromages.",
+    "sourceUrl": "https://www.champagne-vallois.com/produit/assemblage-noble/?lang=en",
+    "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-brut-assemblage-noble-jean-claude-vallois",
+    "officialSourceUrl": "https://www.champagne-vallois.com/produit/assemblage-noble/?lang=en",
+    "technicalSourceUrl": null,
+    "sourceKind": "producer",
+    "verifiedAt": "2026-07-31",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 68,
+    "aff": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50742402810194&productname=Champagne+Blanc+de+Blancs+Brut+Assemblage+Noble+-+Jean-Claude+Vallois&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-blanc-de-blancs-brut-assemblage-noble-jean-claude-vallois%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
+    "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/57500-jean-claude-vallois-blanc-de-blancs-brut-assemblage-noble-1002x1536-min_cd1c422c-139d-48c6-b874-079543a84ef1.jpg?v=1747380565",
+    "availability": "in_stock",
+    "priceStatus": "fresh",
+    "offerCheckedAt": "2026-08-02T19:22:59.090Z",
+    "identityStatus": "official_confirmed_with_correction",
+    "imageRights": {
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/57500-jean-claude-vallois-blanc-de-blancs-brut-assemblage-noble-1002x1536-min_cd1c422c-139d-48c6-b874-079543a84ef1.jpg?v=1747380565",
+      "rightsBasis": "Flux du programme partenaire Bottle of Italy / Webgains",
+      "verifiedAt": "2026-08-02"
+    },
+    "details": {
+      "dosage": null,
+      "verifiedFacts": "La fiche officielle confirme la cuvée Assemblage Noble, un Brut Blanc de Blancs de Jean-Claude Vallois.",
+      "evidenceStatus": "official_confirmed_with_correction",
+      "advice": "Sa fraîcheur nette convient particulièrement à crustacés, poisson, fromages.",
+      "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et fleurs blanches.",
+      "profil": {
+        "fraicheur": "Très fraîche",
+        "rondeur": "Équilibrée",
+        "puissance": "Légère",
+        "longueur": "Complexe"
+      },
+      "scores": {
+        "freshness": 5,
+        "roundness": 3,
+        "power": 2,
+        "complexity": 4
+      },
+      "aromas": [
+        "agrumes",
+        "fleurs blanches"
+      ],
+      "grapes": [
+        "Chardonnay"
+      ],
+      "accords": [
+        {
+          "t": "Accord prioritaire",
+          "d": "Crustacés"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Poisson"
+        },
+        {
+          "t": "Pour varier",
+          "d": "Fromages"
+        }
+      ],
+      "merchant": "Bottle of Italy",
+      "merchantTitle": "Champagne Blanc de Blancs Brut Assemblage Noble - Jean-Claude Vallois"
+    }
+  },
+  {
+    "id": "daubanton-rose-de-saignee-en-futs-les-vignes-derriere",
+    "merchantId": "shopify_FR_50742406185298",
+    "name": "Rosé de Saignée en Fûts — Les Vignes Derrière",
+    "short": "Rosé de Saignée en Fûts — Les Vignes Derrière",
+    "house": "Daubanton & Fils",
+    "brand": "Daubanton & Fils",
+    "region": "Champagne",
+    "price": 42.28,
+    "priceMin": 42.28,
+    "priceMax": 42.28,
+    "oldPrice": null,
+    "tier": 2,
+    "producerType": "vigneron",
+    "occ": [
+      "occ_fete",
+      "occ_apero",
+      "occ_diner",
+      "occ_romantique"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_fruite",
+      "profil_riche_ample"
+    ],
+    "accords": [
+      "accord_mer",
+      "accord_dessert",
+      "accord_aperitif"
+    ],
+    "bulles": "bulles_fines",
+    "tags": [
+      "Rosé"
+    ],
+    "pair": "crustacés, poisson, fruits rouges",
+    "note": "Un rosé brut au caractère vif et structuré. Au premier plan : fruits rouges, minéralité. L’assemblage réunit Pinot Noir. À privilégier avec crustacés, poisson, fruits rouges.",
+    "sourceUrl": "https://champagnedaubanton.com/",
+    "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-rose-de-saignee-en-futs-les-vignes-derriere-daubanton",
+    "officialSourceUrl": "https://champagnedaubanton.com/",
+    "technicalSourceUrl": "https://www.rinaldi1957.it/en/products/rose-de-saignee-en-futs-les-vignes-derriere/",
+    "sourceKind": "merchant",
+    "verifiedAt": "2026-07-31",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 68,
+    "aff": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50742406185298&productname=Champagne+Ros%C3%A9+de+Saign%C3%A9e+-+En+F%C3%BBts+Les+Vignes+Derri%C3%A8re+-+Daubanton&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-rose-de-saignee-en-futs-les-vignes-derriere-daubanton%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
+    "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/57757-daubanton-rose-de-saignee-en-futs-les-vignes-derriere-1002x1536-min.jpg?v=1747324385",
+    "availability": "in_stock",
+    "priceStatus": "fresh",
+    "offerCheckedAt": "2026-08-02T19:22:59.090Z",
+    "identityStatus": "official_producer_confirmed_product_to_document",
+    "imageRights": {
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/57757-daubanton-rose-de-saignee-en-futs-les-vignes-derriere-1002x1536-min.jpg?v=1747324385",
+      "rightsBasis": "Flux du programme partenaire Bottle of Italy / Webgains",
+      "verifiedAt": "2026-08-02"
+    },
+    "details": {
+      "dosage": null,
+      "verifiedFacts": "La référence est un rosé de saignée 100 % Pinot Noir élevé en fûts, issu du domaine familial Daubanton & Fils en Côte des Bar.",
+      "evidenceStatus": "official_producer_confirmed_product_to_document",
+      "advice": "Sa matière affirmée trouve sa place à table, notamment avec crustacés, poisson, fruits rouges.",
+      "avoid": "Écartez-la si vous recherchez une expression austère et tranchante : son profil privilégie l’ampleur.",
+      "profil": {
+        "fraicheur": "Fraîche",
+        "rondeur": "Ronde",
+        "puissance": "Puissante",
+        "longueur": "Nuancée"
+      },
+      "scores": {
+        "freshness": 4,
+        "roundness": 4,
+        "power": 4,
+        "complexity": 3
+      },
+      "aromas": [
+        "fruits rouges",
+        "minéralité"
+      ],
+      "grapes": [
+        "Pinot Noir"
+      ],
+      "accords": [
+        {
+          "t": "Accord prioritaire",
+          "d": "Crustacés"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Poisson"
+        },
+        {
+          "t": "Pour varier",
+          "d": "Fruits rouges"
+        }
+      ],
+      "merchant": "Bottle of Italy",
+      "merchantTitle": "Champagne Rosé de Saignée - En Fûts Les Vignes Derrière - Daubanton"
+    }
+  },
+  {
+    "id": "maxime-ponson-cuvee-extra-brut-1er-cru",
+    "merchantId": "shopify_FR_47895568122194",
+    "name": "Premier Cru Extra Brut",
+    "short": "Premier Cru Extra Brut",
+    "house": "Champagne Ponson",
+    "brand": "Champagne Ponson",
+    "region": "Champagne",
+    "price": 42.49,
+    "priceMin": 42.49,
+    "priceMax": 42.49,
+    "oldPrice": null,
+    "tier": 2,
+    "producerType": "vigneron",
+    "occ": [
+      "occ_fete",
+      "occ_apero",
+      "occ_diner"
+    ],
+    "profil": [
+      "profil_frais_vif"
+    ],
+    "accords": [
+      "accord_mer",
+      "accord_aperitif"
+    ],
+    "bulles": "bulles_fines",
+    "tags": [
+      "Extra-brut / nature",
+      "Premier Cru"
+    ],
+    "pair": "crustacés, poisson, apéritif",
+    "note": "Un extra-brut Premier Cru au caractère frais et précis. Au premier plan : agrumes, pomme, fleurs blanches, brioche. L’assemblage réunit Meunier, Pinot Noir, Chardonnay. À privilégier avec crustacés, poisson, apéritif.",
+    "sourceUrl": "https://champagne-ponson.com/cuvee/premier-cru",
+    "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-cuvee-extra-brut-1er-cru-maxime-ponson",
+    "officialSourceUrl": "https://champagne-ponson.com/cuvee/premier-cru",
+    "technicalSourceUrl": null,
+    "sourceKind": "producer",
+    "verifiedAt": "2026-07-31",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 68,
+    "aff": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895568122194&productname=Champagne+Cuv%C3%A9e+Extra+Brut+1er+Cru+-+Maxime+Ponson&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-cuvee-extra-brut-1er-cru-maxime-ponson%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
+    "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/maxime-ponson-champagne-1er-cru-bottle-of-italy.jpg?v=1726846260",
+    "availability": "in_stock",
+    "priceStatus": "fresh",
+    "offerCheckedAt": "2026-08-02T19:22:59.090Z",
+    "identityStatus": "official_confirmed_with_correction",
+    "imageRights": {
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/maxime-ponson-champagne-1er-cru-bottle-of-italy.jpg?v=1726846260",
+      "rightsBasis": "Flux du programme partenaire Bottle of Italy / Webgains",
+      "verifiedAt": "2026-08-02"
+    },
+    "details": {
+      "dosage": "3 g/L",
+      "verifiedFacts": "Assemblage officiel : 70 % Meunier, 15 % Pinot Noir et 15 % Chardonnay ; dosage 3 g/L et élevage à 90 % en inox et 10 % en fûts.",
+      "evidenceStatus": "official_confirmed_with_correction",
+      "advice": "Sa fraîcheur nette convient particulièrement à crustacés, poisson, apéritif.",
+      "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et pomme.",
+      "profil": {
+        "fraicheur": "Très fraîche",
+        "rondeur": "Droite",
+        "puissance": "Équilibrée",
+        "longueur": "Nuancée"
+      },
+      "scores": {
+        "freshness": 5,
+        "roundness": 2,
+        "power": 3,
+        "complexity": 3
+      },
+      "aromas": [
+        "agrumes",
+        "pomme",
+        "fleurs blanches",
+        "brioche",
+        "amande"
+      ],
+      "grapes": [
+        "Meunier",
+        "Pinot Noir",
+        "Chardonnay"
+      ],
+      "accords": [
+        {
+          "t": "Accord prioritaire",
+          "d": "Crustacés"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Poisson"
+        },
+        {
+          "t": "Pour varier",
+          "d": "Apéritif"
+        }
+      ],
+      "merchant": "Bottle of Italy",
+      "merchantTitle": "Champagne Cuvée Extra Brut 1er Cru - Maxime Ponson"
+    }
+  },
+  {
+    "id": "thenevet-delouvin-carte-noir-brut",
+    "merchantId": "shopify_FR_47245069287762",
+    "name": "Carte Noire Brut",
+    "short": "Carte Noire Brut",
+    "house": "Thévenet-Delouvin",
+    "brand": "Thévenet-Delouvin",
+    "region": "Champagne",
+    "price": 42.66,
+    "priceMin": 42.66,
+    "priceMax": 42.66,
+    "oldPrice": null,
+    "tier": 2,
+    "producerType": "vigneron",
+    "occ": [
+      "occ_fete",
+      "occ_apero",
+      "occ_diner"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_fruite",
+      "profil_riche_ample"
+    ],
+    "accords": [
+      "accord_mer",
+      "accord_aperitif"
+    ],
+    "bulles": "bulles_fines",
+    "tags": [
+      "Brut"
+    ],
+    "pair": "poisson, apéritif",
+    "note": "Un brut au caractère rond et généreux. Au premier plan : agrumes, pêche, brioche, minéralité. L’assemblage réunit Meunier, Pinot Noir. À privilégier avec poisson, apéritif.",
+    "sourceUrl": "https://www.champagne-thevenet-delouvin.fr/champagnes/carte-noire-brut/",
+    "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-carte-noir-brut-thenevet-delouvin",
+    "officialSourceUrl": "https://www.champagne-thevenet-delouvin.fr/champagnes/carte-noire-brut/",
+    "technicalSourceUrl": null,
+    "sourceKind": "producer",
+    "verifiedAt": "2026-07-31",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 68,
+    "aff": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47245069287762&productname=Champagne+Carte+Noir+Brut+-+Thenevet+Delouvin&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-carte-noir-brut-thenevet-delouvin%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
+    "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Carte-Noir-Brut-Thenevet-Delouvin-bottle-of-Italy.jpg?v=1699610719",
+    "availability": "in_stock",
+    "priceStatus": "fresh",
+    "offerCheckedAt": "2026-08-02T19:22:59.090Z",
+    "identityStatus": "official_confirmed_with_correction",
+    "imageRights": {
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Carte-Noir-Brut-Thenevet-Delouvin-bottle-of-Italy.jpg?v=1699610719",
+      "rightsBasis": "Flux du programme partenaire Bottle of Italy / Webgains",
+      "verifiedAt": "2026-08-02"
+    },
+    "details": {
+      "dosage": null,
+      "verifiedFacts": "Assemblage officiel : 90 % Meunier et 10 % Pinot Noir.",
+      "evidenceStatus": "official_confirmed_with_correction",
+      "advice": "Sa texture ample accompagne volontiers poisson, apéritif.",
+      "avoid": "Écartez-la si vous recherchez une expression austère et tranchante : son profil privilégie l’ampleur.",
+      "profil": {
+        "fraicheur": "Très fraîche",
+        "rondeur": "Ronde",
+        "puissance": "Équilibrée",
+        "longueur": "Complexe"
+      },
+      "scores": {
+        "freshness": 5,
+        "roundness": 4,
+        "power": 3,
+        "complexity": 4
+      },
+      "aromas": [
+        "agrumes",
+        "pêche",
+        "brioche",
+        "minéralité"
+      ],
+      "grapes": [
+        "Meunier",
+        "Pinot Noir"
+      ],
+      "accords": [
+        {
+          "t": "Accord prioritaire",
+          "d": "Poisson"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Apéritif"
+        }
+      ],
+      "merchant": "Bottle of Italy",
+      "merchantTitle": "Champagne Carte Noir Brut - Thenevet Delouvin"
+    }
+  },
+  {
+    "id": "maison-yves-loison-cuvee-reserve-clovis",
+    "merchantId": "shopify_FR_50742403268946",
+    "name": "Clovis Brut",
+    "short": "Clovis Brut",
+    "house": "Yves Loison",
+    "brand": "Yves Loison",
+    "region": "Champagne",
+    "price": 42.82,
+    "priceMin": 42.82,
+    "priceMax": 42.82,
+    "oldPrice": null,
+    "tier": 2,
+    "producerType": "vigneron",
+    "occ": [
+      "occ_fete",
+      "occ_apero",
+      "occ_diner"
+    ],
+    "profil": [
+      "profil_riche_ample"
+    ],
+    "accords": [
+      "accord_mer",
+      "accord_aperitif"
+    ],
+    "bulles": "bulles_fines",
+    "tags": [
+      "Brut"
+    ],
+    "pair": "crustacés, poisson, apéritif",
+    "note": "Un brut au caractère nuancé et persistant. Au premier plan : brioche. L’assemblage réunit Pinot Noir, Meunier, Chardonnay. À privilégier avec crustacés, poisson, apéritif.",
+    "sourceUrl": "https://boutique.champagne-yves-loison.com/en/85-copie-de-copie-de-copie-de-cuvee-origines.html",
+    "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-cuvee-reserve-clovis-maison-yves-loison",
+    "officialSourceUrl": "https://boutique.champagne-yves-loison.com/en/85-copie-de-copie-de-copie-de-cuvee-origines.html",
+    "technicalSourceUrl": null,
+    "sourceKind": "producer",
+    "verifiedAt": "2026-07-31",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 68,
+    "aff": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50742403268946&productname=Champagne+Cuv%C3%A9e+R%C3%A9serve+-+Clovis+-+Maison+Yves+Loison&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-cuvee-reserve-clovis-maison-yves-loison%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
+    "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/57600-maison-yves-loison-cuvee-reserve-clovis-1002x1536-min_bc0c3e03-1372-45bd-8985-00775695307b.jpg?v=1747380242",
+    "availability": "in_stock",
+    "priceStatus": "fresh",
+    "offerCheckedAt": "2026-08-02T19:22:59.090Z",
+    "identityStatus": "official_confirmed_with_correction",
+    "imageRights": {
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/57600-maison-yves-loison-cuvee-reserve-clovis-1002x1536-min_bc0c3e03-1372-45bd-8985-00775695307b.jpg?v=1747380242",
+      "rightsBasis": "Flux du programme partenaire Bottle of Italy / Webgains",
+      "verifiedAt": "2026-08-02"
+    },
+    "details": {
+      "dosage": "8,7 g/L",
+      "verifiedFacts": "Assemblage officiel à parts égales de Pinot Noir, Meunier et Chardonnay ; dosage 8,7 g/L.",
+      "evidenceStatus": "official_confirmed_with_correction",
+      "advice": "Son équilibre permet de l’accorder avec crustacés, poisson, apéritif.",
+      "avoid": "Écartez-la si vous recherchez une bouteille très simple et immédiatement consensuelle : son profil demande davantage d’attention.",
+      "profil": {
+        "fraicheur": "Équilibrée",
+        "rondeur": "Équilibrée",
+        "puissance": "Équilibrée",
+        "longueur": "Complexe"
+      },
+      "scores": {
+        "freshness": 3,
+        "roundness": 3,
+        "power": 3,
+        "complexity": 4
+      },
+      "aromas": [
+        "brioche"
+      ],
+      "grapes": [
+        "Pinot Noir",
+        "Meunier",
+        "Chardonnay"
+      ],
+      "accords": [
+        {
+          "t": "Accord prioritaire",
+          "d": "Crustacés"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Poisson"
+        },
+        {
+          "t": "Pour varier",
+          "d": "Apéritif"
+        }
+      ],
+      "merchant": "Bottle of Italy",
+      "merchantTitle": "Champagne Cuvée Réserve - Clovis - Maison Yves Loison"
+    }
+  },
+  {
+    "id": "de-vilmont-brut-blanc-de-blancs",
+    "merchantId": "shopify_FR_43760601956569",
+    "name": "Brut - Blanc de Blancs",
+    "short": "Brut - Blanc de Blancs",
+    "house": "De Vilmont",
+    "brand": "De Vilmont",
+    "region": "Champagne",
+    "price": 43.09,
+    "priceMin": 43.09,
+    "priceMax": 43.09,
+    "oldPrice": null,
+    "tier": 2,
+    "producerType": "vigneron",
+    "occ": [
+      "occ_fete",
+      "occ_apero",
+      "occ_diner",
+      "occ_romantique"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_fruite",
+      "profil_riche_ample",
+      "profil_delicat"
+    ],
+    "accords": [
+      "accord_mer",
+      "accord_fromage",
+      "accord_aperitif"
+    ],
+    "bulles": "bulles_fines",
+    "tags": [
+      "Blanc de blancs"
+    ],
+    "pair": "huîtres, poisson, fromages",
+    "note": "Un blanc de blancs brut au caractère rond et généreux. Au premier plan : agrumes, pomme, poire, fleurs blanches. L’assemblage réunit Chardonnay. À privilégier avec huîtres, poisson, fromages.",
+    "sourceUrl": "https://www.champagnedevilmont.com/en/wine/brut-blanc-de-blancs/",
+    "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-aoc-brut-blanc-de-blancs-de-vilmont",
+    "officialSourceUrl": "https://www.champagnedevilmont.com/en/wine/brut-blanc-de-blancs/",
+    "technicalSourceUrl": null,
+    "sourceKind": "producer",
+    "verifiedAt": "2026-07-31",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 68,
+    "aff": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_43760601956569&productname=Champagne+AOC+Brut+-+Blanc+de+Blancs+-+De+Vilmont&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-aoc-brut-blanc-de-blancs-de-vilmont%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
+    "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/products/Champagne-AOC-Brut-Blanc-de-Blancs-De-Vilmont-bottle-of-italy.jpg?v=1676282595",
+    "availability": "in_stock",
+    "priceStatus": "fresh",
+    "offerCheckedAt": "2026-08-02T19:22:59.090Z",
+    "identityStatus": "official_confirmed",
+    "imageRights": {
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0538/2268/5356/products/Champagne-AOC-Brut-Blanc-de-Blancs-De-Vilmont-bottle-of-italy.jpg?v=1676282595",
+      "rightsBasis": "Flux du programme partenaire Bottle of Italy / Webgains",
+      "verifiedAt": "2026-08-02"
+    },
+    "details": {
+      "dosage": null,
+      "verifiedFacts": "Le domaine confirme un Blanc de Blancs 100 % Chardonnay élevé trois ans en cave.",
+      "evidenceStatus": "official_confirmed",
+      "advice": "Sa texture ample accompagne volontiers huîtres, poisson, fromages.",
+      "avoid": "Écartez-la si vous recherchez une expression austère et tranchante : son profil privilégie l’ampleur.",
+      "profil": {
+        "fraicheur": "Fraîche",
+        "rondeur": "Ronde",
+        "puissance": "Légère",
+        "longueur": "Complexe"
+      },
+      "scores": {
+        "freshness": 4,
+        "roundness": 4,
+        "power": 2,
+        "complexity": 4
+      },
+      "aromas": [
+        "agrumes",
+        "pomme",
+        "poire",
+        "fleurs blanches",
+        "brioche"
+      ],
+      "grapes": [
+        "Chardonnay"
+      ],
+      "accords": [
+        {
+          "t": "Accord prioritaire",
+          "d": "Huîtres"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Poisson"
+        },
+        {
+          "t": "Pour varier",
+          "d": "Fromages"
+        }
+      ],
+      "merchant": "Bottle of Italy",
+      "merchantTitle": "Champagne AOC Brut - Blanc de Blancs - De Vilmont"
+    }
+  },
+  {
+    "id": "m-g-heucq-rose-brut-fossile",
+    "merchantId": "shopify_FR_50742403793234",
+    "name": "Fossile Rosé Brut",
+    "short": "Fossile Rosé Brut",
+    "house": "M.G. Heucq",
+    "brand": "M.G. Heucq",
+    "region": "Champagne",
+    "price": 43.64,
+    "priceMin": 43.64,
+    "priceMax": 43.64,
+    "oldPrice": null,
+    "tier": 2,
+    "producerType": "vigneron",
+    "occ": [
+      "occ_fete",
+      "occ_apero",
+      "occ_diner",
+      "occ_romantique"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_fruite",
+      "profil_riche_ample"
+    ],
+    "accords": [
+      "accord_mer",
+      "accord_dessert",
+      "accord_aperitif"
+    ],
+    "bulles": "bulles_fines",
+    "tags": [
+      "Brut",
+      "Rosé"
+    ],
+    "pair": "crustacés, poisson, fruits rouges",
+    "note": "Un rosé brut au caractère rond et généreux. Au premier plan : fruits rouges. L’assemblage réunit Meunier, Chardonnay, Pinot Noir. À privilégier avec crustacés, poisson, fruits rouges.",
+    "sourceUrl": "https://www.mg-heucq.fr/champagne-mg-heucq/",
+    "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-rose-brut-fossile-m-g-heucq",
+    "officialSourceUrl": "https://www.mg-heucq.fr/champagne-mg-heucq/",
+    "technicalSourceUrl": null,
+    "sourceKind": "producer",
+    "verifiedAt": "2026-07-31",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 68,
+    "aff": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50742403793234&productname=Champagne+Ros%C3%A9+Brut+-+Fossile+-+M.G.+Heucq&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-rose-brut-fossile-m-g-heucq%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
+    "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/57652-mg-heucq-fossile-rose-brut-1002x1536-min.jpg?v=1747326153",
+    "availability": "in_stock",
+    "priceStatus": "fresh",
+    "offerCheckedAt": "2026-08-02T19:22:59.090Z",
+    "identityStatus": "official_confirmed",
+    "imageRights": {
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/57652-mg-heucq-fossile-rose-brut-1002x1536-min.jpg?v=1747326153",
+      "rightsBasis": "Flux du programme partenaire Bottle of Italy / Webgains",
+      "verifiedAt": "2026-08-02"
+    },
+    "details": {
+      "dosage": "7 g/L",
+      "verifiedFacts": "Assemblage officiel : 50 % Meunier, 30 % Chardonnay et 20 % Pinot Noir, dont 14 % de vin rouge ; 36 mois d’élevage et dosage 7 g/L.",
+      "evidenceStatus": "official_confirmed",
+      "advice": "Sa texture ample accompagne volontiers crustacés, poisson, fruits rouges.",
+      "avoid": "Écartez-la si vous recherchez une expression austère et tranchante : son profil privilégie l’ampleur.",
+      "profil": {
+        "fraicheur": "Fraîche",
+        "rondeur": "Ronde",
+        "puissance": "Équilibrée",
+        "longueur": "Complexe"
+      },
+      "scores": {
+        "freshness": 4,
+        "roundness": 4,
+        "power": 3,
+        "complexity": 4
+      },
+      "aromas": [
+        "fruits rouges"
+      ],
+      "grapes": [
+        "Meunier",
+        "Chardonnay",
+        "Pinot Noir"
+      ],
+      "accords": [
+        {
+          "t": "Accord prioritaire",
+          "d": "Crustacés"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Poisson"
+        },
+        {
+          "t": "Pour varier",
+          "d": "Fruits rouges"
+        }
+      ],
+      "merchant": "Bottle of Italy",
+      "merchantTitle": "Champagne Rosé Brut - Fossile - M.G. Heucq"
+    }
+  },
+  {
+    "id": "harlin-pere-et-fils-l-escapade",
+    "merchantId": "shopify_FR_50459393425746",
+    "name": "L'Escapade",
+    "short": "L'Escapade",
+    "house": "Harlin Père et Fils",
+    "brand": "Harlin Père et Fils",
+    "region": "Champagne",
+    "price": 43.65,
+    "priceMin": 43.65,
+    "priceMax": 43.65,
+    "oldPrice": null,
+    "tier": 2,
+    "producerType": "vigneron",
+    "occ": [
+      "occ_fete",
+      "occ_apero",
+      "occ_diner"
+    ],
+    "profil": [
+      "profil_frais_vif"
+    ],
+    "accords": [
+      "accord_mer",
+      "accord_fromage",
+      "accord_aperitif"
+    ],
+    "bulles": "bulles_fines",
+    "tags": [
+      "Brut"
+    ],
+    "pair": "poisson, fromages, apéritif",
+    "note": "Un brut au caractère frais et précis. Au premier plan : agrumes, pomme, brioche. L’assemblage réunit Meunier, Pinot Noir, Chardonnay. À privilégier avec poisson, fromages, apéritif.",
+    "sourceUrl": "https://www.champagneharlin.fr/champagnes-1-l-escapade.html",
+    "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-lescapade-harlin-pere-et-fils",
+    "officialSourceUrl": "https://www.champagneharlin.fr/champagnes-1-l-escapade.html",
+    "technicalSourceUrl": null,
+    "sourceKind": "producer",
+    "verifiedAt": "2026-07-31",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 68,
+    "aff": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50459393425746&productname=Champagne+L%27Escapade+-+Harlin+P%C3%A8re+et+Fils&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-lescapade-harlin-pere-et-fils%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
+    "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/champagne-harlin-l-escapade-bottle-of-italy-min.jpg?v=1742207278",
+    "availability": "in_stock",
+    "priceStatus": "fresh",
+    "offerCheckedAt": "2026-08-02T19:22:59.090Z",
+    "identityStatus": "official_confirmed",
+    "imageRights": {
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/champagne-harlin-l-escapade-bottle-of-italy-min.jpg?v=1742207278",
+      "rightsBasis": "Flux du programme partenaire Bottle of Italy / Webgains",
+      "verifiedAt": "2026-08-02"
+    },
+    "details": {
+      "dosage": null,
+      "verifiedFacts": "Assemblage officiel : 45 % Meunier, 30 % Pinot Noir et 25 % Chardonnay.",
+      "evidenceStatus": "official_confirmed",
+      "advice": "Sa fraîcheur nette convient particulièrement à poisson, fromages, apéritif.",
+      "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et pomme.",
+      "profil": {
+        "fraicheur": "Fraîche",
+        "rondeur": "Équilibrée",
+        "puissance": "Équilibrée",
+        "longueur": "Nuancée"
+      },
+      "scores": {
+        "freshness": 4,
+        "roundness": 3,
+        "power": 3,
+        "complexity": 3
+      },
+      "aromas": [
+        "agrumes",
+        "pomme",
+        "brioche"
+      ],
+      "grapes": [
+        "Meunier",
+        "Pinot Noir",
+        "Chardonnay"
+      ],
+      "accords": [
+        {
+          "t": "Accord prioritaire",
+          "d": "Poisson"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Fromages"
+        },
+        {
+          "t": "Pour varier",
+          "d": "Apéritif"
+        }
+      ],
+      "merchant": "Bottle of Italy",
+      "merchantTitle": "Champagne L'Escapade - Harlin Père et Fils"
+    }
+  },
+  {
+    "id": "beltrand-brigandat-blanc-de-noirs-brut-pierre-brigandat",
+    "merchantId": "shopify_FR_47895597515090",
+    "name": "Blanc de Noirs Brut",
+    "short": "Blanc de Noirs Brut",
+    "house": "Pierre Brigandat",
+    "brand": "Pierre Brigandat",
+    "region": "Champagne",
+    "price": 43.65,
+    "priceMin": 43.65,
+    "priceMax": 43.65,
+    "oldPrice": null,
+    "tier": 2,
+    "producerType": "vigneron",
+    "occ": [
+      "occ_fete",
+      "occ_apero",
+      "occ_diner"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_fruite",
+      "profil_riche_ample"
+    ],
+    "accords": [
+      "accord_mer",
+      "accord_fromage",
+      "accord_aperitif"
+    ],
+    "bulles": "bulles_fines",
+    "tags": [
+      "Brut",
+      "Blanc de noirs"
+    ],
+    "pair": "crustacés, poisson, fromages",
+    "note": "Un blanc de noirs brut au caractère vif et structuré. Au premier plan : agrumes, fleurs blanches. L’assemblage réunit Pinot Noir. À privilégier avec crustacés, poisson, fromages.",
+    "sourceUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-noirs-brut-beltrand-brigandat",
+    "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-noirs-brut-beltrand-brigandat",
+    "officialSourceUrl": null,
+    "technicalSourceUrl": "https://bonhomiewine.com/wp-content/uploads/2019/07/Brigandat.pdf",
+    "sourceKind": "merchant",
+    "verifiedAt": "2026-07-31",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 68,
+    "aff": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895597515090&productname=Champagne+Blanc+de+Noirs+Brut+-+Pierre+Brigandat&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-blanc-de-noirs-brut-beltrand-brigandat%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
+    "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Blanc-de-Noirs-Brut-Beltrand-Brigandat-bottle-of-italy.jpg?v=1714473768",
+    "availability": "in_stock",
+    "priceStatus": "fresh",
+    "offerCheckedAt": "2026-08-02T19:22:59.090Z",
+    "identityStatus": "secondary_identity_confirmed",
+    "imageRights": {
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Blanc-de-Noirs-Brut-Beltrand-Brigandat-bottle-of-italy.jpg?v=1714473768",
+      "rightsBasis": "Flux du programme partenaire Bottle of Italy / Webgains",
+      "verifiedAt": "2026-08-02"
+    },
+    "details": {
+      "dosage": "Environ 9 g/L",
+      "verifiedFacts": "La documentation technique de l’importateur confirme un Blanc de Noirs 100 % Pinot Noir, vinifié en cuves émaillées, élevé trois ans sur lattes et dosé autour de 9 g/L.",
+      "evidenceStatus": "secondary_identity_confirmed",
+      "advice": "Sa matière affirmée trouve sa place à table, notamment avec crustacés, poisson, fromages.",
+      "avoid": "Écartez-la si vous recherchez une expression austère et tranchante : son profil privilégie l’ampleur.",
+      "profil": {
+        "fraicheur": "Fraîche",
+        "rondeur": "Ronde",
+        "puissance": "Puissante",
+        "longueur": "Nuancée"
+      },
+      "scores": {
+        "freshness": 4,
+        "roundness": 4,
+        "power": 4,
+        "complexity": 3
+      },
+      "aromas": [
+        "agrumes",
+        "fleurs blanches"
+      ],
+      "grapes": [
+        "Pinot Noir"
+      ],
+      "accords": [
+        {
+          "t": "Accord prioritaire",
+          "d": "Crustacés"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Poisson"
+        },
+        {
+          "t": "Pour varier",
+          "d": "Fromages"
+        }
+      ],
+      "merchant": "Bottle of Italy",
+      "merchantTitle": "Champagne Blanc de Noirs Brut - Pierre Brigandat"
+    }
+  },
+  {
+    "id": "bardiau-cuvee-preface-extra-brut",
+    "merchantId": "shopify_FR_47245072630098",
+    "name": "Préface Brut Sans Année",
+    "short": "Préface Brut Sans Année",
+    "house": "Champagne Bardiaù",
+    "brand": "Champagne Bardiaù",
+    "region": "Champagne",
+    "price": 43.97,
+    "priceMin": 43.97,
+    "priceMax": 43.97,
+    "oldPrice": null,
+    "tier": 2,
+    "producerType": "vigneron",
+    "occ": [
+      "occ_fete",
+      "occ_apero",
+      "occ_diner"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_fruite",
+      "profil_riche_ample"
+    ],
+    "accords": [
+      "accord_mer",
+      "accord_aperitif"
+    ],
+    "bulles": "bulles_fines",
+    "tags": [
+      "Brut"
+    ],
+    "pair": "poisson, apéritif",
+    "note": "Un brut au caractère rond et généreux. Au premier plan : agrumes, poire, fleurs blanches, minéralité. L’assemblage réunit Pinot Noir, Chardonnay. À privilégier avec poisson, apéritif.",
+    "sourceUrl": "https://champagne-bardiau.com/les-vins/",
+    "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-cuvee-preface-extra-brut-bardiau",
+    "officialSourceUrl": "https://champagne-bardiau.com/les-vins/",
+    "technicalSourceUrl": null,
+    "sourceKind": "producer",
+    "verifiedAt": "2026-07-31",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 68,
+    "aff": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47245072630098&productname=Champagne+Cuve%CC%80e+Preface+Extra+Brut+-+Bardia%C3%B9&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-cuvee-preface-extra-brut-bardiau%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
+    "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Cuvee-Preface-Extra-Brut-Bardiau-Bottle-of-Italy.jpg?v=1699610896",
+    "availability": "in_stock",
+    "priceStatus": "fresh",
+    "offerCheckedAt": "2026-08-02T19:22:59.090Z",
+    "identityStatus": "official_confirmed_with_correction",
+    "imageRights": {
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Cuvee-Preface-Extra-Brut-Bardiau-Bottle-of-Italy.jpg?v=1699610896",
+      "rightsBasis": "Flux du programme partenaire Bottle of Italy / Webgains",
+      "verifiedAt": "2026-08-02"
+    },
+    "details": {
+      "dosage": null,
+      "verifiedFacts": "Assemblage officiel : 70 % Pinot Noir et 30 % Chardonnay, crus de Champignol-lez-Mondeville et Verpillières-sur-Ource, avec au moins 24 mois de vieillissement en cave.",
+      "evidenceStatus": "official_confirmed_with_correction",
+      "advice": "Sa texture ample accompagne volontiers poisson, apéritif.",
+      "avoid": "Écartez-la si vous recherchez une expression austère et tranchante : son profil privilégie l’ampleur.",
+      "profil": {
+        "fraicheur": "Très fraîche",
+        "rondeur": "Ronde",
+        "puissance": "Équilibrée",
+        "longueur": "Complexe"
+      },
+      "scores": {
+        "freshness": 5,
+        "roundness": 4,
+        "power": 3,
+        "complexity": 4
+      },
+      "aromas": [
+        "agrumes",
+        "poire",
+        "fleurs blanches",
+        "minéralité"
+      ],
+      "grapes": [
+        "Pinot Noir",
+        "Chardonnay"
+      ],
+      "accords": [
+        {
+          "t": "Accord prioritaire",
+          "d": "Poisson"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Apéritif"
+        }
+      ],
+      "merchant": "Bottle of Italy",
+      "merchantTitle": "Champagne Cuvèe Preface Extra Brut - Bardiaù"
+    }
+  },
+  {
+    "id": "pierre-legras-orior-brut",
+    "merchantId": "shopify_FR_47245071647058",
+    "name": "Orior Brut",
+    "short": "Orior Brut",
+    "house": "Pierre Legras",
+    "brand": "Pierre Legras",
+    "region": "Champagne",
+    "price": 44.3,
+    "priceMin": 44.3,
+    "priceMax": 44.3,
+    "oldPrice": null,
+    "tier": 2,
+    "producerType": "vigneron",
+    "occ": [
+      "occ_fete",
+      "occ_apero",
+      "occ_diner"
+    ],
+    "profil": [
+      "profil_fruite",
+      "profil_riche_ample"
+    ],
+    "accords": [
+      "accord_mer",
+      "accord_volaille",
+      "accord_aperitif"
+    ],
+    "bulles": "bulles_fines",
+    "tags": [
+      "Brut"
+    ],
+    "pair": "poisson, volaille, apéritif",
+    "note": "Un brut au caractère rond et généreux. Au premier plan : agrumes, poire, pêche, fleurs blanches. L’assemblage réunit Chardonnay, Pinot Noir, Meunier. À privilégier avec poisson, volaille, apéritif.",
+    "sourceUrl": "https://www.champagne-pierre-legras.com/wp-content/uploads/2026/02/champagne-pierre-legras-orior.pdf",
+    "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-orior-brut-pierre-legras",
+    "officialSourceUrl": "https://www.champagne-pierre-legras.com/wp-content/uploads/2026/02/champagne-pierre-legras-orior.pdf",
+    "technicalSourceUrl": null,
+    "sourceKind": "producer",
+    "verifiedAt": "2026-07-31",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 68,
+    "aff": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47245071647058&productname=Champagne+Orior+Brut+-+Pierre+Legras&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-orior-brut-pierre-legras%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
+    "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Orior-Brut-Pierre-Legras-Bottle-of-Italy.jpg?v=1699612218",
+    "availability": "in_stock",
+    "priceStatus": "fresh",
+    "offerCheckedAt": "2026-08-02T19:22:59.090Z",
+    "identityStatus": "official_confirmed",
+    "imageRights": {
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Orior-Brut-Pierre-Legras-Bottle-of-Italy.jpg?v=1699612218",
+      "rightsBasis": "Flux du programme partenaire Bottle of Italy / Webgains",
+      "verifiedAt": "2026-08-02"
+    },
+    "details": {
+      "dosage": null,
+      "verifiedFacts": "Orior est la cuvée d’assemblage de la maison, alliance des terroirs d’Épernay et de Chouilly, avec un profil franc, riche et complexe.",
+      "evidenceStatus": "official_confirmed",
+      "advice": "Sa texture ample accompagne volontiers poisson, volaille, apéritif.",
+      "avoid": "Écartez-la si vous recherchez une expression austère et tranchante : son profil privilégie l’ampleur.",
+      "profil": {
+        "fraicheur": "Équilibrée",
+        "rondeur": "Ronde",
+        "puissance": "Équilibrée",
+        "longueur": "Complexe"
+      },
+      "scores": {
+        "freshness": 3,
+        "roundness": 4,
+        "power": 3,
+        "complexity": 4
+      },
+      "aromas": [
+        "agrumes",
+        "poire",
+        "pêche",
+        "fleurs blanches",
+        "brioche"
+      ],
+      "grapes": [
+        "Chardonnay",
+        "Pinot Noir",
+        "Meunier"
+      ],
+      "accords": [
+        {
+          "t": "Accord prioritaire",
+          "d": "Poisson"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Volaille"
+        },
+        {
+          "t": "Pour varier",
+          "d": "Apéritif"
+        }
+      ],
+      "merchant": "Bottle of Italy",
+      "merchantTitle": "Champagne Orior Brut - Pierre Legras"
+    }
+  },
+  {
+    "id": "benard-pitois-carte-blanche-premier-cru-brut",
+    "merchantId": "shopify_FR_53712156590418",
+    "name": "Carte Blanche Premier Cru Brut",
+    "short": "Carte Blanche Premier Cru Brut",
+    "house": "Bénard-Pitois",
+    "brand": "Bénard-Pitois",
+    "region": "Champagne",
+    "price": 45.46,
+    "priceMin": 45.46,
+    "priceMax": 45.46,
+    "oldPrice": null,
+    "tier": 2,
+    "producerType": "vigneron",
+    "occ": [
+      "occ_fete",
+      "occ_apero",
+      "occ_diner",
+      "occ_cadeau"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_riche_ample"
+    ],
+    "accords": [
+      "accord_mer",
+      "accord_fromage",
+      "accord_aperitif"
+    ],
+    "bulles": "bulles_fines",
+    "tags": [
+      "Brut",
+      "Premier Cru"
+    ],
+    "pair": "huîtres, poisson, fromages",
+    "note": "Un brut Premier Cru au caractère nuancé et persistant. Au premier plan : agrumes, pomme, salinité. L’assemblage réunit Pinot Noir, Chardonnay, Meunier. À privilégier avec huîtres, poisson, fromages.",
+    "sourceUrl": "https://www.champagne-benard-pitois.com/boutique/accueil/1-brut-carte-blanche.html",
+    "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-carte-blanche-premier-cru-brut-benard-pitois",
+    "officialSourceUrl": "https://www.champagne-benard-pitois.com/boutique/accueil/1-brut-carte-blanche.html",
+    "technicalSourceUrl": null,
+    "sourceKind": "producer",
+    "verifiedAt": "2026-07-31",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 68,
+    "aff": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_53712156590418&productname=Champagne+Carte+Blanche+Premier+Cru+Brut+-+Benard+Pitois&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-carte-blanche-premier-cru-brut-benard-pitois%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
+    "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/brut-carte-blanche-benard-pitois-Bottle-of-Italy-min.jpg?v=1781262252",
+    "availability": "in_stock",
+    "priceStatus": "fresh",
+    "offerCheckedAt": "2026-08-02T19:22:59.090Z",
+    "identityStatus": "official_confirmed",
+    "imageRights": {
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/brut-carte-blanche-benard-pitois-Bottle-of-Italy-min.jpg?v=1781262252",
+      "rightsBasis": "Flux du programme partenaire Bottle of Italy / Webgains",
+      "verifiedAt": "2026-08-02"
+    },
+    "details": {
+      "dosage": null,
+      "verifiedFacts": "Assemblage officiel : 75 % Pinot Noir, 20 % Chardonnay et 5 % Meunier.",
+      "evidenceStatus": "official_confirmed",
+      "advice": "Sa fraîcheur nette convient particulièrement à huîtres, poisson, fromages.",
+      "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et pomme.",
+      "profil": {
+        "fraicheur": "Très fraîche",
+        "rondeur": "Équilibrée",
+        "puissance": "Équilibrée",
+        "longueur": "Complexe"
+      },
+      "scores": {
+        "freshness": 5,
+        "roundness": 3,
+        "power": 3,
+        "complexity": 4
+      },
+      "aromas": [
+        "agrumes",
+        "pomme",
+        "salinité"
+      ],
+      "grapes": [
+        "Pinot Noir",
+        "Chardonnay",
+        "Meunier"
+      ],
+      "accords": [
+        {
+          "t": "Accord prioritaire",
+          "d": "Huîtres"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Poisson"
+        },
+        {
+          "t": "Pour varier",
+          "d": "Fromages"
+        }
+      ],
+      "merchant": "Bottle of Italy",
+      "merchantTitle": "Champagne Carte Blanche Premier Cru Brut - Benard Pitois"
+    }
+  },
+  {
+    "id": "domaine-augustin-terre-2021",
+    "merchantId": "shopify_FR_50794939580754",
+    "name": "Terre Brut",
+    "short": "Terre Brut",
+    "house": "Domaine Augustin",
+    "brand": "Domaine Augustin",
+    "region": "Champagne",
+    "price": 46,
+    "priceMin": 46,
+    "priceMax": 46,
+    "oldPrice": null,
+    "tier": 2,
+    "producerType": "vigneron",
+    "occ": [
+      "occ_fete",
+      "occ_apero",
+      "occ_diner",
+      "occ_cadeau"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_riche_ample"
+    ],
+    "accords": [
+      "accord_mer",
+      "accord_fromage",
+      "accord_aperitif"
+    ],
+    "bulles": "bulles_fines",
+    "tags": [
+      "Brut"
+    ],
+    "pair": "crustacés, poisson, fromages",
+    "note": "Un brut au caractère nuancé et persistant. Au premier plan : agrumes. L’assemblage réunit Pinot Noir. À privilégier avec crustacés, poisson, fromages.",
+    "sourceUrl": "https://www.champagne-augustin.com/fr/cuvee-champagne/les-champagnes-augustin-fr",
+    "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-terre-domaine-augustin",
+    "officialSourceUrl": "https://www.champagne-augustin.com/fr/cuvee-champagne/les-champagnes-augustin-fr",
+    "technicalSourceUrl": null,
+    "sourceKind": "producer",
+    "verifiedAt": "2026-07-31",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 68,
+    "aff": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50794939580754&productname=Champagne+Terre+-+Domaine+Augustin+2021&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-terre-domaine-augustin%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
+    "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/champagne-cuveI_e-terre-min.jpg?v=1747664216",
+    "availability": "in_stock",
+    "priceStatus": "fresh",
+    "offerCheckedAt": "2026-08-02T19:22:59.090Z",
+    "identityStatus": "official_confirmed_with_correction",
+    "imageRights": {
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/champagne-cuveI_e-terre-min.jpg?v=1747664216",
+      "rightsBasis": "Flux du programme partenaire Bottle of Italy / Webgains",
+      "verifiedAt": "2026-08-02"
+    },
+    "details": {
+      "dosage": null,
+      "verifiedFacts": "La cuvée Terre est un Brut 100 % Pinot Noir issu de jeunes vignes, vinifié avec levures indigènes et sans filtration.",
+      "evidenceStatus": "official_confirmed_with_correction",
+      "advice": "Sa fraîcheur nette convient particulièrement à crustacés, poisson, fromages.",
+      "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes.",
+      "profil": {
+        "fraicheur": "Fraîche",
+        "rondeur": "Équilibrée",
+        "puissance": "Équilibrée",
+        "longueur": "Complexe"
+      },
+      "scores": {
+        "freshness": 4,
+        "roundness": 3,
+        "power": 3,
+        "complexity": 4
+      },
+      "aromas": [
+        "agrumes"
+      ],
+      "grapes": [
+        "Pinot Noir"
+      ],
+      "accords": [
+        {
+          "t": "Accord prioritaire",
+          "d": "Crustacés"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Poisson"
+        },
+        {
+          "t": "Pour varier",
+          "d": "Fromages"
+        }
+      ],
+      "merchant": "Bottle of Italy",
+      "merchantTitle": "Champagne Terre - Domaine Augustin"
+    }
+  },
+  {
+    "id": "beaumont-des-crayeres-grand-prestige-brut",
+    "merchantId": "shopify_FR_48453987369298",
+    "name": "Grand Prestige Brut",
+    "short": "Grand Prestige Brut",
+    "house": "Beaumont des Crayères",
+    "brand": "Beaumont des Crayères",
+    "region": "Champagne",
+    "price": 46.23,
+    "priceMin": 46.23,
+    "priceMax": 46.23,
+    "oldPrice": null,
+    "tier": 2,
+    "producerType": "vigneron",
+    "occ": [
+      "occ_fete",
+      "occ_apero",
+      "occ_diner",
+      "occ_cadeau"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_riche_ample"
+    ],
+    "accords": [
+      "accord_mer",
+      "accord_aperitif"
+    ],
+    "bulles": "bulles_fines",
+    "tags": [
+      "Brut"
+    ],
+    "pair": "huîtres, poisson, apéritif",
+    "note": "Un brut au caractère nuancé et persistant. Au premier plan : agrumes, pomme, pêche, fleurs blanches. L’assemblage réunit Chardonnay, Pinot Noir, Meunier. À privilégier avec huîtres, poisson, apéritif.",
+    "sourceUrl": "https://www.champagne-beaumont.com/en/produit/grand-prestige/",
+    "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-grand-prestige-brut-4-anni-beaumont-des-crayeres",
+    "officialSourceUrl": "https://www.champagne-beaumont.com/en/produit/grand-prestige/",
+    "technicalSourceUrl": null,
+    "sourceKind": "producer",
+    "verifiedAt": "2026-07-31",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 68,
+    "aff": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_48453987369298&productname=Champagne+Grand+Prestige+Brut+-+4+anni+-+Beaumont+des+Crayeres&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-grand-prestige-brut-4-anni-beaumont-des-crayeres%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
+    "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Beaumont-des-Crayeres-grand-Prestige-Brut-bottle-of-italy.jpg?v=1719570785",
+    "availability": "in_stock",
+    "priceStatus": "fresh",
+    "offerCheckedAt": "2026-08-02T19:22:59.090Z",
+    "identityStatus": "official_confirmed",
+    "imageRights": {
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Beaumont-des-Crayeres-grand-Prestige-Brut-bottle-of-italy.jpg?v=1719570785",
+      "rightsBasis": "Flux du programme partenaire Bottle of Italy / Webgains",
+      "verifiedAt": "2026-08-02"
+    },
+    "details": {
+      "dosage": null,
+      "verifiedFacts": "Assemblage officiel : 40 % Chardonnay, 40 % Pinot Noir et 20 % Meunier.",
+      "evidenceStatus": "official_confirmed",
+      "advice": "Sa fraîcheur nette convient particulièrement à huîtres, poisson, apéritif.",
+      "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et pomme.",
+      "profil": {
+        "fraicheur": "Fraîche",
+        "rondeur": "Équilibrée",
+        "puissance": "Équilibrée",
+        "longueur": "Complexe"
+      },
+      "scores": {
+        "freshness": 4,
+        "roundness": 3,
+        "power": 3,
+        "complexity": 4
+      },
+      "aromas": [
+        "agrumes",
+        "pomme",
+        "pêche",
+        "fleurs blanches",
+        "brioche",
+        "amande"
+      ],
+      "grapes": [
+        "Chardonnay",
+        "Pinot Noir",
+        "Meunier"
+      ],
+      "accords": [
+        {
+          "t": "Accord prioritaire",
+          "d": "Huîtres"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Poisson"
+        },
+        {
+          "t": "Pour varier",
+          "d": "Apéritif"
+        }
+      ],
+      "merchant": "Bottle of Italy",
+      "merchantTitle": "Champagne Grand Prestige Brut - 4 anni - Beaumont des Crayeres"
+    }
+  },
+  {
+    "id": "j-charpentier-rose-reserve-brut",
+    "merchantId": "shopify_FR_47895554261330",
+    "name": "Rosé Réserve Brut",
+    "short": "Rosé Réserve Brut",
+    "house": "J. Charpentier",
+    "brand": "J. Charpentier",
+    "region": "Champagne",
+    "price": 46.94,
+    "priceMin": 46.94,
+    "priceMax": 46.94,
+    "oldPrice": null,
+    "tier": 2,
+    "producerType": "vigneron",
+    "occ": [
+      "occ_fete",
+      "occ_apero",
+      "occ_diner",
+      "occ_cadeau",
+      "occ_romantique"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_fruite"
+    ],
+    "accords": [
+      "accord_mer",
+      "accord_dessert",
+      "accord_aperitif"
+    ],
+    "bulles": "bulles_fines",
+    "tags": [
+      "Rosé"
+    ],
+    "pair": "poisson, fruits rouges, dessert",
+    "note": "Un rosé brut au caractère rond et généreux. Au premier plan : agrumes, fruits rouges. L’assemblage réunit Meunier, Pinot Noir. À privilégier avec poisson, fruits rouges, dessert.",
+    "sourceUrl": "https://jcharpentier.com/produit/rose-brut%E2%80%8B/",
+    "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-rose-reserve-brut-j-charpentier",
+    "officialSourceUrl": "https://jcharpentier.com/produit/rose-brut%E2%80%8B/",
+    "technicalSourceUrl": null,
+    "sourceKind": "producer",
+    "verifiedAt": "2026-07-31",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 68,
+    "aff": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895554261330&productname=Champagne+Ros%C3%A9+R%C3%A9serve+Brut+-+J.Charpentier&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-rose-reserve-brut-j-charpentier%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
+    "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Rose-Reserve-Brut-J.Charpentier-bottle-of-italy.jpg?v=1716907244",
+    "availability": "in_stock",
+    "priceStatus": "fresh",
+    "offerCheckedAt": "2026-08-02T19:22:59.090Z",
+    "identityStatus": "official_confirmed",
+    "imageRights": {
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Rose-Reserve-Brut-J.Charpentier-bottle-of-italy.jpg?v=1716907244",
+      "rightsBasis": "Flux du programme partenaire Bottle of Italy / Webgains",
+      "verifiedAt": "2026-08-02"
+    },
+    "details": {
+      "dosage": null,
+      "verifiedFacts": "Assemblage officiel : 80 % Meunier et 20 % Pinot Noir.",
+      "evidenceStatus": "official_confirmed",
+      "advice": "Sa texture ample accompagne volontiers poisson, fruits rouges, dessert.",
+      "avoid": "Écartez-la si vous recherchez une expression austère et tranchante : son profil privilégie l’ampleur.",
+      "profil": {
+        "fraicheur": "Fraîche",
+        "rondeur": "Ronde",
+        "puissance": "Équilibrée",
+        "longueur": "Nuancée"
+      },
+      "scores": {
+        "freshness": 4,
+        "roundness": 4,
+        "power": 3,
+        "complexity": 3
+      },
+      "aromas": [
+        "agrumes",
+        "fruits rouges"
+      ],
+      "grapes": [
+        "Meunier",
+        "Pinot Noir"
+      ],
+      "accords": [
+        {
+          "t": "Accord prioritaire",
+          "d": "Poisson"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Fruits rouges"
+        },
+        {
+          "t": "Pour varier",
+          "d": "Dessert"
+        }
+      ],
+      "merchant": "Bottle of Italy",
+      "merchantTitle": "Champagne Rosé Réserve Brut - J.Charpentier"
+    }
+  },
+  {
+    "id": "petit-camusat-pinot-blanc-de-blancs-brut",
+    "merchantId": "shopify_FR_47895603151186",
+    "name": "Pinot Blanc de Blancs Brut",
+    "short": "Pinot Blanc de Blancs Brut",
+    "house": "Petit Camusat",
+    "brand": "Petit Camusat",
+    "region": "Champagne",
+    "price": 46.94,
+    "priceMin": 46.94,
+    "priceMax": 46.94,
+    "oldPrice": null,
+    "tier": 2,
+    "producerType": "vigneron",
+    "occ": [
+      "occ_fete",
+      "occ_apero",
+      "occ_diner",
+      "occ_cadeau",
+      "occ_romantique"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_delicat"
+    ],
+    "accords": [
+      "accord_mer",
+      "accord_aperitif"
+    ],
+    "bulles": "bulles_fines",
+    "tags": [
+      "Blanc de blancs"
+    ],
+    "pair": "poisson, apéritif",
+    "note": "Un blanc de blancs brut au caractère léger et délicat. Au premier plan : agrumes, pêche, fleurs blanches, brioche. L’assemblage réunit Pinot Blanc. À privilégier avec poisson, apéritif.",
+    "sourceUrl": "https://champagnepetitcamusat.com/",
+    "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-pinot-blanc-de-blancs-brut-petit-camusat",
+    "officialSourceUrl": "https://champagnepetitcamusat.com/",
+    "technicalSourceUrl": null,
+    "sourceKind": "producer",
+    "verifiedAt": "2026-07-31",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 68,
+    "aff": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895603151186&productname=Champagne+Pinot+Blanc+de+Blancs+Brut+-+Petit+Camusat&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-pinot-blanc-de-blancs-brut-petit-camusat%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
+    "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/CHAMPAGNE_PETIT_CAMUSCAT-pinot-blanc-bottle-of-italy.jpg?v=1716905041",
+    "availability": "in_stock",
+    "priceStatus": "fresh",
+    "offerCheckedAt": "2026-08-02T19:22:59.090Z",
+    "identityStatus": "official_confirmed",
+    "imageRights": {
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/CHAMPAGNE_PETIT_CAMUSCAT-pinot-blanc-bottle-of-italy.jpg?v=1716905041",
+      "rightsBasis": "Flux du programme partenaire Bottle of Italy / Webgains",
+      "verifiedAt": "2026-08-02"
+    },
+    "details": {
+      "dosage": null,
+      "verifiedFacts": "Le domaine confirme un Blanc de Blancs Brut non filtré élaboré uniquement à partir de Pinot Blanc.",
+      "evidenceStatus": "official_confirmed",
+      "advice": "Sa fraîcheur nette convient particulièrement à poisson, apéritif.",
+      "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et pêche.",
+      "profil": {
+        "fraicheur": "Très fraîche",
+        "rondeur": "Équilibrée",
+        "puissance": "Légère",
+        "longueur": "Nuancée"
+      },
+      "scores": {
+        "freshness": 5,
+        "roundness": 3,
+        "power": 2,
+        "complexity": 3
+      },
+      "aromas": [
+        "agrumes",
+        "pêche",
+        "fleurs blanches",
+        "brioche",
+        "amande"
+      ],
+      "grapes": [
+        "Pinot Blanc"
+      ],
+      "accords": [
+        {
+          "t": "Accord prioritaire",
+          "d": "Poisson"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Apéritif"
+        }
+      ],
+      "merchant": "Bottle of Italy",
+      "merchantTitle": "Champagne Pinot Blanc de Blancs Brut - Petit Camusat"
+    }
+  },
+  {
+    "id": "nicolas-feuillatte-reserve-exclusive-brut-rose",
+    "merchantId": "shopify_FR_50341299487058",
+    "name": "Réserve Exclusive Brut Rosé",
+    "short": "Réserve Exclusive Brut Rosé",
+    "house": "Nicolas Feuillatte",
+    "brand": "Nicolas Feuillatte",
+    "region": "Champagne",
+    "price": 47.09,
+    "priceMin": 47.09,
+    "priceMax": 47.09,
+    "oldPrice": null,
+    "tier": 2,
+    "producerType": "maison",
+    "occ": [
+      "occ_fete",
+      "occ_apero",
+      "occ_diner",
+      "occ_cadeau",
+      "occ_romantique"
+    ],
+    "profil": [
+      "profil_fruite"
+    ],
+    "accords": [
+      "accord_mer",
+      "accord_dessert"
+    ],
+    "bulles": "bulles_fines",
+    "tags": [
+      "Rosé"
+    ],
+    "pair": "crustacés, poisson, fruits rouges",
+    "note": "Un rosé brut au caractère rond et généreux. Au premier plan : fruits rouges. L’assemblage réunit Chardonnay, Pinot Noir, Meunier. À privilégier avec crustacés, poisson, fruits rouges.",
+    "sourceUrl": "https://nicolas-feuillatte.com/collections/champagnes-roses",
+    "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-reserve-exclusive-rose-nicolas-feuillatte",
+    "officialSourceUrl": "https://nicolas-feuillatte.com/collections/champagnes-roses",
+    "technicalSourceUrl": null,
+    "sourceKind": "producer",
+    "verifiedAt": "2026-07-31",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 84,
+    "aff": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50341299487058&productname=Champagne+R%C3%A9serve+Exclusive+Brut+Ros%C3%A9+-+Nicolas+Feuillatte&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-reserve-exclusive-rose-nicolas-feuillatte%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
+    "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/nicolas-feuillatte-champagne-rose-reserve-exclusive-bottle-of-italy.jpg?v=1740387462",
+    "availability": "in_stock",
+    "priceStatus": "fresh",
+    "offerCheckedAt": "2026-08-02T19:22:59.090Z",
+    "identityStatus": "official_confirmed",
+    "imageRights": {
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/nicolas-feuillatte-champagne-rose-reserve-exclusive-bottle-of-italy.jpg?v=1740387462",
+      "rightsBasis": "Flux du programme partenaire Bottle of Italy / Webgains",
+      "verifiedAt": "2026-08-02"
+    },
+    "details": {
+      "dosage": null,
+      "verifiedFacts": null,
+      "evidenceStatus": "official_confirmed",
+      "advice": "Sa texture ample accompagne volontiers crustacés, poisson, fruits rouges.",
+      "avoid": "Écartez-la si vous recherchez une expression austère et tranchante : son profil privilégie l’ampleur.",
+      "profil": {
+        "fraicheur": "Équilibrée",
+        "rondeur": "Très ronde",
+        "puissance": "Équilibrée",
+        "longueur": "Nuancée"
+      },
+      "scores": {
+        "freshness": 3,
+        "roundness": 5,
+        "power": 3,
+        "complexity": 3
+      },
+      "aromas": [
+        "fruits rouges"
+      ],
+      "grapes": [
+        "Chardonnay",
+        "Pinot Noir",
+        "Meunier"
+      ],
+      "accords": [
+        {
+          "t": "Accord prioritaire",
+          "d": "Crustacés"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Poisson"
+        },
+        {
+          "t": "Pour varier",
+          "d": "Fruits rouges"
+        }
+      ],
+      "merchant": "Bottle of Italy",
+      "merchantTitle": "Champagne Réserve Exclusive Brut Rosé - Nicolas Feuillatte"
+    }
+  },
+  {
+    "id": "simplexite-simplexite-rose-brut",
+    "merchantId": "shopify_FR_47895552426322",
+    "name": "Simplexité Brut Rosé",
+    "short": "Simplexité Brut Rosé",
+    "house": "Alain Mercier & Fils",
+    "brand": "Alain Mercier & Fils",
+    "region": "Champagne",
+    "price": 47.43,
+    "priceMin": 47.43,
+    "priceMax": 47.43,
+    "oldPrice": null,
+    "tier": 2,
+    "producerType": "vigneron",
+    "occ": [
+      "occ_fete",
+      "occ_apero",
+      "occ_diner",
+      "occ_cadeau",
+      "occ_romantique"
+    ],
+    "profil": [
+      "profil_fruite"
+    ],
+    "accords": [
+      "accord_mer",
+      "accord_dessert",
+      "accord_aperitif"
+    ],
+    "bulles": "bulles_fines",
+    "tags": [
+      "Rosé"
+    ],
+    "pair": "poisson, fruits rouges, dessert",
+    "note": "Un rosé brut au caractère rond et généreux. Au premier plan : agrumes, fruits rouges, fleurs blanches. L’assemblage réunit Pinot Noir. À privilégier avec poisson, fruits rouges, dessert.",
+    "sourceUrl": "https://champagne-alain-mercier.plugwine.com/en/vins/champagne-alain-mercier-fils-simplexite-brut-rose/champagne-rose/24354",
+    "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-simplexite-rose-brut",
+    "officialSourceUrl": "https://champagne-alain-mercier.plugwine.com/en/vins/champagne-alain-mercier-fils-simplexite-brut-rose/champagne-rose/24354",
+    "technicalSourceUrl": null,
+    "sourceKind": "producer",
+    "verifiedAt": "2026-07-31",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 68,
+    "aff": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895552426322&productname=Champagne+Simplexit%C3%A9+Ros%C3%A9+Brut&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-simplexite-rose-brut%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
+    "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Simplexite-Rose-Brut-bottle-of-italy.jpg?v=1716907337",
+    "availability": "in_stock",
+    "priceStatus": "fresh",
+    "offerCheckedAt": "2026-08-02T19:22:59.090Z",
+    "identityStatus": "official_confirmed_with_correction",
+    "imageRights": {
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Simplexite-Rose-Brut-bottle-of-italy.jpg?v=1716907337",
+      "rightsBasis": "Flux du programme partenaire Bottle of Italy / Webgains",
+      "verifiedAt": "2026-08-02"
+    },
+    "details": {
+      "dosage": null,
+      "verifiedFacts": null,
+      "evidenceStatus": "official_confirmed_with_correction",
+      "advice": "Sa texture ample accompagne volontiers poisson, fruits rouges, dessert.",
+      "avoid": "Écartez-la si vous recherchez une expression austère et tranchante : son profil privilégie l’ampleur.",
+      "profil": {
+        "fraicheur": "Équilibrée",
+        "rondeur": "Ronde",
+        "puissance": "Équilibrée",
+        "longueur": "Nuancée"
+      },
+      "scores": {
+        "freshness": 3,
+        "roundness": 4,
+        "power": 3,
+        "complexity": 3
+      },
+      "aromas": [
+        "agrumes",
+        "fruits rouges",
+        "fleurs blanches"
+      ],
+      "grapes": [
+        "Pinot Noir"
+      ],
+      "accords": [
+        {
+          "t": "Accord prioritaire",
+          "d": "Poisson"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Fruits rouges"
+        },
+        {
+          "t": "Pour varier",
+          "d": "Dessert"
+        }
+      ],
+      "merchant": "Bottle of Italy",
+      "merchantTitle": "Champagne Simplexité Rosé Brut"
+    }
+  },
+  {
+    "id": "bonnet-gilmert-blanc-de-blancs-cuvee-de-reserve-brut-grand-cru",
+    "merchantId": "shopify_FR_47895593419090",
+    "name": "Blanc de Blancs Cuvée de Réserve Brut Grand Cru",
+    "short": "Blanc de Blancs Cuvée de Réserve Brut Grand Cru",
+    "house": "Bonnet Gilmert",
+    "brand": "Bonnet Gilmert",
+    "region": "Champagne",
+    "price": 47.76,
+    "priceMin": 47.76,
+    "priceMax": 47.76,
+    "oldPrice": null,
+    "tier": 2,
+    "producerType": "vigneron",
+    "occ": [
+      "occ_fete",
+      "occ_apero",
+      "occ_diner",
+      "occ_cadeau",
+      "occ_romantique"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_delicat"
+    ],
+    "accords": [
+      "accord_mer",
+      "accord_aperitif"
+    ],
+    "bulles": "bulles_fines",
+    "tags": [
+      "Blanc de blancs",
+      "Grand Cru"
+    ],
+    "pair": "huîtres, poisson, apéritif",
+    "note": "Un blanc de blancs brut Grand Cru au caractère léger et délicat. Au premier plan : agrumes, pomme, fleurs blanches, brioche. L’assemblage réunit Chardonnay. À privilégier avec huîtres, poisson, apéritif.",
+    "sourceUrl": "https://www.champagne-bonnet-gilmert.com/reserve.php",
+    "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-cuvee-de-reserve-brut-grand-cru-bonnet-gilmert",
+    "officialSourceUrl": "https://www.champagne-bonnet-gilmert.com/reserve.php",
+    "technicalSourceUrl": null,
+    "sourceKind": "producer",
+    "verifiedAt": "2026-07-31",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 72,
+    "aff": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895593419090&productname=Champagne+Blanc+de+Blancs+Cuv%C3%A9e+de+R%C3%A9serve+Brut+Grand+Cru+-+Bonnet+Gilmert&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-blanc-de-blancs-cuvee-de-reserve-brut-grand-cru-bonnet-gilmert%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
+    "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Blanc-de-Blancs-Cuvee-de-Reserve-Brut-Grand-Cru-Bonnet-Gilmert-bottle-of-italy.jpg?v=1714393311",
+    "availability": "in_stock",
+    "priceStatus": "fresh",
+    "offerCheckedAt": "2026-08-02T19:22:59.090Z",
+    "identityStatus": "official_confirmed",
+    "imageRights": {
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Blanc-de-Blancs-Cuvee-de-Reserve-Brut-Grand-Cru-Bonnet-Gilmert-bottle-of-italy.jpg?v=1714393311",
+      "rightsBasis": "Flux du programme partenaire Bottle of Italy / Webgains",
+      "verifiedAt": "2026-08-02"
+    },
+    "details": {
+      "dosage": "8 g/L",
+      "verifiedFacts": null,
+      "evidenceStatus": "official_confirmed",
+      "advice": "Sa fraîcheur nette convient particulièrement à huîtres, poisson, apéritif.",
+      "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et pomme.",
+      "profil": {
+        "fraicheur": "Très fraîche",
+        "rondeur": "Équilibrée",
+        "puissance": "Légère",
+        "longueur": "Nuancée"
+      },
+      "scores": {
+        "freshness": 5,
+        "roundness": 3,
+        "power": 2,
+        "complexity": 3
+      },
+      "aromas": [
+        "agrumes",
+        "pomme",
+        "fleurs blanches",
+        "brioche",
+        "noisette"
+      ],
+      "grapes": [
+        "Chardonnay"
+      ],
+      "accords": [
+        {
+          "t": "Accord prioritaire",
+          "d": "Huîtres"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Poisson"
+        },
+        {
+          "t": "Pour varier",
+          "d": "Apéritif"
+        }
+      ],
+      "merchant": "Bottle of Italy",
+      "merchantTitle": "Champagne Blanc de Blancs Cuvée de Réserve Brut Grand Cru - Bonnet Gilmert"
+    }
+  },
+  {
+    "id": "solemme-terre-cuvee-assemblage-brut",
+    "merchantId": "shopify_FR_47245069091154",
+    "name": "Terre Brut Premier Cru",
+    "short": "Terre Brut Premier Cru",
+    "house": "Solemme",
+    "brand": "Solemme",
+    "region": "Champagne",
+    "price": 47.93,
+    "priceMin": 47.93,
+    "priceMax": 47.93,
+    "oldPrice": null,
+    "tier": 2,
+    "producerType": "vigneron",
+    "occ": [
+      "occ_fete",
+      "occ_apero",
+      "occ_diner",
+      "occ_cadeau"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_riche_ample"
+    ],
+    "accords": [
+      "accord_mer",
+      "accord_aperitif"
+    ],
+    "bulles": "bulles_fines",
+    "tags": [
+      "Brut"
+    ],
+    "pair": "huîtres, apéritif",
+    "note": "Un brut au caractère nuancé et persistant. Au premier plan : agrumes, pomme, fleurs blanches, brioche. L’assemblage réunit Meunier, Pinot Noir, Chardonnay. À privilégier avec huîtres, apéritif.",
+    "sourceUrl": "https://www.champagnesolemme.fr/en/the-vintages/",
+    "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-terre-cuvee-assemblage-brut-solemme",
+    "officialSourceUrl": "https://www.champagnesolemme.fr/en/the-vintages/",
+    "technicalSourceUrl": null,
+    "sourceKind": "producer",
+    "verifiedAt": "2026-07-31",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 68,
+    "aff": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47245069091154&productname=Champagne+Terre+cuvee+assemblage+Brut+-+Solemme&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-terre-cuvee-assemblage-brut-solemme%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
+    "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Terre-cuvee-assemblage-Brut-Solemme-Bottle-of-Italy.jpg?v=1700037523",
+    "availability": "in_stock",
+    "priceStatus": "fresh",
+    "offerCheckedAt": "2026-08-02T19:22:59.090Z",
+    "identityStatus": "official_confirmed",
+    "imageRights": {
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Terre-cuvee-assemblage-Brut-Solemme-Bottle-of-Italy.jpg?v=1700037523",
+      "rightsBasis": "Flux du programme partenaire Bottle of Italy / Webgains",
+      "verifiedAt": "2026-08-02"
+    },
+    "details": {
+      "dosage": "6 g/L",
+      "verifiedFacts": "Assemblage officiel : 50 % Meunier, 25 % Pinot Noir et 25 % Chardonnay ; dosage 6 g/L.",
+      "evidenceStatus": "official_confirmed",
+      "advice": "Sa fraîcheur nette convient particulièrement à huîtres, apéritif.",
+      "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et pomme.",
+      "profil": {
+        "fraicheur": "Très fraîche",
+        "rondeur": "Équilibrée",
+        "puissance": "Équilibrée",
+        "longueur": "Complexe"
+      },
+      "scores": {
+        "freshness": 5,
+        "roundness": 3,
+        "power": 3,
+        "complexity": 4
+      },
+      "aromas": [
+        "agrumes",
+        "pomme",
+        "fleurs blanches",
+        "brioche",
+        "minéralité"
+      ],
+      "grapes": [
+        "Meunier",
+        "Pinot Noir",
+        "Chardonnay"
+      ],
+      "accords": [
+        {
+          "t": "Accord prioritaire",
+          "d": "Huîtres"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Apéritif"
+        }
+      ],
+      "merchant": "Bottle of Italy",
+      "merchantTitle": "Champagne Terre cuvee assemblage Brut - Solemme"
+    }
+  },
+  {
+    "id": "deheurles-white-pearl-blanc-de-blancs-extra-brut",
+    "merchantId": "shopify_FR_47245072531794",
+    "name": "White Pearl",
+    "short": "White Pearl",
+    "house": "Daniel Deheurles & Filles",
+    "brand": "Daniel Deheurles & Filles",
+    "region": "Champagne",
+    "price": 48.26,
+    "priceMin": 48.26,
+    "priceMax": 48.26,
+    "oldPrice": null,
+    "tier": 2,
+    "producerType": "vigneron",
+    "occ": [
+      "occ_fete",
+      "occ_apero",
+      "occ_diner",
+      "occ_cadeau",
+      "occ_romantique"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_riche_ample",
+      "profil_delicat"
+    ],
+    "accords": [
+      "accord_mer",
+      "accord_fromage",
+      "accord_aperitif"
+    ],
+    "bulles": "bulles_fines",
+    "tags": [
+      "Blanc de blancs",
+      "Extra-brut / nature"
+    ],
+    "pair": "poisson, fromages, apéritif",
+    "note": "Un blanc de blancs extra-brut au caractère nuancé et persistant. Au premier plan : agrumes, pomme, fleurs blanches, brioche. L’assemblage réunit Chardonnay, Pinot Blanc. À privilégier avec poisson, fromages, apéritif.",
+    "sourceUrl": "https://www.champagne-daniel-deheurles.com/produit/white-pearl/",
+    "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-white-pearl-blanc-de-blancs-extra-brut-deheurles",
+    "officialSourceUrl": "https://www.champagne-daniel-deheurles.com/produit/white-pearl/",
+    "technicalSourceUrl": null,
+    "sourceKind": "producer",
+    "verifiedAt": "2026-07-31",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 68,
+    "aff": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47245072531794&productname=Champagne+White+Pearl+Blanc+de+Blancs+Extra+Brut+-+Deheurles&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-white-pearl-blanc-de-blancs-extra-brut-deheurles%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
+    "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-White-Pearl-Blanc-de-Blancs-Extra-Brut-Deheurles-Bottle-of-Italy.jpg?v=1699612920",
+    "availability": "in_stock",
+    "priceStatus": "fresh",
+    "offerCheckedAt": "2026-08-02T19:22:59.090Z",
+    "identityStatus": "official_confirmed_with_correction",
+    "imageRights": {
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-White-Pearl-Blanc-de-Blancs-Extra-Brut-Deheurles-Bottle-of-Italy.jpg?v=1699612920",
+      "rightsBasis": "Flux du programme partenaire Bottle of Italy / Webgains",
+      "verifiedAt": "2026-08-02"
+    },
+    "details": {
+      "dosage": null,
+      "verifiedFacts": "Assemblage officiel : 60 % Chardonnay et 40 % Pinot Blanc.",
+      "evidenceStatus": "official_confirmed_with_correction",
+      "advice": "Sa fraîcheur nette convient particulièrement à poisson, fromages, apéritif.",
+      "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et pomme.",
+      "profil": {
+        "fraicheur": "Très fraîche",
+        "rondeur": "Droite",
+        "puissance": "Légère",
+        "longueur": "Complexe"
+      },
+      "scores": {
+        "freshness": 5,
+        "roundness": 2,
+        "power": 2,
+        "complexity": 4
+      },
+      "aromas": [
+        "agrumes",
+        "pomme",
+        "fleurs blanches",
+        "brioche",
+        "amande",
+        "minéralité"
+      ],
+      "grapes": [
+        "Chardonnay",
+        "Pinot Blanc"
+      ],
+      "accords": [
+        {
+          "t": "Accord prioritaire",
+          "d": "Poisson"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Fromages"
+        },
+        {
+          "t": "Pour varier",
+          "d": "Apéritif"
+        }
+      ],
+      "merchant": "Bottle of Italy",
+      "merchantTitle": "Champagne White Pearl Blanc de Blancs Extra Brut - Deheurles"
+    }
+  },
+  {
+    "id": "vilmart-grande-reserve-premier-cru-brut",
+    "merchantId": "shopify_FR_53712154100050",
+    "name": "Grande Réserve Premier Cru Brut",
+    "short": "Grande Réserve Premier Cru Brut",
+    "house": "Vilmart",
+    "brand": "Vilmart",
+    "region": "Champagne",
+    "price": 48.59,
+    "priceMin": 48.59,
+    "priceMax": 48.59,
+    "oldPrice": null,
+    "tier": 2,
+    "producerType": "vigneron",
+    "occ": [
+      "occ_fete",
+      "occ_apero",
+      "occ_diner",
+      "occ_cadeau"
+    ],
+    "profil": [
+      "profil_frais_vif"
+    ],
+    "accords": [
+      "accord_mer",
+      "accord_fromage",
+      "accord_aperitif"
+    ],
+    "bulles": "bulles_fines",
+    "tags": [
+      "Brut",
+      "Premier Cru"
+    ],
+    "pair": "crustacés, poisson, fromages",
+    "note": "Un brut Premier Cru au caractère frais et précis. Au premier plan : agrumes, salinité. L’assemblage réunit Chardonnay, Pinot Noir. À privilégier avec crustacés, poisson, fromages.",
+    "sourceUrl": "https://www.champagnevilmart.fr/vins/grande-reserve-fr/",
+    "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-grande-reserve-premier-cru-brut-vilmart",
+    "officialSourceUrl": "https://www.champagnevilmart.fr/vins/grande-reserve-fr/",
+    "technicalSourceUrl": null,
+    "sourceKind": "producer",
+    "verifiedAt": "2026-07-31",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 68,
+    "aff": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_53712154100050&productname=Champagne+Grande+Reserve+Premier+Cru+Brut+-+Vilmart&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-grande-reserve-premier-cru-brut-vilmart%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
+    "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/ChampagneGrandeReservePremierCruBrut-Vilmart-min.jpg?v=1781280895",
+    "availability": "in_stock",
+    "priceStatus": "fresh",
+    "offerCheckedAt": "2026-08-02T19:22:59.090Z",
+    "identityStatus": "official_confirmed",
+    "imageRights": {
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/ChampagneGrandeReservePremierCruBrut-Vilmart-min.jpg?v=1781280895",
+      "rightsBasis": "Flux du programme partenaire Bottle of Italy / Webgains",
+      "verifiedAt": "2026-08-02"
+    },
+    "details": {
+      "dosage": "6 g/L",
+      "verifiedFacts": "Assemblage officiel : 30 % Chardonnay et 70 % Pinot Noir, classés Premier Cru.",
+      "evidenceStatus": "official_confirmed",
+      "advice": "Sa fraîcheur nette convient particulièrement à crustacés, poisson, fromages.",
+      "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et salinité.",
+      "profil": {
+        "fraicheur": "Très fraîche",
+        "rondeur": "Équilibrée",
+        "puissance": "Équilibrée",
+        "longueur": "Nuancée"
+      },
+      "scores": {
+        "freshness": 5,
+        "roundness": 3,
+        "power": 3,
+        "complexity": 3
+      },
+      "aromas": [
+        "agrumes",
+        "salinité"
+      ],
+      "grapes": [
+        "Chardonnay",
+        "Pinot Noir"
+      ],
+      "accords": [
+        {
+          "t": "Accord prioritaire",
+          "d": "Crustacés"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Poisson"
+        },
+        {
+          "t": "Pour varier",
+          "d": "Fromages"
+        }
+      ],
+      "merchant": "Bottle of Italy",
+      "merchantTitle": "Champagne Grande Reserve Premier Cru Brut - Vilmart"
+    }
+  },
+  {
+    "id": "cattier-brut-premier-cru",
+    "merchantId": "shopify_FR_43760854302937",
+    "name": "Brut Premier Cru",
+    "short": "Brut Premier Cru",
+    "house": "Cattier",
+    "brand": "Cattier",
+    "region": "Champagne",
+    "price": 48.89,
+    "priceMin": 48.89,
+    "priceMax": 48.89,
+    "oldPrice": null,
+    "tier": 2,
+    "producerType": "maison",
+    "occ": [
+      "occ_fete",
+      "occ_apero",
+      "occ_diner",
+      "occ_cadeau"
+    ],
+    "profil": [
+      "profil_fruite"
+    ],
+    "accords": [
+      "accord_mer",
+      "accord_aperitif"
+    ],
+    "bulles": "bulles_fines",
+    "tags": [
+      "Brut",
+      "Premier Cru"
+    ],
+    "pair": "crustacés, poisson, apéritif",
+    "note": "Un brut Premier Cru au caractère équilibré et polyvalent. Au premier plan : pomme, poire, fleurs blanches, brioche. L’assemblage réunit Meunier, Pinot Noir, Chardonnay. À privilégier avec crustacés, poisson, apéritif.",
+    "sourceUrl": "https://www.cattier.com/en/champagne/brut-en/",
+    "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-aoc-brut-premier-cru-cattier",
+    "officialSourceUrl": "https://www.cattier.com/en/champagne/brut-en/",
+    "technicalSourceUrl": null,
+    "sourceKind": "producer",
+    "verifiedAt": "2026-07-31",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 84,
+    "aff": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_43760854302937&productname=Champagne+AOC+-+Brut+Premier+Cru+-+Cattier&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-aoc-brut-premier-cru-cattier%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
+    "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/products/Champagne-AOC-Brut-Premier-Cru-Cattier-bottle-of-italy.jpg?v=1676283052",
+    "availability": "in_stock",
+    "priceStatus": "fresh",
+    "offerCheckedAt": "2026-08-02T19:22:59.090Z",
+    "identityStatus": "official_confirmed",
+    "imageRights": {
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0538/2268/5356/products/Champagne-AOC-Brut-Premier-Cru-Cattier-bottle-of-italy.jpg?v=1676283052",
+      "rightsBasis": "Flux du programme partenaire Bottle of Italy / Webgains",
+      "verifiedAt": "2026-08-02"
+    },
+    "details": {
+      "dosage": "6 g/L",
+      "verifiedFacts": "Assemblage officiel : 28 % Meunier, 40 % Pinot Noir et 32 % Chardonnay.",
+      "evidenceStatus": "official_confirmed",
+      "advice": "Son équilibre permet de l’accorder avec crustacés, poisson, apéritif.",
+      "avoid": "Écartez-la si vous recherchez un style très tendu ou très puissant : elle mise avant tout sur l’équilibre.",
+      "profil": {
+        "fraicheur": "Équilibrée",
+        "rondeur": "Équilibrée",
+        "puissance": "Équilibrée",
+        "longueur": "Nuancée"
+      },
+      "scores": {
+        "freshness": 3,
+        "roundness": 3,
+        "power": 3,
+        "complexity": 3
+      },
+      "aromas": [
+        "pomme",
+        "poire",
+        "fleurs blanches",
+        "brioche"
+      ],
+      "grapes": [
+        "Meunier",
+        "Pinot Noir",
+        "Chardonnay"
+      ],
+      "accords": [
+        {
+          "t": "Accord prioritaire",
+          "d": "Crustacés"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Poisson"
+        },
+        {
+          "t": "Pour varier",
+          "d": "Apéritif"
+        }
+      ],
+      "merchant": "Bottle of Italy",
+      "merchantTitle": "Champagne AOC - Brut Premier Cru - Cattier"
+    }
+  },
+  {
+    "id": "paul-bara-brut-rose-grand-cru-grand-rose",
+    "merchantId": "shopify_FR_42029373063385",
+    "name": "Brut Rosé - Grand Cru Grand Rosé",
+    "short": "Brut Rosé - Grand Cru Grand Rosé",
+    "house": "Paul Bara",
+    "brand": "Paul Bara",
+    "region": "Champagne",
+    "price": 51.35,
+    "priceMin": 51.35,
+    "priceMax": 51.35,
+    "oldPrice": null,
+    "tier": 2,
+    "producerType": "vigneron",
+    "occ": [
+      "occ_fete",
+      "occ_apero",
+      "occ_diner",
+      "occ_cadeau",
+      "occ_romantique"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_fruite",
+      "profil_riche_ample"
+    ],
+    "accords": [
+      "accord_mer",
+      "accord_dessert",
+      "accord_aperitif"
+    ],
+    "bulles": "bulles_fines",
+    "tags": [
+      "Rosé",
+      "Grand Cru"
+    ],
+    "pair": "sushis, poisson, fruits rouges",
+    "note": "Un rosé brut Grand Cru au caractère rond et généreux. Au premier plan : fruits rouges, brioche, minéralité. L’assemblage réunit Chardonnay, Pinot Noir. À privilégier avec sushis, poisson, fruits rouges.",
+    "sourceUrl": "https://www.champagnepaulbara.com/en/bara-grand-cru-champagnes/grand-rose/",
+    "merchantSourceUrl": "https://bottleofitaly.com/fr/products/paul-bara-champagne-brut-grand-cru-grand-rose",
+    "officialSourceUrl": "https://www.champagnepaulbara.com/en/bara-grand-cru-champagnes/grand-rose/",
+    "technicalSourceUrl": null,
+    "sourceKind": "producer",
+    "verifiedAt": "2026-07-31",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 72,
+    "aff": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_42029373063385&productname=Champagne+Brut+Ros%C3%A8+-+Grand+Cru+Grand+Ros%C3%A9+-+Paul+Bara&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fpaul-bara-champagne-brut-grand-cru-grand-rose%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
+    "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/products/Champagne-Brut-Rose-Grand-Cru-Grand-Rose-75-cl-Cantina-Paul-Bara-bottle-of-italy.jpg?v=1638459467",
+    "availability": "in_stock",
+    "priceStatus": "fresh",
+    "offerCheckedAt": "2026-08-02T19:22:59.090Z",
+    "identityStatus": "official_confirmed",
+    "imageRights": {
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0538/2268/5356/products/Champagne-Brut-Rose-Grand-Cru-Grand-Rose-75-cl-Cantina-Paul-Bara-bottle-of-italy.jpg?v=1638459467",
+      "rightsBasis": "Flux du programme partenaire Bottle of Italy / Webgains",
+      "verifiedAt": "2026-08-02"
+    },
+    "details": {
+      "dosage": null,
+      "verifiedFacts": "Assemblage officiel : 18 % Chardonnay, 70 % Pinot Noir et 12 % Bouzy Rouge.",
+      "evidenceStatus": "official_confirmed",
+      "advice": "Sa texture ample accompagne volontiers sushis, poisson, fruits rouges.",
+      "avoid": "Écartez-la si vous recherchez une expression austère et tranchante : son profil privilégie l’ampleur.",
+      "profil": {
+        "fraicheur": "Très fraîche",
+        "rondeur": "Très ronde",
+        "puissance": "Équilibrée",
+        "longueur": "Complexe"
+      },
+      "scores": {
+        "freshness": 5,
+        "roundness": 5,
+        "power": 3,
+        "complexity": 4
+      },
+      "aromas": [
+        "fruits rouges",
+        "brioche",
+        "minéralité"
+      ],
+      "grapes": [
+        "Chardonnay",
+        "Pinot Noir"
+      ],
+      "accords": [
+        {
+          "t": "Accord prioritaire",
+          "d": "Sushis"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Poisson"
+        },
+        {
+          "t": "Pour varier",
+          "d": "Fruits rouges"
+        }
+      ],
+      "merchant": "Bottle of Italy",
+      "merchantTitle": "Champagne Brut Rosè - Grand Cru Grand Rosé - Paul Bara"
+    }
+  },
+  {
+    "id": "lamiable-eclat-d-etoiles-rose-brut-grand-cru-2014",
+    "merchantId": "shopify_FR_47895587815762",
+    "name": "Éclat d’Étoiles Rosé Brut Grand Cru",
+    "short": "Éclat d’Étoiles Rosé Brut Grand Cru",
+    "house": "Lamiable",
+    "brand": "Lamiable",
+    "region": "Champagne",
+    "price": 51.88,
+    "priceMin": 51.88,
+    "priceMax": 51.88,
+    "oldPrice": null,
+    "tier": 2,
+    "producerType": "vigneron",
+    "occ": [
+      "occ_fete",
+      "occ_apero",
+      "occ_diner",
+      "occ_cadeau",
+      "occ_romantique"
+    ],
+    "profil": [
+      "profil_fruite"
+    ],
+    "accords": [
+      "accord_mer",
+      "accord_dessert",
+      "accord_aperitif"
+    ],
+    "bulles": "bulles_fines",
+    "tags": [
+      "Brut",
+      "Rosé",
+      "Grand Cru"
+    ],
+    "pair": "poisson, fruits rouges, dessert",
+    "note": "Un rosé brut Grand Cru au caractère rond et généreux. Au premier plan : fruits rouges, fleurs blanches. L’assemblage réunit Pinot Noir, Chardonnay. À privilégier avec poisson, fruits rouges, dessert.",
+    "sourceUrl": "https://www.champagnelamiable.com/en/the-champagnes/les-elementaires/eclats-d-etoiles.html",
+    "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-eclat-d-etoiles-rose-brut-grand-cru-lamiable",
+    "officialSourceUrl": "https://www.champagnelamiable.com/en/the-champagnes/les-elementaires/eclats-d-etoiles.html",
+    "technicalSourceUrl": null,
+    "sourceKind": "producer",
+    "verifiedAt": "2026-07-31",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 72,
+    "aff": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895587815762&productname=Champagne+%C3%89clat+d%E2%80%99%C3%89toiles+Ros%C3%A9+Brut+Grand+Cru+Astucciato+-+Lamiable+2014&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-eclat-d-etoiles-rose-brut-grand-cru-lamiable%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
+    "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Eclat-d_Etoiles-Rose-Brut-Grand-Cru-Lamiable-bottle-of-italy.jpg?v=1716905320",
+    "availability": "in_stock",
+    "priceStatus": "fresh",
+    "offerCheckedAt": "2026-08-02T19:22:59.090Z",
+    "identityStatus": "official_confirmed_with_correction",
+    "imageRights": {
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Eclat-d_Etoiles-Rose-Brut-Grand-Cru-Lamiable-bottle-of-italy.jpg?v=1716905320",
+      "rightsBasis": "Flux du programme partenaire Bottle of Italy / Webgains",
+      "verifiedAt": "2026-08-02"
+    },
+    "details": {
+      "dosage": null,
+      "verifiedFacts": "Rosé Brut officiel composé de 70 % Pinot Noir et 30 % Chardonnay, avec 35 % de vins de réserve, 10 % de vin rouge et 30 à 40 mois sur lies.",
+      "evidenceStatus": "official_confirmed_with_correction",
+      "advice": "Sa texture ample accompagne volontiers poisson, fruits rouges, dessert.",
+      "avoid": "Écartez-la si vous recherchez une expression austère et tranchante : son profil privilégie l’ampleur.",
+      "profil": {
+        "fraicheur": "Équilibrée",
+        "rondeur": "Ronde",
+        "puissance": "Équilibrée",
+        "longueur": "Nuancée"
+      },
+      "scores": {
+        "freshness": 3,
+        "roundness": 4,
+        "power": 3,
+        "complexity": 3
+      },
+      "aromas": [
+        "fruits rouges",
+        "fleurs blanches"
+      ],
+      "grapes": [
+        "Pinot Noir",
+        "Chardonnay"
+      ],
+      "accords": [
+        {
+          "t": "Accord prioritaire",
+          "d": "Poisson"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Fruits rouges"
+        },
+        {
+          "t": "Pour varier",
+          "d": "Dessert"
+        }
+      ],
+      "merchant": "Bottle of Italy",
+      "merchantTitle": "Champagne Éclat d’Étoiles Rosé Brut Grand Cru Astucciato - Lamiable"
+    }
+  },
+  {
+    "id": "guy-charlemagne-reserve-blanc-de-blancs-grand-cru-brut",
+    "merchantId": "shopify_FR_47245071843666",
+    "name": "Réserve Blanc de Blancs Grand Cru Brut",
+    "short": "Réserve Blanc de Blancs Grand Cru Brut",
+    "house": "Guy Charlemagne",
+    "brand": "Guy Charlemagne",
+    "region": "Champagne",
+    "price": 52.54,
+    "priceMin": 52.54,
+    "priceMax": 52.54,
+    "oldPrice": null,
+    "tier": 2,
+    "producerType": "vigneron",
+    "occ": [
+      "occ_fete",
+      "occ_apero",
+      "occ_cadeau",
+      "occ_romantique"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_riche_ample",
+      "profil_delicat"
+    ],
+    "accords": [
+      "accord_aperitif"
+    ],
+    "bulles": "bulles_fines",
+    "tags": [
+      "Blanc de blancs",
+      "Grand Cru"
+    ],
+    "pair": "apéritif",
+    "note": "Un blanc de blancs brut Grand Cru au caractère nuancé et persistant. Au premier plan : agrumes, pomme, fleurs blanches, minéralité. L’assemblage réunit Chardonnay. À privilégier avec apéritif.",
+    "sourceUrl": "https://www.champagne-guy-charlemagne.fr/",
+    "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-reserve-blanc-de-blancs-grand-cru-brut-guy-charlemagne",
+    "officialSourceUrl": "https://www.champagne-guy-charlemagne.fr/",
+    "technicalSourceUrl": null,
+    "sourceKind": "producer",
+    "verifiedAt": "2026-07-31",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 72,
+    "aff": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47245071843666&productname=Champagne+Reserve+Blanc+de+Blancs+Grand+Cru+Brut+-+Guy+Charlemagne&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-reserve-blanc-de-blancs-grand-cru-brut-guy-charlemagne%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
+    "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Reserve-Blanc-de-Blancs-Grand-Cru-Brut-Guy-Charlemagne-Bottle-of-Italy.jpg?v=1699612261",
+    "availability": "in_stock",
+    "priceStatus": "fresh",
+    "offerCheckedAt": "2026-08-02T19:22:59.090Z",
+    "identityStatus": "official_confirmed",
+    "imageRights": {
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Reserve-Blanc-de-Blancs-Grand-Cru-Brut-Guy-Charlemagne-Bottle-of-Italy.jpg?v=1699612261",
+      "rightsBasis": "Flux du programme partenaire Bottle of Italy / Webgains",
+      "verifiedAt": "2026-08-02"
+    },
+    "details": {
+      "dosage": null,
+      "verifiedFacts": "Le producteur présente cette Réserve comme un Blanc de Blancs du Mesnil, classé Grand Cru.",
+      "evidenceStatus": "official_confirmed",
+      "advice": "Sa fraîcheur nette convient particulièrement à apéritif.",
+      "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et pomme.",
+      "profil": {
+        "fraicheur": "Très fraîche",
+        "rondeur": "Équilibrée",
+        "puissance": "Légère",
+        "longueur": "Complexe"
+      },
+      "scores": {
+        "freshness": 5,
+        "roundness": 3,
+        "power": 2,
+        "complexity": 4
+      },
+      "aromas": [
+        "agrumes",
+        "pomme",
+        "fleurs blanches",
+        "minéralité"
+      ],
+      "grapes": [
+        "Chardonnay"
+      ],
+      "accords": [
+        {
+          "t": "Accord prioritaire",
+          "d": "Apéritif"
+        }
+      ],
+      "merchant": "Bottle of Italy",
+      "merchantTitle": "Champagne Reserve Blanc de Blancs Grand Cru Brut - Guy Charlemagne"
+    }
+  },
+  {
+    "id": "sadi-malot-brut-nature-1er-cru",
+    "merchantId": "shopify_FR_47895579525458",
+    "name": "Zéro Liqueur Brut Nature Premier Cru",
+    "short": "Zéro Liqueur Brut Nature Premier Cru",
+    "house": "Sadi Malot",
+    "brand": "Sadi Malot",
+    "region": "Champagne",
+    "price": 52.7,
+    "priceMin": 52.7,
+    "priceMax": 52.7,
+    "oldPrice": null,
+    "tier": 2,
+    "producerType": "vigneron",
+    "occ": [
+      "occ_fete",
+      "occ_apero",
+      "occ_diner",
+      "occ_cadeau"
+    ],
+    "profil": [
+      "profil_frais_vif"
+    ],
+    "accords": [
+      "accord_mer",
+      "accord_aperitif"
+    ],
+    "bulles": "bulles_fines",
+    "tags": [
+      "Extra-brut / nature",
+      "Premier Cru"
+    ],
+    "pair": "huîtres, poisson, apéritif",
+    "note": "Un brut nature Premier Cru au caractère frais et précis. Au premier plan : agrumes, pomme. L’assemblage réunit Chardonnay. À privilégier avec huîtres, poisson, apéritif.",
+    "sourceUrl": "https://www.champagne-sadi-malot.com/en/cuvee/zero-liqueur-2/",
+    "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-brut-nature-1er-cru-sadi-malot",
+    "officialSourceUrl": "https://www.champagne-sadi-malot.com/en/cuvee/zero-liqueur-2/",
+    "technicalSourceUrl": null,
+    "sourceKind": "producer",
+    "verifiedAt": "2026-07-31",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 68,
+    "aff": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895579525458&productname=Champagne+Brut+Nature+1er+Cru+-+Sadi+Malot&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-brut-nature-1er-cru-sadi-malot%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
+    "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Brut-Nature-1er-Cru-Sadi-Malot-bottle-of-italy.jpg?v=1714467673",
+    "availability": "in_stock",
+    "priceStatus": "fresh",
+    "offerCheckedAt": "2026-08-02T19:22:59.090Z",
+    "identityStatus": "official_confirmed",
+    "imageRights": {
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Brut-Nature-1er-Cru-Sadi-Malot-bottle-of-italy.jpg?v=1714467673",
+      "rightsBasis": "Flux du programme partenaire Bottle of Italy / Webgains",
+      "verifiedAt": "2026-08-02"
+    },
+    "details": {
+      "dosage": "0 g/L",
+      "verifiedFacts": "La fiche officielle confirme un Brut Nature Premier Cru 100 % Chardonnay, sans dosage.",
+      "evidenceStatus": "official_confirmed",
+      "advice": "Sa fraîcheur nette convient particulièrement à huîtres, poisson, apéritif.",
+      "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et pomme.",
+      "profil": {
+        "fraicheur": "Très fraîche",
+        "rondeur": "Droite",
+        "puissance": "Équilibrée",
+        "longueur": "Nuancée"
+      },
+      "scores": {
+        "freshness": 5,
+        "roundness": 2,
+        "power": 3,
+        "complexity": 3
+      },
+      "aromas": [
+        "agrumes",
+        "pomme"
+      ],
+      "grapes": [
+        "Chardonnay"
+      ],
+      "accords": [
+        {
+          "t": "Accord prioritaire",
+          "d": "Huîtres"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Poisson"
+        },
+        {
+          "t": "Pour varier",
+          "d": "Apéritif"
+        }
+      ],
+      "merchant": "Bottle of Italy",
+      "merchantTitle": "Champagne Brut Nature 1er Cru - Sadi Malot"
+    }
+  },
+  {
+    "id": "jean-vesselle-rose-de-saignee-friandise-demi-sec",
+    "merchantId": "shopify_FR_47895586210130",
+    "name": "Rosé de Saignée Friandise Demi-Sec",
+    "short": "Rosé de Saignée Friandise Demi-Sec",
+    "house": "Jean Vesselle",
+    "brand": "Jean Vesselle",
+    "region": "Champagne",
+    "price": 58.96,
+    "priceMin": 58.96,
+    "priceMax": 58.96,
+    "oldPrice": null,
+    "tier": 2,
+    "producerType": "vigneron",
+    "occ": [
+      "occ_fete",
+      "occ_apero",
+      "occ_cadeau",
+      "occ_romantique"
+    ],
+    "profil": [
+      "profil_fruite"
+    ],
+    "accords": [
+      "accord_dessert",
+      "accord_aperitif"
+    ],
+    "bulles": "bulles_fines",
+    "tags": [
+      "Rosé",
+      "Demi-sec"
+    ],
+    "pair": "fruits rouges, dessert, apéritif",
+    "note": "Un rosé demi-sec au caractère rond et généreux. Au premier plan : fruits rouges, épices. L’assemblage réunit Pinot Noir. À privilégier avec fruits rouges, dessert, apéritif.",
+    "sourceUrl": "https://www.champagnejeanvesselle.com/en/demi-sec-rose-friandise/champagne/rose-de-saignee-friandise-2",
+    "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-rose-de-saignee-friandise-demi-sec-jean-vesselle",
+    "officialSourceUrl": "https://www.champagnejeanvesselle.com/en/demi-sec-rose-friandise/champagne/rose-de-saignee-friandise-2",
+    "technicalSourceUrl": null,
+    "sourceKind": "producer",
+    "verifiedAt": "2026-07-31",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 68,
+    "aff": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895586210130&productname=Champagne+Ros%C3%A9+de+Saign%C3%A9e+Friandise+Demi-Sec+-+Jean+Vesselle&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-rose-de-saignee-friandise-demi-sec-jean-vesselle%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
+    "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Rose-de-Saignee-Friandise-Demi-Sec-Jean-Vesselle-bottle-of-italy.jpg?v=1716907032",
+    "availability": "in_stock",
+    "priceStatus": "fresh",
+    "offerCheckedAt": "2026-08-02T19:22:59.090Z",
+    "identityStatus": "official_confirmed",
+    "imageRights": {
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Rose-de-Saignee-Friandise-Demi-Sec-Jean-Vesselle-bottle-of-italy.jpg?v=1716907032",
+      "rightsBasis": "Flux du programme partenaire Bottle of Italy / Webgains",
+      "verifiedAt": "2026-08-02"
+    },
+    "details": {
+      "dosage": "32 à 33 g/L",
+      "verifiedFacts": "Cuvée officielle : 100 % Pinot Noir, rosé demi-sec, dosage annoncé entre 32 et 33 g/L.",
+      "evidenceStatus": "official_confirmed",
+      "advice": "Sa texture ample accompagne volontiers fruits rouges, dessert, apéritif.",
+      "avoid": "Écartez-la avec des huîtres ou si vous recherchez une finale très sèche : sa douceur convient davantage au dessert.",
+      "profil": {
+        "fraicheur": "Douce",
+        "rondeur": "Très ronde",
+        "puissance": "Équilibrée",
+        "longueur": "Nuancée"
+      },
+      "scores": {
+        "freshness": 2,
+        "roundness": 5,
+        "power": 3,
+        "complexity": 3
+      },
+      "aromas": [
+        "fruits rouges",
+        "épices"
+      ],
+      "grapes": [
+        "Pinot Noir"
+      ],
+      "accords": [
+        {
+          "t": "Accord prioritaire",
+          "d": "Fruits rouges"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Dessert"
+        },
+        {
+          "t": "Pour varier",
+          "d": "Apéritif"
+        }
+      ],
+      "merchant": "Bottle of Italy",
+      "merchantTitle": "Champagne Rosé de Saignée Friandise Demi-Sec - Jean Vesselle"
+    }
+  },
+  {
+    "id": "veuve-clicquot-cuvee-saint-petersbourg",
+    "merchantId": "shopify_FR_43760860201177",
+    "name": "Cuvée Saint-Pétersbourg Brut",
+    "short": "Cuvée Saint-Pétersbourg Brut",
+    "house": "Veuve Clicquot",
+    "brand": "Veuve Clicquot",
+    "region": "Champagne",
+    "price": 59.13,
+    "priceMin": 59.13,
+    "priceMax": 59.13,
+    "oldPrice": null,
+    "tier": 2,
+    "producerType": "maison",
+    "occ": [
+      "occ_fete",
+      "occ_apero",
+      "occ_diner",
+      "occ_cadeau"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_fruite",
+      "profil_riche_ample"
+    ],
+    "accords": [
+      "accord_mer",
+      "accord_fromage",
+      "accord_dessert",
+      "accord_aperitif"
+    ],
+    "bulles": "bulles_fines",
+    "tags": [
+      "Brut"
+    ],
+    "pair": "huîtres, sushis, poisson",
+    "note": "Un brut au caractère rond et généreux. Au premier plan : fruits rouges, fruits mûrs, brioche. L’assemblage réunit Pinot Noir, Chardonnay, Meunier. À privilégier avec huîtres, sushis, poisson.",
+    "sourceUrl": "https://www.veuveclicquot.com/",
+    "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-aoc-cuvee-saint-petersbourg-veuve-clicquot",
+    "officialSourceUrl": "https://www.veuveclicquot.com/",
+    "technicalSourceUrl": "https://bottleofitaly.com/en/products/champagne-aoc-cuvee-saint-petersbourg-veuve-clicquot",
+    "sourceKind": "merchant",
+    "verifiedAt": "2026-07-31",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 84,
+    "aff": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_43760860201177&productname=Champagne+AOC+-+Cuv%C3%A9e+Saint+Petersbourg+-+Veuve+Clicquot&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-aoc-cuvee-saint-petersbourg-veuve-clicquot%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
+    "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/cuvee-saint-petersbourg-veuve-cliquot-min.jpg?v=1770725073",
+    "availability": "in_stock",
+    "priceStatus": "fresh",
+    "offerCheckedAt": "2026-08-02T19:22:59.090Z",
+    "identityStatus": "official_producer_confirmed_product_to_document",
+    "imageRights": {
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/cuvee-saint-petersbourg-veuve-cliquot-min.jpg?v=1770725073",
+      "rightsBasis": "Flux du programme partenaire Bottle of Italy / Webgains",
+      "verifiedAt": "2026-08-02"
+    },
+    "details": {
+      "dosage": null,
+      "verifiedFacts": "Cette édition Brut repose sur le style historique de la maison, dominé par le Pinot Noir et complété par Chardonnay et Meunier.",
+      "evidenceStatus": "official_producer_confirmed_product_to_document",
+      "advice": "Sa texture ample accompagne volontiers huîtres, sushis, poisson.",
+      "avoid": "Écartez-la si vous recherchez une expression austère et tranchante : son profil privilégie l’ampleur.",
+      "profil": {
+        "fraicheur": "Fraîche",
+        "rondeur": "Ronde",
+        "puissance": "Équilibrée",
+        "longueur": "Complexe"
+      },
+      "scores": {
+        "freshness": 4,
+        "roundness": 4,
+        "power": 3,
+        "complexity": 4
+      },
+      "aromas": [
+        "fruits rouges",
+        "fruits mûrs",
+        "brioche"
+      ],
+      "grapes": [
+        "Pinot Noir",
+        "Chardonnay",
+        "Meunier"
+      ],
+      "accords": [
+        {
+          "t": "Accord prioritaire",
+          "d": "Huîtres"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Sushis"
+        },
+        {
+          "t": "Pour varier",
+          "d": "Poisson"
+        }
+      ],
+      "merchant": "Bottle of Italy",
+      "merchantTitle": "Champagne AOC - Cuvée Saint Petersbourg - Veuve Clicquot"
+    }
+  },
+  {
+    "id": "jacquart-brut-signature",
+    "merchantId": "shopify_FR_50742399205714",
+    "name": "Signature Brut",
+    "short": "Signature Brut",
+    "house": "Jacquart",
+    "brand": "Jacquart",
+    "region": "Champagne",
+    "price": 62.73,
+    "priceMin": 62.73,
+    "priceMax": 62.73,
+    "oldPrice": null,
+    "tier": 3,
+    "producerType": "maison",
+    "occ": [
+      "occ_fete",
+      "occ_apero",
+      "occ_diner",
+      "occ_cadeau"
+    ],
+    "profil": [
+      "profil_frais_vif"
+    ],
+    "accords": [
+      "accord_mer",
+      "accord_aperitif"
+    ],
+    "bulles": "bulles_fines",
+    "tags": [
+      "Brut"
+    ],
+    "pair": "crustacés, poisson, apéritif",
+    "note": "Un brut au caractère frais et précis. Au premier plan : agrumes, pomme, fleurs blanches, brioche. L’assemblage réunit Chardonnay, Pinot Noir, Meunier. À privilégier avec crustacés, poisson, apéritif.",
+    "sourceUrl": "https://shop.champagne-jacquart.com/collection-signature/50006-mosaique-signature-5-ans-d-age-en-etui-3700252047071.html",
+    "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-brut-signature-astucciato-jacquart",
+    "officialSourceUrl": "https://shop.champagne-jacquart.com/collection-signature/50006-mosaique-signature-5-ans-d-age-en-etui-3700252047071.html",
+    "technicalSourceUrl": null,
+    "sourceKind": "producer",
+    "verifiedAt": "2026-07-31",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 84,
+    "aff": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50742399205714&productname=Champagne+Brut+-+Signature+-+Astucciato+-+Jacquart&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-brut-signature-astucciato-jacquart%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
+    "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/57109-jacquart-signature-brut-1002x1536-min_a2cbae12-13e0-4992-a4a9-1143a225063e.jpg?v=1747381917",
+    "availability": "in_stock",
+    "priceStatus": "fresh",
+    "offerCheckedAt": "2026-08-02T19:22:59.090Z",
+    "identityStatus": "official_confirmed_with_correction",
+    "imageRights": {
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/57109-jacquart-signature-brut-1002x1536-min_a2cbae12-13e0-4992-a4a9-1143a225063e.jpg?v=1747381917",
+      "rightsBasis": "Flux du programme partenaire Bottle of Italy / Webgains",
+      "verifiedAt": "2026-08-02"
+    },
+    "details": {
+      "dosage": "7 g/L",
+      "verifiedFacts": "Assemblage officiel : 40 % Chardonnay, 35 % Pinot Noir et 25 % Meunier, avec 25 à 35 % de vins de réserve et cinq ans minimum sur lies.",
+      "evidenceStatus": "official_confirmed_with_correction",
+      "advice": "Sa fraîcheur nette convient particulièrement à crustacés, poisson, apéritif.",
+      "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et pomme.",
+      "profil": {
+        "fraicheur": "Fraîche",
+        "rondeur": "Équilibrée",
+        "puissance": "Équilibrée",
+        "longueur": "Nuancée"
+      },
+      "scores": {
+        "freshness": 4,
+        "roundness": 3,
+        "power": 3,
+        "complexity": 3
+      },
+      "aromas": [
+        "agrumes",
+        "pomme",
+        "fleurs blanches",
+        "brioche"
+      ],
+      "grapes": [
+        "Chardonnay",
+        "Pinot Noir",
+        "Meunier"
+      ],
+      "accords": [
+        {
+          "t": "Accord prioritaire",
+          "d": "Crustacés"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Poisson"
+        },
+        {
+          "t": "Pour varier",
+          "d": "Apéritif"
+        }
+      ],
+      "merchant": "Bottle of Italy",
+      "merchantTitle": "Champagne Brut - Signature - Astucciato - Jacquart"
+    }
+  },
+  {
+    "id": "j-l-vergnon-blanc-de-blancs-murmure-nature-1er-cru",
+    "merchantId": "shopify_FR_47895594041682",
+    "name": "Murmure Brut Nature Premier Cru",
+    "short": "Murmure Brut Nature Premier Cru",
+    "house": "J-L Vergnon",
+    "brand": "J-L Vergnon",
+    "region": "Champagne",
+    "price": 64.23,
+    "priceMin": 64.23,
+    "priceMax": 64.23,
+    "oldPrice": null,
+    "tier": 3,
+    "producerType": "vigneron",
+    "occ": [
+      "occ_fete",
+      "occ_apero",
+      "occ_diner",
+      "occ_cadeau",
+      "occ_romantique"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_delicat"
+    ],
+    "accords": [
+      "accord_mer",
+      "accord_fromage",
+      "accord_aperitif"
+    ],
+    "bulles": "bulles_fines",
+    "tags": [
+      "Blanc de blancs",
+      "Extra-brut / nature",
+      "Premier Cru"
+    ],
+    "pair": "poisson, fromages, apéritif",
+    "note": "Un blanc de blancs brut nature Premier Cru au caractère léger et délicat. Au premier plan : agrumes, pomme, amande. L’assemblage réunit Chardonnay. À privilégier avec poisson, fromages, apéritif.",
+    "sourceUrl": "https://champagne-jl-vergnon.com/en/champagne-murmure/",
+    "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-murmure-nature-1er-cru-j-l-vergon",
+    "officialSourceUrl": "https://champagne-jl-vergnon.com/en/champagne-murmure/",
+    "technicalSourceUrl": null,
+    "sourceKind": "producer",
+    "verifiedAt": "2026-07-31",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 68,
+    "aff": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895594041682&productname=Champagne+Blanc+de+Blancs+Murmure+Nature+1er+Cru+-+J.L.+Vergnon&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-blanc-de-blancs-murmure-nature-1er-cru-j-l-vergon%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
+    "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Blanc-de-Blancs-Murmure-Nature-1er-Cru-J.L.-Vergon-bottle-of-italy.jpg?v=1714473145",
+    "availability": "in_stock",
+    "priceStatus": "fresh",
+    "offerCheckedAt": "2026-08-02T19:22:59.090Z",
+    "identityStatus": "official_confirmed_with_correction",
+    "imageRights": {
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Blanc-de-Blancs-Murmure-Nature-1er-Cru-J.L.-Vergon-bottle-of-italy.jpg?v=1714473145",
+      "rightsBasis": "Flux du programme partenaire Bottle of Italy / Webgains",
+      "verifiedAt": "2026-08-02"
+    },
+    "details": {
+      "dosage": "0 g/L",
+      "verifiedFacts": "Premier Cru 100 % Chardonnay, vinifié à parts égales en inox et en fûts de 400 litres, sans dosage, avec deux ans en cave avant dégorgement.",
+      "evidenceStatus": "official_confirmed_with_correction",
+      "advice": "Sa fraîcheur nette convient particulièrement à poisson, fromages, apéritif.",
+      "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et pomme.",
+      "profil": {
+        "fraicheur": "Très fraîche",
+        "rondeur": "Droite",
+        "puissance": "Légère",
+        "longueur": "Nuancée"
+      },
+      "scores": {
+        "freshness": 5,
+        "roundness": 2,
+        "power": 2,
+        "complexity": 3
+      },
+      "aromas": [
+        "agrumes",
+        "pomme",
+        "amande"
+      ],
+      "grapes": [
+        "Chardonnay"
+      ],
+      "accords": [
+        {
+          "t": "Accord prioritaire",
+          "d": "Poisson"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Fromages"
+        },
+        {
+          "t": "Pour varier",
+          "d": "Apéritif"
+        }
+      ],
+      "merchant": "Bottle of Italy",
+      "merchantTitle": "Champagne Blanc de Blancs Murmure Nature 1er Cru - J.L. Vergnon"
+    }
+  },
+  {
+    "id": "marie-copinet-nos-pas-dans-l-argile-nature",
+    "merchantId": "shopify_FR_47895596826962",
+    "name": "Nos Pas Dans l’Argile Nature",
+    "short": "Nos Pas Dans l’Argile Nature",
+    "house": "Marie Copinet",
+    "brand": "Marie Copinet",
+    "region": "Champagne",
+    "price": 65.72,
+    "priceMin": 65.72,
+    "priceMax": 65.72,
+    "oldPrice": null,
+    "tier": 3,
+    "producerType": "vigneron",
+    "occ": [
+      "occ_fete",
+      "occ_apero",
+      "occ_diner",
+      "occ_cadeau"
+    ],
+    "profil": [
+      "profil_frais_vif"
+    ],
+    "accords": [
+      "accord_mer",
+      "accord_aperitif"
+    ],
+    "bulles": "bulles_fines",
+    "tags": [
+      "Extra-brut / nature"
+    ],
+    "pair": "crustacés, apéritif",
+    "note": "Un brut nature au caractère frais et précis. Au premier plan : agrumes, pomme, fleurs blanches. L’assemblage réunit Meunier. À privilégier avec crustacés, apéritif.",
+    "sourceUrl": "https://champagne-marie-copinet.com/pdf/fiche_technique_nos_pas_dans_largile.pdf",
+    "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-nos-pas-dans-l-argile-nature-marie-copinet",
+    "officialSourceUrl": "https://champagne-marie-copinet.com/pdf/fiche_technique_nos_pas_dans_largile.pdf",
+    "technicalSourceUrl": null,
+    "sourceKind": "producer",
+    "verifiedAt": "2026-07-31",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 68,
+    "aff": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895596826962&productname=Champagne+Nos+Pas+Dans+l%E2%80%99Argile+Nature+-+Marie+Copinet&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-nos-pas-dans-l-argile-nature-marie-copinet%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
+    "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/champagne-marie-copinet-nos-pas-dans-l-argile-bouteille-75-cl-bottle-of-italy.jpg?v=1716906061",
+    "availability": "in_stock",
+    "priceStatus": "fresh",
+    "offerCheckedAt": "2026-08-02T19:22:59.090Z",
+    "identityStatus": "official_confirmed",
+    "imageRights": {
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/champagne-marie-copinet-nos-pas-dans-l-argile-bouteille-75-cl-bottle-of-italy.jpg?v=1716906061",
+      "rightsBasis": "Flux du programme partenaire Bottle of Italy / Webgains",
+      "verifiedAt": "2026-08-02"
+    },
+    "details": {
+      "dosage": "0 g/L",
+      "verifiedFacts": "La fiche technique officielle confirme un Brut Nature dosé à 0 g/L.",
+      "evidenceStatus": "official_confirmed",
+      "advice": "Sa fraîcheur nette convient particulièrement à crustacés, apéritif.",
+      "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et pomme.",
+      "profil": {
+        "fraicheur": "Très fraîche",
+        "rondeur": "Droite",
+        "puissance": "Équilibrée",
+        "longueur": "Nuancée"
+      },
+      "scores": {
+        "freshness": 5,
+        "roundness": 2,
+        "power": 3,
+        "complexity": 3
+      },
+      "aromas": [
+        "agrumes",
+        "pomme",
+        "fleurs blanches"
+      ],
+      "grapes": [
+        "Meunier"
+      ],
+      "accords": [
+        {
+          "t": "Accord prioritaire",
+          "d": "Crustacés"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Apéritif"
+        }
+      ],
+      "merchant": "Bottle of Italy",
+      "merchantTitle": "Champagne Nos Pas Dans l’Argile Nature - Marie Copinet"
+    }
+  },
+  {
+    "id": "vazart-coquart-blanc-de-blancs-zero-grand-cru",
+    "merchantId": "shopify_FR_47895590011218",
+    "name": "Blanc de Blancs Zero Grand Cru",
+    "short": "Blanc de Blancs Zero Grand Cru",
+    "house": "Vazart-Coquart",
+    "brand": "Vazart-Coquart",
+    "region": "Champagne",
+    "price": 71.64,
+    "priceMin": 71.64,
+    "priceMax": 71.64,
+    "oldPrice": null,
+    "tier": 3,
+    "producerType": "vigneron",
+    "occ": [
+      "occ_fete",
+      "occ_apero",
+      "occ_diner",
+      "occ_cadeau",
+      "occ_romantique"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_delicat"
+    ],
+    "accords": [
+      "accord_mer",
+      "accord_aperitif"
+    ],
+    "bulles": "bulles_fines",
+    "tags": [
+      "Blanc de blancs",
+      "Grand Cru",
+      "Extra-brut / nature"
+    ],
+    "pair": "huîtres, crustacés, poisson",
+    "note": "Un blanc de blancs brut nature Grand Cru au caractère léger et délicat. Au premier plan : agrumes, pomme, fleurs blanches, amande. L’assemblage réunit Chardonnay. À privilégier avec huîtres, crustacés, poisson.",
+    "sourceUrl": "https://www.champagnevazartcoquart.com/?type_champagne=non-millesime",
+    "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-zero-grand-cru-vazarat-coquart",
+    "officialSourceUrl": "https://www.champagnevazartcoquart.com/?type_champagne=non-millesime",
+    "technicalSourceUrl": null,
+    "sourceKind": "producer",
+    "verifiedAt": "2026-07-31",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 72,
+    "aff": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895590011218&productname=Champagne+Blanc+de+Blancs+Zero+Grand+Cru+-+Vazart-Coquart&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-blanc-de-blancs-zero-grand-cru-vazarat-coquart%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
+    "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Blanc-de-Blancs-Zero-Grand-Cru-Vazarat-Coquart-bottle-of-italy.jpg?v=1714473646",
+    "availability": "in_stock",
+    "priceStatus": "fresh",
+    "offerCheckedAt": "2026-08-02T19:22:59.090Z",
+    "identityStatus": "official_confirmed",
+    "imageRights": {
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Blanc-de-Blancs-Zero-Grand-Cru-Vazarat-Coquart-bottle-of-italy.jpg?v=1714473646",
+      "rightsBasis": "Flux du programme partenaire Bottle of Italy / Webgains",
+      "verifiedAt": "2026-08-02"
+    },
+    "details": {
+      "dosage": null,
+      "verifiedFacts": null,
+      "evidenceStatus": "official_confirmed",
+      "advice": "Sa fraîcheur nette convient particulièrement à huîtres, crustacés, poisson.",
+      "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et pomme.",
+      "profil": {
+        "fraicheur": "Très fraîche",
+        "rondeur": "Droite",
+        "puissance": "Légère",
+        "longueur": "Nuancée"
+      },
+      "scores": {
+        "freshness": 5,
+        "roundness": 2,
+        "power": 2,
+        "complexity": 3
+      },
+      "aromas": [
+        "agrumes",
+        "pomme",
+        "fleurs blanches",
+        "amande"
+      ],
+      "grapes": [
+        "Chardonnay"
+      ],
+      "accords": [
+        {
+          "t": "Accord prioritaire",
+          "d": "Huîtres"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Crustacés"
+        },
+        {
+          "t": "Pour varier",
+          "d": "Poisson"
+        }
+      ],
+      "merchant": "Bottle of Italy",
+      "merchantTitle": "Champagne Blanc de Blancs Zero Grand Cru - Vazart-Coquart"
+    }
+  },
+  {
+    "id": "mouzon-leroux-l-ineffable-extra-brut-grand-cru-2017",
+    "merchantId": "shopify_FR_47895579165010",
+    "name": "L’Ineffable Extra Brut Grand Cru",
+    "short": "L’Ineffable Extra Brut Grand Cru",
+    "house": "Mouzon Leroux",
+    "brand": "Mouzon Leroux",
+    "region": "Champagne",
+    "price": 88.82,
+    "priceMin": 88.82,
+    "priceMax": 88.82,
+    "oldPrice": null,
+    "tier": 3,
+    "producerType": "vigneron",
+    "occ": [
+      "occ_fete",
+      "occ_apero",
+      "occ_diner",
+      "occ_cadeau"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_riche_ample"
+    ],
+    "accords": [
+      "accord_mer",
+      "accord_aperitif"
+    ],
+    "bulles": "bulles_fines",
+    "tags": [
+      "Extra-brut / nature",
+      "Blanc de noirs",
+      "Grand Cru",
+      "Millésimé"
+    ],
+    "pair": "huîtres, crustacés, poisson",
+    "note": "Un blanc de noirs extra-brut Grand Cru millésimé au caractère vif et structuré. Au premier plan : agrumes, fleurs blanches, brioche, amande. L’assemblage réunit Pinot Noir. À privilégier avec huîtres, crustacés, poisson.",
+    "sourceUrl": "https://www.champagne-mouzon-leroux.com/en/lineffable.html",
+    "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-l-ineffable-extra-brut-grand-cru-mouzon-leroux",
+    "officialSourceUrl": "https://www.champagne-mouzon-leroux.com/en/lineffable.html",
+    "technicalSourceUrl": null,
+    "sourceKind": "producer",
+    "verifiedAt": "2026-07-31",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 75,
+    "aff": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895579165010&productname=Champagne+L%E2%80%99Ineffable+Extra+Brut+Grand+Cru+-+Mouzon+Leroux+2017&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-l-ineffable-extra-brut-grand-cru-mouzon-leroux%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
+    "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/champagne-extra-brut-blanc-de-noirs-grand-cru-lineffable-mouzon-leroux-2bottle-of-italy.jpg?v=1716905389",
+    "availability": "in_stock",
+    "priceStatus": "fresh",
+    "offerCheckedAt": "2026-08-02T19:22:59.090Z",
+    "identityStatus": "official_confirmed_with_correction",
+    "imageRights": {
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/champagne-extra-brut-blanc-de-noirs-grand-cru-lineffable-mouzon-leroux-2bottle-of-italy.jpg?v=1716905389",
+      "rightsBasis": "Flux du programme partenaire Bottle of Italy / Webgains",
+      "verifiedAt": "2026-08-02"
+    },
+    "details": {
+      "dosage": "2,5 g/L",
+      "verifiedFacts": "L’Ineffable est un Blanc de Noirs de Verzy Grand Cru, 100 % Pinot Noir, dosé à 2,5 g/L et élevé six mois en cave après dégorgement.",
+      "evidenceStatus": "official_confirmed_with_correction",
+      "advice": "Sa matière affirmée trouve sa place à table, notamment avec huîtres, crustacés, poisson.",
+      "avoid": "Écartez-la pour un apéritif très léger : sa matière appelle plutôt huîtres, crustacés, poisson.",
+      "profil": {
+        "fraicheur": "Très fraîche",
+        "rondeur": "Équilibrée",
+        "puissance": "Puissante",
+        "longueur": "Complexe"
+      },
+      "scores": {
+        "freshness": 5,
+        "roundness": 3,
+        "power": 4,
+        "complexity": 4
+      },
+      "aromas": [
+        "agrumes",
+        "fleurs blanches",
+        "brioche",
+        "amande"
+      ],
+      "grapes": [
+        "Pinot Noir"
+      ],
+      "accords": [
+        {
+          "t": "Accord prioritaire",
+          "d": "Huîtres"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Crustacés"
+        },
+        {
+          "t": "Pour varier",
+          "d": "Poisson"
+        }
+      ],
+      "merchant": "Bottle of Italy",
+      "merchantTitle": "Champagne L’Ineffable Extra Brut Grand Cru - Mouzon Leroux"
+    }
+  },
+  {
+    "id": "laherte-freres-les-grandes-crayeres-extra-brut-2021",
+    "merchantId": "shopify_FR_47895561797970",
+    "name": "Les Grandes Crayères Blanc de Blancs Extra Brut",
+    "short": "Les Grandes Crayères Blanc de Blancs Extra Brut",
+    "house": "Laherte Frères",
+    "brand": "Laherte Frères",
+    "region": "Champagne",
+    "price": 100.71,
+    "priceMin": 100.71,
+    "priceMax": 100.71,
+    "oldPrice": null,
+    "tier": 4,
+    "producerType": "vigneron",
+    "occ": [
+      "occ_fete",
+      "occ_apero",
+      "occ_diner",
+      "occ_cadeau",
+      "occ_romantique"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_riche_ample",
+      "profil_delicat"
+    ],
+    "accords": [
+      "accord_mer",
+      "accord_fromage",
+      "accord_aperitif"
+    ],
+    "bulles": "bulles_fines",
+    "tags": [
+      "Extra-brut / nature",
+      "Blanc de blancs",
+      "Millésimé"
+    ],
+    "pair": "crustacés, poisson, fromages",
+    "note": "Un blanc de blancs extra-brut millésimé au caractère nuancé et persistant. Au premier plan : agrumes, pomme, fleurs blanches, brioche. L’assemblage réunit Chardonnay. À privilégier avec crustacés, poisson, fromages.",
+    "sourceUrl": "https://www.champagne-laherte.com/",
+    "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-les-grandes-crayeres-extra-brut-laherte-freres",
+    "officialSourceUrl": "https://www.champagne-laherte.com/",
+    "technicalSourceUrl": null,
+    "sourceKind": "producer",
+    "verifiedAt": "2026-07-31",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 71,
+    "aff": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895561797970&productname=Champagne+Les+Grandes+Cray%C3%A8res+Extra+Brut+-+Laherte+Fr%C3%A8res+2021&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-les-grandes-crayeres-extra-brut-laherte-freres%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
+    "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Les-Grandes-Crayeres-Extra-Brut-Laherte-Freres-bottle-of-italy.jpg?v=1726586784",
+    "availability": "in_stock",
+    "priceStatus": "fresh",
+    "offerCheckedAt": "2026-08-02T19:22:59.090Z",
+    "identityStatus": "official_confirmed_with_correction",
+    "imageRights": {
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Les-Grandes-Crayeres-Extra-Brut-Laherte-Freres-bottle-of-italy.jpg?v=1726586784",
+      "rightsBasis": "Flux du programme partenaire Bottle of Italy / Webgains",
+      "verifiedAt": "2026-08-02"
+    },
+    "details": {
+      "dosage": "2 g/L",
+      "verifiedFacts": "Cuvée parcellaire millésimée 100 % Chardonnay, issue de vieilles vignes à mi-coteau sur craie campanienne à Chavot, dosée à 2 g/L.",
+      "evidenceStatus": "official_confirmed_with_correction",
+      "advice": "Sa fraîcheur nette convient particulièrement à crustacés, poisson, fromages.",
+      "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et pomme.",
+      "profil": {
+        "fraicheur": "Très fraîche",
+        "rondeur": "Droite",
+        "puissance": "Légère",
+        "longueur": "Complexe"
+      },
+      "scores": {
+        "freshness": 5,
+        "roundness": 2,
+        "power": 2,
+        "complexity": 4
+      },
+      "aromas": [
+        "agrumes",
+        "pomme",
+        "fleurs blanches",
+        "brioche",
+        "amande"
+      ],
+      "grapes": [
+        "Chardonnay"
+      ],
+      "accords": [
+        {
+          "t": "Accord prioritaire",
+          "d": "Crustacés"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Poisson"
+        },
+        {
+          "t": "Pour varier",
+          "d": "Fromages"
+        }
+      ],
+      "merchant": "Bottle of Italy",
+      "merchantTitle": "Champagne Les Grandes Crayères Extra Brut - Laherte Frères"
+    }
+  },
+  {
+    "id": "drappier-quattuor",
+    "merchantId": "shopify_FR_42150252085465",
+    "name": "Quattuor",
+    "short": "Quattuor",
+    "house": "Drappier",
+    "brand": "Drappier",
+    "region": "Champagne",
+    "price": 105.09,
+    "priceMin": 105.09,
+    "priceMax": 105.09,
+    "oldPrice": null,
+    "tier": 4,
+    "producerType": "maison",
+    "occ": [
+      "occ_fete",
+      "occ_apero",
+      "occ_diner",
+      "occ_cadeau"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_riche_ample"
+    ],
+    "accords": [
+      "accord_mer",
+      "accord_fromage",
+      "accord_dessert",
+      "accord_aperitif"
+    ],
+    "bulles": "bulles_fines",
+    "tags": [
+      "Extra-brut / nature"
+    ],
+    "pair": "huîtres, sushis, fromages",
+    "note": "Un extra-brut au caractère nuancé et persistant. Au premier plan : agrumes, fleurs blanches, miel. L’assemblage réunit Arbane, Petit Meslier, Pinot Blanc, Chardonnay. À privilégier avec huîtres, sushis, fromages.",
+    "sourceUrl": "https://www.champagne-drappier.com/fr/cuvee/quattuor/",
+    "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-quattuor-aoc-drappier",
+    "officialSourceUrl": "https://www.champagne-drappier.com/fr/cuvee/quattuor/",
+    "technicalSourceUrl": null,
+    "sourceKind": "producer",
+    "verifiedAt": "2026-07-31",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 84,
+    "aff": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_42150252085465&productname=Champagne+Quattuor+AOC+-+Drappier&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-quattuor-aoc-drappier%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
+    "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/products/Champagne-Quattuor-AOC-75-cl-Cantina-Drappier-bottle-of-italy.jpg?v=1638703294",
+    "availability": "in_stock",
+    "priceStatus": "fresh",
+    "offerCheckedAt": "2026-08-02T19:22:59.090Z",
+    "identityStatus": "official_confirmed",
+    "imageRights": {
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0538/2268/5356/products/Champagne-Quattuor-AOC-75-cl-Cantina-Drappier-bottle-of-italy.jpg?v=1638703294",
+      "rightsBasis": "Flux du programme partenaire Bottle of Italy / Webgains",
+      "verifiedAt": "2026-08-02"
+    },
+    "details": {
+      "dosage": null,
+      "verifiedFacts": "Assemblage officiel à parts égales : Arbane, Petit Meslier, Blanc Vrai et Chardonnay.",
+      "evidenceStatus": "official_confirmed",
+      "advice": "Sa fraîcheur nette convient particulièrement à huîtres, sushis, fromages.",
+      "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et fleurs blanches.",
+      "profil": {
+        "fraicheur": "Très fraîche",
+        "rondeur": "Équilibrée",
+        "puissance": "Équilibrée",
+        "longueur": "Complexe"
+      },
+      "scores": {
+        "freshness": 5,
+        "roundness": 3,
+        "power": 3,
+        "complexity": 4
+      },
+      "aromas": [
+        "agrumes",
+        "fleurs blanches",
+        "miel"
+      ],
+      "grapes": [
+        "Arbane",
+        "Petit Meslier",
+        "Pinot Blanc",
+        "Chardonnay"
+      ],
+      "accords": [
+        {
+          "t": "Accord prioritaire",
+          "d": "Huîtres"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Sushis"
+        },
+        {
+          "t": "Pour varier",
+          "d": "Fromages"
+        }
+      ],
+      "merchant": "Bottle of Italy",
+      "merchantTitle": "Champagne Quattuor AOC - Drappier"
+    }
+  },
+  {
+    "id": "j-m-seleque-soliste-les-charmiers-rose-extra-brut-1er-cru-2019",
+    "merchantId": "shopify_FR_47895567106386",
+    "name": "Soliste Meunier Rosé — Les Charmiers",
+    "short": "Soliste Meunier Rosé — Les Charmiers",
+    "house": "J-M Sélèque",
+    "brand": "J-M Sélèque",
+    "region": "Champagne",
+    "price": 125.05,
+    "priceMin": 125.05,
+    "priceMax": 125.05,
+    "oldPrice": null,
+    "tier": 4,
+    "producerType": "vigneron",
+    "occ": [
+      "occ_fete",
+      "occ_apero",
+      "occ_diner",
+      "occ_cadeau",
+      "occ_romantique"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_fruite",
+      "profil_riche_ample"
+    ],
+    "accords": [
+      "accord_mer",
+      "accord_aperitif"
+    ],
+    "bulles": "bulles_fines",
+    "tags": [
+      "Rosé",
+      "Extra-brut / nature",
+      "Premier Cru",
+      "Millésimé"
+    ],
+    "pair": "crustacés, poisson, apéritif",
+    "note": "Un rosé extra-brut Premier Cru millésimé au caractère nuancé et persistant. Au premier plan : agrumes, fleurs blanches. L’assemblage réunit Meunier. À privilégier avec crustacés, poisson, apéritif.",
+    "sourceUrl": "https://www.jmseleque.fr/en/produit/soliste-meunier-rose-2/",
+    "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-soliste-les-charmiers-rose-extra-brut-1er-cru-j-m-seleque",
+    "officialSourceUrl": "https://www.jmseleque.fr/en/produit/soliste-meunier-rose-2/",
+    "technicalSourceUrl": null,
+    "sourceKind": "producer",
+    "verifiedAt": "2026-07-31",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 71,
+    "aff": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895567106386&productname=Champagne+Soliste+Les+Charmiers+Ros%C3%A9+Extra+Brut+1er+Cru+-+J-M+Seleque+2019&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-soliste-les-charmiers-rose-extra-brut-1er-cru-j-m-seleque%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
+    "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Soliste-Les-Charmiers-Rose-Extra-Brut-1er-Cru-J-M-Seleque-bottle-of-italy.jpg?v=1714467700",
+    "availability": "in_stock",
+    "priceStatus": "fresh",
+    "offerCheckedAt": "2026-08-02T19:22:59.090Z",
+    "identityStatus": "official_confirmed_with_correction",
+    "imageRights": {
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Soliste-Les-Charmiers-Rose-Extra-Brut-1er-Cru-J-M-Seleque-bottle-of-italy.jpg?v=1714467700",
+      "rightsBasis": "Flux du programme partenaire Bottle of Italy / Webgains",
+      "verifiedAt": "2026-08-02"
+    },
+    "details": {
+      "dosage": "1,5 g/L",
+      "verifiedFacts": "Rosé parcellaire 100 % Meunier des Charmiers à Pierry Premier Cru, élevé dix mois en fûts puis quatre ans sur bouchon, dosé à 1,5 g/L.",
+      "evidenceStatus": "official_confirmed_with_correction",
+      "advice": "Sa fraîcheur nette convient particulièrement à crustacés, poisson, apéritif.",
+      "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et fleurs blanches.",
+      "profil": {
+        "fraicheur": "Très fraîche",
+        "rondeur": "Équilibrée",
+        "puissance": "Équilibrée",
+        "longueur": "Complexe"
+      },
+      "scores": {
+        "freshness": 5,
+        "roundness": 3,
+        "power": 3,
+        "complexity": 4
+      },
+      "aromas": [
+        "agrumes",
+        "fleurs blanches"
+      ],
+      "grapes": [
+        "Meunier"
+      ],
+      "accords": [
+        {
+          "t": "Accord prioritaire",
+          "d": "Crustacés"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Poisson"
+        },
+        {
+          "t": "Pour varier",
+          "d": "Apéritif"
+        }
+      ],
+      "merchant": "Bottle of Italy",
+      "merchantTitle": "Champagne Soliste Les Charmiers Rosé Extra Brut 1er Cru - J-M Seleque"
+    }
+  },
+  {
+    "id": "billecart-salmon-louis-salmon-2009",
+    "merchantId": "shopify_FR_50794913464658",
+    "name": "Louis Salmon 2009",
+    "short": "Louis Salmon 2009",
+    "house": "Billecart-Salmon",
+    "brand": "Billecart-Salmon",
+    "region": "Champagne",
+    "price": 203.41,
+    "priceMin": 203.41,
+    "priceMax": 203.41,
+    "oldPrice": null,
+    "tier": 4,
+    "producerType": "maison",
+    "occ": [
+      "occ_fete",
+      "occ_apero",
+      "occ_diner",
+      "occ_cadeau"
+    ],
+    "profil": [
+      "profil_frais_vif",
+      "profil_fruite",
+      "profil_riche_ample"
+    ],
+    "accords": [
+      "accord_mer",
+      "accord_aperitif"
+    ],
+    "bulles": "bulles_fines",
+    "tags": [
+      "Brut",
+      "Millésimé"
+    ],
+    "pair": "crustacés, poisson, apéritif",
+    "note": "Un brut millésimé au caractère rond et généreux. Au premier plan : minéralité. L’assemblage réunit Chardonnay. À privilégier avec crustacés, poisson, apéritif.",
+    "sourceUrl": "https://www.champagne-billecart.fr/en/millesime/cuvee-louis-salmon-2009",
+    "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-louis-salmon-billecart-salmon",
+    "officialSourceUrl": "https://www.champagne-billecart.fr/en/millesime/cuvee-louis-salmon-2009",
+    "technicalSourceUrl": null,
+    "sourceKind": "producer",
+    "verifiedAt": "2026-07-31",
+    "editorialReady": true,
+    "commerceReady": true,
+    "popularity": 87,
+    "aff": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50794913464658&productname=Champagne+Louis+Salmon+-+Billecart-Salmon+2009&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-louis-salmon-billecart-salmon%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
+    "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/ChampagneLouisSalmon-Billecart-Salmon-Bottle-of-Italy-Copia-min.jpg?v=1747663344",
+    "availability": "in_stock",
+    "priceStatus": "fresh",
+    "offerCheckedAt": "2026-08-02T19:22:59.090Z",
+    "identityStatus": "official_confirmed",
+    "imageRights": {
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/ChampagneLouisSalmon-Billecart-Salmon-Bottle-of-Italy-Copia-min.jpg?v=1747663344",
+      "rightsBasis": "Flux du programme partenaire Bottle of Italy / Webgains",
+      "verifiedAt": "2026-08-02"
+    },
+    "details": {
+      "dosage": null,
+      "verifiedFacts": "La Maison confirme le Brut Blanc de Blancs millésimé 2009, issu des grands crus de la Côte des Blancs.",
+      "evidenceStatus": "official_confirmed",
+      "advice": "Sa texture ample accompagne volontiers crustacés, poisson, apéritif.",
+      "avoid": "Écartez-la si vous recherchez une expression austère et tranchante : son profil privilégie l’ampleur.",
+      "profil": {
+        "fraicheur": "Fraîche",
+        "rondeur": "Ronde",
+        "puissance": "Équilibrée",
+        "longueur": "Très complexe"
+      },
+      "scores": {
+        "freshness": 4,
+        "roundness": 4,
+        "power": 3,
+        "complexity": 5
+      },
+      "aromas": [
+        "minéralité"
+      ],
+      "grapes": [
+        "Chardonnay"
+      ],
+      "accords": [
+        {
+          "t": "Accord prioritaire",
+          "d": "Crustacés"
+        },
+        {
+          "t": "Autre possibilité",
+          "d": "Poisson"
+        },
+        {
+          "t": "Pour varier",
+          "d": "Apéritif"
+        }
+      ],
+      "merchant": "Bottle of Italy",
+      "merchantTitle": "Champagne Louis Salmon - Billecart-Salmon"
+    }
+  }
+]

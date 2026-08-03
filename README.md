@@ -1,65 +1,81 @@
-# QuelChampagne Engine
+# QuelChampagne
 
-Service autonome de connaissance, comparaison et recommandation de Champagnes. Il ne dépend pas du code de `quelchampagne.fr` : le site pourra consommer son API lorsque la couverture éditoriale sera suffisante.
+Site statique généré avec Node.js.
 
-## Principes
+## Parcours commercial
 
-1. Une cuvée, un millésime et un format forment une identité distincte.
-2. Chaque affirmation importante renvoie à une source et à un niveau de preuve.
-3. Les faits techniques, l’analyse sensorielle et le commerce restent séparés.
-4. Une donnée ambiguë ou dupliquée entre en quarantaine au lieu d’être publiée.
-5. Une note de tiers n’est importée que si son usage est public ou couvert par une licence.
-6. Le moteur est déterministe, versionné et testable ; il n’invente pas une dégustation.
+Les cartes de `/champagnes/` ouvrent une fiche d’analyse interne :
 
-## Démarrage
+`sélection → fiche QuelChampagne → offre affiliée Bottle of Italy`
+
+Les 48 produits sont consolidés dans un catalogue canonique :
+
+- `data/bottle-of-italy-products.json` : instantané marchand (prix, stock, photo, lien) ;
+- `data/product-evidence-overrides.json` : vérifications et corrections éditoriales ;
+- `data/product-evidence.json` : niveau de preuve documenté pour chaque référence ;
+- `build-partner-catalogue.mjs` : identité, classification, profil, accords et analyse ;
+- `boutique.mjs` : composants d’affichage des cartes et des fiches.
+
+Le sélecteur, le comparateur, la sélection et les 48 fiches utilisent tous ce
+même catalogue. Le sélecteur croise cinq critères : moment, accord, style,
+budget et signature recherchée. Une page d’analyse interne précède toujours le
+lien marchand.
+
+Les anciens prix du flux ne sont jamais affichés, car leur période de référence
+n’est pas documentée. Après 7 jours sans actualisation, l'offre et le lien
+d'achat sont suspendus.
+Le workflow GitHub `Actualiser le catalogue` rafraîchit l’instantané chaque
+matin, puis ne l'enregistre que si la construction et tous les tests réussissent.
+
+Les fiches qui ne disposent encore que de la source marchande restent
+consultables depuis le catalogue, mais portent `noindex`. Elles ne rejoignent le
+sitemap qu’après ajout d’une source producteur.
+
+État de la base au 31 juillet 2026 :
+
+- 41 fiches confirmées ou corrigées avec une source primaire ;
+- 5 fiches dont le producteur est confirmé mais dont la fiche technique exacte
+  reste à obtenir ;
+- 2 fiches documentées par une source professionnelle secondaire ;
+- 7 fiches maintenues hors du sitemap et en `noindex`, sans donnée inventée.
+
+Les détails contrôlés sont centralisés dans
+`data/product-evidence-overrides.json`. Le rapport des références qui restent à
+documenter est généré dans `reports/product-evidence-review.json`.
+
+## Construire et vérifier
 
 ```bash
-npm run check
-npm start
+# Facultatif avant une mise à jour éditoriale : rafraîchit l’instantané marchand.
+node sync-bottle-of-italy.mjs
+
+node build-product-evidence.mjs
+node build-site.mjs
+node test-recommendations.mjs
+node validate-site.mjs
+node test-merchant-import.mjs
+node test-analytics.mjs
+node validate-launch.mjs
 ```
 
-Le serveur écoute par défaut sur `http://localhost:8788`.
-Cette adresse ouvre également le tableau de bord local de contrôle et de test.
+Le responsive est contrôlé sur les parcours accueil, sélecteur, catalogue,
+comparateur, fiche produit et article. Les largeurs de référence sont 320, 360,
+390, 768, 1024 et 1440 px. La navigation passe en menu compact sous 701 px.
 
-## API
+## Déploiement Cloudflare Pages
 
-- `GET /health`
-- `GET /v1/quality`
-- `GET /v1/champagnes?q=&producer=&available=true&limit=25`
-- `GET /v1/champagnes/:id`
-- `POST /v1/recommendations`
-- `POST /v1/personalized-recommendations`
-- `POST /v1/compare`
-- `GET /v1/similar/:id?limit=5&maxPrice=100`
-- `POST /v1/tastings/aggregate`
+- Commande de construction : `node build-site.mjs`
+- Dossier de sortie : `dist`
+- Version de Node recommandée : 20 ou plus récente
 
-Exemple :
+Le dépôt ne contient aucun réglage Netlify. Cloudflare Pages lit directement
+`wrangler.toml` et publie le dossier `dist`. Le dossier généré est également
+versionné afin que le contenu contrôlé localement soit bien celui publié.
 
-```json
-{
-  "request": {
-    "occasion": "occ_diner",
-    "pairing": "accord_mer",
-    "preset": "fresh",
-    "budgetMax": 80,
-    "producerType": "any",
-    "signature": "low_dosage",
-    "availableOnly": true
-  },
-  "limit": 3
-}
-```
+Le fichier `wrangler.toml` contient la configuration Cloudflare. Les anciennes
+fiches éditoriales ne sont plus publiées : Cloudflare les redirige vers la
+sélection actuelle grâce au fichier `dist/_redirects`.
 
-## Pipeline d’enrichissement
-
-Chaque connecteur futur produit d’abord un instantané brut horodaté. La normalisation recherche ensuite une identité canonique. Les correspondances certaines sont fusionnées, les cas ambigus sont placés en quarantaine, puis la validation bloque toute publication sans provenance suffisante.
-
-Ordre d’acquisition prévu :
-
-1. producteurs et Comité Champagne pour l’identité et la technique ;
-2. résultats publics de concours pour les récompenses et scores autorisés ;
-3. bases de critiques sous licence ;
-4. partenaires marchands pour prix, disponibilité et visuels ;
-5. panels de dégustation QuelChampagne pour créer une donnée propriétaire.
-
-Un import externe passe par `scripts/prepare-import.mjs`. Le script refuse toute source dont le statut de réutilisation n’est pas `authorized` ou `facts_only`, puis sépare automatiquement les nouvelles identités, les mises à jour exactes et les rapprochements ambigus à contrôler.
+Web Analytics peut être activé dans Cloudflare sans fonction Pages. Le suivi
+métier par Analytics Engine reste désactivé tant que le service et son binding
+ne sont pas configurés, afin qu'il ne puisse pas bloquer un déploiement.
