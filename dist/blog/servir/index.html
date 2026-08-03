@@ -16,12 +16,13 @@
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta name="theme-color" content="#ffffff">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 64'%3E%3Cpath d='M8 16C8 7.7 14.7 2 24 2s16 5.5 16 14c0 6.3-3.6 10.2-9 13.8-4.4 3-6.2 5.7-6.2 10.2' fill='none' stroke='%239C7A34' stroke-width='4.8' stroke-linecap='round'/%3E%3Cpath d='M16 47h16c-.7 4.4-3.7 6.8-8 6.8s-7.3-2.4-8-6.8Z' fill='%239C7A34'/%3E%3Cpath d='M24 53.3v6.2M19.5 61.5h9' stroke='%239C7A34' stroke-width='2.2' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://quelchampagne.fr/#website","name":"QuelChampagne","url":"https://quelchampagne.fr/","inLanguage":"fr-FR","publisher":{"@id":"https://quelchampagne.fr/#org"}},{"@type":"Organization","@id":"https://quelchampagne.fr/#org","name":"QuelChampagne","url":"https://quelchampagne.fr/","description":"Sélecteur et guide de champagne indépendant, des grandes maisons aux vignerons.","parentOrganization":{"@type":"Organization","name":"CORTEXIA","legalName":"CORTEXIA (SAS)"}},{"@type":"WebPage","@id":"https://quelchampagne.fr/blog/servir/#webpage","name":"Température, verre, ouverture : servir le champagne | QuelChampagne","url":"https://quelchampagne.fr/blog/servir/","description":"Les gestes simples qui subliment, ou gâchent, une belle bouteille.","inLanguage":"fr-FR","isPartOf":{"@id":"https://quelchampagne.fr/#website"}},{"@type":"Article","headline":"Température, verre, ouverture : servir le champagne","description":"Les gestes simples qui subliment, ou gâchent, une belle bouteille.","articleSection":"Pratique","inLanguage":"fr-FR","image":"https://images.unsplash.com/photo-1720070827797-d4f03e228dea?q=75&w=1200&auto=format&fit=crop","datePublished":"2026-07-01","dateModified":"2026-07-29","author":{"@id":"https://quelchampagne.fr/#org"},"publisher":{"@id":"https://quelchampagne.fr/#org"},"mainEntityOfPage":"https://quelchampagne.fr/blog/servir/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://quelchampagne.fr/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://quelchampagne.fr/blog/"},{"@type":"ListItem","position":3,"name":"Température, verre, ouverture : servir le champagne","item":"https://quelchampagne.fr/blog/servir/"}]}]}</script>
+<script src="/assets/analytics.js" defer></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://quelchampagne.fr/#website","name":"QuelChampagne","url":"https://quelchampagne.fr/","inLanguage":"fr-FR","publisher":{"@id":"https://quelchampagne.fr/#org"}},{"@type":"Organization","@id":"https://quelchampagne.fr/#org","name":"QuelChampagne","url":"https://quelchampagne.fr/","description":"Sélecteur et guide de champagne indépendant, des grandes maisons aux vignerons.","parentOrganization":{"@type":"Organization","name":"CORTEXIA","legalName":"CORTEXIA (SAS)"}},{"@type":"WebPage","@id":"https://quelchampagne.fr/blog/servir/#webpage","name":"Température, verre, ouverture : servir le champagne | QuelChampagne","url":"https://quelchampagne.fr/blog/servir/","description":"Les gestes simples qui subliment, ou gâchent, une belle bouteille.","inLanguage":"fr-FR","isPartOf":{"@id":"https://quelchampagne.fr/#website"}},{"@type":"Article","headline":"Température, verre, ouverture : servir le champagne","description":"Les gestes simples qui subliment, ou gâchent, une belle bouteille.","articleSection":"Pratique","inLanguage":"fr-FR","image":"https://images.unsplash.com/photo-1720070827797-d4f03e228dea?q=75&w=1200&auto=format&fit=crop","datePublished":"2026-07-01","dateModified":"2026-08-03","author":{"@id":"https://quelchampagne.fr/#org"},"publisher":{"@id":"https://quelchampagne.fr/#org"},"mainEntityOfPage":"https://quelchampagne.fr/blog/servir/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://quelchampagne.fr/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://quelchampagne.fr/blog/"},{"@type":"ListItem","position":3,"name":"Température, verre, ouverture : servir le champagne","item":"https://quelchampagne.fr/blog/servir/"}]}]}</script>
 <style>
 :root{
   --bg:#FFFFFF; --bg2:#F5F5F7; --ink:#1D1D1F; --muted:#6E6E73; --faint:#86868B;
   --border:#D2D2D7; --line:#E8E8ED;
-  --accent:#9C7A34; --accent-deep:#7E621F;
+  --accent:#806020; --accent-deep:#6B4D18;
   --sans:-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif;
 }
 *{box-sizing:border-box; margin:0; padding:0}
@@ -58,6 +59,10 @@ img{max-width:100%; display:block}
 .logo-txt b{font-weight:600}
 .foot-brand-name{display:inline-flex; align-items:center; gap:8px}
 .nav-links{display:flex; align-items:center; gap:28px}
+.nav-toggle{display:none; width:44px; height:44px; align-items:center; justify-content:center; flex-direction:column; gap:5px; border:1px solid var(--border); background:#fff}
+.nav-toggle span{display:block; width:19px; height:2px; background:var(--ink); transition:transform .2s,opacity .2s}
+.nav.is-open .nav-toggle span:first-child{transform:translateY(3.5px) rotate(45deg)}
+.nav.is-open .nav-toggle span:last-child{transform:translateY(-3.5px) rotate(-45deg)}
 .nlink{font-size:14px; font-weight:400; color:var(--muted); transition:.18s}
 .nlink:hover,.nlink.on{color:var(--ink)}
 
@@ -142,10 +147,10 @@ h1{font-size:clamp(42px,7vw,80px); font-weight:600; line-height:1.04; letter-spa
 .soon-badge{font-size:12px; font-weight:500; color:var(--faint)}
 .center-cta{text-align:center; margin-top:48px}
 
-.quiz{padding:clamp(40px,6vw,72px) 0 clamp(56px,7vw,88px)}
+.quiz{min-height:calc(100vh - 52px);padding:clamp(40px,6vw,72px) 0 clamp(56px,7vw,88px);background:#fff}
 .qbar{display:flex; align-items:center; gap:16px; margin-bottom:clamp(40px,5vw,56px)}
-.qback{width:40px; height:40px; border-radius:50%; background:var(--bg2); display:grid; place-items:center; color:var(--muted); font-size:17px; transition:.18s; flex:none}
-.qback:hover{background:#ececef; color:var(--ink)}
+.qback{width:40px; height:40px; border-radius:50%; background:transparent; border:1px solid var(--border); display:grid; place-items:center; color:var(--muted); font-size:17px; transition:.18s; flex:none}
+.qback:hover{border-color:var(--ink); color:var(--ink)}
 .qprog{flex:1; height:4px; border-radius:999px; background:var(--line); overflow:hidden}
 .qprog i{display:block; height:100%; background:var(--accent); border-radius:999px; transition:width .5s cubic-bezier(.4,0,.2,1)}
 .qnum{font-size:14px; color:var(--faint); font-variant-numeric:tabular-nums; flex:none}
@@ -154,26 +159,43 @@ h1{font-size:clamp(42px,7vw,80px); font-weight:600; line-height:1.04; letter-spa
 .qtitle{font-size:clamp(30px,4.6vw,50px); font-weight:600; letter-spacing:-.03em; line-height:1.06; margin-top:12px}
 .qhint{color:var(--muted); font-size:18px; margin-top:14px; font-weight:400; letter-spacing:-.015em}
 .qopts{margin-top:clamp(32px,4vw,44px); display:grid; gap:12px}
-.qopt{text-align:left; padding:22px 24px; border-radius:18px; background:var(--bg2); transition:transform .18s, background .18s; display:flex; align-items:center; gap:18px}
-.qopt:hover{background:#ececef; transform:scale(1.01)}
-.qopt .qe{font-size:26px; flex:none; width:34px; text-align:center}
+.qopt{text-align:left; padding:22px 24px; border-radius:18px; background:#F4F4F1; border:1px solid transparent; transition:transform .18s, border-color .18s, box-shadow .18s; display:flex; align-items:center; gap:18px}
+.qopt:hover{border-color:var(--ink); box-shadow:0 12px 28px -24px rgba(20,20,18,.55); transform:translateY(-2px)}
+.qopt .qe{font-size:12px; font-weight:700; letter-spacing:.08em; color:var(--accent-deep); flex:none; width:34px; text-align:left}
 .qopt .ql{font-size:19px; font-weight:600; letter-spacing:-.02em}
 .qopt .qd{font-size:14.5px; color:var(--muted); margin-top:2px; font-weight:400}
+.selector-guide{padding:clamp(64px,8vw,108px) 0;background:#F4F4F1;border-top:1px solid #D9D9D4}
+.selector-guide-head{max-width:850px}
+.selector-guide-head h2{font-family:var(--display);font-size:clamp(34px,5.5vw,68px);font-weight:900;text-transform:uppercase;letter-spacing:-.025em;line-height:.95;margin-top:12px}
+.selector-guide-head>p{max-width:68ch;color:var(--muted);font-size:18px;line-height:1.65;margin-top:24px}
+.selector-guide-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:48px;border-top:1px solid #CFCAC0;border-bottom:1px solid #CFCAC0}
+.selector-guide-grid article{padding:26px 22px 30px;border-right:1px solid #CFCAC0}
+.selector-guide-grid article:last-child{border-right:0}
+.selector-guide-grid span{font-size:12px;font-weight:800;letter-spacing:.12em;color:var(--accent-deep)}
+.selector-guide-grid h3{font-size:19px;margin-top:18px}
+.selector-guide-grid p{color:var(--muted);font-size:14px;line-height:1.55;margin-top:10px}
+.selector-faq{max-width:850px;margin-top:46px;border-top:1px solid #CFCAC0}
+.selector-faq details{border-bottom:1px solid #CFCAC0;padding:19px 0}
+.selector-faq summary{cursor:pointer;font-weight:700;font-size:17px;list-style:none;display:flex;justify-content:space-between;gap:20px}
+.selector-faq summary::after{content:'+';color:var(--accent-deep);font-size:22px;font-weight:400}
+.selector-faq details[open] summary::after{content:'–'}
+.selector-faq details p{color:var(--muted);max-width:70ch;line-height:1.6;margin-top:12px}
 
-.result{padding:clamp(44px,6vw,72px) 0 clamp(56px,7vw,88px); animation:fade .5s ease}
-.res-head{text-align:center; max-width:600px; margin:0 auto clamp(40px,5vw,60px)}
-.res-head h2{font-size:clamp(32px,4.6vw,52px); font-weight:600; letter-spacing:-.03em; line-height:1.06}
+.result{padding:clamp(44px,6vw,72px) 0 clamp(56px,7vw,88px); background:#fff; animation:fade .5s ease}
+.res-head{text-align:center; max-width:880px; margin:0 auto clamp(40px,5vw,60px)}
+.res-head h1{font-family:var(--display);font-size:clamp(34px,5.5vw,66px);font-weight:900;text-transform:uppercase;letter-spacing:-.03em;line-height:.96;margin-top:12px}
 .res-head p{color:var(--muted); margin-top:16px; font-size:19px; font-weight:400; letter-spacing:-.015em}
-.rcard{display:grid; grid-template-columns:300px 1fr; gap:clamp(28px,5vw,60px); align-items:center; background:var(--bg2); border-radius:30px; padding:clamp(28px,4vw,52px)}
-.rviz{aspect-ratio:3/4; display:grid; place-items:center; position:relative; border-radius:20px; overflow:hidden; background:radial-gradient(120% 120% at 50% 12%,#ffffff 0%,#f4f2ed 100%)}
-.rviz .pimg{height:100%; width:100%; object-fit:cover}
-.rmatch{position:absolute; top:0; left:0; font-size:13px; font-weight:500; color:var(--muted)}
+.criteria-summary{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:24px}
+.criteria-summary span{border:1px solid var(--border);padding:7px 11px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.045em;color:#514c44}
+.rcard{display:grid; grid-template-columns:320px 1fr; gap:clamp(28px,5vw,60px); align-items:center; background:transparent; border-top:1px solid #D9D9D4; border-bottom:1px solid #D9D9D4; padding:clamp(34px,5vw,62px) 0}
+.rviz{height:430px; display:grid; place-items:center; position:relative; overflow:hidden; background:transparent; padding:18px; box-sizing:border-box; contain:layout paint}
+.rviz .pimg{width:100%!important; height:100%!important; max-width:100%; max-height:100%; object-fit:contain!important; object-position:center!important; margin:0}
 .rbody{display:flex; flex-direction:column}
 .rmaison{font-size:15px; font-weight:500; color:var(--accent-deep)}
 .rname{font-size:clamp(30px,4vw,46px); font-weight:600; letter-spacing:-.03em; line-height:1.03; margin-top:8px}
 .rsub{color:var(--faint); font-size:15px; margin-top:10px}
 .rnote{color:var(--muted); font-size:17px; line-height:1.5; margin-top:18px; max-width:46ch; font-weight:400; letter-spacing:-.01em}
-.why{margin-top:22px; padding:18px 20px; border-left:4px solid var(--accent); border-radius:0 14px 14px 0; background:var(--bg)}
+.why{margin-top:22px; padding:18px 0; border-top:1px solid var(--border); border-bottom:1px solid var(--border); background:transparent}
 .why strong{font-size:14px; color:var(--accent-deep)}
 .why-list{margin:8px 0 0; padding-left:19px; color:var(--muted); font-size:14px}
 .why-list li+li{margin-top:5px}
@@ -184,13 +206,14 @@ h1{font-size:clamp(42px,7vw,80px); font-weight:600; line-height:1.04; letter-spa
 .aff-note{font-size:13px; color:var(--faint); margin-top:14px}
 .alts-head{margin:clamp(48px,6vw,72px) 0 22px; font-size:22px; font-weight:600; letter-spacing:-.02em; text-align:center}
 .alts{display:grid; grid-template-columns:repeat(3,1fr); gap:20px}
-.alt{background:var(--bg2); border-radius:22px; padding:24px; display:flex; flex-direction:column}
-.alt-top{display:flex; gap:16px; align-items:center}
-.mini{width:52px; height:70px; flex:none; position:relative; display:grid; place-items:center; border-radius:12px; overflow:hidden; background:radial-gradient(120% 120% at 50% 12%,#ffffff 0%,#f4f2ed 100%)}
-.mini .pimg{height:100%; width:100%; object-fit:cover}
-.mini .mm{position:absolute; bottom:-6px; left:50%; transform:translateX(-50%); font-size:11px; color:var(--faint); font-weight:500; white-space:nowrap}
+.alt{background:transparent; border-top:1px solid #D9D9D4; border-bottom:1px solid #D9D9D4; padding:24px 0; display:flex; flex-direction:column}
+.alt-main{display:grid; grid-template-columns:86px minmax(0,1fr); gap:20px; align-items:center}
+.mini{width:86px; height:132px; flex:none; position:relative; display:grid; place-items:center; overflow:hidden; background:transparent; padding:4px; box-sizing:border-box; contain:layout paint}
+.mini .pimg{width:100%!important; height:100%!important; max-width:100%; max-height:100%; object-fit:contain!important; object-position:center!important; margin:0}
+.alt-copy{min-width:0}
 .alt .an{font-size:18px; font-weight:600; letter-spacing:-.02em; line-height:1.1}
 .alt .ah{font-size:13px; color:var(--faint); margin-top:3px}
+.alt-reason{color:var(--muted);font-size:14px;line-height:1.5;margin:12px 0 0;min-height:3em}
 .alt-foot{margin-top:20px; padding-top:18px; border-top:1px solid var(--border); display:flex; align-items:center; justify-content:space-between}
 .alt-price{font-size:19px; font-weight:600}
 .res-again{text-align:center; margin-top:clamp(44px,5vw,60px)}
@@ -248,13 +271,13 @@ h1{font-size:clamp(42px,7vw,80px); font-weight:600; line-height:1.04; letter-spa
 .duel-col h2{font-size:27px; line-height:1.1}
 .duel-verdict{margin-top:28px; border-left:4px solid var(--accent); padding:20px 24px; background:#FBF8F1; border-radius:0 16px 16px 0}
 
-/* ---------- Bande éditoriale (relief visuel) ---------- */
-.band{position:relative; margin:0; padding:clamp(72px,10vw,132px) 0; color:#F5ECD9; text-align:center; overflow:hidden}
-.band::before{content:""; position:absolute; inset:0; background:radial-gradient(circle at 20% 15%,rgba(224,196,137,.22),transparent 30%),radial-gradient(circle at 82% 74%,rgba(156,122,52,.26),transparent 34%),linear-gradient(145deg,#211D15,#0F0E0B); z-index:0}
+/* ---------- Bande éditoriale photographique ---------- */
+.band{position:relative; margin:0; padding:clamp(88px,12vw,160px) 0; color:#fff; text-align:left; overflow:hidden; background:#18140f url('https://images.unsplash.com/photo-1498429152472-9a433d9ddf3b?q=82&w=2000&auto=format&fit=crop') center 48%/cover no-repeat}
+.band::before{content:""; position:absolute; inset:0; background:linear-gradient(90deg,rgba(15,12,8,.88) 0%,rgba(15,12,8,.68) 48%,rgba(15,12,8,.18) 100%); z-index:0}
 .band>*{position:relative; z-index:1}
 .band .eyebrow-l{font-size:12.5px; font-weight:600; letter-spacing:.18em; text-transform:uppercase; color:#E0C489}
-.band h2{font-size:clamp(28px,4.2vw,46px); font-weight:600; letter-spacing:-.03em; line-height:1.1; margin-top:16px; max-width:18ch; margin-left:auto; margin-right:auto}
-.band p{font-size:clamp(16px,2vw,19px); color:#E7DCC6; max-width:44ch; margin:18px auto 0; line-height:1.5}
+.band h2{font-size:clamp(34px,5vw,60px); font-weight:700; letter-spacing:-.035em; line-height:1.02; margin-top:16px; max-width:17ch}
+.band p{font-size:clamp(16px,2vw,19px); color:#F1E7D5; max-width:42ch; margin:20px 0 0; line-height:1.55}
 .band .btn{margin-top:30px}
 
 /* ---------- Catalogue « La sélection » ---------- */
@@ -264,7 +287,7 @@ h1{font-size:clamp(42px,7vw,80px); font-weight:600; line-height:1.04; letter-spa
 .pgrid{display:grid; grid-template-columns:repeat(3,1fr); gap:24px}
 .pcard{background:var(--bg); border-radius:22px; overflow:hidden; cursor:pointer; box-shadow:0 2px 12px rgba(29,29,31,.06); transition:transform .25s, box-shadow .25s; display:flex; flex-direction:column}
 .pcard:hover{transform:translateY(-5px); box-shadow:0 24px 44px -24px rgba(29,29,31,.4)}
-.pcard-img{height:230px; min-height:230px; position:relative; overflow:hidden; isolation:isolate; background:radial-gradient(120% 120% at 50% 12%,#ffffff 0%,#f4f2ed 100%)}
+.pcard-img{height:230px; min-height:230px; position:relative; overflow:hidden; isolation:isolate; background:#fff}
 .pcard-img .pimg{height:100%; width:100%; object-fit:cover}
 .pscore{position:absolute; top:14px; right:14px; background:rgba(29,29,31,.82); color:#F3E7C9; font-size:16px; font-weight:600; padding:7px 12px; border-radius:14px; line-height:1; backdrop-filter:blur(4px)}
 .pscore small{font-size:10px; opacity:.7; font-weight:500}
@@ -296,13 +319,17 @@ h1{font-size:clamp(42px,7vw,80px); font-weight:600; line-height:1.04; letter-spa
 .visual-mini::before{width:72px; height:72px; right:-30px; top:-30px; box-shadow:none}
 .visual-mini::after{left:9px; right:9px; bottom:8px}
 .visual-initials{font-size:16px; font-weight:700; letter-spacing:.04em}
-.product-packshot{object-fit:contain!important; padding:18px; background:#F3F0E9}
-.phero-img .product-packshot,.rviz .product-packshot{padding:clamp(24px,4vw,48px)}
+.product-packshot{width:auto!important; height:auto!important; max-width:100%; max-height:100%; object-fit:contain!important; object-position:center!important; padding:0; background:transparent; mix-blend-mode:multiply; box-sizing:border-box; margin:auto}
+.rviz>img.product-packshot{position:absolute!important; inset:18px!important; width:calc(100% - 36px)!important; height:calc(100% - 36px)!important; max-width:none!important; max-height:none!important; object-fit:contain!important; margin:0!important}
+.mini>img.product-packshot{position:absolute!important; inset:4px!important; width:calc(100% - 8px)!important; height:calc(100% - 8px)!important; max-width:none!important; max-height:none!important; object-fit:contain!important; margin:0!important}
+.pcard-img>img.product-packshot,.phero-img>img.product-packshot{position:absolute!important; inset:18px!important; width:calc(100% - 36px)!important; height:calc(100% - 36px)!important; max-width:none!important; max-height:none!important; object-fit:contain!important; margin:0!important}
+.phero-img,.pcard-img{display:grid; place-items:center}
+.phero-img .product-packshot,.pcard-img .product-packshot{max-width:calc(100% - 36px); max-height:calc(100% - 36px)}
 
 /* ---------- Fiche produit ---------- */
 .product{padding:clamp(40px,5vw,64px) 0 clamp(56px,7vw,88px); animation:fade .4s ease}
 .phero{display:grid; grid-template-columns:380px 1fr; gap:clamp(28px,5vw,64px); align-items:center; margin-top:20px}
-.phero-img{position:relative; aspect-ratio:3/4; border-radius:26px; overflow:hidden; background:radial-gradient(120% 120% at 50% 12%,#ffffff 0%,#f4f2ed 100%); box-shadow:0 40px 60px -34px rgba(29,29,31,.4)}
+.phero-img{position:relative; aspect-ratio:3/4; border-radius:26px; overflow:hidden; background:#fff; border:1px solid var(--line); box-shadow:0 40px 60px -34px rgba(29,29,31,.25)}
 .phero-img .pimg{height:100%; width:100%; object-fit:cover}
 .phero-name{font-size:clamp(32px,4.4vw,50px); font-weight:600; letter-spacing:-.03em; line-height:1.03; margin-top:8px}
 .phero-note{font-size:17.5px; line-height:1.6; color:#38383b; margin-top:18px}
@@ -363,7 +390,7 @@ footer{background:var(--bg2); padding:52px 0 46px}
 .foot-in{display:flex; justify-content:space-between; gap:28px; flex-wrap:wrap; align-items:flex-start}
 .foot-brand{font-size:18px; font-weight:600; letter-spacing:-.02em}
 .foot-brand p{font-size:14px; color:var(--faint); font-weight:400; margin-top:10px; max-width:36ch; line-height:1.5}
-.foot-links{display:flex; gap:32px; font-size:14px; color:var(--muted)}
+.foot-links{display:flex; gap:18px 28px; flex-wrap:wrap; justify-content:flex-end; min-width:0; font-size:14px; color:var(--muted)}
 .foot-links a,.foot-links button{cursor:pointer; font:inherit; color:inherit}
 .foot-links a:hover,.foot-links button:hover{color:var(--ink)}
 .foot-health{margin-top:36px; padding-top:26px; border-top:1px solid var(--border); font-size:13.5px; font-weight:600; color:var(--ink)}
@@ -384,20 +411,27 @@ footer{background:var(--bg2); padding:52px 0 46px}
 @media(max-width:840px){
   .steps,.cards,.alts,.compare-grid,.duel,.trust-strip{grid-template-columns:1fr}
   .rcard{grid-template-columns:1fr; justify-items:center; text-align:center}
-  .rviz{max-width:240px}
+  .rviz{width:min(100%,260px); max-width:260px; height:390px; padding:12px}
   .rnote{max-width:none}
   .rtags,.rbuy{justify-content:center}
   .rmatch{position:static; margin-bottom:10px}
 }
 @media(max-width:700px){
-  .nav-in{height:auto; min-height:58px; align-items:flex-start; padding-top:12px; padding-bottom:10px}
-  .nav-links{max-width:68vw; gap:8px 16px; justify-content:flex-end; flex-wrap:wrap}
-  .nlink{font-size:13px}
+  .nav-in{height:60px!important; min-height:60px; align-items:center; padding-top:0; padding-bottom:0; position:relative; flex-wrap:nowrap!important}
+  .logo{min-width:0; white-space:nowrap}
+  .logo-txt{display:inline!important; font-size:16px}
+  .nav-toggle{display:flex!important; flex:none}
+  .nav-links{display:none!important; position:absolute; z-index:60; top:61px; left:-18px; right:-18px; max-width:none; padding:10px 18px 18px; background:#fff; border-bottom:1px solid var(--ink); box-shadow:0 18px 34px rgba(20,17,12,.12)}
+  .nav.is-open .nav-links{display:grid!important; grid-template-columns:1fr; gap:0}
+  .nlink,.nlink-cta{display:flex; width:100%; min-height:46px; align-items:center; justify-content:space-between; border-bottom:1px solid var(--line); font-size:14px}
+  .nlink-cta{border-bottom:0}
+  .nlink-cta svg{order:2; width:14px; height:19px}
+  .foot-in{display:block}
+  .foot-links{justify-content:flex-start; margin-top:28px}
   .catalogue-filters{grid-template-columns:1fr 1fr}
   .catalogue-summary{align-items:flex-start; flex-direction:column}
 }
 @media(max-width:500px){.catalogue-filters{grid-template-columns:1fr}}
-@media(max-width:420px){.logo-txt{display:none}.nav-links{max-width:82vw}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important; animation-iteration-count:1!important; transition-duration:.01ms!important}}
 
 /* ============================================================
@@ -405,14 +439,9 @@ footer{background:var(--bg2); padding:52px 0 46px}
    Fond blanc, titres geants en capitales, geometrie franche,
    police Archivo + Inter, bouchon qui saute au survol.
    ============================================================ */
-@font-face{font-family:'Archivo';src:url('https://cdn.jsdelivr.net/npm/@fontsource/archivo/files/archivo-latin-800-normal.woff2') format('woff2');font-weight:800;font-display:swap}
-@font-face{font-family:'Archivo';src:url('https://cdn.jsdelivr.net/npm/@fontsource/archivo/files/archivo-latin-900-normal.woff2') format('woff2');font-weight:900;font-display:swap}
-@font-face{font-family:'InterV';src:url('https://cdn.jsdelivr.net/npm/@fontsource/inter/files/inter-latin-400-normal.woff2') format('woff2');font-weight:400;font-display:swap}
-@font-face{font-family:'InterV';src:url('https://cdn.jsdelivr.net/npm/@fontsource/inter/files/inter-latin-500-normal.woff2') format('woff2');font-weight:500;font-display:swap}
-@font-face{font-family:'InterV';src:url('https://cdn.jsdelivr.net/npm/@fontsource/inter/files/inter-latin-600-normal.woff2') format('woff2');font-weight:600;font-display:swap}
-@font-face{font-family:'InterV';src:url('https://cdn.jsdelivr.net/npm/@fontsource/inter/files/inter-latin-700-normal.woff2') format('woff2');font-weight:700;font-display:swap}
-:root{--sans:'InterV',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; --display:'Archivo','Arial Narrow',Arial,sans-serif}
-body{letter-spacing:-.006em}
+@font-face{font-family:'Archivo';src:url('/assets/archivo-latin-wght-normal.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+:root{--sans:'Archivo',Arial,sans-serif; --display:'Archivo','Arial Narrow',Arial,sans-serif}
+body,button,input,select,textarea{font-family:var(--sans);letter-spacing:-.006em}
 h1,.hero-photo h1,.page-hero h1{font-family:var(--display);font-weight:900;text-transform:uppercase;letter-spacing:-.025em;line-height:.9}
 .hero-photo h1{font-size:clamp(50px,9vw,122px)}
 .page-hero h1{font-size:clamp(40px,7vw,84px)}
@@ -437,19 +466,91 @@ h1,.hero-photo h1,.page-hero h1{font-family:var(--display);font-weight:900;text-
 .hero-photo .btn-primary:hover::before{animation:corkFly .85s cubic-bezier(.2,-.4,.3,1)}
 .hero-photo .btn-primary:hover::after{animation:corkFizz .7s ease-out .02s}
 @keyframes corkFly{0%{opacity:1;transform:translate(0,0) rotate(0)}30%{opacity:1;transform:translate(4px,-34px) rotate(130deg)}100%{opacity:0;transform:translate(15px,-70px) rotate(430deg)}}
-@keyframes corkFizz{0%{opacity:1;transform:translate(0,0) scale(1)}100%{opacity:0;transform:translate(9px,-30px) scale(.3)}}.page-hero::before{display:none!important}.page-hero{background:radial-gradient(130% 130% at 80% -25%,#221d13 0%,#0e0c08 60%)}.page-hero::after{background:linear-gradient(180deg,rgba(13,11,7,.12),rgba(13,11,7,.5))}.page-hero p{max-width:640px}.page-hero .tag{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.22);color:#fff}.page-hero .tag:hover{background:rgba(255,255,255,.14)}
+@keyframes corkFizz{0%{opacity:1;transform:translate(0,0) scale(1)}100%{opacity:0;transform:translate(9px,-30px) scale(.3)}}.page-hero::before{display:block!important}.page-hero{background:#0e0c08}.page-hero::after{background:linear-gradient(90deg,rgba(13,11,7,.86),rgba(13,11,7,.3))}.page-hero p{max-width:640px}.page-hero .tag{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.22);color:#fff}.page-hero .tag:hover{background:rgba(255,255,255,.14)}.page-hero .btn-primary{background:#fff;color:#14110c}
+@media(max-width:900px){.selector-guide-grid{grid-template-columns:1fr 1fr}.selector-guide-grid article{border-bottom:1px solid #CFCAC0}.selector-guide-grid article:nth-child(2n){border-right:0}.selector-guide-grid article:last-child{grid-column:1/-1;border-bottom:0}}
+@media(max-width:560px){.selector-guide-grid{grid-template-columns:1fr}.selector-guide-grid article,.selector-guide-grid article:nth-child(2n){border-right:0}.selector-guide-grid article:last-child{grid-column:auto}.criteria-summary{justify-content:flex-start}.res-head{text-align:left}}
+@media(max-width:700px){
+  html,body{max-width:100%;overflow-x:hidden}
+  body{overflow-wrap:anywhere}
+  .container,.narrow{padding-left:18px;padding-right:18px}
+  .section{padding:58px 0}
+  .hero-photo{min-height:500px;padding:88px 0 72px}
+  .hero-photo h1{font-size:clamp(44px,13vw,58px);line-height:.92}
+  .hero-photo .lead{font-size:18px}
+  .hero-photo .hero-cta{gap:18px}
+  .hero-photo .hero-cta .btn{width:100%;justify-content:center}
+  .page-hero{padding:54px 0 42px}
+  .page-hero h1{font-size:clamp(36px,11vw,52px)}
+  .page-hero .rtags{justify-content:flex-start}
+  .band{padding:76px 0}
+  .band h2{font-size:clamp(34px,10vw,48px)}
+  .qbar{margin-bottom:34px}
+  .qtitle{font-size:clamp(28px,9vw,38px)}
+  .qhint{font-size:16px}
+  .qopt{padding:18px 16px;gap:12px}
+  .qopt .qe{width:28px}
+  .qopt .ql{font-size:17px;line-height:1.2}
+  .qopt .qd{font-size:14px;line-height:1.4}
+  .rviz{height:330px}
+  .rviz>img.product-packshot{inset:12px!important; width:calc(100% - 24px)!important; height:calc(100% - 24px)!important}
+  .rcard{gap:18px}
+  .rbody{width:100%; min-width:0}
+  .rbuy{align-items:stretch}
+  .rbuy .btn{width:100%;justify-content:center;white-space:normal;text-align:center}
+  .alt-foot{align-items:flex-start;gap:14px}
+  .article{padding-top:38px}
+  .a-title{font-size:clamp(31px,10vw,43px)}
+  .a-cover{height:clamp(180px,58vw,240px)}
+  .prose{font-size:17px;line-height:1.65}
+  .prose h3{font-size:23px}
+  .article-cta{padding:28px 20px}
+  .compare-wrap{margin-left:-18px;margin-right:-18px;padding:0 18px;overscroll-behavior-x:contain}
+  .compare-table{min-width:620px}
+  .duel-col{padding:24px 20px}
+  .catalogue-tools{padding:18px}
+  .pblock.alt{padding:28px 20px}
+  .agegate{padding:18px}
+  .agegate .btns{display:grid;grid-template-columns:1fr}
+  .agegate .btn{width:100%;justify-content:center}
+  footer{padding:44px 0 38px}
+}
+@media(max-width:560px){
+  .result{padding-top:34px}
+  .res-head{margin-bottom:30px}
+  .res-head h1{font-size:clamp(32px,10.5vw,44px)}
+  .rcard{padding:28px 0 34px}
+  .rviz{width:min(100%,220px); max-width:220px; height:300px; padding:8px; margin:0 auto}
+  .rviz>img.product-packshot{inset:8px!important; width:calc(100% - 16px)!important; height:calc(100% - 16px)!important}
+  .rname{font-size:clamp(29px,9vw,38px); overflow-wrap:anywhere}
+  .rsub{line-height:1.45}
+  .alts{gap:14px}
+  .alt{padding:20px 0}
+  .alt-main{grid-template-columns:104px minmax(0,1fr); gap:16px; align-items:center}
+  .mini{width:104px; height:158px; padding:6px}
+  .mini>img.product-packshot{inset:6px!important; width:calc(100% - 12px)!important; height:calc(100% - 12px)!important}
+  .alt .an{font-size:19px; line-height:1.15; overflow-wrap:anywhere}
+  .alt .ah{font-size:14px; line-height:1.4}
+  .alt-reason{min-height:0; margin-top:10px}
+  .alt-foot{margin-top:16px; padding-top:16px; align-items:center}
+  .partner-pcard-img{height:280px!important}
+  .pcard-b{padding:18px}
+  .pcard-foot{align-items:flex-start;gap:12px}
+  .pcard-price{font-size:19px}
+  .foot-links{display:grid;grid-template-columns:1fr 1fr;gap:14px 18px}
+}
 
 </style>
 </head>
 <body>
 <a class="skip-link" href="#main-content">Aller au contenu</a>
 <header class="nav"><div class="container nav-in">
-    <a class="logo" href="/"><span class="logo-txt">Quel<b>Champagne</b></span><svg viewBox="0 0 48 64" fill="none" aria-hidden="true" style="width:15px;height:24px;color:#9C7A34;flex:none;overflow:visible;margin-left:3px">
+    <a class="logo" href="/"><svg viewBox="0 0 48 64" fill="none" aria-hidden="true" style="width:15px;height:24px;color:#9C7A34;flex:none;overflow:visible">
     <path d="M8 16C8 7.7 14.7 2 24 2s16 5.5 16 14c0 6.3-3.6 10.2-9 13.8-4.4 3-6.2 5.7-6.2 10.2" stroke="currentColor" stroke-width="4.8" stroke-linecap="round"/>
     <path d="M16 47h16c-.7 4.4-3.7 6.8-8 6.8s-7.3-2.4-8-6.8Z" fill="currentColor"/>
     <path d="M24 53.3v6.2M19.5 61.5h9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
-  </svg></a>
-    <nav class="nav-links" aria-label="Navigation principale"><a class="nlink" href="/champagnes/">La sélection</a><a class="nlink" href="/comparateur/">Comparer</a><a class="nlink on" href="/blog/" aria-current="page">Blog</a><a class="nlink-cta" href="/selecteur/"><svg width="11" height="15" viewBox="0 0 48 64" aria-hidden="true"><path d="M8 16C8 7.7 14.7 2 24 2s16 5.5 16 14c0 6.3-3.6 10.2-9 13.8-4.4 3-6.2 5.7-6.2 10.2" stroke="#9C7A34" stroke-width="4.8" stroke-linecap="round" fill="none"/><path d="M16 47h16c-.7 4.4-3.7 6.8-8 6.8s-7.3-2.4-8-6.8Z" fill="#9C7A34"/><path d="M24 53.3v6.2M19.5 61.5h9" stroke="#9C7A34" stroke-width="2.2" stroke-linecap="round"/></svg>Trouver mon champagne</a></nav>
+  </svg><span class="logo-txt">Quel<b>Champagne</b></span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Ouvrir le menu"><span></span><span></span></button>
+    <nav class="nav-links" id="primary-navigation" aria-label="Navigation principale"><a class="nlink" href="/champagnes/">La sélection</a><a class="nlink" href="/comparateur/">Comparer</a><a class="nlink on" href="/blog/" aria-current="page">Blog</a><a class="nlink-cta" href="/expert/">Sélecteur expert</a></nav>
   </div></header>
 <main id="main-content"><section class="article"><div class="narrow">
     <a class="a-back" href="/blog/">‹ Retour au blog</a>
@@ -471,16 +572,40 @@ h1,.hero-photo h1,.page-hero h1{font-family:var(--display);font-weight:900;text-
   </div></section></main>
 <footer><div class="container">
     <div class="foot-in">
-      <div class="foot-brand"><span class="foot-brand-name">QuelChampagne<svg viewBox="0 0 48 64" fill="none" aria-hidden="true" style="width:15px;height:24px;color:#9C7A34;flex:none;overflow:visible;margin-left:3px">
+      <div class="foot-brand"><span class="foot-brand-name">QuelChampagne<svg viewBox="0 0 48 64" fill="none" aria-hidden="true" style="width:15px;height:24px;color:#9C7A34;flex:none;overflow:visible">
     <path d="M8 16C8 7.7 14.7 2 24 2s16 5.5 16 14c0 6.3-3.6 10.2-9 13.8-4.4 3-6.2 5.7-6.2 10.2" stroke="currentColor" stroke-width="4.8" stroke-linecap="round"/>
     <path d="M16 47h16c-.7 4.4-3.7 6.8-8 6.8s-7.3-2.4-8-6.8Z" fill="currentColor"/>
     <path d="M24 53.3v6.2M19.5 61.5h9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
-  </svg></span><p>Le sélecteur indépendant qui vous oriente vers la cuvée juste, en quatre questions.</p></div>
-      <nav class="foot-links" aria-label="Navigation secondaire"><a href="/selecteur/">Le sélecteur</a><a href="/comparateur/">Comparer</a><a href="/notre-methode/">Notre méthode</a><a href="/a-propos/">À propos</a><a href="/mentions-legales/">Mentions légales</a><a href="/confidentialite/">Confidentialité</a></nav>
+  </svg></span><p>Un conseil indépendant pour choisir selon le style, l’accord et le budget.</p></div>
+      <nav class="foot-links" aria-label="Navigation secondaire"><a href="/expert/">Le sélecteur expert</a><a href="/selecteur/">Le sélecteur rapide</a><a href="/comparateur/">Comparer</a><a href="/notre-methode/">Notre méthode</a><a href="/a-propos/">À propos</a><a href="/partenaires/">Professionnels</a><a href="/mentions-legales/">Mentions légales</a><a href="/confidentialite/">Confidentialité</a><button onclick="window.qcAffiliatePreferences&&window.qcAffiliatePreferences()">Préférence d’affiliation</button></nav>
     </div>
     <div class="foot-health">L'abus d'alcool est dangereux pour la santé. À consommer avec modération.</div>
-    <div class="foot-disc">Site réservé aux personnes majeures. QuelChampagne présente une sélection éditoriale indépendante à visée informative. Les liens partenaires ne sont affichés qu'après contrôle du produit, du prix et de la disponibilité. Les fourchettes non marchandes restent indicatives.</div>
+    <div class="foot-disc">Site réservé aux personnes majeures. QuelChampagne propose des informations et des conseils indépendants. Chaque prix affiché correspond au dernier relevé de l’offre présentée et porte sa date de contrôle.</div>
   </div></footer>
+<script>
+(function(){
+  var header=document.querySelector('.nav');
+  var toggle=header&&header.querySelector('.nav-toggle');
+  var links=header&&header.querySelector('.nav-links');
+  if(!header||!toggle||!links)return;
+  function close(){
+    header.classList.remove('is-open');
+    toggle.setAttribute('aria-expanded','false');
+    toggle.setAttribute('aria-label','Ouvrir le menu');
+  }
+  toggle.addEventListener('click',function(){
+    var open=!header.classList.contains('is-open');
+    header.classList.toggle('is-open',open);
+    toggle.setAttribute('aria-expanded',String(open));
+    toggle.setAttribute('aria-label',open?'Fermer le menu':'Ouvrir le menu');
+  });
+  links.addEventListener('click',function(event){if(event.target.closest('a'))close();});
+  document.addEventListener('keydown',function(event){if(event.key==='Escape')close();});
+  document.addEventListener('click',function(event){if(header.classList.contains('is-open')&&!header.contains(event.target))close();});
+  var desktop=window.matchMedia&&window.matchMedia('(min-width:701px)');
+  if(desktop&&desktop.addEventListener)desktop.addEventListener('change',function(event){if(event.matches)close();});
+})();
+</script>
 <script>
 (function(){
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion:reduce)').matches;
