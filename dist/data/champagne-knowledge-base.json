@@ -1,7 +1,7 @@
 {
   "version": 1,
   "engineVersion": "1.0.0",
-  "generatedAt": "2026-08-03T10:14:55.889Z",
+  "generatedAt": "2026-08-03T10:37:52.757Z",
   "axes": {
     "freshness": {
       "label": "Fraîcheur",
@@ -259,6 +259,7 @@
           "accessibility": 2
         },
         "aromas": [
+          "fruits blancs",
           "brioche"
         ]
       },
@@ -279,7 +280,7 @@
         ]
       },
       "editorial": {
-        "summary": "Un brut Premier Cru au caractère nuancé et persistant. Au premier plan : brioche. L’assemblage réunit Pinot Noir, Meunier, Chardonnay. À privilégier avec crustacés, poisson, apéritif.",
+        "summary": "Un brut Premier Cru au caractère nuancé et persistant. Au premier plan : fruits blancs, brioche. L’assemblage réunit Pinot Noir, Meunier, Chardonnay. À privilégier avec crustacés, poisson, apéritif.",
         "choose": "Son équilibre permet de l’accorder avec crustacés, poisson, apéritif.",
         "avoid": "Écartez-la si vous recherchez une bouteille très simple et immédiatement consensuelle : son profil demande davantage d’attention."
       },
@@ -426,6 +427,7 @@
           "pomme",
           "pêche",
           "brioche",
+          "pâtisserie",
           "amande"
         ]
       },
@@ -507,6 +509,7 @@
           "accessibility": 2
         },
         "aromas": [
+          "fruits blancs",
           "fleurs blanches",
           "brioche"
         ]
@@ -528,7 +531,7 @@
         ]
       },
       "editorial": {
-        "summary": "Un brut Premier Cru au caractère nuancé et persistant. Au premier plan : fleurs blanches, brioche. L’assemblage réunit Pinot Noir, Chardonnay. À privilégier avec crustacés, poisson, apéritif.",
+        "summary": "Un brut Premier Cru au caractère nuancé et persistant. Au premier plan : fruits blancs, fleurs blanches, brioche. L’assemblage réunit Pinot Noir, Chardonnay. À privilégier avec crustacés, poisson, apéritif.",
         "choose": "Son équilibre permet de l’accorder avec crustacés, poisson, apéritif.",
         "avoid": "Écartez-la si vous recherchez une bouteille très simple et immédiatement consensuelle : son profil demande davantage d’attention."
       },
@@ -672,6 +675,7 @@
         },
         "aromas": [
           "agrumes",
+          "fruits blancs",
           "brioche"
         ]
       },
@@ -689,7 +693,7 @@
         ]
       },
       "editorial": {
-        "summary": "Un brut au caractère vif et structuré. Au premier plan : agrumes, brioche. L’assemblage réunit Meunier, Chardonnay, Pinot Noir. À privilégier avec poisson.",
+        "summary": "Un brut au caractère vif et structuré. Au premier plan : agrumes, fruits blancs, brioche. L’assemblage réunit Meunier, Chardonnay, Pinot Noir. À privilégier avec poisson.",
         "choose": "Sa matière affirmée trouve sa place à table, notamment avec poisson.",
         "avoid": "Écartez-la pour un apéritif très léger : sa matière appelle plutôt poisson."
       },
@@ -751,7 +755,8 @@
         "aromas": [
           "fruits rouges",
           "brioche",
-          "amande"
+          "amande",
+          "fruits secs"
         ]
       },
       "uses": {
@@ -772,7 +777,7 @@
         ]
       },
       "editorial": {
-        "summary": "Un blanc de noirs brut au caractère rond et généreux. Au premier plan : fruits rouges, brioche, amande. L’assemblage réunit Pinot Noir, Meunier. À privilégier avec poisson, fruits rouges, apéritif.",
+        "summary": "Un blanc de noirs brut au caractère rond et généreux. Au premier plan : fruits rouges, brioche, amande, fruits secs. L’assemblage réunit Pinot Noir, Meunier. À privilégier avec poisson, fruits rouges, apéritif.",
         "choose": "Sa matière affirmée trouve sa place à table, notamment avec poisson, fruits rouges, apéritif.",
         "avoid": "Écartez-la si vous recherchez une expression austère et tranchante : son profil privilégie l’ampleur."
       },
@@ -1080,8 +1085,11 @@
         },
         "aromas": [
           "agrumes",
+          "fruits blancs",
+          "fruits jaunes",
           "pêche",
           "brioche",
+          "vanille",
           "minéralité"
         ]
       },
@@ -1101,7 +1109,7 @@
         ]
       },
       "editorial": {
-        "summary": "Un brut au caractère rond et généreux. Au premier plan : agrumes, pêche, brioche, minéralité. L’assemblage réunit Meunier, Pinot Noir. À privilégier avec poisson, apéritif.",
+        "summary": "Un brut au caractère rond et généreux. Au premier plan : agrumes, fruits blancs, fruits jaunes, pêche. L’assemblage réunit Meunier, Pinot Noir. À privilégier avec poisson, apéritif.",
         "choose": "Sa texture ample accompagne volontiers poisson, apéritif.",
         "avoid": "Écartez-la si vous recherchez une expression austère et tranchante : son profil privilégie l’ampleur."
       },
@@ -1161,6 +1169,7 @@
           "accessibility": 2
         },
         "aromas": [
+          "fruits blancs",
           "brioche"
         ]
       },
@@ -1181,7 +1190,7 @@
         ]
       },
       "editorial": {
-        "summary": "Un brut au caractère nuancé et persistant. Au premier plan : brioche. L’assemblage réunit Pinot Noir, Meunier, Chardonnay. À privilégier avec crustacés, poisson, apéritif.",
+        "summary": "Un brut au caractère nuancé et persistant. Au premier plan : fruits blancs, brioche. L’assemblage réunit Pinot Noir, Meunier, Chardonnay. À privilégier avec crustacés, poisson, apéritif.",
         "choose": "Son équilibre permet de l’accorder avec crustacés, poisson, apéritif.",
         "avoid": "Écartez-la si vous recherchez une bouteille très simple et immédiatement consensuelle : son profil demande davantage d’attention."
       },
@@ -1243,7 +1252,8 @@
           "pomme",
           "poire",
           "fleurs blanches",
-          "brioche"
+          "brioche",
+          "pâtisserie"
         ]
       },
       "uses": {
@@ -1409,6 +1419,7 @@
         },
         "aromas": [
           "agrumes",
+          "fruits blancs",
           "pomme",
           "brioche"
         ]
@@ -1431,9 +1442,9 @@
         ]
       },
       "editorial": {
-        "summary": "Un brut au caractère frais et précis. Au premier plan : agrumes, pomme, brioche. L’assemblage réunit Meunier, Pinot Noir, Chardonnay. À privilégier avec poisson, fromages, apéritif.",
+        "summary": "Un brut au caractère frais et précis. Au premier plan : agrumes, fruits blancs, pomme, brioche. L’assemblage réunit Meunier, Pinot Noir, Chardonnay. À privilégier avec poisson, fromages, apéritif.",
         "choose": "Sa fraîcheur nette convient particulièrement à poisson, fromages, apéritif.",
-        "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et pomme."
+        "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et fruits blancs."
       },
       "evidence": {
         "confidence": 0.78,
@@ -1491,7 +1502,8 @@
         },
         "aromas": [
           "agrumes",
-          "fleurs blanches"
+          "fleurs blanches",
+          "fruits secs"
         ]
       },
       "uses": {
@@ -1512,7 +1524,7 @@
         ]
       },
       "editorial": {
-        "summary": "Un blanc de noirs brut au caractère vif et structuré. Au premier plan : agrumes, fleurs blanches. L’assemblage réunit Pinot Noir. À privilégier avec crustacés, poisson, fromages.",
+        "summary": "Un blanc de noirs brut au caractère vif et structuré. Au premier plan : agrumes, fleurs blanches, fruits secs. L’assemblage réunit Pinot Noir. À privilégier avec crustacés, poisson, fromages.",
         "choose": "Sa matière affirmée trouve sa place à table, notamment avec crustacés, poisson, fromages.",
         "avoid": "Écartez-la si vous recherchez une expression austère et tranchante : son profil privilégie l’ampleur."
       },
@@ -1572,6 +1584,7 @@
         },
         "aromas": [
           "agrumes",
+          "fruits blancs",
           "poire",
           "fleurs blanches",
           "minéralité"
@@ -1593,7 +1606,7 @@
         ]
       },
       "editorial": {
-        "summary": "Un brut au caractère rond et généreux. Au premier plan : agrumes, poire, fleurs blanches, minéralité. L’assemblage réunit Pinot Noir, Chardonnay. À privilégier avec poisson, apéritif.",
+        "summary": "Un brut au caractère rond et généreux. Au premier plan : agrumes, fruits blancs, poire, fleurs blanches. L’assemblage réunit Pinot Noir, Chardonnay. À privilégier avec poisson, apéritif.",
         "choose": "Sa texture ample accompagne volontiers poisson, apéritif.",
         "avoid": "Écartez-la si vous recherchez une expression austère et tranchante : son profil privilégie l’ampleur."
       },
@@ -1654,6 +1667,7 @@
         },
         "aromas": [
           "agrumes",
+          "fruits blancs",
           "poire",
           "pêche",
           "fleurs blanches",
@@ -1678,7 +1692,7 @@
         ]
       },
       "editorial": {
-        "summary": "Un brut au caractère rond et généreux. Au premier plan : agrumes, poire, pêche, fleurs blanches. L’assemblage réunit Chardonnay, Pinot Noir, Meunier. À privilégier avec poisson, volaille, apéritif.",
+        "summary": "Un brut au caractère rond et généreux. Au premier plan : agrumes, fruits blancs, poire, pêche. L’assemblage réunit Chardonnay, Pinot Noir, Meunier. À privilégier avec poisson, volaille, apéritif.",
         "choose": "Sa texture ample accompagne volontiers poisson, volaille, apéritif.",
         "avoid": "Écartez-la si vous recherchez une expression austère et tranchante : son profil privilégie l’ampleur."
       },
@@ -1741,6 +1755,7 @@
         "aromas": [
           "agrumes",
           "pomme",
+          "pâtisserie",
           "salinité"
         ]
       },
@@ -1763,7 +1778,7 @@
         ]
       },
       "editorial": {
-        "summary": "Un brut Premier Cru au caractère nuancé et persistant. Au premier plan : agrumes, pomme, salinité. L’assemblage réunit Pinot Noir, Chardonnay, Meunier. À privilégier avec huîtres, poisson, fromages.",
+        "summary": "Un brut Premier Cru au caractère nuancé et persistant. Au premier plan : agrumes, pomme, pâtisserie, salinité. L’assemblage réunit Pinot Noir, Chardonnay, Meunier. À privilégier avec huîtres, poisson, fromages.",
         "choose": "Sa fraîcheur nette convient particulièrement à huîtres, poisson, fromages.",
         "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et pomme."
       },
@@ -1821,7 +1836,9 @@
           "accessibility": 2
         },
         "aromas": [
-          "agrumes"
+          "agrumes",
+          "fruits blancs",
+          "pâtisserie"
         ]
       },
       "uses": {
@@ -1843,9 +1860,9 @@
         ]
       },
       "editorial": {
-        "summary": "Un brut au caractère nuancé et persistant. Au premier plan : agrumes. L’assemblage réunit Pinot Noir. À privilégier avec crustacés, poisson, fromages.",
+        "summary": "Un brut au caractère nuancé et persistant. Au premier plan : agrumes, fruits blancs, pâtisserie. L’assemblage réunit Pinot Noir. À privilégier avec crustacés, poisson, fromages.",
         "choose": "Sa fraîcheur nette convient particulièrement à crustacés, poisson, fromages.",
-        "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes."
+        "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et fruits blancs."
       },
       "evidence": {
         "confidence": 0.78,
@@ -1904,10 +1921,12 @@
         },
         "aromas": [
           "agrumes",
+          "fruits blancs",
           "pomme",
           "pêche",
           "fleurs blanches",
           "brioche",
+          "pâtisserie",
           "amande"
         ]
       },
@@ -1929,9 +1948,9 @@
         ]
       },
       "editorial": {
-        "summary": "Un brut au caractère nuancé et persistant. Au premier plan : agrumes, pomme, pêche, fleurs blanches. L’assemblage réunit Chardonnay, Pinot Noir, Meunier. À privilégier avec huîtres, poisson, apéritif.",
+        "summary": "Un brut au caractère nuancé et persistant. Au premier plan : agrumes, fruits blancs, pomme, pêche. L’assemblage réunit Chardonnay, Pinot Noir, Meunier. À privilégier avec huîtres, poisson, apéritif.",
         "choose": "Sa fraîcheur nette convient particulièrement à huîtres, poisson, apéritif.",
-        "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et pomme."
+        "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et fruits blancs."
       },
       "evidence": {
         "confidence": 0.78,
@@ -1989,7 +2008,8 @@
         },
         "aromas": [
           "agrumes",
-          "fruits rouges"
+          "fruits rouges",
+          "rose"
         ]
       },
       "uses": {
@@ -2012,7 +2032,7 @@
         ]
       },
       "editorial": {
-        "summary": "Un rosé brut au caractère rond et généreux. Au premier plan : agrumes, fruits rouges. L’assemblage réunit Meunier, Pinot Noir. À privilégier avec poisson, fruits rouges, dessert.",
+        "summary": "Un rosé brut au caractère rond et généreux. Au premier plan : agrumes, fruits rouges, rose. L’assemblage réunit Meunier, Pinot Noir. À privilégier avec poisson, fruits rouges, dessert.",
         "choose": "Sa texture ample accompagne volontiers poisson, fruits rouges, dessert.",
         "avoid": "Écartez-la si vous recherchez une expression austère et tranchante : son profil privilégie l’ampleur."
       },
@@ -2237,7 +2257,8 @@
         "aromas": [
           "agrumes",
           "fruits rouges",
-          "fleurs blanches"
+          "fleurs blanches",
+          "rose"
         ]
       },
       "uses": {
@@ -2260,7 +2281,7 @@
         ]
       },
       "editorial": {
-        "summary": "Un rosé brut au caractère rond et généreux. Au premier plan : agrumes, fruits rouges, fleurs blanches. L’assemblage réunit Pinot Noir. À privilégier avec poisson, fruits rouges, dessert.",
+        "summary": "Un rosé brut au caractère rond et généreux. Au premier plan : agrumes, fruits rouges, fleurs blanches, rose. L’assemblage réunit Pinot Noir. À privilégier avec poisson, fruits rouges, dessert.",
         "choose": "Sa texture ample accompagne volontiers poisson, fruits rouges, dessert.",
         "avoid": "Écartez-la si vous recherchez une expression austère et tranchante : son profil privilégie l’ampleur."
       },
@@ -2409,6 +2430,7 @@
           "pomme",
           "fleurs blanches",
           "brioche",
+          "pâtisserie",
           "minéralité"
         ]
       },
@@ -2578,6 +2600,7 @@
         },
         "aromas": [
           "agrumes",
+          "fruits blancs",
           "salinité"
         ]
       },
@@ -2600,9 +2623,9 @@
         ]
       },
       "editorial": {
-        "summary": "Un brut Premier Cru au caractère frais et précis. Au premier plan : agrumes, salinité. L’assemblage réunit Chardonnay, Pinot Noir. À privilégier avec crustacés, poisson, fromages.",
+        "summary": "Un brut Premier Cru au caractère frais et précis. Au premier plan : agrumes, fruits blancs, salinité. L’assemblage réunit Chardonnay, Pinot Noir. À privilégier avec crustacés, poisson, fromages.",
         "choose": "Sa fraîcheur nette convient particulièrement à crustacés, poisson, fromages.",
-        "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et salinité."
+        "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et fruits blancs."
       },
       "evidence": {
         "confidence": 0.78,
@@ -2661,6 +2684,7 @@
           "accessibility": 3.5
         },
         "aromas": [
+          "fruits blancs",
           "pomme",
           "poire",
           "fleurs blanches",
@@ -2685,7 +2709,7 @@
         ]
       },
       "editorial": {
-        "summary": "Un brut Premier Cru au caractère équilibré et polyvalent. Au premier plan : pomme, poire, fleurs blanches, brioche. L’assemblage réunit Meunier, Pinot Noir, Chardonnay. À privilégier avec crustacés, poisson, apéritif.",
+        "summary": "Un brut Premier Cru au caractère équilibré et polyvalent. Au premier plan : fruits blancs, pomme, poire, fleurs blanches. L’assemblage réunit Meunier, Pinot Noir, Chardonnay. À privilégier avec crustacés, poisson, apéritif.",
         "choose": "Son équilibre permet de l’accorder avec crustacés, poisson, apéritif.",
         "avoid": "Écartez-la si vous recherchez un style très tendu ou très puissant : elle mise avant tout sur l’équilibre."
       },
@@ -2747,6 +2771,7 @@
         "aromas": [
           "fruits rouges",
           "brioche",
+          "rose",
           "minéralité"
         ]
       },
@@ -2770,7 +2795,7 @@
         ]
       },
       "editorial": {
-        "summary": "Un rosé brut Grand Cru au caractère rond et généreux. Au premier plan : fruits rouges, brioche, minéralité. L’assemblage réunit Chardonnay, Pinot Noir. À privilégier avec sushis, poisson, fruits rouges.",
+        "summary": "Un rosé brut Grand Cru au caractère rond et généreux. Au premier plan : fruits rouges, brioche, rose, minéralité. L’assemblage réunit Chardonnay, Pinot Noir. À privilégier avec sushis, poisson, fruits rouges.",
         "choose": "Sa texture ample accompagne volontiers sushis, poisson, fruits rouges.",
         "avoid": "Écartez-la si vous recherchez une expression austère et tranchante : son profil privilégie l’ampleur."
       },
@@ -2832,7 +2857,9 @@
         },
         "aromas": [
           "fruits rouges",
-          "fleurs blanches"
+          "fleurs blanches",
+          "pâtisserie",
+          "rose"
         ]
       },
       "uses": {
@@ -2855,7 +2882,7 @@
         ]
       },
       "editorial": {
-        "summary": "Un rosé brut Grand Cru au caractère rond et généreux. Au premier plan : fruits rouges, fleurs blanches. L’assemblage réunit Pinot Noir, Chardonnay. À privilégier avec poisson, fruits rouges, dessert.",
+        "summary": "Un rosé brut Grand Cru au caractère rond et généreux. Au premier plan : fruits rouges, fleurs blanches, pâtisserie, rose. L’assemblage réunit Pinot Noir, Chardonnay. À privilégier avec poisson, fruits rouges, dessert.",
         "choose": "Sa texture ample accompagne volontiers poisson, fruits rouges, dessert.",
         "avoid": "Écartez-la si vous recherchez une expression austère et tranchante : son profil privilégie l’ampleur."
       },
@@ -2917,6 +2944,7 @@
           "agrumes",
           "pomme",
           "fleurs blanches",
+          "pâtisserie",
           "minéralité"
         ]
       },
@@ -2935,7 +2963,7 @@
         ]
       },
       "editorial": {
-        "summary": "Un blanc de blancs brut Grand Cru au caractère nuancé et persistant. Au premier plan : agrumes, pomme, fleurs blanches, minéralité. L’assemblage réunit Chardonnay. À privilégier avec apéritif.",
+        "summary": "Un blanc de blancs brut Grand Cru au caractère nuancé et persistant. Au premier plan : agrumes, pomme, fleurs blanches, pâtisserie. L’assemblage réunit Chardonnay. À privilégier avec apéritif.",
         "choose": "Sa fraîcheur nette convient particulièrement à apéritif.",
         "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et pomme."
       },
@@ -2995,7 +3023,8 @@
         },
         "aromas": [
           "agrumes",
-          "pomme"
+          "pomme",
+          "fruits secs"
         ]
       },
       "uses": {
@@ -3016,7 +3045,7 @@
         ]
       },
       "editorial": {
-        "summary": "Un brut nature Premier Cru au caractère frais et précis. Au premier plan : agrumes, pomme. L’assemblage réunit Chardonnay. À privilégier avec huîtres, poisson, apéritif.",
+        "summary": "Un brut nature Premier Cru au caractère frais et précis. Au premier plan : agrumes, pomme, fruits secs. L’assemblage réunit Chardonnay. À privilégier avec huîtres, poisson, apéritif.",
         "choose": "Sa fraîcheur nette convient particulièrement à huîtres, poisson, apéritif.",
         "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et pomme."
       },
@@ -3076,6 +3105,7 @@
         },
         "aromas": [
           "fruits rouges",
+          "rose",
           "épices"
         ]
       },
@@ -3097,7 +3127,7 @@
         ]
       },
       "editorial": {
-        "summary": "Un rosé demi-sec au caractère rond et généreux. Au premier plan : fruits rouges, épices. L’assemblage réunit Pinot Noir. À privilégier avec fruits rouges, dessert, apéritif.",
+        "summary": "Un rosé demi-sec au caractère rond et généreux. Au premier plan : fruits rouges, rose, épices. L’assemblage réunit Pinot Noir. À privilégier avec fruits rouges, dessert, apéritif.",
         "choose": "Sa texture ample accompagne volontiers fruits rouges, dessert, apéritif.",
         "avoid": "Écartez-la avec des huîtres ou si vous recherchez une finale très sèche : sa douceur convient davantage au dessert."
       },
@@ -3157,6 +3187,7 @@
           "accessibility": 3
         },
         "aromas": [
+          "fruits blancs",
           "fruits rouges",
           "fruits mûrs",
           "brioche"
@@ -3182,7 +3213,7 @@
         ]
       },
       "editorial": {
-        "summary": "Un brut au caractère rond et généreux. Au premier plan : fruits rouges, fruits mûrs, brioche. L’assemblage réunit Pinot Noir, Chardonnay, Meunier. À privilégier avec huîtres, sushis, poisson.",
+        "summary": "Un brut au caractère rond et généreux. Au premier plan : fruits blancs, fruits rouges, fruits mûrs, brioche. L’assemblage réunit Pinot Noir, Chardonnay, Meunier. À privilégier avec huîtres, sushis, poisson.",
         "choose": "Sa texture ample accompagne volontiers huîtres, sushis, poisson.",
         "avoid": "Écartez-la si vous recherchez une expression austère et tranchante : son profil privilégie l’ampleur."
       },
@@ -3494,7 +3525,8 @@
           "agrumes",
           "pomme",
           "fleurs blanches",
-          "amande"
+          "amande",
+          "fruits secs"
         ]
       },
       "uses": {
@@ -3665,7 +3697,8 @@
           "pomme",
           "fleurs blanches",
           "brioche",
-          "amande"
+          "amande",
+          "fruits secs"
         ]
       },
       "uses": {
@@ -3836,7 +3869,8 @@
         },
         "aromas": [
           "agrumes",
-          "fleurs blanches"
+          "fleurs blanches",
+          "rose"
         ]
       },
       "uses": {
@@ -3858,7 +3892,7 @@
         ]
       },
       "editorial": {
-        "summary": "Un rosé extra-brut Premier Cru millésimé au caractère nuancé et persistant. Au premier plan : agrumes, fleurs blanches. L’assemblage réunit Meunier. À privilégier avec crustacés, poisson, apéritif.",
+        "summary": "Un rosé extra-brut Premier Cru millésimé au caractère nuancé et persistant. Au premier plan : agrumes, fleurs blanches, rose. L’assemblage réunit Meunier. À privilégier avec crustacés, poisson, apéritif.",
         "choose": "Sa fraîcheur nette convient particulièrement à crustacés, poisson, apéritif.",
         "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et fleurs blanches."
       },
@@ -3917,6 +3951,7 @@
           "accessibility": 2
         },
         "aromas": [
+          "fruits blancs",
           "minéralité"
         ]
       },
@@ -3938,7 +3973,7 @@
         ]
       },
       "editorial": {
-        "summary": "Un brut millésimé au caractère rond et généreux. Au premier plan : minéralité. L’assemblage réunit Chardonnay. À privilégier avec crustacés, poisson, apéritif.",
+        "summary": "Un brut millésimé au caractère rond et généreux. Au premier plan : fruits blancs, minéralité. L’assemblage réunit Chardonnay. À privilégier avec crustacés, poisson, apéritif.",
         "choose": "Sa texture ample accompagne volontiers crustacés, poisson, apéritif.",
         "avoid": "Écartez-la si vous recherchez une expression austère et tranchante : son profil privilégie l’ampleur."
       },
@@ -3998,6 +4033,7 @@
         },
         "aromas": [
           "agrumes",
+          "fruits blancs",
           "fleurs blanches"
         ]
       },
@@ -4020,9 +4056,9 @@
         ]
       },
       "editorial": {
-        "summary": "Un brut millésimé au caractère nuancé et persistant. Au premier plan : agrumes, fleurs blanches. L’assemblage réunit Chardonnay. À privilégier avec huîtres, crustacés, poisson.",
+        "summary": "Un brut millésimé au caractère nuancé et persistant. Au premier plan : agrumes, fruits blancs, fleurs blanches. L’assemblage réunit Chardonnay. À privilégier avec huîtres, crustacés, poisson.",
         "choose": "Sa fraîcheur nette convient particulièrement à huîtres, crustacés, poisson.",
-        "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et fleurs blanches."
+        "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et fruits blancs."
       },
       "evidence": {
         "confidence": 0.78,

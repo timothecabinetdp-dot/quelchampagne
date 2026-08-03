@@ -12,6 +12,14 @@ import { CHAMPAGNES } from './boutique.mjs';
 const OUTPUT = new URL('data/bottle-of-italy-products.json', import.meta.url);
 const CONCURRENCY = 6;
 const checkedAt = new Date().toISOString();
+const wait = ms => new Promise(resolve=>setTimeout(resolve,ms));
+
+const TECHNICAL_LABELS = [
+  'Producteur','Nom','Variété','Gradation','Format','Profil aromatique',
+  'Méthode de vinification','Sucres résiduels','Région','Pays','Taper',
+  'Vieillissement','Type de fût','Couleur','Température de service',
+  'Consommation recommandée','Accompagnement'
+];
 
 function plainText(html=''){
   return html
@@ -36,12 +44,49 @@ function affiliateUrl(url){
   return parsed.toString();
 }
 
+async function fetchWithRetry(url, options, required=true){
+  let lastError;
+  for(let attempt=0;attempt<3;attempt++){
+    try{
+      const response=await fetch(url,options);
+      if(response.ok) return response;
+      lastError=new Error(`${response.status} ${url}`);
+      if(response.status!==429 && response.status<500) break;
+    }catch(error){ lastError=error; }
+    await wait(600*(2**attempt));
+  }
+  if(required) throw lastError || new Error(`Échec de lecture : ${url}`);
+  return null;
+}
+
+export function parseTechnicalData(html=''){
+  const text=plainText(html);
+  const marker=text.toLowerCase().indexOf('informations techniques');
+  if(marker<0) return {};
+  const endCandidates=['afficher plus','demandez au sommelier','descrizione','description']
+    .map(label=>text.toLowerCase().indexOf(label,marker+20)).filter(index=>index>marker);
+  const section=text.slice(marker, endCandidates.length?Math.min(...endCandidates):marker+5000);
+  const positions=TECHNICAL_LABELS.map(label=>({label,index:section.toLowerCase().indexOf(label.toLowerCase())}))
+    .filter(item=>item.index>=0).sort((a,b)=>a.index-b.index);
+  const result={};
+  for(let index=0;index<positions.length;index++){
+    const current=positions[index];
+    const next=positions[index+1];
+    const value=section.slice(current.index+current.label.length,next?.index ?? section.length)
+      .replace(/^[\s:–-]+|[\s:–-]+$/g,'').trim();
+    if(value && value.length<=240) result[current.label]=value;
+  }
+  return result;
+}
+
 async function fetchProduct(product){
-  const response = await fetch(`${product.productUrl}.js`, {
-    headers:{'accept':'application/json','user-agent':'QuelChampagne catalogue sync'}
-  });
-  if(!response.ok) throw new Error(`${response.status} ${product.productUrl}`);
+  const headers={'user-agent':'QuelChampagne catalogue sync'};
+  const [response,pageResponse] = await Promise.all([
+    fetchWithRetry(`${product.productUrl}.js`, {headers:{...headers,accept:'application/json'}}, true),
+    fetchWithRetry(product.productUrl, {headers:{...headers,accept:'text/html'}}, false)
+  ]);
   const live = await response.json();
+  const pageHtml=pageResponse ? await pageResponse.text() : '';
   return {
     id:product.id,
     brand:product.brand,
@@ -57,6 +102,7 @@ async function fetchProduct(product){
     buyUrl:affiliateUrl(product.buyUrl),
     productUrl:product.productUrl,
     merchantDescription:plainText(live.description),
+    technicalData:parseTechnicalData(pageHtml),
     checkedAt
   };
 }

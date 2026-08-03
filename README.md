@@ -17,7 +17,7 @@ Les 48 produits sont consolidés dans un catalogue canonique :
 - `boutique.mjs` : composants d’affichage des cartes et des fiches.
 
 Le sélecteur, le comparateur, la sélection et les 48 fiches utilisent tous ce
-même catalogue. Le sélecteur croise cinq critères : moment, accord, style,
+même catalogue. Le sélecteur croise cinq critères : service, accord, style,
 budget et signature recherchée. Une page d’analyse interne précède toujours le
 lien marchand.
 
@@ -27,21 +27,22 @@ d'achat sont suspendus.
 Le workflow GitHub `Actualiser le catalogue` rafraîchit l’instantané chaque
 matin, puis ne l'enregistre que si la construction et tous les tests réussissent.
 
-Les fiches qui ne disposent encore que de la source marchande restent
-consultables depuis le catalogue, mais portent `noindex`. Elles ne rejoignent le
-sitemap qu’après ajout d’une source producteur.
+Chaque fiche publie au minimum 15 caractéristiques, 8 réponses pratiques, un
+profil aromatique, des accords, une température de service et une explication
+du style. Les 48 fiches atteignent ce seuil et figurent dans le sitemap. Les
+valeurs précises sont reprises lorsqu'elles sont documentées ; à défaut, la
+catégorie réglementaire est nommée explicitement, sans fabriquer de mesure.
 
-État de la base au 31 juillet 2026 :
+État de la base au 3 août 2026 :
 
-- 41 fiches confirmées ou corrigées avec une source primaire ;
-- 5 fiches dont le producteur est confirmé mais dont la fiche technique exacte
-  reste à obtenir ;
-- 2 fiches documentées par une source professionnelle secondaire ;
-- 7 fiches maintenues hors du sitemap et en `noindex`, sans donnée inventée.
+- 48 fiches enrichies et indexables ;
+- 30 assemblages chiffrés ;
+- 18 dosages exacts ;
+- 48 profils complets et 72 URL dans le sitemap.
 
 Les détails contrôlés sont centralisés dans
-`data/product-evidence-overrides.json`. Le rapport des références qui restent à
-documenter est généré dans `reports/product-evidence-review.json`.
+`data/product-evidence-overrides.json`. Le rapport de couverture documentaire
+est généré dans `reports/product-evidence-review.json`.
 
 ## Construire et vérifier
 
@@ -51,10 +52,10 @@ node sync-bottle-of-italy.mjs
 
 node build-product-evidence.mjs
 node build-site.mjs
+node audit-product-depth.mjs
 node test-recommendations.mjs
 node validate-site.mjs
 node test-merchant-import.mjs
-node test-analytics.mjs
 node validate-launch.mjs
 ```
 

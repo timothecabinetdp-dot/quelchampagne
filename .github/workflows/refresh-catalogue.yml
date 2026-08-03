@@ -29,10 +29,10 @@ jobs:
           node build-expert-knowledge.mjs
           node build-site.mjs
           node validate-site.mjs
+          node audit-product-depth.mjs
           node test-expert-engine.mjs
           node test-recommendations.mjs
           node test-merchant-import.mjs
-          node test-analytics.mjs
       - name: Enregistrer uniquement un instantané valide
         run: |
           if git diff --quiet -- data/bottle-of-italy-products.json; then

@@ -8,6 +8,7 @@
  */
 import { readFileSync } from 'node:fs';
 import { boutiqueSlug } from './boutique.mjs';
+import { enrichProduct } from './product-enrichment.mjs';
 
 const snapshot = JSON.parse(readFileSync(new URL('data/bottle-of-italy-products.json', import.meta.url), 'utf8'));
 const evidenceRegistry = JSON.parse(readFileSync(new URL('data/product-evidence-overrides.json', import.meta.url), 'utf8'));
@@ -40,6 +41,8 @@ const GRAPES = [
 
 const AROMAS = [
   ['agrumes',/\b(agrumes?|agrumi|citron|limone|pamplemousse)\b/i],
+  ['fruits blancs',/\b(fruits? blancs?|frutta bianca|frutti bianchi|chair blanche)\b/i],
+  ['fruits jaunes',/\b(fruits? jaunes?|ananas|litchi|albicocca|abricot)\b/i],
   ['pomme',/\b(pomme|mela)\b/i],
   ['poire',/\b(poire|pera)\b/i],
   ['pêche',/\b(pêche|pesca)\b/i],
@@ -47,9 +50,13 @@ const AROMAS = [
   ['fruits mûrs',/\b(fruits? mûrs?|frutta matura)\b/i],
   ['fleurs blanches',/\b(fleurs? blanches?|fiori bianchi|floral)\b/i],
   ['brioche',/\b(brioche|pain grillé|pane tostato|croûte de pain)\b/i],
+  ['pâtisserie',/\b(pâtisserie|pasticceria|mie de pain|levure|lievito)\b/i],
   ['miel',/\b(miel|miele)\b/i],
   ['noisette',/\b(noisette|nocciola)\b/i],
   ['amande',/\b(amande|mandorla)\b/i],
+  ['fruits secs',/\b(fruits? secs?|frutta secca)\b/i],
+  ['vanille',/\b(vanille|vaniglia)\b/i],
+  ['rose',/\b(rose|rosa|petali di rosa)\b/i],
   ['épices',/\b(épices?|spezie|épicé)\b/i],
   ['minéralité',/\b(minéral|minérale|mineralità|crayeux|craie)\b/i],
   ['salinité',/\b(salin|saline|salinité|sapide)\b/i]
@@ -222,7 +229,8 @@ export function buildPartnerCatalogue(){
     const brand=evidence.publicBrand || initialBrand;
     const normalized={...source,brand};
     const tags=evidence.tags || correctedTags(source);
-    const searchText=`${source.name} ${source.liveTitle} ${source.merchantTags.join(' ')} ${source.merchantDescription}`;
+    const technicalText=Object.values(source.technicalData || {}).join(' ');
+    const searchText=`${source.name} ${source.liveTitle} ${source.merchantTags.join(' ')} ${source.merchantDescription} ${technicalText}`;
     const grapes=evidence.grapes || findValues(searchText,GRAPES);
     const aromas=findValues(searchText,AROMAS);
     const pairings=PAIRINGS.filter(([,expression])=>has(searchText,expression)).map(([label,,token])=>({label,token}));
@@ -245,6 +253,7 @@ export function buildPartnerCatalogue(){
     const tier=price<30?1:price<=60?2:price<=100?3:4;
     const popularity=(WELL_KNOWN.has(source.brand)?84:68) + (tags.includes('Grand Cru')?4:0) + (tags.includes('Millésimé')?3:0);
     const officialConfirmed=Boolean(evidence.officialSourceUrl) && !identityStatus.includes('product_to_document');
+    const enrichment=enrichProduct({product:source,tags,grapes,aromas,pairings,scores,evidence,publicName,price,producerType});
 
     return {
       id, merchantId:source.id, name:publicName, short:publicName, house:brand, brand,
@@ -279,6 +288,7 @@ export function buildPartnerCatalogue(){
         scores,
         aromas,
         grapes,
+        enrichment,
         accords:pairings.slice(0,3).map((item,index)=>({
           t:index===0?'Accord prioritaire':index===1?'Autre possibilité':'Pour varier',
           d:item.label.charAt(0).toUpperCase()+item.label.slice(1)

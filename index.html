@@ -714,13 +714,13 @@ function decisionGuide(p){
 /* ====================== QUESTIONS ====================== */
 function questions(){
   return [
-    { id:'occasion', label:"01 · Le moment", q:"À quel moment ouvrirez-vous la bouteille ?", hint:"Le contexte détermine d’abord le style de champagne à privilégier.",
+    { id:'occasion', label:"01 · Le service", q:"Comment souhaitez-vous servir ce champagne ?", hint:"Le mode de service permet d’écarter immédiatement les cuvées trop légères ou trop puissantes.",
       opts:[
-        {e:'01', tags:['occ_apero'], l:"À l’apéritif", d:"Une bouteille conviviale, facile à partager"},
-        {e:'02', tags:['occ_diner'], l:"Pendant un repas", d:"Un champagne capable d’accompagner les plats"},
-        {e:'03', tags:['occ_fete'], l:"Pour une célébration", d:"Mariage, anniversaire ou grande réussite"},
-        {e:'04', tags:['occ_cadeau'], l:"Pour l’offrir", d:"Une bouteille qui marque l’attention"},
-        {e:'05', tags:['occ_romantique'], l:"Pour un moment à deux", d:"Une cuvée élégante et expressive"},
+        {e:'01', tags:['occ_apero'], l:"Seul, avant le repas", d:"Une cuvée fraîche, lisible et précise"},
+        {e:'02', tags:['occ_diner'], l:"À table", d:"Une structure adaptée au plat principal"},
+        {e:'03', tags:['occ_fete'], l:"Pour plusieurs convives", d:"Un style accessible qui garde du caractère"},
+        {e:'04', tags:['occ_cadeau'], l:"Pour l’offrir", d:"Une identité claire et une bouteille mémorable"},
+        {e:'05', tags:['occ_romantique'], l:"Pour deux personnes", d:"Une cuvée fine à déguster lentement"},
       ]},
     { id:'accord', label:"02 · Le service", q:"Qu’allez-vous servir avec ?", hint:"Choisissez l’accord principal. Vous pourrez affiner ensuite sur la fiche.",
       opts:[
@@ -737,7 +737,7 @@ function questions(){
         {e:'02', tags:['profil_fruite'], l:"Fruitée et souple", d:"Fruit mûr, rondeur, acidité mesurée"},
         {e:'03', tags:['profil_riche_ample'], l:"Ample et vineuse", d:"Corps, matière, notes briochées"},
         {e:'04', tags:['profil_delicat'], l:"Fine et florale", d:"Fleurs blanches, légèreté, élégance"},
-        {e:'05', tags:['profil_any'], l:"Je n’ai pas de préférence", d:"L’occasion, l’accord et le budget décideront"},
+        {e:'05', tags:['profil_any'], l:"Je n’ai pas de préférence", d:"Le service, l’accord et le budget décideront"},
       ]},
     { id:'budget', label:"04 · Le budget", q:"Quel budget souhaitez-vous consacrer à la bouteille ?", hint:"Le prix utilisé est celui relevé chez le partenaire, hors éventuels frais de livraison.",
       opts:[
@@ -1307,7 +1307,7 @@ function foot(){
   return `
   <footer><div class="container">
     <div class="foot-in">
-      <div class="foot-brand"><span class="foot-brand-name">${BRAND}${logoMark()}</span><p>Un conseil indépendant pour choisir selon l’occasion, vos goûts et votre budget.</p></div>
+      <div class="foot-brand"><span class="foot-brand-name">${BRAND}${logoMark()}</span><p>Un conseil indépendant pour choisir selon le style, l’accord et le budget.</p></div>
       <nav class="foot-links" aria-label="Navigation secondaire">
         <button onclick="startQuiz()">Le sélecteur</button>
         <a href="/comparateur/">Comparer</a>
@@ -1332,7 +1332,7 @@ function renderHome(){
   app.innerHTML = nav() + `
   <main id="main-content"><section class="hero"><div class="container">
     <h1>Quel champagne<br>choisir ?</h1>
-    <p class="lead">Comparez les bouteilles selon l’occasion, vos goûts et votre budget.</p>
+    <p class="lead">Comparez les bouteilles selon leur style, l’accord recherché et votre budget.</p>
     <div class="hero-cta">
       <button class="btn btn-primary" onclick="startQuiz()">Trouver mon champagne</button>
       <a class="chev" href="/notre-methode/">Comprendre notre méthode</a>
@@ -1357,7 +1357,7 @@ function renderHome(){
   <section class="band"><div class="container">
     <div class="eyebrow-l">Votre sélection personnalisée</div>
     <h2>Choisissez avec des critères qui changent vraiment le résultat.</h2>
-    <p>Le sélecteur tient compte du moment, du repas, de vos goûts, du budget et du type de producteur recherché.</p>
+    <p>Le sélecteur tient compte du service, du plat, de vos préférences, du budget et du type de producteur recherché.</p>
     <button class="btn btn-accent" onclick="startQuiz()">Lancer le sélecteur</button>
   </div></section>
 
@@ -1405,7 +1405,7 @@ function selectorGuide(){
       <p>Le sélecteur ne classe pas les maisons dans l’absolu. Il rapproche vos réponses des caractéristiques de chaque cuvée, puis conserve uniquement les bouteilles disponibles chez notre partenaire au moment du dernier relevé.</p>
     </div>
     <div class="selector-guide-grid">
-      <article><span>01</span><h3>Le moment</h3><p>Une bouteille destinée à l’apéritif ne répond pas aux mêmes attentes qu’un champagne de repas ou qu’un cadeau.</p></article>
+      <article><span>01</span><h3>Le service</h3><p>Servie seule, à table ou offerte, une cuvée n’est pas jugée selon les mêmes critères.</p></article>
       <article><span>02</span><h3>L’accord</h3><p>La fraîcheur, la rondeur et la puissance sont confrontées au plat ou au type de service indiqué.</p></article>
       <article><span>03</span><h3>Le style</h3><p>Votre préférence sensorielle départage les cuvées fraîches, fruitées, vineuses ou florales.</p></article>
       <article><span>04</span><h3>Le budget</h3><p>Le classement utilise le prix relevé pour la bouteille de 75 cl présentée, sans prix barré ni remise reconstituée.</p></article>
@@ -1421,14 +1421,14 @@ function selectorGuide(){
 
 function summary(){
   const occ=(state.answers.occasion||[])[0];
-  const m={occ_fete:"Pour une célébration, cette bouteille répond le mieux aux critères indiqués.",occ_diner:"Pour accompagner votre dîner, cette bouteille offre le meilleur équilibre parmi la sélection.",occ_apero:"Pour l’apéritif, cette bouteille correspond le mieux au style et au budget choisis.",occ_cadeau:"Pour un cadeau, cette bouteille répond le mieux aux critères indiqués.",occ_romantique:"Pour un tête-à-tête, cette bouteille est la plus proche du style recherché."};
+  const m={occ_fete:"Pour plusieurs convives, cette bouteille offre le meilleur équilibre entre accessibilité et caractère.",occ_diner:"À table, cette bouteille offre la structure la plus cohérente avec le plat indiqué.",occ_apero:"Servie seule avant le repas, cette bouteille correspond le mieux au style et au budget choisis.",occ_cadeau:"Pour être offerte, cette bouteille réunit l’identité et le style les plus cohérents.",occ_romantique:"Pour une dégustation à deux, cette bouteille est la plus proche du style recherché."};
   return m[occ]||"Cette bouteille est la plus proche des critères que vous avez indiqués.";
 }
 
 function matchReasons(p){
   const reasons=[];
   const a=state.answers;
-  if((a.occasion||[]).some(tag=>p.occ.includes(tag))) reasons.push("Elle convient à l’occasion indiquée.");
+  if((a.occasion||[]).some(tag=>p.occ.includes(tag))) reasons.push("Sa structure correspond au mode de service indiqué.");
   const accord=(a.accord||[])[0];
   if(accordFit(p,accord) && accord!=='accord_any') reasons.push("Son profil soutient l’accord que vous avez choisi.");
   if((a.gout||[]).some(tag=>p.profil.includes(tag))) reasons.push("Son profil correspond au style recherché.");

@@ -396,7 +396,7 @@ for (const file of htmlFiles) {
 
 const sitemap = read('dist/sitemap.xml');
 const sitemapUrls = [...sitemap.matchAll(/<loc>https:\/\/quelchampagne\.fr([^<]*)<\/loc>/g)];
-const expectedSitemapUrls = 24 + PARTNER_CATALOGUE.filter(product=>product.sourceKind==='producer').length;
+const expectedSitemapUrls = 24 + PARTNER_CATALOGUE.length;
 if (sitemapUrls.length !== expectedSitemapUrls) errors.push(`URL sitemap attendues : ${expectedSitemapUrls}, obtenues : ${sitemapUrls.length}.`);
 for (const [, path] of sitemapUrls) {
   const target = localTarget(path || '/');
@@ -438,8 +438,8 @@ for (const product of PARTNER_CATALOGUE) {
   if (html.includes('class="bqp-old"') || /text-decoration:\s*line-through/.test(html)) {
     errors.push(`Un ancien prix barré reste publié : /champagne/${product.id}/.`);
   }
-  if (!product.officialSourceUrl && !html.includes('name="robots" content="noindex,follow"')) {
-    errors.push(`Fiche uniquement marchande encore indexable : /champagne/${product.id}/.`);
+  if ((product.details?.enrichment?.facts||[]).length>=12 && html.includes('name="robots" content="noindex,follow"')) {
+    errors.push(`Fiche enrichie encore exclue de l’index : /champagne/${product.id}/.`);
   }
   if (html.includes('FRutm_source') || /href="(?:undefined|null)?"/.test(html)) {
     errors.push(`Lien d’achat mal formé : /champagne/${product.id}/.`);
@@ -513,12 +513,17 @@ if (new Set(PARTNER_CATALOGUE.map(product=>product.note)).size < 40) errors.push
 if (PARTNER_CATALOGUE.some(product=>product.identityStatus==='merchant_feed_year_to_verify' && /\b(19|20)\d{2}\b/.test(product.name))) errors.push('Un millésime non confirmé est encore présenté comme faisant partie du nom public.');
 for (const file of htmlFiles.filter(path => path.includes('/champagne/') && !path.match(/\/champagne\/(aperitif|cadeau|repas|rose|blanc-de-blancs|moins-de-50-euros|fruits-de-mer)\//))) {
   const html = readFileSync(file, 'utf8');
-  if (!html.includes('Ce qui la distingue') || !html.includes('Quand l’écarter')) errors.push(`Aide à la décision absente de ${file.replace(DIST.pathname, '')}.`);
-  if (partnerIds.has(file.split('/champagne/')[1]?.split('/')[0]) && !html.includes('class="bqp-scene"')) {
-    errors.push(`Visuel éditorial contextuel absent de ${file.replace(DIST.pathname, '')}.`);
+  if (!html.includes('Choisissez-la pour') || !html.includes('Préférez une autre bouteille si')) errors.push(`Aide à la décision absente de ${file.replace(DIST.pathname, '')}.`);
+  if (!html.includes('Comprendre la cuvée') || !html.includes('Toutes les caractéristiques') || !html.includes('Réponses pratiques')) {
+    errors.push(`Fiche enrichie incomplète : ${file.replace(DIST.pathname, '')}.`);
+  }
+  if (!html.includes('Œil') || !html.includes('Nez') || !html.includes('Bouche') || !html.includes('Finale')) {
+    errors.push(`Dégustation structurée absente de ${file.replace(DIST.pathname, '')}.`);
   }
 }
-const publishedCopy = htmlFiles.map(file=>readFileSync(file,'utf8')).join('\n');
+const publishedCopy = htmlFiles.map(file=>readFileSync(file,'utf8')
+  .replace(/<script[\s\S]*?<\/script>/gi,' ')
+  .replace(/<style[\s\S]*?<\/style>/gi,' ')).join('\n');
 for (const phrase of [
   'ne remplacent pas une dégustation',
   'ne prétendons pas avoir dégusté',
@@ -535,6 +540,10 @@ for (const phrase of [
   'Profil retenu pour',
   'sans jargon',
   '>Transparence<'
+  ,'Les documentations commerciales concordent'
+  ,'fiche technique primaire exacte reste à obtenir'
+  ,'reste à documenter'
+  ,'à confirmer sur fiche'
 ]) {
   if (publishedCopy.includes(phrase)) errors.push(`Formulation éditoriale à supprimer encore publiée : « ${phrase} ».`);
 }
@@ -550,7 +559,7 @@ if (!source.includes('.page-hero::before{display:block!important}')) errors.push
 if (!source.includes('.nav-toggle{display:none') || !source.includes('.nav.is-open .nav-links{display:grid')) errors.push('Le menu mobile accessible est absent.');
 if (!buildSource.includes('aria-controls="primary-navigation"') || !buildSource.includes("event.key==='Escape'")) errors.push('Le comportement du menu mobile est incomplet.');
 if (buildSource.includes('<a class="nlink-cta" href="/selecteur/"><svg')) errors.push('Le symbole du logo est encore dupliqué dans le bouton du sélecteur.');
-if (!boutiqueSource.includes('.bqp-hero,.bqp-grid{grid-template-columns:minmax(0,1fr)}')) errors.push('Les fiches produit peuvent encore déborder à 360 px.');
+if (!boutiqueSource.includes('.bqp-hero,.bqp-grid,.bqp-editorial-grid{grid-template-columns:minmax(0,1fr)}')) errors.push('Les fiches produit peuvent encore déborder à 360 px.');
 if (!boutiqueSource.includes('@media(max-width:620px)') || !boutiqueSource.includes('.bq-grid{grid-template-columns:1fr')) errors.push('Le catalogue peut encore afficher des cartes trop étroites sur mobile.');
 if (errors.length) {
   console.error(`Validation échouée (${errors.length} erreur${errors.length > 1 ? 's' : ''}) :`);

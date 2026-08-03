@@ -145,6 +145,7 @@ function editorialScene(p, analysis){
 export function boutiqueProductMain(p, buildDate, catalogue=CHAMPAGNES){
   const generic=boutiqueAnalysis(p);
   const scores=p.details?.scores;
+  const e=p.details?.enrichment;
   const a=p.details ? {
     ...generic,
     summary:p.note,
@@ -167,49 +168,30 @@ export function boutiqueProductMain(p, buildDate, catalogue=CHAMPAGNES){
     isVintage:p.tags.includes('Millésimé')
   } : generic;
   const old = '';
-  const scene=editorialScene(p,a);
   const tags = p.tags.map(t=>`<span class="bq-tag">${esc(t)}</span>`).join('');
-  const technicalFacts=[
-    `<span class="bqp-fact"><small>Style</small><strong>${esc(a.style)}</strong></span>`,
-    a.classification ? `<span class="bqp-fact"><small>Classement</small><strong>${a.classification}</strong></span>` : '',
-    a.isVintage ? `<span class="bqp-fact"><small>Élaboration</small><strong>Millésimé</strong></span>` : '',
-    p.details?.dosage ? `<span class="bqp-fact"><small>Dosage</small><strong>${esc(p.details.dosage)}</strong></span>` : '',
-    p.details?.grapes?.length ? `<span class="bqp-fact"><small>Cépages</small><strong>${esc(p.details.grapes.join(', '))}</strong></span>` : ''
-  ].filter(Boolean).join('');
-  const related = catalogue
-    .filter(x=>x.id!==p.id && x.tags.some(t=>p.tags.includes(t)))
-    .sort((x,y)=>Math.abs(x.price-p.price)-Math.abs(y.price-p.price))
-    .slice(0,3).map(card).join('');
+  const technicalFacts=(e?.facts||[]).map(([label,value])=>`<div class="bqp-fact-row"><dt>${esc(label)}</dt><dd>${esc(value)}</dd></div>`).join('');
+  const relatedProducts=catalogue.filter(x=>x.id!==p.id).map(x=>{
+    const commonTags=x.tags.filter(tag=>p.tags.includes(tag)).length;
+    const commonGrapes=(x.details?.grapes||[]).filter(grape=>(p.details?.grapes||[]).includes(grape)).length;
+    const priceGap=Math.abs(x.price-p.price)/Math.max(p.price,1);
+    return {x,score:commonTags*5+commonGrapes*2-Math.min(5,priceGap*5)};
+  }).sort((left,right)=>right.score-left.score || Math.abs(left.x.price-p.price)-Math.abs(right.x.price-p.price)).slice(0,3).map(item=>item.x);
+  const related = relatedProducts.map(card).join('');
   const observedDate=(p.offerCheckedAt||`${buildDate}T12:00:00Z`).slice(0,10);
   const formattedDate = new Intl.DateTimeFormat('fr-FR',{day:'numeric',month:'long',year:'numeric'}).format(new Date(`${observedDate}T12:00:00Z`));
-  const producerSource=p.officialSourceUrl
-    ? `<a class="bqp-source" href="${esc(p.officialSourceUrl)}" target="_blank" rel="noopener">${p.sourceKind==='producer'?'Consulter la fiche officielle':'Consulter le site du producteur'}</a>`
-    : '';
-  const technicalSource=p.technicalSourceUrl
-    ? `<a class="bqp-source" href="${esc(p.technicalSourceUrl)}" target="_blank" rel="noopener">Consulter la documentation technique</a>`
-    : '';
-  const verifiedFacts=p.details?.verifiedFacts
-    ? `<p class="bqp-verified">${esc(p.details.verifiedFacts)}</p>`
-    : '';
-  const profileCopy=a.expected
-    ? `Arômes dominants : ${esc(a.expected)}. ${a.gauges.rondeur>=4?'La rondeur donne de l’ampleur à l’ensemble.':a.gauges.puissance>=4?'La structure soutient une vraie présence à table.':a.gauges.fraicheur>=4?'La fraîcheur conduit l’ensemble.':'L’équilibre reste le trait dominant.'}`
-    : a.summary;
-  const aromaList=(p.details?.aromas||[]).slice(0,4);
-  const tastingNose=aromaList.length
-    ? `Le nez s’ouvre sur ${aromaList.slice(0,-1).join(', ')}${aromaList.length>1?' et ':''}${aromaList.at(-1)}.`
-    : `Le nez exprime un registre ${a.expected}.`;
-  const tastingPalate=a.gauges.puissance>=4
-    ? 'La bouche est ample et structurée, avec suffisamment de matière pour accompagner un plat.'
-    : a.gauges.fraicheur>=4
-      ? 'La bouche privilégie la fraîcheur et la précision, avec une attaque nette.'
-      : a.gauges.rondeur>=4
-        ? 'La bouche se montre souple et enveloppante, portée par une texture ronde.'
-        : 'La bouche recherche l’équilibre entre fraîcheur, fruit et structure.';
-  const tastingFinish=(p.details?.scores?.complexity||3)>=4
-    ? 'La finale se prolonge avec plusieurs nuances et gagne à être servie dans un verre assez large.'
-    : a.gauges.fraicheur>=4
-      ? 'La finale reste fraîche et lisible, adaptée à l’apéritif comme aux produits de la mer.'
-      : 'La finale conserve une expression équilibrée et immédiatement accessible.';
+  const profileCopy=e?.overview || a.summary;
+  const tastingEye=e?.eye || 'Une robe lumineuse animée par une effervescence fine.';
+  const tastingNose=e?.nose || `Le nez exprime ${a.expected}.`;
+  const tastingPalate=e?.mouth || 'La bouche équilibre fraîcheur, fruit et structure.';
+  const tastingFinish=e?.finish || 'La finale est nette et harmonieuse.';
+  const quickFacts=[
+    ['Style',e?.character||a.style],
+    ['Dosage',e?.dosage||p.details?.dosage||a.style],
+    ['Service',e?.temperature||'8–10 °C'],
+    ['Accord phare',e?.pairings?.[0]||a.pairings[0]]
+  ].map(([label,value])=>`<div><small>${esc(label)}</small><strong>${esc(value)}</strong></div>`).join('');
+  const answers=(e?.answers||[]).map(([question,answer])=>`<details class="bqp-answer"><summary>${esc(question)}</summary><p>${esc(answer)}</p></details>`).join('');
+  const alternativeNames=relatedProducts.map(item=>`${item.brand} ${item.name}`).join(' · ');
   const offerAvailable=p.commerceReady===true && p.availability==='in_stock';
   const primaryOffer=offerAvailable
     ? `<a class="btn btn-primary btn-lg" data-product-id="${esc(p.id)}" data-direct-url="${esc(p.merchantSourceUrl||p.productUrl||'')}" href="${esc(p.aff||p.buyUrl||'')}" target="_blank" rel="sponsored nofollow noopener">Voir l’offre chez Bottle of Italy</a>
@@ -231,43 +213,45 @@ export function boutiqueProductMain(p, buildDate, catalogue=CHAMPAGNES){
       <div class="bqp-intro">
         <div class="bq-brand">${esc(p.brand)}</div>
         <h1>${esc(p.name)}</h1>
-        <p class="bqp-lead">${a.summary}</p>
+        <p class="bqp-lead">${esc(profileCopy)}</p>
         <div class="bq-tags">${tags}</div>
         <div class="bqp-price"><strong>${EUR(p.price)}</strong>${old}</div>
         ${primaryOffer}
       </div>
     </div>
 
-    <article class="bqp-panel bqp-verdict"><div class="pblock-eyebrow">Notre analyse</div><h2>Pourquoi la choisir</h2>
-      <div class="decision-grid"><div class="decision"><strong>Ce qui la distingue</strong><p>${a.choose}</p></div><div class="decision"><strong>Quand l’écarter</strong><p>${a.avoid}</p></div></div>
+    <div class="bqp-quickfacts">${quickFacts}</div>
+
+    <article class="bqp-panel bqp-verdict"><div class="pblock-eyebrow">Le verdict QuelChampagne</div><h2>À qui s’adresse cette cuvée ?</h2>
+      <div class="decision-grid"><div class="decision"><strong>Choisissez-la pour</strong><p>${a.choose}</p></div><div class="decision"><strong>Préférez une autre bouteille si</strong><p>${a.avoid}</p></div></div>
     </article>
+
+    <div class="bqp-panel bqp-identity">
+      <div class="pblock-eyebrow">Comprendre la cuvée</div><h2>Assemblage et élaboration</h2>
+      <div class="bqp-editorial-grid"><p>${esc(e?.overview||a.summary)}</p><p>${esc(e?.vinification||'Seconde fermentation en bouteille selon la méthode traditionnelle champenoise.')}</p></div>
+    </div>
 
     <div class="bqp-panel">
       <div class="pblock-eyebrow">Dans le verre</div><h2>La dégustation</h2>
-      <p class="bqp-copy">${profileCopy}</p>
-      <div class="bqp-tasting"><div><small>Nez</small><p>${tastingNose}</p></div><div><small>Bouche</small><p>${tastingPalate}</p></div><div><small>Finale</small><p>${tastingFinish}</p></div></div>
+      <div class="bqp-tasting"><div><small>Œil</small><p>${esc(tastingEye)}</p></div><div><small>Nez</small><p>${esc(tastingNose)}</p></div><div><small>Bouche</small><p>${esc(tastingPalate)}</p></div><div><small>Finale</small><p>${esc(tastingFinish)}</p></div></div>
       <div class="bqp-gauges">${gauge('Fraîcheur',a.gauges.fraicheur)}${gauge('Rondeur',a.gauges.rondeur)}${gauge('Puissance',a.gauges.puissance)}${gauge('Facilité d’accès',a.gauges.accessibilite)}</div>
     </div>
 
-    <div class="bqp-scene" style="--scene:url('${scene.image}')">
-      <div><div class="pblock-eyebrow">${scene.label}</div><h2>${scene.title}</h2></div>
-    </div>
-
     <div class="bqp-grid">
-      <article class="bqp-panel"><div class="pblock-eyebrow">À table</div><h2>Accords conseillés</h2><ul class="bqp-list">${a.pairings.map(x=>`<li>${x}</li>`).join('')}</ul></article>
-      <article class="bqp-panel"><div class="pblock-eyebrow">Pour quel moment ?</div><h2>Occasions adaptées</h2><ul class="bqp-list">${a.occasions.map(x=>`<li>${x}</li>`).join('')}</ul></article>
+      <article class="bqp-panel"><div class="pblock-eyebrow">À table</div><h2>Accords conseillés</h2><ul class="bqp-list">${(e?.pairings?.length?e.pairings:a.pairings).map(x=>`<li>${esc(x)}</li>`).join('')}</ul></article>
+      <article class="bqp-panel"><div class="pblock-eyebrow">Service</div><h2>Comment la servir</h2><p>${esc(e?.serving||`Servir à 8–10 °C dans un verre tulipe.`)}</p></article>
     </div>
 
     <div class="bqp-panel bqp-technical">
-      <div class="pblock-eyebrow">Fiche technique</div><h2>Les repères essentiels</h2>
-      <div class="bqp-facts">${technicalFacts}</div>
-      ${verifiedFacts}
-      <div class="bqp-sources">${producerSource}${technicalSource}</div>
+      <div class="pblock-eyebrow">Fiche technique</div><h2>Toutes les caractéristiques</h2>
+      <dl class="bqp-facts">${technicalFacts}</dl>
     </div>
+
+    <div class="bqp-panel bqp-questions"><div class="pblock-eyebrow">Réponses pratiques</div><h2>Tout savoir avant de choisir</h2><div class="bqp-answer-grid">${answers}</div></div>
 
     ${purchasePanel}
 
-    ${related?`<div class="bqp-related"><div class="sec-head"><h2 class="h2">Dans un style proche</h2><p>Trois bouteilles proches par leur style et leur prix.</p></div><div class="bq-grid">${related}</div></div>`:''}
+    ${related?`<div class="bqp-related"><div class="sec-head"><h2 class="h2">Trois alternatives pertinentes</h2><p>${esc(alternativeNames)}</p></div><div class="bq-grid">${related}</div></div>`:''}
   </div></section>
   <style>
     .bq-name a{color:inherit;text-decoration:none}.bqp{padding:clamp(36px,6vw,84px) 0 90px;background:#F4F4F1;color:#14110c}
@@ -276,13 +260,14 @@ export function boutiqueProductMain(p, buildDate, catalogue=CHAMPAGNES){
     .bqp-visual img{display:block;position:absolute;inset:34px;width:calc(100% - 68px)!important;height:calc(100% - 68px)!important;max-width:none!important;max-height:none!important;object-fit:contain!important;object-position:center;mix-blend-mode:multiply;margin:0!important}.bqp-intro h1{font-family:var(--display);font-size:clamp(40px,5.3vw,72px);font-weight:900;text-transform:uppercase;line-height:.95;letter-spacing:-.025em;margin:12px 0 22px}
     .bqp-intro .bq-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:18px}.bqp-intro .bq-tag{display:inline-flex;font-size:11px;color:#6f6a61;border:1px solid #deded8;padding:4px 10px;text-transform:uppercase;letter-spacing:.055em;line-height:1.2}
     .bqp-lead{font-size:18px;line-height:1.75;color:#5f5a51;max-width:62ch}.bqp-price{display:flex;align-items:center;gap:12px;margin:28px 0 22px}.bqp-price>strong{font-size:30px}.bqp-partner,.bqp-muted{font-size:13px;line-height:1.65;color:#777067}.bqp-partner{margin-top:12px}
-    .bqp-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:22px}.bqp-panel{background:transparent;border:0;border-top:1px solid #d7d2c8;padding:clamp(28px,4vw,44px) 0;margin-top:22px}.bqp-panel h2,.bqp-buy h2{font-family:var(--display);font-size:clamp(26px,3vw,38px);font-weight:800;line-height:1.04;margin:8px 0 18px}.bqp-panel p{line-height:1.7;color:#514c44}
-    .bqp-copy{max-width:76ch}.bqp-tasting{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#d7d2c8;border:1px solid #d7d2c8;margin-top:28px}.bqp-tasting>div{background:#fff;padding:24px}.bqp-tasting small{display:block;color:#806020;text-transform:uppercase;letter-spacing:.12em;font-size:10px;font-weight:800;margin-bottom:9px}.bqp-tasting p{margin:0;color:#514c44;line-height:1.55}.bqp-gauges{display:grid;grid-template-columns:1fr 1fr;gap:22px 34px;margin-top:30px}.bqp-gauge>div:first-child{display:flex;justify-content:space-between;font-size:13px;margin-bottom:8px}.bqp-track{height:7px;background:#e5e5e0;overflow:hidden}.bqp-track i{display:block;height:100%;background:#806020}
+    .bqp-quickfacts{display:grid;grid-template-columns:repeat(4,1fr);margin-top:42px;border:1px solid #d7d2c8;background:#fff}.bqp-quickfacts>div{display:flex;flex-direction:column;gap:7px;padding:22px;border-right:1px solid #d7d2c8}.bqp-quickfacts>div:last-child{border-right:0}.bqp-quickfacts small{color:#806020;text-transform:uppercase;letter-spacing:.1em;font-size:10px;font-weight:800}.bqp-quickfacts strong{font-size:15px;line-height:1.35}
+    .bqp-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:22px}.bqp-panel{background:transparent;border:0;border-top:1px solid #d7d2c8;padding:clamp(28px,4vw,44px) 0;margin-top:22px}.bqp-panel h2,.bqp-buy h2{font-family:var(--display);font-size:clamp(26px,3vw,38px);font-weight:800;line-height:1.04;margin:8px 0 18px}.bqp-panel p{line-height:1.7;color:#514c44}.bqp-editorial-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,70px);max-width:1100px}.bqp-editorial-grid p{font-size:17px;margin:0}
+    .bqp-copy{max-width:76ch}.bqp-tasting{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#d7d2c8;border:1px solid #d7d2c8;margin-top:28px}.bqp-tasting>div{background:#fff;padding:24px}.bqp-tasting small{display:block;color:#806020;text-transform:uppercase;letter-spacing:.12em;font-size:10px;font-weight:800;margin-bottom:9px}.bqp-tasting p{margin:0;color:#514c44;line-height:1.55}.bqp-gauges{display:grid;grid-template-columns:1fr 1fr;gap:22px 34px;margin-top:30px}.bqp-gauge>div:first-child{display:flex;justify-content:space-between;font-size:13px;margin-bottom:8px}.bqp-track{height:7px;background:#e5e5e0;overflow:hidden}.bqp-track i{display:block;height:100%;background:#806020}
     .bqp-scene{position:relative;isolation:isolate;min-height:390px;margin-top:22px;padding:clamp(30px,6vw,70px);display:flex;align-items:flex-end;overflow:hidden;background-image:linear-gradient(90deg,rgba(13,11,7,.83),rgba(13,11,7,.18)),var(--scene);background-size:cover;background-position:center;color:#fff}.bqp-scene:after{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,transparent 45%,rgba(13,11,7,.38))}.bqp-scene>div{max-width:720px}.bqp-scene .pblock-eyebrow{color:#e6c777}.bqp-scene h2{font-family:var(--display);font-size:clamp(32px,5vw,58px);font-weight:900;line-height:1;text-transform:uppercase;margin:10px 0 0}
     .bqp-list{list-style:none;padding:0;margin:0;display:grid;gap:10px}.bqp-list li{padding:13px 16px;background:#F4F4F1}.bqp-list li:before{content:'✓';color:#806020;font-weight:700;margin-right:10px}
-    .bqp-facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:0;margin:24px 0 0}.bqp-fact{display:flex;flex-direction:column;gap:5px;padding:18px 20px 18px 0;border-bottom:1px solid #d7d2c8}.bqp-fact small{color:#777067;text-transform:uppercase;letter-spacing:.08em;font-size:10px}.bqp-verified{max-width:78ch;margin:24px 0 0;padding-left:18px;border-left:3px solid #a77b2d;color:#3f3a33!important;font-size:16px;line-height:1.7}.bqp-sources{display:flex;flex-wrap:wrap;gap:12px 24px}.bqp-source{display:inline-flex;margin-top:22px;color:#6B4D18;font-weight:700;text-decoration:underline;text-underline-offset:3px}.bqp-unavailable{display:flex;flex-direction:column;gap:5px;margin-top:20px;padding:16px 18px;border-left:3px solid #8a6a2c;background:#ebe8e0;color:#312d27}.bqp-unavailable span{font-size:14px;line-height:1.5;color:#625c53}.bqp-buy{margin-top:22px;background:#17140f;color:#fff;border-radius:20px;padding:clamp(26px,4vw,44px);display:flex;justify-content:space-between;align-items:center;gap:28px}.bqp-buy p{color:#cbc5bb;margin:0}.bqp-buy-unavailable{background:#33302a}.bqp-related{margin-top:70px}
+    .bqp-facts{display:grid;grid-template-columns:1fr 1fr;margin:24px 0 0;border-top:1px solid #d7d2c8}.bqp-fact-row{display:grid;grid-template-columns:minmax(120px,.7fr) 1.3fr;gap:18px;padding:16px 20px 16px 0;border-bottom:1px solid #d7d2c8}.bqp-fact-row:nth-child(odd){margin-right:28px}.bqp-fact-row dt{color:#777067}.bqp-fact-row dd{margin:0;font-weight:700;line-height:1.4}.bqp-answer-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px 20px}.bqp-answer{background:#fff;border:1px solid #deded8}.bqp-answer summary{cursor:pointer;padding:18px 48px 18px 18px;font-weight:700;position:relative;list-style:none}.bqp-answer summary:after{content:'+';position:absolute;right:18px;color:#806020;font-size:22px;top:13px}.bqp-answer[open] summary:after{content:'−'}.bqp-answer p{margin:0;padding:0 18px 18px}.bqp-unavailable{display:flex;flex-direction:column;gap:5px;margin-top:20px;padding:16px 18px;border-left:3px solid #8a6a2c;background:#ebe8e0;color:#312d27}.bqp-unavailable span{font-size:14px;line-height:1.5;color:#625c53}.bqp-buy{margin-top:22px;background:#17140f;color:#fff;border-radius:20px;padding:clamp(26px,4vw,44px);display:flex;justify-content:space-between;align-items:center;gap:28px}.bqp-buy p{color:#cbc5bb;margin:0}.bqp-buy-unavailable{background:#33302a}.bqp-related{margin-top:70px}
     .bqp-related .bq-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.bqp-related .bq-card{display:flex;flex-direction:column;background:#fff;border:1px solid #deded8;overflow:hidden;transition:transform .2s ease,box-shadow .2s ease}.bqp-related .bq-card:hover{transform:translateY(-4px);box-shadow:0 18px 40px -22px rgba(20,17,12,.28)}.bqp-related .bq-media{position:relative;display:flex;align-items:center;justify-content:center;height:280px;overflow:hidden;background:#fff;padding:22px;box-sizing:border-box;contain:layout paint}.bqp-related .bq-media img{display:block;position:absolute;inset:22px;width:calc(100% - 44px)!important;height:calc(100% - 44px)!important;max-width:none!important;max-height:none!important;object-fit:contain!important;object-position:center;mix-blend-mode:multiply;margin:0!important}.bqp-related .bq-body{display:flex;flex-direction:column;gap:8px;padding:16px 16px 18px;flex:1}.bqp-related .bq-brand{font-size:11px;letter-spacing:.11em;text-transform:uppercase;color:#806020;font-weight:700}.bqp-related .bq-name{font-size:15px;line-height:1.32;font-weight:600;margin:0;min-height:2.4em}.bqp-related .bq-tags{display:flex;flex-wrap:wrap;gap:6px}.bqp-related .bq-tag{font-size:11px;color:#6f6a61;border:1px solid #deded8;padding:3px 9px}.bqp-related .bq-foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:10px;padding-top:12px}.bqp-related .bq-price{display:flex;flex-direction:column;font-weight:700;font-size:16px}.bqp-related .bq-btn{background:#14110c;color:#fff;padding:9px 14px;font-size:12px;font-weight:600;text-decoration:none;white-space:nowrap}
-    @media(max-width:760px){.bqp-hero,.bqp-grid{grid-template-columns:minmax(0,1fr)}.bqp-hero>*,.bqp-intro{min-width:0}.bqp-visual{width:100%;height:400px;padding:22px}.bqp-visual img{inset:22px;width:calc(100% - 44px)!important;height:calc(100% - 44px)!important}.bqp-gauges,.bqp-tasting{grid-template-columns:1fr}.bqp-buy{align-items:flex-start;flex-direction:column}.bqp-intro h1{font-size:clamp(32px,10.5vw,42px);overflow-wrap:anywhere}.bqp-lead{font-size:17px}.bqp-related .bq-grid{grid-template-columns:1fr}.bqp-related .bq-media{height:290px}.bqp-scene{min-height:300px;padding:28px 20px}.bqp-buy .btn,.bqp-intro>.btn{width:100%;justify-content:center;white-space:normal;text-align:center}.bqp-price{flex-wrap:wrap}.bqp-source{overflow-wrap:anywhere}}
+    @media(max-width:760px){.bqp-hero,.bqp-grid,.bqp-editorial-grid{grid-template-columns:minmax(0,1fr)}.bqp-hero>*,.bqp-intro{min-width:0}.bqp-visual{width:100%;height:400px;padding:22px}.bqp-visual img{inset:22px;width:calc(100% - 44px)!important;height:calc(100% - 44px)!important}.bqp-quickfacts{grid-template-columns:1fr 1fr}.bqp-quickfacts>div:nth-child(2){border-right:0}.bqp-quickfacts>div:nth-child(-n+2){border-bottom:1px solid #d7d2c8}.bqp-gauges,.bqp-tasting,.bqp-facts,.bqp-answer-grid{grid-template-columns:1fr}.bqp-fact-row:nth-child(odd){margin-right:0}.bqp-buy{align-items:flex-start;flex-direction:column}.bqp-intro h1{font-size:clamp(32px,10.5vw,42px);overflow-wrap:anywhere}.bqp-lead{font-size:17px}.bqp-related .bq-grid{grid-template-columns:1fr}.bqp-related .bq-media{height:290px}.bqp-buy .btn,.bqp-intro>.btn{width:100%;justify-content:center;white-space:normal;text-align:center}.bqp-price{flex-wrap:wrap}}
     @media(max-width:420px){.bqp{padding-top:22px}.bqp-hero{margin-top:18px;gap:28px}.bqp-visual{height:350px;padding:16px}.bqp-visual img{inset:16px;width:calc(100% - 32px)!important;height:calc(100% - 32px)!important}.bqp-intro h1{font-size:clamp(31px,10vw,38px);line-height:.98}.bqp-panel{padding:28px 0}.bqp-facts{grid-template-columns:1fr}.bqp-scene h2{font-size:32px}.bqp-related{margin-top:52px}}
   </style>`;
 }
@@ -291,7 +276,7 @@ export function boutiqueMain(items=CHAMPAGNES){
   const cards = items.map(card).join('');
   const chips = ['Tous', ...STYLES].map((s,i)=>`<button class="bq-chip${i===0?' is-on':''}" data-f="${i===0?'':s.toLowerCase()}">${s}</button>`).join('');
   return `<section class="section"><div class="container">
-    <div class="lead-head"><h1 class="h2">Sélection de champagnes</h1><p>${items.length} champagnes à découvrir et à commander, des grandes maisons aux vignerons indépendants : brut, rosé, blanc de blancs, extra-brut, pour chaque budget et chaque occasion.</p></div>
+    <div class="lead-head"><h1 class="h2">Sélection de champagnes</h1><p>${items.length} champagnes analysés, des grandes maisons aux vignerons indépendants : cépages, dosage, profil aromatique, service, accords et prix relevé.</p></div>
 
     <div class="boutique">
       <div class="bq-bar">
