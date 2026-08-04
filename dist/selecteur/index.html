@@ -870,7 +870,7 @@ function renderHome(){
   </main>` + foot();
 }
 
-function startQuiz(){ state.started=true; if(window.qcTrack){window.qcTrack('quiz_started',{source:'intro'});} render(); }
+function beginSelector(){ state.started=true; state.step=0; if(window.qcTrack){window.qcTrack('quiz_started',{source:'intro'});} render(); }
 function renderIntro(){
   const steps=[['01','Occasion'],['02','Style'],['03','Budget'],['04','Accord'],['05','Producteur']]
     .map(s=>`<div style="flex:1;min-width:98px;display:flex;flex-direction:column;align-items:center;gap:6px;background:#F0F4F1;border:1px solid #DCE5DE;border-radius:14px;padding:14px 8px"><span style="font-size:12px;font-weight:700;letter-spacing:.08em;color:#B8912F">${s[0]}</span><span style="font-size:13px;color:#2c3a33">${s[1]}</span></div>`).join('');
@@ -880,7 +880,7 @@ function renderIntro(){
     <h1 class="qtitle">Trouvez votre champagne idéal en répondant à 5 questions</h1>
     <p class="qhint" style="margin-left:auto;margin-right:auto">Occasion, goût, budget : on vous recommande la bonne bouteille, avec l'analyse qui explique pourquoi. Sans pub, sans classement acheté.</p>
     <div style="display:flex;flex-wrap:wrap;gap:10px;margin:26px 0 28px">${steps}</div>
-    <button class="btn btn-primary btn-lg" onclick="startQuiz()">Trouver mon champagne →</button>
+    <button class="btn btn-primary btn-lg" onclick="beginSelector()">Trouver mon champagne →</button>
     <p style="margin-top:16px;font-size:13px;color:var(--muted)">≈ 2 min · sans inscription · classement indépendant</p>
   </div></section>
   ${selectorGuide()}` + foot();
