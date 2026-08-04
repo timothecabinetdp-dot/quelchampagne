@@ -892,9 +892,9 @@ function selecteurHTML(){
   const selectorStatic = `<main id="main-content">
     <section class="quiz"><div class="narrow">
       <div class="qlabel">Sélecteur QuelChampagne</div>
-      <h1 class="qtitle">Choisissez votre champagne à partir de cinq critères concrets.</h1>
-      <p class="qhint">Le moment, l’accord, le style, le budget et la signature recherchée construisent une sélection parmi les bouteilles disponibles.</p>
-      <div class="qopts"><div class="qopt"><span class="qe">01</span><span><span class="ql">Commencer par le moment</span><br><span class="qd">Le sélecteur interactif se charge automatiquement.</span></span></div></div>
+      <h1 class="qtitle">Trouvez votre champagne idéal en répondant à 5 questions</h1>
+      <p class="qhint">Occasion, goût, budget : on vous recommande la bonne bouteille, avec l’analyse qui explique pourquoi. Sans pub, sans classement acheté.</p>
+      <div class="qopts"><div class="qopt"><span class="qe">→</span><span><span class="ql">Trouver mon champagne</span><br><span class="qd">≈ 2 min · sans inscription · classement indépendant</span></span></div></div>
     </div></section>
     <section class="selector-guide" aria-labelledby="selector-static-title"><div class="container">
       <div class="selector-guide-head"><div class="eyebrow-l">Comment le choix est construit</div><h2 id="selector-static-title">Une recommandation fondée sur l’usage, le goût et l’offre disponible.</h2><p>Le sélecteur ne classe pas les maisons dans l’absolu. Il rapproche vos réponses des caractéristiques de chaque cuvée, puis conserve uniquement les bouteilles disponibles chez notre partenaire au moment du dernier relevé.</p></div>
