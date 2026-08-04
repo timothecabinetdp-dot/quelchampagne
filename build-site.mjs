@@ -230,14 +230,14 @@ function header(active){
   return `<header class="nav"><div class="container nav-in">
     <a class="logo" href="/">${logoMark()}<span class="logo-txt">Quel<b>Champagne</b></span></a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Ouvrir le menu"><span></span><span></span></button>
-    <nav class="nav-links" id="primary-navigation" aria-label="Navigation principale">${L('/champagnes/','La sélection','shop')}${L('/comparateur/','Comparer','compare')}${L('/blog/','Blog','blog')}<a class="nlink-cta" href="/expert/">Sélecteur expert</a></nav>
+    <nav class="nav-links" id="primary-navigation" aria-label="Navigation principale">${L('/champagnes/','La sélection','shop')}${L('/comparateur/','Comparer','compare')}${L('/blog/','Blog','blog')}<a class="nlink-cta" href="/selecteur/">Trouver mon champagne</a></nav>
   </div></header>`;
 }
 function footer(){
   return `<footer><div class="container">
     <div class="foot-in">
       <div class="foot-brand"><span class="foot-brand-name">${BRAND}${logoMark()}</span><p>Un conseil indépendant pour choisir selon le style, l’accord et le budget.</p></div>
-      <nav class="foot-links" aria-label="Navigation secondaire"><a href="/expert/">Le sélecteur expert</a><a href="/selecteur/">Le sélecteur rapide</a><a href="/comparateur/">Comparer</a><a href="/notre-methode/">Notre méthode</a><a href="/a-propos/">À propos</a><a href="/partenaires/">Professionnels</a><a href="/mentions-legales/">Mentions légales</a><a href="/confidentialite/">Confidentialité</a><button onclick="window.qcAffiliatePreferences&&window.qcAffiliatePreferences()">Préférence d’affiliation</button></nav>
+      <nav class="foot-links" aria-label="Navigation secondaire"><a href="/selecteur/">Le sélecteur</a><a href="/comparateur/">Comparer</a><a href="/notre-methode/">Notre méthode</a><a href="/a-propos/">À propos</a><a href="/partenaires/">Professionnels</a><a href="/mentions-legales/">Mentions légales</a><a href="/confidentialite/">Confidentialité</a><button onclick="window.qcAffiliatePreferences&&window.qcAffiliatePreferences()">Préférence d’affiliation</button></nav>
     </div>
     <div class="foot-health">L'abus d'alcool est dangereux pour la santé. À consommer avec modération.</div>
     <div class="foot-disc">Site réservé aux personnes majeures. ${BRAND} propose des informations et des conseils indépendants. Chaque prix affiché correspond au dernier relevé de l’offre présentée et porte sa date de contrôle.</div>
@@ -965,16 +965,7 @@ add(BASE+'/', '1.0', 'weekly');
 write('selecteur/index.html', selecteurHTML());
 add(BASE+'/selecteur/', '0.8', 'monthly');
 
-// moteur expert autonome : profils multidimensionnels et recommandations explicables
-write('expert/index.html', page({
-  title:'Sélecteur expert de champagne — Recommandations personnalisées | QuelChampagne',
-  desc:'Décrivez le moment, l’accord, le style et le budget recherchés. Le moteur expert compare les cuvées disponibles sur douze dimensions et explique chaque choix.',
-  canonical:BASE+'/expert/',
-  active:'expert',
-  main:expertMain(expertKnowledgeBase),
-  graph:[{'@type':'WebApplication',name:'Sélecteur expert QuelChampagne',url:BASE+'/expert/',applicationCategory:'LifestyleApplication',operatingSystem:'Web',inLanguage:'fr-FR',description:'Moteur de recommandation de champagne fondé sur douze dimensions de style, les usages et les contraintes de budget.'}]
-}));
-add(BASE+'/expert/', '0.9', 'weekly');
+// Sélecteur expert retiré du site public (base de données construite à part).
 
 // champagnes list
 write('champagnes/index.html', page({ title:`Quel champagne choisir ? Notre sélection de ${partnerProducts.length} champagnes | QuelChampagne`, desc:`Analysez ${partnerProducts.length} champagnes disponibles chez notre partenaire : style, cépages, dosage, service et accords avant de consulter l’offre.`, canonical:BASE+'/champagnes/', active:'shop', main:boutiqueMain(partnerProducts) }));
