@@ -106,7 +106,7 @@ function card(p){
   const internalUrl = `/champagne/${p.id && !String(p.id).startsWith('shopify_') ? p.id : boutiqueSlug(p)}/`;
   return `<article class="bq-card" data-style="${key}" data-price="${p.price}">
       <a class="bq-media" href="${internalUrl}" aria-label="Voir l’analyse de ${esc(p.brand)} ${esc(p.name)}">
-        <span class="bq-visual-badge">${icon('bottle')}<span>${visualLabel}</span></span>
+        <span class="bq-visual-badge"><span>${visualLabel}</span></span>
         <img loading="lazy" src="${esc(p.image)}" alt="${esc(p.brand)} ${esc(p.name)}">
       </a>
       <div class="bq-body">
