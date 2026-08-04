@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-labelledby="title-vieillissement">
+<title id="title-vieillissement">Vieillissement</title>
+<style>.line{fill:none;stroke:var(--qc-icon-ink,#1F503D);stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}.accent{fill:none;stroke:var(--qc-icon-gold,#C69A35);stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}.accent-fill{fill:var(--qc-icon-gold,#C69A35);stroke:none}.soft{fill:var(--qc-icon-soft,#E9D9AF);stroke:var(--qc-icon-ink,#1F503D);stroke-width:1.35}</style>
+<path class="line" d="M7 3h10M7 21h10M8 3c0 5 1 7 4 9-3 2-4 4-4 9m8-18c0 5-1 7-4 9 3 2 4 4 4 9"/><path class="accent" d="M9 6h6m-6 12h6"/>
+</svg>

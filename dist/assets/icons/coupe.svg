@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-labelledby="title-coupe">
+<title id="title-coupe">Coupe</title>
+<style>.line{fill:none;stroke:var(--qc-icon-ink,#1F503D);stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}.accent{fill:none;stroke:var(--qc-icon-gold,#C69A35);stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}.accent-fill{fill:var(--qc-icon-gold,#C69A35);stroke:none}.soft{fill:var(--qc-icon-soft,#E9D9AF);stroke:var(--qc-icon-ink,#1F503D);stroke-width:1.35}</style>
+<path class="line" d="M5 4h14c0 5-2.7 8-7 8S5 9 5 4Z"/><path class="line" d="M12 12v6m-4 2h8"/><path class="accent" d="M7.5 7h9"/>
+</svg>

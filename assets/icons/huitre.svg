@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-labelledby="title-huitre">
+<title id="title-huitre">Huître</title>
+<style>.line{fill:none;stroke:var(--qc-icon-ink,#1F503D);stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}.accent{fill:none;stroke:var(--qc-icon-gold,#C69A35);stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}.accent-fill{fill:var(--qc-icon-gold,#C69A35);stroke:none}.soft{fill:var(--qc-icon-soft,#E9D9AF);stroke:var(--qc-icon-ink,#1F503D);stroke-width:1.35}</style>
+<path class="line" d="M3 16C4 9 8 4 12 3c5 1 9 7 9 13-4 5-14 5-18 0Z"/><path class="accent" d="M5 15c4-2 9-2 14 0m-12-3 5-7 5 7"/><path class="soft" d="M8 15c2-2 6-2 8 0-1 3-7 3-8 0Z"/>
+</svg>

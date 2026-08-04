@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-labelledby="title-brioche">
+<title id="title-brioche">Brioche</title>
+<style>.line{fill:none;stroke:var(--qc-icon-ink,#1F503D);stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}.accent{fill:none;stroke:var(--qc-icon-gold,#C69A35);stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}.accent-fill{fill:var(--qc-icon-gold,#C69A35);stroke:none}.soft{fill:var(--qc-icon-soft,#E9D9AF);stroke:var(--qc-icon-ink,#1F503D);stroke-width:1.35}</style>
+<path class="line" d="M5 11c-2-4 3-7 6-4 2-4 8-2 7 2 3 1 3 6 0 7v4H5v-9Z"/><path class="accent" d="M8 10c1 1 1 3 0 5m4-6c1 2 1 4 0 6m4-5c-1 2-1 4 0 5"/>
+</svg>

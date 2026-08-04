@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-labelledby="title-vignoble">
+<title id="title-vignoble">Vignoble</title>
+<style>.line{fill:none;stroke:var(--qc-icon-ink,#1F503D);stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}.accent{fill:none;stroke:var(--qc-icon-gold,#C69A35);stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}.accent-fill{fill:var(--qc-icon-gold,#C69A35);stroke:none}.soft{fill:var(--qc-icon-soft,#E9D9AF);stroke:var(--qc-icon-ink,#1F503D);stroke-width:1.35}</style>
+<path class="line" d="M3 15c4-6 8-8 12-7 3 0 5 2 6 4"/><path class="accent" d="M3 19c5-3 10-5 18-5M6 21c4-3 9-4 15-4"/><path class="line" d="M5 8V4h4v2m-5 2h7v5"/>
+</svg>

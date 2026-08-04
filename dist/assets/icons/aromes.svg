@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-labelledby="title-aromes">
+<title id="title-aromes">Arômes</title>
+<style>.line{fill:none;stroke:var(--qc-icon-ink,#1F503D);stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}.accent{fill:none;stroke:var(--qc-icon-gold,#C69A35);stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}.accent-fill{fill:var(--qc-icon-gold,#C69A35);stroke:none}.soft{fill:var(--qc-icon-soft,#E9D9AF);stroke:var(--qc-icon-ink,#1F503D);stroke-width:1.35}</style>
+<path class="line" d="M12 7c-1-4 4-5 5-2 4-1 5 4 2 5 2 3-2 6-4 4-1 4-6 4-6 0-4 1-6-4-2-6-3-3 0-7 4-6 1-4 6-3 6 1Z"/><circle class="accent-fill" cx="12" cy="11" r="2"/><path class="accent" d="M12 13v8"/>
+</svg>

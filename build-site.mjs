@@ -668,7 +668,7 @@ function comparateurMain(){
   })();
   </script>
   <style>
-    .compare-choice{display:flex!important;align-items:center;gap:12px;text-align:left}.compare-choice>img{width:42px;height:64px;object-fit:contain;background:#fff;flex:0 0 auto}.compare-choice>span{display:grid;gap:3px}.compare-choice small{font-size:13px;color:#6b665e;line-height:1.3}.compare-product-head{display:grid;justify-items:center;gap:10px;text-align:center;text-decoration:none;color:inherit}.compare-product-image{display:grid;place-items:center;width:100%;height:150px;background:#fff}.compare-product-image img{width:100%;height:138px;object-fit:contain}.compare-table tbody td:not(:first-child){line-height:1.45}.compare-table tbody tr:nth-child(even){background:#faf9f6}
+    .compare-choice{display:flex!important;align-items:center;gap:12px;text-align:left}.compare-choice[hidden]{display:none!important}.compare-choice>img{width:42px;height:64px;object-fit:contain;background:#fff;flex:0 0 auto}.compare-choice>span{display:grid;gap:3px}.compare-choice small{font-size:13px;color:#6b665e;line-height:1.3}.compare-product-head{display:grid;justify-items:center;gap:10px;text-align:center;text-decoration:none;color:inherit}.compare-product-image{display:grid;place-items:center;width:100%;height:150px;background:#fff}.compare-product-image img{width:100%;height:138px;object-fit:contain}.compare-table tbody td:not(:first-child){line-height:1.45}.compare-table tbody tr:nth-child(even){background:#faf9f6}
     @media(max-width:720px){.compare-product-image{height:110px}.compare-product-image img{height:100px}.compare-table{min-width:720px}}
   </style>`;
 }

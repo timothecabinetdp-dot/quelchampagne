@@ -144,8 +144,15 @@ const ICONS={
   compare:'<path d="M7 4v16M7 4 3 8M7 4l4 4M17 20V4M17 20l-4-4M17 20l4-4"/>',
   list:'<path d="M9 6h11M9 12h11M9 18h11"/><circle cx="4" cy="6" r="1"/><circle cx="4" cy="12" r="1"/><circle cx="4" cy="18" r="1"/>'
 };
-function icon(name, className=''){
+function iconSvg(name, className=''){
   return `<svg class="qc-icon ${className}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICONS[name]||ICONS.info}</svg>`;
+}
+// Kit de pictogrammes bicolores (vert bouteille + or) — utilisés sur fond clair.
+const KIT_PICTO={dosage:'dosage',service:'temperature',accord:'accords',grape:'raisins',bottle:'bouteille',glass:'coupe',time:'vieillissement',producer:'maison',nose:'aromes',palate:'rondeur',finish:'fraicheur',eye:'coupe',style:'aromes'};
+function icon(name, className=''){
+  const kit=KIT_PICTO[name];
+  if(kit) return `<img class="qc-icon qc-picto ${className}" src="/assets/icons/${kit}.svg" alt="" aria-hidden="true">`;
+  return iconSvg(name, className);
 }
 function factIcon(label=''){
   if(/Cépages|Assemblage|aromatique/i.test(label)) return 'grape';
@@ -170,7 +177,7 @@ function questionIcon(question=''){
   return 'info';
 }
 function blockTitle(iconName, eyebrow, title){
-  return `<div class="bqp-section-head"><span class="bqp-section-icon">${icon(iconName)}</span><div><div class="pblock-eyebrow">${eyebrow}</div><h2>${title}</h2></div></div>`;
+  return `<div class="bqp-section-head"><span class="bqp-section-icon">${iconSvg(iconName)}</span><div><div class="pblock-eyebrow">${eyebrow}</div><h2>${title}</h2></div></div>`;
 }
 
 function editorialScene(p, analysis){
@@ -308,7 +315,7 @@ export function boutiqueProductMain(p, buildDate, catalogue=CHAMPAGNES){
     ${related?`<div class="bqp-related"><div class="sec-head"><h2 class="h2">Trois alternatives pertinentes</h2><p>${esc(alternativeNames)}</p></div><div class="bq-grid">${related}</div></div>`:''}
   </div></section>
   <style>
-    .bq-name a{color:inherit;text-decoration:none}.qc-icon{display:block;width:22px;height:22px;flex:0 0 auto}.bqp{padding:clamp(36px,6vw,84px) 0 90px;background:linear-gradient(180deg,#f8f7f3 0,#f2f0ea 38%,#f8f7f3 100%);color:#14110c;overflow:hidden}
+    .bq-name a{color:inherit;text-decoration:none}.qc-icon{display:block;width:22px;height:22px;flex:0 0 auto}.qc-picto{object-fit:contain;transition:transform .19s ease}.bqp-quickfacts>div:hover .qc-picto,.bqp-tasting>div:hover .qc-picto,.bqp-copy-card:hover .qc-picto,.bqp-verdict .decision:hover .qc-picto{transform:translateY(-2px)}@media (prefers-reduced-motion:reduce){.qc-picto{transition:none!important}.bqp-quickfacts>div:hover .qc-picto,.bqp-tasting>div:hover .qc-picto,.bqp-copy-card:hover .qc-picto,.bqp-verdict .decision:hover .qc-picto{transform:none!important}}.bqp{padding:clamp(36px,6vw,84px) 0 90px;background:linear-gradient(180deg,#f8f7f3 0,#f2f0ea 38%,#f8f7f3 100%);color:#14110c;overflow:hidden}
     .bqp-hero{display:grid;grid-template-columns:minmax(280px,.85fr) minmax(320px,1.15fr);gap:clamp(34px,7vw,92px);align-items:center;margin-top:28px}
     .bqp-visual{position:relative;height:560px;border:1px solid #e4dfd5;border-radius:28px;background:radial-gradient(circle at 50% 42%,#fff 0,#fff 48%,#f3efe6 100%);display:grid;place-items:center;padding:34px;overflow:hidden;box-sizing:border-box;contain:layout paint;box-shadow:0 28px 70px -46px rgba(29,22,12,.38)}.bqp-visual:before,.bqp-visual:after{content:'';position:absolute;border-radius:50%;border:1px solid rgba(156,122,52,.16)}.bqp-visual:before{width:320px;height:320px;right:-190px;top:-140px}.bqp-visual:after{width:170px;height:170px;left:-105px;bottom:-80px}
     .bqp-visual img{display:block;position:absolute;inset:34px;width:calc(100% - 68px)!important;height:calc(100% - 68px)!important;max-width:none!important;max-height:none!important;object-fit:contain!important;object-position:center;mix-blend-mode:multiply;margin:0!important}.bqp-intro h1{font-family:var(--display);font-size:clamp(40px,5.3vw,72px);font-weight:900;text-transform:uppercase;line-height:.95;letter-spacing:-.025em;margin:12px 0 22px}
