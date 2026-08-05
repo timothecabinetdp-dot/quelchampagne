@@ -830,21 +830,41 @@ function aboutMain(){
 }
 
 function partnersMain(){
-  return `<section class="article"><div class="narrow">
-    <div class="a-cat">Professionnels</div><h1 class="a-title">Présenter vos champagnes au bon moment du choix</h1>
-    <p class="qhint">QuelChampagne transforme un catalogue marchand en fiches utiles, comparables et reliées à chaque offre exacte.</p>
-    <div class="prose">
-      <h3>Un clic précédé d’une analyse</h3>
-      <p>Le visiteur précise le mode de service, le plat, le style recherché, son budget et le type de producteur qui l’intéresse. Il consulte ensuite une fiche complète avant d’accéder à l’offre du vendeur. La redirection intervient au terme d’un choix expliqué, pas depuis une simple galerie de produits.</p>
-      <h3>Les données nécessaires</h3>
-      <p>Une intégration fiable demande un flux produit autorisé comprenant le nom exact de la cuvée, le format, le millésime lorsqu’il existe, le prix, le stock, l’URL de vente et une photographie exploitable. Les fiches techniques officielles complètent ces données pour les cépages, le dosage et l’élaboration.</p>
-      <h3>Ce que nous contrôlons</h3>
-      <p>QuelChampagne rapproche chaque offre de la bonne bouteille, date les prix, vérifie la disponibilité et retire des moteurs de recherche les fiches qui ne disposent pas encore d’une documentation suffisante. Les mises en avant commerciales ne modifient pas l’ordre du sélecteur.</p>
-      <h3>Travailler avec QuelChampagne</h3>
-      <p>Nous étudions les catalogues de vendeurs livrant la France et capables de fournir des données actualisées, des liens suivis ou directs et les droits nécessaires sur les photographies produit. L’intégration commence par un échantillon contrôlé avant l’ouverture du catalogue complet.</p>
-      <div style="margin-top:36px"><a class="btn btn-primary" href="mailto:timothe.cabinetdp@gmail.com?subject=Partenariat%20QuelChampagne">Proposer un partenariat</a> <a class="btn btn-ghost" href="/notre-methode/">Consulter notre méthode</a></div>
-    </div>
-  </div></section>`;
+  const sample=partnerProducts[0];
+  const e=sample?.details?.enrichment||{};
+  const pictogram=(path)=>`<svg viewBox="0 0 24 24" aria-hidden="true"><path d="${path}"/></svg>`;
+  const icons={
+    feed:pictogram('M4 5h16v14H4zM8 9h8M8 13h8M8 17h5'),
+    match:pictogram('M8 12l3 3 6-7M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18'),
+    enrich:pictogram('M12 3v18M3 12h18M6 6l12 12M18 6 6 18'),
+    click:pictogram('M6 3l12 9-6 2-2 6z'),
+    chart:pictogram('M4 20V10m6 10V4m6 16v-7m4 7H2')
+  };
+  return `<main id="main-content" class="partner-page">
+  <section class="partner-hero"><div class="container">
+    <div class="partner-hero-copy"><div class="a-cat">Partenaires marchands</div><h1>Transformer un catalogue en décisions d’achat.</h1><p>QuelChampagne relie chaque offre à une bouteille exacte, l’enrichit avec des critères de choix et dirige le visiteur vers le marchand après une recommandation expliquée.</p><div class="partner-actions"><a class="btn btn-primary" href="mailto:timothe.cabinetdp@gmail.com?subject=Pilote%20partenaire%20QuelChampagne">Étudier un pilote</a><a class="chev" href="/selecteur/">Voir le parcours utilisateur</a></div></div>
+    <div class="partner-demo" aria-label="Exemple d’une recommandation QuelChampagne"><div class="partner-demo-top"><span>Résultat du sélecteur</span><strong>Choix expliqué</strong></div><div class="partner-demo-product"><img src="${sample.image}" alt="Bouteille ${sample.house} ${sample.short}"><div><small>${sample.house}</small><h2>${sample.short}</h2><p>${e.character||'Vif et précis'} · ${e.temperature||'8–10 °C'}</p><strong>${priceText(sample)}</strong></div></div><ul><li>${icons.match}<span>Accord, style et budget croisés</span></li><li>${icons.click}<span>Analyse interne avant la redirection</span></li></ul></div>
+  </div></section>
+
+  <section class="partner-proof"><div class="container"><div class="partner-proof-grid">
+    <div><strong>${partnerProducts.length}</strong><span>offres disponibles déjà reliées à une fiche</span></div>
+    <div><strong>5</strong><span>critères de sélection croisés</span></div>
+    <div><strong>1</strong><span>identité produit unique par cuvée et format</span></div>
+    <div><strong>0</strong><span>placement payé dans le classement</span></div>
+  </div></div></section>
+
+  <section class="section partner-process"><div class="container"><div class="sec-head"><div class="eyebrow-l">Intégration</div><h2 class="h2">Du flux marchand à la recommandation</h2><p>Quatre opérations suffisent pour rendre un catalogue exploitable par le sélecteur, les fiches et le comparateur.</p></div><div class="partner-process-grid">
+    <article><span>${icons.feed}</span><small>01</small><h3>Recevoir le flux</h3><p>SKU ou EAN, cuvée, format, millésime, prix, stock, URL et photographie autorisée.</p></article>
+    <article><span>${icons.match}</span><small>02</small><h3>Identifier la bouteille</h3><p>Chaque offre est rapprochée de la bonne cuvée sans substituer une autre édition de la même maison.</p></article>
+    <article><span>${icons.enrich}</span><small>03</small><h3>Enrichir la fiche</h3><p>Cépages, dosage, élaboration, style, accords et service alimentent la comparaison.</p></article>
+    <article><span>${icons.click}</span><small>04</small><h3>Diriger le choix</h3><p>Le visiteur comprend la bouteille, puis consulte l’offre exacte et disponible chez le marchand.</p></article>
+  </div></div></section>
+
+  <section class="section gray partner-pilot"><div class="container"><div class="partner-pilot-grid"><div><div class="eyebrow-l">Proposition de collaboration</div><h2 class="h2">Un pilote mesurable en 30 jours</h2><p class="partner-pilot-lead">Nous intégrons un premier échantillon de 50 à 100 champagnes pour valider la qualité des données, le parcours et l’intérêt commercial avant d’ouvrir davantage de références.</p><div class="partner-deliverables"><div>${icons.feed}<span><strong>Catalogue connecté</strong>Prix, stock, photos et liens profonds actualisés.</span></div><div>${icons.enrich}<span><strong>Fiches enrichies</strong>Chaque référence rejoint le sélecteur et le comparateur.</span></div><div>${icons.chart}<span><strong>Bilan partagé</strong>Consultations, clics sortants et intentions les plus fréquentes.</span></div></div></div>
+    <aside class="partner-pilot-card"><h3>Périmètre proposé</h3><dl><div><dt>Catalogue</dt><dd>50 à 100 références</dd></div><div><dt>Durée</dt><dd>30 jours</dd></div><div><dt>Mise à jour</dt><dd>Flux régulier</dd></div><div><dt>Mesure</dt><dd>Sélecteur → fiche → marchand</dd></div></dl><a class="btn btn-accent" href="mailto:timothe.cabinetdp@gmail.com?subject=Pilote%20catalogue%20QuelChampagne">Lancer l’échange</a></aside></div></div></section>
+
+  <section class="section partner-needs"><div class="container"><div class="partner-needs-grid"><div><div class="eyebrow-l">Données attendues</div><h2 class="h2">Ce qu’il faut pour commencer</h2></div><div class="partner-checks"><p>Identifiant produit stable : SKU ou EAN</p><p>Nom exact, format et millésime</p><p>Prix, disponibilité et URL de vente</p><p>Photographies avec droits d’utilisation</p><p>Fiches techniques ou données producteur</p><p>Règles d’attribution et reporting</p></div></div><div class="partner-final"><h2>Construisons le premier catalogue ensemble.</h2><p>L’intégration commence sur un échantillon contrôlé. Elle ne demande ni exclusivité ni mise en avant payante.</p><a class="btn btn-primary" href="mailto:timothe.cabinetdp@gmail.com?subject=Partenariat%20QuelChampagne">Contacter QuelChampagne</a></div></div></section>
+  </main>`;
 }
 
 function legalMain(){
