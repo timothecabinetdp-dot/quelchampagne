@@ -232,5 +232,71 @@
       "blog-brut-nature"
     ],
     "notes": "Flûtes de champagne et bouteille au bar. Aucune marque identifiable mise en avant."
+  },
+  {
+    "asset": "https://images.unsplash.com/photo-1643618829236-a23857519fb6",
+    "type": "third_party_stock_photo",
+    "source": "Unsplash",
+    "license": "Unsplash License (usage commercial gratuit, hotlink autorisé)",
+    "rightsStatus": "cleared",
+    "uses": [
+      "blog-rose"
+    ],
+    "notes": "Bouteille de champagne rosé rafraîchie sur glace."
+  },
+  {
+    "asset": "https://images.unsplash.com/photo-1613477581402-306fa9dc6b95",
+    "type": "third_party_stock_photo",
+    "source": "Unsplash",
+    "license": "Unsplash License (usage commercial gratuit, hotlink autorisé)",
+    "rightsStatus": "cleared",
+    "uses": [
+      "blog-rapport-qualite-prix"
+    ],
+    "notes": "Coupes de champagne servies, ambiance festive."
+  },
+  {
+    "asset": "https://images.unsplash.com/photo-1623073284793-84dc366d4798",
+    "type": "third_party_stock_photo",
+    "source": "Unsplash",
+    "license": "Unsplash License (usage commercial gratuit, hotlink autorisé)",
+    "rightsStatus": "cleared",
+    "uses": [
+      "blog-saint-valentin"
+    ],
+    "notes": "Champagne servi dans une ambiance de dîner à deux."
+  },
+  {
+    "asset": "https://images.unsplash.com/photo-1585553616435-2dc0a54e271d",
+    "type": "third_party_stock_photo",
+    "source": "Unsplash",
+    "license": "Unsplash License (usage commercial gratuit, hotlink autorisé)",
+    "rightsStatus": "cleared",
+    "uses": [
+      "blog-conservation"
+    ],
+    "notes": "Verre de champagne dans une ambiance feutrée de cave."
+  },
+  {
+    "asset": "https://images.unsplash.com/photo-1717240049346-b6a9f43f4e1c",
+    "type": "third_party_stock_photo",
+    "source": "Unsplash",
+    "license": "Unsplash License (usage commercial gratuit, hotlink autorisé)",
+    "rightsStatus": "cleared",
+    "uses": [
+      "blog-crus"
+    ],
+    "notes": "Vignoble de Champagne : rangs de vignes et bâtisse."
+  },
+  {
+    "asset": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0",
+    "type": "third_party_stock_photo",
+    "source": "Unsplash",
+    "license": "Unsplash License (usage commercial gratuit, hotlink autorisé)",
+    "rightsStatus": "cleared",
+    "uses": [
+      "blog-foie-gras"
+    ],
+    "notes": "Table dressée gastronomique avec assiette et verre."
   }
 ]

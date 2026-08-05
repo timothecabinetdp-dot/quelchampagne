@@ -42,9 +42,9 @@ const BLOG_PHOTOS = {
   'huitres':'1679694140422-aecfd3d5dd0b', 'anniversaire':'1514828980084-9462f7d03afc',
   'brut-nature':'1619810856355-c5f4e7f8a90e', 'rose-saignee':'1673872602569-c9a1c1bfe71f',
   'vigneron':'1635715070096-b4655b94edee', 'etiquette':'1628336707631-68131ca720c3',
-  'rose':'1673872602569-c9a1c1bfe71f', 'rapport-qualite-prix':'1609516142756-7ecef85e76a7',
-  'saint-valentin':'1514828980084-9462f7d03afc', 'conservation':'1720070827797-d4f03e228dea',
-  'crus':'1635715070096-b4655b94edee', 'foie-gras':'1679694140422-aecfd3d5dd0b'
+  'rose':'1643618829236-a23857519fb6', 'rapport-qualite-prix':'1613477581402-306fa9dc6b95',
+  'saint-valentin':'1623073284793-84dc366d4798', 'conservation':'1585553616435-2dc0a54e271d',
+  'crus':'1717240049346-b6a9f43f4e1c', 'foie-gras':'1414235077428-338989a2e8c0'
 };
 function blogPhoto(a, w){ const id = BLOG_PHOTOS[a.id]; return id ? `https://images.unsplash.com/photo-${id}?q=75&w=${w||800}&auto=format&fit=crop` : null; }
 function coverStyle(a, w){ const p = blogPhoto(a, w); return p ? `background:#EFEAE0 url('${p}') center/cover` : `background:${coverBg(a)}`; }
