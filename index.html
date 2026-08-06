@@ -1757,21 +1757,44 @@ function summary(){
   return m[occ]||"Cette bouteille est la plus proche des critères que vous avez indiqués.";
 }
 
+function styleWords(p, prefer){
+  const label={profil_frais_vif:"une bouche fraîche et tendue, sur les agrumes et une finale nette",
+    profil_riche_ample:"une matière ample et vineuse, aux notes briochées",
+    profil_delicat:"une expression fine et florale, tout en légèreté",
+    profil_fruite:"un fruité mûr et une rondeur souple"};
+  const order=[]; if(prefer && p.profil.includes(prefer)) order.push(prefer);
+  for(const t of ['profil_frais_vif','profil_riche_ample','profil_delicat','profil_fruite']) if(!order.includes(t)) order.push(t);
+  for(const t of order){ if(p.profil.includes(t)) return label[t]; }
+  return "un profil équilibré et polyvalent";
+}
+function occasionReason(p, tag){
+  const frais = p.profil.includes('profil_frais_vif') || p.profil.includes('profil_delicat');
+  const ample = p.profil.includes('profil_riche_ample');
+  if(tag==='occ_apero') return frais ? "Fraîche et lisible, elle ouvre le repas sans couvrir les premières bouchées." : "Son équilibre en fait un apéritif facile, qui plaît sans dominer.";
+  if(tag==='occ_diner') return ample ? "Sa matière lui permet de tenir tête à un plat sans s’effacer." : "Assez structurée pour passer à table, elle accompagne le plat principal.";
+  if(tag==='occ_fete') return "Un style accessible qui rassemble un large public tout en gardant du caractère.";
+  if(tag==='occ_cadeau') return `Son identité — ${p.house}, ${p.tags.slice(0,2).join(' · ').toLowerCase()} — en fait une bouteille à offrir.`;
+  if(tag==='occ_romantique') return "Fine et précise, elle se déguste lentement, à deux.";
+  return null;
+}
 function matchReasons(p){
   const reasons=[];
   const a=state.answers;
-  if((a.occasion||[]).some(tag=>p.occ.includes(tag))) reasons.push("Sa structure correspond au mode de service indiqué.");
+  const occ=(a.occasion||[]).find(tag=>p.occ.includes(tag));
+  if(occ){ const r=occasionReason(p,occ); if(r) reasons.push(r); }
   const accord=(a.accord||[])[0];
-  if(accordFit(p,accord) && accord!=='accord_any') reasons.push("Son profil soutient l’accord que vous avez choisi.");
-  if((a.gout||[]).some(tag=>p.profil.includes(tag))) reasons.push("Son profil correspond au style recherché.");
+  if(accordFit(p,accord) && accord!=='accord_any' && p.pair) reasons.push(`Ses accords de prédilection — ${p.pair} — tombent juste sur ce que vous servez.`);
+  const goutMatch=(a.gout||[]).find(tag=>p.profil.includes(tag));
+  if(goutMatch) reasons.push(`Côté goût, on retrouve ${styleWords(p,goutMatch)} : exactement la sensation recherchée.`);
   const budget=(a.budget||[])[0];
-  if(budget && budgetFitScore(p,budget)>=29) reasons.push("Son prix se situe dans la tranche choisie.");
+  if(budget && budgetFitScore(p,budget)>=29) reasons.push(`À ${priceText(p)}, elle se place précisément dans la tranche que vous avez fixée.`);
   const signal=(a.repere||[])[0];
   if(signalFit(p,signal)){
-    if(signal==='maison') reasons.push("Elle correspond à votre préférence pour une maison établie.");
-    if(signal==='vigneron') reasons.push("Elle répond à votre envie d’un champagne de vigneron.");
-    if(signal==='low_dosage') reasons.push("Sa catégorie extra-brut ou brut nature correspond au dosage recherché.");
+    if(signal==='maison') reasons.push(`Signée ${p.house}, c’est une maison lisible et rassurante.`);
+    if(signal==='vigneron') reasons.push("C’est un champagne de vigneron, plus personnel, comme vous le souhaitiez.");
+    if(signal==='low_dosage') reasons.push("Son dosage très bas (extra-brut ou brut nature) répond à votre goût pour les cuvées très sèches.");
   }
+  if(reasons.length<2) reasons.push("Au global, c’est la bouteille la plus cohérente avec l’ensemble de vos réponses.");
   return reasons.slice(0,4);
 }
 
