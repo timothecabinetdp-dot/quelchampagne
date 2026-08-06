@@ -775,6 +775,14 @@ function branchQ2(occasion){
   if(occasion==='occ_romantique') return duoQuestion();
   return null; // occ_diner : parcours par défaut avec la question des accords
 }
+function branchQ3(occasion){
+  if(occasion==='occ_cadeau') return giftColorQuestion();
+  return null; // les autres parcours gardent la question de la sensation recherchée
+}
+function branchQ5(occasion){
+  if(occasion==='occ_cadeau') return giftFinalQuestion();
+  return null; // les autres parcours gardent la question de la signature
+}
 function giftQuestion(){
   return { id:'destinataire', label:"02 · Le destinataire", q:"À qui l’offrez-vous ?", hint:"On adapte le style et la signature au profil du destinataire.",
     opts:[
@@ -809,6 +817,22 @@ function duoQuestion(){
       {e:'02', tags:['duo_diner'], l:"Un dîner gastronomique", d:"Une cuvée avec de la matière, pour la table"},
       {e:'03', tags:['duo_celebration'], l:"Fêter quelque chose", d:"Une bouteille marquante, souvent rosée"},
       {e:'04', tags:['duo_verre'], l:"Juste un verre ensemble", d:"Tout en rondeur et en délicatesse"},
+    ]};
+}
+function giftColorQuestion(){
+  return { id:'couleur', label:"03 · La couleur", q:"Une préférence de couleur ?", hint:"Un repère simple et sûr quand on offre : pas besoin de deviner un goût précis.",
+    opts:[
+      {e:'01', tags:['couleur_blanc'], l:"Un champagne blanc", d:"La valeur sûre, la plus polyvalente"},
+      {e:'02', tags:['couleur_rose'], l:"Un rosé", d:"Plus original et festif, joli à offrir"},
+      {e:'03', tags:['couleur_any'], l:"Peu importe", d:"On choisit selon vos autres réponses"},
+    ]};
+}
+function giftFinalQuestion(){
+  return { id:'registre', label:"05 · L’occasion", q:"Pour quelle occasion l’offrez-vous ?", hint:"On ajuste le registre de la bouteille à l’importance du moment.",
+    opts:[
+      {e:'01', tags:['reg_grande'], l:"Une grande occasion", d:"Un événement qui compte : une cuvée à la hauteur"},
+      {e:'02', tags:['reg_ceremonie'], l:"Un remerciement", d:"Une attention soignée, une valeur sûre reconnue"},
+      {e:'03', tags:['reg_plaisir'], l:"Juste pour faire plaisir", d:"Sans occasion précise : le meilleur rapport plaisir-prix"},
     ]};
 }
 
@@ -1645,6 +1669,33 @@ function intentScore(p, a){
   const accord=(a.accord||[])[0];
   return accord==='accord_any' ? 10 : accordFit(p,accord) ? 22 : 2;
 }
+/* Pour un cadeau, la 5e question porte sur l'occasion du cadeau plutôt que sur
+   une signature vous-centrée : on ajuste le registre de la bouteille. */
+function giftRegistreScore(p, val){
+  if(!val || val==='reg_any') return 8;
+  if(val==='reg_grande'){ let s=0; if((p.tier||1)>=3) s+=8; if(p.tags.includes('Millésimé')) s+=4; if(p.tags.includes('Grand Cru')) s+=3; if((p.popularity||0)>=84) s+=2; return Math.min(17,s); }
+  if(val==='reg_ceremonie'){ let s=0; if(p.producerType==='maison') s+=8; if((p.popularity||0)>=80) s+=5; if(p.tags.includes('Brut') && !p.tags.includes('Extra-brut / nature')) s+=4; return Math.min(17,s); }
+  if(val==='reg_plaisir'){ let s=6; if((p.tier||1)<=2) s+=4; if((p.popularity||0)>=68) s+=3; return Math.min(17,s); }
+  return 8;
+}
+function signatureComponent(p, a){
+  if((a.occasion||[]).includes('occ_cadeau')) return giftRegistreScore(p,(a.registre||[])[0]);
+  const signal=(a.repere||[])[0];
+  return signal==='any' ? 8 : signalFit(p,signal) ? 17 : 0;
+}
+/* Pour un cadeau, on ne demande pas la sensation recherchée (on ne la boira pas) :
+   on s'appuie sur un repère simple, la couleur. Sinon, on garde le goût. */
+function styleComponent(p, a){
+  if((a.occasion||[]).includes('occ_cadeau')){
+    const col=(a.couleur||[])[0];
+    if(!col || col==='couleur_any') return 12;
+    if(col==='couleur_rose') return p.tags.includes('Rosé') ? 27 : 4;
+    if(col==='couleur_blanc') return !p.tags.includes('Rosé') ? 20 : 5;
+    return 12;
+  }
+  const gout=(a.gout||[])[0];
+  return gout==='profil_any' ? 12 : p.profil.includes(gout) ? 27 : 3;
+}
 function evidenceScore(p){
   if(p.officialSourceUrl && /^official_confirmed/.test(p.identityStatus||'')) return 6;
   if(p.officialSourceUrl) return 4;
@@ -1656,10 +1707,10 @@ function scoreBreakdown(p,a){
   const intent = intentScore(p,a);
   return {
     budget:budgetFitScore(p,budget),
-    style:gout==='profil_any' ? 12 : p.profil.includes(gout) ? 27 : 3,
+    style:styleComponent(p,a),
     occasion:p.occ.includes(occ) ? 21 : 2,
     accord:intent,
-    signature:signal==='any' ? 8 : signalFit(p,signal) ? 17 : 0,
+    signature:signatureComponent(p,a),
     availability:p.commerceReady===true && p.availability==='in_stock' ? 10 : 0,
     evidence:evidenceScore(p)
   };
@@ -1835,6 +1886,8 @@ function renderQuiz(){
   if(!state.started){ return renderIntro(); }
   const qs=questions(); let q=qs[state.step]; const pct=(state.step/qs.length)*100;
   if(state.step===1){ const branch=branchQ2((state.answers.occasion||[])[0]); if(branch) q=branch; }
+  if(state.step===2){ const branch=branchQ3((state.answers.occasion||[])[0]); if(branch) q=branch; }
+  if(state.step===4){ const branch=branchQ5((state.answers.occasion||[])[0]); if(branch) q=branch; }
   if(window.qcTrack && !state.quizStartedTracked){window.qcTrack('quiz_started',{source:'selector'});state.quizStartedTracked=true;}
   const opts=q.opts.map(o=>`<button class="qopt" onclick='answer(${JSON.stringify(q.id)},${JSON.stringify(o.tags)})'><span class="qe">${o.e}</span><span><span class="ql">${o.l}</span><br><span class="qd">${o.d}</span></span></button>`).join('');
   app.innerHTML = nav() + `
@@ -1947,14 +2000,25 @@ function matchReasons(p){
   const intent=intentReason(p,a);
   if(intent) reasons.push(intent);
   else { const occTag=occ.find(tag=>p.occ.includes(tag)); if(occTag){ const r=occasionReason(p,occTag); if(r) reasons.push(r); } }
-  const goutMatch=(a.gout||[]).find(tag=>p.profil.includes(tag));
-  if(goutMatch) reasons.push(`Côté goût, on retrouve ${styleWords(p,goutMatch)} : exactement la sensation recherchée.`);
+  if(occ.includes('occ_cadeau')){
+    const col=(a.couleur||[])[0];
+    if(col==='couleur_rose' && p.tags.includes('Rosé')) reasons.push("Un joli rosé, plus original et festif à offrir.");
+    else if(col==='couleur_blanc' && !p.tags.includes('Rosé')) reasons.push("Un champagne blanc, la valeur sûre quand on offre.");
+  } else {
+    const goutMatch=(a.gout||[]).find(tag=>p.profil.includes(tag));
+    if(goutMatch) reasons.push(`Côté goût, on retrouve ${styleWords(p,goutMatch)} : exactement la sensation recherchée.`);
+  }
   const budget=(a.budget||[])[0];
   if(budget && budgetFitScore(p,budget)>=29) reasons.push(`À ${priceText(p)}, elle se place précisément dans la tranche que vous avez fixée.`);
   // Signature : on évite de répéter maison/vigneron si la branche cadeau ou convives l'a déjà dit.
   const signal=(a.repere||[])[0];
   const producerCovered=occ.includes('occ_cadeau')||occ.includes('occ_fete');
-  if(signalFit(p,signal)){
+  if(occ.includes('occ_cadeau')){
+    const reg=(a.registre||[])[0];
+    if(reg==='reg_grande') reasons.push("Un choix à la hauteur d’une grande occasion.");
+    else if(reg==='reg_ceremonie' && p.producerType==='maison') reasons.push("Une maison reconnue, idéale pour un remerciement soigné.");
+    else if(reg==='reg_plaisir') reasons.push("Un très bon rapport plaisir-prix, juste pour faire plaisir.");
+  } else if(signalFit(p,signal)){
     if(signal==='maison' && !producerCovered) reasons.push(`Signée ${p.house}, c’est une maison lisible et rassurante.`);
     if(signal==='vigneron' && !producerCovered) reasons.push("C’est un champagne de vigneron, plus personnel, comme vous le souhaitiez.");
     if(signal==='low_dosage') reasons.push("Son dosage très bas (extra-brut ou brut nature) répond à votre goût pour les cuvées très sèches.");
