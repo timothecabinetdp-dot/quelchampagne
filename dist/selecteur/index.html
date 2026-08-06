@@ -675,6 +675,31 @@ function questions(){
       ]},
   ];
 }
+/* Arbre de branches : la 2e question s'adapte à l'occasion choisie.
+   Par défaut (repas, apéritif, à deux) on garde la question des accords. */
+function branchQ2(occasion){
+  if(occasion==='occ_cadeau') return giftQuestion();
+  if(occasion==='occ_fete') return partyQuestion();
+  return null;
+}
+function giftQuestion(){
+  return { id:'destinataire', label:"02 · Le destinataire", q:"À qui l’offrez-vous ?", hint:"On adapte le style et la signature au profil du destinataire.",
+    opts:[
+      {e:'01', tags:['dest_connaisseur'], l:"À un connaisseur", d:"Une cuvée pointue : vigneron, peu dosée ou grand cru"},
+      {e:'02', tags:['dest_novice'], l:"À un amateur", d:"Une valeur sûre, lisible et facile à aimer"},
+      {e:'03', tags:['dest_prestige'], l:"Pour marquer le coup", d:"Une grande cuvée ou un beau flacon d’exception"},
+      {e:'04', tags:['dest_any'], l:"Je ne sais pas trop", d:"On reste sur un choix consensuel"},
+    ]};
+}
+function partyQuestion(){
+  return { id:'convives', label:"02 · Les invités", q:"Que préfèrent vos invités ?", hint:"Pour un groupe, on ajuste entre valeur sûre et découverte.",
+    opts:[
+      {e:'01', tags:['crowd_valeur'], l:"Des valeurs sûres", d:"Un style consensuel qui plaît à tout le monde"},
+      {e:'02', tags:['crowd_decouverte'], l:"La découverte", d:"Une cuvée plus originale, souvent de vigneron"},
+      {e:'03', tags:['crowd_festif'], l:"Que ça reste festif", d:"Frais et facile, sans prise de tête"},
+      {e:'04', tags:['crowd_any'], l:"Un peu de tout", d:"On vise le meilleur compromis"},
+    ]};
+}
 
 /* ====================== BLOG ====================== */
 function articles(){ return []; }
@@ -711,6 +736,65 @@ function accordFit(p, accord){
   if(!accord || accord==='accord_any') return true;
   return (p.accords||[]).includes(accord);
 }
+function destinataireScore(p, dest){
+  if(!dest || dest==='dest_any') return 10;
+  if(dest==='dest_connaisseur'){
+    let s=2;
+    if(p.producerType==='vigneron') s+=12;
+    if(p.tags.includes('Extra-brut / nature')) s+=5;
+    if(p.tags.includes('Grand Cru')||p.tags.includes('Premier Cru')) s+=4;
+    if((p.details?.scores?.complexity||3)>=4) s+=3;
+    return Math.min(22,s);
+  }
+  if(dest==='dest_novice'){
+    let s=2;
+    if(p.producerType==='maison') s+=10;
+    if((p.popularity||0)>=80) s+=6;
+    if(p.tags.includes('Brut') && !p.tags.includes('Extra-brut / nature')) s+=4;
+    return Math.min(22,s);
+  }
+  if(dest==='dest_prestige'){
+    let s=2;
+    if((p.tier||1)>=3) s+=10;
+    if(p.tags.includes('Millésimé')) s+=5;
+    if(p.tags.includes('Grand Cru')) s+=4;
+    if((p.popularity||0)>=84) s+=3;
+    return Math.min(22,s);
+  }
+  return 10;
+}
+function convivesScore(p, crowd){
+  if(!crowd || crowd==='crowd_any') return 10;
+  if(crowd==='crowd_valeur'){
+    let s=2;
+    if(p.producerType==='maison') s+=10;
+    if((p.popularity||0)>=80) s+=6;
+    if(p.tags.includes('Brut') && !p.tags.includes('Extra-brut / nature')) s+=4;
+    return Math.min(22,s);
+  }
+  if(crowd==='crowd_decouverte'){
+    let s=2;
+    if(p.producerType==='vigneron') s+=12;
+    if(p.tags.includes('Grand Cru')||p.tags.includes('Premier Cru')) s+=4;
+    if((p.details?.scores?.complexity||3)>=4) s+=3;
+    return Math.min(22,s);
+  }
+  if(crowd==='crowd_festif'){
+    let s=2;
+    if((p.details?.scores?.freshness||3)>=4) s+=8;
+    if((p.tier||1)<=2) s+=6;
+    if(p.profil.includes('profil_fruite')||p.profil.includes('profil_frais_vif')) s+=4;
+    return Math.min(22,s);
+  }
+  return 10;
+}
+function intentScore(p, a){
+  const occ=(a.occasion||[]);
+  if(occ.includes('occ_cadeau')) return destinataireScore(p,(a.destinataire||[])[0]);
+  if(occ.includes('occ_fete')) return convivesScore(p,(a.convives||[])[0]);
+  const accord=(a.accord||[])[0];
+  return accord==='accord_any' ? 10 : accordFit(p,accord) ? 22 : 2;
+}
 function evidenceScore(p){
   if(p.officialSourceUrl && /^official_confirmed/.test(p.identityStatus||'')) return 6;
   if(p.officialSourceUrl) return 4;
@@ -719,11 +803,12 @@ function evidenceScore(p){
 function scoreBreakdown(p,a){
   const occ=(a.occasion||[])[0], gout=(a.gout||[])[0], accord=(a.accord||[])[0];
   const budget=(a.budget||[])[0], signal=(a.repere||[])[0];
+  const intent = intentScore(p,a);
   return {
     budget:budgetFitScore(p,budget),
     style:gout==='profil_any' ? 12 : p.profil.includes(gout) ? 27 : 3,
     occasion:p.occ.includes(occ) ? 21 : 2,
-    accord:accord==='accord_any' ? 10 : accordFit(p,accord) ? 22 : 2,
+    accord:intent,
     signature:signal==='any' ? 8 : signalFit(p,signal) ? 17 : 0,
     availability:p.commerceReady===true && p.availability==='in_stock' ? 10 : 0,
     evidence:evidenceScore(p)
@@ -898,7 +983,8 @@ function renderIntro(){
 }
 function renderQuiz(){
   if(!state.started){ return renderIntro(); }
-  const qs=questions(), q=qs[state.step], pct=(state.step/qs.length)*100;
+  const qs=questions(); let q=qs[state.step]; const pct=(state.step/qs.length)*100;
+  if(state.step===1){ const branch=branchQ2((state.answers.occasion||[])[0]); if(branch) q=branch; }
   if(window.qcTrack && !state.quizStartedTracked){window.qcTrack('quiz_started',{source:'selector'});state.quizStartedTracked=true;}
   const opts=q.opts.map(o=>`<button class="qopt" onclick='answer(${JSON.stringify(q.id)},${JSON.stringify(o.tags)})'><span class="qe">${o.e}</span><span><span class="ql">${o.l}</span><br><span class="qd">${o.d}</span></span></button>`).join('');
   app.innerHTML = nav() + `
@@ -972,7 +1058,19 @@ function matchReasons(p){
   const occ=(a.occasion||[]).find(tag=>p.occ.includes(tag));
   if(occ){ const r=occasionReason(p,occ); if(r) reasons.push(r); }
   const accord=(a.accord||[])[0];
-  if(accordFit(p,accord) && accord!=='accord_any' && p.pair) reasons.push(`Ses accords de prédilection (${p.pair}) tombent juste sur ce que vous servez.`);
+  const dest=(a.occasion||[]).includes('occ_cadeau') ? (a.destinataire||[])[0] : null;
+  const crowd=(a.occasion||[]).includes('occ_fete') ? (a.convives||[])[0] : null;
+  if(dest && dest!=='dest_any'){
+    if(dest==='dest_connaisseur') reasons.push(`Cuvée ${p.producerType==='vigneron'?'de vigneron':'de caractère'}${p.tags.includes('Grand Cru')?' en grand cru':''}, elle a de quoi séduire un connaisseur.`);
+    if(dest==='dest_novice') reasons.push(`Signée ${p.house}, c’est une valeur sûre, lisible et facile à aimer.`);
+    if(dest==='dest_prestige') reasons.push(`Son standing (${priceText(p)}${p.tags.includes('Millésimé')?', millésimé':''}) en fait un cadeau qui marque.`);
+  } else if(crowd && crowd!=='crowd_any'){
+    if(crowd==='crowd_valeur') reasons.push(`Un style consensuel signé ${p.house}, qui met tout le monde d’accord.`);
+    if(crowd==='crowd_decouverte') reasons.push(`${p.producerType==='vigneron'?'Champagne de vigneron':'Cuvée originale'}, de quoi faire découvrir quelque chose à vos invités.`);
+    if(crowd==='crowd_festif') reasons.push(`Fraîche et facile à partager, elle garde la soirée festive sans prise de tête.`);
+  } else if(accordFit(p,accord) && accord && accord!=='accord_any' && p.pair){
+    reasons.push(`Ses accords de prédilection (${p.pair}) tombent juste sur ce que vous servez.`);
+  }
   const goutMatch=(a.gout||[]).find(tag=>p.profil.includes(tag));
   if(goutMatch) reasons.push(`Côté goût, on retrouve ${styleWords(p,goutMatch)} : exactement la sensation recherchée.`);
   const budget=(a.budget||[])[0];

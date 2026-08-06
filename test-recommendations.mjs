@@ -101,7 +101,8 @@ for (const occasion of occasions) {
           if (eligible.length) {
             if (style !== 'profil_any') assert(top.profil.includes(style), `Style ignoré malgré ${eligible.length} candidats : ${occasion}/${accord}/${style}/${budget}/${signal}.`);
             assert(top.occ.includes(occasion), `Moment ignoré malgré ${eligible.length} candidats : ${occasion}/${accord}/${style}/${budget}/${signal}.`);
-            if (accord !== 'accord_any') assert(engine.accordFit(top, accord), `Accord ignoré malgré ${eligible.length} candidats : ${occasion}/${accord}/${style}/${budget}/${signal}.`);
+            const usesAccord = occasion !== 'occ_cadeau' && occasion !== 'occ_fete';
+            if (usesAccord && accord !== 'accord_any') assert(engine.accordFit(top, accord), `Accord ignoré malgré ${eligible.length} candidats : ${occasion}/${accord}/${style}/${budget}/${signal}.`);
             assert(engine.budgetFitScore(top, budget) >= 29, `Budget ignoré malgré ${eligible.length} candidats : ${occasion}/${accord}/${style}/${budget}/${signal}.`);
             if (signal !== 'any') assert(engine.signalFit(top, signal), `Signature ignorée malgré ${eligible.length} candidats : ${occasion}/${accord}/${style}/${budget}/${signal}.`);
           }

@@ -6,7 +6,7 @@
  *
  * Usage : node sync-bottle-of-italy.mjs
  */
-import { writeFileSync } from 'node:fs';
+import { readFileSync, writeFileSync } from 'node:fs';
 import { CHAMPAGNES } from './boutique.mjs';
 
 const OUTPUT = new URL('data/bottle-of-italy-products.json', import.meta.url);
@@ -107,9 +107,27 @@ async function fetchProduct(product){
   };
 }
 
+// Tolérance aux pannes : on conserve le dernier relevé d'un produit
+// temporairement inaccessible plutôt que de faire échouer toute la synchro.
+let previousById=new Map();
+try{
+  const prev=JSON.parse(readFileSync(OUTPUT,'utf8'));
+  for(const record of (prev.records||[])) previousById.set(record.id, record);
+}catch(error){ /* premier passage ou fichier absent */ }
+
+async function fetchProductSafe(product){
+  try{ return await fetchProduct(product); }
+  catch(error){
+    const previous=previousById.get(product.id);
+    console.warn(`Produit inaccessible (${product.id}) : ${previous?'dernier relevé conservé':'ignoré faute d’historique'}.`);
+    return previous || null;
+  }
+}
+
 const records=[];
 for(let index=0; index<CHAMPAGNES.length; index+=CONCURRENCY){
-  records.push(...await Promise.all(CHAMPAGNES.slice(index,index+CONCURRENCY).map(fetchProduct)));
+  const batch=await Promise.all(CHAMPAGNES.slice(index,index+CONCURRENCY).map(fetchProductSafe));
+  records.push(...batch.filter(Boolean));
 }
 
 writeFileSync(OUTPUT, `${JSON.stringify({
