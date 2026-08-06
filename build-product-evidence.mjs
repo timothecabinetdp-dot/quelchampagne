@@ -50,7 +50,7 @@ writeFileSync(new URL('reports/product-evidence-review.json',import.meta.url),`$
     .filter(record=>!record.status.startsWith('official_confirmed'))
     .map(record=>({
       productId:record.productId,
-      product:`${record.brand} — ${record.name}`,
+      product:`${record.brand} · ${record.name}`,
       status:record.status,
       officialSourceUrl:record.officialSourceUrl,
       technicalSourceUrl:record.technicalSourceUrl,

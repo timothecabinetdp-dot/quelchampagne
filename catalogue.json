@@ -1842,8 +1842,8 @@
   },
   {
     "id": "leclerc-briant-brut-reserve-base-2020",
-    "name": "Brut Réserve — base 2020",
-    "short": "Brut Réserve — base 2020",
+    "name": "Brut Réserve - base 2020",
+    "short": "Brut Réserve - base 2020",
     "house": "Leclerc Briant",
     "region": "Champagne",
     "price": 63,
@@ -2870,7 +2870,7 @@
   },
   {
     "id": "mandois-rose-origine-base-2022",
-    "name": "Rosé Origine — base 2022",
+    "name": "Rosé Origine - base 2022",
     "short": "Rosé Origine base 2022",
     "house": "Mandois",
     "region": "Champagne",
@@ -3162,7 +3162,7 @@
   },
   {
     "id": "rene-geoffroy-expression-base-2020",
-    "name": "Expression — base 2020",
+    "name": "Expression - base 2020",
     "short": "Expression base 2020",
     "house": "René Geoffroy",
     "region": "Champagne",
@@ -4059,8 +4059,8 @@
   },
   {
     "id": "telmont-reserve-brut-base-2018",
-    "name": "Réserve Brut — base 2018",
-    "short": "Réserve Brut — base 2018",
+    "name": "Réserve Brut - base 2018",
+    "short": "Réserve Brut - base 2018",
     "house": "Telmont",
     "region": "Champagne",
     "price": 57,
@@ -5050,8 +5050,8 @@
   },
   {
     "id": "mouzon-leroux-latavique-base-2022",
-    "name": "L’Atavique — base 2022",
-    "short": "L’Atavique — base 2022",
+    "name": "L’Atavique - base 2022",
+    "short": "L’Atavique - base 2022",
     "house": "Mouzon-Leroux",
     "region": "Champagne",
     "price": 55,

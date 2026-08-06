@@ -136,7 +136,7 @@
   },
   {
     "id": "telmont-reserve-brut-base-2018",
-    "name": "Réserve Brut — base 2018",
+    "name": "Réserve Brut - base 2018",
     "house": "Telmont",
     "priceMin": 48,
     "priceMax": 65,
@@ -384,7 +384,7 @@
   },
   {
     "id": "mouzon-leroux-latavique-base-2022",
-    "name": "L’Atavique — base 2022",
+    "name": "L’Atavique - base 2022",
     "house": "Mouzon-Leroux",
     "priceMin": 45,
     "priceMax": 65,

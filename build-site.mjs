@@ -1,5 +1,5 @@
 /**
- * build-site.mjs — Génère le site statique multi-pages pour le SEO.
+ * build-site.mjs · Génère le site statique multi-pages pour le SEO.
  *
  * Lit index.html (le sélecteur interactif) pour réutiliser son CSS et ses données,
  * puis produit un dossier dist/ avec :
@@ -157,7 +157,7 @@ const COMPARISONS = [
     b:'laherte-freres-ultradition-brut',
     title:'Leclerc Briant Brut Réserve ou Laherte Frères Ultradition ?',
     question:'Une maison biologique en extra-brut ou un champagne de vigneron plus rond et expressif ?',
-    verdict:'Leclerc Briant Brut Réserve — base 2020 s’adresse à celui qui recherche un dosage bas, de la fraîcheur et une maison certifiée biologique. Laherte Frères Ultradition offre une découverte de vigneron plus ronde, expressive et accessible à l’apéritif.'
+    verdict:'Leclerc Briant Brut Réserve, base 2020 s’adresse à celui qui recherche un dosage bas, de la fraîcheur et une maison certifiée biologique. Laherte Frères Ultradition offre une découverte de vigneron plus ronde, expressive et accessible à l’apéritif.'
   },
   {
     id:'jacquesson-748-vs-roederer-collection-246',
@@ -739,7 +739,7 @@ function productMain(p){
     ${d.profil?`<div class="pblock"><div class="pblock-eyebrow">Profil aromatique</div><h2 class="pblock-h">La structure de ce champagne</h2><div class="axes">${axes}</div></div>`:''}
     ${(d.advice||d.dego)?`<div class="pblock alt"><div class="pblock-eyebrow">Notre conseil</div><h2 class="pblock-h">Pourquoi la choisir</h2><p class="pblock-p">${d.advice||d.dego}</p></div>`:''}
     <div class="pblock alt"><div class="pblock-eyebrow">Décision rapide</div><h2 class="pblock-h">Est-ce la bonne cuvée pour vous ?</h2><div class="decision-grid"><div class="decision"><strong>À choisir si…</strong><p>${guide.choose}</p></div><div class="decision"><strong>À éviter si…</strong><p>${guide.avoid}</p></div></div></div>
-    ${d.facts?`<div class="pblock"><div class="pblock-eyebrow">Fait vérifié</div><h2 class="pblock-h">Ce qu'il faut retenir</h2><p class="pblock-p">${d.facts}</p><p class="aff-note" style="text-align:center">Source contrôlée le ${p.verifiedAt||'—'}.</p></div>`:''}
+    ${d.facts?`<div class="pblock"><div class="pblock-eyebrow">Fait vérifié</div><h2 class="pblock-h">Ce qu'il faut retenir</h2><p class="pblock-p">${d.facts}</p><p class="aff-note" style="text-align:center">Source contrôlée le ${p.verifiedAt||'-'}.</p></div>`:''}
     ${d.dosage?`<div class="pblock"><div class="pblock-eyebrow">Assemblage & terroir</div><h2 class="pblock-h">La composition</h2><div class="compo"><div class="compo-i"><div class="compo-v">${d.dosage}</div><div class="compo-l">Dosage</div></div><div class="compo-i"><div class="compo-v">${d.cepages}</div><div class="compo-l">Cépages</div></div></div><p class="pblock-p" style="margin-top:18px">${d.terroir}</p></div>`:''}
     ${d.accords?`<div class="pblock alt"><div class="pblock-eyebrow">À table</div><h2 class="pblock-h">Accords conseillés</h2><div class="accs">${accords}</div></div>`:''}
     ${d.maison?`<div class="pblock"><div class="pblock-eyebrow">La maison</div><h2 class="pblock-h">${p.house}</h2><p class="pblock-p">${d.maison}</p></div>`:''}
@@ -759,8 +759,8 @@ function bottleCalculator(){
       <div class="calc-field"><label for="c-price">Budget par bouteille</label><select id="c-price"><option value="25">Entrée de gamme (~25 €)</option><option value="40" selected>Milieu de gamme (~40 €)</option><option value="80">Prestige (~80 €)</option></select></div>
     </div>
     <div class="calc-out">
-      <div class="calc-card"><div class="calc-num" id="c-bottles">—</div><div class="calc-lbl">bouteilles conseillées (marge incluse)</div></div>
-      <div class="calc-card"><div class="calc-num" id="c-budget">—</div><div class="calc-lbl">budget estimatif</div></div>
+      <div class="calc-card"><div class="calc-num" id="c-bottles">-</div><div class="calc-lbl">bouteilles conseillées (marge incluse)</div></div>
+      <div class="calc-card"><div class="calc-num" id="c-budget">-</div><div class="calc-lbl">budget estimatif</div></div>
     </div>
     <p class="calc-note" id="c-detail" aria-live="polite"></p>
     <p class="calc-note">Base de calcul : 6 flûtes par bouteille de 75 cl, environ 2 verres par personne à l'apéritif, 3 sur un repas, davantage selon la durée. Une marge de sécurité de 12 % est ajoutée. Ces chiffres restent indicatifs.</p>
@@ -875,9 +875,9 @@ function legalMain(){
     <div class="a-cat">Informations juridiques</div><h1 class="a-title">Mentions légales</h1>
     <div class="prose">
       <h3>Éditeur du site</h3>
-      <p>Le site <strong>quelchampagne.fr</strong> est édité par <strong>CORTEXIA</strong>, société par actions simplifiée (SAS) au capital de 1 000 €.<br>Siège social : 59 rue de Ponthieu, 75008 Paris.<br>SIREN : 107 124 000 — RCS Paris 107 124 000.<br>N° TVA intracommunautaire : FR51107124000.<br>Directeur de la publication : Timothée Michel, président.<br>Contact : timothe.cabinetdp@gmail.com</p>
+      <p>Le site <strong>quelchampagne.fr</strong> est édité par <strong>CORTEXIA</strong>, société par actions simplifiée (SAS) au capital de 1 000 €.<br>Siège social : 59 rue de Ponthieu, 75008 Paris.<br>SIREN : 107 124 000, RCS Paris 107 124 000.<br>N° TVA intracommunautaire : FR51107124000.<br>Directeur de la publication : Timothée Michel, président.<br>Contact : timothe.cabinetdp@gmail.com</p>
       <h3>Hébergement</h3>
-      <p>Le site est hébergé par <strong>Cloudflare, Inc.</strong>, 101 Townsend Street, San Francisco, CA 94107, États-Unis — www.cloudflare.com.</p>
+      <p>Le site est hébergé par <strong>Cloudflare, Inc.</strong>, 101 Townsend Street, San Francisco, CA 94107, États-Unis, www.cloudflare.com.</p>
       <h3>Contenu et propriété intellectuelle</h3>
       <p>Les textes, données structurées et visuels originaux de QuelChampagne ne peuvent pas être réutilisés sans autorisation. Les marques citées appartiennent à leurs titulaires respectifs. Leur citation sert uniquement à identifier les cuvées présentées.</p>
       <h3>Information et responsabilité</h3>
@@ -954,9 +954,9 @@ function selecteurHTML(){
   h = h.replace("function openArticle(id){ state.article=id; state.view='article'; render(); }", "function openArticle(id){ location.href='/blog/'+id+'/'; }");
   h = h.replace('\nloadCatalogue();\nageGate();', '\n// Le catalogue partenaire contrôlé est déjà embarqué dans cette page.\nageGate();');
   h = h.replace("const state = { view:'home'", "const state = { view:'quiz'");
-  h = h.replace('<title>QuelChampagne — Choisir un champagne selon vos critères</title>', '<title>Sélecteur de champagne — Une sélection en 5 choix | QuelChampagne</title>');
+  h = h.replace('<title>QuelChampagne · Choisir un champagne selon vos critères</title>', '<title>Sélecteur de champagne · Une sélection en 5 choix | QuelChampagne</title>');
   h = h.replace('content="Comparez les champagnes selon le moment, le repas, vos goûts et votre budget. Cinq choix donnent accès à une sélection expliquée et à des fiches détaillées."', 'content="Comparez les bouteilles disponibles selon le moment, l’accord, vos goûts, le budget et le type de producteur recherché."');
-  h = h.replace('content="QuelChampagne — Choisir un champagne selon vos critères"', 'content="Sélecteur de champagne — Une sélection en 5 choix | QuelChampagne"');
+  h = h.replace('content="QuelChampagne · Choisir un champagne selon vos critères"', 'content="Sélecteur de champagne · Une sélection en 5 choix | QuelChampagne"');
   h = h.replace('content="Cinq choix pour comparer les champagnes selon le moment, le repas, vos goûts et votre budget."', 'content="Cinq critères concrets pour comparer les bouteilles disponibles et comprendre chaque recommandation."');
   h = h.replace('content="https://quelchampagne.fr"', 'content="https://quelchampagne.fr/selecteur/"');
   h = h.replace('<div id="app"></div>', `<div id="app">${selectorStatic}</div>`);
@@ -995,22 +995,22 @@ write('champagnes/index.html', page({ title:`Quel champagne choisir ? Notre sél
 add(BASE+'/champagnes/', '0.9', 'weekly');
 
 // comparateur interactif
-write('comparateur/index.html', page({ title:'Comparateur de champagnes — Comparez jusqu’à 4 cuvées | QuelChampagne', desc:'Comparez jusqu’à quatre champagnes selon leur prix, leur style, leur dosage, leurs cépages et leurs accords.', canonical:BASE+'/comparateur/', active:'compare', main:comparateurMain() }));
+write('comparateur/index.html', page({ title:'Comparateur de champagnes · Comparez jusqu’à 4 cuvées | QuelChampagne', desc:'Comparez jusqu’à quatre champagnes selon leur prix, leur style, leur dosage, leurs cépages et leurs accords.', canonical:BASE+'/comparateur/', active:'compare', main:comparateurMain() }));
 add(BASE+'/comparateur/', '0.9', 'weekly');
 
-write('notre-methode/index.html', page({ title:'Notre méthode — Sources, indépendance et prix | QuelChampagne', desc:'Découvrez comment QuelChampagne vérifie les faits, construit ses recommandations et sépare les données produit des offres marchandes.', canonical:BASE+'/notre-methode/', active:'method', main:methodMain() }));
+write('notre-methode/index.html', page({ title:'Notre méthode · Sources, indépendance et prix | QuelChampagne', desc:'Découvrez comment QuelChampagne vérifie les faits, construit ses recommandations et sépare les données produit des offres marchandes.', canonical:BASE+'/notre-methode/', active:'method', main:methodMain() }));
 add(BASE+'/notre-methode/', '0.7', 'monthly');
 
-write('a-propos/index.html', page({ title:'À propos de QuelChampagne — Le conseiller indépendant', desc:'QuelChampagne aide à choisir une cuvée selon le moment, le style et le budget, à partir de données produit contrôlées et d’analyses structurées.', canonical:BASE+'/a-propos/', active:'about', main:aboutMain() }));
+write('a-propos/index.html', page({ title:'À propos de QuelChampagne · Le conseiller indépendant', desc:'QuelChampagne aide à choisir une cuvée selon le moment, le style et le budget, à partir de données produit contrôlées et d’analyses structurées.', canonical:BASE+'/a-propos/', active:'about', main:aboutMain() }));
 add(BASE+'/a-propos/', '0.6', 'monthly');
 
-write('partenaires/index.html', page({ title:'Professionnels — Proposer un catalogue à QuelChampagne', desc:'Découvrez les conditions d’intégration d’un catalogue marchand dans les analyses et le sélecteur QuelChampagne.', canonical:BASE+'/partenaires/', active:'', main:partnersMain() }));
+write('partenaires/index.html', page({ title:'Professionnels · Proposer un catalogue à QuelChampagne', desc:'Découvrez les conditions d’intégration d’un catalogue marchand dans les analyses et le sélecteur QuelChampagne.', canonical:BASE+'/partenaires/', active:'', main:partnersMain() }));
 add(BASE+'/partenaires/', '0.4', 'monthly');
 
-write('mentions-legales/index.html', page({ title:'Mentions légales — QuelChampagne', desc:'Informations sur l’éditeur, l’hébergement, les contenus et l’affiliation du site QuelChampagne.', canonical:BASE+'/mentions-legales/', active:'', main:legalMain() }));
+write('mentions-legales/index.html', page({ title:'Mentions légales · QuelChampagne', desc:'Informations sur l’éditeur, l’hébergement, les contenus et l’affiliation du site QuelChampagne.', canonical:BASE+'/mentions-legales/', active:'', main:legalMain() }));
 add(BASE+'/mentions-legales/', '0.3', 'yearly');
 
-write('confidentialite/index.html', page({ title:'Politique de confidentialité — QuelChampagne', desc:'Traitement des données, stockage local de la confirmation de majorité et services tiers utilisés par QuelChampagne.', canonical:BASE+'/confidentialite/', active:'', main:privacyMain() }));
+write('confidentialite/index.html', page({ title:'Politique de confidentialité · QuelChampagne', desc:'Traitement des données, stockage local de la confirmation de majorité et services tiers utilisés par QuelChampagne.', canonical:BASE+'/confidentialite/', active:'', main:privacyMain() }));
 add(BASE+'/confidentialite/', '0.3', 'yearly');
 
 // Fiches d'analyse des champagnes disponibles chez le partenaire.
@@ -1022,7 +1022,7 @@ for(const p of allPartnerProducts){
   const additionalProperty=(enrichment.facts||[]).map(([name,value])=>({'@type':'PropertyValue',name,value}));
   const faq=(enrichment.answers||[]).map(([name,text])=>({'@type':'Question',name,acceptedAnswer:{'@type':'Answer',text}}));
   write(`champagne/${slug}/index.html`, page({
-    title:`${p.brand} ${p.name} — Analyse et accords | QuelChampagne`,
+    title:`${p.brand} ${p.name} · Analyse et accords | QuelChampagne`,
     desc:analysis,
     canonical:`${BASE}/champagne/${slug}/`,
     ogImage:p.image,
@@ -1063,7 +1063,7 @@ const notFoundMain = () => `<section class="section" style="text-align:center; p
     <div class="sec-head"><h1 class="h2">Page introuvable</h1><p>Cette page n'existe pas ou a été retirée. Le champagne, lui, est toujours là.</p></div>
     <div class="hero-cta" style="justify-content:center; margin-top:30px"><a class="btn btn-primary btn-lg" href="/selecteur/">Trouver mon champagne</a><a class="chev" href="/champagnes/">Voir la sélection</a></div>
   </div></section>`;
-write('404.html', page({ title:'Page introuvable — QuelChampagne', desc:'La page demandée est introuvable. Retrouvez le sélecteur et la sélection de champagnes de QuelChampagne.', canonical:BASE+'/404', active:'', noindex:true, main:notFoundMain() }));
+write('404.html', page({ title:'Page introuvable · QuelChampagne', desc:'La page demandée est introuvable. Retrouvez le sélecteur et la sélection de champagnes de QuelChampagne.', canonical:BASE+'/404', active:'', noindex:true, main:notFoundMain() }));
 
 // sitemap + robots
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>

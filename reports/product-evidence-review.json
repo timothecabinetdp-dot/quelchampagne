@@ -9,7 +9,7 @@
   "unresolved": [
     {
       "productId": "jean-de-la-fontaine-eloquente-champagne-brut",
-      "product": "Jean de La Fontaine — L’Éloquente Brut",
+      "product": "Jean de La Fontaine · L’Éloquente Brut",
       "status": "official_producer_confirmed_product_to_document",
       "officialSourceUrl": "https://www.champagnebaronalbert.fr/",
       "technicalSourceUrl": "https://www.astrumwinecellars.com/pdf/?slug=jean-de-la-fontaine&type=producer",
@@ -17,7 +17,7 @@
     },
     {
       "productId": "louis-constant-brut",
-      "product": "Louis Constant — Brut Réserve",
+      "product": "Louis Constant · Brut Réserve",
       "status": "secondary_identity_confirmed",
       "officialSourceUrl": null,
       "technicalSourceUrl": "https://bottleofitaly.com/en-us/products/campagne-brut-aoc-louis-constant",
@@ -25,7 +25,7 @@
     },
     {
       "productId": "alain-mercier-cuvee-louis-hurtebisse-brut",
-      "product": "Alain Mercier — Louis Hurtebisse Brut Tradition",
+      "product": "Alain Mercier · Louis Hurtebisse Brut Tradition",
       "status": "official_producer_confirmed_product_to_document",
       "officialSourceUrl": "https://www.champagne-alain-mercier.com/",
       "technicalSourceUrl": "https://www.tannico.com/products/champagne-brut-cuvee-louis-hurtebisse-alain-mercier",
@@ -33,7 +33,7 @@
     },
     {
       "productId": "maison-burtin-brut",
-      "product": "Maison Burtin — Brut",
+      "product": "Maison Burtin · Brut",
       "status": "official_producer_confirmed_product_to_document",
       "officialSourceUrl": "https://www.maisonburtin.com/",
       "technicalSourceUrl": "https://bottleofitaly.com/en/products/champagne-brut-astucciato-maison-burtin",
@@ -41,7 +41,7 @@
     },
     {
       "productId": "daubanton-rose-de-saignee-en-futs-les-vignes-derriere",
-      "product": "Daubanton & Fils — Rosé de Saignée en Fûts — Les Vignes Derrière",
+      "product": "Daubanton & Fils · Rosé de Saignée en Fûts - Les Vignes Derrière",
       "status": "official_producer_confirmed_product_to_document",
       "officialSourceUrl": "https://champagnedaubanton.com/",
       "technicalSourceUrl": "https://www.rinaldi1957.it/en/products/rose-de-saignee-en-futs-les-vignes-derriere/",
@@ -49,7 +49,7 @@
     },
     {
       "productId": "beltrand-brigandat-blanc-de-noirs-brut-pierre-brigandat",
-      "product": "Pierre Brigandat — Blanc de Noirs Brut",
+      "product": "Pierre Brigandat · Blanc de Noirs Brut",
       "status": "secondary_identity_confirmed",
       "officialSourceUrl": null,
       "technicalSourceUrl": "https://bonhomiewine.com/wp-content/uploads/2019/07/Brigandat.pdf",
@@ -57,7 +57,7 @@
     },
     {
       "productId": "veuve-clicquot-cuvee-saint-petersbourg",
-      "product": "Veuve Clicquot — Cuvée Saint-Pétersbourg Brut",
+      "product": "Veuve Clicquot · Cuvée Saint-Pétersbourg Brut",
       "status": "official_producer_confirmed_product_to_document",
       "officialSourceUrl": "https://www.veuveclicquot.com/",
       "technicalSourceUrl": "https://bottleofitaly.com/en/products/champagne-aoc-cuvee-saint-petersbourg-veuve-clicquot",
@@ -65,7 +65,7 @@
     },
     {
       "productId": "jacquart-brut-lamotte",
-      "product": "Jacquart — Brut - LaMotte",
+      "product": "Jacquart · Brut - LaMotte",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -73,7 +73,7 @@
     },
     {
       "productId": "grand-tour-grand-cuvee-reserve-brut",
-      "product": "Grand Tour — Grand Cuvee Reserve Brut",
+      "product": "Grand Tour · Grand Cuvee Reserve Brut",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -81,7 +81,7 @@
     },
     {
       "productId": "daubanton-assemblage-extra-brut",
-      "product": "Daubanton — Assemblage Extra Brut",
+      "product": "Daubanton · Assemblage Extra Brut",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -89,7 +89,7 @@
     },
     {
       "productId": "m-g-heucq-brut-fossile",
-      "product": "M.G. Heucq — Brut - Fossile",
+      "product": "M.G. Heucq · Brut - Fossile",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -97,7 +97,7 @@
     },
     {
       "productId": "alain-mercier-sagacite-brut",
-      "product": "Alain Mercier — Sagacité Brut",
+      "product": "Alain Mercier · Sagacité Brut",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -105,7 +105,7 @@
     },
     {
       "productId": "j-charpentier-tradition-brut",
-      "product": "J. Charpentier — Tradition Brut",
+      "product": "J. Charpentier · Tradition Brut",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -113,7 +113,7 @@
     },
     {
       "productId": "cattier-aoc-quarz-brut-tradition",
-      "product": "Cattier — AOC - Quarz Brut Tradition",
+      "product": "Cattier · AOC - Quarz Brut Tradition",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -121,7 +121,7 @@
     },
     {
       "productId": "daubanton-blanc-de-noir",
-      "product": "Daubanton — Blanc de Noir",
+      "product": "Daubanton · Blanc de Noir",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -129,7 +129,7 @@
     },
     {
       "productId": "de-vilmont-aoc-brut-grand-reserve-premier-cru",
-      "product": "De Vilmont — AOC Brut Grand Réserve Premier Cru",
+      "product": "De Vilmont · AOC Brut Grand Réserve Premier Cru",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -137,7 +137,7 @@
     },
     {
       "productId": "beaumont-des-crayeres-grand-reserve-brut-3-anni",
-      "product": "Beaumont des Crayères — Grand Reserve Brut - 3 anni",
+      "product": "Beaumont des Crayères · Grand Reserve Brut - 3 anni",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -145,7 +145,7 @@
     },
     {
       "productId": "lamiable-lapie-lamiable-brut",
-      "product": "Lamiable — Lapie-Lamiable Brut",
+      "product": "Lamiable · Lapie-Lamiable Brut",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -153,7 +153,7 @@
     },
     {
       "productId": "maison-burtin-extra-brut",
-      "product": "Maison Burtin — Extra Brut",
+      "product": "Maison Burtin · Extra Brut",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -161,7 +161,7 @@
     },
     {
       "productId": "jean-vesselle-coteaux-champenois-bouzy-blanc",
-      "product": "Jean Vesselle — Coteaux Champenois Bouzy Blanc",
+      "product": "Jean Vesselle · Coteaux Champenois Bouzy Blanc",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -169,7 +169,7 @@
     },
     {
       "productId": "jacquart-mosaique-demi-sec",
-      "product": "Jacquart — Mosaïque Demi Sec",
+      "product": "Jacquart · Mosaïque Demi Sec",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -177,7 +177,7 @@
     },
     {
       "productId": "jacquart-brut-mosaique",
-      "product": "Jacquart — Brut Mosaïque",
+      "product": "Jacquart · Brut Mosaïque",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -185,7 +185,7 @@
     },
     {
       "productId": "sadi-malot-l-equilibre-brut-1er-cru",
-      "product": "Sadi Malot — L’Équilibre Brut 1er Cru",
+      "product": "Sadi Malot · L’Équilibre Brut 1er Cru",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -193,7 +193,7 @@
     },
     {
       "productId": "billecart-salmon-inspiration-1818",
-      "product": "Billecart-Salmon — Inspiration 1818",
+      "product": "Billecart-Salmon · Inspiration 1818",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -201,7 +201,7 @@
     },
     {
       "productId": "fontanafredda-art-deco-brut-collet",
-      "product": "Fontanafredda — Art Deco Brut - Collet",
+      "product": "Fontanafredda · Art Deco Brut - Collet",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -209,7 +209,7 @@
     },
     {
       "productId": "paul-bara-brut-grand-cru-reserve",
-      "product": "Paul Bara — Brut - Grand Cru Reserve",
+      "product": "Paul Bara · Brut - Grand Cru Reserve",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -217,7 +217,7 @@
     },
     {
       "productId": "drappier-brut-carte-d-or-aoc",
-      "product": "Drappier — Brut Carte d'Or AOC",
+      "product": "Drappier · Brut Carte d'Or AOC",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -225,7 +225,7 @@
     },
     {
       "productId": "beltrand-brigandat-pinot-noir-de-channes-nature-pierre-brigandat",
-      "product": "Beltrand Brigandat — Pinot Noir de Channes Nature - Pierre Brigandat",
+      "product": "Beltrand Brigandat · Pinot Noir de Channes Nature - Pierre Brigandat",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -233,7 +233,7 @@
     },
     {
       "productId": "alain-mercier-cuvee-neon-brut",
-      "product": "Alain Mercier — Cuvée Neon Brut",
+      "product": "Alain Mercier · Cuvée Neon Brut",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -241,7 +241,7 @@
     },
     {
       "productId": "beltrand-brigandat-rose-de-saignee-brut-pierre-brigandat",
-      "product": "Beltrand Brigandat — Rosé de Saignée Brut - Pierre Brigandat",
+      "product": "Beltrand Brigandat · Rosé de Saignée Brut - Pierre Brigandat",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -249,7 +249,7 @@
     },
     {
       "productId": "lamiable-terre-d-etoiles-brut-grand-cru",
-      "product": "Lamiable — Terre d’Étoiles Brut Grand Cru",
+      "product": "Lamiable · Terre d’Étoiles Brut Grand Cru",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -257,7 +257,7 @@
     },
     {
       "productId": "fontanafredda-art-deco-extra-brut-collet",
-      "product": "Fontanafredda — Art Deco Extra Brut - Collet",
+      "product": "Fontanafredda · Art Deco Extra Brut - Collet",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -265,7 +265,7 @@
     },
     {
       "productId": "vazart-coquart-blanc-de-blancs-reserve-brut-grand-cru",
-      "product": "Vazart-Coquart — Blanc de Blancs Réserve Brut Grand Cru",
+      "product": "Vazart-Coquart · Blanc de Blancs Réserve Brut Grand Cru",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -273,7 +273,7 @@
     },
     {
       "productId": "maison-tornay-extra-brut",
-      "product": "Maison Tornay — Extra Brut",
+      "product": "Maison Tornay · Extra Brut",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -281,7 +281,7 @@
     },
     {
       "productId": "maison-tornay-rose-premier-cru",
-      "product": "Maison Tornay — Rosé Premier Cru",
+      "product": "Maison Tornay · Rosé Premier Cru",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -289,7 +289,7 @@
     },
     {
       "productId": "jean-vesselle-reserve-brut",
-      "product": "Jean Vesselle — Réserve Brut",
+      "product": "Jean Vesselle · Réserve Brut",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -297,7 +297,7 @@
     },
     {
       "productId": "maison-burtin-brut-rose",
-      "product": "Maison Burtin — Brut Rosé",
+      "product": "Maison Burtin · Brut Rosé",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -305,7 +305,7 @@
     },
     {
       "productId": "maxime-ponson-la-petite-montagne-extra-brut-1er-cru",
-      "product": "Maxime Ponson — La Petite Montagne Extra Brut 1er Cru",
+      "product": "Maxime Ponson · La Petite Montagne Extra Brut 1er Cru",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -313,7 +313,7 @@
     },
     {
       "productId": "jean-vesselle-reserve-demi-sec",
-      "product": "Jean Vesselle — Réserve Demi-Sec",
+      "product": "Jean Vesselle · Réserve Demi-Sec",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -321,7 +321,7 @@
     },
     {
       "productId": "maison-yves-loison-cuvee-senlis",
-      "product": "Maison Yves Loison — Cuvée - Senlis",
+      "product": "Maison Yves Loison · Cuvée - Senlis",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -329,7 +329,7 @@
     },
     {
       "productId": "epc-champagne-blanc-de-blancs-brut-30-mesi",
-      "product": "EPC Champagne — Blanc de Blancs Brut - 30 Mesi",
+      "product": "EPC Champagne · Blanc de Blancs Brut - 30 Mesi",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -337,7 +337,7 @@
     },
     {
       "productId": "maison-labbe-brut-premier-cru-prestige",
-      "product": "Maison Labbé — Brut Premier Cru - Prestige",
+      "product": "Maison Labbé · Brut Premier Cru - Prestige",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -345,7 +345,7 @@
     },
     {
       "productId": "bonnet-gilmert-blanc-de-blancs-extra-brut-grand-cru",
-      "product": "Bonnet Gilmert — Blanc de Blancs Extra Brut Grand Cru",
+      "product": "Bonnet Gilmert · Blanc de Blancs Extra Brut Grand Cru",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -353,7 +353,7 @@
     },
     {
       "productId": "le-guedard-vignes-mon-grand-pere-blanc-de-noirs-nature",
-      "product": "Le Guèdard — Vignes Mon Grand Père Blanc de Noirs Nature",
+      "product": "Le Guèdard · Vignes Mon Grand Père Blanc de Noirs Nature",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -361,7 +361,7 @@
     },
     {
       "productId": "benard-pitois-reserve-premier-cru-brut",
-      "product": "Benard Pitois — Reserve Premier Cru Brut",
+      "product": "Benard Pitois · Reserve Premier Cru Brut",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -369,7 +369,7 @@
     },
     {
       "productId": "gatinois-tradition-d-ay-demi-sec-grand-cru",
-      "product": "Gatinois — Tradition d’Aÿ Demi-Sec Grand Cru",
+      "product": "Gatinois · Tradition d’Aÿ Demi-Sec Grand Cru",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -377,7 +377,7 @@
     },
     {
       "productId": "lancelot-pienne-blanc-de-blancs-dame-du-lac-brut",
-      "product": "Lancelot Pienne — Blanc de Blancs Dame du Lac Brut",
+      "product": "Lancelot Pienne · Blanc de Blancs Dame du Lac Brut",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -385,7 +385,7 @@
     },
     {
       "productId": "lancelot-pienne-cuvee-accord-majeur-brut",
-      "product": "Lancelot Pienne — Cuvée Accord Majeur Brut",
+      "product": "Lancelot Pienne · Cuvée Accord Majeur Brut",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -393,7 +393,7 @@
     },
     {
       "productId": "vazart-coquart-blanc-de-blancs-extra-brut-grand-cru",
-      "product": "Vazart-Coquart — Blanc de Blancs Extra Brut Grand Cru",
+      "product": "Vazart-Coquart · Blanc de Blancs Extra Brut Grand Cru",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -401,7 +401,7 @@
     },
     {
       "productId": "maison-yves-loison-cuvee-premier-cru-hyppolite",
-      "product": "Maison Yves Loison — Cuvée Premier Cru - Hyppolite",
+      "product": "Maison Yves Loison · Cuvée Premier Cru - Hyppolite",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -409,7 +409,7 @@
     },
     {
       "productId": "drappier-blanc-de-blancs-aoc",
-      "product": "Drappier — Blanc de Blancs AOC",
+      "product": "Drappier · Blanc de Blancs AOC",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -417,7 +417,7 @@
     },
     {
       "productId": "pierre-baillette-le-village-de-trois-puits-premier-cru-extra-brut-pierre-baillatte",
-      "product": "Pierre Baillette — Le Village De Trois Puits Premier Cru Extra Brut - Pierre Baillatte",
+      "product": "Pierre Baillette · Le Village De Trois Puits Premier Cru Extra Brut - Pierre Baillatte",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -425,7 +425,7 @@
     },
     {
       "productId": "m-g-heucq-extra-brut-tandem",
-      "product": "M.G. Heucq — Extra Brut - Tandem",
+      "product": "M.G. Heucq · Extra Brut - Tandem",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -433,7 +433,7 @@
     },
     {
       "productId": "maison-labbe-premier-cru-blanc-de-noir",
-      "product": "Maison Labbé — Premier Cru - Blanc de Noir",
+      "product": "Maison Labbé · Premier Cru - Blanc de Noir",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -441,7 +441,7 @@
     },
     {
       "productId": "epc-champagne-blanc-de-blancs-brut-nature-24-mesi",
-      "product": "EPC Champagne — Blanc de Blancs Brut Nature - 24 Mesi",
+      "product": "EPC Champagne · Blanc de Blancs Brut Nature - 24 Mesi",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -449,7 +449,7 @@
     },
     {
       "productId": "benard-pitois-rose-premier-cru-brut",
-      "product": "Benard Pitois — Rose’ Premier Cru Brut",
+      "product": "Benard Pitois · Rose’ Premier Cru Brut",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -457,7 +457,7 @@
     },
     {
       "productId": "harlin-pere-et-fils-les-sentes-de-mareuil",
-      "product": "Harlin Père et Fils — Les Sentes de Mareuil",
+      "product": "Harlin Père et Fils · Les Sentes de Mareuil",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -465,7 +465,7 @@
     },
     {
       "productId": "erick-schreiber-extra-brut",
-      "product": "Erick Schreiber — Extra Brut",
+      "product": "Erick Schreiber · Extra Brut",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -473,7 +473,7 @@
     },
     {
       "productId": "mouzon-leroux-l-atavique-nature-grand-cru",
-      "product": "Mouzon Leroux — L’Atavique Nature Grand Cru",
+      "product": "Mouzon Leroux · L’Atavique Nature Grand Cru",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -481,7 +481,7 @@
     },
     {
       "productId": "gatinois-reserve-d-ay-brut-grand-cru",
-      "product": "Gatinois — Réserve d’Aÿ Brut Grand Cru",
+      "product": "Gatinois · Réserve d’Aÿ Brut Grand Cru",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -489,7 +489,7 @@
     },
     {
       "productId": "maison-burtin-brut-vintage-2014",
-      "product": "Maison Burtin — Brut Vintage 2014",
+      "product": "Maison Burtin · Brut Vintage 2014",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -497,7 +497,7 @@
     },
     {
       "productId": "waris-larmandier-cuvee-l-instant-du-passion-rose-extra-brut",
-      "product": "Waris Larmandier — Cuvée L’Instant du Passion Rosé Extra Brut",
+      "product": "Waris Larmandier · Cuvée L’Instant du Passion Rosé Extra Brut",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -505,7 +505,7 @@
     },
     {
       "productId": "waris-larmandier-blanc-de-blancs-particules-crayeuses-extra-brut-grand-cru",
-      "product": "Waris Larmandier — Blanc de Blancs Particules Crayeuses Extra Brut Grand Cru",
+      "product": "Waris Larmandier · Blanc de Blancs Particules Crayeuses Extra Brut Grand Cru",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -513,7 +513,7 @@
     },
     {
       "productId": "chateau-de-bligny-vintage-brut",
-      "product": "Chateau De Bligny — Vintage Brut",
+      "product": "Chateau De Bligny · Vintage Brut",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -521,7 +521,7 @@
     },
     {
       "productId": "vilmart-grand-cellier-premier-cru-brut",
-      "product": "Vilmart — Grand Cellier Premier Cru Brut",
+      "product": "Vilmart · Grand Cellier Premier Cru Brut",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -529,7 +529,7 @@
     },
     {
       "productId": "le-guedard-mes-trois-terroirs-nature",
-      "product": "Le Guèdard — Mes Trois Terroirs Nature",
+      "product": "Le Guèdard · Mes Trois Terroirs Nature",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -537,7 +537,7 @@
     },
     {
       "productId": "vincent-brochet-chardonnay-nature-brut",
-      "product": "Vincent Brochet — Chardonnay Nature Brut",
+      "product": "Vincent Brochet · Chardonnay Nature Brut",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -545,7 +545,7 @@
     },
     {
       "productId": "j-m-seleque-cuvee-solessence-extra-brut",
-      "product": "J-M Sélèque — Cuvée Solessence Extra Brut",
+      "product": "J-M Sélèque · Cuvée Solessence Extra Brut",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -553,7 +553,7 @@
     },
     {
       "productId": "guenin-effloraison-extra-brut",
-      "product": "Guenin — Effloraison Extra Brut",
+      "product": "Guenin · Effloraison Extra Brut",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -561,7 +561,7 @@
     },
     {
       "productId": "laherte-freres-rose-de-meunier-extra-brut",
-      "product": "Laherte Frères — Rosé de Meunier Extra Brut",
+      "product": "Laherte Frères · Rosé de Meunier Extra Brut",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -569,7 +569,7 @@
     },
     {
       "productId": "maurice-grumier-coeur-de-rose",
-      "product": "Maurice Grumier — Coeur De Rose'",
+      "product": "Maurice Grumier · Coeur De Rose'",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -577,7 +577,7 @@
     },
     {
       "productId": "j-l-vergnon-blanc-de-blancs-conversation-brut-grand-cru",
-      "product": "J.L. Vergnon — Blanc de Blancs Conversation Brut Grand Cru",
+      "product": "J.L. Vergnon · Blanc de Blancs Conversation Brut Grand Cru",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -585,7 +585,7 @@
     },
     {
       "productId": "stephane-regnault-blanc-de-blancs-chromatique-extra-brut-grand-cru",
-      "product": "Stephane Regnault — Blanc de Blancs Chromatique Extra Brut Grand Cru",
+      "product": "Stephane Regnault · Blanc de Blancs Chromatique Extra Brut Grand Cru",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -593,7 +593,7 @@
     },
     {
       "productId": "jean-claude-vallois-blanc-de-blancs-millesime-extra-brut",
-      "product": "Jean-Claude Vallois — Blanc de Blancs Millésimé Extra Brut",
+      "product": "Jean-Claude Vallois · Blanc de Blancs Millésimé Extra Brut",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -601,7 +601,7 @@
     },
     {
       "productId": "lancelot-pienne-blanc-de-blancs-cuvee-table-ronde-extra-brut-grand-cru",
-      "product": "Lancelot Pienne — Blanc de Blancs Cuvée Table Ronde Extra Brut Grand Cru",
+      "product": "Lancelot Pienne · Blanc de Blancs Cuvée Table Ronde Extra Brut Grand Cru",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -609,7 +609,7 @@
     },
     {
       "productId": "vazart-coquart-blanc-de-blancs-grand-bouquet-extra-brut-grand-cru",
-      "product": "Vazart-Coquart — Blanc de Blancs Grand Bouquet Extra Brut Grand Cru",
+      "product": "Vazart-Coquart · Blanc de Blancs Grand Bouquet Extra Brut Grand Cru",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -617,7 +617,7 @@
     },
     {
       "productId": "marie-copinet-nos-pas-dans-la-pierre-nature",
-      "product": "Marie Copinet — Nos Pas Dans la Pierre Nature",
+      "product": "Marie Copinet · Nos Pas Dans la Pierre Nature",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -625,7 +625,7 @@
     },
     {
       "productId": "m-g-heucq-rose-de-saignee-les-velours",
-      "product": "M.G. Heucq — Rosé de Saignée - Les Velours",
+      "product": "M.G. Heucq · Rosé de Saignée - Les Velours",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -633,7 +633,7 @@
     },
     {
       "productId": "thierry-massin-vrai-millesime-blanc-de-blancs-brut",
-      "product": "Thierry Massin — Vrai Millesimè Blanc de Blancs Brut",
+      "product": "Thierry Massin · Vrai Millesimè Blanc de Blancs Brut",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -641,7 +641,7 @@
     },
     {
       "productId": "le-guedard-mon-rose-de-saignee-brut",
-      "product": "Le Guèdard — Mon Rosé de Saignée Brut",
+      "product": "Le Guèdard · Mon Rosé de Saignée Brut",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -649,7 +649,7 @@
     },
     {
       "productId": "mouzon-leroux-rose-saignee-incandescent-extra-brut-grand-cru",
-      "product": "Mouzon Leroux — Rosé Saignée Incandescent Extra Brut Grand Cru",
+      "product": "Mouzon Leroux · Rosé Saignée Incandescent Extra Brut Grand Cru",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -657,7 +657,7 @@
     },
     {
       "productId": "jean-claude-vallois-blanc-de-blancs-millesime-extra-brut-2018",
-      "product": "Jean-Claude Vallois — Blanc de Blancs Millésimé Extra Brut 2018",
+      "product": "Jean-Claude Vallois · Blanc de Blancs Millésimé Extra Brut 2018",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -665,7 +665,7 @@
     },
     {
       "productId": "corbon-anthracite-brut",
-      "product": "Corbon — Anthracite Brut",
+      "product": "Corbon · Anthracite Brut",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -673,7 +673,7 @@
     },
     {
       "productId": "mumm-aoc-brut-rsrv-cuvee-4-5",
-      "product": "Mumm — AOC Brut - RSRV Cuvée 4.5",
+      "product": "Mumm · AOC Brut - RSRV Cuvée 4.5",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -681,7 +681,7 @@
     },
     {
       "productId": "bereche-et-fils-reserve-brut",
-      "product": "Bèreche Et Fils — Réserve Brut",
+      "product": "Bèreche Et Fils · Réserve Brut",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -689,7 +689,7 @@
     },
     {
       "productId": "mouzon-leroux-l-ascendant-solera-14-17-extra-brut-grand-cru",
-      "product": "Mouzon Leroux — L’Ascendant Solera 14/17 Extra Brut Grand Cru",
+      "product": "Mouzon Leroux · L’Ascendant Solera 14/17 Extra Brut Grand Cru",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -697,7 +697,7 @@
     },
     {
       "productId": "pernod-ricard-brut-75cl-grand-brut-perrier-jouet",
-      "product": "Pernod Ricard — Brut 75cl - Grand Brut - Perrier Jouët",
+      "product": "Pernod Ricard · Brut 75cl - Grand Brut - Perrier Jouët",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -705,7 +705,7 @@
     },
     {
       "productId": "domaine-augustin-coeur-saphyr",
-      "product": "Domaine Augustin — Coeur Saphyr",
+      "product": "Domaine Augustin · Coeur Saphyr",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -713,7 +713,7 @@
     },
     {
       "productId": "eric-taillet-bansionensi",
-      "product": "Eric Taillet — Bansionensi",
+      "product": "Eric Taillet · Bansionensi",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -721,7 +721,7 @@
     },
     {
       "productId": "de-venoge-princess-extra-brut",
-      "product": "De Venoge — Princess Extra Brut",
+      "product": "De Venoge · Princess Extra Brut",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -729,7 +729,7 @@
     },
     {
       "productId": "domaine-augustin-les-vertus",
-      "product": "Domaine Augustin — Les Vertus",
+      "product": "Domaine Augustin · Les Vertus",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -737,7 +737,7 @@
     },
     {
       "productId": "mumm-aoc-brut-gran-cordon-rose",
-      "product": "Mumm — AOC Brut - Gran Cordon Rosé",
+      "product": "Mumm · AOC Brut - Gran Cordon Rosé",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -745,7 +745,7 @@
     },
     {
       "productId": "j-m-seleque-quintette-5-terroirs-extra-brut",
-      "product": "J-M Sélèque — Quintette 5 Terroirs Extra Brut",
+      "product": "J-M Sélèque · Quintette 5 Terroirs Extra Brut",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -753,7 +753,7 @@
     },
     {
       "productId": "jerome-coessens-blanc-de-noirs-largillier-brut",
-      "product": "Jerome Coessens — Blanc de Noirs Largillier Brut",
+      "product": "Jerome Coessens · Blanc de Noirs Largillier Brut",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -761,7 +761,7 @@
     },
     {
       "productId": "wirth-michel-les-meuniers-de-raoul-extra-brut",
-      "product": "Wirth Michel — Les Meuniers de Raoul Extra Brut",
+      "product": "Wirth Michel · Les Meuniers de Raoul Extra Brut",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -769,7 +769,7 @@
     },
     {
       "productId": "stephane-regnault-blanc-de-blancs-dorien-n-80-extra-brut-grand-cru",
-      "product": "Stephane Regnault — Blanc de Blancs Dorien n°80 Extra Brut Grand Cru",
+      "product": "Stephane Regnault · Blanc de Blancs Dorien n°80 Extra Brut Grand Cru",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -777,7 +777,7 @@
     },
     {
       "productId": "stephane-regnault-blanc-de-blancs-mixolydien-n-99-extra-brut-grand-cru",
-      "product": "Stephane Regnault — Blanc de Blancs Mixolydien n°99 Extra Brut Grand Cru",
+      "product": "Stephane Regnault · Blanc de Blancs Mixolydien n°99 Extra Brut Grand Cru",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -785,7 +785,7 @@
     },
     {
       "productId": "billecart-salmon-le-blanc-de-blancs",
-      "product": "Billecart-Salmon — Le Blanc de Blancs",
+      "product": "Billecart-Salmon · Le Blanc de Blancs",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -793,7 +793,7 @@
     },
     {
       "productId": "jerome-coessens-blanc-de-noirs-largillier-rose-brut",
-      "product": "Jerome Coessens — Blanc de Noirs Largillier Rosé Brut",
+      "product": "Jerome Coessens · Blanc de Noirs Largillier Rosé Brut",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -801,7 +801,7 @@
     },
     {
       "productId": "jerome-coessens-blanc-de-noirs-largillier-nature",
-      "product": "Jerome Coessens — Blanc de Noirs Largillier Nature",
+      "product": "Jerome Coessens · Blanc de Noirs Largillier Nature",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -809,7 +809,7 @@
     },
     {
       "productId": "domaine-augustin-cuvee-cxvi-blanc-de-blancs",
-      "product": "Domaine Augustin — Cuvée CXVI Blanc de Blancs",
+      "product": "Domaine Augustin · Cuvée CXVI Blanc de Blancs",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -817,7 +817,7 @@
     },
     {
       "productId": "alexandre-filaine-cuvee-speciale-brut",
-      "product": "Alexandre Filaine — Cuvee Speciale Brut",
+      "product": "Alexandre Filaine · Cuvee Speciale Brut",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -825,7 +825,7 @@
     },
     {
       "productId": "frederic-savart-rose-bulles-de-rose-extra-brut-1er-cru",
-      "product": "Frèdèric Savart — Rosé Bulles de Rose Extra Brut 1er Cru",
+      "product": "Frèdèric Savart · Rosé Bulles de Rose Extra Brut 1er Cru",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -833,7 +833,7 @@
     },
     {
       "productId": "perrier-jouet-blanc-de-blancs-special-edition-formafantasma",
-      "product": "Perrier-Jouët — Blanc de Blancs - Special Edition Formafantasma",
+      "product": "Perrier-Jouët · Blanc de Blancs - Special Edition Formafantasma",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -841,7 +841,7 @@
     },
     {
       "productId": "egly-ouriet-grand-cru-brut",
-      "product": "Egly-Ouriet — Grand Cru Brut",
+      "product": "Egly-Ouriet · Grand Cru Brut",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -849,7 +849,7 @@
     },
     {
       "productId": "j-l-vergnon-blanc-de-blancs-msnl-extra-brut-grand-cru",
-      "product": "J.L. Vergnon — Blanc de Blancs Msnl Extra Brut Grand Cru",
+      "product": "J.L. Vergnon · Blanc de Blancs Msnl Extra Brut Grand Cru",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -857,7 +857,7 @@
     },
     {
       "productId": "thomas-perseval-la-pucelle-millesime-brut",
-      "product": "Thomas Perseval — La Pucelle Millesime’ Brut",
+      "product": "Thomas Perseval · La Pucelle Millesime’ Brut",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -865,7 +865,7 @@
     },
     {
       "productId": "alexandre-filaine-cuvee-dmy-brut",
-      "product": "Alexandre Filaine — Cuvee DMY Brut",
+      "product": "Alexandre Filaine · Cuvee DMY Brut",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -873,7 +873,7 @@
     },
     {
       "productId": "krug-grande-cuvee-champagne-aoc-brut",
-      "product": "Krug — Grande Cuvée Champagne  AOC Brut",
+      "product": "Krug · Grande Cuvée Champagne  AOC Brut",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,

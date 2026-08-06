@@ -1,7 +1,7 @@
 {
   "version": 1,
   "engineVersion": "1.0.0",
-  "generatedAt": "2026-08-06T08:01:56.806Z",
+  "generatedAt": "2026-08-06T08:53:46.917Z",
   "axes": {
     "freshness": {
       "label": "Fraîcheur",
@@ -886,7 +886,7 @@
       "id": "daubanton-rose-de-saignee-en-futs-les-vignes-derriere",
       "identity": {
         "house": "Daubanton & Fils",
-        "cuvee": "Rosé de Saignée en Fûts — Les Vignes Derrière",
+        "cuvee": "Rosé de Saignée en Fûts - Les Vignes Derrière",
         "region": "Champagne",
         "producerType": "vigneron",
         "tags": [
@@ -3834,7 +3834,7 @@
       "id": "j-m-seleque-soliste-les-charmiers-rose-extra-brut-1er-cru-2019",
       "identity": {
         "house": "J-M Sélèque",
-        "cuvee": "Soliste Meunier Rosé — Les Charmiers",
+        "cuvee": "Soliste Meunier Rosé - Les Charmiers",
         "region": "Champagne",
         "producerType": "vigneron",
         "tags": [

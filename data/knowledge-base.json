@@ -1202,7 +1202,7 @@
       "canonicalKey": "daubanton-fils::rose-de-saignee-en-futs-les-vignes-derriere::nv::750",
       "identity": {
         "producer": "Daubanton & Fils",
-        "cuvee": "Rosé de Saignée en Fûts — Les Vignes Derrière",
+        "cuvee": "Rosé de Saignée en Fûts - Les Vignes Derrière",
         "vintage": null,
         "formatMl": 750,
         "appellation": "Champagne",
@@ -5417,7 +5417,7 @@
       "canonicalKey": "j-m-seleque::soliste-meunier-rose-les-charmiers::true::750",
       "identity": {
         "producer": "J-M Sélèque",
-        "cuvee": "Soliste Meunier Rosé — Les Charmiers",
+        "cuvee": "Soliste Meunier Rosé - Les Charmiers",
         "vintage": true,
         "formatMl": 750,
         "appellation": "Champagne",
