@@ -771,7 +771,9 @@ function questions(){
 function branchQ2(occasion){
   if(occasion==='occ_cadeau') return giftQuestion();
   if(occasion==='occ_fete') return partyQuestion();
-  return null;
+  if(occasion==='occ_apero') return aperitifQuestion();
+  if(occasion==='occ_romantique') return duoQuestion();
+  return null; // occ_diner : parcours par défaut avec la question des accords
 }
 function giftQuestion(){
   return { id:'destinataire', label:"02 · Le destinataire", q:"À qui l’offrez-vous ?", hint:"On adapte le style et la signature au profil du destinataire.",
@@ -789,6 +791,24 @@ function partyQuestion(){
       {e:'02', tags:['crowd_decouverte'], l:"La découverte", d:"Une cuvée plus originale, souvent de vigneron"},
       {e:'03', tags:['crowd_festif'], l:"Que ça reste festif", d:"Frais et facile, sans prise de tête"},
       {e:'04', tags:['crowd_any'], l:"Un peu de tout", d:"On vise le meilleur compromis"},
+    ]};
+}
+function aperitifQuestion(){
+  return { id:'apero', label:"02 · L’apéritif", q:"Quel type d’apéritif ?", hint:"On ajuste la fraîcheur et le style au format de l’apéritif.",
+    opts:[
+      {e:'01', tags:['apero_leger'], l:"Léger, avant le repas", d:"Frais et précis, pour ouvrir l’appétit"},
+      {e:'02', tags:['apero_dinatoire'], l:"Dînatoire", d:"Planches, tapas : un style plus polyvalent"},
+      {e:'03', tags:['apero_trinquer'], l:"Juste pour trinquer", d:"Facile et convivial, qui plaît à tous"},
+      {e:'04', tags:['apero_any'], l:"Peu importe", d:"On vise un apéritif consensuel"},
+    ]};
+}
+function duoQuestion(){
+  return { id:'duo', label:"02 · Le moment", q:"Quel moment à deux ?", hint:"On adapte le style à l’ambiance recherchée.",
+    opts:[
+      {e:'01', tags:['duo_apero'], l:"Un apéritif complice", d:"Frais et fin, pour lancer la soirée"},
+      {e:'02', tags:['duo_diner'], l:"Un dîner gastronomique", d:"Une cuvée avec de la matière, pour la table"},
+      {e:'03', tags:['duo_celebration'], l:"Fêter quelque chose", d:"Une bouteille marquante, souvent rosée"},
+      {e:'04', tags:['duo_verre'], l:"Juste un verre ensemble", d:"Tout en rondeur et en délicatesse"},
     ]};
 }
 
@@ -1599,10 +1619,29 @@ function convivesScore(p, crowd){
   }
   return 10;
 }
+function aperitifScore(p, val){
+  if(!val || val==='apero_any') return 10;
+  const sc=p.details?.scores||{};
+  if(val==='apero_leger'){ let s=2; if((sc.freshness||3)>=4) s+=8; if(p.profil.includes('profil_frais_vif')||p.profil.includes('profil_delicat')) s+=5; if(p.tags.includes('Blanc de blancs')) s+=3; return Math.min(22,s); }
+  if(val==='apero_dinatoire'){ let s=2; if(p.tags.includes('Brut') && !p.tags.includes('Extra-brut / nature')) s+=5; if((sc.roundness||3)>=3) s+=5; if(p.profil.includes('profil_fruite')||p.profil.includes('profil_riche_ample')) s+=5; return Math.min(22,s); }
+  if(val==='apero_trinquer'){ let s=2; if((p.popularity||0)>=80) s+=6; if(p.profil.includes('profil_fruite')) s+=6; if((p.tier||1)<=2) s+=5; return Math.min(22,s); }
+  return 10;
+}
+function deuxScore(p, val){
+  if(!val || val==='duo_any') return 10;
+  const sc=p.details?.scores||{};
+  if(val==='duo_apero'){ let s=2; if((sc.freshness||3)>=4) s+=8; if(p.profil.includes('profil_delicat')||p.profil.includes('profil_frais_vif')) s+=5; if(p.tags.includes('Blanc de blancs')) s+=3; return Math.min(22,s); }
+  if(val==='duo_diner'){ let s=2; if((sc.complexity||3)>=4) s+=8; if(p.profil.includes('profil_riche_ample')) s+=5; if((p.tier||1)>=2) s+=3; if(p.producerType==='vigneron') s+=2; return Math.min(22,s); }
+  if(val==='duo_celebration'){ let s=2; if(p.tags.includes('Rosé')) s+=6; if((p.tier||1)>=3) s+=6; if(p.tags.includes('Millésimé')) s+=4; return Math.min(22,s); }
+  if(val==='duo_verre'){ let s=2; if(p.profil.includes('profil_fruite')||p.profil.includes('profil_delicat')) s+=7; if((sc.roundness||3)>=3) s+=5; if((p.tier||1)<=2) s+=4; return Math.min(22,s); }
+  return 10;
+}
 function intentScore(p, a){
   const occ=(a.occasion||[]);
   if(occ.includes('occ_cadeau')) return destinataireScore(p,(a.destinataire||[])[0]);
   if(occ.includes('occ_fete')) return convivesScore(p,(a.convives||[])[0]);
+  if(occ.includes('occ_apero')) return aperitifScore(p,(a.apero||[])[0]);
+  if(occ.includes('occ_romantique')) return deuxScore(p,(a.duo||[])[0]);
   const accord=(a.accord||[])[0];
   return accord==='accord_any' ? 10 : accordFit(p,accord) ? 22 : 2;
 }
@@ -1863,33 +1902,61 @@ function occasionReason(p, tag){
   if(tag==='occ_romantique') return "Fine et précise, elle se déguste lentement, à deux.";
   return null;
 }
+/* Une seule raison "intention", propre à la branche suivie (accord, destinataire,
+   convives, apéritif, moment à deux). Renvoie null si rien de spécifique. */
+function intentReason(p, a){
+  const occ=(a.occasion||[]);
+  if(occ.includes('occ_cadeau')){
+    const dest=(a.destinataire||[])[0];
+    if(dest==='dest_connaisseur') return `Cuvée ${p.producerType==='vigneron'?'de vigneron':'de caractère'}${p.tags.includes('Grand Cru')?' en grand cru':''}, elle a de quoi séduire un connaisseur.`;
+    if(dest==='dest_novice') return `Signée ${p.house}, c’est une valeur sûre, lisible et facile à aimer.`;
+    if(dest==='dest_prestige') return `Son standing (${priceText(p)}${p.tags.includes('Millésimé')?', millésimé':''}) en fait un cadeau qui marque.`;
+    return null;
+  }
+  if(occ.includes('occ_fete')){
+    const crowd=(a.convives||[])[0];
+    if(crowd==='crowd_valeur') return `Un style consensuel signé ${p.house}, qui met tout le monde d’accord.`;
+    if(crowd==='crowd_decouverte') return `${p.producerType==='vigneron'?'Champagne de vigneron':'Cuvée originale'}, de quoi faire découvrir quelque chose à vos invités.`;
+    if(crowd==='crowd_festif') return `Fraîche et facile à partager, elle garde la soirée festive sans prise de tête.`;
+    return null;
+  }
+  if(occ.includes('occ_apero')){
+    const ap=(a.apero||[])[0];
+    if(ap==='apero_leger') return `Fraîche et précise, elle ouvre l’appétit sans alourdir l’apéritif.`;
+    if(ap==='apero_dinatoire') return `Assez polyvalente pour tenir sur des planches et un apéritif dînatoire.`;
+    if(ap==='apero_trinquer') return `Facile et conviviale, parfaite pour simplement trinquer.`;
+    return null;
+  }
+  if(occ.includes('occ_romantique')){
+    const duo=(a.duo||[])[0];
+    if(duo==='duo_apero') return `Fraîche et fine, idéale pour un apéritif à deux.`;
+    if(duo==='duo_diner') return `Sa matière l’accorde à un dîner gastronomique à deux.`;
+    if(duo==='duo_celebration') return `Une bouteille${p.tags.includes('Rosé')?' rosée':''} marquante pour fêter l’instant.`;
+    if(duo==='duo_verre') return `Tout en rondeur, elle se savoure tranquillement, juste un verre à deux.`;
+    return null;
+  }
+  const accord=(a.accord||[])[0];
+  if(accordFit(p,accord) && accord && accord!=='accord_any' && p.pair) return `Ses accords de prédilection (${p.pair}) tombent juste sur ce que vous servez.`;
+  return null;
+}
 function matchReasons(p){
   const reasons=[];
   const a=state.answers;
-  const occ=(a.occasion||[]).find(tag=>p.occ.includes(tag));
-  if(occ){ const r=occasionReason(p,occ); if(r) reasons.push(r); }
-  const accord=(a.accord||[])[0];
-  const dest=(a.occasion||[]).includes('occ_cadeau') ? (a.destinataire||[])[0] : null;
-  const crowd=(a.occasion||[]).includes('occ_fete') ? (a.convives||[])[0] : null;
-  if(dest && dest!=='dest_any'){
-    if(dest==='dest_connaisseur') reasons.push(`Cuvée ${p.producerType==='vigneron'?'de vigneron':'de caractère'}${p.tags.includes('Grand Cru')?' en grand cru':''}, elle a de quoi séduire un connaisseur.`);
-    if(dest==='dest_novice') reasons.push(`Signée ${p.house}, c’est une valeur sûre, lisible et facile à aimer.`);
-    if(dest==='dest_prestige') reasons.push(`Son standing (${priceText(p)}${p.tags.includes('Millésimé')?', millésimé':''}) en fait un cadeau qui marque.`);
-  } else if(crowd && crowd!=='crowd_any'){
-    if(crowd==='crowd_valeur') reasons.push(`Un style consensuel signé ${p.house}, qui met tout le monde d’accord.`);
-    if(crowd==='crowd_decouverte') reasons.push(`${p.producerType==='vigneron'?'Champagne de vigneron':'Cuvée originale'}, de quoi faire découvrir quelque chose à vos invités.`);
-    if(crowd==='crowd_festif') reasons.push(`Fraîche et facile à partager, elle garde la soirée festive sans prise de tête.`);
-  } else if(accordFit(p,accord) && accord && accord!=='accord_any' && p.pair){
-    reasons.push(`Ses accords de prédilection (${p.pair}) tombent juste sur ce que vous servez.`);
-  }
+  const occ=(a.occasion||[]);
+  // Lead : la raison d'intention propre à la branche, sinon le contexte d'occasion.
+  const intent=intentReason(p,a);
+  if(intent) reasons.push(intent);
+  else { const occTag=occ.find(tag=>p.occ.includes(tag)); if(occTag){ const r=occasionReason(p,occTag); if(r) reasons.push(r); } }
   const goutMatch=(a.gout||[]).find(tag=>p.profil.includes(tag));
   if(goutMatch) reasons.push(`Côté goût, on retrouve ${styleWords(p,goutMatch)} : exactement la sensation recherchée.`);
   const budget=(a.budget||[])[0];
   if(budget && budgetFitScore(p,budget)>=29) reasons.push(`À ${priceText(p)}, elle se place précisément dans la tranche que vous avez fixée.`);
+  // Signature : on évite de répéter maison/vigneron si la branche cadeau ou convives l'a déjà dit.
   const signal=(a.repere||[])[0];
+  const producerCovered=occ.includes('occ_cadeau')||occ.includes('occ_fete');
   if(signalFit(p,signal)){
-    if(signal==='maison') reasons.push(`Signée ${p.house}, c’est une maison lisible et rassurante.`);
-    if(signal==='vigneron') reasons.push("C’est un champagne de vigneron, plus personnel, comme vous le souhaitiez.");
+    if(signal==='maison' && !producerCovered) reasons.push(`Signée ${p.house}, c’est une maison lisible et rassurante.`);
+    if(signal==='vigneron' && !producerCovered) reasons.push("C’est un champagne de vigneron, plus personnel, comme vous le souhaitiez.");
     if(signal==='low_dosage') reasons.push("Son dosage très bas (extra-brut ou brut nature) répond à votre goût pour les cuvées très sèches.");
   }
   if(reasons.length<2) reasons.push("Au global, c’est la bouteille la plus cohérente avec l’ensemble de vos réponses.");
