@@ -298,5 +298,16 @@
       "blog-foie-gras"
     ],
     "notes": "Table dressée gastronomique avec assiette et verre."
+  },
+  {
+    "asset": "https://images.unsplash.com/photo-1580657264608-44775e61c0a1",
+    "type": "third_party_stock_photo",
+    "source": "Unsplash",
+    "license": "Unsplash License (usage commercial gratuit, hotlink autorisé)",
+    "rightsStatus": "cleared",
+    "uses": [
+      "selecteur-hero"
+    ],
+    "notes": "Coupes de champagne servies, ambiance de célébration. Aucune marque mise en avant."
   }
 ]
