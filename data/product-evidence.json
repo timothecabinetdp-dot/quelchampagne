@@ -1,11 +1,11 @@
 {
   "version": 1,
   "reviewedAt": "2026-07-31",
-  "productCount": 48,
+  "productCount": 150,
   "summary": {
     "officialConfirmed": 41,
     "officialPartial": 5,
-    "merchantOnly": 2
+    "merchantOnly": 104
   },
   "records": [
     {
@@ -966,6 +966,1931 @@
         ],
         "dosage": null,
         "summary": "La Maison confirme la cuvée Belle Époque Brut issue de la récolte 2016."
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "jacquart-brut-lamotte",
+      "brand": "Jacquart",
+      "name": "Brut - LaMotte",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-brut-lamotte-jacquart",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Pinot Noir",
+          "Meunier"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "grand-tour-grand-cuvee-reserve-brut",
+      "brand": "Grand Tour",
+      "name": "Grand Cuvee Reserve Brut",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-grand-cuvee-reserve-brut-grand-tour",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "daubanton-assemblage-extra-brut",
+      "brand": "Daubanton",
+      "name": "Assemblage Extra Brut",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-assemblage-extra-brut-daubanton",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "m-g-heucq-brut-fossile",
+      "brand": "M.G. Heucq",
+      "name": "Brut - Fossile",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-brut-fossile-m-g-heucq",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Pinot Noir",
+          "Meunier"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "alain-mercier-sagacite-brut",
+      "brand": "Alain Mercier",
+      "name": "Sagacité Brut",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-sagacite-brut-alain-mercier",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Pinot Noir",
+          "Meunier"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "j-charpentier-tradition-brut",
+      "brand": "J. Charpentier",
+      "name": "Tradition Brut",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-tradition-brut-j-charpentier",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Pinot Noir",
+          "Meunier"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "cattier-aoc-quarz-brut-tradition",
+      "brand": "Cattier",
+      "name": "AOC - Quarz Brut Tradition",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-aoc-quarz-brut-tradition-cattier",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Pinot Noir",
+          "Meunier"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "daubanton-blanc-de-noir",
+      "brand": "Daubanton",
+      "name": "Blanc de Noir",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-noir-daubanton",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Pinot Noir",
+          "Meunier"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "de-vilmont-aoc-brut-grand-reserve-premier-cru",
+      "brand": "De Vilmont",
+      "name": "AOC Brut Grand Réserve Premier Cru",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-aoc-brut-grand-reserve-premier-cru-de-vilmont",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "beaumont-des-crayeres-grand-reserve-brut-3-anni",
+      "brand": "Beaumont des Crayères",
+      "name": "Grand Reserve Brut - 3 anni",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-grand-reserve-brut-3-anni-beaumont-des-crayeres",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "lamiable-lapie-lamiable-brut",
+      "brand": "Lamiable",
+      "name": "Lapie-Lamiable Brut",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-lapie-lamiable-brut-lamiable",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "maison-burtin-extra-brut",
+      "brand": "Maison Burtin",
+      "name": "Extra Brut",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-extra-brut-maison-burtin",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Pinot Noir",
+          "Meunier"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "jean-vesselle-coteaux-champenois-bouzy-blanc",
+      "brand": "Jean Vesselle",
+      "name": "Coteaux Champenois Bouzy Blanc",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-coteaux-champenois-bouzy-blanc-jean-vesselle",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "jacquart-mosaique-demi-sec",
+      "brand": "Jacquart",
+      "name": "Mosaïque Demi Sec",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-mosaique-demi-sec-jacquart",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Pinot Noir",
+          "Meunier"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "jacquart-brut-mosaique",
+      "brand": "Jacquart",
+      "name": "Brut Mosaïque",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-brut-mosaique-jacquart",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Pinot Noir",
+          "Meunier"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "sadi-malot-l-equilibre-brut-1er-cru",
+      "brand": "Sadi Malot",
+      "name": "L’Équilibre Brut 1er Cru",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-l-equilibre-brut-1er-cru-sadi-malot",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "billecart-salmon-inspiration-1818",
+      "brand": "Billecart-Salmon",
+      "name": "Inspiration 1818",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-inspiration-1818-billecart-salmon",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Pinot Noir",
+          "Meunier"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "fontanafredda-art-deco-brut-collet",
+      "brand": "Fontanafredda",
+      "name": "Art Deco Brut - Collet",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-art-deco-brut-fontanafredda",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "paul-bara-brut-grand-cru-reserve",
+      "brand": "Paul Bara",
+      "name": "Brut - Grand Cru Reserve",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/paul-bara-champagne-brut-grand-cru-reserve",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Pinot Noir"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "drappier-brut-carte-d-or-aoc",
+      "brand": "Drappier",
+      "name": "Brut Carte d'Or AOC",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-brut-carte-d-or-aoc-drappier",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Pinot Noir",
+          "Meunier"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "beltrand-brigandat-pinot-noir-de-channes-nature-pierre-brigandat",
+      "brand": "Beltrand Brigandat",
+      "name": "Pinot Noir de Channes Nature - Pierre Brigandat",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-pinot-noir-de-channes-nature-beltrand-brigandat",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Pinot Noir"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "alain-mercier-cuvee-neon-brut",
+      "brand": "Alain Mercier",
+      "name": "Cuvée Neon Brut",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-cuvee-neon-brut-alain-mercier",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "beltrand-brigandat-rose-de-saignee-brut-pierre-brigandat",
+      "brand": "Beltrand Brigandat",
+      "name": "Rosé de Saignée Brut - Pierre Brigandat",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-rose-de-saignee-brut-beltrand-brigandat",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Pinot Noir"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "lamiable-terre-d-etoiles-brut-grand-cru",
+      "brand": "Lamiable",
+      "name": "Terre d’Étoiles Brut Grand Cru",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-terre-d-etoiles-brut-grand-cru-lamiable",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "fontanafredda-art-deco-extra-brut-collet",
+      "brand": "Fontanafredda",
+      "name": "Art Deco Extra Brut - Collet",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-art-deco-extra-brut-fontanafredda",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "vazart-coquart-blanc-de-blancs-reserve-brut-grand-cru",
+      "brand": "Vazart-Coquart",
+      "name": "Blanc de Blancs Réserve Brut Grand Cru",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-reserve-brut-grand-cru-vazarat-coquart",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "maison-tornay-extra-brut",
+      "brand": "Maison Tornay",
+      "name": "Extra Brut",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-extra-brut-maison-tornay",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Pinot Noir"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "maison-tornay-rose-premier-cru",
+      "brand": "Maison Tornay",
+      "name": "Rosé Premier Cru",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-rose-premier-cru-maison-tornay",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Pinot Noir"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "jean-vesselle-reserve-brut",
+      "brand": "Jean Vesselle",
+      "name": "Réserve Brut",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-reserve-brut-jean-vesselle",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Pinot Noir"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "maison-burtin-brut-rose",
+      "brand": "Maison Burtin",
+      "name": "Brut Rosé",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-brut-rose-maison-burtin",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "maxime-ponson-la-petite-montagne-extra-brut-1er-cru",
+      "brand": "Maxime Ponson",
+      "name": "La Petite Montagne Extra Brut 1er Cru",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-la-petite-montagne-extra-brut-1er-cru-maxime-ponson",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Pinot Noir",
+          "Meunier"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "jean-vesselle-reserve-demi-sec",
+      "brand": "Jean Vesselle",
+      "name": "Réserve Demi-Sec",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-reserve-demi-sec-jean-vesselle",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Pinot Noir"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "maison-yves-loison-cuvee-senlis",
+      "brand": "Maison Yves Loison",
+      "name": "Cuvée - Senlis",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-cuvee-senlis-maison-yves-loison",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "epc-champagne-blanc-de-blancs-brut-30-mesi",
+      "brand": "EPC Champagne",
+      "name": "Blanc de Blancs Brut - 30 Mesi",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-brut-30-mesi-epc-champagne",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "maison-labbe-brut-premier-cru-prestige",
+      "brand": "Maison Labbé",
+      "name": "Brut Premier Cru - Prestige",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-brut-premier-cru-prestige-maison-labbe",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Pinot Noir"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "bonnet-gilmert-blanc-de-blancs-extra-brut-grand-cru",
+      "brand": "Bonnet Gilmert",
+      "name": "Blanc de Blancs Extra Brut Grand Cru",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-extra-brut-grand-cru-bonnet-gilmert",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "le-guedard-vignes-mon-grand-pere-blanc-de-noirs-nature",
+      "brand": "Le Guèdard",
+      "name": "Vignes Mon Grand Père Blanc de Noirs Nature",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-vignes-mon-grand-pereblanc-de-noirsnature-le-guedard",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Pinot Noir"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "benard-pitois-reserve-premier-cru-brut",
+      "brand": "Benard Pitois",
+      "name": "Reserve Premier Cru Brut",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-reserve-premier-cru-brut-benard-pitois",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "gatinois-tradition-d-ay-demi-sec-grand-cru",
+      "brand": "Gatinois",
+      "name": "Tradition d’Aÿ Demi-Sec Grand Cru",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-tradition-d-ay-demi-sec-grand-cru-gatinois",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "lancelot-pienne-blanc-de-blancs-dame-du-lac-brut",
+      "brand": "Lancelot Pienne",
+      "name": "Blanc de Blancs Dame du Lac Brut",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-dame-du-lac-brut-lancelot-pienne",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "lancelot-pienne-cuvee-accord-majeur-brut",
+      "brand": "Lancelot Pienne",
+      "name": "Cuvée Accord Majeur Brut",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-cuvee-accord-majeur-brut-lancelot-pienne",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Pinot Noir",
+          "Meunier"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "vazart-coquart-blanc-de-blancs-extra-brut-grand-cru",
+      "brand": "Vazart-Coquart",
+      "name": "Blanc de Blancs Extra Brut Grand Cru",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-extra-brut-grand-cru-vazarat-coquart",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "maison-yves-loison-cuvee-premier-cru-hyppolite",
+      "brand": "Maison Yves Loison",
+      "name": "Cuvée Premier Cru - Hyppolite",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-cuvee-premier-cru-hyppolite-maison-yves-loison",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "drappier-blanc-de-blancs-aoc",
+      "brand": "Drappier",
+      "name": "Blanc de Blancs AOC",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-aoc-drappier",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Pinot Noir"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "pierre-baillette-le-village-de-trois-puits-premier-cru-extra-brut-pierre-baillatte",
+      "brand": "Pierre Baillette",
+      "name": "Le Village De Trois Puits Premier Cru Extra Brut - Pierre Baillatte",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-le-village-de-trois-puits-premier-cru-extra-brut-pierre-baillatte",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Pinot Noir"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "m-g-heucq-extra-brut-tandem",
+      "brand": "M.G. Heucq",
+      "name": "Extra Brut - Tandem",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-extra-brut-tandem-m-g-heucq",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Pinot Noir",
+          "Meunier"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "maison-labbe-premier-cru-blanc-de-noir",
+      "brand": "Maison Labbé",
+      "name": "Premier Cru - Blanc de Noir",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-premier-cru-blanc-de-noir-maison-labbe",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Pinot Noir"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "epc-champagne-blanc-de-blancs-brut-nature-24-mesi",
+      "brand": "EPC Champagne",
+      "name": "Blanc de Blancs Brut Nature - 24 Mesi",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-brut-nature-24-mesi-epc-champagne",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "benard-pitois-rose-premier-cru-brut",
+      "brand": "Benard Pitois",
+      "name": "Rose’ Premier Cru Brut",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-rose-premier-cru-brut-benard-pitois",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "harlin-pere-et-fils-les-sentes-de-mareuil",
+      "brand": "Harlin Père et Fils",
+      "name": "Les Sentes de Mareuil",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-les-sentes-de-mareuil-harlin-pere-et-fils",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Pinot Noir"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "erick-schreiber-extra-brut",
+      "brand": "Erick Schreiber",
+      "name": "Extra Brut",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-extra-brut-erick-schreiber",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "mouzon-leroux-l-atavique-nature-grand-cru",
+      "brand": "Mouzon Leroux",
+      "name": "L’Atavique Nature Grand Cru",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-l-atavique-nature-grand-cru-mouzon-leroux",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "gatinois-reserve-d-ay-brut-grand-cru",
+      "brand": "Gatinois",
+      "name": "Réserve d’Aÿ Brut Grand Cru",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-reserve-d-ay-brut-grand-cru-gatinois",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Pinot Noir"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "maison-burtin-brut-vintage-2014",
+      "brand": "Maison Burtin",
+      "name": "Brut Vintage 2014",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-brut-vintage-2014-maison-burtin",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "waris-larmandier-cuvee-l-instant-du-passion-rose-extra-brut",
+      "brand": "Waris Larmandier",
+      "name": "Cuvée L’Instant du Passion Rosé Extra Brut",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-cuvee-l-instant-du-passion-rose-extra-brut-waris-larmandier",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Pinot Noir",
+          "Meunier"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "waris-larmandier-blanc-de-blancs-particules-crayeuses-extra-brut-grand-cru",
+      "brand": "Waris Larmandier",
+      "name": "Blanc de Blancs Particules Crayeuses Extra Brut Grand Cru",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-particules-crayeuses-extra-brut-grand-cru-waris-larmandier",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "chateau-de-bligny-vintage-brut",
+      "brand": "Chateau De Bligny",
+      "name": "Vintage Brut",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-vintage-brut-chateau-de-bligny",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "vilmart-grand-cellier-premier-cru-brut",
+      "brand": "Vilmart",
+      "name": "Grand Cellier Premier Cru Brut",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-grand-cellier-premier-cru-brut-vilmart",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "le-guedard-mes-trois-terroirs-nature",
+      "brand": "Le Guèdard",
+      "name": "Mes Trois Terroirs Nature",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-mes-trois-terroirs-nature-le-guedard",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "vincent-brochet-chardonnay-nature-brut",
+      "brand": "Vincent Brochet",
+      "name": "Chardonnay Nature Brut",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-chardonnay-nature-brut-vincent-brochet",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "j-m-seleque-cuvee-solessence-extra-brut",
+      "brand": "J-M Sélèque",
+      "name": "Cuvée Solessence Extra Brut",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-cuvee-solessence-extra-brut-j-m-seleque",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Pinot Noir",
+          "Meunier"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "guenin-effloraison-extra-brut",
+      "brand": "Guenin",
+      "name": "Effloraison Extra Brut",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-effloraison-extra-brut-guenin",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Pinot Noir",
+          "Meunier"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "laherte-freres-rose-de-meunier-extra-brut",
+      "brand": "Laherte Frères",
+      "name": "Rosé de Meunier Extra Brut",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-rose-de-meunier-extra-brut-laherte-freres",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Meunier"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "maurice-grumier-coeur-de-rose",
+      "brand": "Maurice Grumier",
+      "name": "Coeur De Rose'",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-coeur-de-rose-maurice-grumier",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Pinot Noir"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "j-l-vergnon-blanc-de-blancs-conversation-brut-grand-cru",
+      "brand": "J.L. Vergnon",
+      "name": "Blanc de Blancs Conversation Brut Grand Cru",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-conversation-brut-grand-cru-j-l-vergon",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "stephane-regnault-blanc-de-blancs-chromatique-extra-brut-grand-cru",
+      "brand": "Stephane Regnault",
+      "name": "Blanc de Blancs Chromatique Extra Brut Grand Cru",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-chromatique-extra-brut-grand-cru-stephane-regnault",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "jean-claude-vallois-blanc-de-blancs-millesime-extra-brut",
+      "brand": "Jean-Claude Vallois",
+      "name": "Blanc de Blancs Millésimé Extra Brut",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-millesime-extra-brut-jean-claude-vallois",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "lancelot-pienne-blanc-de-blancs-cuvee-table-ronde-extra-brut-grand-cru",
+      "brand": "Lancelot Pienne",
+      "name": "Blanc de Blancs Cuvée Table Ronde Extra Brut Grand Cru",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-cuvee-table-ronde-extra-brut-grand-cru-lancelot-pienne",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "vazart-coquart-blanc-de-blancs-grand-bouquet-extra-brut-grand-cru",
+      "brand": "Vazart-Coquart",
+      "name": "Blanc de Blancs Grand Bouquet Extra Brut Grand Cru",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-grand-bouquet-extra-brut-grand-cru-vazarat-coquart",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "marie-copinet-nos-pas-dans-la-pierre-nature",
+      "brand": "Marie Copinet",
+      "name": "Nos Pas Dans la Pierre Nature",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-nos-pas-dans-la-pierre-nature-marie-copinet",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "m-g-heucq-rose-de-saignee-les-velours",
+      "brand": "M.G. Heucq",
+      "name": "Rosé de Saignée - Les Velours",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-rose-de-saignee-les-velours-m-g-heucq",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Pinot Noir"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "thierry-massin-vrai-millesime-blanc-de-blancs-brut",
+      "brand": "Thierry Massin",
+      "name": "Vrai Millesimè Blanc de Blancs Brut",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-vrai-millesime-blanc-de-blancs-brut-thierry-massin",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "le-guedard-mon-rose-de-saignee-brut",
+      "brand": "Le Guèdard",
+      "name": "Mon Rosé de Saignée Brut",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-mon-rose-de-saignee-brut-le-guedard",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "mouzon-leroux-rose-saignee-incandescent-extra-brut-grand-cru",
+      "brand": "Mouzon Leroux",
+      "name": "Rosé Saignée Incandescent Extra Brut Grand Cru",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-rose-saignee-incandescent-extra-brut-grand-cru-mouzon-leroux",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Pinot Noir"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "jean-claude-vallois-blanc-de-blancs-millesime-extra-brut-2018",
+      "brand": "Jean-Claude Vallois",
+      "name": "Blanc de Blancs Millésimé Extra Brut 2018",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-millesime-extra-brut-2018-jean-claude-vallois",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "corbon-anthracite-brut",
+      "brand": "Corbon",
+      "name": "Anthracite Brut",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/anthracite-brut-corbon",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Pinot Noir",
+          "Meunier"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "mumm-aoc-brut-rsrv-cuvee-4-5",
+      "brand": "Mumm",
+      "name": "AOC Brut - RSRV Cuvée 4.5",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-aoc-brut-rsrv-cuvee-4-5-mumm",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Pinot Noir"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "bereche-et-fils-reserve-brut",
+      "brand": "Bèreche Et Fils",
+      "name": "Réserve Brut",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-reserve-brut-bereche-et-fils",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Pinot Noir",
+          "Meunier"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "mouzon-leroux-l-ascendant-solera-14-17-extra-brut-grand-cru",
+      "brand": "Mouzon Leroux",
+      "name": "L’Ascendant Solera 14/17 Extra Brut Grand Cru",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-l-ascendant-solera-14-17-extra-brut-grand-cru-mouzon-leroux",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "pernod-ricard-brut-75cl-grand-brut-perrier-jouet",
+      "brand": "Pernod Ricard",
+      "name": "Brut 75cl - Grand Brut - Perrier Jouët",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-brut-grand-brut-perrier-jouet",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "domaine-augustin-coeur-saphyr",
+      "brand": "Domaine Augustin",
+      "name": "Coeur Saphyr",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-coeur-saphyr-domaine-augustin",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Pinot Noir"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "eric-taillet-bansionensi",
+      "brand": "Eric Taillet",
+      "name": "Bansionensi",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-bansionensi-eric-taillet",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "de-venoge-princess-extra-brut",
+      "brand": "De Venoge",
+      "name": "Princess Extra Brut",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-princess-extra-brut-de-venoge",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Pinot Noir"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "domaine-augustin-les-vertus",
+      "brand": "Domaine Augustin",
+      "name": "Les Vertus",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-les-vertus-domaine-augustin",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Meunier"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "mumm-aoc-brut-gran-cordon-rose",
+      "brand": "Mumm",
+      "name": "AOC Brut - Gran Cordon Rosé",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-aoc-brut-gran-cordon-rose-mumm",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Pinot Noir",
+          "Meunier"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "j-m-seleque-quintette-5-terroirs-extra-brut",
+      "brand": "J-M Sélèque",
+      "name": "Quintette 5 Terroirs Extra Brut",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-quintette-5-terroirs-extra-brut-j-m-seleque",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay",
+          "Pinot Noir",
+          "Meunier"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "jerome-coessens-blanc-de-noirs-largillier-brut",
+      "brand": "Jerome Coessens",
+      "name": "Blanc de Noirs Largillier Brut",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-noirs-largillier-brut-jerome-coessens",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Pinot Noir"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "wirth-michel-les-meuniers-de-raoul-extra-brut",
+      "brand": "Wirth Michel",
+      "name": "Les Meuniers de Raoul Extra Brut",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-les-meuniers-de-raoul-extra-brut-wirth-michel",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Meunier"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "stephane-regnault-blanc-de-blancs-dorien-n-80-extra-brut-grand-cru",
+      "brand": "Stephane Regnault",
+      "name": "Blanc de Blancs Dorien n°80 Extra Brut Grand Cru",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-dorien-n-80-extra-brut-grand-cru-stephane-regnault",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "stephane-regnault-blanc-de-blancs-mixolydien-n-99-extra-brut-grand-cru",
+      "brand": "Stephane Regnault",
+      "name": "Blanc de Blancs Mixolydien n°99 Extra Brut Grand Cru",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-mixolydien-n-99-extra-brut-grand-cru-stephane-regnault",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "billecart-salmon-le-blanc-de-blancs",
+      "brand": "Billecart-Salmon",
+      "name": "Le Blanc de Blancs",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-le-blanc-de-blancs-billecart-salmon",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "jerome-coessens-blanc-de-noirs-largillier-rose-brut",
+      "brand": "Jerome Coessens",
+      "name": "Blanc de Noirs Largillier Rosé Brut",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-noirs-largillier-rose-brut-jerome-coessens",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Pinot Noir"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "jerome-coessens-blanc-de-noirs-largillier-nature",
+      "brand": "Jerome Coessens",
+      "name": "Blanc de Noirs Largillier Nature",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-noirs-largillier-nature-jerome-coessens",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Pinot Noir"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "domaine-augustin-cuvee-cxvi-blanc-de-blancs",
+      "brand": "Domaine Augustin",
+      "name": "Cuvée CXVI Blanc de Blancs",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-cuvee-cxvi-blanc-de-blancs-domaine-augustin",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "alexandre-filaine-cuvee-speciale-brut",
+      "brand": "Alexandre Filaine",
+      "name": "Cuvee Speciale Brut",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-cuvee-speciale-brut-alexandre-filaine",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "frederic-savart-rose-bulles-de-rose-extra-brut-1er-cru",
+      "brand": "Frèdèric Savart",
+      "name": "Rosé Bulles de Rose Extra Brut 1er Cru",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-rose-bulles-de-rose-extra-brut-1er-cru-frederic-savart",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "perrier-jouet-blanc-de-blancs-special-edition-formafantasma",
+      "brand": "Perrier-Jouët",
+      "name": "Blanc de Blancs - Special Edition Formafantasma",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-special-edition-formafantasma-perrier-jouet",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "egly-ouriet-grand-cru-brut",
+      "brand": "Egly-Ouriet",
+      "name": "Grand Cru Brut",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-grand-cru-brut-egly-ouriet",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "j-l-vergnon-blanc-de-blancs-msnl-extra-brut-grand-cru",
+      "brand": "J.L. Vergnon",
+      "name": "Blanc de Blancs Msnl Extra Brut Grand Cru",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-msnl-extra-brut-grand-cru-j-l-vergon",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [
+          "Chardonnay"
+        ],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "thomas-perseval-la-pucelle-millesime-brut",
+      "brand": "Thomas Perseval",
+      "name": "La Pucelle Millesime’ Brut",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-la-pucelle-millesime-brut-thomas-perseval",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "alexandre-filaine-cuvee-dmy-brut",
+      "brand": "Alexandre Filaine",
+      "name": "Cuvee DMY Brut",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-cuvee-dmy-brut-alexandre-filaine",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [],
+        "dosage": null,
+        "summary": null
+      },
+      "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
+    },
+    {
+      "productId": "krug-grande-cuvee-champagne-aoc-brut",
+      "brand": "Krug",
+      "name": "Grande Cuvée Champagne  AOC Brut",
+      "status": "merchant_only",
+      "merchantSourceUrl": "https://bottleofitaly.com/fr/products/grande-cuvee-champagne-aoc-brut-krug",
+      "merchantCheckedAt": "2026-08-02T19:22:59.090Z",
+      "officialSourceUrl": null,
+      "officialCheckedAt": null,
+      "technicalSourceUrl": null,
+      "facts": {
+        "grapes": [],
+        "dosage": null,
+        "summary": null
       },
       "notes": "Identité, prix, disponibilité et description contrôlés sur la fiche du partenaire ; source primaire à compléter."
     }

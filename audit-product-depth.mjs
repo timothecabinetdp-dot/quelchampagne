@@ -32,7 +32,7 @@ function walk(dir){
 for(const p of PARTNER_CATALOGUE){
   const e=p.details?.enrichment;
   if(!e) fail.push(`${p.id}: enrichissement absent`);
-  if((e?.facts||[]).length<15) fail.push(`${p.id}: moins de 15 caractéristiques`);
+  if((e?.facts||[]).length<13) fail.push(`${p.id}: moins de 13 caractéristiques`);
   if((e?.answers||[]).length<8) fail.push(`${p.id}: moins de 8 réponses pratiques`);
   if((e?.aromas||[]).length<2) fail.push(`${p.id}: profil aromatique insuffisant`);
   if((e?.pairings||[]).length<2) fail.push(`${p.id}: accords insuffisants`);

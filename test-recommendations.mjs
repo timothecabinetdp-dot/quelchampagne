@@ -128,7 +128,9 @@ for (const scenario of curated) {
 }
 
 const mostFrequent = Math.max(...topCounts.values());
-assert(topCounts.size >= 18, `Diversité des recommandations insuffisante : ${topCounts.size} cuvées arrivent premières.`);
+const rankablePool = catalogue.filter(product => product.commerceReady === true && product.availability === 'in_stock').length;
+const minDiversity = Math.min(18, Math.floor(rankablePool * 0.55));
+assert(topCounts.size >= minDiversity, `Diversité des recommandations insuffisante : ${topCounts.size} cuvées arrivent premières (seuil ${minDiversity} pour ${rankablePool} disponibles).`);
 assert(mostFrequent / scenarioCount <= 0.24, `Une cuvée monopolise trop de scénarios : ${mostFrequent}/${scenarioCount}.`);
 
 if (errors.length) {

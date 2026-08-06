@@ -3,7 +3,7 @@ import {PARTNER_CATALOGUE} from './build-partner-catalogue.mjs';
 import {AXES,buildKnowledgeBase,recommend,similarity,findSimilar} from './expert-engine.mjs';
 
 const kb=buildKnowledgeBase(PARTNER_CATALOGUE);
-assert.equal(kb.count,48);
+assert.ok(kb.count>=100,`Catalogue expert trop réduit : ${kb.count}.`);
 assert.equal(Object.keys(AXES).length,12);
 for(const record of kb.records){
   assert.ok(record.id && record.identity.house && record.identity.cuvee);

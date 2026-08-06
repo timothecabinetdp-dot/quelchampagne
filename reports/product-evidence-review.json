@@ -1,10 +1,10 @@
 {
   "reviewedAt": "2026-07-31",
-  "productCount": 48,
+  "productCount": 150,
   "summary": {
     "officialConfirmed": 41,
     "officialPartial": 5,
-    "merchantOnly": 2
+    "merchantOnly": 104
   },
   "unresolved": [
     {
@@ -62,6 +62,822 @@
       "officialSourceUrl": "https://www.veuveclicquot.com/",
       "technicalSourceUrl": "https://bottleofitaly.com/en/products/champagne-aoc-cuvee-saint-petersbourg-veuve-clicquot",
       "nextAction": "Archiver la fiche technique primaire exacte de la cuvée."
+    },
+    {
+      "productId": "jacquart-brut-lamotte",
+      "product": "Jacquart — Brut - LaMotte",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "grand-tour-grand-cuvee-reserve-brut",
+      "product": "Grand Tour — Grand Cuvee Reserve Brut",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "daubanton-assemblage-extra-brut",
+      "product": "Daubanton — Assemblage Extra Brut",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "m-g-heucq-brut-fossile",
+      "product": "M.G. Heucq — Brut - Fossile",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "alain-mercier-sagacite-brut",
+      "product": "Alain Mercier — Sagacité Brut",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "j-charpentier-tradition-brut",
+      "product": "J. Charpentier — Tradition Brut",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "cattier-aoc-quarz-brut-tradition",
+      "product": "Cattier — AOC - Quarz Brut Tradition",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "daubanton-blanc-de-noir",
+      "product": "Daubanton — Blanc de Noir",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "de-vilmont-aoc-brut-grand-reserve-premier-cru",
+      "product": "De Vilmont — AOC Brut Grand Réserve Premier Cru",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "beaumont-des-crayeres-grand-reserve-brut-3-anni",
+      "product": "Beaumont des Crayères — Grand Reserve Brut - 3 anni",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "lamiable-lapie-lamiable-brut",
+      "product": "Lamiable — Lapie-Lamiable Brut",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "maison-burtin-extra-brut",
+      "product": "Maison Burtin — Extra Brut",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "jean-vesselle-coteaux-champenois-bouzy-blanc",
+      "product": "Jean Vesselle — Coteaux Champenois Bouzy Blanc",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "jacquart-mosaique-demi-sec",
+      "product": "Jacquart — Mosaïque Demi Sec",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "jacquart-brut-mosaique",
+      "product": "Jacquart — Brut Mosaïque",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "sadi-malot-l-equilibre-brut-1er-cru",
+      "product": "Sadi Malot — L’Équilibre Brut 1er Cru",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "billecart-salmon-inspiration-1818",
+      "product": "Billecart-Salmon — Inspiration 1818",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "fontanafredda-art-deco-brut-collet",
+      "product": "Fontanafredda — Art Deco Brut - Collet",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "paul-bara-brut-grand-cru-reserve",
+      "product": "Paul Bara — Brut - Grand Cru Reserve",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "drappier-brut-carte-d-or-aoc",
+      "product": "Drappier — Brut Carte d'Or AOC",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "beltrand-brigandat-pinot-noir-de-channes-nature-pierre-brigandat",
+      "product": "Beltrand Brigandat — Pinot Noir de Channes Nature - Pierre Brigandat",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "alain-mercier-cuvee-neon-brut",
+      "product": "Alain Mercier — Cuvée Neon Brut",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "beltrand-brigandat-rose-de-saignee-brut-pierre-brigandat",
+      "product": "Beltrand Brigandat — Rosé de Saignée Brut - Pierre Brigandat",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "lamiable-terre-d-etoiles-brut-grand-cru",
+      "product": "Lamiable — Terre d’Étoiles Brut Grand Cru",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "fontanafredda-art-deco-extra-brut-collet",
+      "product": "Fontanafredda — Art Deco Extra Brut - Collet",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "vazart-coquart-blanc-de-blancs-reserve-brut-grand-cru",
+      "product": "Vazart-Coquart — Blanc de Blancs Réserve Brut Grand Cru",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "maison-tornay-extra-brut",
+      "product": "Maison Tornay — Extra Brut",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "maison-tornay-rose-premier-cru",
+      "product": "Maison Tornay — Rosé Premier Cru",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "jean-vesselle-reserve-brut",
+      "product": "Jean Vesselle — Réserve Brut",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "maison-burtin-brut-rose",
+      "product": "Maison Burtin — Brut Rosé",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "maxime-ponson-la-petite-montagne-extra-brut-1er-cru",
+      "product": "Maxime Ponson — La Petite Montagne Extra Brut 1er Cru",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "jean-vesselle-reserve-demi-sec",
+      "product": "Jean Vesselle — Réserve Demi-Sec",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "maison-yves-loison-cuvee-senlis",
+      "product": "Maison Yves Loison — Cuvée - Senlis",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "epc-champagne-blanc-de-blancs-brut-30-mesi",
+      "product": "EPC Champagne — Blanc de Blancs Brut - 30 Mesi",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "maison-labbe-brut-premier-cru-prestige",
+      "product": "Maison Labbé — Brut Premier Cru - Prestige",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "bonnet-gilmert-blanc-de-blancs-extra-brut-grand-cru",
+      "product": "Bonnet Gilmert — Blanc de Blancs Extra Brut Grand Cru",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "le-guedard-vignes-mon-grand-pere-blanc-de-noirs-nature",
+      "product": "Le Guèdard — Vignes Mon Grand Père Blanc de Noirs Nature",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "benard-pitois-reserve-premier-cru-brut",
+      "product": "Benard Pitois — Reserve Premier Cru Brut",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "gatinois-tradition-d-ay-demi-sec-grand-cru",
+      "product": "Gatinois — Tradition d’Aÿ Demi-Sec Grand Cru",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "lancelot-pienne-blanc-de-blancs-dame-du-lac-brut",
+      "product": "Lancelot Pienne — Blanc de Blancs Dame du Lac Brut",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "lancelot-pienne-cuvee-accord-majeur-brut",
+      "product": "Lancelot Pienne — Cuvée Accord Majeur Brut",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "vazart-coquart-blanc-de-blancs-extra-brut-grand-cru",
+      "product": "Vazart-Coquart — Blanc de Blancs Extra Brut Grand Cru",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "maison-yves-loison-cuvee-premier-cru-hyppolite",
+      "product": "Maison Yves Loison — Cuvée Premier Cru - Hyppolite",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "drappier-blanc-de-blancs-aoc",
+      "product": "Drappier — Blanc de Blancs AOC",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "pierre-baillette-le-village-de-trois-puits-premier-cru-extra-brut-pierre-baillatte",
+      "product": "Pierre Baillette — Le Village De Trois Puits Premier Cru Extra Brut - Pierre Baillatte",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "m-g-heucq-extra-brut-tandem",
+      "product": "M.G. Heucq — Extra Brut - Tandem",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "maison-labbe-premier-cru-blanc-de-noir",
+      "product": "Maison Labbé — Premier Cru - Blanc de Noir",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "epc-champagne-blanc-de-blancs-brut-nature-24-mesi",
+      "product": "EPC Champagne — Blanc de Blancs Brut Nature - 24 Mesi",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "benard-pitois-rose-premier-cru-brut",
+      "product": "Benard Pitois — Rose’ Premier Cru Brut",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "harlin-pere-et-fils-les-sentes-de-mareuil",
+      "product": "Harlin Père et Fils — Les Sentes de Mareuil",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "erick-schreiber-extra-brut",
+      "product": "Erick Schreiber — Extra Brut",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "mouzon-leroux-l-atavique-nature-grand-cru",
+      "product": "Mouzon Leroux — L’Atavique Nature Grand Cru",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "gatinois-reserve-d-ay-brut-grand-cru",
+      "product": "Gatinois — Réserve d’Aÿ Brut Grand Cru",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "maison-burtin-brut-vintage-2014",
+      "product": "Maison Burtin — Brut Vintage 2014",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "waris-larmandier-cuvee-l-instant-du-passion-rose-extra-brut",
+      "product": "Waris Larmandier — Cuvée L’Instant du Passion Rosé Extra Brut",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "waris-larmandier-blanc-de-blancs-particules-crayeuses-extra-brut-grand-cru",
+      "product": "Waris Larmandier — Blanc de Blancs Particules Crayeuses Extra Brut Grand Cru",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "chateau-de-bligny-vintage-brut",
+      "product": "Chateau De Bligny — Vintage Brut",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "vilmart-grand-cellier-premier-cru-brut",
+      "product": "Vilmart — Grand Cellier Premier Cru Brut",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "le-guedard-mes-trois-terroirs-nature",
+      "product": "Le Guèdard — Mes Trois Terroirs Nature",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "vincent-brochet-chardonnay-nature-brut",
+      "product": "Vincent Brochet — Chardonnay Nature Brut",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "j-m-seleque-cuvee-solessence-extra-brut",
+      "product": "J-M Sélèque — Cuvée Solessence Extra Brut",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "guenin-effloraison-extra-brut",
+      "product": "Guenin — Effloraison Extra Brut",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "laherte-freres-rose-de-meunier-extra-brut",
+      "product": "Laherte Frères — Rosé de Meunier Extra Brut",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "maurice-grumier-coeur-de-rose",
+      "product": "Maurice Grumier — Coeur De Rose'",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "j-l-vergnon-blanc-de-blancs-conversation-brut-grand-cru",
+      "product": "J.L. Vergnon — Blanc de Blancs Conversation Brut Grand Cru",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "stephane-regnault-blanc-de-blancs-chromatique-extra-brut-grand-cru",
+      "product": "Stephane Regnault — Blanc de Blancs Chromatique Extra Brut Grand Cru",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "jean-claude-vallois-blanc-de-blancs-millesime-extra-brut",
+      "product": "Jean-Claude Vallois — Blanc de Blancs Millésimé Extra Brut",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "lancelot-pienne-blanc-de-blancs-cuvee-table-ronde-extra-brut-grand-cru",
+      "product": "Lancelot Pienne — Blanc de Blancs Cuvée Table Ronde Extra Brut Grand Cru",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "vazart-coquart-blanc-de-blancs-grand-bouquet-extra-brut-grand-cru",
+      "product": "Vazart-Coquart — Blanc de Blancs Grand Bouquet Extra Brut Grand Cru",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "marie-copinet-nos-pas-dans-la-pierre-nature",
+      "product": "Marie Copinet — Nos Pas Dans la Pierre Nature",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "m-g-heucq-rose-de-saignee-les-velours",
+      "product": "M.G. Heucq — Rosé de Saignée - Les Velours",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "thierry-massin-vrai-millesime-blanc-de-blancs-brut",
+      "product": "Thierry Massin — Vrai Millesimè Blanc de Blancs Brut",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "le-guedard-mon-rose-de-saignee-brut",
+      "product": "Le Guèdard — Mon Rosé de Saignée Brut",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "mouzon-leroux-rose-saignee-incandescent-extra-brut-grand-cru",
+      "product": "Mouzon Leroux — Rosé Saignée Incandescent Extra Brut Grand Cru",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "jean-claude-vallois-blanc-de-blancs-millesime-extra-brut-2018",
+      "product": "Jean-Claude Vallois — Blanc de Blancs Millésimé Extra Brut 2018",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "corbon-anthracite-brut",
+      "product": "Corbon — Anthracite Brut",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "mumm-aoc-brut-rsrv-cuvee-4-5",
+      "product": "Mumm — AOC Brut - RSRV Cuvée 4.5",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "bereche-et-fils-reserve-brut",
+      "product": "Bèreche Et Fils — Réserve Brut",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "mouzon-leroux-l-ascendant-solera-14-17-extra-brut-grand-cru",
+      "product": "Mouzon Leroux — L’Ascendant Solera 14/17 Extra Brut Grand Cru",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "pernod-ricard-brut-75cl-grand-brut-perrier-jouet",
+      "product": "Pernod Ricard — Brut 75cl - Grand Brut - Perrier Jouët",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "domaine-augustin-coeur-saphyr",
+      "product": "Domaine Augustin — Coeur Saphyr",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "eric-taillet-bansionensi",
+      "product": "Eric Taillet — Bansionensi",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "de-venoge-princess-extra-brut",
+      "product": "De Venoge — Princess Extra Brut",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "domaine-augustin-les-vertus",
+      "product": "Domaine Augustin — Les Vertus",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "mumm-aoc-brut-gran-cordon-rose",
+      "product": "Mumm — AOC Brut - Gran Cordon Rosé",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "j-m-seleque-quintette-5-terroirs-extra-brut",
+      "product": "J-M Sélèque — Quintette 5 Terroirs Extra Brut",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "jerome-coessens-blanc-de-noirs-largillier-brut",
+      "product": "Jerome Coessens — Blanc de Noirs Largillier Brut",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "wirth-michel-les-meuniers-de-raoul-extra-brut",
+      "product": "Wirth Michel — Les Meuniers de Raoul Extra Brut",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "stephane-regnault-blanc-de-blancs-dorien-n-80-extra-brut-grand-cru",
+      "product": "Stephane Regnault — Blanc de Blancs Dorien n°80 Extra Brut Grand Cru",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "stephane-regnault-blanc-de-blancs-mixolydien-n-99-extra-brut-grand-cru",
+      "product": "Stephane Regnault — Blanc de Blancs Mixolydien n°99 Extra Brut Grand Cru",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "billecart-salmon-le-blanc-de-blancs",
+      "product": "Billecart-Salmon — Le Blanc de Blancs",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "jerome-coessens-blanc-de-noirs-largillier-rose-brut",
+      "product": "Jerome Coessens — Blanc de Noirs Largillier Rosé Brut",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "jerome-coessens-blanc-de-noirs-largillier-nature",
+      "product": "Jerome Coessens — Blanc de Noirs Largillier Nature",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "domaine-augustin-cuvee-cxvi-blanc-de-blancs",
+      "product": "Domaine Augustin — Cuvée CXVI Blanc de Blancs",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "alexandre-filaine-cuvee-speciale-brut",
+      "product": "Alexandre Filaine — Cuvee Speciale Brut",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "frederic-savart-rose-bulles-de-rose-extra-brut-1er-cru",
+      "product": "Frèdèric Savart — Rosé Bulles de Rose Extra Brut 1er Cru",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "perrier-jouet-blanc-de-blancs-special-edition-formafantasma",
+      "product": "Perrier-Jouët — Blanc de Blancs - Special Edition Formafantasma",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "egly-ouriet-grand-cru-brut",
+      "product": "Egly-Ouriet — Grand Cru Brut",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "j-l-vergnon-blanc-de-blancs-msnl-extra-brut-grand-cru",
+      "product": "J.L. Vergnon — Blanc de Blancs Msnl Extra Brut Grand Cru",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "thomas-perseval-la-pucelle-millesime-brut",
+      "product": "Thomas Perseval — La Pucelle Millesime’ Brut",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "alexandre-filaine-cuvee-dmy-brut",
+      "product": "Alexandre Filaine — Cuvee DMY Brut",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
+    },
+    {
+      "productId": "krug-grande-cuvee-champagne-aoc-brut",
+      "product": "Krug — Grande Cuvée Champagne  AOC Brut",
+      "status": "merchant_only",
+      "officialSourceUrl": null,
+      "technicalSourceUrl": null,
+      "nextAction": "Obtenir une source producteur ou une fiche technique primaire."
     }
   ]
 }
