@@ -1,1 +1,4 @@
 node_modules/
+
+# Livrables marketing (logos, kit réseaux) : hors site, ne pas déployer
+marketing/
