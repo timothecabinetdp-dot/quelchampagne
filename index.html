@@ -1718,8 +1718,21 @@ function scoreBreakdown(p,a){
 function score(p, a){
   return Object.values(scoreBreakdown(p,a)).reduce((sum,value)=>sum+value,0);
 }
+function inBudget(p, budget){
+  const price=p.price;
+  if(budget==='b1') return price<40;
+  if(budget==='b2') return price>=40 && price<=60;
+  if(budget==='b3') return price>60 && price<=100;
+  if(budget==='b4') return price>100;
+  return true;
+}
 function ranked(){
-  const eligible=products().filter(p=>p.commerceReady===true && p.availability==='in_stock');
+  const inStock=products().filter(p=>p.commerceReady===true && p.availability==='in_stock');
+  // Le budget est une contrainte dure : on ne propose que dans la tranche choisie,
+  // et on ne s'en écarte que si aucune bouteille disponible n'y figure.
+  const budget=(state.answers.budget||[])[0];
+  const withinBudget=budget ? inStock.filter(p=>inBudget(p,budget)) : inStock;
+  const eligible=withinBudget.length ? withinBudget : inStock;
   const sc=eligible.map(p=>({p,s:score(p,state.answers),breakdown:scoreBreakdown(p,state.answers)}));
   sc.sort((a,b)=>b.s-a.s || (b.p.popularity||0)-(a.p.popularity||0) || a.p.id.localeCompare(b.p.id,'fr'));
   return sc;

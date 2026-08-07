@@ -1,7 +1,7 @@
 {
   "version": 1,
   "engineVersion": "1.0.0",
-  "generatedAt": "2026-08-06T16:44:51.054Z",
+  "generatedAt": "2026-08-06T17:22:35.950Z",
   "axes": {
     "freshness": {
       "label": "Fraîcheur",
@@ -87,7 +87,7 @@
           "fruitiness": 4.8,
           "minerality": 2,
           "brioche": 3.1,
-          "gastronomic": 2.7,
+          "gastronomic": 3.3,
           "accessibility": 3.5
         },
         "aromas": [
@@ -104,12 +104,15 @@
         "occasions": [
           "occ_fete",
           "occ_apero",
-          "occ_diner"
+          "occ_diner",
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
           "accord_dessert",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -173,7 +176,7 @@
           "fruitiness": 3.5,
           "minerality": 3.7,
           "brioche": 2.4,
-          "gastronomic": 3.2,
+          "gastronomic": 4.5,
           "accessibility": 2
         },
         "aromas": [
@@ -189,11 +192,15 @@
         "occasions": [
           "occ_fete",
           "occ_apero",
-          "occ_diner"
+          "occ_diner",
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille",
+          "accord_fromage"
         ],
         "pairingLabels": [
           "Huîtres",
@@ -259,7 +266,7 @@
           "fruitiness": 2.8,
           "minerality": 2,
           "brioche": 3.7,
-          "gastronomic": 3.2,
+          "gastronomic": 4.5,
           "accessibility": 2
         },
         "aromas": [
@@ -273,11 +280,15 @@
         "occasions": [
           "occ_fete",
           "occ_apero",
-          "occ_diner"
+          "occ_diner",
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille",
+          "accord_fromage"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -342,7 +353,7 @@
           "fruitiness": 4,
           "minerality": 2,
           "brioche": 3.1,
-          "gastronomic": 2.7,
+          "gastronomic": 3.3,
           "accessibility": 3.5
         },
         "aromas": [
@@ -358,11 +369,14 @@
         "occasions": [
           "occ_fete",
           "occ_apero",
-          "occ_diner"
+          "occ_diner",
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Sushis",
@@ -427,7 +441,7 @@
           "fruitiness": 4.8,
           "minerality": 2,
           "brioche": 4.3,
-          "gastronomic": 3.3,
+          "gastronomic": 4,
           "accessibility": 3
         },
         "aromas": [
@@ -444,12 +458,15 @@
         "occasions": [
           "occ_fete",
           "occ_apero",
-          "occ_diner"
+          "occ_diner",
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
           "accord_fromage",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -514,7 +531,7 @@
           "fruitiness": 2.8,
           "minerality": 2,
           "brioche": 4.9,
-          "gastronomic": 3.2,
+          "gastronomic": 4.5,
           "accessibility": 2
         },
         "aromas": [
@@ -530,11 +547,15 @@
         "occasions": [
           "occ_fete",
           "occ_apero",
-          "occ_diner"
+          "occ_diner",
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille",
+          "accord_fromage"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -599,7 +620,7 @@
           "fruitiness": 3.5,
           "minerality": 2,
           "brioche": 3.7,
-          "gastronomic": 3.9,
+          "gastronomic": 4.5,
           "accessibility": 2
         },
         "aromas": [
@@ -614,12 +635,15 @@
         "occasions": [
           "occ_fete",
           "occ_apero",
-          "occ_diner"
+          "occ_diner",
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
           "accord_fromage",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -684,7 +708,7 @@
           "fruitiness": 2.8,
           "minerality": 2,
           "brioche": 3.1,
-          "gastronomic": 3.2,
+          "gastronomic": 4.5,
           "accessibility": 3
         },
         "aromas": [
@@ -698,20 +722,26 @@
         "occasions": [
           "occ_fete",
           "occ_apero",
-          "occ_diner"
+          "occ_diner",
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
-          "accord_mer"
+          "accord_mer",
+          "accord_volaille",
+          "accord_fromage",
+          "accord_aperitif"
         ],
         "pairingLabels": [
           "Crustacés",
-          "Poisson"
+          "Poisson",
+          "Volaille et viandes blanches"
         ]
       },
       "editorial": {
-        "summary": "Un brut au caractère vif et structuré. Au premier plan : agrumes, fruits blancs, brioche, pâtisserie. L’assemblage réunit Meunier, Chardonnay, Pinot Noir. À privilégier avec crustacés, poisson.",
-        "choose": "Sa matière affirmée trouve sa place à table, notamment avec crustacés, poisson.",
-        "avoid": "Écartez-la pour un apéritif très léger : sa matière appelle plutôt crustacés, poisson."
+        "summary": "Un brut au caractère vif et structuré. Au premier plan : agrumes, fruits blancs, brioche, pâtisserie. L’assemblage réunit Meunier, Chardonnay, Pinot Noir. À privilégier avec crustacés, poisson, volaille et viandes blanches.",
+        "choose": "Sa matière affirmée trouve sa place à table, notamment avec crustacés, poisson, volaille et viandes blanches.",
+        "avoid": "Écartez-la pour un apéritif très léger : sa matière appelle plutôt crustacés, poisson, volaille et viandes blanches."
       },
       "evidence": {
         "confidence": 0.86,
@@ -765,7 +795,7 @@
           "fruitiness": 4,
           "minerality": 2,
           "brioche": 4.9,
-          "gastronomic": 4.3,
+          "gastronomic": 5,
           "accessibility": 2.5
         },
         "aromas": [
@@ -780,12 +810,16 @@
         "occasions": [
           "occ_fete",
           "occ_apero",
-          "occ_diner"
+          "occ_diner",
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
           "accord_dessert",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille",
+          "accord_fromage"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -849,7 +883,7 @@
           "fruitiness": 2.8,
           "minerality": 2.8,
           "brioche": 2.4,
-          "gastronomic": 3.9,
+          "gastronomic": 4.5,
           "accessibility": 2
         },
         "aromas": [
@@ -862,12 +896,14 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
+          "occ_cadeau",
           "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
           "accord_fromage",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -930,7 +966,7 @@
           "fruitiness": 3.3,
           "minerality": 3.2,
           "brioche": 1.8,
-          "gastronomic": 3.2,
+          "gastronomic": 4.5,
           "accessibility": 3.5
         },
         "aromas": [
@@ -943,12 +979,15 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
+          "occ_cadeau",
           "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
           "accord_dessert",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille",
+          "accord_fromage"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -1014,7 +1053,7 @@
           "fruitiness": 3.5,
           "minerality": 2.5,
           "brioche": 4.3,
-          "gastronomic": 2.7,
+          "gastronomic": 3.3,
           "accessibility": 3
         },
         "aromas": [
@@ -1029,11 +1068,14 @@
         "occasions": [
           "occ_fete",
           "occ_apero",
-          "occ_diner"
+          "occ_diner",
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -1097,7 +1139,7 @@
           "fruitiness": 4,
           "minerality": 3.2,
           "brioche": 3.7,
-          "gastronomic": 3.2,
+          "gastronomic": 4.5,
           "accessibility": 2.5
         },
         "aromas": [
@@ -1114,11 +1156,15 @@
         "occasions": [
           "occ_fete",
           "occ_apero",
-          "occ_diner"
+          "occ_diner",
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille",
+          "accord_fromage"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -1183,7 +1229,7 @@
           "fruitiness": 2.8,
           "minerality": 2,
           "brioche": 3.7,
-          "gastronomic": 3.2,
+          "gastronomic": 4.5,
           "accessibility": 2
         },
         "aromas": [
@@ -1197,11 +1243,15 @@
         "occasions": [
           "occ_fete",
           "occ_apero",
-          "occ_diner"
+          "occ_diner",
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille",
+          "accord_fromage"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -1264,7 +1314,7 @@
           "fruitiness": 4.8,
           "minerality": 2.8,
           "brioche": 3.7,
-          "gastronomic": 3.9,
+          "gastronomic": 4.5,
           "accessibility": 2.5
         },
         "aromas": [
@@ -1281,12 +1331,14 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
+          "occ_cadeau",
           "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
           "accord_fromage",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Huîtres",
@@ -1352,7 +1404,7 @@
           "fruitiness": 3.3,
           "minerality": 2,
           "brioche": 2.4,
-          "gastronomic": 3.2,
+          "gastronomic": 4.5,
           "accessibility": 2.5
         },
         "aromas": [
@@ -1365,12 +1417,15 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
+          "occ_cadeau",
           "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
           "accord_dessert",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille",
+          "accord_fromage"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -1435,7 +1490,7 @@
           "fruitiness": 3.5,
           "minerality": 2,
           "brioche": 3.1,
-          "gastronomic": 3.3,
+          "gastronomic": 4,
           "accessibility": 3
         },
         "aromas": [
@@ -1450,12 +1505,15 @@
         "occasions": [
           "occ_fete",
           "occ_apero",
-          "occ_diner"
+          "occ_diner",
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
           "accord_fromage",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -1519,7 +1577,7 @@
           "fruitiness": 4,
           "minerality": 2,
           "brioche": 3.1,
-          "gastronomic": 3.9,
+          "gastronomic": 4.5,
           "accessibility": 3.5
         },
         "aromas": [
@@ -1534,13 +1592,16 @@
         "occasions": [
           "occ_fete",
           "occ_apero",
-          "occ_diner"
+          "occ_diner",
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
           "accord_fromage",
           "accord_dessert",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -1604,7 +1665,7 @@
           "fruitiness": 4,
           "minerality": 3.2,
           "brioche": 3.7,
-          "gastronomic": 3.2,
+          "gastronomic": 4.5,
           "accessibility": 2.5
         },
         "aromas": [
@@ -1620,11 +1681,15 @@
         "occasions": [
           "occ_fete",
           "occ_apero",
-          "occ_diner"
+          "occ_diner",
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille",
+          "accord_fromage"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -1689,7 +1754,7 @@
           "fruitiness": 4.8,
           "minerality": 2,
           "brioche": 3.7,
-          "gastronomic": 3.9,
+          "gastronomic": 4.5,
           "accessibility": 2.5
         },
         "aromas": [
@@ -1705,12 +1770,15 @@
         "occasions": [
           "occ_fete",
           "occ_apero",
-          "occ_diner"
+          "occ_diner",
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
           "accord_volaille",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_fromage"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -1776,7 +1844,7 @@
           "fruitiness": 3.5,
           "minerality": 3.2,
           "brioche": 3.7,
-          "gastronomic": 3.9,
+          "gastronomic": 4.5,
           "accessibility": 2
         },
         "aromas": [
@@ -1793,12 +1861,14 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
           "accord_fromage",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Huîtres",
@@ -1861,7 +1931,7 @@
           "fruitiness": 2.8,
           "minerality": 2,
           "brioche": 2.4,
-          "gastronomic": 3.9,
+          "gastronomic": 4.5,
           "accessibility": 2
         },
         "aromas": [
@@ -1875,12 +1945,14 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
           "accord_fromage",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -1945,7 +2017,7 @@
           "fruitiness": 4.3,
           "minerality": 2,
           "brioche": 4.9,
-          "gastronomic": 3.2,
+          "gastronomic": 4.5,
           "accessibility": 2
         },
         "aromas": [
@@ -1964,11 +2036,14 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille",
+          "accord_fromage"
         ],
         "pairingLabels": [
           "Huîtres",
@@ -2032,7 +2107,7 @@
           "fruitiness": 4,
           "minerality": 2,
           "brioche": 1.8,
-          "gastronomic": 2.7,
+          "gastronomic": 3.3,
           "accessibility": 3.5
         },
         "aromas": [
@@ -2052,7 +2127,8 @@
         "pairings": [
           "accord_mer",
           "accord_dessert",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Poisson",
@@ -2115,7 +2191,7 @@
           "fruitiness": 3.5,
           "minerality": 2.8,
           "brioche": 4.3,
-          "gastronomic": 2.7,
+          "gastronomic": 3.3,
           "accessibility": 3
         },
         "aromas": [
@@ -2137,7 +2213,8 @@
         ],
         "pairings": [
           "accord_mer",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -2202,7 +2279,7 @@
           "fruitiness": 3.3,
           "minerality": 2,
           "brioche": 1.8,
-          "gastronomic": 2.7,
+          "gastronomic": 3.3,
           "accessibility": 4
         },
         "aromas": [
@@ -2219,7 +2296,9 @@
         ],
         "pairings": [
           "accord_mer",
-          "accord_dessert"
+          "accord_dessert",
+          "accord_volaille",
+          "accord_aperitif"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -2284,7 +2363,7 @@
           "fruitiness": 4,
           "minerality": 2,
           "brioche": 1.8,
-          "gastronomic": 2.7,
+          "gastronomic": 3.3,
           "accessibility": 3.5
         },
         "aromas": [
@@ -2305,7 +2384,8 @@
         "pairings": [
           "accord_mer",
           "accord_dessert",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Poisson",
@@ -2369,7 +2449,7 @@
           "fruitiness": 3.5,
           "minerality": 2.8,
           "brioche": 4.3,
-          "gastronomic": 2.7,
+          "gastronomic": 3.3,
           "accessibility": 3
         },
         "aromas": [
@@ -2390,7 +2470,8 @@
         ],
         "pairings": [
           "accord_mer",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Huîtres",
@@ -2455,7 +2536,7 @@
           "fruitiness": 3.5,
           "minerality": 3.2,
           "brioche": 3.7,
-          "gastronomic": 3.2,
+          "gastronomic": 4.5,
           "accessibility": 2
         },
         "aromas": [
@@ -2473,11 +2554,14 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille",
+          "accord_fromage"
         ],
         "pairingLabels": [
           "Huîtres",
@@ -2630,7 +2714,7 @@
           "fruitiness": 2.8,
           "minerality": 3.2,
           "brioche": 4.3,
-          "gastronomic": 3.3,
+          "gastronomic": 4,
           "accessibility": 3
         },
         "aromas": [
@@ -2646,12 +2730,14 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
           "accord_fromage",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -2717,7 +2803,7 @@
           "fruitiness": 4,
           "minerality": 2,
           "brioche": 4.3,
-          "gastronomic": 2.7,
+          "gastronomic": 3.3,
           "accessibility": 3.5
         },
         "aromas": [
@@ -2734,11 +2820,13 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -2803,7 +2891,7 @@
           "fruitiness": 3.3,
           "minerality": 3.2,
           "brioche": 3.7,
-          "gastronomic": 3.2,
+          "gastronomic": 4.5,
           "accessibility": 2.5
         },
         "aromas": [
@@ -2824,7 +2912,9 @@
         "pairings": [
           "accord_mer",
           "accord_dessert",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille",
+          "accord_fromage"
         ],
         "pairingLabels": [
           "Sushis",
@@ -2890,7 +2980,7 @@
           "fruitiness": 3.3,
           "minerality": 2,
           "brioche": 1.8,
-          "gastronomic": 2.7,
+          "gastronomic": 3.3,
           "accessibility": 3.5
         },
         "aromas": [
@@ -2911,7 +3001,8 @@
         "pairings": [
           "accord_mer",
           "accord_dessert",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Poisson",
@@ -2975,7 +3066,7 @@
           "fruitiness": 3.5,
           "minerality": 4,
           "brioche": 2.4,
-          "gastronomic": 3.2,
+          "gastronomic": 4.5,
           "accessibility": 2
         },
         "aromas": [
@@ -2996,16 +3087,19 @@
         ],
         "pairings": [
           "accord_mer",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille",
+          "accord_fromage"
         ],
         "pairingLabels": [
           "Poisson",
-          "Apéritif"
+          "Apéritif",
+          "Volaille et viandes blanches"
         ]
       },
       "editorial": {
-        "summary": "Un blanc de blancs brut Grand Cru au caractère nuancé et persistant. Au premier plan : agrumes, pomme, fleurs blanches, pâtisserie. L’assemblage réunit Chardonnay. À privilégier avec poisson, apéritif.",
-        "choose": "Sa fraîcheur nette convient particulièrement à poisson, apéritif.",
+        "summary": "Un blanc de blancs brut Grand Cru au caractère nuancé et persistant. Au premier plan : agrumes, pomme, fleurs blanches, pâtisserie. L’assemblage réunit Chardonnay. À privilégier avec poisson, apéritif, volaille et viandes blanches.",
+        "choose": "Sa fraîcheur nette convient particulièrement à poisson, apéritif, volaille et viandes blanches.",
         "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et pomme."
       },
       "evidence": {
@@ -3059,7 +3153,7 @@
           "fruitiness": 3.5,
           "minerality": 2.5,
           "brioche": 3.1,
-          "gastronomic": 2.7,
+          "gastronomic": 3.3,
           "accessibility": 3
         },
         "aromas": [
@@ -3075,11 +3169,13 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Huîtres",
@@ -3143,7 +3239,7 @@
           "fruitiness": 3.3,
           "minerality": 2,
           "brioche": 1.8,
-          "gastronomic": 2,
+          "gastronomic": 2.7,
           "accessibility": 3.5
         },
         "aromas": [
@@ -3157,12 +3253,14 @@
         "occasions": [
           "occ_fete",
           "occ_apero",
+          "occ_diner",
           "occ_cadeau",
           "occ_romantique"
         ],
         "pairings": [
           "accord_dessert",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Fruits rouges",
@@ -3227,7 +3325,7 @@
           "fruitiness": 4,
           "minerality": 2,
           "brioche": 3.7,
-          "gastronomic": 3.9,
+          "gastronomic": 4.5,
           "accessibility": 3
         },
         "aromas": [
@@ -3243,13 +3341,15 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
           "accord_fromage",
           "accord_dessert",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Huîtres",
@@ -3314,7 +3414,7 @@
           "fruitiness": 3.5,
           "minerality": 2,
           "brioche": 3.1,
-          "gastronomic": 2.7,
+          "gastronomic": 3.3,
           "accessibility": 3.5
         },
         "aromas": [
@@ -3331,11 +3431,13 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -3485,7 +3587,7 @@
           "fruitiness": 3.5,
           "minerality": 3.7,
           "brioche": 1.8,
-          "gastronomic": 2.7,
+          "gastronomic": 3.3,
           "accessibility": 3
         },
         "aromas": [
@@ -3500,11 +3602,13 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -3656,7 +3760,7 @@
           "fruitiness": 2.8,
           "minerality": 3.7,
           "brioche": 4.9,
-          "gastronomic": 3.8,
+          "gastronomic": 5,
           "accessibility": 2
         },
         "aromas": [
@@ -3673,11 +3777,14 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille",
+          "accord_fromage"
         ],
         "pairingLabels": [
           "Huîtres",
@@ -3831,7 +3938,7 @@
           "fruitiness": 2.8,
           "minerality": 2.5,
           "brioche": 3.7,
-          "gastronomic": 3.9,
+          "gastronomic": 4.5,
           "accessibility": 2.5
         },
         "aromas": [
@@ -3847,13 +3954,15 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
           "accord_fromage",
           "accord_dessert",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Huîtres",
@@ -3919,7 +4028,7 @@
           "fruitiness": 4,
           "minerality": 2.5,
           "brioche": 3.7,
-          "gastronomic": 3.2,
+          "gastronomic": 4.5,
           "accessibility": 2
         },
         "aromas": [
@@ -3941,7 +4050,9 @@
         "pairings": [
           "accord_mer",
           "accord_dessert",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille",
+          "accord_fromage"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -4005,7 +4116,7 @@
           "fruitiness": 3.3,
           "minerality": 3.2,
           "brioche": 2.4,
-          "gastronomic": 3.8,
+          "gastronomic": 5,
           "accessibility": 2
         },
         "aromas": [
@@ -4019,11 +4130,14 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille",
+          "accord_fromage"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -4089,7 +4203,7 @@
           "fruitiness": 3.5,
           "minerality": 2,
           "brioche": 2.4,
-          "gastronomic": 3.9,
+          "gastronomic": 4.5,
           "accessibility": 2.5
         },
         "aromas": [
@@ -4105,12 +4219,14 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
           "accord_fromage",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Huîtres",
@@ -4175,7 +4291,7 @@
           "fruitiness": 2.8,
           "minerality": 3.2,
           "brioche": 3.7,
-          "gastronomic": 3.9,
+          "gastronomic": 4.5,
           "accessibility": 2.5
         },
         "aromas": [
@@ -4191,12 +4307,14 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
           "accord_fromage",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -4261,7 +4379,7 @@
           "fruitiness": 4,
           "minerality": 2,
           "brioche": 4.9,
-          "gastronomic": 3.2,
+          "gastronomic": 4.5,
           "accessibility": 2.5
         },
         "aromas": [
@@ -4277,11 +4395,15 @@
         "occasions": [
           "occ_fete",
           "occ_apero",
-          "occ_diner"
+          "occ_diner",
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille",
+          "accord_fromage"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -4346,7 +4468,7 @@
           "fruitiness": 2.8,
           "minerality": 3.7,
           "brioche": 3.7,
-          "gastronomic": 3.2,
+          "gastronomic": 4.5,
           "accessibility": 2
         },
         "aromas": [
@@ -4361,11 +4483,15 @@
         "occasions": [
           "occ_fete",
           "occ_apero",
-          "occ_diner"
+          "occ_diner",
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille",
+          "accord_fromage"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -4430,7 +4556,7 @@
           "fruitiness": 2.8,
           "minerality": 3.2,
           "brioche": 2.4,
-          "gastronomic": 3.2,
+          "gastronomic": 4.5,
           "accessibility": 2
         },
         "aromas": [
@@ -4445,11 +4571,15 @@
         "occasions": [
           "occ_fete",
           "occ_apero",
-          "occ_diner"
+          "occ_diner",
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille",
+          "accord_fromage"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -4514,7 +4644,7 @@
           "fruitiness": 5,
           "minerality": 2,
           "brioche": 4.3,
-          "gastronomic": 2.7,
+          "gastronomic": 3.3,
           "accessibility": 3
         },
         "aromas": [
@@ -4533,11 +4663,14 @@
         "occasions": [
           "occ_fete",
           "occ_apero",
-          "occ_diner"
+          "occ_diner",
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Huîtres",
@@ -4602,7 +4735,7 @@
           "fruitiness": 4,
           "minerality": 2,
           "brioche": 3.1,
-          "gastronomic": 3.3,
+          "gastronomic": 4,
           "accessibility": 3
         },
         "aromas": [
@@ -4618,12 +4751,15 @@
         "occasions": [
           "occ_fete",
           "occ_apero",
-          "occ_diner"
+          "occ_diner",
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
           "accord_fromage",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -4688,7 +4824,7 @@
           "fruitiness": 2.8,
           "minerality": 2,
           "brioche": 2.4,
-          "gastronomic": 3.2,
+          "gastronomic": 4.5,
           "accessibility": 2.5
         },
         "aromas": [
@@ -4702,11 +4838,14 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille",
+          "accord_fromage"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -4770,7 +4909,7 @@
           "fruitiness": 3.5,
           "minerality": 2,
           "brioche": 3.7,
-          "gastronomic": 3.9,
+          "gastronomic": 4.5,
           "accessibility": 2
         },
         "aromas": [
@@ -4783,13 +4922,16 @@
         "occasions": [
           "occ_fete",
           "occ_apero",
-          "occ_diner"
+          "occ_diner",
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
           "accord_fromage",
           "accord_dessert",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -4855,7 +4997,7 @@
           "fruitiness": 4,
           "minerality": 2,
           "brioche": 3.7,
-          "gastronomic": 3.9,
+          "gastronomic": 4.5,
           "accessibility": 2.5
         },
         "aromas": [
@@ -4872,12 +5014,15 @@
         "occasions": [
           "occ_fete",
           "occ_apero",
-          "occ_diner"
+          "occ_diner",
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
           "accord_fromage",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -4938,7 +5083,7 @@
           "fruitiness": 4,
           "minerality": 2,
           "brioche": 3.7,
-          "gastronomic": 3.9,
+          "gastronomic": 4.5,
           "accessibility": 2.5
         },
         "aromas": [
@@ -4953,12 +5098,15 @@
         "occasions": [
           "occ_fete",
           "occ_apero",
-          "occ_diner"
+          "occ_diner",
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
           "accord_volaille",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_fromage"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -5023,7 +5171,7 @@
           "fruitiness": 4.8,
           "minerality": 2,
           "brioche": 4.3,
-          "gastronomic": 2.7,
+          "gastronomic": 3.3,
           "accessibility": 3
         },
         "aromas": [
@@ -5040,11 +5188,14 @@
         "occasions": [
           "occ_fete",
           "occ_apero",
-          "occ_diner"
+          "occ_diner",
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -5109,7 +5260,7 @@
           "fruitiness": 2.8,
           "minerality": 3.7,
           "brioche": 4.9,
-          "gastronomic": 3.9,
+          "gastronomic": 4.5,
           "accessibility": 2
         },
         "aromas": [
@@ -5124,12 +5275,15 @@
         "occasions": [
           "occ_fete",
           "occ_apero",
-          "occ_diner"
+          "occ_diner",
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
           "accord_fromage",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -5193,7 +5347,7 @@
           "fruitiness": 3.5,
           "minerality": 2,
           "brioche": 2.4,
-          "gastronomic": 3.9,
+          "gastronomic": 4.5,
           "accessibility": 2
         },
         "aromas": [
@@ -5208,11 +5362,14 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
-          "accord_fromage"
+          "accord_fromage",
+          "accord_volaille",
+          "accord_aperitif"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -5278,7 +5435,7 @@
           "fruitiness": 4,
           "minerality": 2,
           "brioche": 3.7,
-          "gastronomic": 3.2,
+          "gastronomic": 3.9,
           "accessibility": 3
         },
         "aromas": [
@@ -5294,12 +5451,14 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_fromage",
           "accord_dessert",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Fromages",
@@ -5364,7 +5523,7 @@
           "fruitiness": 2,
           "minerality": 2,
           "brioche": 3.7,
-          "gastronomic": 3.2,
+          "gastronomic": 4.5,
           "accessibility": 2.5
         },
         "aromas": [
@@ -5377,11 +5536,14 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille",
+          "accord_fromage"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -5443,7 +5605,7 @@
           "fruitiness": 5,
           "minerality": 2,
           "brioche": 1.8,
-          "gastronomic": 2,
+          "gastronomic": 3.3,
           "accessibility": 3
         },
         "aromas": [
@@ -5458,14 +5620,24 @@
         "occasions": [
           "occ_fete",
           "occ_apero",
-          "occ_cadeau"
+          "occ_diner",
+          "occ_cadeau",
+          "occ_romantique"
         ],
-        "pairings": [],
-        "pairingLabels": []
+        "pairings": [
+          "accord_mer",
+          "accord_volaille",
+          "accord_aperitif"
+        ],
+        "pairingLabels": [
+          "Poisson et fruits de mer",
+          "Volaille et viandes blanches",
+          "Apéritif"
+        ]
       },
       "editorial": {
-        "summary": "Un brut Premier Cru au caractère frais et précis. Au premier plan : agrumes, fruits blancs, pomme, poire. À privilégier avec l’apéritif et un repas léger.",
-        "choose": "Sa fraîcheur nette convient particulièrement à l’apéritif et un repas léger.",
+        "summary": "Un brut Premier Cru au caractère frais et précis. Au premier plan : agrumes, fruits blancs, pomme, poire. À privilégier avec poisson et fruits de mer, volaille et viandes blanches, apéritif.",
+        "choose": "Sa fraîcheur nette convient particulièrement à poisson et fruits de mer, volaille et viandes blanches, apéritif.",
         "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et fruits blancs."
       },
       "evidence": {
@@ -5520,7 +5692,7 @@
           "fruitiness": 2.8,
           "minerality": 2,
           "brioche": 3.7,
-          "gastronomic": 2.6,
+          "gastronomic": 4.5,
           "accessibility": 2.5
         },
         "aromas": [
@@ -5533,18 +5705,25 @@
         "occasions": [
           "occ_fete",
           "occ_apero",
-          "occ_cadeau"
+          "occ_diner",
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_mer",
+          "accord_volaille",
+          "accord_fromage"
         ],
         "pairingLabels": [
-          "Apéritif"
+          "Apéritif",
+          "Poisson et fruits de mer",
+          "Volaille et viandes blanches"
         ]
       },
       "editorial": {
-        "summary": "Un brut au caractère nuancé et persistant. Au premier plan : agrumes, fruits blancs, brioche. L’assemblage réunit Chardonnay, Pinot Noir, Meunier. À privilégier avec apéritif.",
-        "choose": "Son équilibre permet de l’accorder avec apéritif.",
+        "summary": "Un brut au caractère nuancé et persistant. Au premier plan : agrumes, fruits blancs, brioche. L’assemblage réunit Chardonnay, Pinot Noir, Meunier. À privilégier avec apéritif, poisson et fruits de mer, volaille et viandes blanches.",
+        "choose": "Son équilibre permet de l’accorder avec apéritif, poisson et fruits de mer, volaille et viandes blanches.",
         "avoid": "Écartez-la si vous recherchez une bouteille très simple et immédiatement consensuelle : son profil demande davantage d’attention."
       },
       "evidence": {
@@ -5595,7 +5774,7 @@
           "fruitiness": 3.5,
           "minerality": 3.2,
           "brioche": 1.8,
-          "gastronomic": 2.7,
+          "gastronomic": 3.3,
           "accessibility": 3
         },
         "aromas": [
@@ -5610,11 +5789,13 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -5679,7 +5860,7 @@
           "fruitiness": 4.3,
           "minerality": 2,
           "brioche": 4.9,
-          "gastronomic": 2.6,
+          "gastronomic": 4.5,
           "accessibility": 2
         },
         "aromas": [
@@ -5695,14 +5876,25 @@
         "occasions": [
           "occ_fete",
           "occ_apero",
-          "occ_cadeau"
+          "occ_diner",
+          "occ_cadeau",
+          "occ_romantique"
         ],
-        "pairings": [],
-        "pairingLabels": []
+        "pairings": [
+          "accord_mer",
+          "accord_volaille",
+          "accord_fromage",
+          "accord_aperitif"
+        ],
+        "pairingLabels": [
+          "Poisson et fruits de mer",
+          "Volaille et viandes blanches",
+          "Fromages affinés"
+        ]
       },
       "editorial": {
-        "summary": "Un brut Grand Cru au caractère nuancé et persistant. Au premier plan : agrumes, fruits blancs, poire, pêche. L’assemblage réunit Chardonnay, Pinot Noir. À privilégier avec l’apéritif et un repas léger.",
-        "choose": "Sa fraîcheur nette convient particulièrement à l’apéritif et un repas léger.",
+        "summary": "Un brut Grand Cru au caractère nuancé et persistant. Au premier plan : agrumes, fruits blancs, poire, pêche. L’assemblage réunit Chardonnay, Pinot Noir. À privilégier avec poisson et fruits de mer, volaille et viandes blanches, fromages affinés.",
+        "choose": "Sa fraîcheur nette convient particulièrement à poisson et fruits de mer, volaille et viandes blanches, fromages affinés.",
         "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et fruits blancs."
       },
       "evidence": {
@@ -5757,7 +5949,7 @@
           "fruitiness": 2.8,
           "minerality": 2.5,
           "brioche": 1.8,
-          "gastronomic": 2,
+          "gastronomic": 3.3,
           "accessibility": 3.5
         },
         "aromas": [
@@ -5769,18 +5961,25 @@
         "occasions": [
           "occ_fete",
           "occ_apero",
-          "occ_cadeau"
+          "occ_diner",
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
-          "accord_dessert"
+          "accord_dessert",
+          "accord_mer",
+          "accord_volaille",
+          "accord_aperitif"
         ],
         "pairingLabels": [
-          "Fruits rouges"
+          "Fruits rouges",
+          "Poisson et fruits de mer",
+          "Volaille et viandes blanches"
         ]
       },
       "editorial": {
-        "summary": "Un extra-brut au caractère frais et précis. Au premier plan : fruits rouges, fleurs blanches. L’assemblage réunit Chardonnay, Pinot Noir, Meunier. À privilégier avec fruits rouges.",
-        "choose": "Sa fraîcheur nette convient particulièrement à fruits rouges.",
+        "summary": "Un extra-brut au caractère frais et précis. Au premier plan : fruits rouges, fleurs blanches. L’assemblage réunit Chardonnay, Pinot Noir, Meunier. À privilégier avec fruits rouges, poisson et fruits de mer, volaille et viandes blanches.",
+        "choose": "Sa fraîcheur nette convient particulièrement à fruits rouges, poisson et fruits de mer, volaille et viandes blanches.",
         "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie fruits rouges et fleurs blanches."
       },
       "evidence": {
@@ -5833,7 +6032,7 @@
           "fruitiness": 2.8,
           "minerality": 3.2,
           "brioche": 2.4,
-          "gastronomic": 3.2,
+          "gastronomic": 4.5,
           "accessibility": 2
         },
         "aromas": [
@@ -5847,12 +6046,15 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
           "accord_dessert",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille",
+          "accord_fromage"
         ],
         "pairingLabels": [
           "Sushis",
@@ -5913,7 +6115,7 @@
           "fruitiness": 4.3,
           "minerality": 2,
           "brioche": 3.1,
-          "gastronomic": 2,
+          "gastronomic": 3.3,
           "accessibility": 3
         },
         "aromas": [
@@ -5929,14 +6131,24 @@
         "occasions": [
           "occ_fete",
           "occ_apero",
-          "occ_cadeau"
+          "occ_diner",
+          "occ_cadeau",
+          "occ_romantique"
         ],
-        "pairings": [],
-        "pairingLabels": []
+        "pairings": [
+          "accord_mer",
+          "accord_volaille",
+          "accord_aperitif"
+        ],
+        "pairingLabels": [
+          "Poisson et fruits de mer",
+          "Volaille et viandes blanches",
+          "Apéritif"
+        ]
       },
       "editorial": {
-        "summary": "Un brut au caractère frais et précis. Au premier plan : agrumes, pomme, poire, brioche. À privilégier avec l’apéritif et un repas léger.",
-        "choose": "Sa fraîcheur nette convient particulièrement à l’apéritif et un repas léger.",
+        "summary": "Un brut au caractère frais et précis. Au premier plan : agrumes, pomme, poire, brioche. À privilégier avec poisson et fruits de mer, volaille et viandes blanches, apéritif.",
+        "choose": "Sa fraîcheur nette convient particulièrement à poisson et fruits de mer, volaille et viandes blanches, apéritif.",
         "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et pomme."
       },
       "evidence": {
@@ -5989,7 +6201,7 @@
           "fruitiness": 4,
           "minerality": 2,
           "brioche": 3.1,
-          "gastronomic": 2,
+          "gastronomic": 3.3,
           "accessibility": 3.5
         },
         "aromas": [
@@ -6003,19 +6215,25 @@
         "occasions": [
           "occ_fete",
           "occ_apero",
+          "occ_diner",
           "occ_cadeau",
           "occ_romantique"
         ],
         "pairings": [
-          "accord_dessert"
+          "accord_dessert",
+          "accord_mer",
+          "accord_volaille",
+          "accord_aperitif"
         ],
         "pairingLabels": [
-          "Fruits rouges"
+          "Fruits rouges",
+          "Poisson et fruits de mer",
+          "Volaille et viandes blanches"
         ]
       },
       "editorial": {
-        "summary": "Un rosé brut au caractère rond et généreux. Au premier plan : agrumes, fruits rouges, amande, rose. L’assemblage réunit Pinot Noir. À privilégier avec fruits rouges.",
-        "choose": "Sa texture ample accompagne volontiers fruits rouges.",
+        "summary": "Un rosé brut au caractère rond et généreux. Au premier plan : agrumes, fruits rouges, amande, rose. L’assemblage réunit Pinot Noir. À privilégier avec fruits rouges, poisson et fruits de mer, volaille et viandes blanches.",
+        "choose": "Sa texture ample accompagne volontiers fruits rouges, poisson et fruits de mer, volaille et viandes blanches.",
         "avoid": "Écartez-la si vous recherchez une expression austère et tranchante : son profil privilégie l’ampleur."
       },
       "evidence": {
@@ -6067,7 +6285,7 @@
           "fruitiness": 4,
           "minerality": 2,
           "brioche": 3.1,
-          "gastronomic": 2,
+          "gastronomic": 3.3,
           "accessibility": 3
         },
         "aromas": [
@@ -6083,14 +6301,24 @@
         "occasions": [
           "occ_fete",
           "occ_apero",
-          "occ_cadeau"
+          "occ_diner",
+          "occ_cadeau",
+          "occ_romantique"
         ],
-        "pairings": [],
-        "pairingLabels": []
+        "pairings": [
+          "accord_mer",
+          "accord_volaille",
+          "accord_aperitif"
+        ],
+        "pairingLabels": [
+          "Poisson et fruits de mer",
+          "Volaille et viandes blanches",
+          "Apéritif"
+        ]
       },
       "editorial": {
-        "summary": "Un brut Grand Cru au caractère équilibré et polyvalent. Au premier plan : agrumes, fruits jaunes, pêche, fleurs blanches. À privilégier avec l’apéritif et un repas léger.",
-        "choose": "Son équilibre permet de l’accorder avec l’apéritif et un repas léger.",
+        "summary": "Un brut Grand Cru au caractère équilibré et polyvalent. Au premier plan : agrumes, fruits jaunes, pêche, fleurs blanches. À privilégier avec poisson et fruits de mer, volaille et viandes blanches, apéritif.",
+        "choose": "Son équilibre permet de l’accorder avec poisson et fruits de mer, volaille et viandes blanches, apéritif.",
         "avoid": "Écartez-la si vous recherchez un style très tendu ou très puissant : elle mise avant tout sur l’équilibre."
       },
       "evidence": {
@@ -6141,7 +6369,7 @@
           "fruitiness": 3.5,
           "minerality": 2.5,
           "brioche": 1.8,
-          "gastronomic": 3.3,
+          "gastronomic": 4,
           "accessibility": 3
         },
         "aromas": [
@@ -6155,12 +6383,14 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
           "accord_fromage",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Huîtres",
@@ -6224,7 +6454,7 @@
           "fruitiness": 3.5,
           "minerality": 2.8,
           "brioche": 3.1,
-          "gastronomic": 2,
+          "gastronomic": 3.3,
           "accessibility": 3
         },
         "aromas": [
@@ -6237,19 +6467,24 @@
         "occasions": [
           "occ_fete",
           "occ_apero",
+          "occ_diner",
           "occ_cadeau",
           "occ_romantique"
         ],
         "pairings": [
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_mer",
+          "accord_volaille"
         ],
         "pairingLabels": [
-          "Apéritif"
+          "Apéritif",
+          "Poisson et fruits de mer",
+          "Volaille et viandes blanches"
         ]
       },
       "editorial": {
-        "summary": "Un blanc de blancs brut Grand Cru au caractère léger et délicat. Au premier plan : agrumes, pomme, amande. L’assemblage réunit Chardonnay. À privilégier avec apéritif.",
-        "choose": "Sa fraîcheur nette convient particulièrement à apéritif.",
+        "summary": "Un blanc de blancs brut Grand Cru au caractère léger et délicat. Au premier plan : agrumes, pomme, amande. L’assemblage réunit Chardonnay. À privilégier avec apéritif, poisson et fruits de mer, volaille et viandes blanches.",
+        "choose": "Sa fraîcheur nette convient particulièrement à apéritif, poisson et fruits de mer, volaille et viandes blanches.",
         "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et pomme."
       },
       "evidence": {
@@ -6303,7 +6538,7 @@
           "fruitiness": 3.5,
           "minerality": 2.5,
           "brioche": 3.7,
-          "gastronomic": 3.2,
+          "gastronomic": 4.5,
           "accessibility": 2
         },
         "aromas": [
@@ -6317,18 +6552,24 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
-          "accord_mer"
+          "accord_mer",
+          "accord_volaille",
+          "accord_fromage",
+          "accord_aperitif"
         ],
         "pairingLabels": [
-          "Poisson"
+          "Poisson",
+          "Volaille et viandes blanches",
+          "Fromages affinés"
         ]
       },
       "editorial": {
-        "summary": "Un extra-brut au caractère nuancé et persistant. Au premier plan : agrumes, pomme, brioche. L’assemblage réunit Chardonnay, Pinot Noir. À privilégier avec poisson.",
-        "choose": "Sa fraîcheur nette convient particulièrement à poisson.",
+        "summary": "Un extra-brut au caractère nuancé et persistant. Au premier plan : agrumes, pomme, brioche. L’assemblage réunit Chardonnay, Pinot Noir. À privilégier avec poisson, volaille et viandes blanches, fromages affinés.",
+        "choose": "Sa fraîcheur nette convient particulièrement à poisson, volaille et viandes blanches, fromages affinés.",
         "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et pomme."
       },
       "evidence": {
@@ -6383,7 +6624,7 @@
           "fruitiness": 3.3,
           "minerality": 2,
           "brioche": 2.4,
-          "gastronomic": 3.2,
+          "gastronomic": 4.5,
           "accessibility": 2.5
         },
         "aromas": [
@@ -6402,7 +6643,9 @@
         "pairings": [
           "accord_mer",
           "accord_dessert",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille",
+          "accord_fromage"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -6466,7 +6709,7 @@
           "fruitiness": 2.8,
           "minerality": 2,
           "brioche": 1.8,
-          "gastronomic": 2,
+          "gastronomic": 3.3,
           "accessibility": 3
         },
         "aromas": [
@@ -6478,14 +6721,24 @@
         "occasions": [
           "occ_fete",
           "occ_apero",
-          "occ_cadeau"
+          "occ_diner",
+          "occ_cadeau",
+          "occ_romantique"
         ],
-        "pairings": [],
-        "pairingLabels": []
+        "pairings": [
+          "accord_mer",
+          "accord_volaille",
+          "accord_aperitif"
+        ],
+        "pairingLabels": [
+          "Poisson et fruits de mer",
+          "Volaille et viandes blanches",
+          "Apéritif"
+        ]
       },
       "editorial": {
-        "summary": "Un brut au caractère frais et précis. Au premier plan : agrumes, fleurs blanches. L’assemblage réunit Chardonnay, Pinot Noir. À privilégier avec l’apéritif et un repas léger.",
-        "choose": "Sa fraîcheur nette convient particulièrement à l’apéritif et un repas léger.",
+        "summary": "Un brut au caractère frais et précis. Au premier plan : agrumes, fleurs blanches. L’assemblage réunit Chardonnay, Pinot Noir. À privilégier avec poisson et fruits de mer, volaille et viandes blanches, apéritif.",
+        "choose": "Sa fraîcheur nette convient particulièrement à poisson et fruits de mer, volaille et viandes blanches, apéritif.",
         "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et fleurs blanches."
       },
       "evidence": {
@@ -6536,7 +6789,7 @@
           "fruitiness": 4,
           "minerality": 3.2,
           "brioche": 1.8,
-          "gastronomic": 2.7,
+          "gastronomic": 3.3,
           "accessibility": 3.5
         },
         "aromas": [
@@ -6557,7 +6810,8 @@
         "pairings": [
           "accord_mer",
           "accord_dessert",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -6623,7 +6877,7 @@
           "fruitiness": 4.3,
           "minerality": 2.5,
           "brioche": 4.3,
-          "gastronomic": 2.7,
+          "gastronomic": 3.3,
           "accessibility": 3
         },
         "aromas": [
@@ -6641,20 +6895,23 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Poisson",
-          "Apéritif"
+          "Apéritif",
+          "Volaille et viandes blanches"
         ]
       },
       "editorial": {
-        "summary": "Un extra-brut Premier Cru au caractère frais et précis. Au premier plan : agrumes, pomme, poire, brioche. L’assemblage réunit Chardonnay, Pinot Noir, Meunier. À privilégier avec poisson, apéritif.",
-        "choose": "Sa fraîcheur nette convient particulièrement à poisson, apéritif.",
+        "summary": "Un extra-brut Premier Cru au caractère frais et précis. Au premier plan : agrumes, pomme, poire, brioche. L’assemblage réunit Chardonnay, Pinot Noir, Meunier. À privilégier avec poisson, apéritif, volaille et viandes blanches.",
+        "choose": "Sa fraîcheur nette convient particulièrement à poisson, apéritif, volaille et viandes blanches.",
         "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et pomme."
       },
       "evidence": {
@@ -6710,7 +6967,7 @@
           "fruitiness": 4,
           "minerality": 2,
           "brioche": 3.1,
-          "gastronomic": 2.7,
+          "gastronomic": 4,
           "accessibility": 3.5
         },
         "aromas": [
@@ -6726,12 +6983,15 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_fromage",
           "accord_dessert",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_mer",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Fromages",
@@ -6794,7 +7054,7 @@
           "fruitiness": 3.3,
           "minerality": 2,
           "brioche": 3.1,
-          "gastronomic": 3.3,
+          "gastronomic": 4,
           "accessibility": 3.5
         },
         "aromas": [
@@ -6810,12 +7070,14 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
           "accord_fromage",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -6878,7 +7140,7 @@
           "fruitiness": 2.8,
           "minerality": 4,
           "brioche": 2.4,
-          "gastronomic": 3.9,
+          "gastronomic": 4.5,
           "accessibility": 2
         },
         "aromas": [
@@ -6892,12 +7154,14 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
           "accord_fromage",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -6963,7 +7227,7 @@
           "fruitiness": 2.8,
           "minerality": 2,
           "brioche": 3.7,
-          "gastronomic": 3.2,
+          "gastronomic": 4.5,
           "accessibility": 2
         },
         "aromas": [
@@ -6979,11 +7243,14 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille",
+          "accord_fromage"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -7135,7 +7402,7 @@
           "fruitiness": 5,
           "minerality": 2,
           "brioche": 4.3,
-          "gastronomic": 3.2,
+          "gastronomic": 4.5,
           "accessibility": 3.5
         },
         "aromas": [
@@ -7154,12 +7421,15 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
           "accord_dessert",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille",
+          "accord_fromage"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -7225,7 +7495,7 @@
           "fruitiness": 4,
           "minerality": 4.4,
           "brioche": 1.8,
-          "gastronomic": 3.9,
+          "gastronomic": 4.5,
           "accessibility": 3.5
         },
         "aromas": [
@@ -7242,12 +7512,14 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
           "accord_fromage",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -7314,7 +7586,7 @@
           "fruitiness": 4,
           "minerality": 2,
           "brioche": 3.1,
-          "gastronomic": 2.7,
+          "gastronomic": 3.3,
           "accessibility": 3.5
         },
         "aromas": [
@@ -7331,12 +7603,14 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_fromage",
           "accord_dessert",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Fromages",
@@ -7399,7 +7673,7 @@
           "fruitiness": 3.5,
           "minerality": 2.8,
           "brioche": 1.8,
-          "gastronomic": 2.7,
+          "gastronomic": 3.3,
           "accessibility": 3
         },
         "aromas": [
@@ -7418,16 +7692,18 @@
         ],
         "pairings": [
           "accord_mer",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Poisson",
-          "Apéritif"
+          "Apéritif",
+          "Volaille et viandes blanches"
         ]
       },
       "editorial": {
-        "summary": "Un blanc de blancs brut au caractère léger et délicat. Au premier plan : agrumes, pêche, fleurs blanches. L’assemblage réunit Chardonnay. À privilégier avec poisson, apéritif.",
-        "choose": "Sa fraîcheur nette convient particulièrement à poisson, apéritif.",
+        "summary": "Un blanc de blancs brut au caractère léger et délicat. Au premier plan : agrumes, pêche, fleurs blanches. L’assemblage réunit Chardonnay. À privilégier avec poisson, apéritif, volaille et viandes blanches.",
+        "choose": "Sa fraîcheur nette convient particulièrement à poisson, apéritif, volaille et viandes blanches.",
         "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et pêche."
       },
       "evidence": {
@@ -7482,7 +7758,7 @@
           "fruitiness": 3.5,
           "minerality": 2,
           "brioche": 4.3,
-          "gastronomic": 2.7,
+          "gastronomic": 3.3,
           "accessibility": 3
         },
         "aromas": [
@@ -7499,11 +7775,13 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -7651,7 +7929,7 @@
           "fruitiness": 2.8,
           "minerality": 2,
           "brioche": 3.1,
-          "gastronomic": 3.3,
+          "gastronomic": 4,
           "accessibility": 3
         },
         "aromas": [
@@ -7665,12 +7943,14 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
           "accord_fromage",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -7735,7 +8015,7 @@
           "fruitiness": 3.5,
           "minerality": 3.3,
           "brioche": 2.4,
-          "gastronomic": 2.6,
+          "gastronomic": 3.9,
           "accessibility": 2.5
         },
         "aromas": [
@@ -7748,15 +8028,24 @@
         "occasions": [
           "occ_fete",
           "occ_apero",
+          "occ_diner",
           "occ_cadeau",
           "occ_romantique"
         ],
-        "pairings": [],
-        "pairingLabels": []
+        "pairings": [
+          "accord_mer",
+          "accord_fromage",
+          "accord_aperitif"
+        ],
+        "pairingLabels": [
+          "Poisson et fruits de mer",
+          "Fromages affinés",
+          "Apéritif"
+        ]
       },
       "editorial": {
-        "summary": "Un blanc de blancs extra-brut au caractère nuancé et persistant. Au premier plan : poire, pêche, fleurs blanches. L’assemblage réunit Chardonnay, Pinot Noir. À privilégier avec l’apéritif et un repas léger.",
-        "choose": "Sa fraîcheur nette convient particulièrement à l’apéritif et un repas léger.",
+        "summary": "Un blanc de blancs extra-brut au caractère nuancé et persistant. Au premier plan : poire, pêche, fleurs blanches. L’assemblage réunit Chardonnay, Pinot Noir. À privilégier avec poisson et fruits de mer, fromages affinés, apéritif.",
+        "choose": "Sa fraîcheur nette convient particulièrement à poisson et fruits de mer, fromages affinés, apéritif.",
         "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie poire et pêche."
       },
       "evidence": {
@@ -7811,7 +8100,7 @@
           "fruitiness": 2.8,
           "minerality": 2.5,
           "brioche": 2.4,
-          "gastronomic": 2.6,
+          "gastronomic": 4.5,
           "accessibility": 2
         },
         "aromas": [
@@ -7823,14 +8112,25 @@
         "occasions": [
           "occ_fete",
           "occ_apero",
-          "occ_cadeau"
+          "occ_diner",
+          "occ_cadeau",
+          "occ_romantique"
         ],
-        "pairings": [],
-        "pairingLabels": []
+        "pairings": [
+          "accord_mer",
+          "accord_volaille",
+          "accord_fromage",
+          "accord_aperitif"
+        ],
+        "pairingLabels": [
+          "Poisson et fruits de mer",
+          "Volaille et viandes blanches",
+          "Fromages affinés"
+        ]
       },
       "editorial": {
-        "summary": "Un extra-brut Premier Cru au caractère nuancé et persistant. Au premier plan : agrumes, fleurs blanches. L’assemblage réunit Chardonnay, Pinot Noir. À privilégier avec l’apéritif et un repas léger.",
-        "choose": "Sa fraîcheur nette convient particulièrement à l’apéritif et un repas léger.",
+        "summary": "Un extra-brut Premier Cru au caractère nuancé et persistant. Au premier plan : agrumes, fleurs blanches. L’assemblage réunit Chardonnay, Pinot Noir. À privilégier avec poisson et fruits de mer, volaille et viandes blanches, fromages affinés.",
+        "choose": "Sa fraîcheur nette convient particulièrement à poisson et fruits de mer, volaille et viandes blanches, fromages affinés.",
         "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et fleurs blanches."
       },
       "evidence": {
@@ -7885,7 +8185,7 @@
           "fruitiness": 3.5,
           "minerality": 3.7,
           "brioche": 3.7,
-          "gastronomic": 3.2,
+          "gastronomic": 4.5,
           "accessibility": 2
         },
         "aromas": [
@@ -7900,20 +8200,24 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille",
+          "accord_fromage"
         ],
         "pairingLabels": [
           "Poisson",
-          "Apéritif"
+          "Apéritif",
+          "Volaille et viandes blanches"
         ]
       },
       "editorial": {
-        "summary": "Un extra-brut au caractère nuancé et persistant. Au premier plan : agrumes, pomme, brioche, minéralité. L’assemblage réunit Chardonnay, Pinot Noir, Meunier. À privilégier avec poisson, apéritif.",
-        "choose": "Sa fraîcheur nette convient particulièrement à poisson, apéritif.",
+        "summary": "Un extra-brut au caractère nuancé et persistant. Au premier plan : agrumes, pomme, brioche, minéralité. L’assemblage réunit Chardonnay, Pinot Noir, Meunier. À privilégier avec poisson, apéritif, volaille et viandes blanches.",
+        "choose": "Sa fraîcheur nette convient particulièrement à poisson, apéritif, volaille et viandes blanches.",
         "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et pomme."
       },
       "evidence": {
@@ -7967,7 +8271,7 @@
           "fruitiness": 2.8,
           "minerality": 2,
           "brioche": 3.7,
-          "gastronomic": 3.2,
+          "gastronomic": 4.5,
           "accessibility": 2
         },
         "aromas": [
@@ -7981,12 +8285,15 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
           "accord_dessert",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille",
+          "accord_fromage"
         ],
         "pairingLabels": [
           "Poisson",
@@ -8050,7 +8357,7 @@
           "fruitiness": 3.5,
           "minerality": 3.3,
           "brioche": 3.7,
-          "gastronomic": 3.9,
+          "gastronomic": 4.5,
           "accessibility": 2
         },
         "aromas": [
@@ -8070,7 +8377,9 @@
         ],
         "pairings": [
           "accord_mer",
-          "accord_fromage"
+          "accord_fromage",
+          "accord_volaille",
+          "accord_aperitif"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -8132,7 +8441,7 @@
           "fruitiness": 4,
           "minerality": 4.4,
           "brioche": 2.4,
-          "gastronomic": 2.6,
+          "gastronomic": 4.5,
           "accessibility": 2.5
         },
         "aromas": [
@@ -8147,21 +8456,26 @@
         "occasions": [
           "occ_fete",
           "occ_apero",
+          "occ_diner",
           "occ_cadeau",
           "occ_romantique"
         ],
         "pairings": [
           "accord_dessert",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_mer",
+          "accord_volaille",
+          "accord_fromage"
         ],
         "pairingLabels": [
           "Fruits rouges",
-          "Apéritif"
+          "Apéritif",
+          "Poisson et fruits de mer"
         ]
       },
       "editorial": {
-        "summary": "Un rosé brut Premier Cru au caractère rond et généreux. Au premier plan : agrumes, fruits rouges, rose, minéralité. À privilégier avec fruits rouges, apéritif.",
-        "choose": "Sa texture ample accompagne volontiers fruits rouges, apéritif.",
+        "summary": "Un rosé brut Premier Cru au caractère rond et généreux. Au premier plan : agrumes, fruits rouges, rose, minéralité. À privilégier avec fruits rouges, apéritif, poisson et fruits de mer.",
+        "choose": "Sa texture ample accompagne volontiers fruits rouges, apéritif, poisson et fruits de mer.",
         "avoid": "Écartez-la si vous recherchez une expression austère et tranchante : son profil privilégie l’ampleur."
       },
       "evidence": {
@@ -8215,7 +8529,7 @@
           "fruitiness": 2.8,
           "minerality": 3.2,
           "brioche": 3.7,
-          "gastronomic": 3.9,
+          "gastronomic": 4.5,
           "accessibility": 2
         },
         "aromas": [
@@ -8230,11 +8544,14 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
-          "accord_fromage"
+          "accord_fromage",
+          "accord_volaille",
+          "accord_aperitif"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -8295,7 +8612,7 @@
           "fruitiness": 3.5,
           "minerality": 2.5,
           "brioche": 3.7,
-          "gastronomic": 2.6,
+          "gastronomic": 4.5,
           "accessibility": 2
         },
         "aromas": [
@@ -8308,14 +8625,25 @@
         "occasions": [
           "occ_fete",
           "occ_apero",
-          "occ_cadeau"
+          "occ_diner",
+          "occ_cadeau",
+          "occ_romantique"
         ],
-        "pairings": [],
-        "pairingLabels": []
+        "pairings": [
+          "accord_mer",
+          "accord_volaille",
+          "accord_fromage",
+          "accord_aperitif"
+        ],
+        "pairingLabels": [
+          "Poisson et fruits de mer",
+          "Volaille et viandes blanches",
+          "Fromages affinés"
+        ]
       },
       "editorial": {
-        "summary": "Un extra-brut au caractère nuancé et persistant. Au premier plan : agrumes, pomme, brioche. À privilégier avec l’apéritif et un repas léger.",
-        "choose": "Sa fraîcheur nette convient particulièrement à l’apéritif et un repas léger.",
+        "summary": "Un extra-brut au caractère nuancé et persistant. Au premier plan : agrumes, pomme, brioche. À privilégier avec poisson et fruits de mer, volaille et viandes blanches, fromages affinés.",
+        "choose": "Sa fraîcheur nette convient particulièrement à poisson et fruits de mer, volaille et viandes blanches, fromages affinés.",
         "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et pomme."
       },
       "evidence": {
@@ -8367,7 +8695,7 @@
           "fruitiness": 2.8,
           "minerality": 2,
           "brioche": 4.3,
-          "gastronomic": 2.7,
+          "gastronomic": 3.3,
           "accessibility": 3
         },
         "aromas": [
@@ -8382,10 +8710,13 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
-          "accord_mer"
+          "accord_mer",
+          "accord_volaille",
+          "accord_aperitif"
         ],
         "pairingLabels": [
           "Huîtres",
@@ -8450,7 +8781,7 @@
           "fruitiness": 4.3,
           "minerality": 2,
           "brioche": 4.3,
-          "gastronomic": 2,
+          "gastronomic": 3.3,
           "accessibility": 3
         },
         "aromas": [
@@ -8466,18 +8797,24 @@
         "occasions": [
           "occ_fete",
           "occ_apero",
-          "occ_cadeau"
+          "occ_diner",
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_mer",
+          "accord_volaille"
         ],
         "pairingLabels": [
-          "Apéritif"
+          "Apéritif",
+          "Poisson et fruits de mer",
+          "Volaille et viandes blanches"
         ]
       },
       "editorial": {
-        "summary": "Un brut Grand Cru au caractère frais et précis. Au premier plan : agrumes, pomme, fruits mûrs, brioche. L’assemblage réunit Chardonnay, Pinot Noir. À privilégier avec apéritif.",
-        "choose": "Sa fraîcheur nette convient particulièrement à apéritif.",
+        "summary": "Un brut Grand Cru au caractère frais et précis. Au premier plan : agrumes, pomme, fruits mûrs, brioche. L’assemblage réunit Chardonnay, Pinot Noir. À privilégier avec apéritif, poisson et fruits de mer, volaille et viandes blanches.",
+        "choose": "Sa fraîcheur nette convient particulièrement à apéritif, poisson et fruits de mer, volaille et viandes blanches.",
         "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et pomme."
       },
       "evidence": {
@@ -8529,7 +8866,7 @@
           "fruitiness": 2.8,
           "minerality": 2,
           "brioche": 3.7,
-          "gastronomic": 3.2,
+          "gastronomic": 4.5,
           "accessibility": 2
         },
         "aromas": [
@@ -8544,18 +8881,24 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
-          "accord_mer"
+          "accord_mer",
+          "accord_volaille",
+          "accord_fromage",
+          "accord_aperitif"
         ],
         "pairingLabels": [
-          "Sushis"
+          "Sushis",
+          "Volaille et viandes blanches",
+          "Fromages affinés"
         ]
       },
       "editorial": {
-        "summary": "Un brut millésimé au caractère nuancé et persistant. Au premier plan : agrumes, fruits blancs, pâtisserie, amande. À privilégier avec sushis.",
-        "choose": "Son équilibre permet de l’accorder avec sushis.",
+        "summary": "Un brut millésimé au caractère nuancé et persistant. Au premier plan : agrumes, fruits blancs, pâtisserie, amande. À privilégier avec sushis, volaille et viandes blanches, fromages affinés.",
+        "choose": "Son équilibre permet de l’accorder avec sushis, volaille et viandes blanches, fromages affinés.",
         "avoid": "Écartez-la si vous recherchez une bouteille très simple et immédiatement consensuelle : son profil demande davantage d’attention."
       },
       "evidence": {
@@ -8611,7 +8954,7 @@
           "fruitiness": 4,
           "minerality": 2.5,
           "brioche": 1.8,
-          "gastronomic": 2.7,
+          "gastronomic": 3.3,
           "accessibility": 3
         },
         "aromas": [
@@ -8632,7 +8975,8 @@
         "pairings": [
           "accord_mer",
           "accord_dessert",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -8784,7 +9128,7 @@
           "fruitiness": 3.5,
           "minerality": 2,
           "brioche": 3.7,
-          "gastronomic": 3.2,
+          "gastronomic": 4.5,
           "accessibility": 2
         },
         "aromas": [
@@ -8800,11 +9144,14 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille",
+          "accord_fromage"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -8870,7 +9217,7 @@
           "fruitiness": 3.5,
           "minerality": 4.4,
           "brioche": 4.3,
-          "gastronomic": 3.3,
+          "gastronomic": 4,
           "accessibility": 3
         },
         "aromas": [
@@ -8890,12 +9237,14 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
           "accord_fromage",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -8960,7 +9309,7 @@
           "fruitiness": 3.3,
           "minerality": 2,
           "brioche": 3.1,
-          "gastronomic": 3.3,
+          "gastronomic": 4,
           "accessibility": 3
         },
         "aromas": [
@@ -8975,12 +9324,14 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
           "accord_fromage",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -9043,7 +9394,7 @@
           "fruitiness": 2.8,
           "minerality": 2,
           "brioche": 3.7,
-          "gastronomic": 2.6,
+          "gastronomic": 4.5,
           "accessibility": 2
         },
         "aromas": [
@@ -9055,14 +9406,26 @@
       "uses": {
         "occasions": [
           "occ_fete",
-          "occ_cadeau"
+          "occ_apero",
+          "occ_diner",
+          "occ_cadeau",
+          "occ_romantique"
         ],
-        "pairings": [],
-        "pairingLabels": []
+        "pairings": [
+          "accord_mer",
+          "accord_volaille",
+          "accord_fromage",
+          "accord_aperitif"
+        ],
+        "pairingLabels": [
+          "Poisson et fruits de mer",
+          "Volaille et viandes blanches",
+          "Fromages affinés"
+        ]
       },
       "editorial": {
-        "summary": "Un brut au caractère nuancé et persistant. Au premier plan : agrumes, fleurs blanches, brioche. L’assemblage réunit Chardonnay. À privilégier avec l’apéritif et un repas léger.",
-        "choose": "Sa fraîcheur nette convient particulièrement à l’apéritif et un repas léger.",
+        "summary": "Un brut au caractère nuancé et persistant. Au premier plan : agrumes, fleurs blanches, brioche. L’assemblage réunit Chardonnay. À privilégier avec poisson et fruits de mer, volaille et viandes blanches, fromages affinés.",
+        "choose": "Sa fraîcheur nette convient particulièrement à poisson et fruits de mer, volaille et viandes blanches, fromages affinés.",
         "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et fleurs blanches."
       },
       "evidence": {
@@ -9117,7 +9480,7 @@
           "fruitiness": 2.8,
           "minerality": 2.5,
           "brioche": 4.3,
-          "gastronomic": 3.3,
+          "gastronomic": 4,
           "accessibility": 3
         },
         "aromas": [
@@ -9134,12 +9497,14 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
           "accord_fromage",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Poisson",
@@ -9204,7 +9569,7 @@
           "fruitiness": 2.8,
           "minerality": 2.5,
           "brioche": 3.7,
-          "gastronomic": 3.2,
+          "gastronomic": 4.5,
           "accessibility": 2
         },
         "aromas": [
@@ -9218,20 +9583,24 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille",
+          "accord_fromage"
         ],
         "pairingLabels": [
           "Poisson",
-          "Apéritif"
+          "Apéritif",
+          "Volaille et viandes blanches"
         ]
       },
       "editorial": {
-        "summary": "Un extra-brut au caractère nuancé et persistant. Au premier plan : agrumes, fleurs blanches, brioche. L’assemblage réunit Chardonnay, Pinot Noir, Meunier. À privilégier avec poisson, apéritif.",
-        "choose": "Sa fraîcheur nette convient particulièrement à poisson, apéritif.",
+        "summary": "Un extra-brut au caractère nuancé et persistant. Au premier plan : agrumes, fleurs blanches, brioche. L’assemblage réunit Chardonnay, Pinot Noir, Meunier. À privilégier avec poisson, apéritif, volaille et viandes blanches.",
+        "choose": "Sa fraîcheur nette convient particulièrement à poisson, apéritif, volaille et viandes blanches.",
         "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et fleurs blanches."
       },
       "evidence": {
@@ -9285,7 +9654,7 @@
           "fruitiness": 4,
           "minerality": 2.5,
           "brioche": 1.8,
-          "gastronomic": 2.7,
+          "gastronomic": 3.3,
           "accessibility": 3
         },
         "aromas": [
@@ -9305,7 +9674,8 @@
         "pairings": [
           "accord_mer",
           "accord_dessert",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -9370,7 +9740,7 @@
           "fruitiness": 3.3,
           "minerality": 2,
           "brioche": 2.4,
-          "gastronomic": 3.9,
+          "gastronomic": 4.5,
           "accessibility": 2.5
         },
         "aromas": [
@@ -9390,7 +9760,8 @@
           "accord_mer",
           "accord_fromage",
           "accord_dessert",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -9454,7 +9825,7 @@
           "fruitiness": 2.8,
           "minerality": 2.8,
           "brioche": 3.1,
-          "gastronomic": 2.7,
+          "gastronomic": 3.3,
           "accessibility": 3
         },
         "aromas": [
@@ -9473,7 +9844,8 @@
         ],
         "pairings": [
           "accord_mer",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Huîtres",
@@ -9538,7 +9910,7 @@
           "fruitiness": 2.8,
           "minerality": 4.5,
           "brioche": 4.9,
-          "gastronomic": 3.2,
+          "gastronomic": 4.5,
           "accessibility": 2
         },
         "aromas": [
@@ -9554,11 +9926,14 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille",
+          "accord_fromage"
         ],
         "pairingLabels": [
           "Huîtres",
@@ -9623,7 +9998,7 @@
           "fruitiness": 2.8,
           "minerality": 3.3,
           "brioche": 3.7,
-          "gastronomic": 3.8,
+          "gastronomic": 4.4,
           "accessibility": 1
         },
         "aromas": [
@@ -9635,21 +10010,25 @@
       "uses": {
         "occasions": [
           "occ_fete",
+          "occ_apero",
           "occ_diner",
           "occ_cadeau",
           "occ_romantique"
         ],
         "pairings": [
-          "accord_mer"
+          "accord_mer",
+          "accord_fromage",
+          "accord_aperitif"
         ],
         "pairingLabels": [
           "Crustacés",
-          "Poisson"
+          "Poisson",
+          "Fromages affinés"
         ]
       },
       "editorial": {
-        "summary": "Un blanc de blancs extra-brut millésimé au caractère nuancé et persistant. Au premier plan : agrumes, fleurs blanches, brioche. L’assemblage réunit Chardonnay. À privilégier avec crustacés, poisson.",
-        "choose": "Sa fraîcheur nette convient particulièrement à crustacés, poisson.",
+        "summary": "Un blanc de blancs extra-brut millésimé au caractère nuancé et persistant. Au premier plan : agrumes, fleurs blanches, brioche. L’assemblage réunit Chardonnay. À privilégier avec crustacés, poisson, fromages affinés.",
+        "choose": "Sa fraîcheur nette convient particulièrement à crustacés, poisson, fromages affinés.",
         "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et fleurs blanches."
       },
       "evidence": {
@@ -9704,7 +10083,7 @@
           "fruitiness": 3.5,
           "minerality": 3.3,
           "brioche": 4.3,
-          "gastronomic": 2,
+          "gastronomic": 3.3,
           "accessibility": 3
         },
         "aromas": [
@@ -9719,15 +10098,25 @@
       "uses": {
         "occasions": [
           "occ_fete",
+          "occ_apero",
+          "occ_diner",
           "occ_cadeau",
           "occ_romantique"
         ],
-        "pairings": [],
-        "pairingLabels": []
+        "pairings": [
+          "accord_mer",
+          "accord_volaille",
+          "accord_aperitif"
+        ],
+        "pairingLabels": [
+          "Poisson et fruits de mer",
+          "Volaille et viandes blanches",
+          "Apéritif"
+        ]
       },
       "editorial": {
-        "summary": "Un blanc de blancs extra-brut Grand Cru au caractère léger et délicat. Au premier plan : agrumes, pomme, fleurs blanches, brioche. L’assemblage réunit Chardonnay. À privilégier avec l’apéritif et un repas léger.",
-        "choose": "Sa fraîcheur nette convient particulièrement à l’apéritif et un repas léger.",
+        "summary": "Un blanc de blancs extra-brut Grand Cru au caractère léger et délicat. Au premier plan : agrumes, pomme, fleurs blanches, brioche. L’assemblage réunit Chardonnay. À privilégier avec poisson et fruits de mer, volaille et viandes blanches, apéritif.",
+        "choose": "Sa fraîcheur nette convient particulièrement à poisson et fruits de mer, volaille et viandes blanches, apéritif.",
         "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et pomme."
       },
       "evidence": {
@@ -9783,7 +10172,7 @@
           "fruitiness": 3.5,
           "minerality": 3.3,
           "brioche": 2.4,
-          "gastronomic": 2.6,
+          "gastronomic": 3.9,
           "accessibility": 2
         },
         "aromas": [
@@ -9795,15 +10184,25 @@
       "uses": {
         "occasions": [
           "occ_fete",
+          "occ_apero",
+          "occ_diner",
           "occ_cadeau",
           "occ_romantique"
         ],
-        "pairings": [],
-        "pairingLabels": []
+        "pairings": [
+          "accord_mer",
+          "accord_fromage",
+          "accord_aperitif"
+        ],
+        "pairingLabels": [
+          "Poisson et fruits de mer",
+          "Fromages affinés",
+          "Apéritif"
+        ]
       },
       "editorial": {
-        "summary": "Un blanc de blancs extra-brut Grand Cru millésimé au caractère nuancé et persistant. Au premier plan : agrumes, pomme, fleurs blanches. L’assemblage réunit Chardonnay. À privilégier avec l’apéritif et un repas léger.",
-        "choose": "Sa fraîcheur nette convient particulièrement à l’apéritif et un repas léger.",
+        "summary": "Un blanc de blancs extra-brut Grand Cru millésimé au caractère nuancé et persistant. Au premier plan : agrumes, pomme, fleurs blanches. L’assemblage réunit Chardonnay. À privilégier avec poisson et fruits de mer, fromages affinés, apéritif.",
+        "choose": "Sa fraîcheur nette convient particulièrement à poisson et fruits de mer, fromages affinés, apéritif.",
         "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et pomme."
       },
       "evidence": {
@@ -9854,7 +10253,7 @@
           "fruitiness": 3.3,
           "minerality": 2,
           "brioche": 1.8,
-          "gastronomic": 2.7,
+          "gastronomic": 3.3,
           "accessibility": 3
         },
         "aromas": [
@@ -9864,20 +10263,25 @@
       "uses": {
         "occasions": [
           "occ_fete",
+          "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
-          "accord_mer"
+          "accord_mer",
+          "accord_volaille",
+          "accord_aperitif"
         ],
         "pairingLabels": [
           "Crustacés",
-          "Poisson"
+          "Poisson",
+          "Volaille et viandes blanches"
         ]
       },
       "editorial": {
-        "summary": "Un brut au caractère équilibré et polyvalent. Au premier plan : agrumes. À privilégier avec crustacés, poisson.",
-        "choose": "Son équilibre permet de l’accorder avec crustacés, poisson.",
+        "summary": "Un brut au caractère équilibré et polyvalent. Au premier plan : agrumes. À privilégier avec crustacés, poisson, volaille et viandes blanches.",
+        "choose": "Son équilibre permet de l’accorder avec crustacés, poisson, volaille et viandes blanches.",
         "avoid": "Écartez-la si vous recherchez un style très tendu ou très puissant : elle mise avant tout sur l’équilibre."
       },
       "evidence": {
@@ -9930,7 +10334,7 @@
           "fruitiness": 3.3,
           "minerality": 2,
           "brioche": 3.7,
-          "gastronomic": 3.9,
+          "gastronomic": 4.5,
           "accessibility": 2.5
         },
         "aromas": [
@@ -9941,6 +10345,7 @@
       "uses": {
         "occasions": [
           "occ_fete",
+          "occ_apero",
           "occ_diner",
           "occ_cadeau",
           "occ_romantique"
@@ -9948,7 +10353,9 @@
         "pairings": [
           "accord_mer",
           "accord_fromage",
-          "accord_dessert"
+          "accord_dessert",
+          "accord_volaille",
+          "accord_aperitif"
         ],
         "pairingLabels": [
           "Poisson",
@@ -10012,7 +10419,7 @@
           "fruitiness": 3.5,
           "minerality": 2.8,
           "brioche": 2.4,
-          "gastronomic": 3.1,
+          "gastronomic": 5,
           "accessibility": 1
         },
         "aromas": [
@@ -10024,15 +10431,26 @@
       "uses": {
         "occasions": [
           "occ_fete",
+          "occ_apero",
+          "occ_diner",
           "occ_cadeau",
           "occ_romantique"
         ],
-        "pairings": [],
-        "pairingLabels": []
+        "pairings": [
+          "accord_mer",
+          "accord_volaille",
+          "accord_fromage",
+          "accord_aperitif"
+        ],
+        "pairingLabels": [
+          "Poisson et fruits de mer",
+          "Volaille et viandes blanches",
+          "Fromages affinés"
+        ]
       },
       "editorial": {
-        "summary": "Un blanc de blancs brut millésimé au caractère nuancé et persistant. Au premier plan : fruits blancs, pomme, poire. L’assemblage réunit Chardonnay. À privilégier avec l’apéritif et un repas léger.",
-        "choose": "Sa fraîcheur nette convient particulièrement à l’apéritif et un repas léger.",
+        "summary": "Un blanc de blancs brut millésimé au caractère nuancé et persistant. Au premier plan : fruits blancs, pomme, poire. L’assemblage réunit Chardonnay. À privilégier avec poisson et fruits de mer, volaille et viandes blanches, fromages affinés.",
+        "choose": "Sa fraîcheur nette convient particulièrement à poisson et fruits de mer, volaille et viandes blanches, fromages affinés.",
         "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie fruits blancs et pomme."
       },
       "evidence": {
@@ -10085,7 +10503,7 @@
           "fruitiness": 4,
           "minerality": 2,
           "brioche": 1.8,
-          "gastronomic": 2.7,
+          "gastronomic": 3.3,
           "accessibility": 3.5
         },
         "aromas": [
@@ -10104,7 +10522,8 @@
         "pairings": [
           "accord_mer",
           "accord_dessert",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Poisson",
@@ -10171,7 +10590,7 @@
           "fruitiness": 3.3,
           "minerality": 2.5,
           "brioche": 1.8,
-          "gastronomic": 2.7,
+          "gastronomic": 3.3,
           "accessibility": 3
         },
         "aromas": [
@@ -10190,7 +10609,8 @@
         "pairings": [
           "accord_mer",
           "accord_dessert",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Poisson",
@@ -10268,22 +10688,25 @@
       "uses": {
         "occasions": [
           "occ_fete",
+          "occ_apero",
           "occ_diner",
           "occ_cadeau",
           "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
-          "accord_fromage"
+          "accord_fromage",
+          "accord_aperitif"
         ],
         "pairingLabels": [
           "Crustacés",
-          "Fromages"
+          "Fromages",
+          "Apéritif"
         ]
       },
       "editorial": {
-        "summary": "Un blanc de blancs extra-brut millésimé au caractère nuancé et persistant. Au premier plan : agrumes, fleurs blanches, brioche, minéralité. L’assemblage réunit Chardonnay. À privilégier avec crustacés, fromages.",
-        "choose": "Sa fraîcheur nette convient particulièrement à crustacés, fromages.",
+        "summary": "Un blanc de blancs extra-brut millésimé au caractère nuancé et persistant. Au premier plan : agrumes, fleurs blanches, brioche, minéralité. L’assemblage réunit Chardonnay. À privilégier avec crustacés, fromages, apéritif.",
+        "choose": "Sa fraîcheur nette convient particulièrement à crustacés, fromages, apéritif.",
         "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et fleurs blanches."
       },
       "evidence": {
@@ -10338,7 +10761,7 @@
           "fruitiness": 2.5,
           "minerality": 3.2,
           "brioche": 3.7,
-          "gastronomic": 3.2,
+          "gastronomic": 4.5,
           "accessibility": 2.5
         },
         "aromas": [
@@ -10351,19 +10774,26 @@
       "uses": {
         "occasions": [
           "occ_fete",
+          "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
-          "accord_mer"
+          "accord_mer",
+          "accord_volaille",
+          "accord_fromage",
+          "accord_aperitif"
         ],
         "pairingLabels": [
-          "Crustacés"
+          "Crustacés",
+          "Volaille et viandes blanches",
+          "Fromages affinés"
         ]
       },
       "editorial": {
-        "summary": "Un brut au caractère rond et généreux. Au premier plan : fruits blancs, miel, noisette, minéralité. L’assemblage réunit Chardonnay, Pinot Noir, Meunier. À privilégier avec crustacés.",
-        "choose": "Sa texture ample accompagne volontiers crustacés.",
+        "summary": "Un brut au caractère rond et généreux. Au premier plan : fruits blancs, miel, noisette, minéralité. L’assemblage réunit Chardonnay, Pinot Noir, Meunier. À privilégier avec crustacés, volaille et viandes blanches, fromages affinés.",
+        "choose": "Sa texture ample accompagne volontiers crustacés, volaille et viandes blanches, fromages affinés.",
         "avoid": "Écartez-la si vous recherchez une expression austère et tranchante : son profil privilégie l’ampleur."
       },
       "evidence": {
@@ -10417,7 +10847,7 @@
           "fruitiness": 2,
           "minerality": 2,
           "brioche": 2.4,
-          "gastronomic": 2.6,
+          "gastronomic": 4.5,
           "accessibility": 2
         },
         "aromas": []
@@ -10425,14 +10855,26 @@
       "uses": {
         "occasions": [
           "occ_fete",
-          "occ_cadeau"
+          "occ_apero",
+          "occ_diner",
+          "occ_cadeau",
+          "occ_romantique"
         ],
-        "pairings": [],
-        "pairingLabels": []
+        "pairings": [
+          "accord_mer",
+          "accord_volaille",
+          "accord_fromage",
+          "accord_aperitif"
+        ],
+        "pairingLabels": [
+          "Poisson et fruits de mer",
+          "Volaille et viandes blanches",
+          "Fromages affinés"
+        ]
       },
       "editorial": {
-        "summary": "Un brut au caractère nuancé et persistant. L’assemblage réunit Chardonnay, Pinot Noir. À privilégier avec l’apéritif et un repas léger.",
-        "choose": "Son équilibre permet de l’accorder avec l’apéritif et un repas léger.",
+        "summary": "Un brut au caractère nuancé et persistant. L’assemblage réunit Chardonnay, Pinot Noir. À privilégier avec poisson et fruits de mer, volaille et viandes blanches, fromages affinés.",
+        "choose": "Son équilibre permet de l’accorder avec poisson et fruits de mer, volaille et viandes blanches, fromages affinés.",
         "avoid": "Écartez-la si vous recherchez une bouteille très simple et immédiatement consensuelle : son profil demande davantage d’attention."
       },
       "evidence": {
@@ -10487,7 +10929,7 @@
           "fruitiness": 4.3,
           "minerality": 2,
           "brioche": 3.1,
-          "gastronomic": 2,
+          "gastronomic": 3.3,
           "accessibility": 3
         },
         "aromas": [
@@ -10502,14 +10944,25 @@
       "uses": {
         "occasions": [
           "occ_fete",
-          "occ_cadeau"
+          "occ_apero",
+          "occ_diner",
+          "occ_cadeau",
+          "occ_romantique"
         ],
-        "pairings": [],
-        "pairingLabels": []
+        "pairings": [
+          "accord_mer",
+          "accord_volaille",
+          "accord_aperitif"
+        ],
+        "pairingLabels": [
+          "Poisson et fruits de mer",
+          "Volaille et viandes blanches",
+          "Apéritif"
+        ]
       },
       "editorial": {
-        "summary": "Un brut au caractère frais et précis. Au premier plan : agrumes, pomme, poire, fleurs blanches. L’assemblage réunit Chardonnay, Pinot Noir, Meunier. À privilégier avec l’apéritif et un repas léger.",
-        "choose": "Sa fraîcheur nette convient particulièrement à l’apéritif et un repas léger.",
+        "summary": "Un brut au caractère frais et précis. Au premier plan : agrumes, pomme, poire, fleurs blanches. L’assemblage réunit Chardonnay, Pinot Noir, Meunier. À privilégier avec poisson et fruits de mer, volaille et viandes blanches, apéritif.",
+        "choose": "Sa fraîcheur nette convient particulièrement à poisson et fruits de mer, volaille et viandes blanches, apéritif.",
         "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et pomme."
       },
       "evidence": {
@@ -10564,7 +11017,7 @@
           "fruitiness": 2.8,
           "minerality": 2.5,
           "brioche": 1.8,
-          "gastronomic": 2.7,
+          "gastronomic": 3.3,
           "accessibility": 3
         },
         "aromas": [
@@ -10579,11 +11032,13 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -10648,7 +11103,7 @@
           "fruitiness": 4.3,
           "minerality": 2,
           "brioche": 3.7,
-          "gastronomic": 3.2,
+          "gastronomic": 4.5,
           "accessibility": 2
         },
         "aromas": [
@@ -10664,11 +11119,14 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille",
+          "accord_fromage"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -10734,7 +11192,7 @@
           "fruitiness": 3.5,
           "minerality": 2,
           "brioche": 4.9,
-          "gastronomic": 4.4,
+          "gastronomic": 5,
           "accessibility": 1
         },
         "aromas": [
@@ -10750,12 +11208,14 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
           "accord_fromage",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -10821,7 +11281,7 @@
           "fruitiness": 2.8,
           "minerality": 2,
           "brioche": 4.9,
-          "gastronomic": 3.8,
+          "gastronomic": 5,
           "accessibility": 1
         },
         "aromas": [
@@ -10837,11 +11297,14 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille",
+          "accord_fromage"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -10906,7 +11369,7 @@
           "fruitiness": 3.5,
           "minerality": 3.7,
           "brioche": 3.7,
-          "gastronomic": 3.2,
+          "gastronomic": 4.5,
           "accessibility": 2
         },
         "aromas": [
@@ -10924,11 +11387,14 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille",
+          "accord_fromage"
         ],
         "pairingLabels": [
           "Huîtres",
@@ -10993,7 +11459,7 @@
           "fruitiness": 2,
           "minerality": 2,
           "brioche": 2.4,
-          "gastronomic": 3.8,
+          "gastronomic": 5,
           "accessibility": 1
         },
         "aromas": [
@@ -11006,11 +11472,14 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille",
+          "accord_fromage"
         ],
         "pairingLabels": [
           "Huîtres",
@@ -11075,7 +11544,7 @@
           "fruitiness": 3.3,
           "minerality": 2,
           "brioche": 2.4,
-          "gastronomic": 3.1,
+          "gastronomic": 5,
           "accessibility": 2.5
         },
         "aromas": [
@@ -11086,19 +11555,27 @@
       "uses": {
         "occasions": [
           "occ_fete",
+          "occ_apero",
+          "occ_diner",
           "occ_cadeau",
           "occ_romantique"
         ],
         "pairings": [
-          "accord_dessert"
+          "accord_dessert",
+          "accord_mer",
+          "accord_volaille",
+          "accord_fromage",
+          "accord_aperitif"
         ],
         "pairingLabels": [
-          "Fruits rouges"
+          "Fruits rouges",
+          "Poisson et fruits de mer",
+          "Volaille et viandes blanches"
         ]
       },
       "editorial": {
-        "summary": "Un rosé brut au caractère rond et généreux. Au premier plan : fruits rouges, rose. L’assemblage réunit Chardonnay, Pinot Noir, Meunier. À privilégier avec fruits rouges.",
-        "choose": "Sa matière affirmée trouve sa place à table, notamment avec fruits rouges.",
+        "summary": "Un rosé brut au caractère rond et généreux. Au premier plan : fruits rouges, rose. L’assemblage réunit Chardonnay, Pinot Noir, Meunier. À privilégier avec fruits rouges, poisson et fruits de mer, volaille et viandes blanches.",
+        "choose": "Sa matière affirmée trouve sa place à table, notamment avec fruits rouges, poisson et fruits de mer, volaille et viandes blanches.",
         "avoid": "Écartez-la si vous recherchez une expression austère et tranchante : son profil privilégie l’ampleur."
       },
       "evidence": {
@@ -11153,7 +11630,7 @@
           "fruitiness": 2,
           "minerality": 2.5,
           "brioche": 1.8,
-          "gastronomic": 2,
+          "gastronomic": 3.3,
           "accessibility": 3
         },
         "aromas": [
@@ -11163,14 +11640,25 @@
       "uses": {
         "occasions": [
           "occ_fete",
-          "occ_cadeau"
+          "occ_apero",
+          "occ_diner",
+          "occ_cadeau",
+          "occ_romantique"
         ],
-        "pairings": [],
-        "pairingLabels": []
+        "pairings": [
+          "accord_mer",
+          "accord_volaille",
+          "accord_aperitif"
+        ],
+        "pairingLabels": [
+          "Poisson et fruits de mer",
+          "Volaille et viandes blanches",
+          "Apéritif"
+        ]
       },
       "editorial": {
-        "summary": "Un extra-brut au caractère frais et précis. Au premier plan : fleurs blanches. L’assemblage réunit Chardonnay, Pinot Noir, Meunier. À privilégier avec l’apéritif et un repas léger.",
-        "choose": "Sa fraîcheur nette convient particulièrement à l’apéritif et un repas léger.",
+        "summary": "Un extra-brut au caractère frais et précis. Au premier plan : fleurs blanches. L’assemblage réunit Chardonnay, Pinot Noir, Meunier. À privilégier avec poisson et fruits de mer, volaille et viandes blanches, apéritif.",
+        "choose": "Sa fraîcheur nette convient particulièrement à poisson et fruits de mer, volaille et viandes blanches, apéritif.",
         "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie fleurs blanches."
       },
       "evidence": {
@@ -11223,7 +11711,7 @@
           "fruitiness": 4.8,
           "minerality": 2,
           "brioche": 4.3,
-          "gastronomic": 2.6,
+          "gastronomic": 4.5,
           "accessibility": 3.5
         },
         "aromas": [
@@ -11239,14 +11727,26 @@
       "uses": {
         "occasions": [
           "occ_fete",
-          "occ_cadeau"
+          "occ_apero",
+          "occ_diner",
+          "occ_cadeau",
+          "occ_romantique"
         ],
-        "pairings": [],
-        "pairingLabels": []
+        "pairings": [
+          "accord_mer",
+          "accord_volaille",
+          "accord_fromage",
+          "accord_aperitif"
+        ],
+        "pairingLabels": [
+          "Poisson et fruits de mer",
+          "Volaille et viandes blanches",
+          "Fromages affinés"
+        ]
       },
       "editorial": {
-        "summary": "Un blanc de noirs brut au caractère vif et structuré. Au premier plan : pomme, pêche, fruits mûrs, fleurs blanches. L’assemblage réunit Pinot Noir. À privilégier avec l’apéritif et un repas léger.",
-        "choose": "Sa matière affirmée trouve sa place à table, notamment avec l’apéritif et un repas léger.",
+        "summary": "Un blanc de noirs brut au caractère vif et structuré. Au premier plan : pomme, pêche, fruits mûrs, fleurs blanches. L’assemblage réunit Pinot Noir. À privilégier avec poisson et fruits de mer, volaille et viandes blanches, fromages affinés.",
+        "choose": "Sa matière affirmée trouve sa place à table, notamment avec poisson et fruits de mer, volaille et viandes blanches, fromages affinés.",
         "avoid": "Écartez-la si vous recherchez une expression austère et tranchante : son profil privilégie l’ampleur."
       },
       "evidence": {
@@ -11299,7 +11799,7 @@
           "fruitiness": 2.8,
           "minerality": 2.5,
           "brioche": 3.1,
-          "gastronomic": 2.7,
+          "gastronomic": 3.3,
           "accessibility": 3
         },
         "aromas": [
@@ -11312,19 +11812,25 @@
       "uses": {
         "occasions": [
           "occ_fete",
+          "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
-          "accord_mer"
+          "accord_mer",
+          "accord_volaille",
+          "accord_aperitif"
         ],
         "pairingLabels": [
-          "Poisson"
+          "Poisson",
+          "Volaille et viandes blanches",
+          "Apéritif"
         ]
       },
       "editorial": {
-        "summary": "Un extra-brut au caractère frais et précis. Au premier plan : agrumes, fleurs blanches, brioche, fruits secs. L’assemblage réunit Meunier. À privilégier avec poisson.",
-        "choose": "Sa fraîcheur nette convient particulièrement à poisson.",
+        "summary": "Un extra-brut au caractère frais et précis. Au premier plan : agrumes, fleurs blanches, brioche, fruits secs. L’assemblage réunit Meunier. À privilégier avec poisson, volaille et viandes blanches, apéritif.",
+        "choose": "Sa fraîcheur nette convient particulièrement à poisson, volaille et viandes blanches, apéritif.",
         "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et fleurs blanches."
       },
       "evidence": {
@@ -11379,7 +11885,7 @@
           "fruitiness": 2.8,
           "minerality": 3.3,
           "brioche": 5,
-          "gastronomic": 2.6,
+          "gastronomic": 4.5,
           "accessibility": 2
         },
         "aromas": [
@@ -11395,19 +11901,25 @@
         "occasions": [
           "occ_fete",
           "occ_apero",
+          "occ_diner",
           "occ_cadeau",
           "occ_romantique"
         ],
         "pairings": [
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_mer",
+          "accord_volaille",
+          "accord_fromage"
         ],
         "pairingLabels": [
-          "Apéritif"
+          "Apéritif",
+          "Poisson et fruits de mer",
+          "Volaille et viandes blanches"
         ]
       },
       "editorial": {
-        "summary": "Un blanc de blancs extra-brut Grand Cru au caractère nuancé et persistant. Au premier plan : agrumes, fruits blancs, fleurs blanches, brioche. L’assemblage réunit Chardonnay. À privilégier avec apéritif.",
-        "choose": "Sa fraîcheur nette convient particulièrement à apéritif.",
+        "summary": "Un blanc de blancs extra-brut Grand Cru au caractère nuancé et persistant. Au premier plan : agrumes, fruits blancs, fleurs blanches, brioche. L’assemblage réunit Chardonnay. À privilégier avec apéritif, poisson et fruits de mer, volaille et viandes blanches.",
+        "choose": "Sa fraîcheur nette convient particulièrement à apéritif, poisson et fruits de mer, volaille et viandes blanches.",
         "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et fruits blancs."
       },
       "evidence": {
@@ -11462,7 +11974,7 @@
           "fruitiness": 4.3,
           "minerality": 4.5,
           "brioche": 2.4,
-          "gastronomic": 2.6,
+          "gastronomic": 4.5,
           "accessibility": 2
         },
         "aromas": [
@@ -11477,15 +11989,26 @@
       "uses": {
         "occasions": [
           "occ_fete",
+          "occ_apero",
+          "occ_diner",
           "occ_cadeau",
           "occ_romantique"
         ],
-        "pairings": [],
-        "pairingLabels": []
+        "pairings": [
+          "accord_mer",
+          "accord_volaille",
+          "accord_fromage",
+          "accord_aperitif"
+        ],
+        "pairingLabels": [
+          "Poisson et fruits de mer",
+          "Volaille et viandes blanches",
+          "Fromages affinés"
+        ]
       },
       "editorial": {
-        "summary": "Un blanc de blancs extra-brut Grand Cru au caractère nuancé et persistant. Au premier plan : agrumes, fruits blancs, pomme, poire. L’assemblage réunit Chardonnay. À privilégier avec l’apéritif et un repas léger.",
-        "choose": "Sa fraîcheur nette convient particulièrement à l’apéritif et un repas léger.",
+        "summary": "Un blanc de blancs extra-brut Grand Cru au caractère nuancé et persistant. Au premier plan : agrumes, fruits blancs, pomme, poire. L’assemblage réunit Chardonnay. À privilégier avec poisson et fruits de mer, volaille et viandes blanches, fromages affinés.",
+        "choose": "Sa fraîcheur nette convient particulièrement à poisson et fruits de mer, volaille et viandes blanches, fromages affinés.",
         "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et fruits blancs."
       },
       "evidence": {
@@ -11538,7 +12061,7 @@
           "fruitiness": 3.3,
           "minerality": 4,
           "brioche": 3.7,
-          "gastronomic": 3.9,
+          "gastronomic": 4.5,
           "accessibility": 3
         },
         "aromas": [
@@ -11560,7 +12083,8 @@
         "pairings": [
           "accord_mer",
           "accord_fromage",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -11623,7 +12147,7 @@
           "fruitiness": 4.8,
           "minerality": 2,
           "brioche": 3.1,
-          "gastronomic": 3.3,
+          "gastronomic": 4,
           "accessibility": 3.5
         },
         "aromas": [
@@ -11646,7 +12170,8 @@
           "accord_mer",
           "accord_fromage",
           "accord_dessert",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -11709,7 +12234,7 @@
           "fruitiness": 3.3,
           "minerality": 2,
           "brioche": 1.8,
-          "gastronomic": 3.9,
+          "gastronomic": 4.5,
           "accessibility": 3.5
         },
         "aromas": [
@@ -11722,13 +12247,15 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
           "accord_fromage",
           "accord_dessert",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -11792,7 +12319,7 @@
           "fruitiness": 3.3,
           "minerality": 4,
           "brioche": 3.7,
-          "gastronomic": 3.8,
+          "gastronomic": 5,
           "accessibility": 1.5
         },
         "aromas": [
@@ -11812,16 +12339,19 @@
         ],
         "pairings": [
           "accord_mer",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille",
+          "accord_fromage"
         ],
         "pairingLabels": [
           "Poisson",
-          "Apéritif"
+          "Apéritif",
+          "Volaille et viandes blanches"
         ]
       },
       "editorial": {
-        "summary": "Un blanc de blancs brut millésimé au caractère rond et généreux. Au premier plan : agrumes, fleurs blanches, amande, minéralité. L’assemblage réunit Chardonnay. À privilégier avec poisson, apéritif.",
-        "choose": "Sa texture ample accompagne volontiers poisson, apéritif.",
+        "summary": "Un blanc de blancs brut millésimé au caractère rond et généreux. Au premier plan : agrumes, fleurs blanches, amande, minéralité. L’assemblage réunit Chardonnay. À privilégier avec poisson, apéritif, volaille et viandes blanches.",
+        "choose": "Sa texture ample accompagne volontiers poisson, apéritif, volaille et viandes blanches.",
         "avoid": "Écartez-la si vous recherchez une expression austère et tranchante : son profil privilégie l’ampleur."
       },
       "evidence": {
@@ -11876,7 +12406,7 @@
           "fruitiness": 4,
           "minerality": 2,
           "brioche": 1.8,
-          "gastronomic": 3.3,
+          "gastronomic": 4,
           "accessibility": 3.5
         },
         "aromas": [
@@ -11891,12 +12421,14 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
           "accord_fromage",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -11961,7 +12493,7 @@
           "fruitiness": 4,
           "minerality": 2.5,
           "brioche": 1.8,
-          "gastronomic": 3.3,
+          "gastronomic": 4,
           "accessibility": 3
         },
         "aromas": [
@@ -11982,7 +12514,8 @@
           "accord_mer",
           "accord_fromage",
           "accord_dessert",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -12045,7 +12578,7 @@
           "fruitiness": 3.5,
           "minerality": 4,
           "brioche": 1.8,
-          "gastronomic": 3.3,
+          "gastronomic": 4,
           "accessibility": 3.5
         },
         "aromas": [
@@ -12066,7 +12599,8 @@
         "pairings": [
           "accord_mer",
           "accord_fromage",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Poisson",
@@ -12132,7 +12666,7 @@
           "fruitiness": 2.8,
           "minerality": 2,
           "brioche": 4.9,
-          "gastronomic": 3.9,
+          "gastronomic": 4.5,
           "accessibility": 2
         },
         "aromas": [
@@ -12149,12 +12683,14 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
           "accord_fromage",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -12306,7 +12842,7 @@
           "fruitiness": 4.3,
           "minerality": 3.2,
           "brioche": 3.7,
-          "gastronomic": 3.9,
+          "gastronomic": 4.5,
           "accessibility": 2
         },
         "aromas": [
@@ -12324,12 +12860,14 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
           "accord_fromage",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -12394,7 +12932,7 @@
           "fruitiness": 2.8,
           "minerality": 3.2,
           "brioche": 3.7,
-          "gastronomic": 3.9,
+          "gastronomic": 4.5,
           "accessibility": 2
         },
         "aromas": [
@@ -12411,12 +12949,14 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
           "accord_fromage",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille"
         ],
         "pairingLabels": [
           "Crustacés",
@@ -12481,7 +13021,7 @@
           "fruitiness": 4,
           "minerality": 2,
           "brioche": 5,
-          "gastronomic": 3.2,
+          "gastronomic": 4.5,
           "accessibility": 2.5
         },
         "aromas": [
@@ -12500,12 +13040,15 @@
           "occ_fete",
           "occ_apero",
           "occ_diner",
-          "occ_cadeau"
+          "occ_cadeau",
+          "occ_romantique"
         ],
         "pairings": [
           "accord_mer",
           "accord_dessert",
-          "accord_aperitif"
+          "accord_aperitif",
+          "accord_volaille",
+          "accord_fromage"
         ],
         "pairingLabels": [
           "Huîtres",

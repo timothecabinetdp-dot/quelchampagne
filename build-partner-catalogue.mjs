@@ -174,8 +174,8 @@ function recommendationFields(product, tags, scores, pairings){
   const occ=['occ_fete'];
   if(pairings.some(item=>item.token==='accord_aperitif') || product.price<60) occ.push('occ_apero');
   if(pairings.some(item=>['accord_mer','accord_volaille','accord_fromage'].includes(item.token))) occ.push('occ_diner');
-  if(product.price>=45 || WELL_KNOWN.has(product.brand) || tags.includes('Millésimé')) occ.push('occ_cadeau');
-  if(tags.includes('Rosé') || scores.power<=2) occ.push('occ_romantique');
+  occ.push('occ_cadeau'); // tout champagne peut être offert : le budget et le registre du cadeau affinent ensuite
+  if(tags.includes('Rosé') || tags.includes('Blanc de blancs') || scores.power<=3 || scores.freshness>=3) occ.push('occ_romantique');
 
   return {profil:unique(profil),occ:unique(occ)};
 }
@@ -235,6 +235,15 @@ export function buildPartnerCatalogue(){
     const aromas=findValues(searchText,AROMAS);
     const pairings=PAIRINGS.filter(([,expression])=>has(searchText,expression)).map(([label,,token])=>({label,token}));
     const scores=profileScores(source,tags,aromas);
+    // Accords dérivés du style (fiables), en complément du texte marchand souvent lacunaire.
+    // Un champagne se marie selon sa structure, pas seulement selon ce que le vendeur a écrit.
+    const styleAccords=[];
+    if((scores.freshness||3)>=3 || tags.includes('Blanc de blancs') || tags.includes('Extra-brut / nature')) styleAccords.push(['poisson et fruits de mer','accord_mer']);
+    if((scores.power||3)>=3 || (scores.roundness||3)>=3 || tags.includes('Blanc de noirs') || tags.includes('Rosé')) styleAccords.push(['volaille et viandes blanches','accord_volaille']);
+    if((scores.complexity||3)>=4 || (scores.power||3)>=4) styleAccords.push(['fromages affinés','accord_fromage']);
+    if(tags.includes('Rosé') || tags.includes('Demi-sec')) styleAccords.push(['desserts fruités','accord_dessert']);
+    styleAccords.push(['apéritif','accord_aperitif']);
+    for(const [label,token] of styleAccords){ if(!pairings.some(item=>item.token===token)) pairings.push({label,token}); }
     const rec=recommendationFields(source,tags,scores,pairings);
     const text=specificText(source,tags,grapes,aromas,pairings,scores);
     const id=initialId;
