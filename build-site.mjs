@@ -801,23 +801,30 @@ function articleMain(a){
 function methodMain(){
   return `<section class="article"><div class="narrow">
     <div class="a-cat">Comment nous travaillons</div><h1 class="a-title">Notre méthode</h1>
-    <p class="qhint">Des données précises, une analyse commune à toutes les cuvées et des prix datés.</p>
+    <p class="qhint">Une grille d’analyse œnologique commune à chaque cuvée, des faits vérifiés source par source, et une recommandation expliquée. Sans classement acheté.</p>
     <div class="a-cover" style="background-image:linear-gradient(90deg,rgba(18,14,9,.16),rgba(18,14,9,.04)),url('https://images.unsplash.com/photo-1635715070096-b4655b94edee?q=82&w=1600&auto=format&fit=crop');background-size:cover;background-position:center"></div>
     <div class="prose">
-      <h3>1. Identifier la bouteille exacte</h3>
-      <p>Maison, cuvée, millésime, format et catégorie forment l’identité du produit. Cette identité relie la fiche technique, la photographie et l’offre du marchand sans mélanger deux éditions proches.</p>
-      <h3>2. Lire le style avec la même grille</h3>
-      <p>Fraîcheur, rondeur, puissance, cépages, dosage, arômes et accords composent une grille commune à tout le catalogue. Elle permet de comparer une grande maison et un vigneron sur des critères identiques.</p>
-      <h3>3. Recommander selon votre usage</h3>
-      <p>Le sélecteur croise le moment, l’accord, le style, le budget et votre préférence entre maison, vigneron ou dosage très faible. Le résultat expose les raisons du choix et propose trois alternatives proches.</p>
-      <h3>4. Dater chaque offre</h3>
-      <p>Le prix affiché correspond à la bouteille et au format présentés sur la fiche. Sa date de relevé apparaît près du bouton d’achat afin de distinguer l’analyse durable de l’offre commerciale du jour.</p>
-      <h3>5. Séparer conseil et rémunération</h3>
-      <p>Le marchand rémunère QuelChampagne lorsqu’un achat suit un lien partenaire. Cette rémunération ne modifie ni les critères du sélecteur ni l’ordre des recommandations.</p>
+      <h3>Une grille commune, celle de la dégustation professionnelle</h3>
+      <p>Nous analysons toutes les bouteilles avec les mêmes critères : le terroir et les cépages, la vinification et l’élevage, le dosage, puis l’équilibre en bouche. Appliquée à l’identique à une grande maison comme à un vigneron, cette grille rend les cuvées réellement comparables et chaque recommandation explicable.</p>
+      <h3>Terroir et cépages</h3>
+      <p>La Champagne repose sur trois grands terroirs : la Montagne de Reims, où le pinot noir apporte structure et vinosité ; la Côte des Blancs, domaine du chardonnay, tout en fraîcheur, minéralité et finesse ; la Vallée de la Marne, terre de prédilection du meunier, plus fruité et souple. Sept cépages sont autorisés, mais ces trois représentent plus de 99 % du vignoble ; l’arbane, le petit meslier, le pinot blanc et le pinot gris restent confidentiels. Un blanc de blancs provient de raisins blancs (chardonnay), un blanc de noirs de raisins noirs (pinot noir, meunier). Nous rattachons chaque cuvée à ses cépages pour anticiper son profil.</p>
+      <h3>Vinification et élevage sur lies</h3>
+      <p>Le champagne naît d’une seconde fermentation en bouteille, la prise de mousse, qui crée l’effervescence : c’est la méthode traditionnelle. Le vin repose ensuite sur ses lies ; les levures se décomposent (autolyse) et libèrent les composés responsables des notes de brioche, de viennoiserie et de fruits secs, tout en arrondissant la texture. La réglementation impose au minimum quinze mois d’élevage pour un brut sans année (dont douze après la prise de mousse) et trois ans pour un millésime ; les meilleures cuvées vont bien au-delà. La part de vins de réserve, assemblés aux vins de l’année, assure la constance d’un style. Nous tenons compte de la durée d’élevage annoncée plutôt que de la seule étiquette.</p>
+      <h3>Le dosage</h3>
+      <p>Juste avant le bouchage, une liqueur d’expédition ajuste le sucre. Les catégories sont précises : brut nature (moins de 3 g/L, sans sucre ajouté), extra-brut (0 à 6), brut (moins de 12), extra-dry (12 à 17), sec (17 à 32), demi-sec (32 à 50) et doux (plus de 50). Le chiffre ne suffit pourtant pas : un brut à forte acidité paraîtra plus sec qu’un extra-brut issu de raisins mûrs. Nous lisons donc toujours le dosage avec l’acidité, la maturité et l’élevage, et nous ne l’affichons comme fait que lorsqu’il est sourcé.</p>
+      <h3>Crus : ce que Grand Cru et Premier Cru garantissent vraiment</h3>
+      <p>L’échelle des crus, établie en 1919, classait les communes selon la qualité de leurs raisins : dix-sept villages atteignent 100 % et portent la mention Grand Cru, une quarantaine se situent entre 90 et 99 % en Premier Cru. Abandonnée en 2004 pour la fixation des prix, elle demeure une référence de terroir. Une nuance essentielle : la mention qualifie le village, pas la cuvée. Un vigneron talentueux sur un Premier Cru peut surpasser une cuvée générique de Grand Cru. Nous la traitons comme un indice, jamais comme une garantie.</p>
+      <h3>Le profil sensoriel : quatre axes lisibles</h3>
+      <p>Après l’œil (robe, finesse et persistance de la bulle) et le nez (agrumes, fruits blancs, fruits rouges, fleurs, brioche, notes grillées), nous résumons la bouche sur quatre axes : la fraîcheur (tension, acidité), la rondeur (fruit, souplesse), la puissance (corps, matière) et la longueur (persistance en finale). Ces repères, communs à tout le catalogue, traduisent l’équilibre d’une cuvée en langage clair et guident l’accord.</p>
+      <h3>Recommander la bonne bouteille</h3>
+      <p>Le sélecteur croise cinq critères en adaptant les questions à votre intention : le moment, l’accord ou le destinataire, le style, le budget et la signature. Le budget est une contrainte ferme : nous ne proposons que des bouteilles de votre tranche. L’accord suit les principes œnologiques (une cuvée tendue et minérale sur les fruits de mer, une cuvée vineuse et structurée sur une volaille, un rosé ou un demi-sec sur un dessert fruité). Chaque résultat explique les raisons du choix et propose des alternatives cohérentes.</p>
+      <h3>Des faits vérifiés, séparés de l’offre</h3>
+      <p>Nous distinguons toujours le fait sourcé de l’interprétation. Chaque donnée technique publiée est rattachée à sa source, en privilégiant l’information officielle du producteur ; à défaut, elle est signalée comme issue du flux marchand, et jamais inventée. Le prix affiché correspond à la bouteille et au format exacts, avec sa date de relevé, pour ne pas confondre l’analyse durable et l’offre commerciale du jour.</p>
+      <h3>Indépendance</h3>
+      <p>Aucune maison ne paie pour remonter dans nos sélections. Lorsqu’un achat suit un lien partenaire, nous pouvons percevoir une commission, sans surcoût pour vous et sans influence sur les critères ni sur l’ordre des recommandations. Le conseil et la rémunération restent strictement séparés.</p>
     </div>
   </div></section>`;
 }
-
 function aboutMain(){
   return `<section class="article"><div class="narrow">
     <div class="a-cat">À propos</div><h1 class="a-title">Choisir un champagne sans subir le classement d’un caviste</h1>
@@ -877,7 +884,7 @@ function legalMain(){
       <h3>Éditeur du site</h3>
       <p>Le site <strong>quelchampagne.fr</strong> est édité par <strong>CORTEXIA</strong>, société par actions simplifiée (SAS) au capital de 1 000 €.<br>Siège social : 59 rue de Ponthieu, 75008 Paris.<br>SIREN : 107 124 000, RCS Paris 107 124 000.<br>N° TVA intracommunautaire : FR51107124000.<br>Directeur de la publication : Timothée Michel, président.<br>Contact : <a href="mailto:contact@quelchampagne.fr">contact@quelchampagne.fr</a></p>
       <h3>Hébergement</h3>
-      <p>Le site est hébergé par <strong>Cloudflare, Inc.</strong>, 101 Townsend Street, San Francisco, CA 94107, États-Unis, www.cloudflare.com.</p>
+      <p>Le site est hébergé par <strong>Cloudflare, Inc.</strong>, 101 Townsend Street, San Francisco, CA 94107, États-Unis. Téléphone : +1 650 319 8930. Site : www.cloudflare.com.</p>
       <h3>Contenu et propriété intellectuelle</h3>
       <p>Les textes, données structurées et visuels originaux de QuelChampagne ne peuvent pas être réutilisés sans autorisation. Les marques citées appartiennent à leurs titulaires respectifs. Leur citation sert uniquement à identifier les cuvées présentées.</p>
       <h3>Information et responsabilité</h3>
