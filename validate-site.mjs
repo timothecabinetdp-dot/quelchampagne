@@ -103,7 +103,7 @@ for (const productId of deepReviewIds) {
   if (product.verifiedAt !== '2026-07-31') errors.push(`Date du contrôle approfondi incorrecte : ${productId}.`);
 }
 const bardiau = PARTNER_CATALOGUE.find(product => product.id === 'bardiau-cuvee-preface-extra-brut');
-if (!bardiau || bardiau.name !== 'Préface Brut Sans Année' || bardiau.tags.includes('Extra-brut / nature')) {
+if (!bardiau || bardiau.name !== 'Préface Brut Sans Année' || bardiau.tags.includes('Extra-brut') || bardiau.tags.includes('Brut nature')) {
   errors.push('La correction officielle de Préface Brut Sans Année est absente.');
 }
 for (const [productId, year] of [
@@ -338,7 +338,7 @@ if (!lowDosage) {
   const budget = lowDosage.price < 40 ? 'b1' : lowDosage.price < 60 ? 'b2' : lowDosage.price < 100 ? 'b3' : 'b4';
   const answers = { occasion: [lowDosage.occ[0]], accord: [lowDosage.accords[0]||'accord_any'], gout: [lowDosage.profil[0]], budget: [budget], repere: ['low_dosage'] };
   const preferredScore = quiz.score(lowDosage, answers);
-  const mismatchedScore = quiz.score({ ...lowDosage, tags:lowDosage.tags.filter(tag=>tag!=='Extra-brut / nature'), details:{...lowDosage.details,dosage:null} }, answers);
+  const mismatchedScore = quiz.score({ ...lowDosage, tags:lowDosage.tags.filter(tag=>tag!=='Extra-brut' && tag!=='Brut nature'), details:{...lowDosage.details,dosage:null} }, answers);
   if (Math.round(preferredScore - mismatchedScore) !== 17) errors.push('Le critère faible dosage ne produit pas le bonus attendu.');
 }
 

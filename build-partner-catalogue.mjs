@@ -99,15 +99,33 @@ function correctedTags(product){
     if(index>=0) tags.splice(index,1);
     if(!tags.includes('Brut')) tags.unshift('Brut');
   }
-  if(product.brand==='Drappier' && !tags.includes('Extra-brut / nature')) tags.push('Extra-brut / nature');
-  if(/\bzero\b/i.test(text) && !tags.includes('Extra-brut / nature')) tags.push('Extra-brut / nature');
-  if(tags.includes('Extra-brut / nature')){
+  // On tranche clairement entre extra-brut et brut nature d'après le libellé réel de la cuvée,
+  // au lieu de l'étiquette floue « Extra-brut / nature » qui donnait une impression d'hésitation.
+  const slashIndex=tags.indexOf('Extra-brut / nature');
+  if(slashIndex>=0) tags.splice(slashIndex,1);
+  const wasLowDosage=slashIndex>=0;
+  const isExtraBrut=/extra[ -]?brut/i.test(text);
+  const isNature=/\bbrut nature\b|dosage z[ée]ro|z[ée]ro dosage|non dos[ée]|pas dos[ée]|sans dosage|\bbrut z[ée]ro\b|\bnature\b|\bzero\b/i.test(text);
+  if(isExtraBrut || isNature || wasLowDosage){
+    const label=isExtraBrut ? 'Extra-brut' : isNature ? 'Brut nature' : 'Extra-brut';
+    if(!tags.includes(label)) tags.push(label);
     const brutIndex=tags.indexOf('Brut');
     if(brutIndex>=0) tags.splice(brutIndex,1);
   }
   if(/grand cru/i.test(text) && !tags.includes('Grand Cru')) tags.push('Grand Cru');
   if(/(?:premier cru|1er cru)/i.test(text) && !tags.includes('Premier Cru')) tags.push('Premier Cru');
   return unique(tags);
+}
+function isLowDosageTags(tags){ return tags.includes('Extra-brut') || tags.includes('Brut nature'); }
+// Filet de sécurité : quelle que soit la source des tags (overrides inclus), on ne laisse jamais
+// passer le libellé flou « Extra-brut / nature » ; on tranche d'après le nom réel de la cuvée.
+function normalizeDosageTags(tags, product){
+  if(!tags.includes('Extra-brut / nature')) return tags;
+  const out=tags.filter(t=>t!=='Extra-brut / nature');
+  const text=`${product.name} ${product.liveTitle||''}`.toLowerCase();
+  const label=/extra[ -]?brut/i.test(text) ? 'Extra-brut' : /nature|z[ée]ro/i.test(text) ? 'Brut nature' : 'Extra-brut';
+  if(!out.includes(label)) out.push(label);
+  return out;
 }
 
 function findValues(text, definitions){
@@ -117,7 +135,7 @@ function findValues(text, definitions){
 function profileScores(product, tags, aromas){
   const text=`${product.name} ${product.merchantDescription}`.toLowerCase();
   let freshness=3, roundness=3, power=3, complexity=3;
-  if(tags.includes('Extra-brut / nature')){ freshness+=2; roundness-=1; }
+  if(isLowDosageTags(tags)){ freshness+=2; roundness-=1; }
   if(tags.includes('Blanc de blancs')){ freshness+=1; power-=1; }
   if(tags.includes('Blanc de noirs')){ roundness+=1; power+=1; }
   if(tags.includes('Rosé')){ roundness+=1; }
@@ -151,11 +169,13 @@ function styleLabel(tags, productName=''){
       : tags.includes('Blanc de noirs')
         ? 'blanc de noirs'
         : '';
-  const dosage=tags.includes('Extra-brut / nature')
-    ? /nature|zéro|zero/i.test(productName) ? 'brut nature' : 'extra-brut'
-    : tags.includes('Demi-sec')
-      ? 'demi-sec'
-      : 'brut';
+  const dosage=tags.includes('Brut nature')
+    ? 'brut nature'
+    : tags.includes('Extra-brut')
+      ? 'extra-brut'
+      : tags.includes('Demi-sec')
+        ? 'demi-sec'
+        : 'brut';
   descriptors.push([colour,dosage].filter(Boolean).join(' '));
   if(tags.includes('Grand Cru')) descriptors.push('Grand Cru');
   else if(tags.includes('Premier Cru')) descriptors.push('Premier Cru');
@@ -174,8 +194,8 @@ function recommendationFields(product, tags, scores, pairings){
   const occ=['occ_fete'];
   if(pairings.some(item=>item.token==='accord_aperitif') || product.price<60) occ.push('occ_apero');
   if(pairings.some(item=>['accord_mer','accord_volaille','accord_fromage'].includes(item.token))) occ.push('occ_diner');
-  if(product.price>=45 || WELL_KNOWN.has(product.brand) || tags.includes('Millésimé')) occ.push('occ_cadeau');
-  if(tags.includes('Rosé') || scores.power<=2) occ.push('occ_romantique');
+  occ.push('occ_cadeau'); // tout champagne peut être offert : le budget et le registre du cadeau affinent ensuite
+  if(tags.includes('Rosé') || tags.includes('Blanc de blancs') || scores.power<=3 || scores.freshness>=3) occ.push('occ_romantique');
 
   return {profil:unique(profil),occ:unique(occ)};
 }
@@ -228,13 +248,22 @@ export function buildPartnerCatalogue(){
     const evidence=evidenceRegistry.records[initialId] || {};
     const brand=evidence.publicBrand || initialBrand;
     const normalized={...source,brand};
-    const tags=evidence.tags || correctedTags(source);
+    const tags=normalizeDosageTags(evidence.tags || correctedTags(source), source);
     const technicalText=Object.values(source.technicalData || {}).join(' ');
     const searchText=`${source.name} ${source.liveTitle} ${source.merchantTags.join(' ')} ${source.merchantDescription} ${technicalText}`;
     const grapes=evidence.grapes || findValues(searchText,GRAPES);
     const aromas=findValues(searchText,AROMAS);
     const pairings=PAIRINGS.filter(([,expression])=>has(searchText,expression)).map(([label,,token])=>({label,token}));
     const scores=profileScores(source,tags,aromas);
+    // Accords dérivés du style (fiables), en complément du texte marchand souvent lacunaire.
+    // Un champagne se marie selon sa structure, pas seulement selon ce que le vendeur a écrit.
+    const styleAccords=[];
+    if((scores.freshness||3)>=3 || tags.includes('Blanc de blancs') || isLowDosageTags(tags)) styleAccords.push(['poisson et fruits de mer','accord_mer']);
+    if((scores.power||3)>=3 || (scores.roundness||3)>=3 || tags.includes('Blanc de noirs') || tags.includes('Rosé')) styleAccords.push(['volaille et viandes blanches','accord_volaille']);
+    if((scores.complexity||3)>=4 || (scores.power||3)>=4) styleAccords.push(['fromages affinés','accord_fromage']);
+    if(tags.includes('Rosé') || tags.includes('Demi-sec')) styleAccords.push(['desserts fruités','accord_dessert']);
+    styleAccords.push(['apéritif','accord_aperitif']);
+    for(const [label,token] of styleAccords){ if(!pairings.some(item=>item.token===token)) pairings.push({label,token}); }
     const rec=recommendationFields(source,tags,scores,pairings);
     const text=specificText(source,tags,grapes,aromas,pairings,scores);
     const id=initialId;

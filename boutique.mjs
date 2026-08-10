@@ -5,7 +5,7 @@ export const CHAMPAGNES = [{"id":"shopify_FR_42716336685273","brand":"Jean De La
 
 const EUR = n => (Math.round(n*100)/100).toLocaleString('fr-FR',{minimumFractionDigits:2,maximumFractionDigits:2}) + ' €';
 
-const STYLES = ['Blanc de blancs','Rosé','Extra-brut / nature','Millésimé','Grand Cru'];
+const STYLES = ['Blanc de blancs','Rosé','Extra-brut','Brut nature','Millésimé','Grand Cru'];
 
 const esc = value => String(value ?? '')
   .replaceAll('&','&amp;')
@@ -78,7 +78,7 @@ export function boutiqueAnalysis(p){
     occasions=['Apéritif', 'Fruits de mer', 'Cadeau'];
     gauges={fraicheur:5,rondeur:2,puissance:2,accessibilite:4};
   } else if(isNature){
-    style='Extra-brut / nature';
+    style=(text.includes('nature')||text.includes('zero'))&&!(text.includes('extra-brut')||text.includes('extra brut')) ? 'Brut nature' : 'Extra-brut';
     expected='sec, direct et tendu';
     summary='Une cuvée peu dosée, destinée aux amateurs de champagnes secs et précis plutôt qu’à ceux qui recherchent d’abord la rondeur.';
     choose='vous appréciez les champagnes secs, droits et peu marqués par la liqueur de dosage.';
@@ -103,7 +103,7 @@ function card(p){
   const old = '';
   const tags = p.tags.map(t=>`<span class="bq-tag">${t}</span>`).join('');
   const key = p.tags.join('|').toLowerCase();
-  const visualLabel=p.tags.includes('Rosé')?'Rosé':p.tags.includes('Blanc de blancs')?'Blanc de blancs':p.tags.includes('Blanc de noirs')?'Blanc de noirs':p.tags.includes('Extra-brut / nature')?'Très sec':'Brut';
+  const visualLabel=p.tags.includes('Rosé')?'Rosé':p.tags.includes('Blanc de blancs')?'Blanc de blancs':p.tags.includes('Blanc de noirs')?'Blanc de noirs':p.tags.includes('Brut nature')?'Brut nature':p.tags.includes('Extra-brut')?'Extra-brut':'Brut';
   const internalUrl = `/champagne/${p.id && !String(p.id).startsWith('shopify_') ? p.id : boutiqueSlug(p)}/`;
   const haystack = `${p.brand} ${p.name} ${p.tags.join(' ')}`.toLowerCase().replaceAll('"','&quot;');
   return `<article class="bq-card" data-style="${key}" data-price="${p.price}" data-search="${haystack}">

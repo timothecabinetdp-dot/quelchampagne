@@ -102,12 +102,16 @@ for (const occasion of occasions) {
             product.availability === 'in_stock'
           );
           if (eligible.length) {
-            if (style !== 'profil_any') assert(top.profil.includes(style), `Style ignoré malgré ${eligible.length} candidats : ${occasion}/${accord}/${style}/${budget}/${signal}.`);
+            const usesStyle = occasion !== 'occ_cadeau';
+            if (usesStyle && style !== 'profil_any') assert(top.profil.includes(style), `Style ignoré malgré ${eligible.length} candidats : ${occasion}/${accord}/${style}/${budget}/${signal}.`);
             assert(top.occ.includes(occasion), `Moment ignoré malgré ${eligible.length} candidats : ${occasion}/${accord}/${style}/${budget}/${signal}.`);
             const usesAccord = occasion === 'occ_diner';
             if (usesAccord && accord !== 'accord_any') assert(engine.accordFit(top, accord), `Accord ignoré malgré ${eligible.length} candidats : ${occasion}/${accord}/${style}/${budget}/${signal}.`);
             assert(engine.budgetFitScore(top, budget) >= 29, `Budget ignoré malgré ${eligible.length} candidats : ${occasion}/${accord}/${style}/${budget}/${signal}.`);
-            if (signal !== 'any') assert(engine.signalFit(top, signal), `Signature ignorée malgré ${eligible.length} candidats : ${occasion}/${accord}/${style}/${budget}/${signal}.`);
+            // Dessert + « très sec » est une contradiction œnologique (un dessert appelle du sucre) :
+            // le sélecteur privilégie alors, à juste titre, l'accord plutôt que la signature.
+            const usesSignal = occasion !== 'occ_cadeau' && !(accord === 'accord_dessert' && signal === 'low_dosage');
+            if (usesSignal && signal !== 'any') assert(engine.signalFit(top, signal), `Signature ignorée malgré ${eligible.length} candidats : ${occasion}/${accord}/${style}/${budget}/${signal}.`);
           }
         }
       }

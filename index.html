@@ -820,7 +820,7 @@ function questions(){
       opts:[
         {e:'01', tags:['maison'], l:"Une maison reconnue", d:"Une signature lisible et rassurante"},
         {e:'02', tags:['vigneron'], l:"Un champagne de vigneron", d:"Une bouteille plus personnelle à découvrir"},
-        {e:'03', tags:['low_dosage'], l:"Un style très sec", d:"Extra-brut ou brut nature"},
+        {e:'03', tags:['low_dosage'], l:"Un style très sec", d:"Le dosage le plus bas, sans rondeur sucrée"},
         {e:'04', tags:['any'], l:"Je vous laisse choisir", d:"La cohérence avec mes autres réponses prime"},
       ]},
   ];
@@ -833,6 +833,14 @@ function branchQ2(occasion){
   if(occasion==='occ_apero') return aperitifQuestion();
   if(occasion==='occ_romantique') return duoQuestion();
   return null; // occ_diner : parcours par défaut avec la question des accords
+}
+function branchQ3(occasion){
+  if(occasion==='occ_cadeau') return giftColorQuestion();
+  return null; // les autres parcours gardent la question de la sensation recherchée
+}
+function branchQ5(occasion){
+  if(occasion==='occ_cadeau') return giftFinalQuestion();
+  return null; // les autres parcours gardent la question de la signature
 }
 function giftQuestion(){
   return { id:'destinataire', label:"02 · Le destinataire", q:"À qui l’offrez-vous ?", hint:"On adapte le style et la signature au profil du destinataire.",
@@ -868,6 +876,22 @@ function duoQuestion(){
       {e:'02', tags:['duo_diner'], l:"Un dîner gastronomique", d:"Une cuvée avec de la matière, pour la table"},
       {e:'03', tags:['duo_celebration'], l:"Fêter quelque chose", d:"Une bouteille marquante, souvent rosée"},
       {e:'04', tags:['duo_verre'], l:"Juste un verre ensemble", d:"Tout en rondeur et en délicatesse"},
+    ]};
+}
+function giftColorQuestion(){
+  return { id:'couleur', label:"03 · La couleur", q:"Une préférence de couleur ?", hint:"Un repère simple et sûr quand on offre : pas besoin de deviner un goût précis.",
+    opts:[
+      {e:'01', tags:['couleur_blanc'], l:"Un champagne blanc", d:"La valeur sûre, la plus polyvalente"},
+      {e:'02', tags:['couleur_rose'], l:"Un rosé", d:"Plus original et festif, joli à offrir"},
+      {e:'03', tags:['couleur_any'], l:"Peu importe", d:"On choisit selon vos autres réponses"},
+    ]};
+}
+function giftFinalQuestion(){
+  return { id:'registre', label:"05 · L’occasion", q:"Pour quelle occasion l’offrez-vous ?", hint:"On ajuste le registre de la bouteille à l’importance du moment.",
+    opts:[
+      {e:'01', tags:['reg_grande'], l:"Une grande occasion", d:"Un événement qui compte : une cuvée à la hauteur"},
+      {e:'02', tags:['reg_ceremonie'], l:"Un remerciement", d:"Une attention soignée, une valeur sûre reconnue"},
+      {e:'03', tags:['reg_plaisir'], l:"Juste pour faire plaisir", d:"Sans occasion précise : le meilleur rapport plaisir-prix"},
     ]};
 }
 
@@ -1349,7 +1373,7 @@ function articles(){
 
     { id:'blanc-blancs', cat:'Décryptage', cover:'linear-gradient(135deg,#ECEEE9,#E1E5DB)', date:'Juillet 2026', read:'4 min',
       title:"Blanc de Blancs ou Blanc de Noirs ?",
-      excerpt:"Deux mots, deux mondes. On démêle les cépages et leurs styles.",
+      excerpt:"Blanc de blancs ou blanc de noirs ? On démêle les cépages, les styles et les accords pour choisir sa cuvée en connaissance de cause.",
       body:`<p>Sur une étiquette de champagne, ces deux mentions racontent le cépage utilisé, et donc le style dans votre verre. Voici comment les distinguer.</p>
 <h3>Blanc de Blancs : la fraîcheur</h3>
 <p>« Blanc de Blancs » signifie un champagne issu uniquement de raisins blancs, soit du <strong>chardonnay</strong> en Champagne. Résultat : des cuvées vives, florales, minérales, tout en finesse. Le <a href="#" onclick="return openAff('ruinart')">Ruinart Blanc de Blancs</a> en est l'exemple emblématique. Idéal à l'apéritif et sur les fruits de mer.</p>
@@ -1363,7 +1387,7 @@ function articles(){
 
     { id:'servir', cat:'Pratique', cover:'linear-gradient(135deg,#F0ECE6,#E6E0D5)', date:'Juillet 2026', read:'4 min',
       title:"Température, verre, ouverture : servir le champagne",
-      excerpt:"Les gestes simples qui subliment, ou gâchent, une belle bouteille.",
+      excerpt:"Température, verre, ouverture : les gestes simples qui subliment une belle bouteille de champagne, et les erreurs qui la gâchent.",
       body:`<p>Un grand champagne mal servi perd la moitié de son charme. Trois gestes suffisent à bien faire les choses.</p>
 <h3>La température</h3>
 <p>Servez entre <strong>8 et 10 °C</strong>, pas plus froid : trop glacé, le champagne s'anesthésie et perd ses arômes. Comptez trois heures au réfrigérateur, ou vingt minutes dans un seau rempli à moitié d'eau et de glace, plus efficace qu'au congélateur.</p>
@@ -1377,7 +1401,7 @@ function articles(){
 
     { id:'noel', cat:'Guide', cover:'linear-gradient(135deg,#F3ECE8,#E8DAD2)', date:'Juillet 2026', read:'5 min',
       title:"Quel champagne pour Noël et les fêtes",
-      excerpt:"Apéritif, repas, minuit : le bon champagne pour chaque moment des fêtes.",
+      excerpt:"Quel champagne pour Noël et les fêtes ? De l'apéritif au dessert jusqu'au toast de minuit, le bon choix pour chaque moment.",
       body:`<p>Les fêtes, c'est le grand moment du champagne. Mais entre l'apéritif, le repas et le passage à minuit, un seul flacon ne fait pas tout. Voici comment couvrir la soirée sans faute de goût.</p>
 <h3>Pour l'apéritif</h3>
 <p>Ouvrez sur un champagne <strong>frais et vif</strong> qui met en appétit : un brut d'assemblage ou un blanc de blancs. Il lance la soirée sans écraser les papilles avant le repas.</p>
@@ -1409,7 +1433,7 @@ function articles(){
 
     { id:'aperitif', cat:'Guide', cover:'linear-gradient(135deg,#F2EFE7,#E8E1D0)', date:'Juillet 2026', read:'4 min',
       title:"Quel champagne pour un apéritif",
-      excerpt:"Vif, léger, convivial : le bon champagne pour lancer la soirée sans se tromper.",
+      excerpt:"Vif, léger et convivial : quel champagne servir à l'apéritif pour lancer la soirée sans se tromper, selon vos invités et vos bouchées.",
       body:`<p>À l'apéritif, le champagne doit ouvrir l'appétit sans dominer. On cherche la fraîcheur et la vivacité, pas la puissance. Voici comment viser juste, et avec quoi le servir.</p>
 <h3>Le bon style</h3>
 <p>Privilégiez un champagne frais et fruité : un brut d'assemblage ou un blanc de blancs, tout en tension et en agrumes. On évite à ce stade les cuvées très vineuses, davantage à leur place à table.</p>
@@ -1433,7 +1457,7 @@ function articles(){
 
     { id:'huitres', cat:'Accords', cover:'linear-gradient(135deg,#EAEEEC,#DDE6E0)', date:'Juillet 2026', read:'4 min',
       title:"Quel champagne avec des huîtres et des fruits de mer",
-      excerpt:"L'accord iodé par excellence : le style qui sublime coquillages et crustacés.",
+      excerpt:"Champagne et huîtres : l'accord iodé par excellence. Le style de cuvée qui sublime coquillages et crustacés, et ceux à éviter.",
       body:`<p>Huîtres, coquillages, crustacés : peu d'accords sont aussi naturels que celui du champagne et de la mer. Encore faut-il le bon style.</p>
 <h3>Cap sur la minéralité</h3>
 <p>Pour les huîtres, on veut un champagne <strong>vif, tendu et minéral</strong> : un blanc de blancs 100 % chardonnay est l'accord roi. Sa fraîcheur saline prolonge l'iode sans l'écraser. Le <a href="#" onclick="return openAff('ruinart')">Ruinart Blanc de Blancs</a> est une référence.</p>
@@ -1447,7 +1471,7 @@ function articles(){
 
     { id:'anniversaire', cat:'Guide', cover:'linear-gradient(135deg,#F3ECE9,#E9DBD6)', date:'Juillet 2026', read:'5 min',
       title:"Quel champagne pour un anniversaire",
-      excerpt:"Marquer le coup selon l'ambiance, la personne et le budget.",
+      excerpt:"Quel champagne pour un anniversaire ? On choisit selon l'ambiance, la personne fêtée et le budget, avec des repères simples pour viser juste.",
       body:`<p>Un anniversaire appelle un champagne festif, mais le bon choix dépend de l'ambiance et de qui l'on fête. Voici comment viser juste.</p>
 <h3>Pour une ambiance conviviale</h3>
 <p>Entre amis, misez sur un brut généreux et consensuel qui plaît à tous, comme la <a href="#" onclick="return openAff('clicquot')">Veuve Clicquot Yellow Label</a>. Structuré et reconnaissable, il met tout le monde d'accord.</p>
@@ -1461,7 +1485,7 @@ function articles(){
 
     { id:'brut-nature', cat:'Décryptage', cover:'linear-gradient(135deg,#EDEFEA,#E2E6DC)', date:'Juillet 2026', read:'4 min',
       title:"Brut Nature : le champagne des puristes",
-      excerpt:"Zéro sucre ajouté, tension pure : le style qui monte, décrypté.",
+      excerpt:"Brut nature, extra-brut, dosage zéro : ce que signifient vraiment ces mentions, à quel goût s'attendre et quand les préférer.",
       body:`<p>Sur les cartes des bars à vins et les tables gastronomiques, une mention revient de plus en plus : « Brut Nature ». Aussi appelé « non dosé » ou « dosage zéro », c'est le champagne dans sa version la plus nue.</p>
 <h3>Qu'est-ce que le Brut Nature ?</h3>
 <p>Juste avant le bouchage, la plupart des champagnes reçoivent une « liqueur de dosage ». La mention Brut Nature est réservée aux vins dont la teneur en sucre est inférieure à 3 g/L et auxquels aucun sucre n'a été ajouté après la prise de mousse. Le résultat peut paraître plus droit et tendu, selon la cuvée.</p>
@@ -1473,7 +1497,7 @@ function articles(){
 
     { id:'rose-saignee', cat:'Décryptage', cover:'linear-gradient(135deg,#F3E9E7,#E9D6D2)', date:'Juillet 2026', read:'4 min',
       title:"Rosé de saignée ou rosé d'assemblage ?",
-      excerpt:"Deux méthodes, deux styles de champagne rosé. On vous explique.",
+      excerpt:"Rosé d'assemblage ou rosé de saignée : deux méthodes, deux styles de champagne rosé. On explique la différence pour bien choisir.",
       body:`<p>Tous les champagnes rosés ne se ressemblent pas, et pour cause : il existe deux façons très différentes de les élaborer. Voici comment les distinguer, et laquelle choisir.</p>
 <h3>Le rosé d'assemblage</h3>
 <p>La méthode la plus courante en Champagne, et une exception dans le monde du vin : on ajoute du <strong>vin rouge</strong> tranquille à l'assemblage avant la prise de mousse. Le style dépend ensuite des raisins et de la vinification. Le <a href="#" onclick="return openAff('billecart-salmon-brut-rose')">Brut Rosé de Billecart-Salmon</a> en donne un exemple.</p>
@@ -1485,7 +1509,7 @@ function articles(){
 
     { id:'vigneron', cat:'Décryptage', cover:'linear-gradient(135deg,#ECEEE7,#E1E5D8)', date:'Juillet 2026', read:'5 min',
       title:"Champagne de vigneron ou grande maison ?",
-      excerpt:"Deux visions du champagne. Comment les reconnaître, et laquelle vous convient.",
+      excerpt:"Champagne de vigneron ou grande maison ? Deux visions du champagne : comment les reconnaître et laquelle correspond à vos envies.",
       body:`<p>Derrière chaque bouteille se cache un choix : le champagne d'une grande maison ou celui d'un vigneron indépendant. Deux philosophies, repérables sur l'étiquette.</p>
 <h3>Le code caché de l'étiquette</h3>
 <p>En tout petit sur la contre-étiquette, deux lettres racontent tout. <strong>NM</strong> (Négociant-Manipulant) désigne une maison qui achète des raisins pour élaborer ses cuvées, souvent les grandes marques. <strong>RM</strong> (Récoltant-Manipulant) désigne un vigneron qui fait son champagne à partir de ses propres vignes.</p>
@@ -1499,7 +1523,7 @@ function articles(){
 
     { id:'etiquette', cat:'Pratique', cover:'linear-gradient(135deg,#F0EDE7,#E6E0D6)', date:'Juillet 2026', read:'5 min',
       title:"Comment lire une étiquette de champagne",
-      excerpt:"Dosage, cépages, millésime, codes : tout ce que l'étiquette vous dit vraiment.",
+      excerpt:"Dosage, cépages, millésime, codes RM et NM : apprenez à lire une étiquette de champagne pour acheter en toute connaissance de cause.",
       body:`<p>Une étiquette de champagne est pleine d'indices sur ce qui vous attend dans le verre. Apprenez à la décoder en cinq points.</p>
 <h3>1. Le dosage</h3>
 <p>« Brut », « Extra-Brut », « Demi-Sec »… ce mot indique le niveau de sucre, du plus sec au plus doux. C'est le premier repère de goût.</p>
@@ -1514,7 +1538,7 @@ function articles(){
       related:['ruinart','clicquot'] },
     { id:'rose', cat:'Guide', cover:'linear-gradient(135deg,#F7E9EE,#EFD9E0)', date:'Août 2026', read:'5 min',
       title:"Champagne rosé : comment bien choisir sa cuvée",
-      excerpt:"Fruité, gastronomique ou raffiné : trouver le bon rosé selon le moment.",
+      excerpt:"Champagne rosé : fruité, gastronomique ou raffiné. Comment choisir la bonne cuvée selon le moment, le plat et votre budget.",
       body:`<p>Le champagne rosé n'est pas qu'une question de couleur. Selon sa méthode d'élaboration et son assemblage, il passe de l'apéritif léger au vrai vin de gastronomie. Voici comment choisir.</p>
 <h3>Rosé d'assemblage : le fruité accessible</h3>
 <p>La plupart des rosés champenois sont obtenus en ajoutant un peu de vin rouge à l'assemblage. Résultat : des cuvées fruitées et festives, parfaites à l'apéritif ou sur des fruits rouges. Le <a href="/champagne/j-charpentier-rose-reserve-brut/">Rosé Réserve de J. Charpentier</a> illustre ce registre gourmand.</p>
@@ -1528,7 +1552,7 @@ function articles(){
 
     { id:'rapport-qualite-prix', cat:'Sélection', cover:'linear-gradient(135deg,#EDE7DA,#E2D8C4)', date:'Août 2026', read:'5 min',
       title:"Les champagnes au meilleur rapport qualité-prix",
-      excerpt:"Bien boire sans se ruiner : où se cache la vraie valeur en Champagne.",
+      excerpt:"Bien boire sans se ruiner : où se cache le meilleur rapport qualité-prix en Champagne, et comment repérer une vraie bonne bouteille.",
       body:`<p>Le meilleur rapport qualité-prix en Champagne se trouve rarement chez les marques les plus connues, dont une partie du prix paie la notoriété. Voici où chercher.</p>
 <h3>Les vignerons, la bonne surprise</h3>
 <p>Un vigneron qui vinifie ses propres raisins offre souvent plus de vin pour le prix qu'une grande maison. La <a href="/champagne/maison-labbe-brut-premier-cru-tradition/">cuvée Tradition Premier Cru de Maison Labbé</a> ou le <a href="/champagne/louis-constant-brut/">Brut de Louis Constant</a> se placent sous les 40 € avec un vrai caractère.</p>
@@ -1540,7 +1564,7 @@ function articles(){
 
     { id:'saint-valentin', cat:'Guide', cover:'linear-gradient(135deg,#F7E6EC,#EFD3DC)', date:'Août 2026', read:'4 min',
       title:"Quel champagne pour la Saint-Valentin",
-      excerpt:"Un rosé séduisant ou un blanc de blancs raffiné pour un dîner à deux.",
+      excerpt:"Quel champagne pour la Saint-Valentin ? Un rosé séduisant ou un blanc de blancs raffiné : nos idées pour réussir un dîner à deux.",
       body:`<p>Pour un dîner en tête-à-tête, le champagne joue la carte de l'élégance. Deux directions fonctionnent particulièrement bien.</p>
 <h3>Un rosé pour la couleur et le fruit</h3>
 <p>Un champagne rosé apporte de la gaieté et se marie aux fruits rouges d'un dessert. Le <a href="/champagne/m-g-heucq-rose-brut-fossile/">Rosé Fossile de M.G. Heucq</a>, expressif et vineux, tient aussi à table.</p>
@@ -1553,7 +1577,7 @@ function articles(){
 
     { id:'conservation', cat:'Pratique', cover:'linear-gradient(135deg,#EBEDEA,#DEE2DB)', date:'Août 2026', read:'4 min',
       title:"Combien de temps se garde un champagne ?",
-      excerpt:"Durée de conservation, bouteille ouverte et bonnes conditions de garde.",
+      excerpt:"Combien de temps se garde un champagne ? Durée de conservation, bouteille ouverte et bonnes conditions de stockage, tous nos repères.",
       body:`<p>Un champagne se garde bien plus longtemps qu'on ne le croit, à condition de respecter quelques règles simples.</p>
 <h3>Bouteille fermée</h3>
 <p>Un brut sans année se conserve 3 à 4 ans après l'achat sans problème, souvent davantage. Un champagne millésimé, plus structuré, peut se garder 10 ans ou plus. Conservez les bouteilles couchées, à l'abri de la lumière, entre 10 et 14 °C, sans variations brutales de température.</p>
@@ -1565,7 +1589,7 @@ function articles(){
 
     { id:'crus', cat:'Décryptage', cover:'linear-gradient(135deg,#EFEBDD,#E4DCC6)', date:'Août 2026', read:'5 min',
       title:"Grand Cru et Premier Cru : que valent ces mentions ?",
-      excerpt:"Ce que disent, et ne disent pas, les classements de villages en Champagne.",
+      excerpt:"Grand Cru, Premier Cru : ce que ces mentions garantissent vraiment, ce qu'elles ne disent pas, et comment en tenir compte à l'achat.",
       body:`<p>« Grand Cru » et « Premier Cru » reviennent souvent sur les étiquettes. Voici ce qu'ils signifient vraiment, et ce qu'ils ne garantissent pas.</p>
 <h3>Un classement de villages</h3>
 <p>En Champagne, le classement porte sur la commune d'origine des raisins, pas sur la cuvée. Dix-sept villages sont classés Grand Cru, une quarantaine en Premier Cru. Une mention Grand Cru indique donc une provenance réputée.</p>
@@ -1577,7 +1601,7 @@ function articles(){
 
     { id:'foie-gras', cat:'Accords', cover:'linear-gradient(135deg,#F1EAD9,#E7DCC3)', date:'Août 2026', read:'4 min',
       title:"Quel champagne avec le foie gras ?",
-      excerpt:"Structure, dosage, millésime : l'accord idéal pour un classique des fêtes.",
+      excerpt:"Quel champagne avec le foie gras ? Structure, dosage et millésime : comment réussir l'accord de ce grand classique des fêtes.",
       body:`<p>Le foie gras, riche et fondant, demande un champagne capable de lui tenir tête sans être écrasé. Deux écoles s'affrontent.</p>
 <h3>Un champagne vineux et mûr</h3>
 <p>L'accord le plus sûr : une cuvée à dominante pinot noir, ample et structurée, éventuellement millésimée. Sa matière répond au gras sans le fatiguer. Un <a href="/champagne/drappier-quattuor/">Quattuor de Drappier</a> ou une cuvée de garde font merveille.</p>
@@ -1619,7 +1643,7 @@ function signalFit(p, signal){
   if(!signal || signal==='any') return true;
   if(signal==='maison') return p.producerType==='maison';
   if(signal==='vigneron') return p.producerType==='vigneron';
-  if(signal==='low_dosage') return p.tags.includes('Extra-brut / nature') || /\b(?:0|1|2|3|4|5|6)(?:[,.]\d+)?\s*g\/L\b/i.test(p.details?.dosage||'');
+  if(signal==='low_dosage') return (p.tags.includes('Extra-brut')||p.tags.includes('Brut nature')) || /\b(?:0|1|2|3|4|5|6)(?:[,.]\d+)?\s*g\/L\b/i.test(p.details?.dosage||'');
   return true;
 }
 function accordFit(p, accord){
@@ -1631,7 +1655,7 @@ function destinataireScore(p, dest){
   if(dest==='dest_connaisseur'){
     let s=2;
     if(p.producerType==='vigneron') s+=12;
-    if(p.tags.includes('Extra-brut / nature')) s+=5;
+    if((p.tags.includes('Extra-brut')||p.tags.includes('Brut nature'))) s+=5;
     if(p.tags.includes('Grand Cru')||p.tags.includes('Premier Cru')) s+=4;
     if((p.details?.scores?.complexity||3)>=4) s+=3;
     return Math.min(22,s);
@@ -1640,7 +1664,7 @@ function destinataireScore(p, dest){
     let s=2;
     if(p.producerType==='maison') s+=10;
     if((p.popularity||0)>=80) s+=6;
-    if(p.tags.includes('Brut') && !p.tags.includes('Extra-brut / nature')) s+=4;
+    if(p.tags.includes('Brut') && !(p.tags.includes('Extra-brut')||p.tags.includes('Brut nature'))) s+=4;
     return Math.min(22,s);
   }
   if(dest==='dest_prestige'){
@@ -1659,7 +1683,7 @@ function convivesScore(p, crowd){
     let s=2;
     if(p.producerType==='maison') s+=10;
     if((p.popularity||0)>=80) s+=6;
-    if(p.tags.includes('Brut') && !p.tags.includes('Extra-brut / nature')) s+=4;
+    if(p.tags.includes('Brut') && !(p.tags.includes('Extra-brut')||p.tags.includes('Brut nature'))) s+=4;
     return Math.min(22,s);
   }
   if(crowd==='crowd_decouverte'){
@@ -1682,7 +1706,7 @@ function aperitifScore(p, val){
   if(!val || val==='apero_any') return 10;
   const sc=p.details?.scores||{};
   if(val==='apero_leger'){ let s=2; if((sc.freshness||3)>=4) s+=8; if(p.profil.includes('profil_frais_vif')||p.profil.includes('profil_delicat')) s+=5; if(p.tags.includes('Blanc de blancs')) s+=3; return Math.min(22,s); }
-  if(val==='apero_dinatoire'){ let s=2; if(p.tags.includes('Brut') && !p.tags.includes('Extra-brut / nature')) s+=5; if((sc.roundness||3)>=3) s+=5; if(p.profil.includes('profil_fruite')||p.profil.includes('profil_riche_ample')) s+=5; return Math.min(22,s); }
+  if(val==='apero_dinatoire'){ let s=2; if(p.tags.includes('Brut') && !(p.tags.includes('Extra-brut')||p.tags.includes('Brut nature'))) s+=5; if((sc.roundness||3)>=3) s+=5; if(p.profil.includes('profil_fruite')||p.profil.includes('profil_riche_ample')) s+=5; return Math.min(22,s); }
   if(val==='apero_trinquer'){ let s=2; if((p.popularity||0)>=80) s+=6; if(p.profil.includes('profil_fruite')) s+=6; if((p.tier||1)<=2) s+=5; return Math.min(22,s); }
   return 10;
 }
@@ -1695,14 +1719,55 @@ function deuxScore(p, val){
   if(val==='duo_verre'){ let s=2; if(p.profil.includes('profil_fruite')||p.profil.includes('profil_delicat')) s+=7; if((sc.roundness||3)>=3) s+=5; if((p.tier||1)<=2) s+=4; return Math.min(22,s); }
   return 10;
 }
+/* Affinité d'accord œnologique : au-delà du simple étiquetage, on note selon la
+   structure réelle de la cuvée (fraîcheur, dosage, puissance, complexité). */
+function accordAffinity(p, accord){
+  if(!accord || accord==='accord_any') return 10;
+  const has=(p.accords||[]).includes(accord);
+  const s=(p.details&&p.details.scores)?p.details.scores:{};
+  const fresh=s.freshness||3, round=s.roundness||3, power=s.power||3, cx=s.complexity||3;
+  let x=has?14:2;
+  if(accord==='accord_mer'){ if(fresh>=4)x+=6; if(p.tags.includes('Blanc de blancs'))x+=3; if((p.tags.includes('Extra-brut')||p.tags.includes('Brut nature')))x+=2; if(power>=4)x-=4; }
+  else if(accord==='accord_aperitif'){ if(fresh>=3)x+=4; if((p.tier||1)<=2)x+=3; if(power>=4)x-=3; }
+  else if(accord==='accord_volaille'){ if(power>=3||round>=3)x+=5; if(p.tags.includes('Blanc de noirs'))x+=3; if(cx>=4)x+=2; }
+  else if(accord==='accord_fromage'){ if(power>=4)x+=5; if(cx>=4)x+=4; if(fresh>=4&&power<=2)x-=2; }
+  else if(accord==='accord_dessert'){ if(p.tags.includes('Demi-sec'))x+=8; if(p.tags.includes('Rosé'))x+=3; if(round>=4)x+=2; if((p.tags.includes('Extra-brut')||p.tags.includes('Brut nature')))x-=3; }
+  return Math.max(0,Math.min(24,x));
+}
 function intentScore(p, a){
   const occ=(a.occasion||[]);
   if(occ.includes('occ_cadeau')) return destinataireScore(p,(a.destinataire||[])[0]);
   if(occ.includes('occ_fete')) return convivesScore(p,(a.convives||[])[0]);
   if(occ.includes('occ_apero')) return aperitifScore(p,(a.apero||[])[0]);
   if(occ.includes('occ_romantique')) return deuxScore(p,(a.duo||[])[0]);
-  const accord=(a.accord||[])[0];
-  return accord==='accord_any' ? 10 : accordFit(p,accord) ? 22 : 2;
+  return accordAffinity(p,(a.accord||[])[0]);
+}
+/* Pour un cadeau, la 5e question porte sur l'occasion du cadeau plutôt que sur
+   une signature vous-centrée : on ajuste le registre de la bouteille. */
+function giftRegistreScore(p, val){
+  if(!val || val==='reg_any') return 8;
+  if(val==='reg_grande'){ let s=0; if((p.tier||1)>=3) s+=8; if(p.tags.includes('Millésimé')) s+=4; if(p.tags.includes('Grand Cru')) s+=3; if((p.popularity||0)>=84) s+=2; return Math.min(17,s); }
+  if(val==='reg_ceremonie'){ let s=0; if(p.producerType==='maison') s+=8; if((p.popularity||0)>=80) s+=5; if(p.tags.includes('Brut') && !(p.tags.includes('Extra-brut')||p.tags.includes('Brut nature'))) s+=4; return Math.min(17,s); }
+  if(val==='reg_plaisir'){ let s=6; if((p.tier||1)<=2) s+=4; if((p.popularity||0)>=68) s+=3; return Math.min(17,s); }
+  return 8;
+}
+function signatureComponent(p, a){
+  if((a.occasion||[]).includes('occ_cadeau')) return giftRegistreScore(p,(a.registre||[])[0]);
+  const signal=(a.repere||[])[0];
+  return signal==='any' ? 8 : signalFit(p,signal) ? 17 : 0;
+}
+/* Pour un cadeau, on ne demande pas la sensation recherchée (on ne la boira pas) :
+   on s'appuie sur un repère simple, la couleur. Sinon, on garde le goût. */
+function styleComponent(p, a){
+  if((a.occasion||[]).includes('occ_cadeau')){
+    const col=(a.couleur||[])[0];
+    if(!col || col==='couleur_any') return 12;
+    if(col==='couleur_rose') return p.tags.includes('Rosé') ? 27 : 4;
+    if(col==='couleur_blanc') return !p.tags.includes('Rosé') ? 20 : 5;
+    return 12;
+  }
+  const gout=(a.gout||[])[0];
+  return gout==='profil_any' ? 12 : p.profil.includes(gout) ? 27 : 3;
 }
 function evidenceScore(p){
   if(p.officialSourceUrl && /^official_confirmed/.test(p.identityStatus||'')) return 6;
@@ -1715,10 +1780,10 @@ function scoreBreakdown(p,a){
   const intent = intentScore(p,a);
   return {
     budget:budgetFitScore(p,budget),
-    style:gout==='profil_any' ? 12 : p.profil.includes(gout) ? 27 : 3,
+    style:styleComponent(p,a),
     occasion:p.occ.includes(occ) ? 21 : 2,
     accord:intent,
-    signature:signal==='any' ? 8 : signalFit(p,signal) ? 17 : 0,
+    signature:signatureComponent(p,a),
     availability:p.commerceReady===true && p.availability==='in_stock' ? 10 : 0,
     evidence:evidenceScore(p)
   };
@@ -1726,8 +1791,21 @@ function scoreBreakdown(p,a){
 function score(p, a){
   return Object.values(scoreBreakdown(p,a)).reduce((sum,value)=>sum+value,0);
 }
+function inBudget(p, budget){
+  const price=p.price;
+  if(budget==='b1') return price<40;
+  if(budget==='b2') return price>=40 && price<=60;
+  if(budget==='b3') return price>60 && price<=100;
+  if(budget==='b4') return price>100;
+  return true;
+}
 function ranked(){
-  const eligible=products().filter(p=>p.commerceReady===true && p.availability==='in_stock');
+  const inStock=products().filter(p=>p.commerceReady===true && p.availability==='in_stock');
+  // Le budget est une contrainte dure : on ne propose que dans la tranche choisie,
+  // et on ne s'en écarte que si aucune bouteille disponible n'y figure.
+  const budget=(state.answers.budget||[])[0];
+  const withinBudget=budget ? inStock.filter(p=>inBudget(p,budget)) : inStock;
+  const eligible=withinBudget.length ? withinBudget : inStock;
   const sc=eligible.map(p=>({p,s:score(p,state.answers),breakdown:scoreBreakdown(p,state.answers)}));
   sc.sort((a,b)=>b.s-a.s || (b.p.popularity||0)-(a.p.popularity||0) || a.p.id.localeCompare(b.p.id,'fr'));
   return sc;
@@ -1894,6 +1972,8 @@ function renderQuiz(){
   if(!state.started){ return renderIntro(); }
   const qs=questions(); let q=qs[state.step]; const pct=(state.step/qs.length)*100;
   if(state.step===1){ const branch=branchQ2((state.answers.occasion||[])[0]); if(branch) q=branch; }
+  if(state.step===2){ const branch=branchQ3((state.answers.occasion||[])[0]); if(branch) q=branch; }
+  if(state.step===4){ const branch=branchQ5((state.answers.occasion||[])[0]); if(branch) q=branch; }
   if(window.qcTrack && !state.quizStartedTracked){window.qcTrack('quiz_started',{source:'selector'});state.quizStartedTracked=true;}
   const opts=q.opts.map((o,i)=>`<button class="qopt" onclick='answer(${JSON.stringify(q.id)},${JSON.stringify(o.tags)},${i})'><span class="qe">${o.e}</span><span><span class="ql">${o.l}</span><br><span class="qd">${o.d}</span></span></button>`).join('');
   app.innerHTML = nav() + `
@@ -2006,17 +2086,28 @@ function matchReasons(p){
   const intent=intentReason(p,a);
   if(intent) reasons.push(intent);
   else { const occTag=occ.find(tag=>p.occ.includes(tag)); if(occTag){ const r=occasionReason(p,occTag); if(r) reasons.push(r); } }
-  const goutMatch=(a.gout||[]).find(tag=>p.profil.includes(tag));
-  if(goutMatch) reasons.push(`Côté goût, on retrouve ${styleWords(p,goutMatch)} : exactement la sensation recherchée.`);
+  if(occ.includes('occ_cadeau')){
+    const col=(a.couleur||[])[0];
+    if(col==='couleur_rose' && p.tags.includes('Rosé')) reasons.push("Un joli rosé, plus original et festif à offrir.");
+    else if(col==='couleur_blanc' && !p.tags.includes('Rosé')) reasons.push("Un champagne blanc, la valeur sûre quand on offre.");
+  } else {
+    const goutMatch=(a.gout||[]).find(tag=>p.profil.includes(tag));
+    if(goutMatch) reasons.push(`Côté goût, on retrouve ${styleWords(p,goutMatch)} : exactement la sensation recherchée.`);
+  }
   const budget=(a.budget||[])[0];
   if(budget && budgetFitScore(p,budget)>=29) reasons.push(`À ${priceText(p)}, elle se place précisément dans la tranche que vous avez fixée.`);
   // Signature : on évite de répéter maison/vigneron si la branche cadeau ou convives l'a déjà dit.
   const signal=(a.repere||[])[0];
   const producerCovered=occ.includes('occ_cadeau')||occ.includes('occ_fete');
-  if(signalFit(p,signal)){
+  if(occ.includes('occ_cadeau')){
+    const reg=(a.registre||[])[0];
+    if(reg==='reg_grande') reasons.push("Un choix à la hauteur d’une grande occasion.");
+    else if(reg==='reg_ceremonie' && p.producerType==='maison') reasons.push("Une maison reconnue, idéale pour un remerciement soigné.");
+    else if(reg==='reg_plaisir') reasons.push("Un très bon rapport plaisir-prix, juste pour faire plaisir.");
+  } else if(signalFit(p,signal)){
     if(signal==='maison' && !producerCovered) reasons.push(`Signée ${p.house}, c’est une maison lisible et rassurante.`);
     if(signal==='vigneron' && !producerCovered) reasons.push("C’est un champagne de vigneron, plus personnel, comme vous le souhaitiez.");
-    if(signal==='low_dosage') reasons.push("Son dosage très bas (extra-brut ou brut nature) répond à votre goût pour les cuvées très sèches.");
+    if(signal==='low_dosage'){ const dl=p.tags.includes('Brut nature')?'brut nature':'extra-brut'; reasons.push("Son dosage très bas ("+dl+") répond à votre goût pour les cuvées très sèches."); }
   }
   if(reasons.length<2) reasons.push("Au global, c’est la bouteille la plus cohérente avec l’ensemble de vos réponses.");
   return reasons.slice(0,4);

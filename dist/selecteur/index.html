@@ -731,7 +731,7 @@ function questions(){
       opts:[
         {e:'01', tags:['maison'], l:"Une maison reconnue", d:"Une signature lisible et rassurante"},
         {e:'02', tags:['vigneron'], l:"Un champagne de vigneron", d:"Une bouteille plus personnelle à découvrir"},
-        {e:'03', tags:['low_dosage'], l:"Un style très sec", d:"Extra-brut ou brut nature"},
+        {e:'03', tags:['low_dosage'], l:"Un style très sec", d:"Le dosage le plus bas, sans rondeur sucrée"},
         {e:'04', tags:['any'], l:"Je vous laisse choisir", d:"La cohérence avec mes autres réponses prime"},
       ]},
   ];
@@ -744,6 +744,14 @@ function branchQ2(occasion){
   if(occasion==='occ_apero') return aperitifQuestion();
   if(occasion==='occ_romantique') return duoQuestion();
   return null; // occ_diner : parcours par défaut avec la question des accords
+}
+function branchQ3(occasion){
+  if(occasion==='occ_cadeau') return giftColorQuestion();
+  return null; // les autres parcours gardent la question de la sensation recherchée
+}
+function branchQ5(occasion){
+  if(occasion==='occ_cadeau') return giftFinalQuestion();
+  return null; // les autres parcours gardent la question de la signature
 }
 function giftQuestion(){
   return { id:'destinataire', label:"02 · Le destinataire", q:"À qui l’offrez-vous ?", hint:"On adapte le style et la signature au profil du destinataire.",
@@ -781,6 +789,22 @@ function duoQuestion(){
       {e:'04', tags:['duo_verre'], l:"Juste un verre ensemble", d:"Tout en rondeur et en délicatesse"},
     ]};
 }
+function giftColorQuestion(){
+  return { id:'couleur', label:"03 · La couleur", q:"Une préférence de couleur ?", hint:"Un repère simple et sûr quand on offre : pas besoin de deviner un goût précis.",
+    opts:[
+      {e:'01', tags:['couleur_blanc'], l:"Un champagne blanc", d:"La valeur sûre, la plus polyvalente"},
+      {e:'02', tags:['couleur_rose'], l:"Un rosé", d:"Plus original et festif, joli à offrir"},
+      {e:'03', tags:['couleur_any'], l:"Peu importe", d:"On choisit selon vos autres réponses"},
+    ]};
+}
+function giftFinalQuestion(){
+  return { id:'registre', label:"05 · L’occasion", q:"Pour quelle occasion l’offrez-vous ?", hint:"On ajuste le registre de la bouteille à l’importance du moment.",
+    opts:[
+      {e:'01', tags:['reg_grande'], l:"Une grande occasion", d:"Un événement qui compte : une cuvée à la hauteur"},
+      {e:'02', tags:['reg_ceremonie'], l:"Un remerciement", d:"Une attention soignée, une valeur sûre reconnue"},
+      {e:'03', tags:['reg_plaisir'], l:"Juste pour faire plaisir", d:"Sans occasion précise : le meilleur rapport plaisir-prix"},
+    ]};
+}
 
 /* ====================== BLOG ====================== */
 function articles(){ return []; }
@@ -810,7 +834,7 @@ function signalFit(p, signal){
   if(!signal || signal==='any') return true;
   if(signal==='maison') return p.producerType==='maison';
   if(signal==='vigneron') return p.producerType==='vigneron';
-  if(signal==='low_dosage') return p.tags.includes('Extra-brut / nature') || /\b(?:0|1|2|3|4|5|6)(?:[,.]\d+)?\s*g\/L\b/i.test(p.details?.dosage||'');
+  if(signal==='low_dosage') return (p.tags.includes('Extra-brut')||p.tags.includes('Brut nature')) || /\b(?:0|1|2|3|4|5|6)(?:[,.]\d+)?\s*g\/L\b/i.test(p.details?.dosage||'');
   return true;
 }
 function accordFit(p, accord){
@@ -822,7 +846,7 @@ function destinataireScore(p, dest){
   if(dest==='dest_connaisseur'){
     let s=2;
     if(p.producerType==='vigneron') s+=12;
-    if(p.tags.includes('Extra-brut / nature')) s+=5;
+    if((p.tags.includes('Extra-brut')||p.tags.includes('Brut nature'))) s+=5;
     if(p.tags.includes('Grand Cru')||p.tags.includes('Premier Cru')) s+=4;
     if((p.details?.scores?.complexity||3)>=4) s+=3;
     return Math.min(22,s);
@@ -831,7 +855,7 @@ function destinataireScore(p, dest){
     let s=2;
     if(p.producerType==='maison') s+=10;
     if((p.popularity||0)>=80) s+=6;
-    if(p.tags.includes('Brut') && !p.tags.includes('Extra-brut / nature')) s+=4;
+    if(p.tags.includes('Brut') && !(p.tags.includes('Extra-brut')||p.tags.includes('Brut nature'))) s+=4;
     return Math.min(22,s);
   }
   if(dest==='dest_prestige'){
@@ -850,7 +874,7 @@ function convivesScore(p, crowd){
     let s=2;
     if(p.producerType==='maison') s+=10;
     if((p.popularity||0)>=80) s+=6;
-    if(p.tags.includes('Brut') && !p.tags.includes('Extra-brut / nature')) s+=4;
+    if(p.tags.includes('Brut') && !(p.tags.includes('Extra-brut')||p.tags.includes('Brut nature'))) s+=4;
     return Math.min(22,s);
   }
   if(crowd==='crowd_decouverte'){
@@ -873,7 +897,7 @@ function aperitifScore(p, val){
   if(!val || val==='apero_any') return 10;
   const sc=p.details?.scores||{};
   if(val==='apero_leger'){ let s=2; if((sc.freshness||3)>=4) s+=8; if(p.profil.includes('profil_frais_vif')||p.profil.includes('profil_delicat')) s+=5; if(p.tags.includes('Blanc de blancs')) s+=3; return Math.min(22,s); }
-  if(val==='apero_dinatoire'){ let s=2; if(p.tags.includes('Brut') && !p.tags.includes('Extra-brut / nature')) s+=5; if((sc.roundness||3)>=3) s+=5; if(p.profil.includes('profil_fruite')||p.profil.includes('profil_riche_ample')) s+=5; return Math.min(22,s); }
+  if(val==='apero_dinatoire'){ let s=2; if(p.tags.includes('Brut') && !(p.tags.includes('Extra-brut')||p.tags.includes('Brut nature'))) s+=5; if((sc.roundness||3)>=3) s+=5; if(p.profil.includes('profil_fruite')||p.profil.includes('profil_riche_ample')) s+=5; return Math.min(22,s); }
   if(val==='apero_trinquer'){ let s=2; if((p.popularity||0)>=80) s+=6; if(p.profil.includes('profil_fruite')) s+=6; if((p.tier||1)<=2) s+=5; return Math.min(22,s); }
   return 10;
 }
@@ -886,14 +910,55 @@ function deuxScore(p, val){
   if(val==='duo_verre'){ let s=2; if(p.profil.includes('profil_fruite')||p.profil.includes('profil_delicat')) s+=7; if((sc.roundness||3)>=3) s+=5; if((p.tier||1)<=2) s+=4; return Math.min(22,s); }
   return 10;
 }
+/* Affinité d'accord œnologique : au-delà du simple étiquetage, on note selon la
+   structure réelle de la cuvée (fraîcheur, dosage, puissance, complexité). */
+function accordAffinity(p, accord){
+  if(!accord || accord==='accord_any') return 10;
+  const has=(p.accords||[]).includes(accord);
+  const s=(p.details&&p.details.scores)?p.details.scores:{};
+  const fresh=s.freshness||3, round=s.roundness||3, power=s.power||3, cx=s.complexity||3;
+  let x=has?14:2;
+  if(accord==='accord_mer'){ if(fresh>=4)x+=6; if(p.tags.includes('Blanc de blancs'))x+=3; if((p.tags.includes('Extra-brut')||p.tags.includes('Brut nature')))x+=2; if(power>=4)x-=4; }
+  else if(accord==='accord_aperitif'){ if(fresh>=3)x+=4; if((p.tier||1)<=2)x+=3; if(power>=4)x-=3; }
+  else if(accord==='accord_volaille'){ if(power>=3||round>=3)x+=5; if(p.tags.includes('Blanc de noirs'))x+=3; if(cx>=4)x+=2; }
+  else if(accord==='accord_fromage'){ if(power>=4)x+=5; if(cx>=4)x+=4; if(fresh>=4&&power<=2)x-=2; }
+  else if(accord==='accord_dessert'){ if(p.tags.includes('Demi-sec'))x+=8; if(p.tags.includes('Rosé'))x+=3; if(round>=4)x+=2; if((p.tags.includes('Extra-brut')||p.tags.includes('Brut nature')))x-=3; }
+  return Math.max(0,Math.min(24,x));
+}
 function intentScore(p, a){
   const occ=(a.occasion||[]);
   if(occ.includes('occ_cadeau')) return destinataireScore(p,(a.destinataire||[])[0]);
   if(occ.includes('occ_fete')) return convivesScore(p,(a.convives||[])[0]);
   if(occ.includes('occ_apero')) return aperitifScore(p,(a.apero||[])[0]);
   if(occ.includes('occ_romantique')) return deuxScore(p,(a.duo||[])[0]);
-  const accord=(a.accord||[])[0];
-  return accord==='accord_any' ? 10 : accordFit(p,accord) ? 22 : 2;
+  return accordAffinity(p,(a.accord||[])[0]);
+}
+/* Pour un cadeau, la 5e question porte sur l'occasion du cadeau plutôt que sur
+   une signature vous-centrée : on ajuste le registre de la bouteille. */
+function giftRegistreScore(p, val){
+  if(!val || val==='reg_any') return 8;
+  if(val==='reg_grande'){ let s=0; if((p.tier||1)>=3) s+=8; if(p.tags.includes('Millésimé')) s+=4; if(p.tags.includes('Grand Cru')) s+=3; if((p.popularity||0)>=84) s+=2; return Math.min(17,s); }
+  if(val==='reg_ceremonie'){ let s=0; if(p.producerType==='maison') s+=8; if((p.popularity||0)>=80) s+=5; if(p.tags.includes('Brut') && !(p.tags.includes('Extra-brut')||p.tags.includes('Brut nature'))) s+=4; return Math.min(17,s); }
+  if(val==='reg_plaisir'){ let s=6; if((p.tier||1)<=2) s+=4; if((p.popularity||0)>=68) s+=3; return Math.min(17,s); }
+  return 8;
+}
+function signatureComponent(p, a){
+  if((a.occasion||[]).includes('occ_cadeau')) return giftRegistreScore(p,(a.registre||[])[0]);
+  const signal=(a.repere||[])[0];
+  return signal==='any' ? 8 : signalFit(p,signal) ? 17 : 0;
+}
+/* Pour un cadeau, on ne demande pas la sensation recherchée (on ne la boira pas) :
+   on s'appuie sur un repère simple, la couleur. Sinon, on garde le goût. */
+function styleComponent(p, a){
+  if((a.occasion||[]).includes('occ_cadeau')){
+    const col=(a.couleur||[])[0];
+    if(!col || col==='couleur_any') return 12;
+    if(col==='couleur_rose') return p.tags.includes('Rosé') ? 27 : 4;
+    if(col==='couleur_blanc') return !p.tags.includes('Rosé') ? 20 : 5;
+    return 12;
+  }
+  const gout=(a.gout||[])[0];
+  return gout==='profil_any' ? 12 : p.profil.includes(gout) ? 27 : 3;
 }
 function evidenceScore(p){
   if(p.officialSourceUrl && /^official_confirmed/.test(p.identityStatus||'')) return 6;
@@ -906,10 +971,10 @@ function scoreBreakdown(p,a){
   const intent = intentScore(p,a);
   return {
     budget:budgetFitScore(p,budget),
-    style:gout==='profil_any' ? 12 : p.profil.includes(gout) ? 27 : 3,
+    style:styleComponent(p,a),
     occasion:p.occ.includes(occ) ? 21 : 2,
     accord:intent,
-    signature:signal==='any' ? 8 : signalFit(p,signal) ? 17 : 0,
+    signature:signatureComponent(p,a),
     availability:p.commerceReady===true && p.availability==='in_stock' ? 10 : 0,
     evidence:evidenceScore(p)
   };
@@ -917,8 +982,21 @@ function scoreBreakdown(p,a){
 function score(p, a){
   return Object.values(scoreBreakdown(p,a)).reduce((sum,value)=>sum+value,0);
 }
+function inBudget(p, budget){
+  const price=p.price;
+  if(budget==='b1') return price<40;
+  if(budget==='b2') return price>=40 && price<=60;
+  if(budget==='b3') return price>60 && price<=100;
+  if(budget==='b4') return price>100;
+  return true;
+}
 function ranked(){
-  const eligible=products().filter(p=>p.commerceReady===true && p.availability==='in_stock');
+  const inStock=products().filter(p=>p.commerceReady===true && p.availability==='in_stock');
+  // Le budget est une contrainte dure : on ne propose que dans la tranche choisie,
+  // et on ne s'en écarte que si aucune bouteille disponible n'y figure.
+  const budget=(state.answers.budget||[])[0];
+  const withinBudget=budget ? inStock.filter(p=>inBudget(p,budget)) : inStock;
+  const eligible=withinBudget.length ? withinBudget : inStock;
   const sc=eligible.map(p=>({p,s:score(p,state.answers),breakdown:scoreBreakdown(p,state.answers)}));
   sc.sort((a,b)=>b.s-a.s || (b.p.popularity||0)-(a.p.popularity||0) || a.p.id.localeCompare(b.p.id,'fr'));
   return sc;
@@ -1085,6 +1163,8 @@ function renderQuiz(){
   if(!state.started){ return renderIntro(); }
   const qs=questions(); let q=qs[state.step]; const pct=(state.step/qs.length)*100;
   if(state.step===1){ const branch=branchQ2((state.answers.occasion||[])[0]); if(branch) q=branch; }
+  if(state.step===2){ const branch=branchQ3((state.answers.occasion||[])[0]); if(branch) q=branch; }
+  if(state.step===4){ const branch=branchQ5((state.answers.occasion||[])[0]); if(branch) q=branch; }
   if(window.qcTrack && !state.quizStartedTracked){window.qcTrack('quiz_started',{source:'selector'});state.quizStartedTracked=true;}
   const opts=q.opts.map((o,i)=>`<button class="qopt" onclick='answer(${JSON.stringify(q.id)},${JSON.stringify(o.tags)},${i})'><span class="qe">${o.e}</span><span><span class="ql">${o.l}</span><br><span class="qd">${o.d}</span></span></button>`).join('');
   app.innerHTML = nav() + `
@@ -1197,17 +1277,28 @@ function matchReasons(p){
   const intent=intentReason(p,a);
   if(intent) reasons.push(intent);
   else { const occTag=occ.find(tag=>p.occ.includes(tag)); if(occTag){ const r=occasionReason(p,occTag); if(r) reasons.push(r); } }
-  const goutMatch=(a.gout||[]).find(tag=>p.profil.includes(tag));
-  if(goutMatch) reasons.push(`Côté goût, on retrouve ${styleWords(p,goutMatch)} : exactement la sensation recherchée.`);
+  if(occ.includes('occ_cadeau')){
+    const col=(a.couleur||[])[0];
+    if(col==='couleur_rose' && p.tags.includes('Rosé')) reasons.push("Un joli rosé, plus original et festif à offrir.");
+    else if(col==='couleur_blanc' && !p.tags.includes('Rosé')) reasons.push("Un champagne blanc, la valeur sûre quand on offre.");
+  } else {
+    const goutMatch=(a.gout||[]).find(tag=>p.profil.includes(tag));
+    if(goutMatch) reasons.push(`Côté goût, on retrouve ${styleWords(p,goutMatch)} : exactement la sensation recherchée.`);
+  }
   const budget=(a.budget||[])[0];
   if(budget && budgetFitScore(p,budget)>=29) reasons.push(`À ${priceText(p)}, elle se place précisément dans la tranche que vous avez fixée.`);
   // Signature : on évite de répéter maison/vigneron si la branche cadeau ou convives l'a déjà dit.
   const signal=(a.repere||[])[0];
   const producerCovered=occ.includes('occ_cadeau')||occ.includes('occ_fete');
-  if(signalFit(p,signal)){
+  if(occ.includes('occ_cadeau')){
+    const reg=(a.registre||[])[0];
+    if(reg==='reg_grande') reasons.push("Un choix à la hauteur d’une grande occasion.");
+    else if(reg==='reg_ceremonie' && p.producerType==='maison') reasons.push("Une maison reconnue, idéale pour un remerciement soigné.");
+    else if(reg==='reg_plaisir') reasons.push("Un très bon rapport plaisir-prix, juste pour faire plaisir.");
+  } else if(signalFit(p,signal)){
     if(signal==='maison' && !producerCovered) reasons.push(`Signée ${p.house}, c’est une maison lisible et rassurante.`);
     if(signal==='vigneron' && !producerCovered) reasons.push("C’est un champagne de vigneron, plus personnel, comme vous le souhaitiez.");
-    if(signal==='low_dosage') reasons.push("Son dosage très bas (extra-brut ou brut nature) répond à votre goût pour les cuvées très sèches.");
+    if(signal==='low_dosage'){ const dl=p.tags.includes('Brut nature')?'brut nature':'extra-brut'; reasons.push("Son dosage très bas ("+dl+") répond à votre goût pour les cuvées très sèches."); }
   }
   if(reasons.length<2) reasons.push("Au global, c’est la bouteille la plus cohérente avec l’ensemble de vos réponses.");
   return reasons.slice(0,4);

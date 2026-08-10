@@ -493,7 +493,7 @@ function champagnesMain(){
           <select id="catalogue-producer"><option value="">Tous</option><option value="maison">Maison</option><option value="vigneron">Vigneron</option></select>
         </label>
         <label class="catalogue-filter">Type
-          <select id="catalogue-type"><option value="">Tous</option><option value="rose">Rosé</option><option value="bdb">Blanc de blancs</option><option value="low">Extra-brut / nature</option></select>
+          <select id="catalogue-type"><option value="">Tous</option><option value="rose">Rosé</option><option value="bdb">Blanc de blancs</option><option value="low">Extra-brut et brut nature</option></select>
         </label>
       </div>
       <div class="catalogue-summary"><span id="catalogue-count" aria-live="polite">${products().length} champagnes affichés</span><button class="btn btn-ghost btn-sm" id="catalogue-reset" type="reset">Réinitialiser</button></div>
@@ -835,23 +835,30 @@ function articleMain(a){
 function methodMain(){
   return `<section class="article"><div class="narrow">
     <div class="a-cat">Comment nous travaillons</div><h1 class="a-title">Notre méthode</h1>
-    <p class="qhint">Des données précises, une analyse commune à toutes les cuvées et des prix datés.</p>
+    <p class="qhint">Une grille d’analyse œnologique commune à chaque cuvée, des faits vérifiés source par source, et une recommandation expliquée. Sans classement acheté.</p>
     <div class="a-cover" style="background-image:linear-gradient(90deg,rgba(18,14,9,.16),rgba(18,14,9,.04)),url('https://images.unsplash.com/photo-1635715070096-b4655b94edee?q=82&w=1600&auto=format&fit=crop');background-size:cover;background-position:center"></div>
     <div class="prose">
-      <h2>1. Identifier la bouteille exacte</h2>
-      <p>Maison, cuvée, millésime, format et catégorie forment l’identité du produit. Cette identité relie la fiche technique, la photographie et l’offre du marchand sans mélanger deux éditions proches.</p>
-      <h2>2. Lire le style avec la même grille</h2>
-      <p>Fraîcheur, rondeur, puissance, cépages, dosage, arômes et accords composent une grille commune à tout le catalogue. Elle permet de comparer une grande maison et un vigneron sur des critères identiques.</p>
-      <h2>3. Recommander selon votre usage</h2>
-      <p>Le sélecteur croise le moment, l’accord, le style, le budget et votre préférence entre maison, vigneron ou dosage très faible. Le résultat expose les raisons du choix et propose trois alternatives proches.</p>
-      <h2>4. Dater chaque offre</h2>
-      <p>Le prix affiché correspond à la bouteille et au format présentés sur la fiche. Sa date de relevé apparaît près du bouton d’achat afin de distinguer l’analyse durable de l’offre commerciale du jour.</p>
-      <h2>5. Séparer conseil et rémunération</h2>
-      <p>Le marchand rémunère QuelChampagne lorsqu’un achat suit un lien partenaire. Cette rémunération ne modifie ni les critères du sélecteur ni l’ordre des recommandations.</p>
+      <h3>Une grille commune, celle de la dégustation professionnelle</h3>
+      <p>Nous analysons toutes les bouteilles avec les mêmes critères : le terroir et les cépages, la vinification et l’élevage, le dosage, puis l’équilibre en bouche. Appliquée à l’identique à une grande maison comme à un vigneron, cette grille rend les cuvées réellement comparables et chaque recommandation explicable.</p>
+      <h3>Terroir et cépages</h3>
+      <p>La Champagne repose sur trois grands terroirs : la Montagne de Reims, où le pinot noir apporte structure et vinosité ; la Côte des Blancs, domaine du chardonnay, tout en fraîcheur, minéralité et finesse ; la Vallée de la Marne, terre de prédilection du meunier, plus fruité et souple. Sept cépages sont autorisés, mais ces trois représentent plus de 99 % du vignoble ; l’arbane, le petit meslier, le pinot blanc et le pinot gris restent confidentiels. Un blanc de blancs provient de raisins blancs (chardonnay), un blanc de noirs de raisins noirs (pinot noir, meunier). Nous rattachons chaque cuvée à ses cépages pour anticiper son profil.</p>
+      <h3>Vinification et élevage sur lies</h3>
+      <p>Le champagne naît d’une seconde fermentation en bouteille, la prise de mousse, qui crée l’effervescence : c’est la méthode traditionnelle. Le vin repose ensuite sur ses lies ; les levures se décomposent (autolyse) et libèrent les composés responsables des notes de brioche, de viennoiserie et de fruits secs, tout en arrondissant la texture. La réglementation impose au minimum quinze mois d’élevage pour un brut sans année (dont douze après la prise de mousse) et trois ans pour un millésime ; les meilleures cuvées vont bien au-delà. La part de vins de réserve, assemblés aux vins de l’année, assure la constance d’un style. Nous tenons compte de la durée d’élevage annoncée plutôt que de la seule étiquette.</p>
+      <h3>Le dosage</h3>
+      <p>Juste avant le bouchage, une liqueur d’expédition ajuste le sucre. Les catégories sont précises : brut nature (moins de 3 g/L, sans sucre ajouté), extra-brut (0 à 6), brut (moins de 12), extra-dry (12 à 17), sec (17 à 32), demi-sec (32 à 50) et doux (plus de 50). Le chiffre ne suffit pourtant pas : un brut à forte acidité paraîtra plus sec qu’un extra-brut issu de raisins mûrs. Nous lisons donc toujours le dosage avec l’acidité, la maturité et l’élevage, et nous ne l’affichons comme fait que lorsqu’il est sourcé.</p>
+      <h3>Crus : ce que Grand Cru et Premier Cru garantissent vraiment</h3>
+      <p>L’échelle des crus, établie en 1919, classait les communes selon la qualité de leurs raisins : dix-sept villages atteignent 100 % et portent la mention Grand Cru, une quarantaine se situent entre 90 et 99 % en Premier Cru. Abandonnée en 2004 pour la fixation des prix, elle demeure une référence de terroir. Une nuance essentielle : la mention qualifie le village, pas la cuvée. Un vigneron talentueux sur un Premier Cru peut surpasser une cuvée générique de Grand Cru. Nous la traitons comme un indice, jamais comme une garantie.</p>
+      <h3>Le profil sensoriel : quatre axes lisibles</h3>
+      <p>Après l’œil (robe, finesse et persistance de la bulle) et le nez (agrumes, fruits blancs, fruits rouges, fleurs, brioche, notes grillées), nous résumons la bouche sur quatre axes : la fraîcheur (tension, acidité), la rondeur (fruit, souplesse), la puissance (corps, matière) et la longueur (persistance en finale). Ces repères, communs à tout le catalogue, traduisent l’équilibre d’une cuvée en langage clair et guident l’accord.</p>
+      <h3>Recommander la bonne bouteille</h3>
+      <p>Le sélecteur croise cinq critères en adaptant les questions à votre intention : le moment, l’accord ou le destinataire, le style, le budget et la signature. Le budget est une contrainte ferme : nous ne proposons que des bouteilles de votre tranche. L’accord suit les principes œnologiques (une cuvée tendue et minérale sur les fruits de mer, une cuvée vineuse et structurée sur une volaille, un rosé ou un demi-sec sur un dessert fruité). Chaque résultat explique les raisons du choix et propose des alternatives cohérentes.</p>
+      <h3>Des faits vérifiés, séparés de l’offre</h3>
+      <p>Nous distinguons toujours le fait sourcé de l’interprétation. Chaque donnée technique publiée est rattachée à sa source, en privilégiant l’information officielle du producteur ; à défaut, elle est signalée comme issue du flux marchand, et jamais inventée. Le prix affiché correspond à la bouteille et au format exacts, avec sa date de relevé, pour ne pas confondre l’analyse durable et l’offre commerciale du jour.</p>
+      <h3>Indépendance</h3>
+      <p>Aucune maison ne paie pour remonter dans nos sélections. Lorsqu’un achat suit un lien partenaire, nous pouvons percevoir une commission, sans surcoût pour vous et sans influence sur les critères ni sur l’ordre des recommandations. Le conseil et la rémunération restent strictement séparés.</p>
     </div>
   </div></section>`;
 }
-
 function aboutMain(){
   return `<section class="article"><div class="narrow">
     <div class="a-cat">À propos</div><h1 class="a-title">Choisir un champagne sans subir le classement d’un caviste</h1>
@@ -880,7 +887,7 @@ function partnersMain(){
   const demo=sample?`<div class="partner-demo" aria-label="Exemple d’une recommandation QuelChampagne"><div class="partner-demo-top"><span>Résultat du sélecteur</span><strong>Choix expliqué</strong></div><div class="partner-demo-product"><img src="${sample.image}" alt="Bouteille ${sample.house} ${sample.short}"><div><small>${sample.house}</small><h2>${sample.short}</h2><p>${e.character||'Vif et précis'} · ${e.temperature||'8–10 °C'}</p><strong>${priceText(sample)}</strong></div></div><ul><li>${icons.match}<span>Accord, style et budget croisés</span></li><li>${icons.click}<span>Analyse interne avant la redirection</span></li></ul></div>`:'';
   return `<div class="partner-page">
   <section class="partner-hero"><div class="container">
-    <div class="partner-hero-copy"><div class="a-cat">Partenaires marchands</div><h1>Transformer un catalogue en décisions d’achat.</h1><p>QuelChampagne relie chaque offre à une bouteille exacte, l’enrichit avec des critères de choix et dirige le visiteur vers le marchand après une recommandation expliquée.</p><div class="partner-actions"><a class="btn btn-primary" href="mailto:timothe.cabinetdp@gmail.com?subject=Pilote%20partenaire%20QuelChampagne">Étudier un pilote</a><a class="chev" href="/selecteur/">Voir le parcours utilisateur</a></div></div>
+    <div class="partner-hero-copy"><div class="a-cat">Partenaires marchands</div><h1>Transformer un catalogue en décisions d’achat.</h1><p>QuelChampagne relie chaque offre à une bouteille exacte, l’enrichit avec des critères de choix et dirige le visiteur vers le marchand après une recommandation expliquée.</p><div class="partner-actions"><a class="btn btn-primary" href="mailto:contact@quelchampagne.fr?subject=Pilote%20partenaire%20QuelChampagne">Étudier un pilote</a><a class="chev" href="/selecteur/">Voir le parcours utilisateur</a></div></div>
     ${demo}
   </div></section>
 
@@ -899,9 +906,9 @@ function partnersMain(){
   </div></div></section>
 
   <section class="section gray partner-pilot"><div class="container"><div class="partner-pilot-grid"><div><div class="eyebrow-l">Proposition de collaboration</div><h2 class="h2">Un pilote mesurable en 30 jours</h2><p class="partner-pilot-lead">Nous intégrons un premier échantillon de 50 à 100 champagnes pour valider la qualité des données, le parcours et l’intérêt commercial avant d’ouvrir davantage de références.</p><div class="partner-deliverables"><div>${icons.feed}<span><strong>Catalogue connecté</strong>Prix, stock, photos et liens profonds actualisés.</span></div><div>${icons.enrich}<span><strong>Fiches enrichies</strong>Chaque référence rejoint le sélecteur et le comparateur.</span></div><div>${icons.chart}<span><strong>Bilan partagé</strong>Consultations, clics sortants et intentions les plus fréquentes.</span></div></div></div>
-    <aside class="partner-pilot-card"><h3>Périmètre proposé</h3><dl><div><dt>Catalogue</dt><dd>50 à 100 références</dd></div><div><dt>Durée</dt><dd>30 jours</dd></div><div><dt>Mise à jour</dt><dd>Flux régulier</dd></div><div><dt>Mesure</dt><dd>Sélecteur → fiche → marchand</dd></div></dl><a class="btn btn-accent" href="mailto:timothe.cabinetdp@gmail.com?subject=Pilote%20catalogue%20QuelChampagne">Lancer l’échange</a></aside></div></div></section>
+    <aside class="partner-pilot-card"><h3>Périmètre proposé</h3><dl><div><dt>Catalogue</dt><dd>50 à 100 références</dd></div><div><dt>Durée</dt><dd>30 jours</dd></div><div><dt>Mise à jour</dt><dd>Flux régulier</dd></div><div><dt>Mesure</dt><dd>Sélecteur → fiche → marchand</dd></div></dl><a class="btn btn-accent" href="mailto:contact@quelchampagne.fr?subject=Pilote%20catalogue%20QuelChampagne">Lancer l’échange</a></aside></div></div></section>
 
-  <section class="section partner-needs"><div class="container"><div class="partner-needs-grid"><div><div class="eyebrow-l">Données attendues</div><h2 class="h2">Ce qu’il faut pour commencer</h2></div><div class="partner-checks"><p>Identifiant produit stable : SKU ou EAN</p><p>Nom exact, format et millésime</p><p>Prix, disponibilité et URL de vente</p><p>Photographies avec droits d’utilisation</p><p>Fiches techniques ou données producteur</p><p>Règles d’attribution et reporting</p></div></div><div class="partner-final"><h2>Construisons le premier catalogue ensemble.</h2><p>L’intégration commence sur un échantillon contrôlé. Elle ne demande ni exclusivité ni mise en avant payante.</p><a class="btn btn-primary" href="mailto:timothe.cabinetdp@gmail.com?subject=Partenariat%20QuelChampagne">Contacter QuelChampagne</a></div></div></section>
+  <section class="section partner-needs"><div class="container"><div class="partner-needs-grid"><div><div class="eyebrow-l">Données attendues</div><h2 class="h2">Ce qu’il faut pour commencer</h2></div><div class="partner-checks"><p>Identifiant produit stable : SKU ou EAN</p><p>Nom exact, format et millésime</p><p>Prix, disponibilité et URL de vente</p><p>Photographies avec droits d’utilisation</p><p>Fiches techniques ou données producteur</p><p>Règles d’attribution et reporting</p></div></div><div class="partner-final"><h2>Construisons le premier catalogue ensemble.</h2><p>L’intégration commence sur un échantillon contrôlé. Elle ne demande ni exclusivité ni mise en avant payante.</p><a class="btn btn-primary" href="mailto:contact@quelchampagne.fr?subject=Partenariat%20QuelChampagne">Contacter QuelChampagne</a></div></div></section>
   </div>`;
 }
 
@@ -909,11 +916,11 @@ function legalMain(){
   return `<section class="article"><div class="narrow">
     <div class="a-cat">Informations juridiques</div><h1 class="a-title">Mentions légales</h1>
     <div class="prose">
-      <h2>Éditeur du site</h2>
-      <p>Le site <strong>quelchampagne.fr</strong> est édité par <strong>CORTEXIA</strong>, société par actions simplifiée (SAS) au capital de 1 000 €.<br>Siège social : 59 rue de Ponthieu, 75008 Paris.<br>SIREN : 107 124 000, RCS Paris 107 124 000.<br>N° TVA intracommunautaire : FR51107124000.<br>Directeur de la publication : Timothée Michel, président.<br>Contact : timothe.cabinetdp@gmail.com</p>
-      <h2>Hébergement</h2>
-      <p>Le site est hébergé par <strong>Cloudflare, Inc.</strong>, 101 Townsend Street, San Francisco, CA 94107, États-Unis, www.cloudflare.com.</p>
-      <h2>Contenu et propriété intellectuelle</h2>
+      <h3>Éditeur du site</h3>
+      <p>Le site <strong>quelchampagne.fr</strong> est édité par <strong>CORTEXIA</strong>, société par actions simplifiée (SAS) au capital de 1 000 €.<br>Siège social : 59 rue de Ponthieu, 75008 Paris.<br>SIREN : 107 124 000, RCS Paris 107 124 000.<br>N° TVA intracommunautaire : FR51107124000.<br>Directeur de la publication : Timothée Michel, président.<br>Contact : <a href="mailto:contact@quelchampagne.fr">contact@quelchampagne.fr</a></p>
+      <h3>Hébergement</h3>
+      <p>Le site est hébergé par <strong>Cloudflare, Inc.</strong>, 101 Townsend Street, San Francisco, CA 94107, États-Unis. Téléphone : +1 650 319 8930. Site : www.cloudflare.com.</p>
+      <h3>Contenu et propriété intellectuelle</h3>
       <p>Les textes, données structurées et visuels originaux de QuelChampagne ne peuvent pas être réutilisés sans autorisation. Les marques citées appartiennent à leurs titulaires respectifs. Leur citation sert uniquement à identifier les cuvées présentées.</p>
       <h2>Information et responsabilité</h2>
       <p>Les prix et disponibilités peuvent évoluer après leur date de vérification. Les informations techniques distinguent les éléments communiqués par le marchand ou le producteur de l’analyse QuelChampagne.</p>
@@ -937,8 +944,8 @@ function privacyMain(){
       <p>Le navigateur conserve localement la préférence <code>qc_affiliate_choice</code>. Le choix « suivi » autorise l’ouverture du lien Webgains ; le choix « sans suivi » ouvre directement la page du marchand. Cette préférence peut être modifiée depuis le pied de page. Les traceurs éventuellement déposés après l’ouverture du lien affilié relèvent des politiques de Webgains et du marchand.</p>
       <h2>Services tiers</h2>
       <p>Le site n’intègre ni régie publicitaire, ni police externe. Certaines photographies d’illustration sont servies par le réseau de diffusion d’Unsplash et les photographies des bouteilles par le réseau de diffusion utilisé par Bottle of Italy. Ces hébergeurs d’images peuvent recevoir des données techniques de connexion, notamment l’adresse IP et le type de navigateur, lors du chargement des visuels. Après acceptation du suivi, les liens d’achat passent par Webgains avant de rediriger vers Bottle of Italy ; le clic et une éventuelle commande sont alors traités selon les politiques de ces services. QuelChampagne ne reçoit pas les données de paiement ni le détail nominatif des commandes.</p>
-      <h2>Vos droits et contact</h2>
-      <p>Responsable du traitement : CORTEXIA (SAS), 59 rue de Ponthieu, 75008 Paris. Pour toute demande relative à vos données ou l’exercice de vos droits : timothe.cabinetdp@gmail.com. Vous pouvez également saisir la CNIL (www.cnil.fr).</p>
+      <h3>Vos droits et contact</h3>
+      <p>Responsable du traitement : CORTEXIA (SAS), 59 rue de Ponthieu, 75008 Paris. Pour toute demande relative à vos données ou l’exercice de vos droits : <a href="mailto:contact@quelchampagne.fr">contact@quelchampagne.fr</a>. Vous pouvez également saisir la CNIL (www.cnil.fr).</p>
     </div>
   </div></section>`;
 }

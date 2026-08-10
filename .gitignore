@@ -1,2 +1,5 @@
 node_modules/
 .env*
+
+# Livrables marketing (logos, kit réseaux) : hors site, ne pas déployer
+marketing/
