@@ -1,0 +1,26 @@
+services:
+  web:
+    image: quelchampagne-web:latest
+    container_name: quelchampagne-web
+    build:
+      context: .
+      dockerfile: Dockerfile.web
+    restart: always
+    networks:
+      - reverse-proxy-net
+
+  engine:
+    image: quelchampagne-engine:latest
+    container_name: quelchampagne-engine
+    build:
+      context: .
+      dockerfile: Dockerfile.engine
+    restart: always
+    env_file:
+      - .env.production
+    networks:
+      - reverse-proxy-net
+
+networks:
+  reverse-proxy-net:
+    external: true
