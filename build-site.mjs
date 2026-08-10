@@ -244,6 +244,7 @@ function footer(){
     </div>
     <div class="foot-health">L'abus d'alcool est dangereux pour la santé. À consommer avec modération.</div>
     <div class="foot-disc">Site réservé aux personnes majeures. ${BRAND} propose des informations et des conseils indépendants. Chaque prix affiché correspond au dernier relevé de l’offre présentée et porte sa date de contrôle.</div>
+    <div class="foot-signature">Fait à Reims, au cœur de la Champagne.</div>
   </div></footer>`;
 }
 const AGEGATE = `<script>
