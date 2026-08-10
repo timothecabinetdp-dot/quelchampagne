@@ -761,7 +761,7 @@ function questions(){
       opts:[
         {e:'01', tags:['maison'], l:"Une maison reconnue", d:"Une signature lisible et rassurante"},
         {e:'02', tags:['vigneron'], l:"Un champagne de vigneron", d:"Une bouteille plus personnelle à découvrir"},
-        {e:'03', tags:['low_dosage'], l:"Un style très sec", d:"Extra-brut ou brut nature"},
+        {e:'03', tags:['low_dosage'], l:"Un style très sec", d:"Le dosage le plus bas, sans rondeur sucrée"},
         {e:'04', tags:['any'], l:"Je vous laisse choisir", d:"La cohérence avec mes autres réponses prime"},
       ]},
   ];
@@ -1584,7 +1584,7 @@ function signalFit(p, signal){
   if(!signal || signal==='any') return true;
   if(signal==='maison') return p.producerType==='maison';
   if(signal==='vigneron') return p.producerType==='vigneron';
-  if(signal==='low_dosage') return p.tags.includes('Extra-brut / nature') || /\b(?:0|1|2|3|4|5|6)(?:[,.]\d+)?\s*g\/L\b/i.test(p.details?.dosage||'');
+  if(signal==='low_dosage') return (p.tags.includes('Extra-brut')||p.tags.includes('Brut nature')) || /\b(?:0|1|2|3|4|5|6)(?:[,.]\d+)?\s*g\/L\b/i.test(p.details?.dosage||'');
   return true;
 }
 function accordFit(p, accord){
@@ -1596,7 +1596,7 @@ function destinataireScore(p, dest){
   if(dest==='dest_connaisseur'){
     let s=2;
     if(p.producerType==='vigneron') s+=12;
-    if(p.tags.includes('Extra-brut / nature')) s+=5;
+    if((p.tags.includes('Extra-brut')||p.tags.includes('Brut nature'))) s+=5;
     if(p.tags.includes('Grand Cru')||p.tags.includes('Premier Cru')) s+=4;
     if((p.details?.scores?.complexity||3)>=4) s+=3;
     return Math.min(22,s);
@@ -1605,7 +1605,7 @@ function destinataireScore(p, dest){
     let s=2;
     if(p.producerType==='maison') s+=10;
     if((p.popularity||0)>=80) s+=6;
-    if(p.tags.includes('Brut') && !p.tags.includes('Extra-brut / nature')) s+=4;
+    if(p.tags.includes('Brut') && !(p.tags.includes('Extra-brut')||p.tags.includes('Brut nature'))) s+=4;
     return Math.min(22,s);
   }
   if(dest==='dest_prestige'){
@@ -1624,7 +1624,7 @@ function convivesScore(p, crowd){
     let s=2;
     if(p.producerType==='maison') s+=10;
     if((p.popularity||0)>=80) s+=6;
-    if(p.tags.includes('Brut') && !p.tags.includes('Extra-brut / nature')) s+=4;
+    if(p.tags.includes('Brut') && !(p.tags.includes('Extra-brut')||p.tags.includes('Brut nature'))) s+=4;
     return Math.min(22,s);
   }
   if(crowd==='crowd_decouverte'){
@@ -1647,7 +1647,7 @@ function aperitifScore(p, val){
   if(!val || val==='apero_any') return 10;
   const sc=p.details?.scores||{};
   if(val==='apero_leger'){ let s=2; if((sc.freshness||3)>=4) s+=8; if(p.profil.includes('profil_frais_vif')||p.profil.includes('profil_delicat')) s+=5; if(p.tags.includes('Blanc de blancs')) s+=3; return Math.min(22,s); }
-  if(val==='apero_dinatoire'){ let s=2; if(p.tags.includes('Brut') && !p.tags.includes('Extra-brut / nature')) s+=5; if((sc.roundness||3)>=3) s+=5; if(p.profil.includes('profil_fruite')||p.profil.includes('profil_riche_ample')) s+=5; return Math.min(22,s); }
+  if(val==='apero_dinatoire'){ let s=2; if(p.tags.includes('Brut') && !(p.tags.includes('Extra-brut')||p.tags.includes('Brut nature'))) s+=5; if((sc.roundness||3)>=3) s+=5; if(p.profil.includes('profil_fruite')||p.profil.includes('profil_riche_ample')) s+=5; return Math.min(22,s); }
   if(val==='apero_trinquer'){ let s=2; if((p.popularity||0)>=80) s+=6; if(p.profil.includes('profil_fruite')) s+=6; if((p.tier||1)<=2) s+=5; return Math.min(22,s); }
   return 10;
 }
@@ -1668,11 +1668,11 @@ function accordAffinity(p, accord){
   const s=(p.details&&p.details.scores)?p.details.scores:{};
   const fresh=s.freshness||3, round=s.roundness||3, power=s.power||3, cx=s.complexity||3;
   let x=has?14:2;
-  if(accord==='accord_mer'){ if(fresh>=4)x+=6; if(p.tags.includes('Blanc de blancs'))x+=3; if(p.tags.includes('Extra-brut / nature'))x+=2; if(power>=4)x-=4; }
+  if(accord==='accord_mer'){ if(fresh>=4)x+=6; if(p.tags.includes('Blanc de blancs'))x+=3; if((p.tags.includes('Extra-brut')||p.tags.includes('Brut nature')))x+=2; if(power>=4)x-=4; }
   else if(accord==='accord_aperitif'){ if(fresh>=3)x+=4; if((p.tier||1)<=2)x+=3; if(power>=4)x-=3; }
   else if(accord==='accord_volaille'){ if(power>=3||round>=3)x+=5; if(p.tags.includes('Blanc de noirs'))x+=3; if(cx>=4)x+=2; }
   else if(accord==='accord_fromage'){ if(power>=4)x+=5; if(cx>=4)x+=4; if(fresh>=4&&power<=2)x-=2; }
-  else if(accord==='accord_dessert'){ if(p.tags.includes('Demi-sec'))x+=8; if(p.tags.includes('Rosé'))x+=3; if(round>=4)x+=2; if(p.tags.includes('Extra-brut / nature'))x-=3; }
+  else if(accord==='accord_dessert'){ if(p.tags.includes('Demi-sec'))x+=8; if(p.tags.includes('Rosé'))x+=3; if(round>=4)x+=2; if((p.tags.includes('Extra-brut')||p.tags.includes('Brut nature')))x-=3; }
   return Math.max(0,Math.min(24,x));
 }
 function intentScore(p, a){
@@ -1688,7 +1688,7 @@ function intentScore(p, a){
 function giftRegistreScore(p, val){
   if(!val || val==='reg_any') return 8;
   if(val==='reg_grande'){ let s=0; if((p.tier||1)>=3) s+=8; if(p.tags.includes('Millésimé')) s+=4; if(p.tags.includes('Grand Cru')) s+=3; if((p.popularity||0)>=84) s+=2; return Math.min(17,s); }
-  if(val==='reg_ceremonie'){ let s=0; if(p.producerType==='maison') s+=8; if((p.popularity||0)>=80) s+=5; if(p.tags.includes('Brut') && !p.tags.includes('Extra-brut / nature')) s+=4; return Math.min(17,s); }
+  if(val==='reg_ceremonie'){ let s=0; if(p.producerType==='maison') s+=8; if((p.popularity||0)>=80) s+=5; if(p.tags.includes('Brut') && !(p.tags.includes('Extra-brut')||p.tags.includes('Brut nature'))) s+=4; return Math.min(17,s); }
   if(val==='reg_plaisir'){ let s=6; if((p.tier||1)<=2) s+=4; if((p.popularity||0)>=68) s+=3; return Math.min(17,s); }
   return 8;
 }
@@ -2048,7 +2048,7 @@ function matchReasons(p){
   } else if(signalFit(p,signal)){
     if(signal==='maison' && !producerCovered) reasons.push(`Signée ${p.house}, c’est une maison lisible et rassurante.`);
     if(signal==='vigneron' && !producerCovered) reasons.push("C’est un champagne de vigneron, plus personnel, comme vous le souhaitiez.");
-    if(signal==='low_dosage') reasons.push("Son dosage très bas (extra-brut ou brut nature) répond à votre goût pour les cuvées très sèches.");
+    if(signal==='low_dosage'){ const dl=p.tags.includes('Brut nature')?'brut nature':'extra-brut'; reasons.push("Son dosage très bas ("+dl+") répond à votre goût pour les cuvées très sèches."); }
   }
   if(reasons.length<2) reasons.push("Au global, c’est la bouteille la plus cohérente avec l’ensemble de vos réponses.");
   return reasons.slice(0,4);

@@ -288,7 +288,7 @@
     ],
     "bulles": "bulles_fines",
     "tags": [
-      "Extra-brut / nature"
+      "Brut nature"
     ],
     "pair": "huîtres, poisson, apéritif",
     "note": "Un brut nature au caractère nuancé et persistant. Au premier plan : agrumes, pomme, fleurs blanches, pâtisserie. L’assemblage réunit Pinot Noir, Chardonnay. À privilégier avec huîtres, poisson, apéritif.",
@@ -343,7 +343,7 @@
         "Chardonnay"
       ],
       "enrichment": {
-        "type": "Champagne blanc · extra-brut ou brut nature",
+        "type": "Champagne blanc · brut nature",
         "character": "Vif et précis",
         "blend": [],
         "blendLabel": "Pinot Noir et Chardonnay",
@@ -378,7 +378,7 @@
         "nose": "Le nez se déploie, complexe, sur agrumes, pomme, fleurs blanches, pâtisserie, fruits secs et salinité.",
         "mouth": "L’attaque est vive et tendue, le milieu de bouche précis et élancé, sur une sensation très sèche et saline. L’ensemble reste équilibré et digeste.",
         "finish": "La finale, longue, revient sur fruits secs et salinité.",
-        "overview": "Champagne blanc · extra-brut ou brut nature. Vif et précis. Assemblage : Pinot Noir et Chardonnay. Le registre aromatique réunit agrumes, pomme, fleurs blanches, pâtisserie, fruits secs et salinité.",
+        "overview": "Champagne blanc · brut nature. Vif et précis. Assemblage : Pinot Noir et Chardonnay. Le registre aromatique réunit agrumes, pomme, fleurs blanches, pâtisserie, fruits secs et salinité.",
         "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 3 ans sur lies. Cuves inox. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont huîtres, poisson, apéritif, volaille et viandes blanches et fromages affinés.",
         "facts": [
@@ -392,7 +392,7 @@
           ],
           [
             "Type",
-            "Champagne blanc · extra-brut ou brut nature"
+            "Champagne blanc · brut nature"
           ],
           [
             "Cépages",
@@ -3952,7 +3952,7 @@
     "bulles": "bulles_fines",
     "tags": [
       "Blanc de blancs",
-      "Extra-brut / nature"
+      "Extra-brut"
     ],
     "pair": "poisson, fromages, apéritif",
     "note": "Un blanc de blancs extra-brut au caractère nuancé et persistant. Au premier plan : agrumes, pomme, fleurs blanches, brioche. L’assemblage réunit Chardonnay, Pinot Blanc. À privilégier avec poisson, fromages, apéritif.",
@@ -4007,7 +4007,7 @@
         "Pinot Blanc"
       ],
       "enrichment": {
-        "type": "Blanc de blancs · extra-brut ou brut nature",
+        "type": "Blanc de blancs · extra-brut",
         "character": "Vif et précis",
         "blend": [
           {
@@ -4051,7 +4051,7 @@
         "nose": "Le nez se déploie, complexe, sur agrumes, pomme, fleurs blanches, brioche, amande et minéralité.",
         "mouth": "L’attaque est vive et tendue, le milieu de bouche précis et élancé, sur une sensation très sèche et saline. L’ensemble reste équilibré et digeste.",
         "finish": "La finale, longue, revient sur amande et minéralité.",
-        "overview": "Blanc de blancs · extra-brut ou brut nature. Vif et précis. Assemblage : 60 % Chardonnay · 40 % Pinot Blanc. Le registre aromatique réunit agrumes, pomme, fleurs blanches, brioche, amande et minéralité.",
+        "overview": "Blanc de blancs · extra-brut. Vif et précis. Assemblage : 60 % Chardonnay · 40 % Pinot Blanc. Le registre aromatique réunit agrumes, pomme, fleurs blanches, brioche, amande et minéralité.",
         "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 3 ans sur lies. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont poisson, fromages, apéritif, huîtres et crustacés.",
         "facts": [
@@ -4065,7 +4065,7 @@
           ],
           [
             "Type",
-            "Blanc de blancs · extra-brut ou brut nature"
+            "Blanc de blancs · extra-brut"
           ],
           [
             "Cépages",
@@ -5670,6 +5670,7 @@
     ],
     "profil": [
       "profil_frais_vif",
+      "profil_fruite",
       "profil_riche_ample"
     ],
     "accords": [
@@ -5681,10 +5682,10 @@
     ],
     "bulles": "bulles_fines",
     "tags": [
-      "Extra-brut / nature"
+      "Brut"
     ],
     "pair": "huîtres, crustacés, sushis",
-    "note": "Un extra-brut au caractère nuancé et persistant. Au premier plan : agrumes, fruits blancs, fleurs blanches, brioche. L’assemblage réunit Arbane, Petit Meslier, Pinot Blanc, Chardonnay. À privilégier avec huîtres, crustacés, sushis.",
+    "note": "Un brut au caractère rond et généreux. Au premier plan : agrumes, fruits blancs, fleurs blanches, brioche. L’assemblage réunit Arbane, Petit Meslier, Pinot Blanc, Chardonnay. À privilégier avec huîtres, crustacés, sushis.",
     "sourceUrl": "https://www.champagne-drappier.com/fr/cuvee/quattuor/",
     "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-quattuor-aoc-drappier",
     "officialSourceUrl": "https://www.champagne-drappier.com/fr/cuvee/quattuor/",
@@ -5709,17 +5710,17 @@
       "dosage": null,
       "verifiedFacts": "Assemblage officiel à parts égales : Arbane, Petit Meslier, Blanc Vrai et Chardonnay.",
       "evidenceStatus": "official_confirmed",
-      "advice": "Sa fraîcheur nette convient particulièrement à huîtres, crustacés, sushis.",
-      "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et fruits blancs.",
+      "advice": "Sa texture ample accompagne volontiers huîtres, crustacés, sushis.",
+      "avoid": "Écartez-la si vous recherchez une expression austère et tranchante : son profil privilégie l’ampleur.",
       "profil": {
-        "fraicheur": "Très fraîche",
-        "rondeur": "Équilibrée",
+        "fraicheur": "Fraîche",
+        "rondeur": "Ronde",
         "puissance": "Équilibrée",
         "longueur": "Complexe"
       },
       "scores": {
-        "freshness": 5,
-        "roundness": 3,
+        "freshness": 4,
+        "roundness": 4,
         "power": 3,
         "complexity": 4
       },
@@ -5737,7 +5738,7 @@
         "Chardonnay"
       ],
       "enrichment": {
-        "type": "Champagne blanc · extra-brut ou brut nature",
+        "type": "Champagne blanc · brut",
         "character": "Vif et précis",
         "blend": [],
         "blendLabel": "Arbane, Petit Meslier, Pinot Blanc et Chardonnay",
@@ -5769,9 +5770,9 @@
         ],
         "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine formant un cordon régulier.",
         "nose": "Le nez se déploie, complexe, sur agrumes, fruits blancs, fleurs blanches, brioche et miel.",
-        "mouth": "L’attaque est vive et tendue, le milieu de bouche précis et élancé, sur une sensation très sèche et saline. L’ensemble reste équilibré et digeste.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche rond et généreux. L’ensemble reste harmonieux, sans lourdeur.",
         "finish": "La finale, longue, revient sur brioche et miel.",
-        "overview": "Champagne blanc · extra-brut ou brut nature. Vif et précis. Assemblage : Arbane, Petit Meslier, Pinot Blanc et Chardonnay. Le registre aromatique réunit agrumes, fruits blancs, fleurs blanches, brioche et miel.",
+        "overview": "Champagne blanc · brut. Vif et précis. Assemblage : Arbane, Petit Meslier, Pinot Blanc et Chardonnay. Le registre aromatique réunit agrumes, fruits blancs, fleurs blanches, brioche et miel.",
         "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Passage sous bois. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont huîtres, crustacés, sushis, poisson et fromages.",
         "facts": [
@@ -5785,7 +5786,7 @@
           ],
           [
             "Type",
-            "Champagne blanc · extra-brut ou brut nature"
+            "Champagne blanc · brut"
           ],
           [
             "Cépages",
@@ -7621,7 +7622,7 @@
     ],
     "bulles": "bulles_fines",
     "tags": [
-      "Extra-brut / nature"
+      "Extra-brut"
     ],
     "pair": "crustacés, sushis, poisson",
     "note": "Un extra-brut au caractère nuancé et persistant. Au premier plan : agrumes, brioche, pâtisserie, amande. L’assemblage réunit Chardonnay, Pinot Noir, Meunier. À privilégier avec crustacés, sushis, poisson.",
@@ -7676,7 +7677,7 @@
         "Meunier"
       ],
       "enrichment": {
-        "type": "Champagne blanc · extra-brut ou brut nature",
+        "type": "Champagne blanc · extra-brut",
         "character": "Vif et précis",
         "blend": [],
         "blendLabel": "Chardonnay, Pinot Noir et Meunier",
@@ -7711,7 +7712,7 @@
         "nose": "Le nez se déploie, complexe, sur agrumes, brioche, pâtisserie, amande, minéralité et fruits blancs.",
         "mouth": "L’attaque est vive et tendue, le milieu de bouche précis et élancé, sur une sensation très sèche et saline. L’ensemble reste équilibré et digeste.",
         "finish": "La finale, longue, revient sur minéralité et fruits blancs.",
-        "overview": "Champagne blanc · extra-brut ou brut nature. Vif et précis. Assemblage : Chardonnay, Pinot Noir et Meunier. Le registre aromatique réunit agrumes, brioche, pâtisserie, amande, minéralité et fruits blancs.",
+        "overview": "Champagne blanc · extra-brut. Vif et précis. Assemblage : Chardonnay, Pinot Noir et Meunier. Le registre aromatique réunit agrumes, brioche, pâtisserie, amande, minéralité et fruits blancs.",
         "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox et Passage sous bois. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont crustacés, sushis, poisson, fromages et apéritif.",
         "facts": [
@@ -7725,7 +7726,7 @@
           ],
           [
             "Type",
-            "Champagne blanc · extra-brut ou brut nature"
+            "Champagne blanc · extra-brut"
           ],
           [
             "Cépages",
@@ -9078,10 +9079,10 @@
     ],
     "bulles": "bulles_fines",
     "tags": [
-      "Extra-brut / nature"
+      "Brut"
     ],
     "pair": "huîtres, crustacés, poisson",
-    "note": "Un extra-brut au caractère frais et précis. Au premier plan : fruits blancs, fruits rouges, fleurs blanches, brioche. L’assemblage réunit Chardonnay, Pinot Noir, Meunier. À privilégier avec huîtres, crustacés, poisson.",
+    "note": "Un brut au caractère frais et précis. Au premier plan : fruits blancs, fruits rouges, fleurs blanches, brioche. L’assemblage réunit Chardonnay, Pinot Noir, Meunier. À privilégier avec huîtres, crustacés, poisson.",
     "sourceUrl": "https://bottleofitaly.com/fr/products/champagne-brut-carte-d-or-aoc-drappier",
     "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-brut-carte-d-or-aoc-drappier",
     "officialSourceUrl": null,
@@ -9109,14 +9110,14 @@
       "advice": "Sa fraîcheur nette convient particulièrement à huîtres, crustacés, poisson.",
       "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie fruits blancs et fruits rouges.",
       "profil": {
-        "fraicheur": "Très fraîche",
-        "rondeur": "Droite",
+        "fraicheur": "Fraîche",
+        "rondeur": "Équilibrée",
         "puissance": "Équilibrée",
         "longueur": "Nuancée"
       },
       "scores": {
-        "freshness": 5,
-        "roundness": 2,
+        "freshness": 4,
+        "roundness": 3,
         "power": 3,
         "complexity": 3
       },
@@ -9133,7 +9134,7 @@
         "Meunier"
       ],
       "enrichment": {
-        "type": "Champagne blanc · extra-brut ou brut nature",
+        "type": "Champagne blanc · brut",
         "character": "Vif et précis",
         "blend": [],
         "blendLabel": "Chardonnay, Pinot Noir et Meunier",
@@ -9166,9 +9167,9 @@
         ],
         "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine formant un cordon régulier.",
         "nose": "Le nez se montre frais et précis, sur fruits blancs, fruits rouges, fleurs blanches, brioche, amande et agrumes.",
-        "mouth": "L’attaque est vive et tendue, le milieu de bouche précis et élancé, sur une sensation très sèche et saline. L’ensemble reste équilibré et digeste.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche précis et élancé. L’ensemble reste équilibré et digeste.",
         "finish": "La finale est tendue, fraîche et légèrement saline, et invite à la reprise.",
-        "overview": "Champagne blanc · extra-brut ou brut nature. Vif et précis. Assemblage : Chardonnay, Pinot Noir et Meunier. Le registre aromatique réunit fruits blancs, fruits rouges, fleurs blanches, brioche, amande et agrumes.",
+        "overview": "Champagne blanc · brut. Vif et précis. Assemblage : Chardonnay, Pinot Noir et Meunier. Le registre aromatique réunit fruits blancs, fruits rouges, fleurs blanches, brioche, amande et agrumes.",
         "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe. Les accords les plus naturels sont huîtres, crustacés, poisson, fruits rouges et dessert.",
         "facts": [
@@ -9182,7 +9183,7 @@
           ],
           [
             "Type",
-            "Champagne blanc · extra-brut ou brut nature"
+            "Champagne blanc · brut"
           ],
           [
             "Cépages",
@@ -10529,15 +10530,15 @@
       "accord_mer",
       "accord_dessert",
       "accord_aperitif",
+      "accord_volaille",
       "accord_fromage"
     ],
     "bulles": "bulles_fines",
     "tags": [
-      "Blanc de blancs",
-      "Extra-brut / nature"
+      "Blanc de blancs"
     ],
     "pair": "poisson, dessert, apéritif",
-    "note": "Un blanc de blancs extra-brut au caractère nuancé et persistant. Au premier plan : agrumes, poire, pêche, fleurs blanches. L’assemblage réunit Chardonnay, Pinot Noir. À privilégier avec poisson, dessert, apéritif.",
+    "note": "Un blanc de blancs brut au caractère nuancé et persistant. Au premier plan : agrumes, poire, pêche, fleurs blanches. L’assemblage réunit Chardonnay, Pinot Noir. À privilégier avec poisson, dessert, apéritif.",
     "sourceUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-aoc-drappier",
     "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-aoc-drappier",
     "officialSourceUrl": null,
@@ -10565,14 +10566,14 @@
       "advice": "Sa fraîcheur nette convient particulièrement à poisson, dessert, apéritif.",
       "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et poire.",
       "profil": {
-        "fraicheur": "Très fraîche",
-        "rondeur": "Droite",
+        "fraicheur": "Fraîche",
+        "rondeur": "Équilibrée",
         "puissance": "Légère",
         "longueur": "Complexe"
       },
       "scores": {
-        "freshness": 5,
-        "roundness": 2,
+        "freshness": 4,
+        "roundness": 3,
         "power": 2,
         "complexity": 4
       },
@@ -10587,7 +10588,7 @@
         "Pinot Noir"
       ],
       "enrichment": {
-        "type": "Blanc de blancs · extra-brut ou brut nature",
+        "type": "Blanc de blancs · brut",
         "character": "Vif et précis",
         "blend": [],
         "blendLabel": "Chardonnay et Pinot Noir",
@@ -10614,16 +10615,16 @@
           "Poisson",
           "Dessert",
           "Apéritif",
-          "Fromages affinés",
-          "Huîtres"
+          "Volaille et viandes blanches",
+          "Fromages affinés"
         ],
         "eye": "La robe est jaune paille clair, animée par une effervescence fine et persistante formant un cordon régulier.",
         "nose": "Le nez se déploie, complexe, sur agrumes, poire, pêche, fleurs blanches et notes minérales.",
-        "mouth": "L’attaque est vive et tendue, le milieu de bouche précis et élancé, sur une sensation très sèche et saline. L’ensemble reste équilibré et digeste.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche précis et élancé. L’ensemble reste équilibré et digeste.",
         "finish": "La finale, longue, revient sur fleurs blanches et notes minérales.",
-        "overview": "Blanc de blancs · extra-brut ou brut nature. Vif et précis. Assemblage : Chardonnay et Pinot Noir. Le registre aromatique réunit agrumes, poire, pêche, fleurs blanches et notes minérales.",
+        "overview": "Blanc de blancs · brut. Vif et précis. Assemblage : Chardonnay et Pinot Noir. Le registre aromatique réunit agrumes, poire, pêche, fleurs blanches et notes minérales.",
         "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 3 ans sur lies. Cuves inox et Passage sous bois. Le vieillissement sur lies affine la bulle et développe les arômes.",
-        "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont poisson, dessert, apéritif, fromages affinés et huîtres.",
+        "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont poisson, dessert, apéritif, volaille et viandes blanches et fromages affinés.",
         "facts": [
           [
             "Producteur",
@@ -10635,7 +10636,7 @@
           ],
           [
             "Type",
-            "Blanc de blancs · extra-brut ou brut nature"
+            "Blanc de blancs · brut"
           ],
           [
             "Cépages",
@@ -10675,7 +10676,7 @@
           ],
           [
             "Accords conseillés",
-            "Poisson, Dessert, Apéritif, Fromages affinés et Huîtres"
+            "Poisson, Dessert, Apéritif, Volaille et viandes blanches et Fromages affinés"
           ],
           [
             "Température",
@@ -10689,7 +10690,7 @@
         "answers": [
           [
             "Avec quels plats l’associer ?",
-            "Poisson, Dessert, Apéritif, Fromages affinés et Huîtres"
+            "Poisson, Dessert, Apéritif, Volaille et viandes blanches et Fromages affinés"
           ],
           [
             "Est-il sec ou plus doux ?",
@@ -10772,8 +10773,8 @@
     ],
     "bulles": "bulles_fines",
     "tags": [
-      "Extra-brut / nature",
-      "Premier Cru"
+      "Premier Cru",
+      "Extra-brut"
     ],
     "pair": "huîtres, apéritif, volaille et viandes blanches",
     "note": "Un extra-brut Premier Cru au caractère nuancé et persistant. Au premier plan : agrumes, fruits blancs, fleurs blanches, brioche. L’assemblage réunit Chardonnay, Pinot Noir, Meunier. À privilégier avec huîtres, apéritif, volaille et viandes blanches.",
@@ -10827,7 +10828,7 @@
         "Meunier"
       ],
       "enrichment": {
-        "type": "Champagne blanc · extra-brut ou brut nature · Premier Cru",
+        "type": "Champagne blanc · extra-brut · Premier Cru",
         "character": "Vif et précis",
         "blend": [],
         "blendLabel": "Chardonnay, Pinot Noir et Meunier",
@@ -10860,7 +10861,7 @@
         "nose": "Le nez se déploie, complexe, sur agrumes, fruits blancs, fleurs blanches et brioche.",
         "mouth": "L’attaque est vive et tendue, le milieu de bouche précis et élancé, sur une sensation très sèche et saline. L’ensemble reste équilibré et digeste.",
         "finish": "La finale, longue, revient sur fleurs blanches et brioche.",
-        "overview": "Champagne blanc · extra-brut ou brut nature · Premier Cru. Vif et précis. Assemblage : Chardonnay, Pinot Noir et Meunier. Le registre aromatique réunit agrumes, fruits blancs, fleurs blanches et brioche.",
+        "overview": "Champagne blanc · extra-brut · Premier Cru. Vif et précis. Assemblage : Chardonnay, Pinot Noir et Meunier. Le registre aromatique réunit agrumes, fruits blancs, fleurs blanches et brioche.",
         "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont huîtres, apéritif, volaille et viandes blanches, fromages affinés et crustacés.",
         "facts": [
@@ -10874,7 +10875,7 @@
           ],
           [
             "Type",
-            "Champagne blanc · extra-brut ou brut nature · Premier Cru"
+            "Champagne blanc · extra-brut · Premier Cru"
           ],
           [
             "Cépages",
@@ -11256,7 +11257,7 @@
     ],
     "bulles": "bulles_fines",
     "tags": [
-      "Extra-brut / nature"
+      "Extra-brut"
     ],
     "pair": "huîtres, poisson, fromages",
     "note": "Un extra-brut au caractère nuancé et persistant. Au premier plan : agrumes, pomme, brioche, pâtisserie. À privilégier avec huîtres, poisson, fromages.",
@@ -11308,7 +11309,7 @@
       ],
       "grapes": [],
       "enrichment": {
-        "type": "Champagne blanc · extra-brut ou brut nature",
+        "type": "Champagne blanc · extra-brut",
         "character": "Vif et précis",
         "blend": [],
         "blendLabel": "",
@@ -11343,7 +11344,7 @@
         "nose": "Le nez se déploie, complexe, sur agrumes, pomme, brioche, pâtisserie, amande et minéralité.",
         "mouth": "L’attaque est vive et tendue, le milieu de bouche précis et élancé, sur une sensation très sèche et saline. L’ensemble reste équilibré et digeste.",
         "finish": "La finale, longue, revient sur amande et minéralité.",
-        "overview": "Champagne blanc · extra-brut ou brut nature. Vif et précis. Le registre aromatique réunit agrumes, pomme, brioche, pâtisserie, amande et minéralité.",
+        "overview": "Champagne blanc · extra-brut. Vif et précis. Le registre aromatique réunit agrumes, pomme, brioche, pâtisserie, amande et minéralité.",
         "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Passage sous bois. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont huîtres, poisson, fromages, apéritif et volaille et viandes blanches.",
         "facts": [
@@ -11357,7 +11358,7 @@
           ],
           [
             "Type",
-            "Champagne blanc · extra-brut ou brut nature"
+            "Champagne blanc · extra-brut"
           ],
           [
             "Dosage",
@@ -11488,11 +11489,11 @@
     ],
     "bulles": "bulles_fines",
     "tags": [
-      "Brut",
-      "Grand Cru"
+      "Grand Cru",
+      "Brut nature"
     ],
     "pair": "huîtres, crustacés, sushis",
-    "note": "Un brut Grand Cru au caractère frais et précis. Au premier plan : agrumes, fruits blancs, fleurs blanches, brioche. L’assemblage réunit Chardonnay, Pinot Noir, Meunier. À privilégier avec huîtres, crustacés, sushis.",
+    "note": "Un brut nature Grand Cru au caractère frais et précis. Au premier plan : agrumes, fruits blancs, fleurs blanches, brioche. L’assemblage réunit Chardonnay, Pinot Noir, Meunier. À privilégier avec huîtres, crustacés, sushis.",
     "sourceUrl": "https://bottleofitaly.com/fr/products/champagne-l-atavique-nature-grand-cru-mouzon-leroux",
     "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-l-atavique-nature-grand-cru-mouzon-leroux",
     "officialSourceUrl": null,
@@ -11520,14 +11521,14 @@
       "advice": "Sa fraîcheur nette convient particulièrement à huîtres, crustacés, sushis.",
       "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et fruits blancs.",
       "profil": {
-        "fraicheur": "Fraîche",
-        "rondeur": "Équilibrée",
+        "fraicheur": "Très fraîche",
+        "rondeur": "Droite",
         "puissance": "Équilibrée",
         "longueur": "Nuancée"
       },
       "scores": {
-        "freshness": 4,
-        "roundness": 3,
+        "freshness": 5,
+        "roundness": 2,
         "power": 3,
         "complexity": 3
       },
@@ -11545,7 +11546,7 @@
         "Meunier"
       ],
       "enrichment": {
-        "type": "Champagne blanc · brut · Grand Cru",
+        "type": "Champagne blanc · brut nature · Grand Cru",
         "character": "Vif et précis",
         "blend": [],
         "blendLabel": "Chardonnay, Pinot Noir et Meunier",
@@ -11578,9 +11579,9 @@
         ],
         "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine formant un cordon régulier.",
         "nose": "Le nez se montre frais et précis, sur agrumes, fruits blancs, fleurs blanches, brioche, pâtisserie et noisette.",
-        "mouth": "L’attaque est vive et tendue, le milieu de bouche précis et élancé. L’ensemble reste équilibré et digeste.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche précis et élancé, sur une sensation très sèche et saline. L’ensemble reste équilibré et digeste.",
         "finish": "La finale est tendue, fraîche et légèrement saline, et invite à la reprise.",
-        "overview": "Champagne blanc · brut · Grand Cru. Vif et précis. Assemblage : Chardonnay, Pinot Noir et Meunier. Le registre aromatique réunit agrumes, fruits blancs, fleurs blanches, brioche, pâtisserie et noisette.",
+        "overview": "Champagne blanc · brut nature · Grand Cru. Vif et précis. Assemblage : Chardonnay, Pinot Noir et Meunier. Le registre aromatique réunit agrumes, fruits blancs, fleurs blanches, brioche, pâtisserie et noisette.",
         "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 36 mois sur lies. Passage sous bois. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe. Les accords les plus naturels sont huîtres, crustacés, sushis, poisson et apéritif.",
         "facts": [
@@ -11594,7 +11595,7 @@
           ],
           [
             "Type",
-            "Champagne blanc · brut · Grand Cru"
+            "Champagne blanc · brut nature · Grand Cru"
           ],
           [
             "Cépages",
@@ -12216,10 +12217,10 @@
     ],
     "bulles": "bulles_fines",
     "tags": [
-      "Brut"
+      "Brut nature"
     ],
     "pair": "huîtres, crustacés, poisson",
-    "note": "Un brut au caractère nuancé et persistant. Au premier plan : agrumes, fleurs blanches, brioche. L’assemblage réunit Chardonnay. À privilégier avec huîtres, crustacés, poisson.",
+    "note": "Un brut nature au caractère nuancé et persistant. Au premier plan : agrumes, fleurs blanches, brioche. L’assemblage réunit Chardonnay. À privilégier avec huîtres, crustacés, poisson.",
     "sourceUrl": "https://bottleofitaly.com/fr/products/champagne-chardonnay-nature-brut-vincent-brochet",
     "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-chardonnay-nature-brut-vincent-brochet",
     "officialSourceUrl": null,
@@ -12247,14 +12248,14 @@
       "advice": "Sa fraîcheur nette convient particulièrement à huîtres, crustacés, poisson.",
       "avoid": "Écartez-la si vous recherchez surtout douceur et volume : son profil privilégie agrumes et fleurs blanches.",
       "profil": {
-        "fraicheur": "Fraîche",
-        "rondeur": "Équilibrée",
+        "fraicheur": "Très fraîche",
+        "rondeur": "Droite",
         "puissance": "Équilibrée",
         "longueur": "Complexe"
       },
       "scores": {
-        "freshness": 4,
-        "roundness": 3,
+        "freshness": 5,
+        "roundness": 2,
         "power": 3,
         "complexity": 4
       },
@@ -12267,7 +12268,7 @@
         "Chardonnay"
       ],
       "enrichment": {
-        "type": "Champagne blanc · brut",
+        "type": "Champagne blanc · brut nature",
         "character": "Vif et précis",
         "blend": [],
         "blendLabel": "Chardonnay",
@@ -12298,9 +12299,9 @@
         ],
         "eye": "La robe est jaune paille, animée par une effervescence fine et persistante formant un cordon régulier.",
         "nose": "Le nez se déploie, complexe, sur agrumes, fleurs blanches, brioche et fruits blancs.",
-        "mouth": "L’attaque est vive et tendue, le milieu de bouche précis et élancé. L’ensemble reste équilibré et digeste.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche précis et élancé, sur une sensation très sèche et saline. L’ensemble reste équilibré et digeste.",
         "finish": "La finale, longue, revient sur brioche et fruits blancs.",
-        "overview": "Champagne blanc · brut. Vif et précis. Assemblage : Chardonnay. Le registre aromatique réunit agrumes, fleurs blanches, brioche et fruits blancs.",
+        "overview": "Champagne blanc · brut nature. Vif et précis. Assemblage : Chardonnay. Le registre aromatique réunit agrumes, fleurs blanches, brioche et fruits blancs.",
         "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont huîtres, crustacés, poisson, apéritif et volaille et viandes blanches.",
         "facts": [
@@ -12314,7 +12315,7 @@
           ],
           [
             "Type",
-            "Champagne blanc · brut"
+            "Champagne blanc · brut nature"
           ],
           [
             "Cépages",
@@ -12451,7 +12452,7 @@
     ],
     "bulles": "bulles_fines",
     "tags": [
-      "Extra-brut / nature"
+      "Extra-brut"
     ],
     "pair": "poisson, apéritif, volaille et viandes blanches",
     "note": "Un extra-brut au caractère nuancé et persistant. Au premier plan : agrumes, fleurs blanches, brioche. L’assemblage réunit Chardonnay, Pinot Noir, Meunier. À privilégier avec poisson, apéritif, volaille et viandes blanches.",
@@ -12504,7 +12505,7 @@
         "Meunier"
       ],
       "enrichment": {
-        "type": "Champagne blanc · extra-brut ou brut nature",
+        "type": "Champagne blanc · extra-brut",
         "character": "Vif et précis",
         "blend": [
           {
@@ -12546,7 +12547,7 @@
         "nose": "Le nez se déploie, complexe, sur agrumes, fleurs blanches, brioche et fruits blancs.",
         "mouth": "L’attaque est vive et tendue, le milieu de bouche précis et élancé, sur une sensation très sèche et saline. L’ensemble reste équilibré et digeste.",
         "finish": "La finale, longue, revient sur brioche et fruits blancs.",
-        "overview": "Champagne blanc · extra-brut ou brut nature. Vif et précis. Assemblage : 70 % Pinot Noir · 30 % Chardonnay. Le registre aromatique réunit agrumes, fleurs blanches, brioche et fruits blancs.",
+        "overview": "Champagne blanc · extra-brut. Vif et précis. Assemblage : 70 % Pinot Noir · 30 % Chardonnay. Le registre aromatique réunit agrumes, fleurs blanches, brioche et fruits blancs.",
         "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 3 ans sur lies. Cuves inox et Passage sous bois. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont poisson, apéritif, volaille et viandes blanches, fromages affinés et huîtres.",
         "facts": [
@@ -12560,7 +12561,7 @@
           ],
           [
             "Type",
-            "Champagne blanc · extra-brut ou brut nature"
+            "Champagne blanc · extra-brut"
           ],
           [
             "Cépages",
@@ -12936,8 +12937,8 @@
     "bulles": "bulles_fines",
     "tags": [
       "Blanc de blancs",
-      "Extra-brut / nature",
-      "Grand Cru"
+      "Grand Cru",
+      "Extra-brut"
     ],
     "pair": "crustacés, poisson, fromages",
     "note": "Un blanc de blancs extra-brut Grand Cru au caractère léger et délicat. Au premier plan : agrumes, pomme, fleurs blanches, brioche. L’assemblage réunit Chardonnay. À privilégier avec crustacés, poisson, fromages.",
@@ -12991,7 +12992,7 @@
         "Chardonnay"
       ],
       "enrichment": {
-        "type": "Blanc de blancs · extra-brut ou brut nature · Grand Cru",
+        "type": "Blanc de blancs · extra-brut · Grand Cru",
         "character": "Vif et précis",
         "blend": [],
         "blendLabel": "Chardonnay",
@@ -13026,7 +13027,7 @@
         "nose": "Le nez se montre frais et précis, sur agrumes, pomme, fleurs blanches, brioche, pâtisserie et amande.",
         "mouth": "L’attaque est vive et tendue, le milieu de bouche précis et élancé, sur une sensation très sèche et saline. L’ensemble reste équilibré et digeste.",
         "finish": "La finale est tendue, fraîche et légèrement saline, et invite à la reprise.",
-        "overview": "Blanc de blancs · extra-brut ou brut nature · Grand Cru. Vif et précis. Assemblage : Chardonnay. Le registre aromatique réunit agrumes, pomme, fleurs blanches, brioche, pâtisserie et amande.",
+        "overview": "Blanc de blancs · extra-brut · Grand Cru. Vif et précis. Assemblage : Chardonnay. Le registre aromatique réunit agrumes, pomme, fleurs blanches, brioche, pâtisserie et amande.",
         "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 36 mois sur lies. Cuves inox. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe. Les accords les plus naturels sont crustacés, poisson, fromages, apéritif et volaille et viandes blanches.",
         "facts": [
@@ -13040,7 +13041,7 @@
           ],
           [
             "Type",
-            "Blanc de blancs · extra-brut ou brut nature · Grand Cru"
+            "Blanc de blancs · extra-brut · Grand Cru"
           ],
           [
             "Cépages",
@@ -14864,7 +14865,7 @@
     ],
     "bulles": "bulles_fines",
     "tags": [
-      "Extra-brut / nature"
+      "Extra-brut"
     ],
     "pair": "huîtres, poisson, apéritif",
     "note": "Un extra-brut au caractère nuancé et persistant. Au premier plan : agrumes, fruits blancs, pomme, fleurs blanches. L’assemblage réunit Chardonnay, Pinot Noir, Meunier. À privilégier avec huîtres, poisson, apéritif.",
@@ -14921,7 +14922,7 @@
         "Meunier"
       ],
       "enrichment": {
-        "type": "Champagne blanc · extra-brut ou brut nature",
+        "type": "Champagne blanc · extra-brut",
         "character": "Vif et précis",
         "blend": [],
         "blendLabel": "Chardonnay, Pinot Noir et Meunier",
@@ -14956,7 +14957,7 @@
         "nose": "Le nez se déploie, complexe, sur agrumes, fruits blancs, pomme, fleurs blanches, pâtisserie et amande.",
         "mouth": "L’attaque est vive et tendue, le milieu de bouche précis et élancé, sur une sensation très sèche et saline. L’ensemble reste équilibré et digeste.",
         "finish": "La finale, longue, revient sur pâtisserie et amande.",
-        "overview": "Champagne blanc · extra-brut ou brut nature. Vif et précis. Assemblage : Chardonnay, Pinot Noir et Meunier. Le registre aromatique réunit agrumes, fruits blancs, pomme, fleurs blanches, pâtisserie et amande.",
+        "overview": "Champagne blanc · extra-brut. Vif et précis. Assemblage : Chardonnay, Pinot Noir et Meunier. Le registre aromatique réunit agrumes, fruits blancs, pomme, fleurs blanches, pâtisserie et amande.",
         "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 24 mois sur lies. Cuves inox. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 6–8 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont huîtres, poisson, apéritif, volaille et viandes blanches et fromages affinés.",
         "facts": [
@@ -14970,7 +14971,7 @@
           ],
           [
             "Type",
-            "Champagne blanc · extra-brut ou brut nature"
+            "Champagne blanc · extra-brut"
           ],
           [
             "Cépages",

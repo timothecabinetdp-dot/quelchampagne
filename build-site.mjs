@@ -480,7 +480,7 @@ function champagnesMain(){
           <select id="catalogue-producer"><option value="">Tous</option><option value="maison">Maison</option><option value="vigneron">Vigneron</option></select>
         </label>
         <label class="catalogue-filter">Type
-          <select id="catalogue-type"><option value="">Tous</option><option value="rose">Rosé</option><option value="bdb">Blanc de blancs</option><option value="low">Extra-brut / nature</option></select>
+          <select id="catalogue-type"><option value="">Tous</option><option value="rose">Rosé</option><option value="bdb">Blanc de blancs</option><option value="low">Extra-brut et brut nature</option></select>
         </label>
       </div>
       <div class="catalogue-summary"><span id="catalogue-count" aria-live="polite">${products().length} champagnes affichés</span><button class="btn btn-ghost btn-sm" id="catalogue-reset" type="reset">Réinitialiser</button></div>

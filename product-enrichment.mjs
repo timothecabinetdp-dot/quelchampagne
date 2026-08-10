@@ -43,7 +43,7 @@ function findTemperature(text, tags, price, technical={}){
   const range=text.match(/(?:temp[ée]rature|serv(?:ir|i|ie)|service)[^.!?]{0,55}?(\d{1,2})\s*(?:°\s*)?(?:c)?\s*(?:à|et|[-–])\s*(\d{1,2})\s*°?\s*c/i);
   if(range) return `${range[1]}–${range[2]} °C`;
   if(tags.includes('Millésimé') || price>=100) return '10–12 °C';
-  if(tags.includes('Blanc de blancs') || tags.includes('Extra-brut / nature')) return '8–10 °C';
+  if(tags.includes('Blanc de blancs') || tags.includes('Extra-brut') || tags.includes('Brut nature')) return '8–10 °C';
   return '8–10 °C';
 }
 
@@ -62,10 +62,8 @@ function findAging(text, vintage, technical={}){
 function dosage(tags, exact){
   if(exact) return {label:exact,sweetness:/0\s*g|nature|z[ée]ro/i.test(exact)?'Très sec':/extra/i.test(exact)?'Très sec':'Sec'};
   if(tags.includes('Demi-sec')) return {label:'32 à 50 g/L',sweetness:'Doux'};
-  if(tags.includes('Extra-brut / nature')){
-    const nature=tags.some(tag=>/nature|z[ée]ro/i.test(tag));
-    return nature ? {label:'Moins de 3 g/L, sans ajout de sucre',sweetness:'Très sec'} : {label:'0 à 6 g/L',sweetness:'Très sec'};
-  }
+  if(tags.includes('Brut nature')) return {label:'Moins de 3 g/L, sans ajout de sucre',sweetness:'Très sec'};
+  if(tags.includes('Extra-brut')) return {label:'0 à 6 g/L',sweetness:'Très sec'};
   return {label:'Moins de 12 g/L',sweetness:'Sec'};
 }
 
@@ -90,7 +88,8 @@ function typeLabel(tags){
   else if(tags.includes('Blanc de blancs')) parts.push('Blanc de blancs');
   else if(tags.includes('Blanc de noirs')) parts.push('Blanc de noirs');
   else parts.push('Champagne blanc');
-  if(tags.includes('Extra-brut / nature')) parts.push('extra-brut ou brut nature');
+  if(tags.includes('Brut nature')) parts.push('brut nature');
+  else if(tags.includes('Extra-brut')) parts.push('extra-brut');
   else if(tags.includes('Demi-sec')) parts.push('demi-sec');
   else parts.push('brut');
   if(tags.includes('Grand Cru')) parts.push('Grand Cru');
@@ -128,7 +127,7 @@ export function enrichProduct({product,tags,grapes,aromas,pairings,scores,eviden
   const aromaLabel=list(aromaList) || (tags.includes('Rosé')?'fruits rouges et notes florales':tags.includes('Blanc de blancs')?'agrumes, fleurs blanches et notes minérales':'fruits blancs, agrumes et brioche');
   const pairingFallback=tags.includes('Rosé')
     ? ['saumon','volaille','dessert aux fruits rouges']
-    : tags.includes('Blanc de blancs') || tags.includes('Extra-brut / nature')
+    : tags.includes('Blanc de blancs') || tags.includes('Extra-brut') || tags.includes('Brut nature')
       ? ['huîtres','crustacés','poisson']
       : ['poisson','volaille','fromage à pâte dure'];
   const pairingLabels=[...new Set([...pairings.map(item=>item.label),...pairingFallback])].slice(0,5).map(item=>cap(item));
@@ -139,7 +138,7 @@ export function enrichProduct({product,tags,grapes,aromas,pairings,scores,eviden
   const bubbles=/fine?s? et persistante?s?|perlage fin/i.test(description)?'fine et persistante':'fine';
   const alcohol=findAlcohol(product.merchantTags,technical);
   const glass=serviceGlass(tags,scores);
-  const dryStyle=tags.includes('Extra-brut / nature');
+  const dryStyle=tags.includes('Extra-brut') || tags.includes('Brut nature');
   const tendreStyle=tags.includes('Demi-sec');
   const eye=`La robe est ${color.toLowerCase()}, animée par une effervescence ${bubbles} formant un cordon régulier.`;
   const nose=`Le nez ${scores.complexity>=4?'se déploie, complexe,':scores.freshness>=4?'se montre frais et précis,':'s’ouvre, engageant,'} sur ${aromaLabel}.`;

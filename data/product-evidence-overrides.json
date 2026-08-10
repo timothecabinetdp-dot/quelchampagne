@@ -14,9 +14,14 @@
       "status": "official_confirmed_with_correction",
       "officialSourceUrl": "https://www.tenutasetteponti.it/wp-content/uploads/doc/st_champagne_brut_nature.pdf",
       "publicName": "Grand Tour Nature",
-      "grapes": ["Pinot Noir", "Chardonnay"],
+      "grapes": [
+        "Pinot Noir",
+        "Chardonnay"
+      ],
       "dosage": "2,9 g/L",
-      "tags": ["Extra-brut / nature"],
+      "tags": [
+        "Brut nature"
+      ],
       "facts": "La fiche technique confirme 85 % de Pinot Noir et 15 % de Chardonnay, un élevage de 20 mois en bouteille et un dosage de 2,9 g/L.",
       "notes": "Le nom public suit la fiche technique : Grand Tour Nature."
     },
@@ -25,16 +30,29 @@
       "officialSourceUrl": "https://www.champagnelabbe.com/",
       "publicBrand": "Champagne Labbé & Fils",
       "publicName": "Brut Tradition Premier Cru",
-      "grapes": ["Pinot Noir", "Meunier", "Chardonnay"],
-      "tags": ["Brut", "Premier Cru"],
+      "grapes": [
+        "Pinot Noir",
+        "Meunier",
+        "Chardonnay"
+      ],
+      "tags": [
+        "Brut",
+        "Premier Cru"
+      ],
       "facts": "Assemblage officiel : 65 % Pinot Noir, 20 % Meunier et 15 % Chardonnay, issus de l’ensemble du parcellaire de l’exploitation."
     },
     "louis-constant-brut": {
       "status": "secondary_identity_confirmed",
       "technicalSourceUrl": "https://bottleofitaly.com/en-us/products/campagne-brut-aoc-louis-constant",
       "publicName": "Brut Réserve",
-      "grapes": ["Chardonnay", "Pinot Noir", "Meunier"],
-      "tags": ["Brut"],
+      "grapes": [
+        "Chardonnay",
+        "Pinot Noir",
+        "Meunier"
+      ],
+      "tags": [
+        "Brut"
+      ],
       "facts": "La bouteille commercialisée est un Brut Réserve non millésimé issu des trois cépages principaux de la Champagne.",
       "notes": "Aucun site producteur dédié ni fiche technique primaire n’a été trouvé. La fiche reste exclue de l’indexation jusqu’à obtention d’une source primaire."
     },
@@ -43,23 +61,39 @@
       "officialSourceUrl": "https://www.champagne-alain-mercier.com/",
       "technicalSourceUrl": "https://www.tannico.com/products/champagne-brut-cuvee-louis-hurtebisse-alain-mercier",
       "publicName": "Louis Hurtebisse Brut Tradition",
-      "grapes": ["Meunier", "Pinot Noir", "Chardonnay"],
-      "tags": ["Brut"],
+      "grapes": [
+        "Meunier",
+        "Pinot Noir",
+        "Chardonnay"
+      ],
+      "tags": [
+        "Brut"
+      ],
       "facts": "Les documentations commerciales concordent sur un assemblage de 40 % Meunier, 40 % Pinot Noir et 20 % Chardonnay.",
       "notes": "Le domaine est confirmé par son site officiel ; la fiche primaire exacte de Louis Hurtebisse reste à obtenir."
     },
     "epc-champagne-cuvee-brut": {
       "status": "official_confirmed",
       "officialSourceUrl": "https://epc-champagne.com/en/produit/brut/",
-      "grapes": ["Meunier", "Chardonnay", "Pinot Noir"],
+      "grapes": [
+        "Meunier",
+        "Chardonnay",
+        "Pinot Noir"
+      ],
       "facts": "Assemblage officiel : 50 % Meunier, 33 % Chardonnay et 17 % Pinot Noir."
     },
     "maison-burtin-brut": {
       "status": "official_producer_confirmed_product_to_document",
       "officialSourceUrl": "https://www.maisonburtin.com/",
       "technicalSourceUrl": "https://bottleofitaly.com/en/products/champagne-brut-astucciato-maison-burtin",
-      "grapes": ["Meunier", "Chardonnay", "Pinot Noir"],
-      "tags": ["Brut"],
+      "grapes": [
+        "Meunier",
+        "Chardonnay",
+        "Pinot Noir"
+      ],
+      "tags": [
+        "Brut"
+      ],
       "facts": "La référence marchande est un Brut non millésimé assemblant Meunier, Chardonnay et Pinot Noir.",
       "notes": "Maison Burtin est confirmée par son site officiel ; la correspondance exacte avec la référence générique « Brut » du marchand reste à documenter."
     },
@@ -68,9 +102,15 @@
       "officialSourceUrl": "https://www.champagne-tornay.fr/en/our-cuvees/monsieur-s-cellar/premier-cru",
       "publicBrand": "Champagne Tornay-Hutasse",
       "publicName": "Tradition Brut Premier Cru",
-      "grapes": ["Pinot Noir", "Chardonnay"],
+      "grapes": [
+        "Pinot Noir",
+        "Chardonnay"
+      ],
       "dosage": "8 g/L",
-      "tags": ["Brut", "Premier Cru"],
+      "tags": [
+        "Brut",
+        "Premier Cru"
+      ],
       "facts": "Assemblage officiel : 70 % Pinot Noir et 30 % Chardonnay ; vinification en cuves inox thermorégulées, dosage 8 g/L et trois ans minimum en cave."
     },
     "brisson-lahaye-la-passionnee-blanc-de-noirs-extra-brut": {
@@ -78,8 +118,14 @@
       "officialSourceUrl": "https://www.champagne-brisson-lahaye.com/la-gamme/",
       "technicalSourceUrl": "https://bottleofitaly.com/en-us/products/champagne-la-passionnee-blanc-de-noirs-extra-brut-brisson-lahaye",
       "publicName": "La Passionnée Brut Blanc de Noirs",
-      "grapes": ["Pinot Noir", "Meunier"],
-      "tags": ["Brut", "Blanc de noirs"],
+      "grapes": [
+        "Pinot Noir",
+        "Meunier"
+      ],
+      "tags": [
+        "Brut",
+        "Blanc de noirs"
+      ],
       "facts": "La cuvée officielle est un Brut Blanc de Noirs, frais et structuré, élaboré à partir de cépages noirs avec une part de vins passés en fûts.",
       "notes": "Correction de dosage : le producteur présente La Passionnée en Brut, et non en Extra-Brut."
     },
@@ -87,8 +133,13 @@
       "status": "official_confirmed_with_correction",
       "officialSourceUrl": "https://www.champagne-vallois.com/produit/assemblage-noble/?lang=en",
       "publicName": "Assemblage Noble Brut Blanc de Blancs",
-      "grapes": ["Chardonnay"],
-      "tags": ["Brut", "Blanc de blancs"],
+      "grapes": [
+        "Chardonnay"
+      ],
+      "tags": [
+        "Brut",
+        "Blanc de blancs"
+      ],
       "facts": "La fiche officielle confirme la cuvée Assemblage Noble, un Brut Blanc de Blancs de Jean-Claude Vallois."
     },
     "daubanton-rose-de-saignee-en-futs-les-vignes-derriere": {
@@ -97,8 +148,12 @@
       "technicalSourceUrl": "https://www.rinaldi1957.it/en/products/rose-de-saignee-en-futs-les-vignes-derriere/",
       "publicBrand": "Daubanton & Fils",
       "publicName": "Rosé de Saignée en Fûts - Les Vignes Derrière",
-      "grapes": ["Pinot Noir"],
-      "tags": ["Rosé"],
+      "grapes": [
+        "Pinot Noir"
+      ],
+      "tags": [
+        "Rosé"
+      ],
       "facts": "La référence est un rosé de saignée 100 % Pinot Noir élevé en fûts, issu du domaine familial Daubanton & Fils en Côte des Bar.",
       "notes": "Le domaine et la cuvée sont confirmés ; la fiche technique primaire détaillée reste à obtenir."
     },
@@ -107,9 +162,16 @@
       "officialSourceUrl": "https://champagne-ponson.com/cuvee/premier-cru",
       "publicBrand": "Champagne Ponson",
       "publicName": "Premier Cru Extra Brut",
-      "grapes": ["Meunier", "Pinot Noir", "Chardonnay"],
+      "grapes": [
+        "Meunier",
+        "Pinot Noir",
+        "Chardonnay"
+      ],
       "dosage": "3 g/L",
-      "tags": ["Extra-brut / nature", "Premier Cru"],
+      "tags": [
+        "Extra-brut",
+        "Premier Cru"
+      ],
       "facts": "Assemblage officiel : 70 % Meunier, 15 % Pinot Noir et 15 % Chardonnay ; dosage 3 g/L et élevage à 90 % en inox et 10 % en fûts."
     },
     "thenevet-delouvin-carte-noir-brut": {
@@ -117,7 +179,10 @@
       "officialSourceUrl": "https://www.champagne-thevenet-delouvin.fr/champagnes/carte-noire-brut/",
       "publicBrand": "Thévenet-Delouvin",
       "publicName": "Carte Noire Brut",
-      "grapes": ["Meunier", "Pinot Noir"],
+      "grapes": [
+        "Meunier",
+        "Pinot Noir"
+      ],
       "facts": "Assemblage officiel : 90 % Meunier et 10 % Pinot Noir."
     },
     "maison-yves-loison-cuvee-reserve-clovis": {
@@ -125,30 +190,49 @@
       "officialSourceUrl": "https://boutique.champagne-yves-loison.com/en/85-copie-de-copie-de-copie-de-cuvee-origines.html",
       "publicBrand": "Yves Loison",
       "publicName": "Clovis Brut",
-      "grapes": ["Pinot Noir", "Meunier", "Chardonnay"],
+      "grapes": [
+        "Pinot Noir",
+        "Meunier",
+        "Chardonnay"
+      ],
       "dosage": "8,7 g/L",
-      "tags": ["Brut"],
+      "tags": [
+        "Brut"
+      ],
       "facts": "Assemblage officiel à parts égales de Pinot Noir, Meunier et Chardonnay ; dosage 8,7 g/L."
     },
     "de-vilmont-brut-blanc-de-blancs": {
       "status": "official_confirmed",
       "officialSourceUrl": "https://www.champagnedevilmont.com/en/wine/brut-blanc-de-blancs/",
-      "grapes": ["Chardonnay"],
+      "grapes": [
+        "Chardonnay"
+      ],
       "facts": "Le domaine confirme un Blanc de Blancs 100 % Chardonnay élevé trois ans en cave."
     },
     "m-g-heucq-rose-brut-fossile": {
       "status": "official_confirmed",
       "officialSourceUrl": "https://www.mg-heucq.fr/champagne-mg-heucq/",
       "publicName": "Fossile Rosé Brut",
-      "grapes": ["Meunier", "Chardonnay", "Pinot Noir"],
+      "grapes": [
+        "Meunier",
+        "Chardonnay",
+        "Pinot Noir"
+      ],
       "dosage": "7 g/L",
-      "tags": ["Brut", "Rosé"],
+      "tags": [
+        "Brut",
+        "Rosé"
+      ],
       "facts": "Assemblage officiel : 50 % Meunier, 30 % Chardonnay et 20 % Pinot Noir, dont 14 % de vin rouge ; 36 mois d’élevage et dosage 7 g/L."
     },
     "harlin-pere-et-fils-l-escapade": {
       "status": "official_confirmed",
       "officialSourceUrl": "https://www.champagneharlin.fr/champagnes-1-l-escapade.html",
-      "grapes": ["Meunier", "Pinot Noir", "Chardonnay"],
+      "grapes": [
+        "Meunier",
+        "Pinot Noir",
+        "Chardonnay"
+      ],
       "facts": "Assemblage officiel : 45 % Meunier, 30 % Pinot Noir et 25 % Chardonnay."
     },
     "beltrand-brigandat-blanc-de-noirs-brut-pierre-brigandat": {
@@ -156,9 +240,14 @@
       "technicalSourceUrl": "https://bonhomiewine.com/wp-content/uploads/2019/07/Brigandat.pdf",
       "publicBrand": "Pierre Brigandat",
       "publicName": "Blanc de Noirs Brut",
-      "grapes": ["Pinot Noir"],
+      "grapes": [
+        "Pinot Noir"
+      ],
       "dosage": "Environ 9 g/L",
-      "tags": ["Brut", "Blanc de noirs"],
+      "tags": [
+        "Brut",
+        "Blanc de noirs"
+      ],
       "facts": "La documentation technique de l’importateur confirme un Blanc de Noirs 100 % Pinot Noir, vinifié en cuves émaillées, élevé trois ans sur lattes et dosé autour de 9 g/L.",
       "notes": "Correction d'identité : « Beltrand Brigandat » est une erreur de libellé marchand. La fiche primaire du producteur reste à archiver."
     },
@@ -167,8 +256,13 @@
       "officialSourceUrl": "https://champagne-bardiau.com/les-vins/",
       "publicBrand": "Champagne Bardiaù",
       "publicName": "Préface Brut Sans Année",
-      "grapes": ["Pinot Noir", "Chardonnay"],
-      "tags": ["Brut"],
+      "grapes": [
+        "Pinot Noir",
+        "Chardonnay"
+      ],
+      "tags": [
+        "Brut"
+      ],
       "facts": "Assemblage officiel : 70 % Pinot Noir et 30 % Chardonnay, crus de Champignol-lez-Mondeville et Verpillières-sur-Ource, avec au moins 24 mois de vieillissement en cave.",
       "notes": "Correction de dosage : le producteur présente Préface en Brut Sans Année, et non en Extra-Brut."
     },
@@ -176,42 +270,65 @@
       "status": "official_confirmed",
       "officialSourceUrl": "https://www.champagne-pierre-legras.com/wp-content/uploads/2026/02/champagne-pierre-legras-orior.pdf",
       "publicName": "Orior Brut",
-      "grapes": ["Chardonnay", "Pinot Noir", "Meunier"],
-      "tags": ["Brut"],
+      "grapes": [
+        "Chardonnay",
+        "Pinot Noir",
+        "Meunier"
+      ],
+      "tags": [
+        "Brut"
+      ],
       "facts": "Orior est la cuvée d’assemblage de la maison, alliance des terroirs d’Épernay et de Chouilly, avec un profil franc, riche et complexe."
     },
     "benard-pitois-carte-blanche-premier-cru-brut": {
       "status": "official_confirmed",
       "officialSourceUrl": "https://www.champagne-benard-pitois.com/boutique/accueil/1-brut-carte-blanche.html",
       "publicBrand": "Bénard-Pitois",
-      "grapes": ["Pinot Noir", "Chardonnay", "Meunier"],
+      "grapes": [
+        "Pinot Noir",
+        "Chardonnay",
+        "Meunier"
+      ],
       "facts": "Assemblage officiel : 75 % Pinot Noir, 20 % Chardonnay et 5 % Meunier."
     },
     "domaine-augustin-terre-2021": {
       "status": "official_confirmed_with_correction",
       "officialSourceUrl": "https://www.champagne-augustin.com/fr/cuvee-champagne/les-champagnes-augustin-fr",
       "publicName": "Terre Brut",
-      "grapes": ["Pinot Noir"],
-      "tags": ["Brut"],
+      "grapes": [
+        "Pinot Noir"
+      ],
+      "tags": [
+        "Brut"
+      ],
       "facts": "La cuvée Terre est un Brut 100 % Pinot Noir issu de jeunes vignes, vinifié avec levures indigènes et sans filtration.",
       "notes": "Le millésime 2021 n’est pas confirmé par la fiche officielle et a été retiré du titre public."
     },
     "beaumont-des-crayeres-grand-prestige-brut": {
       "status": "official_confirmed",
       "officialSourceUrl": "https://www.champagne-beaumont.com/en/produit/grand-prestige/",
-      "grapes": ["Chardonnay", "Pinot Noir", "Meunier"],
+      "grapes": [
+        "Chardonnay",
+        "Pinot Noir",
+        "Meunier"
+      ],
       "facts": "Assemblage officiel : 40 % Chardonnay, 40 % Pinot Noir et 20 % Meunier."
     },
     "j-charpentier-rose-reserve-brut": {
       "status": "official_confirmed",
       "officialSourceUrl": "https://jcharpentier.com/produit/rose-brut%E2%80%8B/",
-      "grapes": ["Meunier", "Pinot Noir"],
+      "grapes": [
+        "Meunier",
+        "Pinot Noir"
+      ],
       "facts": "Assemblage officiel : 80 % Meunier et 20 % Pinot Noir."
     },
     "petit-camusat-pinot-blanc-de-blancs-brut": {
       "status": "official_confirmed",
       "officialSourceUrl": "https://champagnepetitcamusat.com/",
-      "grapes": ["Pinot Blanc"],
+      "grapes": [
+        "Pinot Blanc"
+      ],
       "facts": "Le domaine confirme un Blanc de Blancs Brut non filtré élaboré uniquement à partir de Pinot Blanc."
     },
     "simplexite-simplexite-rose-brut": {
@@ -226,20 +343,30 @@
       "officialSourceUrl": "https://www.champagnesolemme.fr/en/the-vintages/",
       "publicBrand": "Solemme",
       "publicName": "Terre Brut Premier Cru",
-      "grapes": ["Meunier", "Pinot Noir", "Chardonnay"],
+      "grapes": [
+        "Meunier",
+        "Pinot Noir",
+        "Chardonnay"
+      ],
       "dosage": "6 g/L",
       "facts": "Assemblage officiel : 50 % Meunier, 25 % Pinot Noir et 25 % Chardonnay ; dosage 6 g/L."
     },
     "nicolas-feuillatte-reserve-exclusive-brut-rose": {
       "status": "official_confirmed",
       "officialSourceUrl": "https://nicolas-feuillatte.com/collections/champagnes-roses",
-      "grapes": ["Chardonnay", "Pinot Noir", "Meunier"],
+      "grapes": [
+        "Chardonnay",
+        "Pinot Noir",
+        "Meunier"
+      ],
       "notes": "La collection officielle confirme la cuvée et son profil rosé."
     },
     "bonnet-gilmert-blanc-de-blancs-cuvee-de-reserve-brut-grand-cru": {
       "status": "official_confirmed",
       "officialSourceUrl": "https://www.champagne-bonnet-gilmert.com/reserve.php",
-      "grapes": ["Chardonnay"],
+      "grapes": [
+        "Chardonnay"
+      ],
       "dosage": "8 g/L",
       "notes": "La fiche du producteur confirme 100 % Chardonnay, Grand Cru et Brut."
     },
@@ -248,36 +375,56 @@
       "officialSourceUrl": "https://www.champagne-daniel-deheurles.com/produit/white-pearl/",
       "publicBrand": "Daniel Deheurles & Filles",
       "publicName": "White Pearl",
-      "grapes": ["Chardonnay", "Pinot Blanc"],
+      "grapes": [
+        "Chardonnay",
+        "Pinot Blanc"
+      ],
       "facts": "Assemblage officiel : 60 % Chardonnay et 40 % Pinot Blanc.",
       "notes": "Correction importante : la cuvée n'est pas composée uniquement de Chardonnay."
     },
     "vilmart-grande-reserve-premier-cru-brut": {
       "status": "official_confirmed",
       "officialSourceUrl": "https://www.champagnevilmart.fr/vins/grande-reserve-fr/",
-      "grapes": ["Chardonnay", "Pinot Noir"],
+      "grapes": [
+        "Chardonnay",
+        "Pinot Noir"
+      ],
       "dosage": "6 g/L",
       "facts": "Assemblage officiel : 30 % Chardonnay et 70 % Pinot Noir, classés Premier Cru."
     },
     "cattier-brut-premier-cru": {
       "status": "official_confirmed",
       "officialSourceUrl": "https://www.cattier.com/en/champagne/brut-en/",
-      "grapes": ["Meunier", "Pinot Noir", "Chardonnay"],
+      "grapes": [
+        "Meunier",
+        "Pinot Noir",
+        "Chardonnay"
+      ],
       "dosage": "6 g/L",
       "facts": "Assemblage officiel : 28 % Meunier, 40 % Pinot Noir et 32 % Chardonnay."
     },
     "paul-bara-brut-rose-grand-cru-grand-rose": {
       "status": "official_confirmed",
       "officialSourceUrl": "https://www.champagnepaulbara.com/en/bara-grand-cru-champagnes/grand-rose/",
-      "grapes": ["Chardonnay", "Pinot Noir"],
+      "grapes": [
+        "Chardonnay",
+        "Pinot Noir"
+      ],
       "facts": "Assemblage officiel : 18 % Chardonnay, 70 % Pinot Noir et 12 % Bouzy Rouge."
     },
     "lamiable-eclat-d-etoiles-rose-brut-grand-cru-2014": {
       "status": "official_confirmed_with_correction",
       "officialSourceUrl": "https://www.champagnelamiable.com/en/the-champagnes/les-elementaires/eclats-d-etoiles.html",
       "publicName": "Éclat d’Étoiles Rosé Brut Grand Cru",
-      "grapes": ["Pinot Noir", "Chardonnay"],
-      "tags": ["Brut", "Rosé", "Grand Cru"],
+      "grapes": [
+        "Pinot Noir",
+        "Chardonnay"
+      ],
+      "tags": [
+        "Brut",
+        "Rosé",
+        "Grand Cru"
+      ],
       "facts": "Rosé Brut officiel composé de 70 % Pinot Noir et 30 % Chardonnay, avec 35 % de vins de réserve, 10 % de vin rouge et 30 à 40 mois sur lies.",
       "notes": "Le millésime 2014 n’est pas confirmé par la fiche officielle et a été retiré du titre public."
     },
@@ -286,8 +433,14 @@
       "officialSourceUrl": "https://www.veuveclicquot.com/",
       "technicalSourceUrl": "https://bottleofitaly.com/en/products/champagne-aoc-cuvee-saint-petersbourg-veuve-clicquot",
       "publicName": "Cuvée Saint-Pétersbourg Brut",
-      "grapes": ["Pinot Noir", "Chardonnay", "Meunier"],
-      "tags": ["Brut"],
+      "grapes": [
+        "Pinot Noir",
+        "Chardonnay",
+        "Meunier"
+      ],
+      "tags": [
+        "Brut"
+      ],
       "facts": "Cette édition Brut repose sur le style historique de la maison, dominé par le Pinot Noir et complété par Chardonnay et Meunier.",
       "notes": "La Maison est confirmée ; cette édition spécifique n’apparaît pas dans la gamme officielle actuelle. La fiche reste exclue de l’indexation en attendant une documentation primaire."
     },
@@ -295,29 +448,41 @@
       "status": "official_confirmed_with_correction",
       "officialSourceUrl": "https://shop.champagne-jacquart.com/collection-signature/50006-mosaique-signature-5-ans-d-age-en-etui-3700252047071.html",
       "publicName": "Signature Brut",
-      "grapes": ["Chardonnay", "Pinot Noir", "Meunier"],
+      "grapes": [
+        "Chardonnay",
+        "Pinot Noir",
+        "Meunier"
+      ],
       "dosage": "7 g/L",
-      "tags": ["Brut"],
+      "tags": [
+        "Brut"
+      ],
       "facts": "Assemblage officiel : 40 % Chardonnay, 35 % Pinot Noir et 25 % Meunier, avec 25 à 35 % de vins de réserve et cinq ans minimum sur lies."
     },
     "guy-charlemagne-reserve-blanc-de-blancs-grand-cru-brut": {
       "status": "official_confirmed",
       "officialSourceUrl": "https://www.champagne-guy-charlemagne.fr/",
-      "grapes": ["Chardonnay"],
+      "grapes": [
+        "Chardonnay"
+      ],
       "facts": "Le producteur présente cette Réserve comme un Blanc de Blancs du Mesnil, classé Grand Cru."
     },
     "sadi-malot-brut-nature-1er-cru": {
       "status": "official_confirmed",
       "officialSourceUrl": "https://www.champagne-sadi-malot.com/en/cuvee/zero-liqueur-2/",
       "publicName": "Zéro Liqueur Brut Nature Premier Cru",
-      "grapes": ["Chardonnay"],
+      "grapes": [
+        "Chardonnay"
+      ],
       "dosage": "0 g/L",
       "facts": "La fiche officielle confirme un Brut Nature Premier Cru 100 % Chardonnay, sans dosage."
     },
     "jean-vesselle-rose-de-saignee-friandise-demi-sec": {
       "status": "official_confirmed",
       "officialSourceUrl": "https://www.champagnejeanvesselle.com/en/demi-sec-rose-friandise/champagne/rose-de-saignee-friandise-2",
-      "grapes": ["Pinot Noir"],
+      "grapes": [
+        "Pinot Noir"
+      ],
       "dosage": "32 à 33 g/L",
       "facts": "Cuvée officielle : 100 % Pinot Noir, rosé demi-sec, dosage annoncé entre 32 et 33 g/L."
     },
@@ -326,9 +491,15 @@
       "officialSourceUrl": "https://champagne-jl-vergnon.com/en/champagne-murmure/",
       "publicBrand": "J-L Vergnon",
       "publicName": "Murmure Brut Nature Premier Cru",
-      "grapes": ["Chardonnay"],
+      "grapes": [
+        "Chardonnay"
+      ],
       "dosage": "0 g/L",
-      "tags": ["Blanc de blancs", "Extra-brut / nature", "Premier Cru"],
+      "tags": [
+        "Blanc de blancs",
+        "Brut nature",
+        "Premier Cru"
+      ],
       "facts": "Premier Cru 100 % Chardonnay, vinifié à parts égales en inox et en fûts de 400 litres, sans dosage, avec deux ans en cave avant dégorgement."
     },
     "marie-copinet-nos-pas-dans-l-argile-nature": {
@@ -340,16 +511,25 @@
     "vazart-coquart-blanc-de-blancs-zero-grand-cru": {
       "status": "official_confirmed",
       "officialSourceUrl": "https://www.champagnevazartcoquart.com/?type_champagne=non-millesime",
-      "grapes": ["Chardonnay"],
+      "grapes": [
+        "Chardonnay"
+      ],
       "notes": "Le site du domaine confirme le Blanc de Blancs Zéro issu de Chouilly Grand Cru."
     },
     "mouzon-leroux-l-ineffable-extra-brut-grand-cru-2017": {
       "status": "official_confirmed_with_correction",
       "officialSourceUrl": "https://www.champagne-mouzon-leroux.com/en/lineffable.html",
       "publicName": "L’Ineffable Extra Brut Grand Cru",
-      "grapes": ["Pinot Noir"],
+      "grapes": [
+        "Pinot Noir"
+      ],
       "dosage": "2,5 g/L",
-      "tags": ["Extra-brut / nature", "Blanc de noirs", "Grand Cru", "Millésimé"],
+      "tags": [
+        "Extra-brut",
+        "Blanc de noirs",
+        "Grand Cru",
+        "Millésimé"
+      ],
       "facts": "L’Ineffable est un Blanc de Noirs de Verzy Grand Cru, 100 % Pinot Noir, dosé à 2,5 g/L et élevé six mois en cave après dégorgement.",
       "notes": "Le millésime 2017 n’est pas confirmé par la fiche officielle et a été retiré du titre public."
     },
@@ -357,32 +537,52 @@
       "status": "official_confirmed_with_correction",
       "officialSourceUrl": "https://www.champagne-laherte.com/",
       "publicName": "Les Grandes Crayères Blanc de Blancs Extra Brut",
-      "grapes": ["Chardonnay"],
+      "grapes": [
+        "Chardonnay"
+      ],
       "dosage": "2 g/L",
-      "tags": ["Extra-brut / nature", "Blanc de blancs", "Millésimé"],
+      "tags": [
+        "Extra-brut",
+        "Blanc de blancs",
+        "Millésimé"
+      ],
       "facts": "Cuvée parcellaire millésimée 100 % Chardonnay, issue de vieilles vignes à mi-coteau sur craie campanienne à Chavot, dosée à 2 g/L.",
       "notes": "Le millésime 2021 n’est pas confirmé par la fiche officielle et a été retiré du titre public."
     },
     "drappier-quattuor": {
       "status": "official_confirmed",
       "officialSourceUrl": "https://www.champagne-drappier.com/fr/cuvee/quattuor/",
-      "grapes": ["Arbane", "Petit Meslier", "Pinot Blanc", "Chardonnay"],
+      "grapes": [
+        "Arbane",
+        "Petit Meslier",
+        "Pinot Blanc",
+        "Chardonnay"
+      ],
       "facts": "Assemblage officiel à parts égales : Arbane, Petit Meslier, Blanc Vrai et Chardonnay."
     },
     "j-m-seleque-soliste-les-charmiers-rose-extra-brut-1er-cru-2019": {
       "status": "official_confirmed_with_correction",
       "officialSourceUrl": "https://www.jmseleque.fr/en/produit/soliste-meunier-rose-2/",
       "publicName": "Soliste Meunier Rosé - Les Charmiers",
-      "grapes": ["Meunier"],
+      "grapes": [
+        "Meunier"
+      ],
       "dosage": "1,5 g/L",
-      "tags": ["Rosé", "Extra-brut / nature", "Premier Cru", "Millésimé"],
+      "tags": [
+        "Rosé",
+        "Extra-brut",
+        "Premier Cru",
+        "Millésimé"
+      ],
       "facts": "Rosé parcellaire 100 % Meunier des Charmiers à Pierry Premier Cru, élevé dix mois en fûts puis quatre ans sur bouchon, dosé à 1,5 g/L.",
       "notes": "La fiche officielle actuelle documente la récolte 2020 en bouteille de 75 cl ; le millésime 2019 du flux partenaire a été retiré du titre public."
     },
     "billecart-salmon-louis-salmon-2009": {
       "status": "official_confirmed",
       "officialSourceUrl": "https://www.champagne-billecart.fr/en/millesime/cuvee-louis-salmon-2009",
-      "grapes": ["Chardonnay"],
+      "grapes": [
+        "Chardonnay"
+      ],
       "publicName": "Louis Salmon 2009",
       "facts": "La Maison confirme le Brut Blanc de Blancs millésimé 2009, issu des grands crus de la Côte des Blancs."
     },
