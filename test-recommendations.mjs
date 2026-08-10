@@ -23,15 +23,12 @@ global.document = {
   body: { appendChild() {}, style: {} },
   documentElement: { lang: '', style: { setProperty() {} } }
 };
-// Le script du sélecteur est du code navigateur : lui fournir écouteurs, URL et historique.
-global.location = { pathname: '/', search: '', href: 'https://quelchampagne.fr/' };
-global.history = { pushState() {}, replaceState() {}, back() {} };
-global.window = { scrollTo() {}, open() {}, addEventListener() {}, removeEventListener() {}, location: global.location, history: global.history, matchMedia: () => ({ matches: false, addEventListener() {} }) };
+global.window = { scrollTo() {}, open() {} };
 global.localStorage = { getItem() { return null; }, setItem() {} };
 global.fetch = () => Promise.reject(new Error('Réseau désactivé pendant les tests.'));
 
 const engine = {};
-eval(`${script}; Object.assign(engine, { questions, score, scoreBreakdown, budgetFitScore, signalFit, accordFit, setCatalogue });`);
+eval(`${script}; Object.assign(engine, { questions, score, scoreBreakdown, budgetFitScore, signalFit, accordFit, inColour, setCatalogue });`);
 engine.setCatalogue(catalogue);
 
 function rank(answers) {
@@ -45,9 +42,10 @@ function rank(answers) {
     );
 }
 
-function answer(occasion, accord, style, budget, signal) {
+function answer(occasion, accord, style, budget, signal, couleur = 'couleur_any') {
   return {
     occasion: [occasion],
+    couleur: [couleur],
     accord: [accord],
     gout: [style],
     budget: [budget],
@@ -60,14 +58,15 @@ function assert(condition, message) {
 }
 
 const questions = engine.questions();
-assert(questions.length === 5, `Le sélecteur doit contenir cinq questions, obtenu : ${questions.length}.`);
-assert(questions.map(question => question.id).join('|') === 'occasion|accord|gout|budget|repere', 'L’ordre des cinq critères est incorrect.');
+assert(questions.length === 6, `Le sélecteur doit contenir six questions, obtenu : ${questions.length}.`);
+assert(questions.map(question => question.id).join('|') === 'occasion|couleur|accord|gout|budget|repere', 'L’ordre des six critères est incorrect.');
 
-const occasions = questions[0].opts.map(option => option.tags[0]);
-const accords = questions[1].opts.map(option => option.tags[0]);
-const styles = questions[2].opts.map(option => option.tags[0]);
-const budgets = questions[3].opts.map(option => option.tags[0]);
-const signals = questions[4].opts.map(option => option.tags[0]);
+const byId = id => (questions.find(question => question.id === id) || { opts: [] }).opts.map(option => option.tags[0]);
+const occasions = byId('occasion');
+const accords = byId('accord');
+const styles = byId('gout');
+const budgets = byId('budget');
+const signals = byId('repere');
 const topCounts = new Map();
 let scenarioCount = 0;
 
@@ -140,6 +139,17 @@ const rankablePool = catalogue.filter(product => product.commerceReady === true 
 const minDiversity = Math.min(18, Math.floor(rankablePool * 0.55));
 assert(topCounts.size >= minDiversity, `Diversité des recommandations insuffisante : ${topCounts.size} cuvées arrivent premières (seuil ${minDiversity} pour ${rankablePool} disponibles).`);
 assert(mostFrequent / scenarioCount <= 0.24, `Une cuvée monopolise trop de scénarios : ${mostFrequent}/${scenarioCount}.`);
+
+// Couleur : contrainte dure. Un rosé demandé ne doit ouvrir que des rosés, un blanc
+// que des blancs, et aucune cuvée ne peut appartenir aux deux ensembles.
+const rankable = catalogue.filter(product => product.commerceReady === true && product.availability === 'in_stock');
+const roses = rankable.filter(product => engine.inColour(product, 'couleur_rose'));
+const blancs = rankable.filter(product => engine.inColour(product, 'couleur_blanc'));
+assert(roses.length >= 3, `Trop peu de rosés disponibles pour alimenter le filtre couleur : ${roses.length}.`);
+assert(blancs.length >= 3, `Trop peu de blancs disponibles pour alimenter le filtre couleur : ${blancs.length}.`);
+assert(roses.length + blancs.length === rankable.length, 'Le filtre couleur laisse des cuvées hors des ensembles blanc et rosé.');
+assert(rankable.every(product => !(engine.inColour(product, 'couleur_rose') && engine.inColour(product, 'couleur_blanc'))), 'Une cuvée ne peut pas être à la fois blanche et rosée pour le filtre couleur.');
+assert(rankable.every(product => engine.inColour(product, 'couleur_any')), 'Le choix « peu importe » doit conserver toutes les cuvées.');
 
 if (errors.length) {
   console.error(`Tests de recommandation échoués (${errors.length}) :`);
