@@ -1660,14 +1660,28 @@ function deuxScore(p, val){
   if(val==='duo_verre'){ let s=2; if(p.profil.includes('profil_fruite')||p.profil.includes('profil_delicat')) s+=7; if((sc.roundness||3)>=3) s+=5; if((p.tier||1)<=2) s+=4; return Math.min(22,s); }
   return 10;
 }
+/* Affinité d'accord œnologique : au-delà du simple étiquetage, on note selon la
+   structure réelle de la cuvée (fraîcheur, dosage, puissance, complexité). */
+function accordAffinity(p, accord){
+  if(!accord || accord==='accord_any') return 10;
+  const has=(p.accords||[]).includes(accord);
+  const s=(p.details&&p.details.scores)?p.details.scores:{};
+  const fresh=s.freshness||3, round=s.roundness||3, power=s.power||3, cx=s.complexity||3;
+  let x=has?14:2;
+  if(accord==='accord_mer'){ if(fresh>=4)x+=6; if(p.tags.includes('Blanc de blancs'))x+=3; if(p.tags.includes('Extra-brut / nature'))x+=2; if(power>=4)x-=4; }
+  else if(accord==='accord_aperitif'){ if(fresh>=3)x+=4; if((p.tier||1)<=2)x+=3; if(power>=4)x-=3; }
+  else if(accord==='accord_volaille'){ if(power>=3||round>=3)x+=5; if(p.tags.includes('Blanc de noirs'))x+=3; if(cx>=4)x+=2; }
+  else if(accord==='accord_fromage'){ if(power>=4)x+=5; if(cx>=4)x+=4; if(fresh>=4&&power<=2)x-=2; }
+  else if(accord==='accord_dessert'){ if(p.tags.includes('Demi-sec'))x+=8; if(p.tags.includes('Rosé'))x+=3; if(round>=4)x+=2; if(p.tags.includes('Extra-brut / nature'))x-=3; }
+  return Math.max(0,Math.min(24,x));
+}
 function intentScore(p, a){
   const occ=(a.occasion||[]);
   if(occ.includes('occ_cadeau')) return destinataireScore(p,(a.destinataire||[])[0]);
   if(occ.includes('occ_fete')) return convivesScore(p,(a.convives||[])[0]);
   if(occ.includes('occ_apero')) return aperitifScore(p,(a.apero||[])[0]);
   if(occ.includes('occ_romantique')) return deuxScore(p,(a.duo||[])[0]);
-  const accord=(a.accord||[])[0];
-  return accord==='accord_any' ? 10 : accordFit(p,accord) ? 22 : 2;
+  return accordAffinity(p,(a.accord||[])[0]);
 }
 /* Pour un cadeau, la 5e question porte sur l'occasion du cadeau plutôt que sur
    une signature vous-centrée : on ajuste le registre de la bouteille. */

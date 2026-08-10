@@ -139,20 +139,18 @@ export function enrichProduct({product,tags,grapes,aromas,pairings,scores,eviden
   const bubbles=/fine?s? et persistante?s?|perlage fin/i.test(description)?'fine et persistante':'fine';
   const alcohol=findAlcohol(product.merchantTags,technical);
   const glass=serviceGlass(tags,scores);
-  const eye=`${color}, avec une effervescence ${bubbles}.`;
-  const nose=`Le nez associe ${aromaLabel}.`;
-  const mouth=scores.power>=4
-    ? `La bouche est ${scores.roundness>=4?'ample et généreuse':'droite et structurée'}, portée par une fraîcheur ${scores.freshness>=4?'marquée':'équilibrée'}.`
-    : scores.freshness>=4
-      ? `La bouche est vive et précise, avec une matière ${scores.roundness>=4?'souple':'élancée'} et une effervescence fine.`
-      : `La bouche est équilibrée, ${scores.roundness>=4?'ronde et enveloppante':'souple et lisible'}, sans lourdeur.`;
+  const dryStyle=tags.includes('Extra-brut / nature');
+  const tendreStyle=tags.includes('Demi-sec');
+  const eye=`La robe est ${color.toLowerCase()}, animée par une effervescence ${bubbles} formant un cordon régulier.`;
+  const nose=`Le nez ${scores.complexity>=4?'se déploie, complexe,':scores.freshness>=4?'se montre frais et précis,':'s’ouvre, engageant,'} sur ${aromaLabel}.`;
+  const mouth=`L’attaque est ${scores.freshness>=4?'vive et tendue':scores.freshness>=3?'nette':'souple'}, le milieu de bouche ${scores.power>=4?'ample et vineux':scores.roundness>=4?'rond et généreux':scores.freshness>=4?'précis et élancé':'équilibré'}${dryStyle?', sur une sensation très sèche et saline':tendreStyle?', sur une rondeur plus tendre':''}. L’ensemble reste ${scores.roundness>=4?'harmonieux, sans lourdeur':'équilibré et digeste'}.`;
   const finish=scores.complexity>=4
-    ? `La finale est longue, avec un retour sur ${list(aromaList.slice(-2)) || 'les notes fruitées et minérales'}.`
+    ? `La finale, longue, revient sur ${list(aromaList.slice(-2)) || 'des notes grillées et minérales'}.`
     : scores.freshness>=4
-      ? 'La finale est nette, fraîche et légèrement saline.'
-      : 'La finale est harmonieuse et persistante.';
+      ? 'La finale est tendue, fraîche et légèrement saline, et invite à la reprise.'
+      : 'La finale est harmonieuse, fruitée et persistante.';
   const overview=`${type}. ${character}. ${blendLabel?`Assemblage : ${blendLabel}. `:''}Le registre aromatique réunit ${aromaLabel}.`;
-  const vinification=`Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et ${aging.toLowerCase()}${maturationVessels.length?`. ${maturationVessels.join(' et ')}.`:'.'}`;
+  const vinification=`Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et ${aging.toLowerCase()}${maturationVessels.length?`. ${maturationVessels.join(' et ')}.`:'.'} Le vieillissement sur lies affine la bulle et développe les arômes.`;
   const serving=`Servir à ${temperature} dans un ${glass.toLowerCase()}. Les accords les plus naturels sont ${pairLabel.toLowerCase()}.`;
 
   return {

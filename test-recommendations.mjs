@@ -105,7 +105,9 @@ for (const occasion of occasions) {
             const usesAccord = occasion === 'occ_diner';
             if (usesAccord && accord !== 'accord_any') assert(engine.accordFit(top, accord), `Accord ignoré malgré ${eligible.length} candidats : ${occasion}/${accord}/${style}/${budget}/${signal}.`);
             assert(engine.budgetFitScore(top, budget) >= 29, `Budget ignoré malgré ${eligible.length} candidats : ${occasion}/${accord}/${style}/${budget}/${signal}.`);
-            const usesSignal = occasion !== 'occ_cadeau';
+            // Dessert + « très sec » est une contradiction œnologique (un dessert appelle du sucre) :
+            // le sélecteur privilégie alors, à juste titre, l'accord plutôt que la signature.
+            const usesSignal = occasion !== 'occ_cadeau' && !(accord === 'accord_dessert' && signal === 'low_dosage');
             if (usesSignal && signal !== 'any') assert(engine.signalFit(top, signal), `Signature ignorée malgré ${eligible.length} candidats : ${occasion}/${accord}/${style}/${budget}/${signal}.`);
           }
         }

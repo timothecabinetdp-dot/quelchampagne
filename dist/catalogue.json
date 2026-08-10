@@ -133,12 +133,12 @@
           "Dessert",
           "Apéritif"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine.",
-        "nose": "Le nez associe agrumes, fruits blancs, pomme, poire, brioche et pâtisserie.",
-        "mouth": "La bouche est vive et précise, avec une matière souple et une effervescence fine.",
-        "finish": "La finale est nette, fraîche et légèrement saline.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine formant un cordon régulier.",
+        "nose": "Le nez se montre frais et précis, sur agrumes, fruits blancs, pomme, poire, brioche et pâtisserie.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche rond et généreux. L’ensemble reste harmonieux, sans lourdeur.",
+        "finish": "La finale est tendue, fraîche et légèrement saline, et invite à la reprise.",
         "overview": "Champagne blanc · brut. Vif et précis. Assemblage : 65 % Meunier · 5 % Pinot Noir · 30 % Chardonnay. Le registre aromatique réunit agrumes, fruits blancs, pomme, poire, brioche et pâtisserie.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox et Passage sous bois.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox et Passage sous bois. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 6–8 °C dans un verre tulipe. Les accords les plus naturels sont crustacés, sushis, poisson, dessert et apéritif.",
         "facts": [
           [
@@ -374,12 +374,12 @@
           "Volaille et viandes blanches",
           "Fromages affinés"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine et persistante.",
-        "nose": "Le nez associe agrumes, pomme, fleurs blanches, pâtisserie, fruits secs et salinité.",
-        "mouth": "La bouche est vive et précise, avec une matière élancée et une effervescence fine.",
-        "finish": "La finale est longue, avec un retour sur fruits secs et salinité.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine et persistante formant un cordon régulier.",
+        "nose": "Le nez se déploie, complexe, sur agrumes, pomme, fleurs blanches, pâtisserie, fruits secs et salinité.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche précis et élancé, sur une sensation très sèche et saline. L’ensemble reste équilibré et digeste.",
+        "finish": "La finale, longue, revient sur fruits secs et salinité.",
         "overview": "Champagne blanc · extra-brut ou brut nature. Vif et précis. Assemblage : Pinot Noir et Chardonnay. Le registre aromatique réunit agrumes, pomme, fleurs blanches, pâtisserie, fruits secs et salinité.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 3 ans sur lies. Cuves inox.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 3 ans sur lies. Cuves inox. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont huîtres, poisson, apéritif, volaille et viandes blanches et fromages affinés.",
         "facts": [
           [
@@ -625,12 +625,12 @@
           "Volaille et viandes blanches",
           "Fromages affinés"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine et persistante.",
-        "nose": "Le nez associe agrumes, fruits blancs, brioche et pâtisserie.",
-        "mouth": "La bouche est équilibrée, souple et lisible, sans lourdeur.",
-        "finish": "La finale est longue, avec un retour sur brioche et pâtisserie.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine et persistante formant un cordon régulier.",
+        "nose": "Le nez se déploie, complexe, sur agrumes, fruits blancs, brioche et pâtisserie.",
+        "mouth": "L’attaque est nette, le milieu de bouche équilibré. L’ensemble reste équilibré et digeste.",
+        "finish": "La finale, longue, revient sur brioche et pâtisserie.",
         "overview": "Champagne blanc · brut · Premier Cru. Nuancé et persistant. Assemblage : 20 % Meunier · 65 % Pinot Noir · 15 % Chardonnay. Le registre aromatique réunit agrumes, fruits blancs, brioche et pâtisserie.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont crustacés, poisson, apéritif, volaille et viandes blanches et fromages affinés.",
         "facts": [
           [
@@ -866,12 +866,12 @@
           "Volaille et viandes blanches",
           "Volaille"
         ],
-        "eye": "Vin mousseux blanc paille, avec une effervescence fine.",
-        "nose": "Le nez associe agrumes, fruits blancs, pomme, fleurs blanches, pâtisserie et amande.",
-        "mouth": "La bouche est vive et précise, avec une matière souple et une effervescence fine.",
-        "finish": "La finale est nette, fraîche et légèrement saline.",
+        "eye": "La robe est vin mousseux blanc paille, animée par une effervescence fine formant un cordon régulier.",
+        "nose": "Le nez se montre frais et précis, sur agrumes, fruits blancs, pomme, fleurs blanches, pâtisserie et amande.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche rond et généreux. L’ensemble reste harmonieux, sans lourdeur.",
+        "finish": "La finale est tendue, fraîche et légèrement saline, et invite à la reprise.",
         "overview": "Champagne blanc · brut. Vif et précis. Assemblage : Chardonnay, Pinot Noir et Meunier. Le registre aromatique réunit agrumes, fruits blancs, pomme, fleurs blanches, pâtisserie et amande.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe. Les accords les plus naturels sont sushis, poisson, apéritif, volaille et viandes blanches et volaille.",
         "facts": [
           [
@@ -1121,12 +1121,12 @@
           "Apéritif",
           "Volaille et viandes blanches"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine et persistante.",
-        "nose": "Le nez associe agrumes, fruits blancs, pomme, pêche, brioche et pâtisserie.",
-        "mouth": "La bouche est équilibrée, souple et lisible, sans lourdeur.",
-        "finish": "La finale est harmonieuse et persistante.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine et persistante formant un cordon régulier.",
+        "nose": "Le nez s’ouvre, engageant, sur agrumes, fruits blancs, pomme, pêche, brioche et pâtisserie.",
+        "mouth": "L’attaque est nette, le milieu de bouche équilibré. L’ensemble reste équilibré et digeste.",
+        "finish": "La finale est harmonieuse, fruitée et persistante.",
         "overview": "Champagne blanc · brut. Équilibré. Assemblage : 40 % Meunier · 40 % Pinot Noir · 20 % Chardonnay. Le registre aromatique réunit agrumes, fruits blancs, pomme, pêche, brioche et pâtisserie.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Passage sous bois.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Passage sous bois. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe. Les accords les plus naturels sont crustacés, poisson, fromages, apéritif et volaille et viandes blanches.",
         "facts": [
           [
@@ -1362,12 +1362,12 @@
           "Volaille et viandes blanches",
           "Fromages affinés"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine et persistante.",
-        "nose": "Le nez associe agrumes, fruits blancs, fleurs blanches, brioche, pâtisserie et amande.",
-        "mouth": "La bouche est équilibrée, souple et lisible, sans lourdeur.",
-        "finish": "La finale est longue, avec un retour sur pâtisserie et amande.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine et persistante formant un cordon régulier.",
+        "nose": "Le nez se déploie, complexe, sur agrumes, fruits blancs, fleurs blanches, brioche, pâtisserie et amande.",
+        "mouth": "L’attaque est nette, le milieu de bouche équilibré. L’ensemble reste équilibré et digeste.",
+        "finish": "La finale, longue, revient sur pâtisserie et amande.",
         "overview": "Champagne blanc · brut · Premier Cru. Nuancé et persistant. Assemblage : Pinot Noir et Chardonnay. Le registre aromatique réunit agrumes, fruits blancs, fleurs blanches, brioche, pâtisserie et amande.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont crustacés, poisson, apéritif, volaille et viandes blanches et fromages affinés.",
         "facts": [
           [
@@ -1604,12 +1604,12 @@
           "Apéritif",
           "Volaille et viandes blanches"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine et persistante.",
-        "nose": "Le nez associe agrumes, fruits rouges, brioche, amande, fruits secs et fruits blancs.",
-        "mouth": "La bouche est ample et généreuse, portée par une fraîcheur équilibrée.",
-        "finish": "La finale est longue, avec un retour sur fruits secs et fruits blancs.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine et persistante formant un cordon régulier.",
+        "nose": "Le nez se déploie, complexe, sur agrumes, fruits rouges, brioche, amande, fruits secs et fruits blancs.",
+        "mouth": "L’attaque est nette, le milieu de bouche ample et vineux. L’ensemble reste harmonieux, sans lourdeur.",
+        "finish": "La finale, longue, revient sur fruits secs et fruits blancs.",
         "overview": "Blanc de noirs · brut. Ample et structuré. Assemblage : Pinot Noir et Meunier. Le registre aromatique réunit agrumes, fruits rouges, brioche, amande, fruits secs et fruits blancs.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 24 mois sur lies. Cuves inox.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 24 mois sur lies. Cuves inox. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont crustacés, poisson, fruits rouges, apéritif et volaille et viandes blanches.",
         "facts": [
           [
@@ -1847,12 +1847,12 @@
           "Volaille et viandes blanches",
           "Fromages affinés"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine.",
-        "nose": "Le nez associe agrumes, fruits blancs, fruits jaunes, pêche, brioche et vanille.",
-        "mouth": "La bouche est vive et précise, avec une matière souple et une effervescence fine.",
-        "finish": "La finale est longue, avec un retour sur brioche et vanille.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine formant un cordon régulier.",
+        "nose": "Le nez se déploie, complexe, sur agrumes, fruits blancs, fruits jaunes, pêche, brioche et vanille.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche rond et généreux. L’ensemble reste harmonieux, sans lourdeur.",
+        "finish": "La finale, longue, revient sur brioche et vanille.",
         "overview": "Champagne blanc · brut. Vif et précis. Assemblage : Meunier et Pinot Noir. Le registre aromatique réunit agrumes, fruits blancs, fruits jaunes, pêche, brioche et vanille.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont crustacés, poisson, apéritif, volaille et viandes blanches et fromages affinés.",
         "facts": [
           [
@@ -2094,12 +2094,12 @@
           "Fromages",
           "Apéritif"
         ],
-        "eye": "Jaune paille clair, avec une effervescence fine et persistante.",
-        "nose": "Le nez associe agrumes, pomme, poire, fleurs blanches, brioche et pâtisserie.",
-        "mouth": "La bouche est vive et précise, avec une matière souple et une effervescence fine.",
-        "finish": "La finale est longue, avec un retour sur brioche et pâtisserie.",
+        "eye": "La robe est jaune paille clair, animée par une effervescence fine et persistante formant un cordon régulier.",
+        "nose": "Le nez se déploie, complexe, sur agrumes, pomme, poire, fleurs blanches, brioche et pâtisserie.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche rond et généreux. L’ensemble reste harmonieux, sans lourdeur.",
+        "finish": "La finale, longue, revient sur brioche et pâtisserie.",
         "overview": "Blanc de blancs · brut. Vif et précis. Assemblage : 100 % Chardonnay. Le registre aromatique réunit agrumes, pomme, poire, fleurs blanches, brioche et pâtisserie.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont huîtres, crustacés, poisson, fromages et apéritif.",
         "facts": [
           [
@@ -2336,12 +2336,12 @@
           "Volaille et viandes blanches",
           "Fromages affinés"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine et persistante.",
-        "nose": "Le nez associe agrumes, fruits blancs, poire, fleurs blanches, amande et minéralité.",
-        "mouth": "La bouche est vive et précise, avec une matière souple et une effervescence fine.",
-        "finish": "La finale est longue, avec un retour sur amande et minéralité.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine et persistante formant un cordon régulier.",
+        "nose": "Le nez se déploie, complexe, sur agrumes, fruits blancs, poire, fleurs blanches, amande et minéralité.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche rond et généreux. L’ensemble reste harmonieux, sans lourdeur.",
+        "finish": "La finale, longue, revient sur amande et minéralité.",
         "overview": "Champagne blanc · brut. Vif et précis. Assemblage : Pinot Noir et Chardonnay. Le registre aromatique réunit agrumes, fruits blancs, poire, fleurs blanches, amande et minéralité.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 24 mois sur lies.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 24 mois sur lies. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont crustacés, poisson, apéritif, volaille et viandes blanches et fromages affinés.",
         "facts": [
           [
@@ -2578,12 +2578,12 @@
           "Apéritif",
           "Fromages affinés"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine et persistante.",
-        "nose": "Le nez associe agrumes, fruits blancs, poire, pêche, fleurs blanches et brioche.",
-        "mouth": "La bouche est équilibrée, ronde et enveloppante, sans lourdeur.",
-        "finish": "La finale est longue, avec un retour sur fleurs blanches et brioche.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine et persistante formant un cordon régulier.",
+        "nose": "Le nez se déploie, complexe, sur agrumes, fruits blancs, poire, pêche, fleurs blanches et brioche.",
+        "mouth": "L’attaque est nette, le milieu de bouche rond et généreux. L’ensemble reste harmonieux, sans lourdeur.",
+        "finish": "La finale, longue, revient sur fleurs blanches et brioche.",
         "overview": "Champagne blanc · brut. Rond et généreux. Assemblage : Chardonnay, Pinot Noir et Meunier. Le registre aromatique réunit agrumes, fruits blancs, poire, pêche, fleurs blanches et brioche.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox et Passage sous bois.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox et Passage sous bois. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont crustacés, poisson, volaille, apéritif et fromages affinés.",
         "facts": [
           [
@@ -2834,12 +2834,12 @@
           "Fromages",
           "Apéritif"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine.",
-        "nose": "Le nez associe agrumes, fruits blancs, pomme, brioche, pâtisserie et salinité.",
-        "mouth": "La bouche est vive et précise, avec une matière élancée et une effervescence fine.",
-        "finish": "La finale est longue, avec un retour sur pâtisserie et salinité.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine formant un cordon régulier.",
+        "nose": "Le nez se déploie, complexe, sur agrumes, fruits blancs, pomme, brioche, pâtisserie et salinité.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche précis et élancé. L’ensemble reste équilibré et digeste.",
+        "finish": "La finale, longue, revient sur pâtisserie et salinité.",
         "overview": "Champagne blanc · brut · Premier Cru. Vif et précis. Assemblage : 5 % Meunier · 75 % Pinot Noir · 20 % Chardonnay. Le registre aromatique réunit agrumes, fruits blancs, pomme, brioche, pâtisserie et salinité.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Passage sous bois.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Passage sous bois. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont huîtres, crustacés, poisson, fromages et apéritif.",
         "facts": [
           [
@@ -3069,12 +3069,12 @@
           "Apéritif",
           "Volaille et viandes blanches"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine.",
-        "nose": "Le nez associe agrumes, fruits blancs, pâtisserie et brioche.",
-        "mouth": "La bouche est vive et précise, avec une matière élancée et une effervescence fine.",
-        "finish": "La finale est longue, avec un retour sur pâtisserie et brioche.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine formant un cordon régulier.",
+        "nose": "Le nez se déploie, complexe, sur agrumes, fruits blancs, pâtisserie et brioche.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche précis et élancé. L’ensemble reste équilibré et digeste.",
+        "finish": "La finale, longue, revient sur pâtisserie et brioche.",
         "overview": "Champagne blanc · brut. Vif et précis. Assemblage : Pinot Noir. Le registre aromatique réunit agrumes, fruits blancs, pâtisserie et brioche.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont crustacés, poisson, fromages, apéritif et volaille et viandes blanches.",
         "facts": [
           [
@@ -3302,12 +3302,12 @@
           "Dessert",
           "Volaille et viandes blanches"
         ],
-        "eye": "Rosé, avec une effervescence fine et persistante.",
-        "nose": "Le nez associe fruits rouges, agrumes et notes florales.",
-        "mouth": "La bouche est équilibrée, ronde et enveloppante, sans lourdeur.",
-        "finish": "La finale est harmonieuse et persistante.",
+        "eye": "La robe est rosé, animée par une effervescence fine et persistante formant un cordon régulier.",
+        "nose": "Le nez s’ouvre, engageant, sur fruits rouges, agrumes et notes florales.",
+        "mouth": "L’attaque est nette, le milieu de bouche rond et généreux. L’ensemble reste harmonieux, sans lourdeur.",
+        "finish": "La finale est harmonieuse, fruitée et persistante.",
         "overview": "Champagne rosé · brut. Rond et généreux. Assemblage : Chardonnay, Pinot Noir et Meunier. Le registre aromatique réunit fruits rouges, agrumes et notes florales.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe. Les accords les plus naturels sont crustacés, poisson, fruits rouges, dessert et volaille et viandes blanches.",
         "facts": [
           [
@@ -3540,12 +3540,12 @@
           "Apéritif",
           "Volaille et viandes blanches"
         ],
-        "eye": "Rosé, avec une effervescence fine.",
-        "nose": "Le nez associe agrumes, fruits rouges, fleurs blanches, rose et notes florales.",
-        "mouth": "La bouche est équilibrée, ronde et enveloppante, sans lourdeur.",
-        "finish": "La finale est harmonieuse et persistante.",
+        "eye": "La robe est rosé, animée par une effervescence fine formant un cordon régulier.",
+        "nose": "Le nez s’ouvre, engageant, sur agrumes, fruits rouges, fleurs blanches, rose et notes florales.",
+        "mouth": "L’attaque est nette, le milieu de bouche rond et généreux. L’ensemble reste harmonieux, sans lourdeur.",
+        "finish": "La finale est harmonieuse, fruitée et persistante.",
         "overview": "Champagne rosé · brut. Rond et généreux. Assemblage : Chardonnay, Pinot Noir et Meunier. Le registre aromatique réunit agrumes, fruits rouges, fleurs blanches, rose et notes florales.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Passage sous bois.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Passage sous bois. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe. Les accords les plus naturels sont poisson, fruits rouges, dessert, apéritif et volaille et viandes blanches.",
         "facts": [
           [
@@ -3796,12 +3796,12 @@
           "Apéritif",
           "Volaille et viandes blanches"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine et persistante.",
-        "nose": "Le nez associe agrumes, fruits blancs, pomme, fleurs blanches, brioche et pâtisserie.",
-        "mouth": "La bouche est vive et précise, avec une matière élancée et une effervescence fine.",
-        "finish": "La finale est longue, avec un retour sur brioche et pâtisserie.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine et persistante formant un cordon régulier.",
+        "nose": "Le nez se déploie, complexe, sur agrumes, fruits blancs, pomme, fleurs blanches, brioche et pâtisserie.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche précis et élancé. L’ensemble reste équilibré et digeste.",
+        "finish": "La finale, longue, revient sur brioche et pâtisserie.",
         "overview": "Champagne blanc · brut. Vif et précis. Assemblage : 50 % Meunier · 25 % Pinot Noir · 25 % Chardonnay. Le registre aromatique réunit agrumes, fruits blancs, pomme, fleurs blanches, brioche et pâtisserie.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont huîtres, crustacés, poisson, apéritif et volaille et viandes blanches.",
         "facts": [
           [
@@ -4047,12 +4047,12 @@
           "Huîtres",
           "Crustacés"
         ],
-        "eye": "Jaune paille clair, avec une effervescence fine et persistante.",
-        "nose": "Le nez associe agrumes, pomme, fleurs blanches, brioche, amande et minéralité.",
-        "mouth": "La bouche est vive et précise, avec une matière élancée et une effervescence fine.",
-        "finish": "La finale est longue, avec un retour sur amande et minéralité.",
+        "eye": "La robe est jaune paille clair, animée par une effervescence fine et persistante formant un cordon régulier.",
+        "nose": "Le nez se déploie, complexe, sur agrumes, pomme, fleurs blanches, brioche, amande et minéralité.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche précis et élancé, sur une sensation très sèche et saline. L’ensemble reste équilibré et digeste.",
+        "finish": "La finale, longue, revient sur amande et minéralité.",
         "overview": "Blanc de blancs · extra-brut ou brut nature. Vif et précis. Assemblage : 60 % Chardonnay · 40 % Pinot Blanc. Le registre aromatique réunit agrumes, pomme, fleurs blanches, brioche, amande et minéralité.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 3 ans sur lies.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 3 ans sur lies. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont poisson, fromages, apéritif, huîtres et crustacés.",
         "facts": [
           [
@@ -4295,12 +4295,12 @@
           "Apéritif",
           "Volaille et viandes blanches"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine.",
-        "nose": "Le nez associe agrumes, fruits blancs, brioche, amande et salinité.",
-        "mouth": "La bouche est vive et précise, avec une matière élancée et une effervescence fine.",
-        "finish": "La finale est nette, fraîche et légèrement saline.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine formant un cordon régulier.",
+        "nose": "Le nez se montre frais et précis, sur agrumes, fruits blancs, brioche, amande et salinité.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche précis et élancé. L’ensemble reste équilibré et digeste.",
+        "finish": "La finale est tendue, fraîche et légèrement saline, et invite à la reprise.",
         "overview": "Champagne blanc · brut · Premier Cru. Vif et précis. Assemblage : 70 % Pinot Noir · 30 % Chardonnay. Le registre aromatique réunit agrumes, fruits blancs, brioche, amande et salinité.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 3 ans sur lies. Passage sous bois.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 3 ans sur lies. Passage sous bois. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe. Les accords les plus naturels sont crustacés, poisson, fromages, apéritif et volaille et viandes blanches.",
         "facts": [
           [
@@ -4549,12 +4549,12 @@
           "Volaille et viandes blanches",
           "Volaille"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine et persistante.",
-        "nose": "Le nez associe fruits blancs, pomme, poire, fleurs blanches, brioche et amande.",
-        "mouth": "La bouche est équilibrée, souple et lisible, sans lourdeur.",
-        "finish": "La finale est harmonieuse et persistante.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine et persistante formant un cordon régulier.",
+        "nose": "Le nez s’ouvre, engageant, sur fruits blancs, pomme, poire, fleurs blanches, brioche et amande.",
+        "mouth": "L’attaque est nette, le milieu de bouche équilibré. L’ensemble reste équilibré et digeste.",
+        "finish": "La finale est harmonieuse, fruitée et persistante.",
         "overview": "Champagne blanc · brut · Premier Cru. Équilibré. Assemblage : 28 % Meunier · 40 % Pinot Noir · 32 % Chardonnay. Le registre aromatique réunit fruits blancs, pomme, poire, fleurs blanches, brioche et amande.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois. Cuves inox et Passage sous bois.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois. Cuves inox et Passage sous bois. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe. Les accords les plus naturels sont crustacés, poisson, apéritif, volaille et viandes blanches et volaille.",
         "facts": [
           [
@@ -4804,12 +4804,12 @@
           "Dessert",
           "Apéritif"
         ],
-        "eye": "Rosé brillant, avec une effervescence fine et persistante.",
-        "nose": "Le nez associe fruits rouges, brioche, rose, minéralité, agrumes et notes florales.",
-        "mouth": "La bouche est vive et précise, avec une matière souple et une effervescence fine.",
-        "finish": "La finale est longue, avec un retour sur agrumes et notes florales.",
+        "eye": "La robe est rosé brillant, animée par une effervescence fine et persistante formant un cordon régulier.",
+        "nose": "Le nez se déploie, complexe, sur fruits rouges, brioche, rose, minéralité, agrumes et notes florales.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche rond et généreux. L’ensemble reste harmonieux, sans lourdeur.",
+        "finish": "La finale, longue, revient sur agrumes et notes florales.",
         "overview": "Champagne rosé · brut · Grand Cru. Vif et précis. Assemblage : 12,5 % Meunier · 70 % Pinot Noir · 18 % Chardonnay. Le registre aromatique réunit fruits rouges, brioche, rose, minéralité, agrumes et notes florales.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 3 ans sur lies. Passage sous bois.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 3 ans sur lies. Passage sous bois. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont sushis, poisson, fruits rouges, dessert et apéritif.",
         "facts": [
           [
@@ -5045,12 +5045,12 @@
           "Fromages affinés",
           "Huîtres"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine.",
-        "nose": "Le nez associe agrumes, pomme, fleurs blanches, pâtisserie, minéralité et notes minérales.",
-        "mouth": "La bouche est vive et précise, avec une matière élancée et une effervescence fine.",
-        "finish": "La finale est longue, avec un retour sur minéralité et notes minérales.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine formant un cordon régulier.",
+        "nose": "Le nez se déploie, complexe, sur agrumes, pomme, fleurs blanches, pâtisserie, minéralité et notes minérales.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche précis et élancé. L’ensemble reste équilibré et digeste.",
+        "finish": "La finale, longue, revient sur minéralité et notes minérales.",
         "overview": "Blanc de blancs · brut · Grand Cru. Vif et précis. Assemblage : Chardonnay. Le registre aromatique réunit agrumes, pomme, fleurs blanches, pâtisserie, minéralité et notes minérales.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 3 ans sur lies. Cuves inox.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 3 ans sur lies. Cuves inox. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont poisson, apéritif, volaille et viandes blanches, fromages affinés et huîtres.",
         "facts": [
           [
@@ -5282,12 +5282,12 @@
           "Volaille et viandes blanches",
           "Saumon"
         ],
-        "eye": "Rosé brillant, avec une effervescence fine.",
-        "nose": "Le nez associe fruits rouges, pâtisserie, rose, épices, agrumes et notes florales.",
-        "mouth": "La bouche est équilibrée, ronde et enveloppante, sans lourdeur.",
-        "finish": "La finale est harmonieuse et persistante.",
+        "eye": "La robe est rosé brillant, animée par une effervescence fine formant un cordon régulier.",
+        "nose": "Le nez s’ouvre, engageant, sur fruits rouges, pâtisserie, rose, épices, agrumes et notes florales.",
+        "mouth": "L’attaque est souple, le milieu de bouche rond et généreux, sur une rondeur plus tendre. L’ensemble reste harmonieux, sans lourdeur.",
+        "finish": "La finale est harmonieuse, fruitée et persistante.",
         "overview": "Champagne rosé · demi-sec. Rond et généreux. Assemblage : Pinot Noir. Le registre aromatique réunit fruits rouges, pâtisserie, rose, épices, agrumes et notes florales.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe. Les accords les plus naturels sont fruits rouges, dessert, apéritif, volaille et viandes blanches et saumon.",
         "facts": [
           [
@@ -5525,12 +5525,12 @@
           "Poisson",
           "Fromages"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine et persistante.",
-        "nose": "Le nez associe fruits blancs, fruits rouges, fruits mûrs, brioche, pâtisserie et agrumes.",
-        "mouth": "La bouche est vive et précise, avec une matière souple et une effervescence fine.",
-        "finish": "La finale est longue, avec un retour sur pâtisserie et agrumes.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine et persistante formant un cordon régulier.",
+        "nose": "Le nez se déploie, complexe, sur fruits blancs, fruits rouges, fruits mûrs, brioche, pâtisserie et agrumes.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche rond et généreux. L’ensemble reste harmonieux, sans lourdeur.",
+        "finish": "La finale, longue, revient sur pâtisserie et agrumes.",
         "overview": "Champagne blanc · brut. Vif et précis. Assemblage : Pinot Noir, Chardonnay et Meunier. Le registre aromatique réunit fruits blancs, fruits rouges, fruits mûrs, brioche, pâtisserie et agrumes.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 3 ans sur lies. Passage sous bois.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 3 ans sur lies. Passage sous bois. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont huîtres, crustacés, sushis, poisson et fromages.",
         "facts": [
           [
@@ -5767,12 +5767,12 @@
           "Poisson",
           "Fromages"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine.",
-        "nose": "Le nez associe agrumes, fruits blancs, fleurs blanches, brioche et miel.",
-        "mouth": "La bouche est vive et précise, avec une matière élancée et une effervescence fine.",
-        "finish": "La finale est longue, avec un retour sur brioche et miel.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine formant un cordon régulier.",
+        "nose": "Le nez se déploie, complexe, sur agrumes, fruits blancs, fleurs blanches, brioche et miel.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche précis et élancé, sur une sensation très sèche et saline. L’ensemble reste équilibré et digeste.",
+        "finish": "La finale, longue, revient sur brioche et miel.",
         "overview": "Champagne blanc · extra-brut ou brut nature. Vif et précis. Assemblage : Arbane, Petit Meslier, Pinot Blanc et Chardonnay. Le registre aromatique réunit agrumes, fruits blancs, fleurs blanches, brioche et miel.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Passage sous bois.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Passage sous bois. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont huîtres, crustacés, sushis, poisson et fromages.",
         "facts": [
           [
@@ -6004,12 +6004,12 @@
           "Volaille et viandes blanches",
           "Fromages affinés"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine et persistante.",
-        "nose": "Le nez associe agrumes, fruits blancs, minéralité et brioche.",
-        "mouth": "La bouche est vive et précise, avec une matière souple et une effervescence fine.",
-        "finish": "La finale est longue, avec un retour sur minéralité et brioche.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine et persistante formant un cordon régulier.",
+        "nose": "Le nez se déploie, complexe, sur agrumes, fruits blancs, minéralité et brioche.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche rond et généreux. L’ensemble reste harmonieux, sans lourdeur.",
+        "finish": "La finale, longue, revient sur minéralité et brioche.",
         "overview": "Champagne blanc · brut · millésimé. Vif et précis. Assemblage : Chardonnay. Le registre aromatique réunit agrumes, fruits blancs, minéralité et brioche.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont crustacés, poisson, apéritif, volaille et viandes blanches et fromages affinés.",
         "facts": [
           [
@@ -6244,12 +6244,12 @@
           "Apéritif",
           "Volaille et viandes blanches"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine et persistante.",
-        "nose": "Le nez associe agrumes, fruits blancs, brioche, pâtisserie et minéralité.",
-        "mouth": "La bouche est vive et précise, avec une matière élancée et une effervescence fine.",
-        "finish": "La finale est longue, avec un retour sur pâtisserie et minéralité.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine et persistante formant un cordon régulier.",
+        "nose": "Le nez se déploie, complexe, sur agrumes, fruits blancs, brioche, pâtisserie et minéralité.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche précis et élancé. L’ensemble reste équilibré et digeste.",
+        "finish": "La finale, longue, revient sur pâtisserie et minéralité.",
         "overview": "Champagne blanc · brut. Vif et précis. Assemblage : Chardonnay, Pinot Noir et Meunier. Le registre aromatique réunit agrumes, fruits blancs, brioche, pâtisserie et minéralité.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox et Passage sous bois.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox et Passage sous bois. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont crustacés, poisson, fromages, apéritif et volaille et viandes blanches.",
         "facts": [
           [
@@ -6487,12 +6487,12 @@
           "Volaille et viandes blanches",
           "Fromages affinés"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine et persistante.",
-        "nose": "Le nez associe agrumes, fruits blancs, pomme, brioche, pâtisserie et amande.",
-        "mouth": "La bouche est vive et précise, avec une matière souple et une effervescence fine.",
-        "finish": "La finale est longue, avec un retour sur pâtisserie et amande.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine et persistante formant un cordon régulier.",
+        "nose": "Le nez se déploie, complexe, sur agrumes, fruits blancs, pomme, brioche, pâtisserie et amande.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche rond et généreux. L’ensemble reste harmonieux, sans lourdeur.",
+        "finish": "La finale, longue, revient sur pâtisserie et amande.",
         "overview": "Champagne blanc · brut. Vif et précis. Assemblage : Chardonnay, Pinot Noir et Meunier. Le registre aromatique réunit agrumes, fruits blancs, pomme, brioche, pâtisserie et amande.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont crustacés, poisson, apéritif, volaille et viandes blanches et fromages affinés.",
         "facts": [
           [
@@ -6728,12 +6728,12 @@
           "Volaille et viandes blanches",
           "Fromages affinés"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine et persistante.",
-        "nose": "Le nez associe agrumes, fruits blancs, fleurs blanches, pâtisserie, salinité et brioche.",
-        "mouth": "La bouche est vive et précise, avec une matière élancée et une effervescence fine.",
-        "finish": "La finale est longue, avec un retour sur salinité et brioche.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine et persistante formant un cordon régulier.",
+        "nose": "Le nez se déploie, complexe, sur agrumes, fruits blancs, fleurs blanches, pâtisserie, salinité et brioche.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche précis et élancé. L’ensemble reste équilibré et digeste.",
+        "finish": "La finale, longue, revient sur salinité et brioche.",
         "overview": "Champagne blanc · brut. Vif et précis. Assemblage : Chardonnay, Pinot Noir et Meunier. Le registre aromatique réunit agrumes, fruits blancs, fleurs blanches, pâtisserie, salinité et brioche.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Passage sous bois.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Passage sous bois. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont crustacés, poisson, apéritif, volaille et viandes blanches et fromages affinés.",
         "facts": [
           [
@@ -6984,12 +6984,12 @@
           "Apéritif",
           "Volaille et viandes blanches"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine.",
-        "nose": "Le nez associe agrumes, fruits blancs, pomme, poire, fruits mûrs et brioche.",
-        "mouth": "La bouche est équilibrée, souple et lisible, sans lourdeur.",
-        "finish": "La finale est harmonieuse et persistante.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine formant un cordon régulier.",
+        "nose": "Le nez s’ouvre, engageant, sur agrumes, fruits blancs, pomme, poire, fruits mûrs et brioche.",
+        "mouth": "L’attaque est nette, le milieu de bouche équilibré. L’ensemble reste équilibré et digeste.",
+        "finish": "La finale est harmonieuse, fruitée et persistante.",
         "overview": "Champagne blanc · brut. Équilibré. Assemblage : 40 % Meunier · 40 % Pinot Noir · 20 % Chardonnay. Le registre aromatique réunit agrumes, fruits blancs, pomme, poire, fruits mûrs et brioche.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe. Les accords les plus naturels sont huîtres, crustacés, poisson, apéritif et volaille et viandes blanches.",
         "facts": [
           [
@@ -7221,12 +7221,12 @@
           "Volaille et viandes blanches",
           "Fromages affinés"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine et persistante.",
-        "nose": "Le nez associe agrumes, fruits blancs, pâtisserie et brioche.",
-        "mouth": "La bouche est vive et précise, avec une matière élancée et une effervescence fine.",
-        "finish": "La finale est longue, avec un retour sur pâtisserie et brioche.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine et persistante formant un cordon régulier.",
+        "nose": "Le nez se déploie, complexe, sur agrumes, fruits blancs, pâtisserie et brioche.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche précis et élancé. L’ensemble reste équilibré et digeste.",
+        "finish": "La finale, longue, revient sur pâtisserie et brioche.",
         "overview": "Champagne blanc · brut. Vif et précis. Assemblage : Chardonnay, Pinot Noir et Meunier. Le registre aromatique réunit agrumes, fruits blancs, pâtisserie et brioche.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont crustacés, poisson, apéritif, volaille et viandes blanches et fromages affinés.",
         "facts": [
           [
@@ -7466,12 +7466,12 @@
           "Apéritif",
           "Volaille et viandes blanches"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine.",
-        "nose": "Le nez associe agrumes, fruits blancs, fruits mûrs, pâtisserie, miel et amande.",
-        "mouth": "La bouche est vive et précise, avec une matière souple et une effervescence fine.",
-        "finish": "La finale est longue, avec un retour sur miel et amande.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine formant un cordon régulier.",
+        "nose": "Le nez se déploie, complexe, sur agrumes, fruits blancs, fruits mûrs, pâtisserie, miel et amande.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche rond et généreux. L’ensemble reste harmonieux, sans lourdeur.",
+        "finish": "La finale, longue, revient sur miel et amande.",
         "overview": "Champagne blanc · brut · Premier Cru. Vif et précis. Assemblage : Chardonnay, Pinot Noir et Meunier. Le registre aromatique réunit agrumes, fruits blancs, fruits mûrs, pâtisserie, miel et amande.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 3 ans sur lies. Cuves inox et Passage sous bois.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 3 ans sur lies. Cuves inox et Passage sous bois. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont crustacés, poisson, fromages, apéritif et volaille et viandes blanches.",
         "facts": [
           [
@@ -7707,12 +7707,12 @@
           "Fromages",
           "Apéritif"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine et persistante.",
-        "nose": "Le nez associe agrumes, brioche, pâtisserie, amande, minéralité et fruits blancs.",
-        "mouth": "La bouche est vive et précise, avec une matière élancée et une effervescence fine.",
-        "finish": "La finale est longue, avec un retour sur minéralité et fruits blancs.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine et persistante formant un cordon régulier.",
+        "nose": "Le nez se déploie, complexe, sur agrumes, brioche, pâtisserie, amande, minéralité et fruits blancs.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche précis et élancé, sur une sensation très sèche et saline. L’ensemble reste équilibré et digeste.",
+        "finish": "La finale, longue, revient sur minéralité et fruits blancs.",
         "overview": "Champagne blanc · extra-brut ou brut nature. Vif et précis. Assemblage : Chardonnay, Pinot Noir et Meunier. Le registre aromatique réunit agrumes, brioche, pâtisserie, amande, minéralité et fruits blancs.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox et Passage sous bois.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox et Passage sous bois. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont crustacés, sushis, poisson, fromages et apéritif.",
         "facts": [
           [
@@ -7965,12 +7965,12 @@
           "Apéritif",
           "Volaille et viandes blanches"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine.",
-        "nose": "Le nez associe fruits jaunes, pêche, fruits mûrs, fleurs blanches, brioche et pâtisserie.",
-        "mouth": "La bouche est équilibrée, ronde et enveloppante, sans lourdeur.",
-        "finish": "La finale est longue, avec un retour sur brioche et pâtisserie.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine formant un cordon régulier.",
+        "nose": "Le nez se déploie, complexe, sur fruits jaunes, pêche, fruits mûrs, fleurs blanches, brioche et pâtisserie.",
+        "mouth": "L’attaque est souple, le milieu de bouche rond et généreux, sur une rondeur plus tendre. L’ensemble reste harmonieux, sans lourdeur.",
+        "finish": "La finale, longue, revient sur brioche et pâtisserie.",
         "overview": "Champagne blanc · demi-sec. Rond et généreux. Assemblage : 25 % Meunier · 35 % Pinot Noir · 40 % Chardonnay. Le registre aromatique réunit fruits jaunes, pêche, fruits mûrs, fleurs blanches, brioche et pâtisserie.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont poisson, fromages, dessert, apéritif et volaille et viandes blanches.",
         "facts": [
           [
@@ -8204,12 +8204,12 @@
           "Volaille et viandes blanches",
           "Fromages affinés"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine et persistante.",
-        "nose": "Le nez associe fruits blancs, fleurs blanches, brioche, amande et agrumes.",
-        "mouth": "La bouche est vive et précise, avec une matière élancée et une effervescence fine.",
-        "finish": "La finale est longue, avec un retour sur amande et agrumes.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine et persistante formant un cordon régulier.",
+        "nose": "Le nez se déploie, complexe, sur fruits blancs, fleurs blanches, brioche, amande et agrumes.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche précis et élancé. L’ensemble reste équilibré et digeste.",
+        "finish": "La finale, longue, revient sur amande et agrumes.",
         "overview": "Champagne blanc · brut. Vif et précis. Assemblage : Chardonnay, Pinot Noir et Meunier. Le registre aromatique réunit fruits blancs, fleurs blanches, brioche, amande et agrumes.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 3 ans sur lies.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 3 ans sur lies. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont crustacés, poisson, apéritif, volaille et viandes blanches et fromages affinés.",
         "facts": [
           [
@@ -8441,12 +8441,12 @@
           "Fromages affinés",
           "Volaille"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine et persistante.",
-        "nose": "Le nez associe agrumes, fruits blancs, brioche et amande.",
-        "mouth": "La bouche est équilibrée, souple et lisible, sans lourdeur.",
-        "finish": "La finale est longue, avec un retour sur brioche et amande.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine et persistante formant un cordon régulier.",
+        "nose": "Le nez se déploie, complexe, sur agrumes, fruits blancs, brioche et amande.",
+        "mouth": "L’attaque est nette, le milieu de bouche équilibré. L’ensemble reste équilibré et digeste.",
+        "finish": "La finale, longue, revient sur brioche et amande.",
         "overview": "Champagne blanc · brut. Nuancé et persistant. Assemblage : Chardonnay, Pinot Noir et Meunier. Le registre aromatique réunit agrumes, fruits blancs, brioche et amande.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 36 mois sur lies. Passage sous bois.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 36 mois sur lies. Passage sous bois. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont poisson, apéritif, volaille et viandes blanches, fromages affinés et volaille.",
         "facts": [
           [
@@ -8681,12 +8681,12 @@
           "Volaille et viandes blanches",
           "Volaille"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine et persistante.",
-        "nose": "Le nez associe agrumes, fruits blancs, pomme, fleurs blanches, pâtisserie et salinité.",
-        "mouth": "La bouche est vive et précise, avec une matière élancée et une effervescence fine.",
-        "finish": "La finale est nette, fraîche et légèrement saline.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine et persistante formant un cordon régulier.",
+        "nose": "Le nez se montre frais et précis, sur agrumes, fruits blancs, pomme, fleurs blanches, pâtisserie et salinité.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche précis et élancé. L’ensemble reste équilibré et digeste.",
+        "finish": "La finale est tendue, fraîche et légèrement saline, et invite à la reprise.",
         "overview": "Champagne blanc · brut. Vif et précis. Assemblage : Chardonnay, Pinot Noir et Meunier. Le registre aromatique réunit agrumes, fruits blancs, pomme, fleurs blanches, pâtisserie et salinité.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe. Les accords les plus naturels sont crustacés, poisson, apéritif, volaille et viandes blanches et volaille.",
         "facts": [
           [
@@ -8924,12 +8924,12 @@
           "Volaille et viandes blanches",
           "Fromages affinés"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine.",
-        "nose": "Le nez associe agrumes, fruits blancs, poire, pêche, brioche et amande.",
-        "mouth": "La bouche est droite et structurée, portée par une fraîcheur marquée.",
-        "finish": "La finale est longue, avec un retour sur brioche et amande.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine formant un cordon régulier.",
+        "nose": "Le nez se déploie, complexe, sur agrumes, fruits blancs, poire, pêche, brioche et amande.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche ample et vineux. L’ensemble reste équilibré et digeste.",
+        "finish": "La finale, longue, revient sur brioche et amande.",
         "overview": "Champagne blanc · brut · Grand Cru. Nuancé et persistant. Assemblage : Chardonnay, Pinot Noir et Meunier. Le registre aromatique réunit agrumes, fruits blancs, poire, pêche, brioche et amande.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 3 ans sur lies. Passage sous bois.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 3 ans sur lies. Passage sous bois. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont crustacés, poisson, apéritif, volaille et viandes blanches et fromages affinés.",
         "facts": [
           [
@@ -9164,12 +9164,12 @@
           "Fruits rouges",
           "Dessert"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine.",
-        "nose": "Le nez associe fruits blancs, fruits rouges, fleurs blanches, brioche, amande et agrumes.",
-        "mouth": "La bouche est vive et précise, avec une matière élancée et une effervescence fine.",
-        "finish": "La finale est nette, fraîche et légèrement saline.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine formant un cordon régulier.",
+        "nose": "Le nez se montre frais et précis, sur fruits blancs, fruits rouges, fleurs blanches, brioche, amande et agrumes.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche précis et élancé, sur une sensation très sèche et saline. L’ensemble reste équilibré et digeste.",
+        "finish": "La finale est tendue, fraîche et légèrement saline, et invite à la reprise.",
         "overview": "Champagne blanc · extra-brut ou brut nature. Vif et précis. Assemblage : Chardonnay, Pinot Noir et Meunier. Le registre aromatique réunit fruits blancs, fruits rouges, fleurs blanches, brioche, amande et agrumes.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe. Les accords les plus naturels sont huîtres, crustacés, poisson, fruits rouges et dessert.",
         "facts": [
           [
@@ -9404,12 +9404,12 @@
           "Dessert",
           "Apéritif"
         ],
-        "eye": "Rosé, avec une effervescence fine et persistante.",
-        "nose": "Le nez associe agrumes, fruits rouges, pâtisserie, amande, rose et notes florales.",
-        "mouth": "La bouche est équilibrée, ronde et enveloppante, sans lourdeur.",
-        "finish": "La finale est harmonieuse et persistante.",
+        "eye": "La robe est rosé, animée par une effervescence fine et persistante formant un cordon régulier.",
+        "nose": "Le nez s’ouvre, engageant, sur agrumes, fruits rouges, pâtisserie, amande, rose et notes florales.",
+        "mouth": "L’attaque est nette, le milieu de bouche rond et généreux. L’ensemble reste harmonieux, sans lourdeur.",
+        "finish": "La finale est harmonieuse, fruitée et persistante.",
         "overview": "Champagne rosé · brut. Rond et généreux. Assemblage : Chardonnay, Pinot Noir et Meunier. Le registre aromatique réunit agrumes, fruits rouges, pâtisserie, amande, rose et notes florales.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe. Les accords les plus naturels sont crustacés, poisson, fruits rouges, dessert et apéritif.",
         "facts": [
           [
@@ -9649,12 +9649,12 @@
           "Apéritif",
           "Volaille et viandes blanches"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine et persistante.",
-        "nose": "Le nez associe agrumes, fruits blancs, fruits jaunes, pêche, fleurs blanches et brioche.",
-        "mouth": "La bouche est équilibrée, souple et lisible, sans lourdeur.",
-        "finish": "La finale est harmonieuse et persistante.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine et persistante formant un cordon régulier.",
+        "nose": "Le nez s’ouvre, engageant, sur agrumes, fruits blancs, fruits jaunes, pêche, fleurs blanches et brioche.",
+        "mouth": "L’attaque est nette, le milieu de bouche équilibré. L’ensemble reste équilibré et digeste.",
+        "finish": "La finale est harmonieuse, fruitée et persistante.",
         "overview": "Champagne blanc · brut · Grand Cru. Équilibré. Assemblage : Chardonnay, Pinot Noir et Meunier. Le registre aromatique réunit agrumes, fruits blancs, fruits jaunes, pêche, fleurs blanches et brioche.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 3 ans sur lies. Cuves inox et Passage sous bois.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 3 ans sur lies. Cuves inox et Passage sous bois. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe. Les accords les plus naturels sont crustacés, poisson, fromages, apéritif et volaille et viandes blanches.",
         "facts": [
           [
@@ -9890,12 +9890,12 @@
           "Volaille et viandes blanches",
           "Fromages affinés"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine et persistante.",
-        "nose": "Le nez associe agrumes, fruits blancs, fleurs blanches, brioche et pâtisserie.",
-        "mouth": "La bouche est vive et précise, avec une matière élancée et une effervescence fine.",
-        "finish": "La finale est longue, avec un retour sur brioche et pâtisserie.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine et persistante formant un cordon régulier.",
+        "nose": "Le nez se déploie, complexe, sur agrumes, fruits blancs, fleurs blanches, brioche et pâtisserie.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche précis et élancé. L’ensemble reste équilibré et digeste.",
+        "finish": "La finale, longue, revient sur brioche et pâtisserie.",
         "overview": "Champagne blanc · brut · Premier Cru. Vif et précis. Assemblage : Chardonnay, Pinot Noir et Meunier. Le registre aromatique réunit agrumes, fruits blancs, fleurs blanches, brioche et pâtisserie.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont crustacés, poisson, apéritif, volaille et viandes blanches et fromages affinés.",
         "facts": [
           [
@@ -10134,12 +10134,12 @@
           "Apéritif",
           "Volaille et viandes blanches"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine et persistante.",
-        "nose": "Le nez associe agrumes, fruits blancs, pomme, pâtisserie, minéralité et salinité.",
-        "mouth": "La bouche est ample et généreuse, portée par une fraîcheur marquée.",
-        "finish": "La finale est nette, fraîche et légèrement saline.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine et persistante formant un cordon régulier.",
+        "nose": "Le nez se montre frais et précis, sur agrumes, fruits blancs, pomme, pâtisserie, minéralité et salinité.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche ample et vineux. L’ensemble reste harmonieux, sans lourdeur.",
+        "finish": "La finale est tendue, fraîche et légèrement saline, et invite à la reprise.",
         "overview": "Champagne blanc · brut · Premier Cru. Ample et structuré. Assemblage : Chardonnay, Pinot Noir et Meunier. Le registre aromatique réunit agrumes, fruits blancs, pomme, pâtisserie, minéralité et salinité.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox et Passage sous bois.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox et Passage sous bois. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont crustacés, poisson, fromages, apéritif et volaille et viandes blanches.",
         "facts": [
           [
@@ -10377,12 +10377,12 @@
           "Volaille et viandes blanches",
           "Poisson"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine.",
-        "nose": "Le nez associe fruits jaunes, pêche, fruits mûrs, fleurs blanches, brioche et miel.",
-        "mouth": "La bouche est équilibrée, ronde et enveloppante, sans lourdeur.",
-        "finish": "La finale est harmonieuse et persistante.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine formant un cordon régulier.",
+        "nose": "Le nez s’ouvre, engageant, sur fruits jaunes, pêche, fruits mûrs, fleurs blanches, brioche et miel.",
+        "mouth": "L’attaque est souple, le milieu de bouche rond et généreux, sur une rondeur plus tendre. L’ensemble reste harmonieux, sans lourdeur.",
+        "finish": "La finale est harmonieuse, fruitée et persistante.",
         "overview": "Champagne blanc · demi-sec · Grand Cru. Rond et généreux. Assemblage : Chardonnay, Pinot Noir et Meunier. Le registre aromatique réunit fruits jaunes, pêche, fruits mûrs, fleurs blanches, brioche et miel.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 3 ans sur lies. Cuves inox.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 3 ans sur lies. Cuves inox. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe. Les accords les plus naturels sont fromages, dessert, apéritif, volaille et viandes blanches et poisson.",
         "facts": [
           [
@@ -10617,12 +10617,12 @@
           "Fromages affinés",
           "Huîtres"
         ],
-        "eye": "Jaune paille clair, avec une effervescence fine et persistante.",
-        "nose": "Le nez associe agrumes, poire, pêche, fleurs blanches et notes minérales.",
-        "mouth": "La bouche est vive et précise, avec une matière élancée et une effervescence fine.",
-        "finish": "La finale est longue, avec un retour sur fleurs blanches et notes minérales.",
+        "eye": "La robe est jaune paille clair, animée par une effervescence fine et persistante formant un cordon régulier.",
+        "nose": "Le nez se déploie, complexe, sur agrumes, poire, pêche, fleurs blanches et notes minérales.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche précis et élancé, sur une sensation très sèche et saline. L’ensemble reste équilibré et digeste.",
+        "finish": "La finale, longue, revient sur fleurs blanches et notes minérales.",
         "overview": "Blanc de blancs · extra-brut ou brut nature. Vif et précis. Assemblage : Chardonnay et Pinot Noir. Le registre aromatique réunit agrumes, poire, pêche, fleurs blanches et notes minérales.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 3 ans sur lies. Cuves inox et Passage sous bois.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 3 ans sur lies. Cuves inox et Passage sous bois. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont poisson, dessert, apéritif, fromages affinés et huîtres.",
         "facts": [
           [
@@ -10856,12 +10856,12 @@
           "Fromages affinés",
           "Crustacés"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine et persistante.",
-        "nose": "Le nez associe agrumes, fruits blancs, fleurs blanches et brioche.",
-        "mouth": "La bouche est vive et précise, avec une matière élancée et une effervescence fine.",
-        "finish": "La finale est longue, avec un retour sur fleurs blanches et brioche.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine et persistante formant un cordon régulier.",
+        "nose": "Le nez se déploie, complexe, sur agrumes, fruits blancs, fleurs blanches et brioche.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche précis et élancé, sur une sensation très sèche et saline. L’ensemble reste équilibré et digeste.",
+        "finish": "La finale, longue, revient sur fleurs blanches et brioche.",
         "overview": "Champagne blanc · extra-brut ou brut nature · Premier Cru. Vif et précis. Assemblage : Chardonnay, Pinot Noir et Meunier. Le registre aromatique réunit agrumes, fruits blancs, fleurs blanches et brioche.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont huîtres, apéritif, volaille et viandes blanches, fromages affinés et crustacés.",
         "facts": [
           [
@@ -11101,12 +11101,12 @@
           "Fruits rouges",
           "Dessert"
         ],
-        "eye": "Rose pâle, avec une effervescence fine.",
-        "nose": "Le nez associe agrumes, fruits rouges, pâtisserie, rose, minéralité et salinité.",
-        "mouth": "La bouche est vive et précise, avec une matière souple et une effervescence fine.",
-        "finish": "La finale est longue, avec un retour sur minéralité et salinité.",
+        "eye": "La robe est rose pâle, animée par une effervescence fine formant un cordon régulier.",
+        "nose": "Le nez se déploie, complexe, sur agrumes, fruits rouges, pâtisserie, rose, minéralité et salinité.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche rond et généreux. L’ensemble reste harmonieux, sans lourdeur.",
+        "finish": "La finale, longue, revient sur minéralité et salinité.",
         "overview": "Champagne rosé · brut · Premier Cru. Vif et précis. Assemblage : Chardonnay, Pinot Noir et Meunier. Le registre aromatique réunit agrumes, fruits rouges, pâtisserie, rose, minéralité et salinité.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont crustacés, poisson, fromages, fruits rouges et dessert.",
         "facts": [
           [
@@ -11339,12 +11339,12 @@
           "Apéritif",
           "Volaille et viandes blanches"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine.",
-        "nose": "Le nez associe agrumes, pomme, brioche, pâtisserie, amande et minéralité.",
-        "mouth": "La bouche est vive et précise, avec une matière élancée et une effervescence fine.",
-        "finish": "La finale est longue, avec un retour sur amande et minéralité.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine formant un cordon régulier.",
+        "nose": "Le nez se déploie, complexe, sur agrumes, pomme, brioche, pâtisserie, amande et minéralité.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche précis et élancé, sur une sensation très sèche et saline. L’ensemble reste équilibré et digeste.",
+        "finish": "La finale, longue, revient sur amande et minéralité.",
         "overview": "Champagne blanc · extra-brut ou brut nature. Vif et précis. Le registre aromatique réunit agrumes, pomme, brioche, pâtisserie, amande et minéralité.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Passage sous bois.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Passage sous bois. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont huîtres, poisson, fromages, apéritif et volaille et viandes blanches.",
         "facts": [
           [
@@ -11576,12 +11576,12 @@
           "Poisson",
           "Apéritif"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine.",
-        "nose": "Le nez associe agrumes, fruits blancs, fleurs blanches, brioche, pâtisserie et noisette.",
-        "mouth": "La bouche est vive et précise, avec une matière élancée et une effervescence fine.",
-        "finish": "La finale est nette, fraîche et légèrement saline.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine formant un cordon régulier.",
+        "nose": "Le nez se montre frais et précis, sur agrumes, fruits blancs, fleurs blanches, brioche, pâtisserie et noisette.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche précis et élancé. L’ensemble reste équilibré et digeste.",
+        "finish": "La finale est tendue, fraîche et légèrement saline, et invite à la reprise.",
         "overview": "Champagne blanc · brut · Grand Cru. Vif et précis. Assemblage : Chardonnay, Pinot Noir et Meunier. Le registre aromatique réunit agrumes, fruits blancs, fleurs blanches, brioche, pâtisserie et noisette.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 36 mois sur lies. Passage sous bois.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 36 mois sur lies. Passage sous bois. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe. Les accords les plus naturels sont huîtres, crustacés, sushis, poisson et apéritif.",
         "facts": [
           [
@@ -11816,12 +11816,12 @@
           "Volaille et viandes blanches",
           "Fromages affinés"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine.",
-        "nose": "Le nez associe agrumes, fruits blancs, fruits mûrs, pâtisserie, amande et brioche.",
-        "mouth": "La bouche est équilibrée, souple et lisible, sans lourdeur.",
-        "finish": "La finale est longue, avec un retour sur amande et brioche.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine formant un cordon régulier.",
+        "nose": "Le nez se déploie, complexe, sur agrumes, fruits blancs, fruits mûrs, pâtisserie, amande et brioche.",
+        "mouth": "L’attaque est nette, le milieu de bouche équilibré. L’ensemble reste équilibré et digeste.",
+        "finish": "La finale, longue, revient sur amande et brioche.",
         "overview": "Champagne blanc · brut. Nuancé et persistant. Assemblage : Chardonnay, Pinot Noir et Meunier. Le registre aromatique réunit agrumes, fruits blancs, fruits mûrs, pâtisserie, amande et brioche.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 3 ans sur lies. Cuves inox.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 3 ans sur lies. Cuves inox. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont crustacés, poisson, apéritif, volaille et viandes blanches et fromages affinés.",
         "facts": [
           [
@@ -12061,12 +12061,12 @@
           "Apéritif",
           "Volaille et viandes blanches"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine.",
-        "nose": "Le nez associe agrumes, fruits blancs, pomme, fleurs blanches, brioche et pâtisserie.",
-        "mouth": "La bouche est vive et précise, avec une matière élancée et une effervescence fine.",
-        "finish": "La finale est nette, fraîche et légèrement saline.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine formant un cordon régulier.",
+        "nose": "Le nez se montre frais et précis, sur agrumes, fruits blancs, pomme, fleurs blanches, brioche et pâtisserie.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche précis et élancé. L’ensemble reste équilibré et digeste.",
+        "finish": "La finale est tendue, fraîche et légèrement saline, et invite à la reprise.",
         "overview": "Champagne blanc · brut · Premier Cru. Vif et précis. Assemblage : Chardonnay, Pinot Noir et Meunier. Le registre aromatique réunit agrumes, fruits blancs, pomme, fleurs blanches, brioche et pâtisserie.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 3 ans sur lies. Cuves inox et Passage sous bois.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 3 ans sur lies. Cuves inox et Passage sous bois. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe. Les accords les plus naturels sont crustacés, poisson, fromages, apéritif et volaille et viandes blanches.",
         "facts": [
           [
@@ -12296,12 +12296,12 @@
           "Apéritif",
           "Volaille et viandes blanches"
         ],
-        "eye": "Jaune paille, avec une effervescence fine et persistante.",
-        "nose": "Le nez associe agrumes, fleurs blanches, brioche et fruits blancs.",
-        "mouth": "La bouche est vive et précise, avec une matière élancée et une effervescence fine.",
-        "finish": "La finale est longue, avec un retour sur brioche et fruits blancs.",
+        "eye": "La robe est jaune paille, animée par une effervescence fine et persistante formant un cordon régulier.",
+        "nose": "Le nez se déploie, complexe, sur agrumes, fleurs blanches, brioche et fruits blancs.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche précis et élancé. L’ensemble reste équilibré et digeste.",
+        "finish": "La finale, longue, revient sur brioche et fruits blancs.",
         "overview": "Champagne blanc · brut. Vif et précis. Assemblage : Chardonnay. Le registre aromatique réunit agrumes, fleurs blanches, brioche et fruits blancs.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont huîtres, crustacés, poisson, apéritif et volaille et viandes blanches.",
         "facts": [
           [
@@ -12542,12 +12542,12 @@
           "Fromages affinés",
           "Huîtres"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine et persistante.",
-        "nose": "Le nez associe agrumes, fleurs blanches, brioche et fruits blancs.",
-        "mouth": "La bouche est vive et précise, avec une matière élancée et une effervescence fine.",
-        "finish": "La finale est longue, avec un retour sur brioche et fruits blancs.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine et persistante formant un cordon régulier.",
+        "nose": "Le nez se déploie, complexe, sur agrumes, fleurs blanches, brioche et fruits blancs.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche précis et élancé, sur une sensation très sèche et saline. L’ensemble reste équilibré et digeste.",
+        "finish": "La finale, longue, revient sur brioche et fruits blancs.",
         "overview": "Champagne blanc · extra-brut ou brut nature. Vif et précis. Assemblage : 70 % Pinot Noir · 30 % Chardonnay. Le registre aromatique réunit agrumes, fleurs blanches, brioche et fruits blancs.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 3 ans sur lies. Cuves inox et Passage sous bois.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 3 ans sur lies. Cuves inox et Passage sous bois. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont poisson, apéritif, volaille et viandes blanches, fromages affinés et huîtres.",
         "facts": [
           [
@@ -12780,12 +12780,12 @@
           "Fruits rouges",
           "Dessert"
         ],
-        "eye": "Jaune paille avec reflets roses, avec une effervescence fine.",
-        "nose": "Le nez associe fruits rouges, rose, agrumes et notes florales.",
-        "mouth": "La bouche est vive et précise, avec une matière souple et une effervescence fine.",
-        "finish": "La finale est longue, avec un retour sur agrumes et notes florales.",
+        "eye": "La robe est jaune paille avec reflets roses, animée par une effervescence fine formant un cordon régulier.",
+        "nose": "Le nez se déploie, complexe, sur fruits rouges, rose, agrumes et notes florales.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche rond et généreux. L’ensemble reste harmonieux, sans lourdeur.",
+        "finish": "La finale, longue, revient sur agrumes et notes florales.",
         "overview": "Champagne rosé · brut. Vif et précis. Assemblage : Chardonnay, Pinot Noir et Meunier. Le registre aromatique réunit fruits rouges, rose, agrumes et notes florales.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont crustacés, poisson, fromages, fruits rouges et dessert.",
         "facts": [
           [
@@ -13022,12 +13022,12 @@
           "Apéritif",
           "Volaille et viandes blanches"
         ],
-        "eye": "Jaune paille clair, avec une effervescence fine et persistante.",
-        "nose": "Le nez associe agrumes, pomme, fleurs blanches, brioche, pâtisserie et amande.",
-        "mouth": "La bouche est vive et précise, avec une matière élancée et une effervescence fine.",
-        "finish": "La finale est nette, fraîche et légèrement saline.",
+        "eye": "La robe est jaune paille clair, animée par une effervescence fine et persistante formant un cordon régulier.",
+        "nose": "Le nez se montre frais et précis, sur agrumes, pomme, fleurs blanches, brioche, pâtisserie et amande.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche précis et élancé, sur une sensation très sèche et saline. L’ensemble reste équilibré et digeste.",
+        "finish": "La finale est tendue, fraîche et légèrement saline, et invite à la reprise.",
         "overview": "Blanc de blancs · extra-brut ou brut nature · Grand Cru. Vif et précis. Assemblage : Chardonnay. Le registre aromatique réunit agrumes, pomme, fleurs blanches, brioche, pâtisserie et amande.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 36 mois sur lies. Cuves inox.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 36 mois sur lies. Cuves inox. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe. Les accords les plus naturels sont crustacés, poisson, fromages, apéritif et volaille et viandes blanches.",
         "facts": [
           [
@@ -13265,12 +13265,12 @@
           "Volaille et viandes blanches",
           "Fromages affinés"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine.",
-        "nose": "Le nez associe agrumes, fruits blancs, pomme, poire, fleurs blanches et pâtisserie.",
-        "mouth": "La bouche est vive et précise, avec une matière élancée et une effervescence fine.",
-        "finish": "La finale est longue, avec un retour sur fleurs blanches et pâtisserie.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine formant un cordon régulier.",
+        "nose": "Le nez se déploie, complexe, sur agrumes, fruits blancs, pomme, poire, fleurs blanches et pâtisserie.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche précis et élancé. L’ensemble reste équilibré et digeste.",
+        "finish": "La finale, longue, revient sur fleurs blanches et pâtisserie.",
         "overview": "Blanc de blancs · brut · millésimé. Vif et précis. Assemblage : Chardonnay. Le registre aromatique réunit agrumes, fruits blancs, pomme, poire, fleurs blanches et pâtisserie.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 3 ans sur lies.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 3 ans sur lies. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont huîtres, poisson, apéritif, volaille et viandes blanches et fromages affinés.",
         "facts": [
           [
@@ -13508,12 +13508,12 @@
           "Volaille et viandes blanches",
           "Fromages affinés"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine et persistante.",
-        "nose": "Le nez associe agrumes, fruits blancs, pâtisserie, miel, noisette et minéralité.",
-        "mouth": "La bouche est vive et précise, avec une matière souple et une effervescence fine.",
-        "finish": "La finale est longue, avec un retour sur noisette et minéralité.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine et persistante formant un cordon régulier.",
+        "nose": "Le nez se déploie, complexe, sur agrumes, fruits blancs, pâtisserie, miel, noisette et minéralité.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche rond et généreux. L’ensemble reste harmonieux, sans lourdeur.",
+        "finish": "La finale, longue, revient sur noisette et minéralité.",
         "overview": "Champagne blanc · brut. Vif et précis. Assemblage : Chardonnay, Pinot Noir et Meunier. Le registre aromatique réunit agrumes, fruits blancs, pâtisserie, miel, noisette et minéralité.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Passage sous bois.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Passage sous bois. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont crustacés, poisson, apéritif, volaille et viandes blanches et fromages affinés.",
         "facts": [
           [
@@ -13744,12 +13744,12 @@
           "Volaille et viandes blanches",
           "Fromages affinés"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine et persistante.",
-        "nose": "Le nez associe agrumes, fruits blancs et brioche.",
-        "mouth": "La bouche est équilibrée, ronde et enveloppante, sans lourdeur.",
-        "finish": "La finale est longue, avec un retour sur fruits blancs et brioche.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine et persistante formant un cordon régulier.",
+        "nose": "Le nez se déploie, complexe, sur agrumes, fruits blancs et brioche.",
+        "mouth": "L’attaque est nette, le milieu de bouche rond et généreux. L’ensemble reste harmonieux, sans lourdeur.",
+        "finish": "La finale, longue, revient sur fruits blancs et brioche.",
         "overview": "Champagne blanc · brut. Rond et généreux. Assemblage : Chardonnay, Pinot Noir et Meunier. Le registre aromatique réunit agrumes, fruits blancs et brioche.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Passage sous bois.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Passage sous bois. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont huîtres, crustacés, poisson, volaille et viandes blanches et fromages affinés.",
         "facts": [
           [
@@ -13986,12 +13986,12 @@
           "Apéritif",
           "Volaille et viandes blanches"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine et persistante.",
-        "nose": "Le nez associe agrumes, pomme, poire, fleurs blanches, pâtisserie et amande.",
-        "mouth": "La bouche est vive et précise, avec une matière élancée et une effervescence fine.",
-        "finish": "La finale est nette, fraîche et légèrement saline.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine et persistante formant un cordon régulier.",
+        "nose": "Le nez se montre frais et précis, sur agrumes, pomme, poire, fleurs blanches, pâtisserie et amande.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche précis et élancé. L’ensemble reste équilibré et digeste.",
+        "finish": "La finale est tendue, fraîche et légèrement saline, et invite à la reprise.",
         "overview": "Champagne blanc · brut. Vif et précis. Assemblage : Chardonnay, Pinot Noir et Meunier. Le registre aromatique réunit agrumes, pomme, poire, fleurs blanches, pâtisserie et amande.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 3 ans sur lies.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 3 ans sur lies. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe. Les accords les plus naturels sont huîtres, poisson, dessert, apéritif et volaille et viandes blanches.",
         "facts": [
           [
@@ -14226,12 +14226,12 @@
           "Apéritif",
           "Volaille et viandes blanches"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine.",
-        "nose": "Le nez associe agrumes, fruits blancs, pomme, poire et brioche.",
-        "mouth": "La bouche est vive et précise, avec une matière élancée et une effervescence fine.",
-        "finish": "La finale est longue, avec un retour sur poire et brioche.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine formant un cordon régulier.",
+        "nose": "Le nez se déploie, complexe, sur agrumes, fruits blancs, pomme, poire et brioche.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche précis et élancé. L’ensemble reste équilibré et digeste.",
+        "finish": "La finale, longue, revient sur poire et brioche.",
         "overview": "Champagne blanc · brut. Vif et précis. Assemblage : Chardonnay, Pinot Noir et Meunier. Le registre aromatique réunit agrumes, fruits blancs, pomme, poire et brioche.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 3 ans sur lies. Cuves inox et Passage sous bois.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 3 ans sur lies. Cuves inox et Passage sous bois. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont crustacés, sushis, poisson, apéritif et volaille et viandes blanches.",
         "facts": [
           [
@@ -14468,12 +14468,12 @@
           "Apéritif",
           "Volaille et viandes blanches"
         ],
-        "eye": "Vin mousseux jaune paille, avec une effervescence fine et persistante.",
-        "nose": "Le nez associe fruits blancs, pomme, poire, brioche, amande et agrumes.",
-        "mouth": "La bouche est vive et précise, avec une matière élancée et une effervescence fine.",
-        "finish": "La finale est longue, avec un retour sur amande et agrumes.",
+        "eye": "La robe est vin mousseux jaune paille, animée par une effervescence fine et persistante formant un cordon régulier.",
+        "nose": "Le nez se déploie, complexe, sur fruits blancs, pomme, poire, brioche, amande et agrumes.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche précis et élancé. L’ensemble reste équilibré et digeste.",
+        "finish": "La finale, longue, revient sur amande et agrumes.",
         "overview": "Champagne blanc · brut · millésimé. Vif et précis. Assemblage : Chardonnay, Pinot Noir et Meunier. Le registre aromatique réunit fruits blancs, pomme, poire, brioche, amande et agrumes.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont crustacés, poisson, fromages, apéritif et volaille et viandes blanches.",
         "facts": [
           [
@@ -14709,12 +14709,12 @@
           "Volaille et viandes blanches",
           "Fromages affinés"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine et persistante.",
-        "nose": "Le nez associe agrumes, fruits blancs, brioche, pâtisserie et amande.",
-        "mouth": "La bouche est vive et précise, avec une matière élancée et une effervescence fine.",
-        "finish": "La finale est longue, avec un retour sur pâtisserie et amande.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine et persistante formant un cordon régulier.",
+        "nose": "Le nez se déploie, complexe, sur agrumes, fruits blancs, brioche, pâtisserie et amande.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche précis et élancé. L’ensemble reste équilibré et digeste.",
+        "finish": "La finale, longue, revient sur pâtisserie et amande.",
         "overview": "Champagne blanc · brut · millésimé. Vif et précis. Assemblage : Chardonnay, Pinot Noir et Meunier. Le registre aromatique réunit agrumes, fruits blancs, brioche, pâtisserie et amande.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Passage sous bois.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Passage sous bois. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont crustacés, poisson, apéritif, volaille et viandes blanches et fromages affinés.",
         "facts": [
           [
@@ -14952,12 +14952,12 @@
           "Volaille et viandes blanches",
           "Fromages affinés"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine.",
-        "nose": "Le nez associe agrumes, fruits blancs, pomme, fleurs blanches, pâtisserie et amande.",
-        "mouth": "La bouche est vive et précise, avec une matière élancée et une effervescence fine.",
-        "finish": "La finale est longue, avec un retour sur pâtisserie et amande.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine formant un cordon régulier.",
+        "nose": "Le nez se déploie, complexe, sur agrumes, fruits blancs, pomme, fleurs blanches, pâtisserie et amande.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche précis et élancé, sur une sensation très sèche et saline. L’ensemble reste équilibré et digeste.",
+        "finish": "La finale, longue, revient sur pâtisserie et amande.",
         "overview": "Champagne blanc · extra-brut ou brut nature. Vif et précis. Assemblage : Chardonnay, Pinot Noir et Meunier. Le registre aromatique réunit agrumes, fruits blancs, pomme, fleurs blanches, pâtisserie et amande.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 24 mois sur lies. Cuves inox.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 24 mois sur lies. Cuves inox. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 6–8 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont huîtres, poisson, apéritif, volaille et viandes blanches et fromages affinés.",
         "facts": [
           [
@@ -15191,12 +15191,12 @@
           "Apéritif",
           "Volaille et viandes blanches"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine et persistante.",
-        "nose": "Le nez associe agrumes, fruits blancs, pâtisserie, amande et brioche.",
-        "mouth": "La bouche est équilibrée, souple et lisible, sans lourdeur.",
-        "finish": "La finale est longue, avec un retour sur amande et brioche.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine et persistante formant un cordon régulier.",
+        "nose": "Le nez se déploie, complexe, sur agrumes, fruits blancs, pâtisserie, amande et brioche.",
+        "mouth": "L’attaque est nette, le milieu de bouche équilibré. L’ensemble reste équilibré et digeste.",
+        "finish": "La finale, longue, revient sur amande et brioche.",
         "overview": "Champagne blanc · brut · millésimé. Nuancé et persistant. Assemblage : Chardonnay, Pinot Noir et Meunier. Le registre aromatique réunit agrumes, fruits blancs, pâtisserie, amande et brioche.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont huîtres, crustacés, poisson, apéritif et volaille et viandes blanches.",
         "facts": [
           [
@@ -15430,12 +15430,12 @@
           "Apéritif",
           "Volaille et viandes blanches"
         ],
-        "eye": "Rosé, avec une effervescence fine.",
-        "nose": "Le nez associe fruits rouges, vanille, rose, agrumes et notes florales.",
-        "mouth": "La bouche est ample et généreuse, portée par une fraîcheur équilibrée.",
-        "finish": "La finale est longue, avec un retour sur agrumes et notes florales.",
+        "eye": "La robe est rosé, animée par une effervescence fine formant un cordon régulier.",
+        "nose": "Le nez se déploie, complexe, sur fruits rouges, vanille, rose, agrumes et notes florales.",
+        "mouth": "L’attaque est nette, le milieu de bouche ample et vineux. L’ensemble reste harmonieux, sans lourdeur.",
+        "finish": "La finale, longue, revient sur agrumes et notes florales.",
         "overview": "Champagne rosé · brut. Ample et structuré. Assemblage : Chardonnay, Pinot Noir et Meunier. Le registre aromatique réunit fruits rouges, vanille, rose, agrumes et notes florales.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Passage sous bois.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Passage sous bois. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont sushis, poisson, fruits rouges, apéritif et volaille et viandes blanches.",
         "facts": [
           [
@@ -15671,12 +15671,12 @@
           "Apéritif",
           "Volaille et viandes blanches"
         ],
-        "eye": "Jaune paille clair, avec une effervescence fine et persistante.",
-        "nose": "Le nez associe agrumes, fleurs blanches, pâtisserie, amande, minéralité et notes minérales.",
-        "mouth": "La bouche est vive et précise, avec une matière souple et une effervescence fine.",
-        "finish": "La finale est longue, avec un retour sur minéralité et notes minérales.",
+        "eye": "La robe est jaune paille clair, animée par une effervescence fine et persistante formant un cordon régulier.",
+        "nose": "Le nez se déploie, complexe, sur agrumes, fleurs blanches, pâtisserie, amande, minéralité et notes minérales.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche rond et généreux. L’ensemble reste harmonieux, sans lourdeur.",
+        "finish": "La finale, longue, revient sur minéralité et notes minérales.",
         "overview": "Blanc de blancs · brut. Vif et précis. Assemblage : Chardonnay. Le registre aromatique réunit agrumes, fleurs blanches, pâtisserie, amande, minéralité et notes minérales.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 3 ans sur lies. Cuves inox.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 3 ans sur lies. Cuves inox. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont crustacés, poisson, fromages, apéritif et volaille et viandes blanches.",
         "facts": [
           [
@@ -15911,12 +15911,12 @@
           "Fromages affinés",
           "Huîtres"
         ],
-        "eye": "Jaune paille clair, avec une effervescence fine.",
-        "nose": "Le nez associe agrumes, fleurs blanches, amande, minéralité et notes minérales.",
-        "mouth": "La bouche est vive et précise, avec une matière souple et une effervescence fine.",
-        "finish": "La finale est longue, avec un retour sur minéralité et notes minérales.",
+        "eye": "La robe est jaune paille clair, animée par une effervescence fine formant un cordon régulier.",
+        "nose": "Le nez se déploie, complexe, sur agrumes, fleurs blanches, amande, minéralité et notes minérales.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche rond et généreux. L’ensemble reste harmonieux, sans lourdeur.",
+        "finish": "La finale, longue, revient sur minéralité et notes minérales.",
         "overview": "Blanc de blancs · brut · millésimé. Vif et précis. Assemblage : Chardonnay. Le registre aromatique réunit agrumes, fleurs blanches, amande, minéralité et notes minérales.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 36 mois sur lies.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 36 mois sur lies. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont poisson, apéritif, volaille et viandes blanches, fromages affinés et huîtres.",
         "facts": [
           [
@@ -16163,12 +16163,12 @@
           "Apéritif",
           "Volaille et viandes blanches"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine.",
-        "nose": "Le nez associe agrumes, fruits blancs, pomme, pâtisserie et brioche.",
-        "mouth": "La bouche est vive et précise, avec une matière souple et une effervescence fine.",
-        "finish": "La finale est nette, fraîche et légèrement saline.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine formant un cordon régulier.",
+        "nose": "Le nez se montre frais et précis, sur agrumes, fruits blancs, pomme, pâtisserie et brioche.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche rond et généreux. L’ensemble reste harmonieux, sans lourdeur.",
+        "finish": "La finale est tendue, fraîche et légèrement saline, et invite à la reprise.",
         "overview": "Champagne blanc · brut. Vif et précis. Assemblage : 25 % Meunier · 45 % Pinot Noir · 30 % Chardonnay. Le registre aromatique réunit agrumes, fruits blancs, pomme, pâtisserie et brioche.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 15 mois sur lies. Cuves inox. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe. Les accords les plus naturels sont crustacés, poisson, fromages, apéritif et volaille et viandes blanches.",
         "facts": [
           [
@@ -16406,12 +16406,12 @@
           "Apéritif",
           "Volaille et viandes blanches"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine et persistante.",
-        "nose": "Le nez associe agrumes, fruits blancs, fleurs blanches, brioche, pâtisserie et amande.",
-        "mouth": "La bouche est vive et précise, avec une matière élancée et une effervescence fine.",
-        "finish": "La finale est longue, avec un retour sur pâtisserie et amande.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine et persistante formant un cordon régulier.",
+        "nose": "Le nez se déploie, complexe, sur agrumes, fruits blancs, fleurs blanches, brioche, pâtisserie et amande.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche précis et élancé. L’ensemble reste équilibré et digeste.",
+        "finish": "La finale, longue, revient sur pâtisserie et amande.",
         "overview": "Champagne blanc · brut · Grand Cru. Vif et précis. Assemblage : Chardonnay, Pinot Noir et Meunier. Le registre aromatique réunit agrumes, fruits blancs, fleurs blanches, brioche, pâtisserie et amande.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 3 ans sur lies. Cuves inox et Passage sous bois.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 3 ans sur lies. Cuves inox et Passage sous bois. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont crustacés, poisson, fromages, apéritif et volaille et viandes blanches.",
         "facts": [
           [
@@ -16650,12 +16650,12 @@
           "Apéritif",
           "Volaille et viandes blanches"
         ],
-        "eye": "Jaune paille avec reflets dorés, avec une effervescence fine et persistante.",
-        "nose": "Le nez associe agrumes, fruits blancs, pomme, poire, brioche et pâtisserie.",
-        "mouth": "La bouche est vive et précise, avec une matière élancée et une effervescence fine.",
-        "finish": "La finale est longue, avec un retour sur brioche et pâtisserie.",
+        "eye": "La robe est jaune paille avec reflets dorés, animée par une effervescence fine et persistante formant un cordon régulier.",
+        "nose": "Le nez se déploie, complexe, sur agrumes, fruits blancs, pomme, poire, brioche et pâtisserie.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche précis et élancé. L’ensemble reste équilibré et digeste.",
+        "finish": "La finale, longue, revient sur brioche et pâtisserie.",
         "overview": "Champagne blanc · brut · millésimé. Vif et précis. Assemblage : Chardonnay, Pinot Noir et Meunier. Le registre aromatique réunit agrumes, fruits blancs, pomme, poire, brioche et pâtisserie.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 3 ans sur lies.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et minimum 3 ans sur lies. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont crustacés, poisson, fromages, apéritif et volaille et viandes blanches.",
         "facts": [
           [
@@ -16892,12 +16892,12 @@
           "Apéritif",
           "Volaille et viandes blanches"
         ],
-        "eye": "Jaune paille, avec une effervescence fine et persistante.",
-        "nose": "Le nez associe agrumes, fruits blancs, fleurs blanches, brioche, pâtisserie et salinité.",
-        "mouth": "La bouche est vive et précise, avec une matière élancée et une effervescence fine.",
-        "finish": "La finale est longue, avec un retour sur pâtisserie et salinité.",
+        "eye": "La robe est jaune paille, animée par une effervescence fine et persistante formant un cordon régulier.",
+        "nose": "Le nez se déploie, complexe, sur agrumes, fruits blancs, fleurs blanches, brioche, pâtisserie et salinité.",
+        "mouth": "L’attaque est vive et tendue, le milieu de bouche précis et élancé. L’ensemble reste équilibré et digeste.",
+        "finish": "La finale, longue, revient sur pâtisserie et salinité.",
         "overview": "Champagne blanc · brut. Vif et précis. Assemblage : Chardonnay, Pinot Noir et Meunier. Le registre aromatique réunit agrumes, fruits blancs, fleurs blanches, brioche, pâtisserie et salinité.",
-        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et au moins 15 mois sur lies.",
+        "vinification": "Élaboré selon la méthode traditionnelle, avec une seconde fermentation en bouteille et au moins 15 mois sur lies. Le vieillissement sur lies affine la bulle et développe les arômes.",
         "serving": "Servir à 8–10 °C dans un verre tulipe ou verre à vin blanc. Les accords les plus naturels sont crustacés, poisson, fromages, apéritif et volaille et viandes blanches.",
         "facts": [
           [
