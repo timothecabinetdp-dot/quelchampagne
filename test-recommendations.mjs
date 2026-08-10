@@ -23,7 +23,10 @@ global.document = {
   body: { appendChild() {}, style: {} },
   documentElement: { lang: '', style: { setProperty() {} } }
 };
-global.window = { scrollTo() {}, open() {} };
+// Le script du sélecteur est du code navigateur : lui fournir écouteurs, URL et historique.
+global.location = { pathname: '/', search: '', href: 'https://quelchampagne.fr/' };
+global.history = { pushState() {}, replaceState() {}, back() {} };
+global.window = { scrollTo() {}, open() {}, addEventListener() {}, removeEventListener() {}, location: global.location, history: global.history, matchMedia: () => ({ matches: false, addEventListener() {} }) };
 global.localStorage = { getItem() { return null; }, setItem() {} };
 global.fetch = () => Promise.reject(new Error('Réseau désactivé pendant les tests.'));
 
