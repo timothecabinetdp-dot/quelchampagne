@@ -257,9 +257,10 @@ for (const profile of editorial) {
 const source = read('index.html');
 const boutiqueSource = read('boutique.mjs');
 const buildSource = read('build-site.mjs');
-if (!source.includes("id:'couleur', label:\"02 · La couleur\"")) errors.push('La question consacrée à la couleur est absente.');
-if (!source.includes("id:'accord', label:\"03 · L’accord\"")) errors.push('La question consacrée à l’accord est absente.');
-if (!source.includes("id:'repere', label:\"06 · La signature\"")) errors.push('La question de départage (signature) est absente.');
+if (!source.includes("id:'couleur', label:\"La couleur\"")) errors.push('La question consacrée à la couleur est absente.');
+if (!source.includes("id:'dosage', label:\"Le dosage\"")) errors.push('La question consacrée au dosage est absente.');
+if (!source.includes("id:'accord', label:\"L’accord\"")) errors.push('La question consacrée à l’accord est absente.');
+if (!source.includes("id:'repere', label:\"La signature\"")) errors.push('La question de départage (signature) est absente.');
 if (!source.includes('function signalFit')) errors.push('Le critère de départage du sélecteur est absent du scoring.');
 if (!source.includes('function accordFit')) errors.push('Le critère d’accord du sélecteur est absent du scoring.');
 if (source.includes('function bottleSVG') || source.includes('M62,98 C62,110')) {
@@ -331,8 +332,8 @@ global.localStorage = { getItem() { return null; }, setItem() {} };
 global.fetch = () => Promise.reject(new Error('Réseau désactivé pendant la validation.'));
 eval(`${script}; Object.assign(quiz, { questions, score, signalFit, accordFit, setCatalogue });`);
 quiz.setCatalogue(AVAILABLE_PARTNER_CATALOGUE);
-if (quiz.questions().length !== 6) errors.push(`Questions attendues : 6, obtenues : ${quiz.questions().length}.`);
-if (quiz.questions().map(q => q.id).join('|') !== 'occasion|couleur|accord|gout|budget|repere') errors.push('L’ordre des six critères du sélecteur est incorrect.');
+if (quiz.questions().length !== 7) errors.push(`Questions attendues : 7, obtenues : ${quiz.questions().length}.`);
+if (quiz.questions().map(q => q.id).join('|') !== 'occasion|couleur|dosage|accord|gout|budget|repere') errors.push('L’ordre des sept critères du sélecteur est incorrect.');
 const lowDosage = AVAILABLE_PARTNER_CATALOGUE.find(product => quiz.signalFit(product,'low_dosage'));
 if (!lowDosage) {
   errors.push('Aucun champagne peu dosé ne permet de tester la signature recherchée.');

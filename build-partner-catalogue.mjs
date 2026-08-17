@@ -13,14 +13,72 @@ import { enrichProduct } from './product-enrichment.mjs';
 const snapshot = JSON.parse(readFileSync(new URL('data/bottle-of-italy-products.json', import.meta.url), 'utf8'));
 const evidenceRegistry = JSON.parse(readFileSync(new URL('data/product-evidence-overrides.json', import.meta.url), 'utf8'));
 
+/* Statut du producteur — classification VÉRIFIABLE (règle de l'audit).
+ * Principe impératif : « inconnu » reste « inconnu ». On ne transforme JAMAIS une
+ * absence d'information en « vigneron ». Deux listes éditoriales, curées et à valider
+ * (idéalement via la mention NM/RM/CM… de l'étiquette), et tout le reste = 'inconnu'.
+ * La comparaison se fait sur une forme normalisée (accents, « Champagne/Maison »,
+ * « & Fils »… neutralisés) pour absorber les variantes d'orthographe du flux marchand. */
+function normBrand(s){
+  return (s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'')
+    .replace(/\b(champagne|maison|domaine|vignobles?|cie|co)\b/g,' ')
+    .replace(/&|\bet\b|\bfils\b|\bpere\b|\bfreres?\b|\bsoeurs?\b|\bfilles?\b/g,' ')
+    .replace(/[^a-z]+/g,' ').trim();
+}
+// Grandes maisons de négoce (vérifiées).
 const HOUSE_BRANDS = new Set([
-  'EPC Champagne','Maison Burtin','Nicolas Feuillatte','Cattier',
-  'Veuve Clicquot','Jacquart','Drappier','Billecart-Salmon','Perrier-Jouët'
+  'epc','burtin','nicolas feuillatte','cattier','veuve clicquot','jacquart','drappier',
+  'billecart salmon','perrier jouet','mumm','g h mumm','pernod ricard','moet chandon','moet',
+  'bollinger','taittinger','pol roger','laurent perrier','ruinart','krug','dom perignon',
+  'piper heidsieck','charles heidsieck','lanson','mercier','deutz','pommery','canard duchene',
+  'henriot','duval leroy','ayala','gosset','palmer','besserat de bellefon','castelnau',
+  'vranken','de venoge','venoge','bligny','collet','nicolas feuillatte'
+].map(normBrand));
+// Vignerons récoltants-manipulants (RM) documentés — liste éditoriale à valider.
+const KNOWN_GROWERS = new Set([
+  'egly ouriet','paul bara','vilmart','guy charlemagne','bereche','gatinois','jean vesselle',
+  'lamiable','mouzon leroux','lancelot pienne','corbon','benard pitois','maurice grumier',
+  'thevenet delouvin','eric taillet','vincent brochet','pierre legras','pierre baillette',
+  'larmandier bernier','pierre peters','gimonnet','chartogne taillet','de sousa','agrapart',
+  'selosse','ulysse collin','savart','marguet','r pouillon','pouillon','georges laval',
+  'pierre paillard','roger coulon','francoise bedel','geoffroy','laherte','francis boulard',
+  'coessens','vazart coquart','waris larmandier','stephane regnault','sadi malot','petit camusat',
+  'beltrand brigandat','vouette sorbee','marie courtin','benoit lahaye','lassaigne','tarlant',
+  'brisson lahaye','thierry massin','thomas perseval','daniel deheurles','erick schreiber',
+  'm g heucq','heucq','alain mercier','labbe','tornay hutasse','bardiau','louis constant','solemme','domaine augustin'
+].map(normBrand));
+function producerStatus(brand){
+  const b=normBrand(brand);
+  if(HOUSE_BRANDS.has(b)) return 'maison';
+  if(KNOWN_GROWERS.has(b)) return 'vigneron';
+  return 'inconnu';               // jamais 'vigneron' par défaut
+}
+/* Nettoyage des artefacts d'encodage du flux marchand : apostrophe utilisée comme
+ * accent (« Rose' » → « Rosé »), accents manquants ou fautifs (« Millesimè », « Cuvee »). */
+function cleanName(s){
+  return (s||'').normalize('NFC')
+    .replace(/Rose['’`´]/g,'Rosé').replace(/\bRose\b/g,'Rosé')
+    .replace(/Millesim[eè]['’`´]?/g,'Millésimé').replace(/\bMillesim[eé]\b/g,'Millésimé')
+    .replace(/\bCuvee\b/g,'Cuvée').replace(/\bReserve\b/g,'Réserve')
+    .replace(/\bGrand Cuvée\b/g,'Grande Cuvée')
+    .replace(/['’`´]\s/g,'’ ').replace(/\s{2,}/g,' ').trim();
+}
+/* Producteurs identiques écrits de plusieurs façons → une forme canonique (clé = normBrand). */
+const PRODUCER_CANON = new Map([
+  ['benard pitois','Bénard-Pitois'],
+  ['labbe','Champagne Labbé & Fils'],
+  ['alain mercier','Alain Mercier & Fils'],
+  ['bereche','Bérêche et Fils'],
+  ['bardiau','Champagne Bardiau'],
 ]);
+function canonHouse(s){
+  return PRODUCER_CANON.get(normBrand(s)) || cleanName(s);
+}
 
 const WELL_KNOWN = new Set([
-  'Nicolas Feuillatte','Veuve Clicquot','Jacquart','Drappier',
-  'Billecart-Salmon','Perrier-Jouët','Cattier'
+  'Nicolas Feuillatte','Veuve Clicquot','Jacquart','Drappier','Billecart-Salmon',
+  'Perrier-Jouët','Cattier','Mumm','Pol Roger','Bollinger','Taittinger','Laurent-Perrier',
+  'Ruinart','Moët & Chandon','Krug','Deutz','Lanson','Pommery'
 ]);
 
 const YEAR_UNCONFIRMED_ON_MERCHANT_PAGE = new Set([
@@ -252,6 +310,11 @@ export function buildPartnerCatalogue(){
     const technicalText=Object.values(source.technicalData || {}).join(' ');
     const searchText=`${source.name} ${source.liveTitle} ${source.merchantTags.join(' ')} ${source.merchantDescription} ${technicalText}`;
     const grapes=evidence.grapes || findValues(searchText,GRAPES);
+    // Règle de l'audit : un assemblage n'est publié comme FAIT que s'il est sourcé
+    // (documenté dans le registre de preuves). Sinon on ne l'affiche pas — on ne comble
+    // pas une donnée absente par une inférence présentée comme spécifique au produit.
+    const grapesSourced=Boolean(evidence.grapes);
+    const grapesShown=grapesSourced?grapes:[];
     const aromas=findValues(searchText,AROMAS);
     const pairings=PAIRINGS.filter(([,expression])=>has(searchText,expression)).map(([label,,token])=>({label,token}));
     const scores=profileScores(source,tags,aromas);
@@ -265,7 +328,7 @@ export function buildPartnerCatalogue(){
     styleAccords.push(['apéritif','accord_aperitif']);
     for(const [label,token] of styleAccords){ if(!pairings.some(item=>item.token===token)) pairings.push({label,token}); }
     const rec=recommendationFields(source,tags,scores,pairings);
-    const text=specificText(source,tags,grapes,aromas,pairings,scores);
+    const text=specificText(source,tags,grapesShown,aromas,pairings,scores);
     const id=initialId;
     const price=source.price;
     const offerAge=offerAgeDays(source.checkedAt);
@@ -276,16 +339,16 @@ export function buildPartnerCatalogue(){
     const publicName=evidence.publicName || (identityStatus.includes('vintage_unconfirmed') || identityStatus==='merchant_feed_year_to_verify'
       ? source.name.replace(new RegExp(`\\s*${year}\\b`),'').trim()
       : source.name);
-    const producerType=HOUSE_BRANDS.has(source.brand) ? 'maison' : 'vigneron';
+    const producerType=producerStatus(source.brand);
     const accords=unique(pairings.map(item=>item.token));
     const pair=pairings.slice(0,3).map(item=>item.label).join(', ') || 'apéritif, poisson';
     const tier=price<30?1:price<=60?2:price<=100?3:4;
     const popularity=(WELL_KNOWN.has(source.brand)?84:68) + (tags.includes('Grand Cru')?4:0) + (tags.includes('Millésimé')?3:0);
     const officialConfirmed=Boolean(evidence.officialSourceUrl) && !identityStatus.includes('product_to_document');
-    const enrichment=enrichProduct({product:source,tags,grapes,aromas,pairings,scores,evidence,publicName,price,producerType});
+    const enrichment=enrichProduct({product:source,tags,grapes:grapesShown,aromas,pairings,scores,evidence,publicName,price,producerType});
 
     return {
-      id, merchantId:source.id, name:publicName, short:publicName, house:brand, brand,
+      id, merchantId:source.id, name:cleanName(publicName), short:cleanName(publicName), house:canonHouse(brand), brand:canonHouse(brand),
       region:'Champagne', price, priceMin:price, priceMax:price,
       // Le flux fournit parfois un ancien prix sans documenter sa période de
       // référence. QuelChampagne publie uniquement le prix actuel contrôlé.
@@ -316,7 +379,8 @@ export function buildPartnerCatalogue(){
         },
         scores,
         aromas,
-        grapes,
+        grapes:grapesShown,
+        grapesSourced,
         enrichment,
         accords:pairings.slice(0,3).map((item,index)=>({
           t:index===0?'Accord prioritaire':index===1?'Autre possibilité':'Pour varier',

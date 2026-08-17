@@ -58,8 +58,8 @@ function assert(condition, message) {
 }
 
 const questions = engine.questions();
-assert(questions.length === 6, `Le sélecteur doit contenir six questions, obtenu : ${questions.length}.`);
-assert(questions.map(question => question.id).join('|') === 'occasion|couleur|accord|gout|budget|repere', 'L’ordre des six critères est incorrect.');
+assert(questions.length === 7, `Le sélecteur doit contenir sept questions, obtenu : ${questions.length}.`);
+assert(questions.map(question => question.id).join('|') === 'occasion|couleur|dosage|accord|gout|budget|repere', 'L’ordre des sept critères est incorrect.');
 
 const byId = id => (questions.find(question => question.id === id) || { opts: [] }).opts.map(option => option.tags[0]);
 const occasions = byId('occasion');

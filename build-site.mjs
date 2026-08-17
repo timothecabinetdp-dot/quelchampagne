@@ -598,7 +598,7 @@ function comparateurMain(){
       aromas:(e.aromas||[]).join(', ')||'Fruits blancs et agrumes',
       pairing:(e.pairings||[]).join(', ')||mainPairing(p),
       temperature:e.temperature||'8–10 °C', aging:e.aging||'15 mois minimum en cave',
-      producerType:p.producerType==='vigneron'?'Vigneron indépendant':'Maison de Champagne', url:`/champagne/${p.id}/` };
+      producerType:p.producerType==='vigneron'?'Vigneron indépendant':p.producerType==='maison'?'Maison de Champagne':'Producteur à confirmer', url:`/champagne/${p.id}/` };
   });
   const encoded = JSON.stringify(data).replaceAll('<','\\u003c');
   const choices = sorted.map((p,i)=>{
@@ -689,7 +689,7 @@ function comparisonsMain(){
 
 function comparisonMain(c){
   const a=prod(c.a), b=prod(c.b), da=detail(a)||{}, db=detail(b)||{};
-  const column=(p,d)=>`<div class="duel-col"><div class="rmaison">${p.house}</div><h2>${p.name}</h2><p class="phero-note">${d.advice||p.note}</p><div class="rtags">${p.tags.map(t=>`<span class="tag">${t}</span>`).join('')}</div><p style="margin-top:20px"><strong>${priceText(p)}</strong> · ${p.producerType==='vigneron'?'Vigneron':'Maison'}</p><a class="chev" href="/champagne/${p.id}/" style="margin-top:16px">Voir la fiche vérifiée</a></div>`;
+  const column=(p,d)=>`<div class="duel-col"><div class="rmaison">${p.house}</div><h2>${p.name}</h2><p class="phero-note">${d.advice||p.note}</p><div class="rtags">${p.tags.map(t=>`<span class="tag">${t}</span>`).join('')}</div><p style="margin-top:20px"><strong>${priceText(p)}</strong> · ${p.producerType==='vigneron'?'Vigneron':p.producerType==='maison'?'Maison':'À confirmer'}</p><a class="chev" href="/champagne/${p.id}/" style="margin-top:16px">Voir la fiche vérifiée</a></div>`;
   return `<section class="article"><div class="container"><a class="a-back" href="/comparatifs/">‹ Tous les comparatifs</a><div class="a-cat">Comparatif</div><h1 class="a-title">${c.title}</h1><p class="qhint">${c.question}</p><div class="duel">${column(a,da)}${column(b,db)}</div><div class="duel-verdict"><strong>Le verdict</strong><p style="margin-top:8px">${c.verdict}</p></div><div style="margin-top:34px"><a class="btn btn-primary" href="/comparateur/">Comparer d'autres champagnes</a></div></div></section>`;
 }
 
@@ -820,7 +820,7 @@ function methodMain(){
       <h3>Le profil sensoriel : quatre axes lisibles</h3>
       <p>Après l’œil (robe, finesse et persistance de la bulle) et le nez (agrumes, fruits blancs, fruits rouges, fleurs, brioche, notes grillées), nous résumons la bouche sur quatre axes : la fraîcheur (tension, acidité), la rondeur (fruit, souplesse), la puissance (corps, matière) et la longueur (persistance en finale). Ces repères, communs à tout le catalogue, traduisent l’équilibre d’une cuvée en langage clair et guident l’accord.</p>
       <h3>Recommander la bonne bouteille</h3>
-      <p>Le sélecteur croise six critères en adaptant les questions à votre intention : le moment, la couleur, l’accord ou le destinataire, le style, le budget et la signature. Le budget est une contrainte ferme : nous ne proposons que des bouteilles de votre tranche. L’accord suit les principes œnologiques (une cuvée tendue et minérale sur les fruits de mer, une cuvée vineuse et structurée sur une volaille, un rosé ou un demi-sec sur un dessert fruité). Chaque résultat explique les raisons du choix et propose des alternatives cohérentes.</p>
+      <p>Le sélecteur croise sept critères en adaptant les questions à votre intention : le moment, la couleur, le dosage, l’accord ou le destinataire, le style, le budget et la signature. La couleur et le budget sont des contraintes fermes : une couleur demandée n’ouvre jamais l’autre, et nous ne proposons que des bouteilles de votre tranche. L’accord suit les principes œnologiques (une cuvée tendue et minérale sur les fruits de mer, une cuvée vineuse et structurée sur une volaille, un rosé ou un demi-sec sur un dessert fruité). Chaque résultat explique les raisons du choix et propose des alternatives cohérentes.</p>
       <h3>Des faits vérifiés, séparés de l’offre</h3>
       <p>Nous distinguons toujours le fait sourcé de l’interprétation. Chaque donnée technique publiée est rattachée à sa source, en privilégiant l’information officielle du producteur ; à défaut, elle est signalée comme issue du flux marchand, et jamais inventée. Le prix affiché correspond à la bouteille et au format exacts, avec sa date de relevé, pour ne pas confondre l’analyse durable et l’offre commerciale du jour.</p>
       <h3>Indépendance</h3>
@@ -929,19 +929,20 @@ function selecteurHTML(){
   const selectorStatic = `<main id="main-content">
     <section class="quiz"><div class="narrow">
       <div class="qlabel">Sélecteur QuelChampagne</div>
-      <h1 class="qtitle">Trouvez votre champagne idéal en répondant à 6 questions</h1>
-      <p class="qhint">Occasion, goût, budget : on vous recommande la bonne bouteille, avec l’analyse qui explique pourquoi. Sans pub, sans classement acheté.</p>
+      <h1 class="qtitle">Trouvez votre champagne idéal en quelques questions</h1>
+      <p class="qhint">Répondez à quelques questions, ou partez directement de votre plat : on vous recommande la bonne bouteille, avec l’analyse qui explique pourquoi. Sans pub, sans classement acheté.</p>
       <div class="qopts"><div class="qopt"><span class="qe">→</span><span><span class="ql">Trouver mon champagne</span><br><span class="qd">≈ 2 min · sans inscription · classement indépendant</span></span></div></div>
     </div></section>
     <section class="selector-guide" aria-labelledby="selector-static-title"><div class="container">
       <div class="selector-guide-head"><div class="eyebrow-l">Comment le choix est construit</div><h2 id="selector-static-title">Une recommandation fondée sur l’usage, le goût et l’offre disponible.</h2><p>Le sélecteur ne classe pas les maisons dans l’absolu. Il rapproche vos réponses des caractéristiques de chaque cuvée, puis conserve uniquement les bouteilles disponibles chez notre partenaire au moment du dernier relevé.</p></div>
       <div class="selector-guide-grid">
         <article><span>01</span><h3>Le service</h3><p>Servie seule, à table, pour plusieurs convives ou choisie pour être offerte.</p></article>
-        <article><span>02</span><h3>La couleur</h3><p>Blanc ou rosé : le premier tri, celui qui oriente déjà le style.</p></article>
-        <article><span>03</span><h3>L’accord</h3><p>Le plat ou le type de service détermine la structure à privilégier.</p></article>
-        <article><span>04</span><h3>Le style</h3><p>Fraîcheur, fruit, ampleur ou finesse florale.</p></article>
-        <article><span>05</span><h3>Le budget</h3><p>Le prix relevé pour la bouteille présentée, sans remise reconstituée.</p></article>
-        <article><span>06</span><h3>La signature</h3><p>Maison, vigneron, dosage très faible ou sélection libre.</p></article>
+        <article><span>02</span><h3>La couleur</h3><p>Blanc ou rosé : le premier tri, ferme, jamais contredit ensuite.</p></article>
+        <article><span>03</span><h3>Le dosage</h3><p>Brut classique, très sec ou demi-sec : le niveau de sucre en bouche.</p></article>
+        <article><span>04</span><h3>L’accord</h3><p>Le plat ou le type de service détermine la structure à privilégier.</p></article>
+        <article><span>05</span><h3>Le style</h3><p>Fraîcheur, fruit, ampleur ou finesse florale.</p></article>
+        <article><span>06</span><h3>Le budget</h3><p>Le prix relevé pour la bouteille présentée, sans remise reconstituée.</p></article>
+        <article><span>07</span><h3>La signature</h3><p>Maison, vigneron ou sélection libre.</p></article>
       </div>
       <div class="selector-faq">
         <details><summary>Pourquoi plusieurs bouteilles sont-elles proposées ?</summary><p>La première est la combinaison la plus cohérente. Les alternatives permettent de comparer des options proches avant de choisir.</p></details>
@@ -962,6 +963,11 @@ function selecteurHTML(){
     ]
   }).replaceAll('<','\\u003c');
   h = h.replace('let CATALOGUE = null;', `let CATALOGUE = ${JSON.stringify(partnerProducts).replaceAll('<','\\u003c')};`);
+  // Base mondiale des mets (repli de reconnaissance longue traîne)
+  try {
+    const dishBase = readFileSync('data/dish-base.json','utf8');
+    h = h.replace('let DISH_BASE = [];', `let DISH_BASE = ${dishBase.replaceAll('<','\\u003c')};`);
+  } catch(e) { /* base absente : le moteur fonctionne sans, sur son lexique interne */ }
   h = h.replace(/function FALLBACK_PRODUCTS\(\)\{[\s\S]*?\n\}\nfunction prod/, "function FALLBACK_PRODUCTS(){ return []; }\nfunction prod");
   h = h.replace(/const DETAILS = \{[\s\S]*?\n\};\nfunction detail/, "const DETAILS = {};\nfunction detail");
   h = h.replace(/const PUBLISHED_ARTICLE_IDS[\s\S]*?\nfunction art\(id\)\{ return articles\(\)\.find\(a=>a\.id===id\); \}/, "function articles(){ return []; }\nfunction art(){ return null; }");
@@ -969,9 +975,9 @@ function selecteurHTML(){
   h = h.replace("function openArticle(id){ state.article=id; state.view='article'; render(); }", "function openArticle(id){ location.href='/blog/'+id+'/'; }");
   h = h.replace('\nloadCatalogue();\nageGate();', '\n// Le catalogue partenaire contrôlé est déjà embarqué dans cette page.\nageGate();');
   h = h.replace("const state = { view:'home'", "const state = { view:'quiz'");
-  h = h.replace('<title>QuelChampagne · Choisir un champagne selon vos critères</title>', '<title>Sélecteur de champagne · Une sélection en 6 choix | QuelChampagne</title>');
+  h = h.replace('<title>QuelChampagne · Choisir un champagne selon vos critères</title>', '<title>Sélecteur de champagne · Une sélection en 7 choix | QuelChampagne</title>');
   h = h.replace('content="Comparez les champagnes selon le moment, le repas, vos goûts et votre budget. Cinq choix donnent accès à une sélection expliquée et à des fiches détaillées."', 'content="Comparez les bouteilles disponibles selon le moment, l’accord, vos goûts, le budget et le type de producteur recherché."');
-  h = h.replace('content="QuelChampagne · Choisir un champagne selon vos critères"', 'content="Sélecteur de champagne · Une sélection en 6 choix | QuelChampagne"');
+  h = h.replace('content="QuelChampagne · Choisir un champagne selon vos critères"', 'content="Sélecteur de champagne · Une sélection en 7 choix | QuelChampagne"');
   h = h.replace('content="Cinq choix pour comparer les champagnes selon le moment, le repas, vos goûts et votre budget."', 'content="Six critères concrets pour comparer les bouteilles disponibles et comprendre chaque recommandation."');
   h = h.replace('content="https://quelchampagne.fr"', 'content="https://quelchampagne.fr/selecteur/"');
   h = h.replace('<div id="app"></div>', `<div id="app">${selectorStatic}</div>`);
