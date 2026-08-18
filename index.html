@@ -1688,8 +1688,8 @@ const DISH_LEX = [
   { rx:/foie gras|terrine de foie/, acc:'accord_aperitif', need:'rich', label:'un foie gras', reg:'gastro' },
   // Apéritif & charcuterie (la terrine « de foie » est déjà captée ci-dessus)
   { rx:/charcuteries?|jambon|saucissons?|rillettes?|terrines?(?! de foie)|p[aâ]tés?|p[aâ]t[eé] (?:en cro[uû]te|de campagne|de t[eê]te)|mortadelle|chorizo|coppa|museau|t[eê]te press[eé]e|rosette|bresaola|mousse de foie|jambon persill|cochonnaille/, acc:'accord_aperitif', need:null, label:'de la charcuterie' },
-  { rx:/goug[eè]res?|bouch[eé]es? ap[eé]ritives?|tapas|olives?|chips|cacahu[eè]tes?|canap[eé]s?|feuillet[eé]s?|toasts?|blinis?|tapenade|houmous|crudit[eé]s|verrines?|amuse[- ]bouches?|planches?|bruschettas?|antipasti|focaccia|arancini|pissaladi[eè]re|socca|baos?|dim sum|gyozas?|onigiris?|makis? v[eé]g|nems? v[eé]g|ancho[iï]ade|tzatziki|mezz[eé]|guacamole|melons?|moutabal|labneh?|edamame|pintxos|croquetas|briouates|pakora|bretzel|manakish|dolmas?|dolmades|feuilles de vigne|kimchi|muhammara|pruneaux? enrob|pruneaux au lard|panisses?|patatas|bravas|os [aà] moelle|crostini|croquettes?|feuillet[eé]s?|samoussas?|empanadas?|pimentade|beignets de courgettes/, acc:'accord_aperitif', need:null, label:'des bouchées apéritives' },
-  { rx:/salades?(?!\s+de\s+fruits)|c[eé]sar|taboul[eé]|coleslaw|fattoush|salade grecque|salade de tomates|salade de ch[eè]vre/, acc:'accord_aperitif', need:null, label:'une salade', reg:'casual' },
+  { rx:/goug[eè]res?|bouch[eé]es? ap[eé]ritives?|tapas|olives?|chips|cacahu[eè]tes?|canap[eé]s?|feuillet[eé]s?|toasts?|blinis?|tapenade|houmous|crudit[eé]s|betteraves?|verrines?|amuse[- ]bouches?|planches?|bruschettas?|antipasti|focaccia|arancini|pissaladi[eè]re|socca|baos?|dim sum|momos?|gyozas?|onigiris?|makis? v[eé]g|nems? v[eé]g|ancho[iï]ade|tzatziki|mezz[eé]|guacamole|melons?|moutabal|labneh?|edamame|pintxos|croquetas|briouates|pakora|bretzel|manakish|dolmas?|dolmades|feuilles de vigne|kimchi|muhammara|pruneaux? enrob|pruneaux au lard|panisses?|patatas|bravas|os [aà] moelle|crostini|croquettes?|feuillet[eé]s?|samoussas?|empanadas?|pimentade|beignets de courgettes/, acc:'accord_aperitif', need:null, label:'des bouchées apéritives' },
+  { rx:/salades?(?!\s+de\s+fruits)|c[eé]sar|taboul[eé]|coleslaw|fattoush|fris[eé]e|salade lyonnaise|salade grecque|salade de tomates|salade de ch[eè]vre/, acc:'accord_aperitif', need:null, label:'une salade', reg:'casual' },
   { rx:/soupes?|velout[eé]s?|potages?|gaspacho|vichyssoise|minestrone|\bpho\b|ramen|bortsch|bisque|garbure|harira|tom yam|tom yum|soupe tha[iï]|mulligatawny|chorba|caldo verde|soupe miso|miso|consomm[eé]|bouillon/, acc:'accord_aperitif', need:null, label:'une soupe', reg:'casual' },
   { rx:/escargots?/, acc:'accord_aperitif', need:null, label:'des escargots' },
   { rx:/cuisses? de grenouille|grenouilles?/, acc:'accord_aperitif', need:null, label:'des cuisses de grenouille' },
@@ -1697,7 +1697,7 @@ const DISH_LEX = [
   { rx:/brunch|pancakes?|bacon|granola|porridge|bagels?|croissants?|viennoiseries?|avocado toast/, acc:'accord_aperitif', need:null, label:'un brunch', reg:'casual' },
   { rx:/ap[eé]ritif|ap[eé]ro|d[iî]natoire/, acc:'accord_aperitif', need:null, label:"un apéritif" },
   // Plats épicés / asiatiques / du monde (avant les viandes pour capter le piquant)
-  { rx:/currys?|tha[iï]|indien|[eé]pic[eé]|piment|colombo|mass?ala|nems?|rouleaux? de printemps|pad[- ]?tha[iï]|bo bun|bibimbap|tandoori|tikka|samoss?a|mexicain|tacos?|chili\b|harissa|couscous|tajine|merguez|k[eé]ftas?|maf[eé]|yassa|vindaloo|rendang|jerk|butter chicken|dahl|\bdal\b|naan|biryani|korma|enchiladas?|fajitas?|quesadillas?|guacamole|burritos?|kebb[eé]|chich taouk|chawarma|shawarma|keftede|bulgogi|tteokbokki|ndol[eé]|cha gio|rogan josh|massaman|\blarb\b|satay|nasi goreng|mie goreng|char siu|paprikash|axoa|poulet dg|jambalaya|gumbo/, acc:'accord_volaille', need:'spicy', label:'un plat épicé' },
+  { rx:/currys?|tha[iï]|indien|[eé]pic[eé]|piment|colombo|mass?ala|nems?|rouleaux? de printemps|pad[- ]?tha[iï]|bo bun|bibimbap|tandoori|tikka|samoss?a|mexicain|tacos?|chili\b|harissa|couscous|tajine|merguez|k[eé]ftas?|maf[eé]|yassa|vindaloo|rendang|jerk|butter chicken|dahl|\bdal\b|naan|biryani|korma|enchiladas?|fajitas?|quesadillas?|guacamole|burritos?|kebb[eé]|chich taouk|chawarma|shawarma|keftede|bulgogi|tteokbokki|ndol[eé]|cha gio|rogan josh|massaman|\blarb\b|satay|nasi goreng|mie goreng|char siu|paprikash|axoa|poulet dg|jambalaya|gumbo|dosa|laksa|mrouzia|khao soi/, acc:'accord_volaille', need:'spicy', label:'un plat épicé' },
   // Viandes rouges & gibier (puissance)
   { rx:/canards?|magrets?|\boie\b/, acc:'accord_volaille', need:'power', label:'un canard' },
   { rx:/b(?:œ|oe)ufs?|entrec[oô]tes?|c[oô]te de b(?:œ|oe)uf|steaks?|filet de b(?:œ|oe)uf|tournedos|bourguignon|\bdaube\b|pot[- ]au[- ]feu|rosbif|paleron|onglet|bavette|carbonnade|navarin|chou farci|faux[- ]filet|rumsteck|romsteck|rumsteak|chateaubrian[dt]?|joue de b(?:œ|oe)uf|b(?:œ|oe)uf carottes|go?ulash|goulache|bourguignonne|sukiyaki|stroganoff|roast beef|prime rib|asado|churrasco|bulgogi de b|beef wellington|wellington|rossini|wagyu|tomahawk/, acc:'accord_volaille', need:'power', label:'une viande rouge' },
@@ -1705,7 +1705,7 @@ const DISH_LEX = [
   { rx:/gibiers?|cerf|chevreuil|sanglier|\bbiche\b|venaison|li[eè]vre|perdreau|perdrix|faisan|marcassin|colvert/, acc:'accord_volaille', need:'power', label:'un gibier', reg:'gastro' },
   { rx:/rognons|g[eé]siers?|tripes|foie de veau|t[eê]te de veau|\bandouille\b|abats|ris d.agneau|pieds paquets|tablier de sapeur|fraise de veau|gras[- ]double/, acc:'accord_volaille', need:'power', label:'des abats' },
   { rx:/\bporcs?\b|c[oô]te de porc|r[oô]ti de porc|travers de porc|[eé]chine|jarret|pied de porc|palette|cochon|carr[eé] de porc|filet mignon|tonkatsu|kassler|pulled pork|porc au caramel|ribs/, acc:'accord_volaille', need:'struct', label:'du porc' },
-  { rx:/cassoulet|hachis parmentier|chili con carne|choucroute(?! de la mer| de poisson)|pot[eé]e|baeckeoffe|blanquette de sanglier|petit sal[eé]|garbure au confit|estouffade|shepherd.s pie|sauerkraut|kig ha farz|potjevleesch|gardiane|carbonnade flamande|welsh/, acc:'accord_volaille', need:'power', label:'un plat mijoté' },
+  { rx:/cassoulet|hachis parmentier|chili con carne|choucroute(?! de la mer| de poisson)|pot[eé]e|baeckeoffe|\bmeurette\b|blanquette de sanglier|petit sal[eé]|garbure au confit|estouffade|shepherd.s pie|sauerkraut|kig ha farz|potjevleesch|gardiane|carbonnade flamande|welsh/, acc:'accord_volaille', need:'power', label:'un plat mijoté' },
   // Volailles & plats de structure
   { rx:/truffes?/, acc:'accord_volaille', need:'struct', label:'un plat à la truffe', reg:'gastro' },
   { rx:/ris de veau/, acc:'accord_volaille', need:'struct', label:'un ris de veau', reg:'gastro' },
@@ -1721,10 +1721,10 @@ const DISH_LEX = [
   { rx:/fromages?|comt[eé]|beaufort|gruy[eè]re|emmental|brie|coulommiers|camembert|ch[eè]vre|crottin|roquefort|bleu\b|gorgonzola|fourme|munster|[eé]poisses|maroilles|reblochon|parmesan|pecorino|mozzarella|burrata|feta|saint[- ]nectaire|cantal|tommes?|vacherin(?!\s*glac)|salers|laguiole|ossau|morbier|langres|chaource|souffl[eé] au fromage|soufflé au comt|gougère au|cervelle de canut|bibeleskaes|cancoillotte|halloumi|pélardon|banon|picodon|sainte[- ]maure|valençay/, acc:'accord_fromage', need:'power', label:'des fromages' },
   // Desserts
   { rx:/chocolats?|mousse au chocolat|op[eé]ra|for[eê]t[- ]noire|profiteroles?|[eé]clairs?|fondant|brownie|banoffee|tarte au chocolat|cookies? aux p[eé]pites/, acc:'accord_dessert', need:'dosage', label:'un dessert au chocolat' },
-  { rx:/fruits rouges|fraises?|fraisiers?|framboises?|myrtilles?|clafoutis|tarte aux fruits|salade de fruits|tarte aux pommes|pavlova|crumble|carpaccio d.ananas|carpaccio de fruits|ananas r[oô]ti|soupe de fraises|soupe de fruits|abricots?|mirabelles?/, acc:'accord_dessert', need:'dosage', label:'un dessert aux fruits' },
+  { rx:/fruits rouges|fraises?|fraisiers?|framboises?|myrtilles?|clafoutis|tarte aux fruits|salade de fruits|tarte aux pommes|pavlova|crumble|carpaccio d.ananas|carpaccio de fruits|ananas r[oô]ti|soupe de fraises|soupe de fruits|abricots?|mirabelles?|banana bread|pain perdu/, acc:'accord_dessert', need:'dosage', label:'un dessert aux fruits' },
   { rx:/tarte au citron|tartes?(?!\s*flamb)|tatin/, acc:'accord_dessert', need:'dosage', label:'une tarte' },
   { rx:/cr[eè]me br[uû]l[eé]e|cr[eè]me caramel|cr[eè]me catalane|panna cotta|tiramisu|cheesecake|[iî]le flottante|riz au lait|flan\b|cr[eè]me p[aâ]tissi[eè]re|dame blanche|bavarois|charlottes?|blanc[- ]manger|mont[- ]blanc|zabaglione|sabayon|cr[eè]me anglaise/, acc:'accord_dessert', need:'dosage', label:'un dessert crémeux' },
-  { rx:/banana split|coupe glac|vacherin glac|nougat glac|omelette norv[eé]gienne|profiterole|affogato|sundae|p[eê]che melba|poire belle[- ]h[eé]l[eè]ne|melba|colonel/, acc:'accord_dessert', need:'dosage', label:'un dessert glacé' },
+  { rx:/glaces?|boule de glace|cr[eè]me glac[eé]e|esquimaux?|banana split|coupe glac|vacherin glac|nougat glac|omelette norv[eé]gienne|profiterole|affogato|sundae|p[eê]che melba|poire belle[- ]h[eé]l[eè]ne|melba|colonel/, acc:'accord_dessert', need:'dosage', label:'un dessert glacé' },
   { rx:/baklavas?|loukoums?|knafeh|kunefe|churros|beignets?|gulab|halva|makrout|corne de gazelle|basboussa|qatayef/, acc:'accord_dessert', need:'dosage', label:'une douceur sucrée' },
   { rx:/desserts?|g[aâ]teaux?|p[aâ]tisseries?|sorbets?|glaces?|macarons?|mille[- ]feuille|paris[- ]brest|baba au rhum|nougat|b[uû]che|financiers?|madeleines?|kouign|far breton|crumble|cookies?|galette des rois|panettone|cr[eê]pes?|gaufres?|pain perdu|muffins?|cupcakes?|donuts?|cann?el[eé]s?|chouquettes?|religieuse|saint[- ]honor[eé]|kouglof|tropézienne|mochis?|dorayaki|entremets?|calissons?|pralines?|dragées|nonnettes?|savarin|génoise|quatre[- ]quarts|marbr[eé]|craquelin|palmier|chausson aux pommes|pastel de nata|cannolis?|tres leches|dango|taiyaki|sp[eé]culoos|berlingot|mannele|mendiants?|tuiles?|meringues?|dacquoise|mignardises?|caf[eé] gourmand|petits? fours?|brioches?|cinnamon rolls?|roul[eé]s? [aà] la cannelle|kurtos|kourtos|k[uü]rt[oő]s|chimney cake|g[aâ]teau chemin[eé]e|grand[- ]marnier|souffl[eé] au grand marnier|souffl[eé] au chocolat|viennoiseries?|donut|beignet sucr/, acc:'accord_dessert', need:'dosage', label:'un dessert' },
 ];
@@ -1925,6 +1925,13 @@ function dishScore(p, courses){
     if(d.need==='struct' && ((sc.power||3)>=3||(sc.roundness||3)>=3)) x+=2;
     if(d.need==='dosage' && (p.tags||[]).includes('Demi-sec')) x+=6;
     if(d.need==='spicy'  && ((p.tags||[]).includes('Demi-sec')||(p.tags||[]).includes('Rosé'))) x+=4;
+    // Le blanc est le choix par défaut. Le rosé ne garde l'avantage que là où il
+    // apporte vraiment : un plat épicé ou un dessert fruité. Ailleurs (apéritif,
+    // mer, volaille, fromage), léger malus pour éviter qu'il ne ressorte trop souvent.
+    if((p.tags||[]).includes('Rosé') && d.need!=='spicy' && d.acc!=='accord_dessert') x-=6;
+    // Un demi-sec est un mauvais compromis sur un plat salé : on ne le favorise
+    // que sur un dessert (ou un foie gras, traité en amont par richScore).
+    if((p.tags||[]).includes('Demi-sec') && d.acc!=='accord_dessert' && d.need!=='spicy') x-=5;
     return x;
   });
   const versatile=per.length?Math.min(...per):0; // cohérence sur TOUT le repas
@@ -1954,29 +1961,64 @@ function courseExplain(p, course){
   const demi=(p.tags||[]).includes('Demi-sec'), rose=(p.tags||[]).includes('Rosé');
   const bdb=(p.tags||[]).includes('Blanc de blancs'), bdn=(p.tags||[]).includes('Blanc de noirs');
   const lowD=(p.tags||[]).includes('Extra-brut')||(p.tags||[]).includes('Brut nature');
-  if(/foie/.test(frag)) return demi
+  const f=deburr(frag); const has=(re)=>re.test(f);
+  if(/foie/.test(f)) return demi
     ? `Sur un foie gras, son dosage demi-sec souligne le gras sans l'écraser.`
     : `Sur un foie gras, ${round>=4?'sa rondeur ample':'sa matière'} tient le gras — un demi-sec resterait l'accord le plus classique.`;
   if(need==='spicy') return demi
     ? `Sur ${dish}, son dosage demi-sec calme le piquant et rafraîchit.`
-    : (rose ? `Sur ${dish}, le fruité de ce rosé apaise le piquant.` : `Sur ${dish}, sa fraîcheur et sa vivacité tempèrent le piquant.`);
-  if(acc==='accord_mer') return bdb
-    ? `Blanc de blancs ${fresh>=4?'tendu et salin':'vif et net'}, elle épouse ${dish}.`
-    : `Sur ${dish}, ${fresh>=4?'sa fraîcheur tendue et sa finale saline':'sa vivacité et sa bulle nette'} font mouche.`;
-  if(acc==='accord_volaille'){
-    const lead = bdn ? `Blanc de noirs à la matière ${power>=3?'affirmée':'souple'}`
-      : (rose ? `Rosé vineux et structuré`
-      : ((power>=4||cx>=4||(p.tags||[]).includes('Millésimé')) ? `Cuvée vineuse et structurée`
-      : `Cuvée ronde et suffisamment charpentée`));
-    return `${lead}, elle tient ${dish} sans s'effacer.`;
+    : (rose ? `Sur ${dish}, le fruité de ce rosé apaise le piquant.` : `Sur ${dish}, sa vivacité tempère le piquant sans l'attiser.`);
+  if(acc==='accord_mer'){
+    if(has(/huitre|coquillage|oursin|couteau|palourde|amande de mer|belon|clam/)) return `Sur ${dish}, sa tension iodée et sa finale saline répondent au goût d'océan.`;
+    if(has(/homard|langouste|langoustine|gambas|crabe|tourteau|ecrevisse/)||need==='power'||need==='rich') return bdb
+      ? `Blanc de blancs ${cx>=4?'ciselé':'précis'}, elle a la matière pour la chair ${has(/homard|langouste/)?'du homard':'d\'un beau crustacé'} sans l'alourdir.`
+      : `Sur ${dish}, ${round>=3?'sa matière contenue':'sa vinosité mesurée'} accompagne une chair riche sans la couvrir.`;
+    if(has(/saint|coquille|noix de|petoncle/)) return `Sur ${dish}, ${round>=3?'sa rondeur':'sa fraîcheur'} caresse leur chair délicate et sucrée.`;
+    if(has(/fume|fumee|hareng|maquereau|sardine|anchois/)) return `Sur ${dish}, sa vivacité tranche le gras et rafraîchit la bouche.`;
+    if(has(/friture|tempura|beignet|fish|acras|calamar|encornet|chipiron/)) return `Sur ${dish}, sa bulle nette désature la friture et relance l'appétit.`;
+    return bdb
+      ? `Blanc de blancs ${fresh>=4?'tendu et salin':'vif et net'}, elle épouse ${dish}.`
+      : `Sur ${dish}, ${fresh>=4?'sa fraîcheur tendue et sa finale saline':'sa vivacité et sa bulle nette'} font merveille.`;
   }
-  if(acc==='accord_fromage') return `Sur ${dish}${power>=4?' affinés':''}, ${(power>=4||cx>=4)?'sa puissance et sa complexité':'sa structure'} répondent au gras.`;
-  if(acc==='accord_dessert') return demi
-    ? `Sur ${dish}, son dosage demi-sec apporte la douceur qu'un brut n'a pas.`
-    : `Sur ${dish} peu sucré, ${round>=4?'sa rondeur':'sa légèreté'} accompagne la fin de repas${lowD?" — à réserver aux desserts peu sucrés, vu son faible dosage":''}.`;
-  if(acc==='accord_aperitif') return dish==='un apéritif'
-    ? `À l'apéritif, ${fresh>=3?'sa fraîcheur et sa bulle fine':'son équilibre facile à aimer'} ouvrent l'appétit sans couvrir les premières bouchées.`
-    : `Sur ${dish}, ${fresh>=3?'sa fraîcheur et sa bulle fine':'sa rondeur'} s'accordent tout en légèreté.`;
+  if(acc==='accord_volaille'){
+    const rich = need==='power' || has(/boeuf|b(?:œ|oe)uf|agneau|gibier|cerf|chevreuil|sanglier|canard|magret|entrecote|cote de|gigot|tournedos|chateaubriand/);
+    if(rich){
+      const lead = bdn ? `Blanc de noirs à la matière ${power>=3?'dense':'souple'}`
+        : (rose ? `Rosé vineux et structuré`
+        : ((power>=4||cx>=4||(p.tags||[]).includes('Millésimé')) ? `Cuvée vineuse et charpentée`
+        : `Cuvée à la matière suffisante`));
+      return `${lead}, elle a le corps pour ${dish}${power>=4?", jusqu'à la sauce":''}.`;
+    }
+    const lead2 = bdn ? `Blanc de noirs souple`
+      : ((power>=3||round>=3) ? `Cuvée ronde et charpentée` : `Cuvée fine et vineuse`);
+    return `${lead2}, elle enrobe ${dish} sans jamais prendre le dessus.`;
+  }
+  if(acc==='accord_fromage'){
+    if(has(/chevre|crottin|pelardon|banon|picodon|valencay|sainte[- ]maure|rocamadour/)) return `Sur ${dish}, sa fraîcheur tranche le fondant et la pointe acidulée du chèvre.`;
+    if(has(/roquefort|\bbleu|gorgonzola|fourme|stilton|persille|bleu d/)) return demi
+      ? `Sur ${dish}, son dosage tendre dompte le sel et le piquant du bleu.`
+      : `Sur ${dish}, ${round>=3?'sa rondeur':'sa matière'} amortit le sel puissant d'un bleu.`;
+    if(has(/comte|beaufort|gruyere|emmental|cantal|salers|laguiole|abondance|parmesan|pecorino|mimolette|gouda|tomme/)) return `Sur ${dish}, ${cx>=4?'sa complexité':'sa vinosité'} prolonge le fruité sec d'une pâte pressée.`;
+    if(has(/camembert|brie|coulommiers|chaource|munster|epoisses|maroilles|mont[- ]d|vacherin|reblochon|langres|neufchatel/)) return `Sur ${dish}, ${fresh>=3?'sa fraîcheur et sa bulle':'sa nervosité'} nettoient le crémeux d'une pâte molle.`;
+    return `Sur ${dish}, ${(power>=4||cx>=4)?'sa puissance et sa complexité':'sa structure'} répondent au gras.`;
+  }
+  if(acc==='accord_dessert'){
+    if(!demi) return `Sur ${dish} peu sucré, ${round>=4?'sa rondeur':'sa légèreté'} accompagne la fin de repas${lowD?" — à réserver aux desserts peu sucrés, vu son faible dosage":''}.`;
+    if(has(/chocolat|brownie|fondant|profiterole|opera|foret|cookie|banoffee/)) return `Sur ${dish}, son moelleux demi-sec enrobe le chocolat sans le durcir.`;
+    if(has(/glac|sorbet|nougat|melba|vacherin|norvegienne|colonel|affogato|sundae/)) return `Sur ${dish}, sa fraîcheur perlée le réveille sans le figer.`;
+    if(has(/fruit|fraise|framboise|myrtille|pomme|citron|tarte|abricot|poire|ananas|agrume|pavlova|crumble|clafoutis|tatin/)) return `Sur ${dish}, son dosage tendre épouse l'acidité des fruits.`;
+    if(has(/creme|panna|tiramisu|cheesecake|flan|riz au lait|ile flottante|bavarois|baba|brulee|caramel/)) return `Sur ${dish}, sa douceur en prolonge le velouté sans le charger.`;
+    return `Sur ${dish}, son dosage demi-sec apporte la douceur qu'un brut n'a pas.`;
+  }
+  if(acc==='accord_aperitif'){
+    if(dish==='un apéritif') return `À l'apéritif, ${fresh>=3?'sa fraîcheur et sa bulle fine':'son équilibre facile à aimer'} ouvrent l'appétit sans couvrir les premières bouchées.`;
+    if(has(/charcuterie|jambon|saucisson|rillette|terrine|pate|chorizo|coppa|mortadelle|rosette|bresaola/)) return `Sur ${dish}, sa vivacité tranche le gras et relance chaque bouchée.`;
+    if(has(/soupe|veloute|potage|gaspacho|bisque|minestrone|vichyssoise/)) return `Sur ${dish}, sa bulle en allège l'onctuosité et relance l'appétit.`;
+    if(has(/salade|cesar|taboule|frisee|betterave|crudite|coleslaw|fattoush/)) return `Sur ${dish}, sa fraîcheur relève une entrée végétale sans l'écraser.`;
+    if(has(/escargot|grenouille/)) return `Sur ${dish}, ${round>=3?'sa rondeur':'sa vivacité'} accompagne le beurre persillé.`;
+    if(has(/oeuf|omelette|quiche|tortilla|frittata/)) return `Sur ${dish}, sa nervosité équilibre le moelleux de l'oeuf.`;
+    return `Sur ${dish}, ${fresh>=3?'sa fraîcheur et sa bulle fine':'sa rondeur'} s'accordent tout en légèreté.`;
+  }
   return pairingExplain(p, acc);
 }
 /* Un plat demande-t-il un dosage plus tendre (dessert, foie gras) ? */
@@ -2026,7 +2068,14 @@ function dishRecommendPerCourse(courses, budget, text){
       if(d.need==='dosage'&&(p.tags||[]).includes('Demi-sec'))x+=6;
       if(d.need==='spicy'&&((p.tags||[]).includes('Demi-sec')||(p.tags||[]).includes('Rosé')))x+=4;
       x -= pricePenalty(p.price, ceil);
-      x += stylePrefBonus(p, pref) + prepBonus(p, prep);
+      x += stylePrefBonus(p, pref);
+      // En mode « une bouteille par plat », la préparation (épicé, crème…) est
+      // ambiguë entre les plats : ne pas l'appliquer globalement, sinon un
+      // « curry » du repas pousse un rosé sur les tapas ou le dessert. Chaque
+      // plat garde son besoin propre (spicy, dosage…) déjà géré ci-dessus.
+      // Le blanc est le défaut ; le rosé ne garde l'avantage que sur un plat
+      // épicé ou un dessert fruité.
+      if((p.tags||[]).includes('Rosé') && d.need!=='spicy' && d.acc!=='accord_dessert') x-=4;
       return {p,x};
     }).sort((a,b)=>b.x-a.x || (b.p.popularity||0)-(a.p.popularity||0))[0];
     return {course:d, p:best.p};
@@ -2737,7 +2786,7 @@ function renderArticle(){
 /* ====================== ACTIONS ====================== */
 function cap(s){ s=String(s||'').trim(); return s.charAt(0).toUpperCase()+s.slice(1); }
 function beginDish(){ state.started=true; state.view='dish'; if(window.qcTrack)window.qcTrack('quiz_started',{source:'dish'}); render(); }
-function dishBack(){ const t=document.getElementById('dish-input'); if(t) state.dish.text=t.value; state.started=false; state.view='quiz'; render(); }
+function dishBack(){ const t=document.getElementById('dish-input'); if(t) state.dish.text=t.value; state.started=false; state.view='home'; render(); }
 function dishRetry(){ state.view='dish'; render(); }
 function setDishBudget(b){ const t=document.getElementById('dish-input'); if(t) state.dish.text=t.value; state.dish.budget=b; render(); }
 function setDishMode(v){ state.dish.perCourse=!!v; render(); }

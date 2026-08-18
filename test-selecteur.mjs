@@ -243,5 +243,32 @@ if (relaxNote(topFor({ couleur:['couleur_blanc'], dosage:['dos_brut'], budget:['
 stateRef.answers = {};
 relErr ? fail('transparence des compromis (' + relErr + ' anomalies)') : ok('transparence des compromis');
 
+// 9) Équilibre couleur : le rosé ne doit pas « fuir » sur un plat non épicé et non
+// dessert en mode par plat, et une bouteille unique sur un repas de fruits de mer
+// reste un blanc. Couvre aussi quelques plats bistrot ajoutés à l'audit.
+const perC = call('dishRecommendPerCourse'), oneB = call('dishRecommendOne');
+const cc = (p) => isRose(p) ? 'rosé' : ((p.tags || []).includes('Demi-sec') ? 'demi-sec' : 'blanc');
+let colErr = 0;
+for (const r of perC(det('tapas, curry épicé, glace'), '', 'tapas, curry épicé, glace')) {
+  const d = r.course;
+  if (cc(r.p) === 'rosé' && d.need !== 'spicy' && d.acc !== 'accord_dessert') { colErr++; console.log('    rosé parasite sur ' + d.frag); }
+}
+const sea = oneB(det('huîtres, homard, tarte au citron'), '', 1, 'huîtres, homard, tarte au citron')[0].p;
+if (isRose(sea)) { colErr++; console.log('    bouteille unique rosé sur un repas de fruits de mer'); }
+for (const q of ['frisée aux lardons', 'betteraves', 'meurette', 'banana bread', 'glace', 'salade lyonnaise']) if (!det(q).length) { colErr++; console.log('    non reconnu : ' + q); }
+colErr ? fail('équilibre couleur & couverture bistrot (' + colErr + ')') : ok('équilibre couleur & couverture bistrot');
+
+// 10) Qualité des phrases d'accord : taillées par sous-type, sans écho ni faute d'accord.
+const cExplain = call('courseExplain');
+const phrase = (q) => { const c = det(q); return c.length ? cExplain(oneB(c, '', 1, q)[0].p, c[0]) : ''; };
+let phErr = 0;
+if (phrase('roquefort') === phrase('comté')) { phErr++; console.log('    phrase fromage non différenciée (bleu vs pâte pressée)'); }
+if (phrase('mousse au chocolat') === phrase('tarte au citron')) { phErr++; console.log('    phrase dessert non différenciée (chocolat vs fruits)'); }
+if (phrase('huîtres') === phrase('homard grillé')) { phErr++; console.log('    phrase mer non différenciée (iodé vs crustacé)'); }
+for (const q of ['poulet rôti', 'blanquette de veau', 'pintade']) if (/\ble dominer\b/.test(phrase(q))) { phErr++; console.log('    faute d\'accord « le dominer » : ' + q); }
+const echo = (s) => /Saint-Jacques[\s\S]*Saint-Jacques|dessert crémeux[\s\S]*dessert crémeux|soupe[\s\S]*soupe onctueuse/i.test(s);
+for (const q of ['saint-jacques', 'crème brûlée', 'velouté de potiron']) if (echo(phrase(q))) { phErr++; console.log('    écho du nom de plat : ' + q); }
+phErr ? fail('qualité des phrases d\'accord (' + phErr + ')') : ok('qualité des phrases d\'accord');
+
 console.log('\n' + (failures ? '❌ ' + failures + ' test(s) en échec' : '✅ Tous les tests passent'));
 process.exit(failures ? 1 : 0);
