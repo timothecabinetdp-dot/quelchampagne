@@ -869,7 +869,7 @@ function giftOccasionQuestion(){
 }
 
 /* ====================== BLOG ====================== */
-const PUBLISHED_ARTICLE_IDS = new Set(['guide-2026','dosages','accords','moins-50','mariage','cadeau','quantite','blanc-blancs','servir','noel','moins-30','aperitif','huitres','anniversaire','brut-nature','rose-saignee','vigneron','etiquette','rose','rapport-qualite-prix','saint-valentin','conservation','crus','foie-gras']);
+const PUBLISHED_ARTICLE_IDS = new Set(['guide-2026','dosages','accords','moins-50','mariage','cadeau','quantite','blanc-blancs','servir','noel','moins-30','aperitif','huitres','anniversaire','brut-nature','rose-saignee','vigneron','etiquette','rose','rapport-qualite-prix','saint-valentin','conservation','crus','foie-gras','champagne-cremant-prosecco','champagne-fromage','cocktails-champagne']);
 const ARTICLE_REWRITES = {
   'aperitif': { read:'5 min', body:`<p>À l'apéritif, le champagne a un rôle précis : ouvrir l'appétit, lancer la soirée et plaire à des palais variés sans dominer les premières bouchées. Le bon choix privilégie la fraîcheur, la lisibilité et une bulle fine plutôt que la puissance.</p>
 <h3>Le profil idéal</h3>
@@ -1583,6 +1583,93 @@ function articles(){
 <h3>À éviter</h3>
 <p>Un brut très sec et léger d'apéritif sera vite dominé. Gardez-le pour l'entrée en matière et montez en corps sur le foie gras. Pour d'autres idées, voir notre <a href="/blog/accords/">guide des accords mets et champagne</a>.</p>`,
       related:['drappier-quattuor'] },
+    { id:'champagne-cremant-prosecco', cat:'Décryptage', cover:'linear-gradient(135deg,#EAEDE7,#DFE4D8)', date:'Août 2026', read:'8 min',
+      title:"Champagne, crémant ou prosecco : quelles différences ?",
+      excerpt:"Méthode, cépages, prix et goût : ce qui distingue vraiment le champagne du crémant et du prosecco, et lequel choisir selon l'occasion.",
+      body:`<p>Champagne, crémant, prosecco : les trois font des bulles, se servent frais et animent les mêmes apéritifs. Pourtant, presque tout les sépare, de la méthode d'élaboration au prix, en passant par le goût. Comprendre ces différences aide à choisir la bonne bouteille selon le moment, et à ne pas payer un nom quand une alternative suffit.</p>
+<h3>La méthode : bulle en bouteille ou bulle en cuve</h3>
+<p>C'est la vraie ligne de partage. Le champagne et le crémant suivent la <strong>méthode traditionnelle</strong> : la seconde fermentation, celle qui crée les bulles, a lieu dans la bouteille elle-même, puis le vin vieillit plusieurs mois sur ses lies. Ce contact prolongé donne une bulle fine et persistante, et ces notes de brioche, de pain grillé et d'amande qui signent les grands effervescents.</p>
+<p>Le prosecco, lui, naît de la <strong>méthode Charmat</strong>, dite en cuve close : la prise de mousse se fait dans une grande cuve inox, puis le vin est mis en bouteille sous pression. Le procédé est plus rapide et moins coûteux. Il préserve le fruit et les arômes floraux du raisin, mais donne une bulle plus large et pas de notes briochées.</p>
+<h3>La région et l'appellation</h3>
+<p>Le <strong>champagne</strong> ne vient que de la région Champagne, au nord-est de la France. C'est une appellation strictement protégée : aucun autre vin effervescent au monde n'a le droit de porter ce nom.</p>
+<p>Le <strong>crémant</strong> est un effervescent français de méthode traditionnelle produit hors Champagne : crémant d'Alsace, de Bourgogne, de Loire, de Limoux, du Jura, de Bordeaux, de Die ou de Savoie. Chaque région impose ses cépages et son style.</p>
+<p>Le <strong>prosecco</strong> vient du nord-est de l'Italie, en Vénétie et dans le Frioul. Les meilleurs portent la mention Conegliano Valdobbiadene DOCG, un cran au-dessus du simple prosecco DOC.</p>
+<h3>Les cépages</h3>
+<p>Le champagne repose sur trois cépages principaux : le <strong>chardonnay</strong> pour la finesse et la fraîcheur, le <strong>pinot noir</strong> pour le corps et la structure, le <strong>meunier</strong> pour le fruit et la rondeur. Le crémant utilise les cépages de sa région : pinot blanc et riesling en Alsace, chardonnay et pinot noir en Bourgogne, chenin en Loire, mauzac à Limoux. Le prosecco est fait presque exclusivement de <strong>glera</strong>, un raisin blanc aromatique.</p>
+<h3>Le goût dans le verre</h3>
+<p>Un champagne offre de la tension, de la complexité et une longueur que son prix finance en partie : temps de vieillissement, travail manuel, notoriété. Un bon crémant s'en approche par la méthode, avec souvent un fruit plus direct et un peu moins de complexité, pour un prix bien inférieur. Le prosecco joue une autre partition : léger, fruité, sur la poire, la pomme verte et les fleurs blanches, il est fait pour la convivialité plus que pour la méditation.</p>
+<p>Attention à un piège du prosecco : sur ses étiquettes, la mention <strong>Extra Dry est plus sucrée que Brut</strong>. Si vous cherchez le plus sec, prenez un prosecco Brut. Le vocabulaire du dosage rejoint celui du champagne, que nous détaillons dans notre <a href="/blog/dosages/">guide des dosages</a>.</p>
+<h3>Le tableau comparatif</h3>
+<table>
+<thead><tr><th>Critère</th><th>Champagne</th><th>Crémant</th><th>Prosecco</th></tr></thead>
+<tbody>
+<tr><td>Méthode</td><td>Traditionnelle (bulle en bouteille)</td><td>Traditionnelle (bulle en bouteille)</td><td>Charmat (bulle en cuve)</td></tr>
+<tr><td>Origine</td><td>Région Champagne</td><td>Régions françaises hors Champagne</td><td>Vénétie et Frioul (Italie)</td></tr>
+<tr><td>Cépages</td><td>Chardonnay, pinot noir, meunier</td><td>Selon la région</td><td>Glera</td></tr>
+<tr><td>Élevage sur lies</td><td>15 mois minimum, 36 pour un millésimé</td><td>9 mois minimum</td><td>Court, en cuve</td></tr>
+<tr><td>Bulle</td><td>Fine et persistante</td><td>Fine</td><td>Plus large et vive</td></tr>
+<tr><td>Profil</td><td>Complexe, brioché, tendu</td><td>Fruité, plus direct</td><td>Léger, floral, gourmand</td></tr>
+<tr><td>Prix indicatif</td><td>dès 25 à 30 €</td><td>8 à 15 €</td><td>7 à 12 €</td></tr>
+</tbody>
+</table>
+<h3>Lequel choisir, et quand ?</h3>
+<p>Pour un <strong>cadeau</strong>, un dîner qui compte ou un accord gastronomique, le champagne reste sans rival : le nom fait plaisir et la bouteille tient ses promesses à table. Voir notre <a href="/blog/cadeau/">guide du champagne à offrir</a>.</p>
+<p>Pour un <strong>apéritif quotidien</strong> ou une grande tablée où le budget compte, un crémant de méthode traditionnelle offre le meilleur compromis plaisir-prix. C'est aussi un choix malin pour un <a href="/blog/mariage/">vin d'honneur</a> servi en volume.</p>
+<p>Pour un <strong>spritz</strong>, un mimosa ou un apéritif léger et fruité, le prosecco fait très bien l'affaire, et il serait dommage d'y noyer un grand champagne. Nous y revenons dans notre article sur les <a href="/blog/cocktails-champagne/">cocktails au champagne</a>.</p>
+<p>Si vous voulez rester sur le champagne mais trouver la cuvée juste selon votre budget et l'occasion, lancez le <a href="/selecteur/">sélecteur</a> : il compare le moment, l'accord, le style et le prix avant de proposer les bouteilles les plus cohérentes. Pour viser la vraie valeur, lisez aussi <a href="/blog/rapport-qualite-prix/">où se cache le meilleur rapport qualité-prix en Champagne</a>.</p>`,
+      related:['cattier-brut-premier-cru','guy-charlemagne-reserve-blanc-de-blancs-grand-cru-brut','de-vilmont-brut-blanc-de-blancs'] },
+    { id:'champagne-fromage', cat:'Accords', cover:'linear-gradient(135deg,#F1ECE5,#E7DDD1)', date:'Août 2026', read:'8 min',
+      title:"Champagne et fromage : le guide des accords",
+      excerpt:"Quel champagne pour quel fromage : pâtes molles, comté, chèvre, bleu, raclette. Le guide complet pour réussir l'accord champagne et fromage.",
+      body:`<p>On sert par réflexe du vin rouge sur un plateau de fromages. C'est souvent une erreur : les tanins du rouge se heurtent au gras et au sel, quand la bulle et l'acidité du champagne nettoient le palais et relancent l'appétit. Bien choisi, le champagne est l'un des meilleurs partenaires du fromage. Encore faut-il accorder le bon style à la bonne pâte.</p>
+<h3>Pourquoi le champagne fonctionne si bien</h3>
+<p>Trois atouts jouent en sa faveur : l'<strong>effervescence</strong> qui tranche le gras, l'<strong>acidité</strong> qui équilibre la richesse, et la <strong>fraîcheur</strong> qui remet les papilles à zéro entre deux bouchées. Là où un rouge puissant sature vite, un champagne allège. Reste à ajuster la structure et le dosage au fromage servi.</p>
+<h3>Pâtes molles à croûte fleurie : brie, camembert, coulommiers</h3>
+<p>Crémeuses et beurrées, elles appellent de la fraîcheur. Un <a href="/champagne/blanc-de-blancs/">blanc de blancs</a> vif, tout en chardonnay, tranche le fondant sans l'alourdir : la bulle fait le ménage, l'acidité relève la crème. C'est l'accord le plus facile et le plus sûr du plateau.</p>
+<h3>Pâtes pressées cuites : comté, beaufort, gruyère</h3>
+<p>Fruitées, longues, sur la noisette, elles réclament un champagne avec de la matière. Un <strong>blanc de noirs</strong> ou une cuvée vineuse un peu vieillie entre en résonance avec le côté sec et umami d'un vieux comté. Plus le fromage est affiné, plus le champagne peut être ample.</p>
+<h3>Fromages de chèvre : crottin, sainte-maure, valençay</h3>
+<p>Leur pointe acidulée et lactique adore un champagne tendu et minéral. Un blanc de blancs frais ou un extra-brut fait mouche : l'acidité du vin épouse celle du fromage, la craie répond à la craie. Un champagne de la Côte des Blancs est ici un allié naturel.</p>
+<h3>Bleus : roquefort, fourme d'Ambert, gorgonzola</h3>
+<p>C'est le cas particulier. Le sel et le piquant d'un bleu écrasent un brut sec. Ici, le sucre devient un allié : un <a href="/champagne/jacquart-mosaique-demi-sec/">demi-sec</a> dompte le sel comme le sauternes le fait sur le roquefort. Un rosé de saignée vineux peut aussi tenir tête, comme l'explique notre article sur le <a href="/blog/rose-saignee/">rosé de saignée</a>.</p>
+<h3>Croûtes lavées : munster, époisses, maroilles</h3>
+<p>Soyons honnêtes : ces fromages puissants et odorants sont les plus difficiles à marier. Un champagne délicat s'y perd. Il faut une cuvée vineuse et corsée, très mûre, ou accepter que l'accord reste un défi. C'est l'un des rares cas où un blanc aromatique comme le gewurztraminer peut damer le pion au champagne.</p>
+<h3>Fromages fondus : raclette, fondue, tartiflette</h3>
+<p>Contre toute attente, un brut frais fait des merveilles là où l'on sert d'habitude un blanc de Savoie : la bulle coupe le gras du fromage fondu et allège un plat très riche. Un brut d'assemblage nerveux, servi bien frais, relance chaque bouchée. Testez « raclette » ou « fondue » dans notre <a href="/selecteur/">sélecteur</a> en mode accord.</p>
+<h3>Une seule bouteille pour tout le plateau ?</h3>
+<p>Si vous ne servez qu'un champagne, misez sur un <strong>brut structuré</strong> ou un blanc de noirs : assez frais pour les pâtes molles et les chèvres, assez de matière pour les pâtes pressées. C'est le meilleur compromis. Le seul écueil restera le bleu, que seul un demi-sec dompte vraiment. Pour bien faire, servez deux cuvées : un blanc de blancs frais pour ouvrir, un demi-sec pour finir sur le bleu.</p>
+<h3>Servir et ordonner le plateau</h3>
+<p>Servez le champagne autour de 9 à 10 °C, pas plus froid, pour ne pas anesthésier les arômes. Sur un plateau, progressez du plus doux au plus fort. Notre <a href="/blog/accords/">guide des accords mets et champagne</a> et notre article sur le <a href="/blog/foie-gras/">foie gras</a> prolongent celui-ci.</p>
+<p>Pour trouver la cuvée juste selon votre plateau et votre budget, le <a href="/selecteur/">sélecteur</a> compare le style, l'accord et le prix avant de proposer les bouteilles les plus cohérentes.</p>`,
+      related:['guy-charlemagne-reserve-blanc-de-blancs-grand-cru-brut','jerome-coessens-blanc-de-noirs-largillier-brut','jacquart-mosaique-demi-sec'] },
+    { id:'cocktails-champagne', cat:'Recettes', cover:'linear-gradient(135deg,#F3EEE2,#E9E0CC)', date:'Août 2026', read:'7 min',
+      title:"Cocktails au champagne : kir royal, mimosa, bellini, spritz",
+      excerpt:"Kir royal, mimosa, bellini, spritz, French 75 : les meilleurs cocktails au champagne, avec la bonne base et les bonnes proportions.",
+      body:`<p>Kir royal, mimosa, bellini, spritz : les cocktails au champagne sont l'assurance d'un apéritif festif. Encore faut-il savoir quelle bouteille utiliser, et dans quelles proportions. Voici les grands classiques, avec la bonne base et les bons gestes.</p>
+<h3>Quel champagne utiliser pour un cocktail ?</h3>
+<p>Première règle : ne sacrifiez pas votre plus belle cuvée. Dès qu'on ajoute un sirop, un alcool ou un jus, la finesse d'un grand champagne s'efface. Choisissez un <strong>brut d'assemblage frais et fruité</strong>, sans année, dans une gamme raisonnable. Pour beaucoup de ces recettes, un crémant, voire un prosecco, fait aussi bien l'affaire : voir notre comparatif <a href="/blog/champagne-cremant-prosecco/">champagne, crémant ou prosecco</a>. Gardez le champagne d'exception pour la dégustation pure.</p>
+<p>Deuxième règle : tout doit être <strong>très froid</strong>, bouteille, verres et ingrédients. On ne met jamais de glaçon dans une flûte, il dilue et casse la bulle, sauf pour le spritz qui se sert sur glace dans un grand verre.</p>
+<h3>Le kir royal</h3>
+<p>Le plus simple et le plus connu. Versez un trait de <strong>crème de cassis</strong>, environ 1 cl, au fond d'une flûte, puis complétez doucement de champagne bien frais. Comptez à peu près une dose de cassis pour neuf de champagne : le cassis doit colorer et parfumer, jamais dominer. Variantes gourmandes : crème de mûre, de framboise ou de pêche.</p>
+<h3>Le mimosa</h3>
+<p>La star des brunchs. À parts égales, <strong>jus d'orange bien frais</strong>, pressé si possible, et champagne. Versez le jus d'abord, le champagne ensuite pour préserver la mousse. Léger et solaire, il se boit dès le matin sur des œufs ou une viennoiserie.</p>
+<h3>Le bellini</h3>
+<p>Né au Harry's Bar de Venise, il marie une <strong>purée de pêche blanche</strong>, environ un tiers du verre, à l'effervescent. La recette d'origine utilise du prosecco, mais un champagne frais lui donne plus de tenue. Un trait de sirop de pêche renforce la couleur et le fruit.</p>
+<h3>Le spritz</h3>
+<p>L'apéritif méditerranéen par excellence, à servir sur glace dans un grand verre à vin. La formule classique : <strong>3 mesures de prosecco, 2 d'Aperol, 1 d'eau gazeuse</strong>, une tranche d'orange. On peut le faire au champagne, mais le prosecco reste plus adapté, et plus économique, pour ce format généreux.</p>
+<h3>Le champagne cocktail classique</h3>
+<p>Le plus élégant. Déposez un <strong>morceau de sucre</strong> imbibé de quelques gouttes d'<strong>angostura</strong> au fond d'une flûte, ajoutez 1 cl de cognac, puis complétez de champagne. Le sucre libère un chapelet de bulles du plus bel effet, un zeste de citron parfait le tout.</p>
+<h3>Le French 75</h3>
+<p>Vif et racé. Dans un shaker avec de la glace : <strong>3 cl de gin, 1,5 cl de jus de citron, 1 cl de sirop de sucre</strong>. Secouez, versez dans une flûte et allongez de champagne. Puissant, il porte le nom d'un canon de la Première Guerre mondiale : à savourer avec mesure.</p>
+<h3>Deux idées de plus</h3>
+<ul>
+<li><strong>Poinsettia</strong> : jus de canneberge, un trait de triple sec, champagne. Rouge et festif, parfait à <a href="/blog/noel/">Noël</a>.</li>
+<li><strong>Air mail</strong> : rhum ambré, miel liquide, jus de citron vert, champagne. Doré, gourmand et pétillant.</li>
+</ul>
+<h3>Le bon verre et les bons gestes</h3>
+<p>Pour un cocktail effervescent, une <strong>flûte</strong> ou un verre tulipe conservent la bulle mieux qu'une coupe évasée. Préparez au dernier moment, versez l'effervescent en dernier et lentement, contre la paroi, pour garder la mousse. Sur le service, notre article <a href="/blog/servir/">comment servir le champagne</a> détaille température et ouverture.</p>
+<p>Envie de rester sur le champagne pur plutôt qu'en cocktail ? Le <a href="/selecteur/">sélecteur</a> vous oriente selon l'occasion et le budget, et notre sélection à <a href="/champagne/moins-de-50-euros/">moins de 50 €</a> regorge de bruts parfaits pour l'apéritif.</p>`,
+      related:['cattier-brut-premier-cru','j-charpentier-rose-reserve-brut','maison-labbe-brut-premier-cru-tradition'] },
 
   ];
   return list.map(article=>{
