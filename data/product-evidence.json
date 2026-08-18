@@ -14,16 +14,12 @@
       "name": "L’Éloquente Brut",
       "status": "official_producer_confirmed_product_to_document",
       "merchantSourceUrl": "https://www.champagnebaronalbert.fr/",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": "https://www.champagnebaronalbert.fr/",
       "officialCheckedAt": "2026-07-31",
       "technicalSourceUrl": "https://www.astrumwinecellars.com/pdf/?slug=jean-de-la-fontaine&type=producer",
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": "L’Éloquente est un Brut non millésimé de la gamme Jean de La Fontaine, élaborée par la Maison Baron Albert à Charly-sur-Marne."
       },
@@ -35,7 +31,7 @@
       "name": "Grand Tour Nature",
       "status": "official_confirmed_with_correction",
       "merchantSourceUrl": "https://www.tenutasetteponti.it/wp-content/uploads/doc/st_champagne_brut_nature.pdf",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": "https://www.tenutasetteponti.it/wp-content/uploads/doc/st_champagne_brut_nature.pdf",
       "officialCheckedAt": "2026-07-31",
       "technicalSourceUrl": null,
@@ -55,7 +51,7 @@
       "name": "Brut Tradition Premier Cru",
       "status": "official_confirmed_with_correction",
       "merchantSourceUrl": "https://www.champagnelabbe.com/",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": "https://www.champagnelabbe.com/",
       "officialCheckedAt": "2026-07-31",
       "technicalSourceUrl": null,
@@ -76,7 +72,7 @@
       "name": "Brut Réserve",
       "status": "secondary_identity_confirmed",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/campagne-brut-aoc-louis-constant",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": null,
       "officialCheckedAt": null,
       "technicalSourceUrl": "https://bottleofitaly.com/en-us/products/campagne-brut-aoc-louis-constant",
@@ -93,11 +89,11 @@
     },
     {
       "productId": "alain-mercier-cuvee-louis-hurtebisse-brut",
-      "brand": "Alain Mercier",
+      "brand": "Alain Mercier & Fils",
       "name": "Louis Hurtebisse Brut Tradition",
       "status": "official_producer_confirmed_product_to_document",
       "merchantSourceUrl": "https://www.champagne-alain-mercier.com/",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": "https://www.champagne-alain-mercier.com/",
       "officialCheckedAt": "2026-07-31",
       "technicalSourceUrl": "https://www.tannico.com/products/champagne-brut-cuvee-louis-hurtebisse-alain-mercier",
@@ -118,7 +114,7 @@
       "name": "Tradition Brut Premier Cru",
       "status": "official_confirmed_with_correction",
       "merchantSourceUrl": "https://www.champagne-tornay.fr/en/our-cuvees/monsieur-s-cellar/premier-cru",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": "https://www.champagne-tornay.fr/en/our-cuvees/monsieur-s-cellar/premier-cru",
       "officialCheckedAt": "2026-07-31",
       "technicalSourceUrl": null,
@@ -138,7 +134,7 @@
       "name": "Cuvée Brut",
       "status": "official_confirmed",
       "merchantSourceUrl": "https://epc-champagne.com/en/produit/brut/",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": "https://epc-champagne.com/en/produit/brut/",
       "officialCheckedAt": "2026-07-31",
       "technicalSourceUrl": null,
@@ -159,7 +155,7 @@
       "name": "Brut",
       "status": "official_producer_confirmed_product_to_document",
       "merchantSourceUrl": "https://www.maisonburtin.com/",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": "https://www.maisonburtin.com/",
       "officialCheckedAt": "2026-07-31",
       "technicalSourceUrl": "https://bottleofitaly.com/en/products/champagne-brut-astucciato-maison-burtin",
@@ -180,7 +176,7 @@
       "name": "La Passionnée Brut Blanc de Noirs",
       "status": "official_confirmed_with_correction",
       "merchantSourceUrl": "https://www.champagne-brisson-lahaye.com/la-gamme/",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": "https://www.champagne-brisson-lahaye.com/la-gamme/",
       "officialCheckedAt": "2026-07-31",
       "technicalSourceUrl": "https://bottleofitaly.com/en-us/products/champagne-la-passionnee-blanc-de-noirs-extra-brut-brisson-lahaye",
@@ -200,7 +196,7 @@
       "name": "Assemblage Noble Brut Blanc de Blancs",
       "status": "official_confirmed_with_correction",
       "merchantSourceUrl": "https://www.champagne-vallois.com/produit/assemblage-noble/?lang=en",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": "https://www.champagne-vallois.com/produit/assemblage-noble/?lang=en",
       "officialCheckedAt": "2026-07-31",
       "technicalSourceUrl": null,
@@ -219,7 +215,7 @@
       "name": "Rosé de Saignée en Fûts - Les Vignes Derrière",
       "status": "official_producer_confirmed_product_to_document",
       "merchantSourceUrl": "https://champagnedaubanton.com/",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": "https://champagnedaubanton.com/",
       "officialCheckedAt": "2026-07-31",
       "technicalSourceUrl": "https://www.rinaldi1957.it/en/products/rose-de-saignee-en-futs-les-vignes-derriere/",
@@ -238,7 +234,7 @@
       "name": "Premier Cru Extra Brut",
       "status": "official_confirmed_with_correction",
       "merchantSourceUrl": "https://champagne-ponson.com/cuvee/premier-cru",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": "https://champagne-ponson.com/cuvee/premier-cru",
       "officialCheckedAt": "2026-07-31",
       "technicalSourceUrl": null,
@@ -259,7 +255,7 @@
       "name": "Carte Noire Brut",
       "status": "official_confirmed_with_correction",
       "merchantSourceUrl": "https://www.champagne-thevenet-delouvin.fr/champagnes/carte-noire-brut/",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": "https://www.champagne-thevenet-delouvin.fr/champagnes/carte-noire-brut/",
       "officialCheckedAt": "2026-07-31",
       "technicalSourceUrl": null,
@@ -279,7 +275,7 @@
       "name": "Clovis Brut",
       "status": "official_confirmed_with_correction",
       "merchantSourceUrl": "https://boutique.champagne-yves-loison.com/en/85-copie-de-copie-de-copie-de-cuvee-origines.html",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": "https://boutique.champagne-yves-loison.com/en/85-copie-de-copie-de-copie-de-cuvee-origines.html",
       "officialCheckedAt": "2026-07-31",
       "technicalSourceUrl": null,
@@ -300,7 +296,7 @@
       "name": "Brut - Blanc de Blancs",
       "status": "official_confirmed",
       "merchantSourceUrl": "https://www.champagnedevilmont.com/en/wine/brut-blanc-de-blancs/",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": "https://www.champagnedevilmont.com/en/wine/brut-blanc-de-blancs/",
       "officialCheckedAt": "2026-07-31",
       "technicalSourceUrl": null,
@@ -319,7 +315,7 @@
       "name": "Fossile Rosé Brut",
       "status": "official_confirmed",
       "merchantSourceUrl": "https://www.mg-heucq.fr/champagne-mg-heucq/",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": "https://www.mg-heucq.fr/champagne-mg-heucq/",
       "officialCheckedAt": "2026-07-31",
       "technicalSourceUrl": null,
@@ -340,7 +336,7 @@
       "name": "L'Escapade",
       "status": "official_confirmed",
       "merchantSourceUrl": "https://www.champagneharlin.fr/champagnes-1-l-escapade.html",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": "https://www.champagneharlin.fr/champagnes-1-l-escapade.html",
       "officialCheckedAt": "2026-07-31",
       "technicalSourceUrl": null,
@@ -361,7 +357,7 @@
       "name": "Blanc de Noirs Brut",
       "status": "secondary_identity_confirmed",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-noirs-brut-beltrand-brigandat",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": null,
       "officialCheckedAt": null,
       "technicalSourceUrl": "https://bonhomiewine.com/wp-content/uploads/2019/07/Brigandat.pdf",
@@ -380,7 +376,7 @@
       "name": "Préface Brut Sans Année",
       "status": "official_confirmed_with_correction",
       "merchantSourceUrl": "https://champagne-bardiau.com/les-vins/",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": "https://champagne-bardiau.com/les-vins/",
       "officialCheckedAt": "2026-07-31",
       "technicalSourceUrl": null,
@@ -400,7 +396,7 @@
       "name": "Orior Brut",
       "status": "official_confirmed",
       "merchantSourceUrl": "https://www.champagne-pierre-legras.com/wp-content/uploads/2026/02/champagne-pierre-legras-orior.pdf",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": "https://www.champagne-pierre-legras.com/wp-content/uploads/2026/02/champagne-pierre-legras-orior.pdf",
       "officialCheckedAt": "2026-07-31",
       "technicalSourceUrl": null,
@@ -421,7 +417,7 @@
       "name": "Carte Blanche Premier Cru Brut",
       "status": "official_confirmed",
       "merchantSourceUrl": "https://www.champagne-benard-pitois.com/boutique/accueil/1-brut-carte-blanche.html",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": "https://www.champagne-benard-pitois.com/boutique/accueil/1-brut-carte-blanche.html",
       "officialCheckedAt": "2026-07-31",
       "technicalSourceUrl": null,
@@ -442,7 +438,7 @@
       "name": "Terre Brut",
       "status": "official_confirmed_with_correction",
       "merchantSourceUrl": "https://www.champagne-augustin.com/fr/cuvee-champagne/les-champagnes-augustin-fr",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": "https://www.champagne-augustin.com/fr/cuvee-champagne/les-champagnes-augustin-fr",
       "officialCheckedAt": "2026-07-31",
       "technicalSourceUrl": null,
@@ -461,7 +457,7 @@
       "name": "Grand Prestige Brut",
       "status": "official_confirmed",
       "merchantSourceUrl": "https://www.champagne-beaumont.com/en/produit/grand-prestige/",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": "https://www.champagne-beaumont.com/en/produit/grand-prestige/",
       "officialCheckedAt": "2026-07-31",
       "technicalSourceUrl": null,
@@ -482,7 +478,7 @@
       "name": "Rosé Réserve Brut",
       "status": "official_confirmed",
       "merchantSourceUrl": "https://jcharpentier.com/produit/rose-brut%E2%80%8B/",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": "https://jcharpentier.com/produit/rose-brut%E2%80%8B/",
       "officialCheckedAt": "2026-07-31",
       "technicalSourceUrl": null,
@@ -502,7 +498,7 @@
       "name": "Pinot Blanc de Blancs Brut",
       "status": "official_confirmed",
       "merchantSourceUrl": "https://champagnepetitcamusat.com/",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": "https://champagnepetitcamusat.com/",
       "officialCheckedAt": "2026-07-31",
       "technicalSourceUrl": null,
@@ -521,7 +517,7 @@
       "name": "Réserve Exclusive Brut Rosé",
       "status": "official_confirmed",
       "merchantSourceUrl": "https://nicolas-feuillatte.com/collections/champagnes-roses",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": "https://nicolas-feuillatte.com/collections/champagnes-roses",
       "officialCheckedAt": "2026-07-31",
       "technicalSourceUrl": null,
@@ -542,16 +538,12 @@
       "name": "Simplexité Brut Rosé",
       "status": "official_confirmed_with_correction",
       "merchantSourceUrl": "https://champagne-alain-mercier.plugwine.com/en/vins/champagne-alain-mercier-fils-simplexite-brut-rose/champagne-rose/24354",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": "https://champagne-alain-mercier.plugwine.com/en/vins/champagne-alain-mercier-fils-simplexite-brut-rose/champagne-rose/24354",
       "officialCheckedAt": "2026-07-31",
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -563,7 +555,7 @@
       "name": "Blanc de Blancs Cuvée de Réserve Brut Grand Cru",
       "status": "official_confirmed",
       "merchantSourceUrl": "https://www.champagne-bonnet-gilmert.com/reserve.php",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": "https://www.champagne-bonnet-gilmert.com/reserve.php",
       "officialCheckedAt": "2026-07-31",
       "technicalSourceUrl": null,
@@ -582,7 +574,7 @@
       "name": "Terre Brut Premier Cru",
       "status": "official_confirmed",
       "merchantSourceUrl": "https://www.champagnesolemme.fr/en/the-vintages/",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": "https://www.champagnesolemme.fr/en/the-vintages/",
       "officialCheckedAt": "2026-07-31",
       "technicalSourceUrl": null,
@@ -603,7 +595,7 @@
       "name": "White Pearl",
       "status": "official_confirmed_with_correction",
       "merchantSourceUrl": "https://www.champagne-daniel-deheurles.com/produit/white-pearl/",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": "https://www.champagne-daniel-deheurles.com/produit/white-pearl/",
       "officialCheckedAt": "2026-07-31",
       "technicalSourceUrl": null,
@@ -623,7 +615,7 @@
       "name": "Grande Réserve Premier Cru Brut",
       "status": "official_confirmed",
       "merchantSourceUrl": "https://www.champagnevilmart.fr/vins/grande-reserve-fr/",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": "https://www.champagnevilmart.fr/vins/grande-reserve-fr/",
       "officialCheckedAt": "2026-07-31",
       "technicalSourceUrl": null,
@@ -643,7 +635,7 @@
       "name": "Brut Premier Cru",
       "status": "official_confirmed",
       "merchantSourceUrl": "https://www.cattier.com/en/champagne/brut-en/",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": "https://www.cattier.com/en/champagne/brut-en/",
       "officialCheckedAt": "2026-07-31",
       "technicalSourceUrl": null,
@@ -664,7 +656,7 @@
       "name": "Brut Rosé - Grand Cru Grand Rosé",
       "status": "official_confirmed",
       "merchantSourceUrl": "https://www.champagnepaulbara.com/en/bara-grand-cru-champagnes/grand-rose/",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": "https://www.champagnepaulbara.com/en/bara-grand-cru-champagnes/grand-rose/",
       "officialCheckedAt": "2026-07-31",
       "technicalSourceUrl": null,
@@ -684,7 +676,7 @@
       "name": "Éclat d’Étoiles Rosé Brut Grand Cru",
       "status": "official_confirmed_with_correction",
       "merchantSourceUrl": "https://www.champagnelamiable.com/en/the-champagnes/les-elementaires/eclats-d-etoiles.html",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": "https://www.champagnelamiable.com/en/the-champagnes/les-elementaires/eclats-d-etoiles.html",
       "officialCheckedAt": "2026-07-31",
       "technicalSourceUrl": null,
@@ -704,7 +696,7 @@
       "name": "Réserve Blanc de Blancs Grand Cru Brut",
       "status": "official_confirmed",
       "merchantSourceUrl": "https://www.champagne-guy-charlemagne.fr/",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": "https://www.champagne-guy-charlemagne.fr/",
       "officialCheckedAt": "2026-07-31",
       "technicalSourceUrl": null,
@@ -723,7 +715,7 @@
       "name": "Zéro Liqueur Brut Nature Premier Cru",
       "status": "official_confirmed",
       "merchantSourceUrl": "https://www.champagne-sadi-malot.com/en/cuvee/zero-liqueur-2/",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": "https://www.champagne-sadi-malot.com/en/cuvee/zero-liqueur-2/",
       "officialCheckedAt": "2026-07-31",
       "technicalSourceUrl": null,
@@ -742,7 +734,7 @@
       "name": "Rosé de Saignée Friandise Demi-Sec",
       "status": "official_confirmed",
       "merchantSourceUrl": "https://www.champagnejeanvesselle.com/en/demi-sec-rose-friandise/champagne/rose-de-saignee-friandise-2",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": "https://www.champagnejeanvesselle.com/en/demi-sec-rose-friandise/champagne/rose-de-saignee-friandise-2",
       "officialCheckedAt": "2026-07-31",
       "technicalSourceUrl": null,
@@ -761,7 +753,7 @@
       "name": "Cuvée Saint-Pétersbourg Brut",
       "status": "official_producer_confirmed_product_to_document",
       "merchantSourceUrl": "https://www.veuveclicquot.com/",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": "https://www.veuveclicquot.com/",
       "officialCheckedAt": "2026-07-31",
       "technicalSourceUrl": "https://bottleofitaly.com/en/products/champagne-aoc-cuvee-saint-petersbourg-veuve-clicquot",
@@ -782,7 +774,7 @@
       "name": "Signature Brut",
       "status": "official_confirmed_with_correction",
       "merchantSourceUrl": "https://shop.champagne-jacquart.com/collection-signature/50006-mosaique-signature-5-ans-d-age-en-etui-3700252047071.html",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": "https://shop.champagne-jacquart.com/collection-signature/50006-mosaique-signature-5-ans-d-age-en-etui-3700252047071.html",
       "officialCheckedAt": "2026-07-31",
       "technicalSourceUrl": null,
@@ -803,7 +795,7 @@
       "name": "Murmure Brut Nature Premier Cru",
       "status": "official_confirmed_with_correction",
       "merchantSourceUrl": "https://champagne-jl-vergnon.com/en/champagne-murmure/",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": "https://champagne-jl-vergnon.com/en/champagne-murmure/",
       "officialCheckedAt": "2026-07-31",
       "technicalSourceUrl": null,
@@ -822,14 +814,12 @@
       "name": "Nos Pas Dans l’Argile Nature",
       "status": "official_confirmed",
       "merchantSourceUrl": "https://champagne-marie-copinet.com/pdf/fiche_technique_nos_pas_dans_largile.pdf",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": "https://champagne-marie-copinet.com/pdf/fiche_technique_nos_pas_dans_largile.pdf",
       "officialCheckedAt": "2026-07-31",
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": "0 g/L",
         "summary": "La fiche technique officielle confirme un Brut Nature dosé à 0 g/L."
       },
@@ -841,7 +831,7 @@
       "name": "Blanc de Blancs Zero Grand Cru",
       "status": "official_confirmed",
       "merchantSourceUrl": "https://www.champagnevazartcoquart.com/?type_champagne=non-millesime",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": "https://www.champagnevazartcoquart.com/?type_champagne=non-millesime",
       "officialCheckedAt": "2026-07-31",
       "technicalSourceUrl": null,
@@ -860,7 +850,7 @@
       "name": "L’Ineffable Extra Brut Grand Cru",
       "status": "official_confirmed_with_correction",
       "merchantSourceUrl": "https://www.champagne-mouzon-leroux.com/en/lineffable.html",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": "https://www.champagne-mouzon-leroux.com/en/lineffable.html",
       "officialCheckedAt": "2026-07-31",
       "technicalSourceUrl": null,
@@ -879,7 +869,7 @@
       "name": "Les Grandes Crayères Blanc de Blancs Extra Brut",
       "status": "official_confirmed_with_correction",
       "merchantSourceUrl": "https://www.champagne-laherte.com/",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": "https://www.champagne-laherte.com/",
       "officialCheckedAt": "2026-07-31",
       "technicalSourceUrl": null,
@@ -898,7 +888,7 @@
       "name": "Quattuor",
       "status": "official_confirmed",
       "merchantSourceUrl": "https://www.champagne-drappier.com/fr/cuvee/quattuor/",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": "https://www.champagne-drappier.com/fr/cuvee/quattuor/",
       "officialCheckedAt": "2026-07-31",
       "technicalSourceUrl": null,
@@ -920,7 +910,7 @@
       "name": "Soliste Meunier Rosé - Les Charmiers",
       "status": "official_confirmed_with_correction",
       "merchantSourceUrl": "https://www.jmseleque.fr/en/produit/soliste-meunier-rose-2/",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": "https://www.jmseleque.fr/en/produit/soliste-meunier-rose-2/",
       "officialCheckedAt": "2026-07-31",
       "technicalSourceUrl": null,
@@ -939,7 +929,7 @@
       "name": "Louis Salmon 2009",
       "status": "official_confirmed",
       "merchantSourceUrl": "https://www.champagne-billecart.fr/en/millesime/cuvee-louis-salmon-2009",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": "https://www.champagne-billecart.fr/en/millesime/cuvee-louis-salmon-2009",
       "officialCheckedAt": "2026-07-31",
       "technicalSourceUrl": null,
@@ -958,16 +948,12 @@
       "name": "Belle Époque 2016",
       "status": "official_confirmed",
       "merchantSourceUrl": "https://www.perrier-jouet.com/en-ww/champagnes/belle-epoque-brut-2016/",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": "https://www.perrier-jouet.com/en-ww/champagnes/belle-epoque-brut-2016/",
       "officialCheckedAt": "2026-07-31",
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": "La Maison confirme la cuvée Belle Époque Brut issue de la récolte 2016."
       },
@@ -979,16 +965,12 @@
       "name": "Brut - LaMotte",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-brut-lamotte-jacquart",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": null,
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -997,19 +979,15 @@
     {
       "productId": "grand-tour-grand-cuvee-reserve-brut",
       "brand": "Grand Tour",
-      "name": "Grand Cuvee Reserve Brut",
+      "name": "Grande Cuvée Réserve Brut",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-grand-cuvee-reserve-brut-grand-tour",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": null,
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -1021,16 +999,12 @@
       "name": "Assemblage Extra Brut",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-assemblage-extra-brut-daubanton",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": null,
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -1042,16 +1016,12 @@
       "name": "Brut - Fossile",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-brut-fossile-m-g-heucq",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": null,
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -1059,20 +1029,16 @@
     },
     {
       "productId": "alain-mercier-sagacite-brut",
-      "brand": "Alain Mercier",
+      "brand": "Alain Mercier & Fils",
       "name": "Sagacité Brut",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-sagacite-brut-alain-mercier",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": null,
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -1084,16 +1050,12 @@
       "name": "Tradition Brut",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-tradition-brut-j-charpentier",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": null,
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -1105,16 +1067,12 @@
       "name": "AOC - Quarz Brut Tradition",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-aoc-quarz-brut-tradition-cattier",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": null,
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -1126,15 +1084,12 @@
       "name": "Blanc de Noir",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-noir-daubanton",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": null,
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -1146,16 +1101,12 @@
       "name": "AOC Brut Grand Réserve Premier Cru",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-aoc-brut-grand-reserve-premier-cru-de-vilmont",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": null,
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -1164,10 +1115,10 @@
     {
       "productId": "beaumont-des-crayeres-grand-reserve-brut-3-anni",
       "brand": "Beaumont des Crayères",
-      "name": "Grand Reserve Brut - 3 anni",
+      "name": "Grand Réserve Brut - 3 anni",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-grand-reserve-brut-3-anni-beaumont-des-crayeres",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": null,
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
@@ -1184,16 +1135,12 @@
       "name": "Lapie-Lamiable Brut",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-lapie-lamiable-brut-lamiable",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": null,
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -1205,16 +1152,12 @@
       "name": "Extra Brut",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-extra-brut-maison-burtin",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": null,
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -1231,9 +1174,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -1250,11 +1191,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -1271,11 +1208,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -1292,11 +1225,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -1313,11 +1242,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -1334,11 +1259,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -1347,7 +1268,7 @@
     {
       "productId": "paul-bara-brut-grand-cru-reserve",
       "brand": "Paul Bara",
-      "name": "Brut - Grand Cru Reserve",
+      "name": "Brut - Grand Cru Réserve",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/paul-bara-champagne-brut-grand-cru-reserve",
       "merchantCheckedAt": "2026-08-15T05:59:49.428Z",
@@ -1355,11 +1276,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -1376,11 +1293,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -1397,9 +1310,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Pinot Noir"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -1407,7 +1318,7 @@
     },
     {
       "productId": "alain-mercier-cuvee-neon-brut",
-      "brand": "Alain Mercier",
+      "brand": "Alain Mercier & Fils",
       "name": "Cuvée Neon Brut",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-cuvee-neon-brut-alain-mercier",
@@ -1416,9 +1327,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -1435,11 +1344,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -1456,9 +1361,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -1475,11 +1378,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -1496,9 +1395,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -1515,10 +1412,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -1535,11 +1429,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -1556,10 +1446,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -1576,11 +1463,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -1597,11 +1480,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -1618,11 +1497,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -1639,9 +1514,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -1658,9 +1531,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -1668,7 +1539,7 @@
     },
     {
       "productId": "maison-labbe-brut-premier-cru-prestige",
-      "brand": "Maison Labbé",
+      "brand": "Champagne Labbé & Fils",
       "name": "Brut Premier Cru - Prestige",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-brut-premier-cru-prestige-maison-labbe",
@@ -1677,11 +1548,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -1698,9 +1565,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -1717,10 +1582,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -1728,8 +1590,8 @@
     },
     {
       "productId": "benard-pitois-reserve-premier-cru-brut",
-      "brand": "Benard Pitois",
-      "name": "Reserve Premier Cru Brut",
+      "brand": "Bénard-Pitois",
+      "name": "Réserve Premier Cru Brut",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-reserve-premier-cru-brut-benard-pitois",
       "merchantCheckedAt": "2026-08-12T09:35:23.347Z",
@@ -1737,11 +1599,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -1758,11 +1616,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -1779,9 +1633,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -1798,11 +1650,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -1819,9 +1667,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -1838,11 +1684,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -1859,10 +1701,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -1879,11 +1718,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -1900,11 +1735,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -1912,7 +1743,7 @@
     },
     {
       "productId": "maison-labbe-premier-cru-blanc-de-noir",
-      "brand": "Maison Labbé",
+      "brand": "Champagne Labbé & Fils",
       "name": "Premier Cru - Blanc de Noir",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-premier-cru-blanc-de-noir-maison-labbe",
@@ -1921,11 +1752,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -1942,9 +1769,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -1952,20 +1777,16 @@
     },
     {
       "productId": "benard-pitois-rose-premier-cru-brut",
-      "brand": "Benard Pitois",
-      "name": "Rose’ Premier Cru Brut",
+      "brand": "Bénard-Pitois",
+      "name": "Rosé Premier Cru Brut",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-rose-premier-cru-brut-benard-pitois",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": null,
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -1977,16 +1798,12 @@
       "name": "Les Sentes de Mareuil",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-les-sentes-de-mareuil-harlin-pere-et-fils",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": null,
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -1998,7 +1815,7 @@
       "name": "Extra Brut",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-extra-brut-erick-schreiber",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": null,
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
@@ -2015,16 +1832,12 @@
       "name": "L’Atavique Nature Grand Cru",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-l-atavique-nature-grand-cru-mouzon-leroux",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": null,
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -2036,16 +1849,12 @@
       "name": "Réserve d’Aÿ Brut Grand Cru",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-reserve-d-ay-brut-grand-cru-gatinois",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": null,
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -2057,16 +1866,12 @@
       "name": "Brut Vintage 2014",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-brut-vintage-2014-maison-burtin",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": null,
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -2083,11 +1888,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -2099,14 +1900,12 @@
       "name": "Blanc de Blancs Particules Crayeuses Extra Brut Grand Cru",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-particules-crayeuses-extra-brut-grand-cru-waris-larmandier",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": null,
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -2118,16 +1917,12 @@
       "name": "Vintage Brut",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-vintage-brut-chateau-de-bligny",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": null,
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -2139,16 +1934,12 @@
       "name": "Grand Cellier Premier Cru Brut",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-grand-cellier-premier-cru-brut-vilmart",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": null,
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -2160,16 +1951,12 @@
       "name": "Mes Trois Terroirs Nature",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-mes-trois-terroirs-nature-le-guedard",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": null,
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -2181,14 +1968,12 @@
       "name": "Chardonnay Nature Brut",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-chardonnay-nature-brut-vincent-brochet",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": null,
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -2205,11 +1990,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -2226,11 +2007,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -2247,9 +2024,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -2258,7 +2033,7 @@
     {
       "productId": "maurice-grumier-coeur-de-rose",
       "brand": "Maurice Grumier",
-      "name": "Coeur De Rose'",
+      "name": "Coeur De Rosé",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-coeur-de-rose-maurice-grumier",
       "merchantCheckedAt": "2026-08-15T05:59:49.428Z",
@@ -2266,11 +2041,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -2287,9 +2058,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -2306,9 +2075,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -2320,14 +2087,12 @@
       "name": "Blanc de Blancs Millésimé Extra Brut",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-millesime-extra-brut-jean-claude-vallois",
-      "merchantCheckedAt": "2026-08-15T05:59:49.428Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": null,
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -2339,14 +2104,12 @@
       "name": "Blanc de Blancs Cuvée Table Ronde Extra Brut Grand Cru",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-cuvee-table-ronde-extra-brut-grand-cru-lancelot-pienne",
-      "merchantCheckedAt": "2026-08-15T05:59:49.428Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": null,
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -2358,14 +2121,12 @@
       "name": "Blanc de Blancs Grand Bouquet Extra Brut Grand Cru",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-grand-bouquet-extra-brut-grand-cru-vazarat-coquart",
-      "merchantCheckedAt": "2026-08-15T05:59:49.428Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": null,
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -2377,16 +2138,12 @@
       "name": "Nos Pas Dans la Pierre Nature",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-nos-pas-dans-la-pierre-nature-marie-copinet",
-      "merchantCheckedAt": "2026-08-15T05:59:49.428Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": null,
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -2398,16 +2155,12 @@
       "name": "Rosé de Saignée - Les Velours",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-rose-de-saignee-les-velours-m-g-heucq",
-      "merchantCheckedAt": "2026-08-15T05:59:49.428Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": null,
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -2416,17 +2169,15 @@
     {
       "productId": "thierry-massin-vrai-millesime-blanc-de-blancs-brut",
       "brand": "Thierry Massin",
-      "name": "Vrai Millesimè Blanc de Blancs Brut",
+      "name": "Vrai Millésimé Blanc de Blancs Brut",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-vrai-millesime-blanc-de-blancs-brut-thierry-massin",
-      "merchantCheckedAt": "2026-08-15T05:59:49.428Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": null,
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -2438,14 +2189,12 @@
       "name": "Mon Rosé de Saignée Brut",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-mon-rose-de-saignee-brut-le-guedard",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": null,
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Pinot Noir"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -2457,16 +2206,12 @@
       "name": "Rosé Saignée Incandescent Extra Brut Grand Cru",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-rose-saignee-incandescent-extra-brut-grand-cru-mouzon-leroux",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": null,
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -2478,14 +2223,12 @@
       "name": "Blanc de Blancs Millésimé Extra Brut 2018",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-millesime-extra-brut-2018-jean-claude-vallois",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": null,
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -2497,16 +2240,12 @@
       "name": "Anthracite Brut",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/anthracite-brut-corbon",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": null,
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -2518,16 +2257,12 @@
       "name": "AOC Brut - RSRV Cuvée 4.5",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-aoc-brut-rsrv-cuvee-4-5-mumm",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": null,
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -2535,20 +2270,16 @@
     },
     {
       "productId": "bereche-et-fils-reserve-brut",
-      "brand": "Bèreche Et Fils",
+      "brand": "Bérêche et Fils",
       "name": "Réserve Brut",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-reserve-brut-bereche-et-fils",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": null,
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -2565,10 +2296,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -2585,11 +2313,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -2606,11 +2330,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -2627,11 +2347,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -2648,11 +2364,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -2669,11 +2381,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -2690,11 +2398,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -2711,11 +2415,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -2732,9 +2432,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Pinot Noir"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -2751,9 +2449,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -2770,9 +2466,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -2789,9 +2483,7 @@
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -2803,14 +2495,12 @@
       "name": "Le Blanc de Blancs",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-le-blanc-de-blancs-billecart-salmon",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": null,
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -2822,14 +2512,12 @@
       "name": "Blanc de Noirs Largillier Rosé Brut",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-noirs-largillier-rose-brut-jerome-coessens",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": null,
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Pinot Noir"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -2841,14 +2529,12 @@
       "name": "Blanc de Noirs Largillier Nature",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-noirs-largillier-nature-jerome-coessens",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": null,
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Pinot Noir"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -2860,14 +2546,12 @@
       "name": "Cuvée CXVI Blanc de Blancs",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-cuvee-cxvi-blanc-de-blancs-domaine-augustin",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": null,
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -2876,19 +2560,15 @@
     {
       "productId": "alexandre-filaine-cuvee-speciale-brut",
       "brand": "Alexandre Filaine",
-      "name": "Cuvee Speciale Brut",
+      "name": "Cuvée Speciale Brut",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-cuvee-speciale-brut-alexandre-filaine",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": null,
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -2897,17 +2577,15 @@
     {
       "productId": "frederic-savart-rose-bulles-de-rose-extra-brut-1er-cru",
       "brand": "Frèdèric Savart",
-      "name": "Rosé Bulles de Rose Extra Brut 1er Cru",
+      "name": "Rosé Bulles de Rosé Extra Brut 1er Cru",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-rose-bulles-de-rose-extra-brut-1er-cru-frederic-savart",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": null,
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -2919,14 +2597,12 @@
       "name": "Blanc de Blancs - Special Edition Formafantasma",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-special-edition-formafantasma-perrier-jouet",
-      "merchantCheckedAt": "2026-08-16T06:01:05.331Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": null,
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -2938,16 +2614,12 @@
       "name": "Grand Cru Brut",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-grand-cru-brut-egly-ouriet",
-      "merchantCheckedAt": "2026-08-16T06:01:05.331Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": null,
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -2959,14 +2631,12 @@
       "name": "Blanc de Blancs Msnl Extra Brut Grand Cru",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-msnl-extra-brut-grand-cru-j-l-vergon",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": null,
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -2975,17 +2645,15 @@
     {
       "productId": "thomas-perseval-la-pucelle-millesime-brut",
       "brand": "Thomas Perseval",
-      "name": "La Pucelle Millesime’ Brut",
+      "name": "La Pucelle Millésimé Brut",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-la-pucelle-millesime-brut-thomas-perseval",
-      "merchantCheckedAt": "2026-08-17T07:59:18.487Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": null,
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -2994,19 +2662,15 @@
     {
       "productId": "alexandre-filaine-cuvee-dmy-brut",
       "brand": "Alexandre Filaine",
-      "name": "Cuvee DMY Brut",
+      "name": "Cuvée DMY Brut",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/champagne-cuvee-dmy-brut-alexandre-filaine",
-      "merchantCheckedAt": "2026-08-16T06:01:05.331Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": null,
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay",
-          "Pinot Noir",
-          "Meunier"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
@@ -3015,17 +2679,15 @@
     {
       "productId": "krug-grande-cuvee-champagne-aoc-brut",
       "brand": "Krug",
-      "name": "Grande Cuvée Champagne  AOC Brut",
+      "name": "Grande Cuvée Champagne AOC Brut",
       "status": "merchant_only",
       "merchantSourceUrl": "https://bottleofitaly.com/fr/products/grande-cuvee-champagne-aoc-brut-krug",
-      "merchantCheckedAt": "2026-08-16T06:01:05.331Z",
+      "merchantCheckedAt": "2026-08-18T06:02:17.625Z",
       "officialSourceUrl": null,
       "officialCheckedAt": null,
       "technicalSourceUrl": null,
       "facts": {
-        "grapes": [
-          "Chardonnay"
-        ],
+        "grapes": [],
         "dosage": null,
         "summary": null
       },
