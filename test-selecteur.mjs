@@ -270,5 +270,18 @@ const echo = (s) => /Saint-Jacques[\s\S]*Saint-Jacques|dessert crémeux[\s\S]*de
 for (const q of ['saint-jacques', 'crème brûlée', 'velouté de potiron']) if (echo(phrase(q))) { phErr++; console.log('    écho du nom de plat : ' + q); }
 phErr ? fail('qualité des phrases d\'accord (' + phErr + ')') : ok('qualité des phrases d\'accord');
 
+// 11) Plats composés : dans une même proposition, une épice ou un féculent ne crée
+// pas un second plat contradictoire ; les séparateurs préservent les plats distincts.
+const primC = (q) => { const c = det(q); return c.length ? c[0].acc : null; };
+const nFam = (q) => new Set(det(q).map(c => c.acc)).size;
+let compErr = 0;
+if (primC('curry de crevettes') !== 'accord_volaille' || det('curry de crevettes').some(c => c.acc === 'accord_mer')) { compErr++; console.log('    « curry de crevettes » : la mer n\'a pas été absorbée par l\'épicé'); }
+if (primC('risotto au homard') !== 'accord_mer') { compErr++; console.log('    « risotto au homard » non porté par le homard'); }
+if (primC('salade de gésiers') !== 'accord_volaille') { compErr++; console.log('    « salade de gésiers » non portée par les gésiers'); }
+if (primC('salade de chèvre chaud') !== 'accord_fromage') { compErr++; console.log('    « salade de chèvre » non portée par le fromage'); }
+if (nFam('huîtres et un magret') !== 2) { compErr++; console.log('    « et » fusionne à tort deux plats distincts'); }
+if (nFam('foie gras, chapon, bûche') !== 3) { compErr++; console.log('    repas séparé par virgules mal segmenté'); }
+compErr ? fail('plats composés (' + compErr + ')') : ok('plats composés (épice/féculent résolus)');
+
 console.log('\n' + (failures ? '❌ ' + failures + ' test(s) en échec' : '✅ Tous les tests passent'));
 process.exit(failures ? 1 : 0);
