@@ -25,7 +25,7 @@
     },
     {
       "productId": "alain-mercier-cuvee-louis-hurtebisse-brut",
-      "product": "Alain Mercier · Louis Hurtebisse Brut Tradition",
+      "product": "Alain Mercier & Fils · Louis Hurtebisse Brut Tradition",
       "status": "official_producer_confirmed_product_to_document",
       "officialSourceUrl": "https://www.champagne-alain-mercier.com/",
       "technicalSourceUrl": "https://www.tannico.com/products/champagne-brut-cuvee-louis-hurtebisse-alain-mercier",
@@ -73,7 +73,7 @@
     },
     {
       "productId": "grand-tour-grand-cuvee-reserve-brut",
-      "product": "Grand Tour · Grand Cuvee Reserve Brut",
+      "product": "Grand Tour · Grande Cuvée Réserve Brut",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -97,7 +97,7 @@
     },
     {
       "productId": "alain-mercier-sagacite-brut",
-      "product": "Alain Mercier · Sagacité Brut",
+      "product": "Alain Mercier & Fils · Sagacité Brut",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -137,7 +137,7 @@
     },
     {
       "productId": "beaumont-des-crayeres-grand-reserve-brut-3-anni",
-      "product": "Beaumont des Crayères · Grand Reserve Brut - 3 anni",
+      "product": "Beaumont des Crayères · Grand Réserve Brut - 3 anni",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -209,7 +209,7 @@
     },
     {
       "productId": "paul-bara-brut-grand-cru-reserve",
-      "product": "Paul Bara · Brut - Grand Cru Reserve",
+      "product": "Paul Bara · Brut - Grand Cru Réserve",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -233,7 +233,7 @@
     },
     {
       "productId": "alain-mercier-cuvee-neon-brut",
-      "product": "Alain Mercier · Cuvée Neon Brut",
+      "product": "Alain Mercier & Fils · Cuvée Neon Brut",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -337,7 +337,7 @@
     },
     {
       "productId": "maison-labbe-brut-premier-cru-prestige",
-      "product": "Maison Labbé · Brut Premier Cru - Prestige",
+      "product": "Champagne Labbé & Fils · Brut Premier Cru - Prestige",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -361,7 +361,7 @@
     },
     {
       "productId": "benard-pitois-reserve-premier-cru-brut",
-      "product": "Benard Pitois · Reserve Premier Cru Brut",
+      "product": "Bénard-Pitois · Réserve Premier Cru Brut",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -433,7 +433,7 @@
     },
     {
       "productId": "maison-labbe-premier-cru-blanc-de-noir",
-      "product": "Maison Labbé · Premier Cru - Blanc de Noir",
+      "product": "Champagne Labbé & Fils · Premier Cru - Blanc de Noir",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -449,7 +449,7 @@
     },
     {
       "productId": "benard-pitois-rose-premier-cru-brut",
-      "product": "Benard Pitois · Rose’ Premier Cru Brut",
+      "product": "Bénard-Pitois · Rosé Premier Cru Brut",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -569,7 +569,7 @@
     },
     {
       "productId": "maurice-grumier-coeur-de-rose",
-      "product": "Maurice Grumier · Coeur De Rose'",
+      "product": "Maurice Grumier · Coeur De Rosé",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -633,7 +633,7 @@
     },
     {
       "productId": "thierry-massin-vrai-millesime-blanc-de-blancs-brut",
-      "product": "Thierry Massin · Vrai Millesimè Blanc de Blancs Brut",
+      "product": "Thierry Massin · Vrai Millésimé Blanc de Blancs Brut",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -681,7 +681,7 @@
     },
     {
       "productId": "bereche-et-fils-reserve-brut",
-      "product": "Bèreche Et Fils · Réserve Brut",
+      "product": "Bérêche et Fils · Réserve Brut",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -817,7 +817,7 @@
     },
     {
       "productId": "alexandre-filaine-cuvee-speciale-brut",
-      "product": "Alexandre Filaine · Cuvee Speciale Brut",
+      "product": "Alexandre Filaine · Cuvée Speciale Brut",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -825,7 +825,7 @@
     },
     {
       "productId": "frederic-savart-rose-bulles-de-rose-extra-brut-1er-cru",
-      "product": "Frèdèric Savart · Rosé Bulles de Rose Extra Brut 1er Cru",
+      "product": "Frèdèric Savart · Rosé Bulles de Rosé Extra Brut 1er Cru",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -857,7 +857,7 @@
     },
     {
       "productId": "thomas-perseval-la-pucelle-millesime-brut",
-      "product": "Thomas Perseval · La Pucelle Millesime’ Brut",
+      "product": "Thomas Perseval · La Pucelle Millésimé Brut",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -865,7 +865,7 @@
     },
     {
       "productId": "alexandre-filaine-cuvee-dmy-brut",
-      "product": "Alexandre Filaine · Cuvee DMY Brut",
+      "product": "Alexandre Filaine · Cuvée DMY Brut",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
@@ -873,7 +873,7 @@
     },
     {
       "productId": "krug-grande-cuvee-champagne-aoc-brut",
-      "product": "Krug · Grande Cuvée Champagne  AOC Brut",
+      "product": "Krug · Grande Cuvée Champagne AOC Brut",
       "status": "merchant_only",
       "officialSourceUrl": null,
       "technicalSourceUrl": null,
