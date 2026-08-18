@@ -70,6 +70,7 @@ const PRODUCER_CANON = new Map([
   ['alain mercier','Alain Mercier & Fils'],
   ['bereche','Bérêche et Fils'],
   ['bardiau','Champagne Bardiau'],
+  ['daubanton','Daubanton & Fils'],
 ]);
 function canonHouse(s){
   return PRODUCER_CANON.get(normBrand(s)) || cleanName(s);

@@ -869,7 +869,7 @@ function giftOccasionQuestion(){
 }
 
 /* ====================== BLOG ====================== */
-const PUBLISHED_ARTICLE_IDS = new Set(['guide-2026','dosages','accords','moins-50','mariage','cadeau','quantite','blanc-blancs','servir','noel','moins-30','aperitif','huitres','anniversaire','brut-nature','rose-saignee','vigneron','etiquette','rose','rapport-qualite-prix','saint-valentin','conservation','crus','foie-gras','champagne-cremant-prosecco','champagne-fromage','cocktails-champagne']);
+const PUBLISHED_ARTICLE_IDS = new Set(['guide-2026','dosages','accords','moins-50','mariage','cadeau','quantite','blanc-blancs','servir','noel','moins-30','aperitif','huitres','anniversaire','brut-nature','rose-saignee','vigneron','etiquette','rose','rapport-qualite-prix','saint-valentin','conservation','crus','foie-gras','champagne-cremant-prosecco','champagne-fromage','cocktails-champagne','cepages-champagne','champagne-cuisine-asiatique','verre-champagne']);
 const ARTICLE_REWRITES = {
   'aperitif': { read:'5 min', body:`<p>À l'apéritif, le champagne a un rôle précis : ouvrir l'appétit, lancer la soirée et plaire à des palais variés sans dominer les premières bouchées. Le bon choix privilégie la fraîcheur, la lisibilité et une bulle fine plutôt que la puissance.</p>
 <h3>Le profil idéal</h3>
@@ -1670,6 +1670,64 @@ function articles(){
 <p>Pour un cocktail effervescent, une <strong>flûte</strong> ou un verre tulipe conservent la bulle mieux qu'une coupe évasée. Préparez au dernier moment, versez l'effervescent en dernier et lentement, contre la paroi, pour garder la mousse. Sur le service, notre article <a href="/blog/servir/">comment servir le champagne</a> détaille température et ouverture.</p>
 <p>Envie de rester sur le champagne pur plutôt qu'en cocktail ? Le <a href="/selecteur/">sélecteur</a> vous oriente selon l'occasion et le budget, et notre sélection à <a href="/champagne/moins-de-50-euros/">moins de 50 €</a> regorge de bruts parfaits pour l'apéritif.</p>`,
       related:['cattier-brut-premier-cru','j-charpentier-rose-reserve-brut','maison-labbe-brut-premier-cru-tradition'] },
+    { id:'cepages-champagne', cat:'Décryptage', cover:'linear-gradient(135deg,#EAEDE7,#DFE4D8)', date:'Août 2026', read:'7 min',
+      title:"Les cépages du champagne : chardonnay, pinot noir, meunier",
+      excerpt:"Chardonnay, pinot noir, meunier : ce que chaque cépage apporte au champagne, et comment lire un assemblage pour choisir le bon style.",
+      body:`<p>Derrière chaque champagne se cache un choix de cépages. Sept sont autorisés en Champagne, mais trois assurent l'essentiel de la production et façonnent le style d'une cuvée. Comprendre ce que chacun apporte, c'est apprendre à lire une étiquette et à choisir en connaissance de cause.</p>
+<h3>Le chardonnay : finesse et fraîcheur</h3>
+<p>Seul cépage blanc majeur de la région, le chardonnay règne sur la Côte des Blancs. Il apporte la <strong>tension, la minéralité et les notes d'agrumes et de fleurs blanches</strong>, avec un remarquable potentiel de garde. C'est lui, et lui seul, qui compose les <a href="/champagne/blanc-de-blancs/">blancs de blancs</a>. Un champagne à dominante chardonnay sera vif, précis et élégant, idéal à l'apéritif et sur les fruits de mer.</p>
+<h3>Le pinot noir : corps et structure</h3>
+<p>Cépage noir à jus blanc, roi de la Montagne de Reims et de la Côte des Bar, le pinot noir donne la <strong>charpente, la puissance et les notes de fruits rouges</strong>. Il apporte la colonne vertébrale d'un assemblage et la matière qui tient à table. Le vignoble champenois lui réserve environ 38 % de sa surface, la plus grande part des trois.</p>
+<h3>Le meunier : fruit et rondeur</h3>
+<p>Autre cépage noir, à l'aise dans la Vallée de la Marne aux sols plus frais, le meunier offre le <strong>fruit, la souplesse et une rondeur accessible tôt</strong>. Longtemps considéré comme un simple cépage d'appoint, il est aujourd'hui réhabilité par de nombreux vignerons qui le vinifient seul. Il rend les cuvées gourmandes et faciles à aimer.</p>
+<h3>Blanc de blancs, blanc de noirs : lire l'assemblage</h3>
+<p>La plupart des champagnes assemblent les trois cépages pour marier finesse, structure et fruit. Deux familles se distinguent par leur composition :</p>
+<ul>
+<li><strong>Blanc de blancs</strong> : 100 % raisins blancs, donc chardonnay. Tout en fraîcheur et en précision.</li>
+<li><strong>Blanc de noirs</strong> : uniquement des raisins noirs, pinot noir et meunier. Plus de matière et de vinosité.</li>
+</ul>
+<p>Les quatre cépages restants, autorisés mais confidentiels, complètent la palette : pinot blanc, pinot gris (ou fromenteau), petit meslier et arbane, réunis dans quelques cuvées rares dites « aux sept cépages ».</p>
+<h3>Comment choisir selon le cépage</h3>
+<p>Pour un <strong>apéritif</strong> ou un accord iodé, visez un chardonnay dominant, vif et tendu. Pour un <strong>repas</strong> et des plats de caractère, un assemblage riche en pinot noir, ou un blanc de noirs, tiendra la distance. Pour un moment <strong>convivial et fruité</strong>, un meunier généreux fait mouche. La mention du cépage reste un indice de style, pas une note de qualité : le travail du vigneron et le terroir comptent tout autant, comme le rappelle notre article sur les <a href="/blog/crus/">Grand Cru et Premier Cru</a>.</p>
+<p>Pour trouver la cuvée qui correspond à votre goût et à votre occasion, le <a href="/selecteur/">sélecteur</a> compare le style, l'accord et le budget. Et pour approfondir la famille la plus fraîche, lisez notre guide du <a href="/blog/blanc-blancs/">blanc de blancs</a>.</p>`,
+      related:['guy-charlemagne-reserve-blanc-de-blancs-grand-cru-brut','jerome-coessens-blanc-de-noirs-largillier-brut','laherte-freres-rose-de-meunier-extra-brut'] },
+    { id:'champagne-cuisine-asiatique', cat:'Accords', cover:'linear-gradient(135deg,#F1ECE5,#E7DDD1)', date:'Août 2026', read:'7 min',
+      title:"Champagne et cuisine asiatique : sushis, plats épicés, wok",
+      excerpt:"Sushi, curry, canard laqué, ramen : quel champagne pour la cuisine asiatique, du plus iodé au plus épicé. Le guide des accords.",
+      body:`<p>La cuisine asiatique met souvent les vins en difficulté : iode du poisson cru, piment, aigre-doux, umami du soja. Le champagne, lui, s'en tire remarquablement bien. Sa bulle, sa fraîcheur et la possibilité de jouer sur le dosage en font un partenaire d'une souplesse rare. Encore faut-il ajuster le style au plat.</p>
+<h3>Sushis et sashimis : la précision d'un blanc de blancs</h3>
+<p>Le poisson cru et le riz vinaigré appellent un champagne tendu, minéral, peu dosé. Un <a href="/champagne/blanc-de-blancs/">blanc de blancs</a> ou un extra-brut prolonge la finesse sans jamais l'écraser. La bulle nettoie le gras d'un maki au saumon, l'acidité répond au vinaigre de riz. C'est l'un des plus beaux accords qui soient, dans l'esprit de notre article sur les <a href="/blog/huitres/">huîtres</a>.</p>
+<h3>Plats épicés : le sucre au secours du piment</h3>
+<p>Curry thaï, mapo tofu, poulet au sichuan : face au piment, un brut très sec amplifie la chaleur. La bonne réponse est une pointe de douceur. Un <strong>demi-sec</strong>, ou un rosé fruité, calme le feu et rafraîchit le palais. Le fruité fait tampon, le léger sucre adoucit. Nous détaillons cette logique dans notre <a href="/blog/dosages/">guide des dosages</a>.</p>
+<h3>Fritures et beignets : la bulle qui allège</h3>
+<p>Tempura, nems, raviolis frits : rien ne coupe mieux le gras d'une friture qu'une bulle nette et vive. Un brut d'assemblage frais relance l'appétit à chaque bouchée et évite la lourdeur.</p>
+<h3>Umami et soja : de la matière</h3>
+<p>Ramen, plats au soja, canard laqué, porc au caramel : ces saveurs profondes, salées ou aigres-douces, demandent un champagne avec du corps. Un <strong>blanc de noirs</strong> ou une cuvée vineuse tient tête à l'umami, tandis qu'un <a href="/champagne/rose/">rosé</a> vineux épouse la laque sucrée d'un canard grâce à son fruit.</p>
+<h3>Cuisine vietnamienne : fraîcheur et herbes</h3>
+<p>Rouleaux de printemps, bo bun, pho parfumé à la citronnelle et à la coriandre : ici, la fraîcheur prime. Un brut vif ou un blanc de blancs accompagne les herbes et le citron vert sans les couvrir.</p>
+<h3>Une seule bouteille pour un repas asiatique varié</h3>
+<p>Si les plats se succèdent, du cru à l'épicé, misez sur un <strong>rosé fruité</strong> ou un demi-sec léger : ils font le pont entre l'iode, le piment et l'aigre-doux mieux qu'un vin bone-dry. Pour tester un plat précis, tapez « sushi », « curry » ou « canard laqué » dans notre <a href="/selecteur/">sélecteur</a>, qui propose la cuvée la plus adaptée. Notre <a href="/blog/accords/">guide des accords</a> complète ces pistes.</p>`,
+      related:['de-vilmont-brut-blanc-de-blancs','j-charpentier-rose-reserve-brut','jacquart-mosaique-demi-sec'] },
+    { id:'verre-champagne', cat:'Pratique', cover:'linear-gradient(135deg,#F3EEE2,#E9E0CC)', date:'Août 2026', read:'6 min',
+      title:"Flûte, coupe ou verre à vin : quel verre pour le champagne ?",
+      excerpt:"Flûte, coupe ou verre à vin : lequel choisir pour le champagne, et pourquoi les sommeliers ont tranché. Le guide du bon verre.",
+      body:`<p>Le verre change vraiment la dégustation d'un champagne : il décide de la tenue de la bulle et de l'expression des arômes. Entre la flûte, la coupe et le verre à vin, le choix n'est pas qu'une affaire d'esthétique. Voici comment trancher.</p>
+<h3>La coupe : belle, mais peu pratique</h3>
+<p>Large et évasée, la coupe évoque les réceptions d'antan. Elle a un vrai défaut : sa grande ouverture laisse <strong>filer les bulles et les arômes</strong> en quelques minutes. On raconte qu'elle aurait été moulée sur le sein de Marie-Antoinette : c'est une jolie légende, sans fondement historique. Réservez-la aux photos et à certains cocktails, pas à la dégustation d'un beau champagne.</p>
+<h3>La flûte : festive et efficace</h3>
+<p>Haute et étroite, la flûte <strong>préserve la bulle</strong> et offre un joli spectacle de cordons ascendants. C'est le verre de la fête et de l'apéritif, parfait pour un brut convivial ou un <a href="/blog/cocktails-champagne/">cocktail au champagne</a>. Son seul défaut : son étroitesse bride un peu le nez, donc l'expression aromatique d'une grande cuvée.</p>
+<h3>Le verre à vin ou la tulipe : le choix des sommeliers</h3>
+<p>C'est aujourd'hui la référence pour déguster. Un verre légèrement resserré vers le haut, dans l'esprit d'un verre à vin blanc, offre <strong>assez de volume pour libérer les arômes tout en concentrant le bouquet</strong>, et sa forme retient la bulle. Les maisons de Champagne servent de plus en plus leurs cuvées de prestige dans ce type de verre plutôt que dans une flûte. Si vous voulez vraiment goûter un champagne, c'est le bon choix.</p>
+<h3>En résumé</h3>
+<ul>
+<li><strong>Coupe</strong> : pour le style et les cocktails, pas pour la dégustation.</li>
+<li><strong>Flûte</strong> : pour l'apéritif festif et les bulles qui durent.</li>
+<li><strong>Verre à vin ou tulipe</strong> : pour révéler un champagne de caractère.</li>
+</ul>
+<h3>Les bons gestes de service</h3>
+<p>Quel que soit le verre, quelques réflexes font la différence. Remplissez aux <strong>deux tiers</strong> pour laisser le nez s'exprimer. Tenez le verre <strong>par le pied</strong>, jamais par le calice, pour ne pas réchauffer le vin. Rincez vos verres à l'eau chaude sans excès de produit vaisselle : un résidu de détergent casse la mousse. Et versez lentement, contre la paroi, pour préserver la bulle. Pour la température et l'ouverture, voir notre article <a href="/blog/servir/">comment servir le champagne</a>.</p>
+<p>Le bon verre en main, il ne reste plus qu'à choisir la bonne bouteille : le <a href="/selecteur/">sélecteur</a> vous oriente selon l'occasion, l'accord et le budget.</p>`,
+      related:['billecart-salmon-le-blanc-de-blancs','guy-charlemagne-reserve-blanc-de-blancs-grand-cru-brut','cattier-brut-premier-cru'] },
 
   ];
   return list.map(article=>{

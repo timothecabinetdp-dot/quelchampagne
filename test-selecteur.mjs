@@ -232,14 +232,25 @@ regErr ? fail('registre de prix (' + regErr + ' anomalies)') : ok('registre de p
 // ou le budget demandé, le résultat DOIT le signaler ; quand tout est satisfait,
 // aucune note parasite ne doit s'afficher.
 const stateRef = call('state'), rankedFn = call('ranked'), relaxNote = call('relaxNote');
-const topFor = (ans) => { stateRef.answers = Object.assign({ occasion:['occ_diner'], couleur:['couleur_blanc'], dosage:['dos_any'], accord:['accord_any'], gout:['profil_any'], budget:[], repere:['any'] }, ans); return rankedFn()[0].p; };
+const inDosageFn = call('inDosage'), inBudgetFn = call('inBudget');
 let relErr = 0;
-// rosé + extra-brut : 0 en stock → note attendue
-if (!relaxNote(topFor({ couleur:['couleur_rose'], dosage:['dos_sec'] }))) { relErr++; console.log('    compromis dosage non signalé (rosé extra-brut)'); }
-// rosé + brut + 30-45€ : 0 en stock → note attendue
-if (!relaxNote(topFor({ couleur:['couleur_rose'], dosage:['dos_brut'], budget:['b2'] }))) { relErr++; console.log('    compromis budget non signalé (rosé 30-45€)'); }
-// blanc + brut + 45-55€ : offre pleine → aucune note
-if (relaxNote(topFor({ couleur:['couleur_blanc'], dosage:['dos_brut'], budget:['b3'] }))) { relErr++; console.log('    note de compromis parasite (offre satisfaite)'); }
+// Invariant robuste au catalogue : la note de compromis apparaît EXACTEMENT quand
+// le résultat ne respecte pas le dosage ou le budget demandé (jamais sinon).
+const COMBOS = [
+  { couleur: ['couleur_rose'], dosage: ['dos_sec'] },
+  { couleur: ['couleur_rose'], dosage: ['dos_doux'], budget: ['b1'] },
+  { couleur: ['couleur_blanc'], dosage: ['dos_brut'], budget: ['b3'] },
+  { couleur: ['couleur_blanc'], dosage: ['dos_doux'], budget: ['b6'] },
+  { couleur: ['couleur_rose'], dosage: ['dos_brut'], budget: ['b2'] },
+];
+for (const ans of COMBOS) {
+  stateRef.answers = Object.assign({ occasion: ['occ_diner'], couleur: ['couleur_blanc'], dosage: ['dos_any'], accord: ['accord_any'], gout: ['profil_any'], budget: [], repere: ['any'] }, ans);
+  const top = rankedFn()[0].p;
+  const dosage = (ans.dosage || [])[0], budget = (ans.budget || [])[0];
+  const violates = (dosage && dosage !== 'dos_any' && !inDosageFn(top, dosage)) || (budget && !inBudgetFn(top, budget));
+  const noted = !!relaxNote(top);
+  if (violates !== noted) { relErr++; console.log('    incohérence note/réalité : ' + JSON.stringify(ans) + ' → note=' + noted + ', viole=' + violates); }
+}
 stateRef.answers = {};
 relErr ? fail('transparence des compromis (' + relErr + ' anomalies)') : ok('transparence des compromis');
 
