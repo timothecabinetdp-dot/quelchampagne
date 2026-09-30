@@ -2,7 +2,7 @@
   "version": 1,
   "merchant": "Bottle of Italy",
   "network": "Webgains",
-  "checkedAt": "2026-09-29T11:20:37.740Z",
+  "checkedAt": "2026-09-30T11:08:48.547Z",
   "count": 150,
   "records": [
     {
@@ -64,7 +64,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans suivant la production",
         "Accompagnement": "Apéritifs, poisson, crustacés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_49273787482450",
@@ -121,7 +121,7 @@
         "Consommation recommandée": "À consommer dans les 5 ans suivant la production",
         "Accompagnement": "Apéritifs, fruits de mer, plats légers"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_50742403072338",
@@ -176,7 +176,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la production",
         "Accompagnement": "Apéritifs, poisson, crustacés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_42148320575705",
@@ -238,7 +238,7 @@
         "Consommation recommandée": "À consommer jeune, dans les 3-5 ans",
         "Accompagnement": "Apéritifs, fruits de mer, plats légers"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895549903186",
@@ -294,7 +294,7 @@
         "Consommation recommandée": "À consommer jeune pour la fraîcheur",
         "Accompagnement": "Apéritifs, fruits de mer, plats légers"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_50742404284754",
@@ -348,7 +348,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans suivant la production",
         "Accompagnement": "Apéritifs, poisson, crustacés, plats légers"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_50502043140434",
@@ -405,7 +405,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans",
         "Accompagnement": "Apéritifs, poisson, plats légers"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_52901515886930",
@@ -434,7 +434,7 @@
       ],
       "price": 40.85,
       "oldPrice": 49.76,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/ChampagneBrut-MaisonBurtin-min.jpg?v=1774007744",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_52901515886930&productname=Champagne+Brut+-+Maison+Burtin&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-brut-maison-burtin%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-brut-maison-burtin",
@@ -458,7 +458,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans suivant la production",
         "Accompagnement": "Apéritifs, poissons, crustacés, plats légers"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47245068697938",
@@ -516,7 +516,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
         "Accompagnement": "Apéritifs, poisson, crustacés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_50742402810194",
@@ -545,7 +545,7 @@
       ],
       "price": 42,
       "oldPrice": 48.39,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/57500-jean-claude-vallois-blanc-de-blancs-brut-assemblage-noble-1002x1536-min_cd1c422c-139d-48c6-b874-079543a84ef1.jpg?v=1747380565",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50742402810194&productname=Champagne+Blanc+de+Blancs+Brut+Assemblage+Noble+-+Jean-Claude+Vallois&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-blanc-de-blancs-brut-assemblage-noble-jean-claude-vallois%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-brut-assemblage-noble-jean-claude-vallois",
@@ -569,7 +569,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
         "Accompagnement": "Apéritifs, poissons, crustacés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_50742406185298",
@@ -598,7 +598,7 @@
       ],
       "price": 42.28,
       "oldPrice": 48.99,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/57757-daubanton-rose-de-saignee-en-futs-les-vignes-derriere-1002x1536-min.jpg?v=1747324385",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50742406185298&productname=Champagne+Ros%C3%A9+de+Saign%C3%A9e+-+En+F%C3%BBts+Les+Vignes+Derri%C3%A8re+-+Daubanton&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-rose-de-saignee-en-futs-les-vignes-derriere-daubanton%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-rose-de-saignee-en-futs-les-vignes-derriere-daubanton",
@@ -622,7 +622,7 @@
         "Consommation recommandée": "1-3 ans",
         "Accompagnement": "Apéritifs, poissons, viandes blanches"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895568122194",
@@ -652,7 +652,7 @@
       ],
       "price": 42.49,
       "oldPrice": 54.2,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/maxime-ponson-champagne-1er-cru-bottle-of-italy.jpg?v=1726846260",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895568122194&productname=Champagne+Cuv%C3%A9e+Extra+Brut+1er+Cru+-+Maxime+Ponson&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-cuvee-extra-brut-1er-cru-maxime-ponson%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-cuvee-extra-brut-1er-cru-maxime-ponson",
@@ -676,7 +676,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
         "Accompagnement": "Apéritifs, fruits de mer, plats légers"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47245069287762",
@@ -732,7 +732,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans suivant la production",
         "Accompagnement": "Apéritifs, poisson, crustacés, plats légers"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_50742403268946",
@@ -761,7 +761,7 @@
       ],
       "price": 42.82,
       "oldPrice": 50.2,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/57600-maison-yves-loison-cuvee-reserve-clovis-1002x1536-min_bc0c3e03-1372-45bd-8985-00775695307b.jpg?v=1747380242",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50742403268946&productname=Champagne+Cuv%C3%A9e+R%C3%A9serve+-+Clovis+-+Maison+Yves+Loison&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-cuvee-reserve-clovis-maison-yves-loison%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-cuvee-reserve-clovis-maison-yves-loison",
@@ -785,7 +785,7 @@
         "Consommation recommandée": "À consommer jeune ou dans les 5 ans",
         "Accompagnement": "Apéritifs, poisson, crustacés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_43760601956569",
@@ -844,7 +844,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
         "Accompagnement": "Apéritifs, poisson, crustacés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_50742403793234",
@@ -875,7 +875,7 @@
       ],
       "price": 43.64,
       "oldPrice": 48.27,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/57652-mg-heucq-fossile-rose-brut-1002x1536-min.jpg?v=1747326153",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50742403793234&productname=Champagne+Ros%C3%A9+Brut+-+Fossile+-+M.G.+Heucq&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-rose-brut-fossile-m-g-heucq%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-rose-brut-fossile-m-g-heucq",
@@ -899,7 +899,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
         "Accompagnement": "Apéritifs, poissons, viandes blanches, desserts légers"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_50459393425746",
@@ -931,7 +931,7 @@
       ],
       "price": 43.65,
       "oldPrice": 48.19,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/champagne-harlin-l-escapade-bottle-of-italy-min.jpg?v=1742207278",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50459393425746&productname=Champagne+L%27Escapade+-+Harlin+P%C3%A8re+et+Fils&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-lescapade-harlin-pere-et-fils%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-lescapade-harlin-pere-et-fils",
@@ -955,7 +955,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
         "Accompagnement": "Apéritifs, poissons, crustacés, plats raffinés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895597515090",
@@ -985,7 +985,7 @@
       ],
       "price": 43.65,
       "oldPrice": 49.1,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Blanc-de-Noirs-Brut-Beltrand-Brigandat-bottle-of-italy.jpg?v=1714473768",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895597515090&productname=Champagne+Blanc+de+Noirs+Brut+-+Pierre+Brigandat&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-blanc-de-noirs-brut-beltrand-brigandat%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-noirs-brut-beltrand-brigandat",
@@ -1009,7 +1009,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
         "Accompagnement": "Apéritifs, poisson, crustacés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47245072630098",
@@ -1063,7 +1063,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
         "Accompagnement": "Apéritifs, poisson, crustacés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47245071647058",
@@ -1120,7 +1120,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
         "Accompagnement": "Apéritifs, poissons, crustacés, plats légers"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_53712156590418",
@@ -1178,7 +1178,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
         "Accompagnement": "Apéritifs, poisson, crustacés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_50794939580754",
@@ -1231,7 +1231,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans suivant la production",
         "Accompagnement": "Apéritifs, poisson, crustacés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_48453987369298",
@@ -1284,7 +1284,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans suivant la production",
         "Accompagnement": "Apéritifs, poisson, crustacés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895554261330",
@@ -1317,7 +1317,7 @@
       ],
       "price": 46.94,
       "oldPrice": 52.58,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Rose-Reserve-Brut-J.Charpentier-bottle-of-italy.jpg?v=1716907244",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895554261330&productname=Champagne+Ros%C3%A9+R%C3%A9serve+Brut+-+J.Charpentier&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-rose-reserve-brut-j-charpentier%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-rose-reserve-brut-j-charpentier",
@@ -1341,7 +1341,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
         "Accompagnement": "Apéritifs, poissons, viandes blanches, desserts légers"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895603151186",
@@ -1369,7 +1369,7 @@
       ],
       "price": 46.94,
       "oldPrice": 53.36,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/CHAMPAGNE_PETIT_CAMUSCAT-pinot-blanc-bottle-of-italy.jpg?v=1716905041",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895603151186&productname=Champagne+Pinot+Blanc+de+Blancs+Brut+-+Petit+Camusat&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-pinot-blanc-de-blancs-brut-petit-camusat%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-pinot-blanc-de-blancs-brut-petit-camusat",
@@ -1393,7 +1393,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans",
         "Accompagnement": "Apéritifs, poisson, crustacés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_50341299487058",
@@ -1450,7 +1450,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
         "Accompagnement": "Apéritifs, poissons, viandes blanches, desserts fruités"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895552426322",
@@ -1505,7 +1505,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans",
         "Accompagnement": "Apéritifs, poisson, viandes blanches"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895593419090",
@@ -1535,7 +1535,7 @@
       ],
       "price": 47.76,
       "oldPrice": 57.66,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Blanc-de-Blancs-Cuvee-de-Reserve-Brut-Grand-Cru-Bonnet-Gilmert-bottle-of-italy.jpg?v=1714393311",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895593419090&productname=Champagne+Blanc+de+Blancs+Cuv%C3%A9e+de+R%C3%A9serve+Brut+Grand+Cru+-+Bonnet+Gilmert&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-blanc-de-blancs-cuvee-de-reserve-brut-grand-cru-bonnet-gilmert%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-cuvee-de-reserve-brut-grand-cru-bonnet-gilmert",
@@ -1559,7 +1559,7 @@
         "Consommation recommandée": "À consommer dans les 5 ans après la vendange",
         "Accompagnement": "Apéritifs, poisson, crustacés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47245069091154",
@@ -1612,7 +1612,7 @@
         "Consommation recommandée": "À consommer jeune, dans les 3-5 ans",
         "Accompagnement": "Apéritifs, poisson, crustacés, plats raffinés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47245072531794",
@@ -1668,7 +1668,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
         "Accompagnement": "Fruits de mer, poisson, apéritifs légers"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_53712154100050",
@@ -1726,7 +1726,7 @@
         "Consommation recommandée": "À consommer dans les 5 ans suivant la production",
         "Accompagnement": "Apéritifs, poisson, crustacés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_43760854302937",
@@ -1786,7 +1786,7 @@
         "Consommation recommandée": "À consommer jeune, dans les 3-5 ans",
         "Accompagnement": "Apéritifs, poisson, plats légers"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_42029373063385",
@@ -1850,7 +1850,7 @@
         "Consommation recommandée": "À consommer dans les 5 ans après la vendange",
         "Accompagnement": "Apéritifs, poissons, viandes blanches, desserts fruités"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895587815762",
@@ -1883,7 +1883,7 @@
       ],
       "price": 51.88,
       "oldPrice": 57.86,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Eclat-d_Etoiles-Rose-Brut-Grand-Cru-Lamiable-bottle-of-italy.jpg?v=1716905320",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895587815762&productname=Champagne+%C3%89clat+d%E2%80%99%C3%89toiles+Ros%C3%A9+Brut+Grand+Cru+Astucciato+-+Lamiable+2014&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-eclat-d-etoiles-rose-brut-grand-cru-lamiable%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-eclat-d-etoiles-rose-brut-grand-cru-lamiable",
@@ -1907,7 +1907,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
         "Accompagnement": "Apéritifs, poissons, viandes blanches, desserts légers"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47245071843666",
@@ -1963,7 +1963,7 @@
         "Consommation recommandée": "À consommer dans les 5 ans après la vendange",
         "Accompagnement": "Fruits de mer, apéritifs, poisson"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895579525458",
@@ -1993,7 +1993,7 @@
       ],
       "price": 52.7,
       "oldPrice": 60.29,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Brut-Nature-1er-Cru-Sadi-Malot-bottle-of-italy.jpg?v=1714467673",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895579525458&productname=Champagne+Brut+Nature+1er+Cru+-+Sadi+Malot&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-brut-nature-1er-cru-sadi-malot%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-brut-nature-1er-cru-sadi-malot",
@@ -2017,7 +2017,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
         "Accompagnement": "Apéritifs, fruits de mer, plats légers"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895586210130",
@@ -2072,7 +2072,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans",
         "Accompagnement": "Desserts, fruits rouges, pâtisserie"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_43760860201177",
@@ -2134,7 +2134,7 @@
         "Consommation recommandée": "À consommer dans les 5 ans suivant la production",
         "Accompagnement": "Apéritifs, poisson, crustacés, plats raffinés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_50742399205714",
@@ -2164,7 +2164,7 @@
       ],
       "price": 62.73,
       "oldPrice": 72.19,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/57109-jacquart-signature-brut-1002x1536-min_a2cbae12-13e0-4992-a4a9-1143a225063e.jpg?v=1747381917",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50742399205714&productname=Champagne+Brut+-+Signature+-+Astucciato+-+Jacquart&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-brut-signature-astucciato-jacquart%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-brut-signature-astucciato-jacquart",
@@ -2188,7 +2188,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans suivant la production",
         "Accompagnement": "Apéritifs, poisson, crustacés, plats légers"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895594041682",
@@ -2218,7 +2218,7 @@
       ],
       "price": 64.23,
       "oldPrice": 72.86,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Blanc-de-Blancs-Murmure-Nature-1er-Cru-J.L.-Vergon-bottle-of-italy.jpg?v=1714473145",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895594041682&productname=Champagne+Blanc+de+Blancs+Murmure+Nature+1er+Cru+-+J.L.+Vergnon&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-blanc-de-blancs-murmure-nature-1er-cru-j-l-vergon%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-murmure-nature-1er-cru-j-l-vergon",
@@ -2242,7 +2242,7 @@
         "Consommation recommandée": "À consommer dans les 5 ans",
         "Accompagnement": "Fruits de mer, poisson, apéritifs"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895596826962",
@@ -2271,7 +2271,7 @@
       ],
       "price": 65.72,
       "oldPrice": 79.36,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/champagne-marie-copinet-nos-pas-dans-l-argile-bouteille-75-cl-bottle-of-italy.jpg?v=1716906061",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895596826962&productname=Champagne+Nos+Pas+Dans+l%E2%80%99Argile+Nature+-+Marie+Copinet&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-nos-pas-dans-l-argile-nature-marie-copinet%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-nos-pas-dans-l-argile-nature-marie-copinet",
@@ -2295,7 +2295,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans",
         "Accompagnement": "Apéritifs, poisson, crustacés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895590011218",
@@ -2325,7 +2325,7 @@
       ],
       "price": 71.64,
       "oldPrice": 90.2,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Blanc-de-Blancs-Zero-Grand-Cru-Vazarat-Coquart-bottle-of-italy.jpg?v=1714473646",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895590011218&productname=Champagne+Blanc+de+Blancs+Zero+Grand+Cru+-+Vazart-Coquart&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-blanc-de-blancs-zero-grand-cru-vazarat-coquart%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-zero-grand-cru-vazarat-coquart",
@@ -2349,7 +2349,7 @@
         "Consommation recommandée": "À consommer dans les 5 ans après la vendange",
         "Accompagnement": "Fruits de mer, poisson, apéritifs légers"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895579165010",
@@ -2381,7 +2381,7 @@
       ],
       "price": 88.82,
       "oldPrice": 112.65,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/champagne-extra-brut-blanc-de-noirs-grand-cru-lineffable-mouzon-leroux-2bottle-of-italy.jpg?v=1716905389",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895579165010&productname=Champagne+L%E2%80%99Ineffable+Extra+Brut+Grand+Cru+-+Mouzon+Leroux+2017&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-l-ineffable-extra-brut-grand-cru-mouzon-leroux%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-l-ineffable-extra-brut-grand-cru-mouzon-leroux",
@@ -2405,7 +2405,7 @@
         "Consommation recommandée": "À consommer jeune ou dans les 5 ans",
         "Accompagnement": "Apéritifs, fruits de mer, plats légers"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895561797970",
@@ -2437,7 +2437,7 @@
       ],
       "price": 100.71,
       "oldPrice": 120.05,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Les-Grandes-Crayeres-Extra-Brut-Laherte-Freres-bottle-of-italy.jpg?v=1726586784",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895561797970&productname=Champagne+Les+Grandes+Cray%C3%A8res+Extra+Brut+-+Laherte+Fr%C3%A8res+2021&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-les-grandes-crayeres-extra-brut-laherte-freres%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-les-grandes-crayeres-extra-brut-laherte-freres",
@@ -2447,7 +2447,7 @@
         "Producteur": "Laherte Frères\nVintage\n2021",
         "Gradation": "12.5%\nFormat\n75\ncl"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_42150252085465",
@@ -2507,7 +2507,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
         "Accompagnement": "Apéritifs, poissons, crustacés, plats raffinés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895567106386",
@@ -2537,7 +2537,7 @@
       ],
       "price": 125.05,
       "oldPrice": 143.08,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Soliste-Les-Charmiers-Rose-Extra-Brut-1er-Cru-J-M-Seleque-bottle-of-italy.jpg?v=1714467700",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895567106386&productname=Champagne+Soliste+Les+Charmiers+Ros%C3%A9+Extra+Brut+1er+Cru+-+J-M+Seleque+2019&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-soliste-les-charmiers-rose-extra-brut-1er-cru-j-m-seleque%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-soliste-les-charmiers-rose-extra-brut-1er-cru-j-m-seleque",
@@ -2561,7 +2561,7 @@
         "Consommation recommandée": "À consommer dans les 5 ans après la vendange",
         "Accompagnement": "Apéritifs, poisson, crustacés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_50794913464658",
@@ -2616,7 +2616,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
         "Accompagnement": "Apéritifs, poisson, crustacés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_53093687427410",
@@ -2647,7 +2647,7 @@
       ],
       "price": 223.99,
       "oldPrice": 286.08,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-BelleEpoque-Astucciato-Perrier-Jouea_A_t-min_06c3cec4-3ca2-4ec1-960e-f01a00e20602.jpg?v=1775138181",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_53093687427410&productname=Champagne+-+Belle+Epoque+-+Astucciato+-+Perrier-Jou%C3%ABt+2016&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-belle-epoque-astucciato-perrier-jouet%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-belle-epoque-astucciato-perrier-jouet",
@@ -2671,7 +2671,7 @@
         "Consommation recommandée": "À consommer dans les 5 ans suivant la production",
         "Accompagnement": "Apéritifs, poisson, crustacés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_50742402384210",
@@ -2725,7 +2725,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans suivant la production",
         "Accompagnement": "Apéritifs, poisson, crustacés, plats légers"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_49273787416914",
@@ -2781,7 +2781,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans suivant la production",
         "Accompagnement": "Apéritifs, poissons, crustacés, plats légers"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_50742404874578",
@@ -2811,7 +2811,7 @@
       ],
       "price": 37.77,
       "oldPrice": 42.3,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/57750-daubanton-assemblage-extra-brut-1002x1536-min.jpg?v=1747324581",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50742404874578&productname=Champagne+Assemblage+Extra+Brut+-+Daubanton&wgtarget=https://bottleofitaly.com/fr/products/champagne-assemblage-extra-brut-daubanton?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-assemblage-extra-brut-daubanton",
@@ -2835,7 +2835,7 @@
         "Consommation recommandée": "À consommer jeune pour fraîcheur et vivacité",
         "Accompagnement": "Apéritifs, poissons, crustacés, plats raffinés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_50742403596626",
@@ -2888,7 +2888,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans",
         "Accompagnement": "Apéritifs, poisson, crustacés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895551279442",
@@ -2945,7 +2945,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
         "Accompagnement": "Apéritifs, poisson, crustacés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895552524626",
@@ -2975,7 +2975,7 @@
       ],
       "price": 39.2,
       "oldPrice": 47.22,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/J.-Charpentier-Champagne-Tradition-Brut-bottle-of-italy.jpg?v=1726835835",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895552524626&productname=Champagne+Tradition+Brut+-+J.Charpentier&wgtarget=https://bottleofitaly.com/fr/products/champagne-tradition-brut-j-charpentier?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-tradition-brut-j-charpentier",
@@ -2999,7 +2999,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la production",
         "Accompagnement": "Apéritifs, poissons, crustacés, plats légers"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_43760858333401",
@@ -3058,7 +3058,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
         "Accompagnement": "Apéritifs, poisson, crustacés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_50742405759314",
@@ -3086,7 +3086,7 @@
       ],
       "price": 40.5,
       "oldPrice": 46.54,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/57753-daubanton-blanc-de-noir-1002x1536-min.jpg?v=1747324495",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50742405759314&productname=Champagne+Blanc+de+Noir+-+Daubanton&wgtarget=https://bottleofitaly.com/fr/products/champagne-blanc-de-noir-daubanton?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-noir-daubanton",
@@ -3110,7 +3110,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
         "Accompagnement": "Apéritifs, poisson, crustacés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_43760591864025",
@@ -3171,7 +3171,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans suivant la production",
         "Accompagnement": "Apéritifs, poisson, crustacés, plats raffinés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_48453987238226",
@@ -3222,7 +3222,7 @@
         "Consommation recommandée": "À consommer dans les 5 ans",
         "Accompagnement": "Apéritifs, poisson, crustacés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895586308434",
@@ -3254,7 +3254,7 @@
       ],
       "price": 42.82,
       "oldPrice": 53.24,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Lapie-Lamiable-Brut-Lamiable-bottle-of-italy.jpg?v=1716905747",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895586308434&productname=Champagne+Lapie-Lamiable+Brut+-+Lamiable&wgtarget=https://bottleofitaly.com/fr/products/champagne-lapie-lamiable-brut-lamiable?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-lapie-lamiable-brut-lamiable",
@@ -3277,7 +3277,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
         "Accompagnement": "Apéritifs, poisson, crustacés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_50385379819858",
@@ -3334,7 +3334,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
         "Accompagnement": "Apéritifs, fruits de mer, plats légers"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895586242898",
@@ -3366,7 +3366,7 @@
       ],
       "price": 43.65,
       "oldPrice": 53.48,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Coteaux-Champenois-Bouzy-Blanc-Jean-Vesselle-bottle-of-italy.jpg?v=1714474772",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895586242898&productname=Champagne+Coteaux+Champenois+Bouzy+Blanc+-+Jean+Vesselle+2022&wgtarget=https://bottleofitaly.com/fr/products/champagne-coteaux-champenois-bouzy-blanc-jean-vesselle?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-coteaux-champenois-bouzy-blanc-jean-vesselle",
@@ -3388,7 +3388,7 @@
         "Température de service": "16-18°C",
         "Accompagnement": "Viande rouge, fromages affinés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_50742402318674",
@@ -3444,7 +3444,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans",
         "Accompagnement": "Desserts, pâtisserie, foie gras"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_50742399598930",
@@ -3498,7 +3498,7 @@
         "Consommation recommandée": "À consommer jeune pour la fraîcheur",
         "Accompagnement": "Apéritifs, fruits de mer, plats légers"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895579361618",
@@ -3530,7 +3530,7 @@
       ],
       "price": 45.29,
       "oldPrice": 56.77,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-L_Equilibre-Brut-1er-Cru-Sadi-Malot-bottle-of-italy.jpg?v=1716905560",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895579361618&productname=Champagne+L%E2%80%99%C3%89quilibre+Brut+1er+Cru+-+Sadi+Malot&wgtarget=https://bottleofitaly.com/fr/products/champagne-l-equilibre-brut-1er-cru-sadi-malot?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-l-equilibre-brut-1er-cru-sadi-malot",
@@ -3554,7 +3554,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
         "Accompagnement": "Apéritifs, poisson, crustacés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_50794910253394",
@@ -3607,7 +3607,7 @@
         "Consommation recommandée": "À consommer jeune pour la fraîcheur",
         "Accompagnement": "Apéritifs, fruits de mer, plats légers"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_53271237001554",
@@ -3658,7 +3658,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la production",
         "Accompagnement": "Apéritifs, poisson, crustacés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_42029373030617",
@@ -3720,7 +3720,7 @@
         "Consommation recommandée": "À consommer dans les 5 ans après la vendange",
         "Accompagnement": "Apéritifs, poisson, crustacés, plats raffinés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_42150251626713",
@@ -3782,7 +3782,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
         "Accompagnement": "Apéritifs, poisson, crustacés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895597941074",
@@ -3812,7 +3812,7 @@
       ],
       "price": 46.94,
       "oldPrice": 56.78,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Pinot-Noir-de-Channes-Nature-Beltrand-Brigandat-bottle-of-italy.jpg?v=1716906392",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895597941074&productname=Champagne+Pinot+Noir+de+Channes+Nature+-+Pierre+Brigandat&wgtarget=https://bottleofitaly.com/fr/products/champagne-pinot-noir-de-channes-nature-beltrand-brigandat?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-pinot-noir-de-channes-nature-beltrand-brigandat",
@@ -3836,7 +3836,7 @@
         "Consommation recommandée": "À consommer dans les 5 ans après la vendange",
         "Accompagnement": "Apéritifs, poisson, viandes blanches"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895551672658",
@@ -3866,7 +3866,7 @@
       ],
       "price": 47.43,
       "oldPrice": 55.03,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/alain_mercier_neon-bottle-of-italy.jpg?v=1716904235",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895551672658&productname=Champagne+Cuv%C3%A9e+Neon+Brut+-+Alain+Mercier&wgtarget=https://bottleofitaly.com/fr/products/champagne-cuvee-neon-brut-alain-mercier?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-cuvee-neon-brut-alain-mercier",
@@ -3890,7 +3890,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
         "Accompagnement": "Apéritifs, poisson, crustacés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895598104914",
@@ -3944,7 +3944,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans",
         "Accompagnement": "Apéritifs, poissons, viandes blanches, desserts légers"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895586341202",
@@ -4000,7 +4000,7 @@
         "Consommation recommandée": "À consommer dans les 5 ans après la vendange",
         "Accompagnement": "Apéritifs, poisson, crustacés, plats raffinés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_53271237165394",
@@ -4028,7 +4028,7 @@
       ],
       "price": 47.73,
       "oldPrice": 60.84,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/ChampagneArtDecoExtraBrut-Collet-min.jpg?v=1776958784",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_53271237165394&productname=Champagne+Art+Deco+Extra+Brut+-+Collet&wgtarget=https://bottleofitaly.com/fr/products/champagne-art-deco-extra-brut-fontanafredda?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-art-deco-extra-brut-fontanafredda",
@@ -4052,7 +4052,7 @@
         "Consommation recommandée": "À consommer jeune pour la fraîcheur",
         "Accompagnement": "Apéritifs, fruits de mer, plats légers"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895589749074",
@@ -4082,7 +4082,7 @@
       ],
       "price": 47.76,
       "oldPrice": 52.36,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Blanc-de-Blancs-Reserve-Brut-Grand-Cru-Vazarat-Coquart-bottle-of-italy.jpg?v=1714473595",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895589749074&productname=Champagne+Blanc+de+Blancs+R%C3%A9serve+Brut+Grand+Cru+-+Vazart-Coquart&wgtarget=https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-reserve-brut-grand-cru-vazarat-coquart?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-reserve-brut-grand-cru-vazarat-coquart",
@@ -4106,7 +4106,7 @@
         "Consommation recommandée": "À consommer dans les 5 ans après la vendange",
         "Accompagnement": "Fruits de mer, poisson, apéritifs"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_50742404383058",
@@ -4135,7 +4135,7 @@
       ],
       "price": 48.41,
       "oldPrice": 60.45,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/57703-maison-tornay-extra-brut-1002x1536-min.jpg?v=1747324929",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50742404383058&productname=Champagne+Extra+Brut+-+Maison+Tornay&wgtarget=https://bottleofitaly.com/fr/products/champagne-extra-brut-maison-tornay?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-extra-brut-maison-tornay",
@@ -4159,7 +4159,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
         "Accompagnement": "Apéritifs, fruits de mer, plats légers"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_50742404350290",
@@ -4190,7 +4190,7 @@
       ],
       "price": 48.41,
       "oldPrice": 59.89,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/57702-maison-tornay-rose-premier-cru-1002x1536-min.jpg?v=1747324966",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50742404350290&productname=Champagne+Ros%C3%A9+Premier+Cru+-+Maison+Tornay&wgtarget=https://bottleofitaly.com/fr/products/champagne-rose-premier-cru-maison-tornay?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-rose-premier-cru-maison-tornay",
@@ -4214,7 +4214,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
         "Accompagnement": "Apéritifs, poisson, viandes blanches, desserts légers"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895888953682",
@@ -4245,7 +4245,7 @@
       ],
       "price": 48.59,
       "oldPrice": 54.13,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Reserve-Brut-Jean-Vesselle-bottle-of-italy.jpg?v=1716906668",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895888953682&productname=Champagne+R%C3%A9serve+Brut+-+Jean+Vesselle&wgtarget=https://bottleofitaly.com/fr/products/champagne-reserve-brut-jean-vesselle?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-reserve-brut-jean-vesselle",
@@ -4268,7 +4268,7 @@
         "Consommation recommandée": "À consommer jeune, dans les 3-5 ans",
         "Accompagnement": "Apéritifs, fruits de mer, plats légers"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_52901515067730",
@@ -4298,7 +4298,7 @@
       ],
       "price": 48.75,
       "oldPrice": 57.79,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/burtin-rose-champagne-bottle-of-italy-min.jpg?v=1774014774",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_52901515067730&productname=Champagne+Brut+Ros%C3%A9+-+Maison+Burtin&wgtarget=https://bottleofitaly.com/fr/products/champagne-brut-rose-maison-burtin?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-brut-rose-maison-burtin",
@@ -4322,7 +4322,7 @@
         "Consommation recommandée": "À consommer jeune, dans les 3-5 ans",
         "Accompagnement": "Apéritifs, poissons, viandes blanches, desserts légers"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895568187730",
@@ -4356,7 +4356,7 @@
       ],
       "price": 49.08,
       "oldPrice": 61.24,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/maxime-ponson-champagne-premier-cru-la-petite-montagne-extra-brut-ml-750-bottle-of-italy.jpg?v=1726587569",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895568187730&productname=Champagne+La+Petite+Montagne+Extra+Brut+1er+Cru+-+Maxime+Ponson&wgtarget=https://bottleofitaly.com/fr/products/champagne-la-petite-montagne-extra-brut-1er-cru-maxime-ponson?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-la-petite-montagne-extra-brut-1er-cru-maxime-ponson",
@@ -4380,7 +4380,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
         "Accompagnement": "Apéritifs, fruits de mer, plats légers"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895586144594",
@@ -4412,7 +4412,7 @@
       ],
       "price": 49.25,
       "oldPrice": 58.57,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Reserve-Demi-Sec-Jean-Vesselle-bottle-of-italy.jpg?v=1716906768",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895586144594&productname=Champagne+R%C3%A9serve+Demi-Sec+-+Jean+Vesselle&wgtarget=https://bottleofitaly.com/fr/products/champagne-reserve-demi-sec-jean-vesselle?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-reserve-demi-sec-jean-vesselle",
@@ -4436,7 +4436,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la production",
         "Accompagnement": "Desserts, fromages affinés, foie gras"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_50742403531090",
@@ -4485,7 +4485,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans",
         "Accompagnement": "Apéritifs, poisson, crustacés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_50502043533650",
@@ -4540,7 +4540,7 @@
         "Consommation recommandée": "À consommer jeune ou dans les 5 ans",
         "Accompagnement": "Apéritifs, poisson, crustacés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_50742403137874",
@@ -4594,7 +4594,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
         "Accompagnement": "Apéritifs, poisson, crustacés, plats raffinés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895592698194",
@@ -4679,7 +4679,7 @@
       ],
       "price": 52.37,
       "oldPrice": 59.37,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/ChampagneVignesMonGrandPere_BlancdeNoirs_Nature-LeGuedard-bottle-of-italy.jpg?v=1726829551",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895559733586&productname=Champagne+Vignes+Mon+Grand+P%C3%A8re+Blanc+de+Noirs+Nature+-+Le+Gu%C3%A8dard&wgtarget=https://bottleofitaly.com/fr/products/champagne-vignes-mon-grand-pereblanc-de-noirsnature-le-guedard?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-vignes-mon-grand-pereblanc-de-noirsnature-le-guedard",
@@ -4703,7 +4703,7 @@
         "Consommation recommandée": "À consommer dans les 5 ans après la vendange",
         "Accompagnement": "Apéritifs, poisson, crustacés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_53712156787026",
@@ -4760,7 +4760,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
         "Accompagnement": "Apéritifs, poisson, crustacés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895560618322",
@@ -4818,7 +4818,7 @@
         "Consommation recommandée": "À consommer dans les 5 ans suivant la vendange",
         "Accompagnement": "Desserts, fromages affinés, foie gras"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895591158098",
@@ -4847,7 +4847,7 @@
       ],
       "price": 53.53,
       "oldPrice": 59.61,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Blanc-de-Blancs-Dame-du-Lac-Brut-Lancelot-Pienne-bottle-of-italy.jpg?v=1714393463",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895591158098&productname=Champagne+Blanc+de+Blancs+Dame+du+Lac+Brut+-+Lancelot+Pienne&wgtarget=https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-dame-du-lac-brut-lancelot-pienne?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-dame-du-lac-brut-lancelot-pienne",
@@ -4871,7 +4871,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
         "Accompagnement": "Fruits de mer, apéritifs, poisson"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895591125330",
@@ -4903,7 +4903,7 @@
       ],
       "price": 53.53,
       "oldPrice": 64.75,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Cuvee-Accord-Majeur-Brut-Lancelot-Pienne-bottle-of-italy.jpg?v=1714475056",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895591125330&productname=Champagne+Cuv%C3%A9e+Accord+Majeur+Brut+-+Lancelot+Pienne&wgtarget=https://bottleofitaly.com/fr/products/champagne-cuvee-accord-majeur-brut-lancelot-pienne?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-cuvee-accord-majeur-brut-lancelot-pienne",
@@ -4927,7 +4927,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
         "Accompagnement": "Apéritifs, poissons, crustacés, plats raffinés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895589912914",
@@ -4958,7 +4958,7 @@
       ],
       "price": 53.53,
       "oldPrice": 59.95,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Blanc-de-Blancs-Extra-Brut-Grand-Cru-Vazarat-Coquart-bottle-of-italy.jpg?v=1714472890",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895589912914&productname=Champagne+Blanc+de+Blancs+Extra+Brut+Grand+Cru+-+Vazart-Coquart&wgtarget=https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-extra-brut-grand-cru-vazarat-coquart?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-extra-brut-grand-cru-vazarat-coquart",
@@ -4982,7 +4982,7 @@
         "Consommation recommandée": "À consommer dans les 5 ans après la vendange",
         "Accompagnement": "Fruits de mer, poisson, apéritifs"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_50742403563858",
@@ -5011,7 +5011,7 @@
       ],
       "price": 53.87,
       "oldPrice": 58.69,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/57604-maison-yves-loison-cuvee-hippolyte-premier-cru-1002x1536-min.jpg?v=1747380094",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50742403563858&productname=Champagne+Cuv%C3%A9e+Premier+Cru+-+Hyppolite+-+Maison+Yves+Loison&wgtarget=https://bottleofitaly.com/fr/products/champagne-cuvee-premier-cru-hyppolite-maison-yves-loison?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-cuvee-premier-cru-hyppolite-maison-yves-loison",
@@ -5035,7 +5035,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
         "Accompagnement": "Apéritifs, poisson, crustacés, plats raffinés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_42150251757785",
@@ -5096,7 +5096,7 @@
         "Consommation recommandée": "À consommer dans les 5 ans après la vendange",
         "Accompagnement": "Fruits de mer, poisson, apéritifs légers"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47245068206418",
@@ -5154,7 +5154,7 @@
         "Consommation recommandée": "À consommer jeune pour la fraîcheur",
         "Accompagnement": "Apéritifs, fruits de mer, plats légers"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_50742403858770",
@@ -5183,7 +5183,7 @@
       ],
       "price": 55.23,
       "oldPrice": 65.07,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/57653-mg-heucq-tandem-extra-brut-1002x1536-min.jpg?v=1747326122",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50742403858770&productname=Champagne+Extra+Brut+-+Tandem+-+M.G.+Heucq&wgtarget=https://bottleofitaly.com/fr/products/champagne-extra-brut-tandem-m-g-heucq?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-extra-brut-tandem-m-g-heucq",
@@ -5205,7 +5205,7 @@
         "Consommation recommandée": "À consommer jeune pour la fraîcheur",
         "Accompagnement": "Apéritifs, fruits de mer, plats légers"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_50742403236178",
@@ -5236,7 +5236,7 @@
       ],
       "price": 55.91,
       "oldPrice": 70.82,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/57553-maison-labbe-blanc-de-noir-premier-cru-1002x1536-min.jpg?v=1747380336",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50742403236178&productname=Champagne+Premier+Cru+-+Blanc+de+Noir+-+Maison+Labb%C3%A9&wgtarget=https://bottleofitaly.com/fr/products/champagne-premier-cru-blanc-de-noir-maison-labbe?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-premier-cru-blanc-de-noir-maison-labbe",
@@ -5260,7 +5260,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
         "Accompagnement": "Apéritifs, poisson, crustacés, viandes blanches"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_50502043894098",
@@ -5317,7 +5317,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
         "Accompagnement": "Fruits de mer, poisson, apéritifs légers"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_53712157540690",
@@ -5357,8 +5357,26 @@
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_53712157540690&productname=Champagne+Rose%E2%80%99+Premier+Cru+Brut+-+Benard+Pitois&wgtarget=https://bottleofitaly.com/fr/products/champagne-rose-premier-cru-brut-benard-pitois?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-rose-premier-cru-brut-benard-pitois",
       "merchantDescription": "Benard Pitois Premier Cru Brut se présente avec des bulles fines et vibrantes qui invitent immédiatement à la dégustation. Au nez se révèlent des fraises des bois et de la cerise fraîche, de petits agrumes et une touche florale qui ne domine pas ; une légère note de viennoiserie apporte de la complexité sans alourdir. La bulle persistante crée une mousse délicate qui soulève les arômes et apporte de l'éclat en bouche. L'impression est d'un équilibre entre fraîcheur et matière : l'acidité est vive mais intégrée, la trame minérale soutient le fruit et laisse présager un profil élégant et immédiat.\nEn bouche, il tient la promesse olfactive : une attaque svelte, crémeuse dans la mousse, avec des retours de fruits rouges et d'écorce de citron qui s'étirent dans une persistance agréable. La finale est sapide et de bonne longueur, avec une note agrumée qui renouvelle la dégustation et incite à la gorgée suivante. Adapté tant en apéritif qu'en accompagnement de plats délicats — tartare de poisson, crustacés, saumon fumé ou fromages frais —, il se sert frais mais non glacé, autour de 8–10°C, pour en apprécier la finesse et l'équilibre.",
-      "technicalData": {},
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "technicalData": {
+        "Format": "ions techniques",
+        "Producteur": "Benard Pitois",
+        "Nom": "Champagne Premier Cru",
+        "Variété": "Pinot Noir, Pinot Meunier, Chardonnay",
+        "Gradation": "12.0%\nFormat\n75\ncl",
+        "Profil aromatique": "Fruits rouges, notes florales, levure",
+        "Méthode de vinification": "Méthode classique avec refermentation en bouteille",
+        "Sucres résiduels": "Brut, moins de 12 g/l",
+        "Région": "Champagne\nZone de production\nPremier Cru, Champagne",
+        "Pays": "France",
+        "Taper": "Vin mousseux",
+        "Vieillissement": "Minimum 15 mois sur lies",
+        "Type de fût": "Cuves en acier inoxydable et bouteille pour refermentation",
+        "Couleur": "Rose pâle",
+        "Température de service": "8-10°C",
+        "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
+        "Accompagnement": "Apéritifs, poisson, viandes blanches, desserts légers"
+      },
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_50459393720658",
@@ -5389,7 +5407,7 @@
       ],
       "price": 57.11,
       "oldPrice": 68.83,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/champagne-harlin-les-sentes-de-mareuil-blanc-de-noirs-bottle-of-italy-min.jpg?v=1742207296",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50459393720658&productname=Champagne+Les+Sentes+de+Mareuil+-+Harlin+P%C3%A8re+et+Fils&wgtarget=https://bottleofitaly.com/fr/products/champagne-les-sentes-de-mareuil-harlin-pere-et-fils?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-les-sentes-de-mareuil-harlin-pere-et-fils",
@@ -5413,7 +5431,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans",
         "Accompagnement": "Apéritifs, poisson, crustacés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47245073285458",
@@ -5466,7 +5484,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
         "Accompagnement": "Apéritifs, fruits de mer, plats légers"
       },
-      "checkedAt": "2026-09-28T11:39:32.382Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895578313042",
@@ -5522,7 +5540,7 @@
         "Consommation recommandée": "À consommer dans les 5-7 ans après la vendange",
         "Accompagnement": "Apéritifs, poisson, crustacés"
       },
-      "checkedAt": "2026-09-28T11:39:32.382Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895560159570",
@@ -5555,7 +5573,7 @@
       ],
       "price": 59.29,
       "oldPrice": 73.34,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Reserve-d_Ay-Brut-Grand-Cru-Gatinois-bottle-of-italy.jpg?v=1726215798",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895560159570&productname=Champagne+R%C3%A9serve+d%E2%80%99A%C3%BF+Brut+Grand+Cru+-+Gatinois&wgtarget=https://bottleofitaly.com/fr/products/champagne-reserve-d-ay-brut-grand-cru-gatinois?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-reserve-d-ay-brut-grand-cru-gatinois",
@@ -5579,7 +5597,7 @@
         "Consommation recommandée": "À consommer dans les 5 ans après la vendange",
         "Accompagnement": "Apéritifs, poissons, crustacés, plats raffinés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_52901514117458",
@@ -5610,7 +5628,7 @@
       ],
       "price": 59.29,
       "oldPrice": 69.9,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/ChampagneBrutVintage2014-MaisonBurtin-min.jpg?v=1774007750",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_52901514117458&productname=Champagne+Brut+Vintage+2014+-+Maison+Burtin+2014&wgtarget=https://bottleofitaly.com/fr/products/champagne-brut-vintage-2014-maison-burtin?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-brut-vintage-2014-maison-burtin",
@@ -5633,7 +5651,7 @@
         "Consommation recommandée": "À consommer dans les 10 ans",
         "Accompagnement": "Apéritifs, poissons, crustacés, plats raffinés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895592599890",
@@ -5665,7 +5683,7 @@
       ],
       "price": 60.61,
       "oldPrice": 70.68,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Cuvee-L_Instant-du-Passion-Rose-Extra-Brut-Waris-Larmandier-bottle-of-italy.jpg?v=1714475337",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895592599890&productname=Champagne+Cuv%C3%A9e+L%E2%80%99Instant+du+Passion+Ros%C3%A9+Extra+Brut+-+Waris+Larmandier&wgtarget=https://bottleofitaly.com/fr/products/champagne-cuvee-l-instant-du-passion-rose-extra-brut-waris-larmandier?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-cuvee-l-instant-du-passion-rose-extra-brut-waris-larmandier",
@@ -5689,7 +5707,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
         "Accompagnement": "Apéritifs, poissons, crustacés, plats légers"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895591485778",
@@ -5720,7 +5738,7 @@
       ],
       "price": 60.61,
       "oldPrice": 69.25,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Blanc-de-Blancs-Particules-Crayeuses-Extra-Brut-Grand-Cru-Magnum-Waris-Larmandier-bottle-of-italy_45545cd2-c297-44b8-9953-09aaed8e97bd.jpg?v=1714473554",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895591485778&productname=Champagne+Blanc+de+Blancs+Particules+Crayeuses+Extra+Brut+Grand+Cru+-+Waris+Larmandier&wgtarget=https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-particules-crayeuses-extra-brut-grand-cru-waris-larmandier?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-particules-crayeuses-extra-brut-grand-cru-waris-larmandier",
@@ -5744,7 +5762,7 @@
         "Consommation recommandée": "À consommer dans les 5 ans après la vendange",
         "Accompagnement": "Fruits de mer, poisson, apéritifs"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_49249111834962",
@@ -5800,7 +5818,7 @@
         "Consommation recommandée": "À consommer jeune ou dans les 5 ans",
         "Accompagnement": "Apéritifs, poissons, crustacés, plats raffinés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_53712154558802",
@@ -5858,7 +5876,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
         "Accompagnement": "Apéritifs, poisson, crustacés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895559799122",
@@ -5891,7 +5909,7 @@
       ],
       "price": 60.94,
       "oldPrice": 66.99,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/terroirs-bottle-of-italy.jpg?v=1716909217",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895559799122&productname=Champagne+Mes+Trois+Terroirs+Nature+-+Le+Gu%C3%A8dard&wgtarget=https://bottleofitaly.com/fr/products/champagne-mes-trois-terroirs-nature-le-guedard?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-mes-trois-terroirs-nature-le-guedard",
@@ -5915,7 +5933,7 @@
         "Consommation recommandée": "Vin parfait à boire immédiatement, mais peut bien évoluer s'il est conservé en cave",
         "Accompagnement": "Apéritifs, poisson, crustacés, plats raffinés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47245068599634",
@@ -5970,7 +5988,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans",
         "Accompagnement": "Apéritifs, poisson, crustacés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895564583250",
@@ -6003,7 +6021,7 @@
       ],
       "price": 61.76,
       "oldPrice": 78.91,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Cuvee-Solessence-Extra-Brut-J-M-Seleque-bottle-of-italy.jpg?v=1726231335",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895564583250&productname=Champagne+Cuv%C3%A9e+Solessence+Extra+Brut+-+J-M+Seleque&wgtarget=https://bottleofitaly.com/fr/products/champagne-cuvee-solessence-extra-brut-j-m-seleque?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-cuvee-solessence-extra-brut-j-m-seleque",
@@ -6027,7 +6045,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
         "Accompagnement": "Apéritifs, fruits de mer, plats légers"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_49249112326482",
@@ -6083,7 +6101,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
         "Accompagnement": "Apéritifs, fruits de mer, plats légers"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895564026194",
@@ -6116,7 +6134,7 @@
       ],
       "price": 62.59,
       "oldPrice": 68.04,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Rose-de-Meunier-Extra-Brut-Laherte-Freres-botte-of-italy.jpg?v=1716906944",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895564026194&productname=Champagne+Ros%C3%A9+de+Meunier+Extra+Brut+-+Laherte+Fr%C3%A8res&wgtarget=https://bottleofitaly.com/fr/products/champagne-rose-de-meunier-extra-brut-laherte-freres?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-rose-de-meunier-extra-brut-laherte-freres",
@@ -6126,7 +6144,7 @@
         "Producteur": "Laherte Frères",
         "Gradation": "12.5%\nFormat\n75\ncl"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_49249109508434",
@@ -6188,7 +6206,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
         "Accompagnement": "Apéritifs, poissons, crustacés, desserts légers"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895594107218",
@@ -6218,7 +6236,7 @@
       ],
       "price": 64.23,
       "oldPrice": 80.3,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Blanc-de-Blancs-Conversation-Brut-Grand-Cru-J.L.-Vergon-bottle-of-italy.jpg?v=1714392972",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895594107218&productname=Champagne+Blanc+de+Blancs+Conversation+Brut+Grand+Cru+-+J.L.+Vergnon&wgtarget=https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-conversation-brut-grand-cru-j-l-vergon?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-conversation-brut-grand-cru-j-l-vergon",
@@ -6242,7 +6260,7 @@
         "Consommation recommandée": "À consommer dans les 5 ans après la vendange",
         "Accompagnement": "Apéritifs, poisson, crustacés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895596040530",
@@ -6273,7 +6291,7 @@
       ],
       "price": 64.23,
       "oldPrice": 75.91,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/cromatique-regnault-bottle-of-italy.jpg?v=1726837061",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895596040530&productname=Champagne+Blanc+de+Blancs+Chromatique+Extra+Brut+Grand+Cru+-+Stephane+Regnault&wgtarget=https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-chromatique-extra-brut-grand-cru-stephane-regnault?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-chromatique-extra-brut-grand-cru-stephane-regnault",
@@ -6297,7 +6315,7 @@
         "Consommation recommandée": "À consommer dans les 5 ans après la vendange",
         "Accompagnement": "Fruits de mer, poisson, apéritifs"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_50742403006802",
@@ -6330,7 +6348,7 @@
       ],
       "price": 64.78,
       "oldPrice": 73.66,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/57503-jean-claude-vallois-blanc-de-blancs-millesime-2014-extra-brut-1002x1536-min.jpg?v=1747380519",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50742403006802&productname=Champagne+Blanc+de+Blancs+Mill%C3%A9sim%C3%A9+Extra+Brut+-+Jean-Claude+Vallois+2014&wgtarget=https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-millesime-extra-brut-jean-claude-vallois?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-millesime-extra-brut-jean-claude-vallois",
@@ -6354,7 +6372,7 @@
         "Consommation recommandée": "À consommer dans les 5-7 ans après la vendange",
         "Accompagnement": "Fruits de mer, poisson, apéritifs légers"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895591223634",
@@ -6442,7 +6460,7 @@
       ],
       "price": 65.55,
       "oldPrice": 75.51,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Blanc-de-Blancs-Grand-Bouquet-Extra-Brut-Grand-Cru-Vazarat-Coquart-bottle-of-italy.jpg?v=1714472934",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895589945682&productname=Champagne+Blanc+de+Blancs+Grand+Bouquet+Extra+Brut+Grand+Cru+-+Vazart-Coquart+2018&wgtarget=https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-grand-bouquet-extra-brut-grand-cru-vazarat-coquart?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-grand-bouquet-extra-brut-grand-cru-vazarat-coquart",
@@ -6466,7 +6484,7 @@
         "Consommation recommandée": "À consommer dans les 5 ans après la vendange",
         "Accompagnement": "Apéritifs, fruits de mer, poisson"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895597056338",
@@ -6496,7 +6514,7 @@
       ],
       "price": 65.72,
       "oldPrice": 71.46,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Marie-Copinet-Nos-Pas-Dans-La-Pierre-bottle-of-italy.jpg?v=1716906039",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895597056338&productname=Champagne+Nos+Pas+Dans+la+Pierre+Nature+-+Marie+Copinet&wgtarget=https://bottleofitaly.com/fr/products/champagne-nos-pas-dans-la-pierre-nature-marie-copinet?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-nos-pas-dans-la-pierre-nature-marie-copinet",
@@ -6520,7 +6538,7 @@
         "Consommation recommandée": "À consommer dans les 5 ans après la vendange",
         "Accompagnement": "Apéritifs, poisson, crustacés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_50742404153682",
@@ -6549,7 +6567,7 @@
       ],
       "price": 66.14,
       "oldPrice": 75.06,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/57657-mg-heucq-les-velours-1002x1536-min.jpg?v=1747325994",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50742404153682&productname=Champagne+Ros%C3%A9+de+Saign%C3%A9e+-+Les+Velours+-+M.G.+Heucq&wgtarget=https://bottleofitaly.com/fr/products/champagne-rose-de-saignee-les-velours-m-g-heucq?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-rose-de-saignee-les-velours-m-g-heucq",
@@ -6573,7 +6591,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans",
         "Accompagnement": "Apéritifs, poissons, viandes blanches, desserts fruités"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47245073023314",
@@ -6630,7 +6648,7 @@
         "Consommation recommandée": "À consommer dans les 5 ans après la vendange",
         "Accompagnement": "Fruits de mer, poisson, apéritifs légers"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895559995730",
@@ -6663,7 +6681,7 @@
       ],
       "price": 67.53,
       "oldPrice": 75.02,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Mon-Rose-de-Saignee-Brut-Le-Guedard-bottle-of-italy.jpg?v=1716906218",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895559995730&productname=Champagne+Mon+Ros%C3%A9+de+Saign%C3%A9e+Brut+-+Le+Gu%C3%A8dard&wgtarget=https://bottleofitaly.com/fr/products/champagne-mon-rose-de-saignee-brut-le-guedard?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-mon-rose-de-saignee-brut-le-guedard",
@@ -6687,7 +6705,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans",
         "Accompagnement": "Apéritifs, poissons, viandes blanches"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895579296082",
@@ -6719,7 +6737,7 @@
       ],
       "price": 70,
       "oldPrice": 87.71,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Rose-Saignee-Incandescent-Extra-Brut-Grand-Cru-Mouzon-Leroux-bottle-of-italy.jpg?v=1716907312",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895579296082&productname=Champagne+Ros%C3%A9+Saign%C3%A9e+Incandescent+Extra+Brut+Grand+Cru+-+Mouzon+Leroux&wgtarget=https://bottleofitaly.com/fr/products/champagne-rose-saignee-incandescent-extra-brut-grand-cru-mouzon-leroux?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-rose-saignee-incandescent-extra-brut-grand-cru-mouzon-leroux",
@@ -6743,7 +6761,7 @@
         "Consommation recommandée": "À consommer dans les 5 ans après la vendange",
         "Accompagnement": "Viandes blanches, poisson, apéritifs, desserts aux fruits rouges"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_50742403039570",
@@ -6776,31 +6794,13 @@
       ],
       "price": 70.37,
       "oldPrice": 78.64,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/57504-jean-claude-vallois-blanc-de-blancs-millesime-2018-extra-brut-1002x1536-min.jpg?v=1747380497",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50742403039570&productname=Champagne+Blanc+de+Blancs+Mill%C3%A9sim%C3%A9+Extra+Brut+2018+-+Jean-Claude+Vallois+2018&wgtarget=https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-millesime-extra-brut-2018-jean-claude-vallois?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-millesime-extra-brut-2018-jean-claude-vallois",
       "merchantDescription": "Le Champagne Blanc de Blancs Millésimé Extra Brut 2018 de Jean-Claude Vallois représente l'élégance pure de la Côte des Blancs, une région célèbre pour la qualité exceptionnelle du cépage Chardonnay. Le millésime 2018 exprime clairement la typicité du terroir, caractérisé par des sols calcaires et un climat qui confèrent fraîcheur et minéralité au fruit.\nVinifié exclusivement à partir de raisins Chardonnay sélectionnés, cet Extra Brut se distingue par sa stature sèche, avec un dosage réduit qui met en valeur la précision aromatique et gustative. L'affinage en bouteille garantit des notes subtiles d'agrumes, de fleurs blanches et une légère nuance de croûte de pain, accompagnées d'un perlage fin et persistant. En bouche, il est vibrant, équilibré entre acidité et une délicate douceur, avec une finale raffinée et minérale.\nIdéal à associer à des plats de fruits de mer délicats, crustacés et fromages frais, ce Blanc de Blancs incarne le savoir-faire artisanal de Jean-Claude Vallois et l'expression authentique du Champagne millésimé.",
-      "technicalData": {
-        "Format": "ions techniques",
-        "Producteur": "Jean-Claude Vallois",
-        "Nom": "Champagne Blanc de Blancs Millésimé",
-        "Variété": "Chardonnay\nVintage\n2018",
-        "Gradation": "12.0%\nFormat\n75\ncl",
-        "Profil aromatique": "Notes d'agrumes, fleurs blanches, levures",
-        "Méthode de vinification": "Fermentation en acier, refermentation en bouteille",
-        "Sucres résiduels": "Extra brut (0-6 g/l)",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Mousseux",
-        "Vieillissement": "Minimum 3 ans sur lies",
-        "Type de fût": "Cuves en acier et bouteille",
-        "Couleur": "Jaune paille",
-        "Température de service": "8-10°C",
-        "Consommation recommandée": "À consommer dans les 5-7 ans",
-        "Accompagnement": "Fruits de mer, poisson, apéritifs légers"
-      },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "technicalData": {},
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_48534936224082",
@@ -6854,7 +6854,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
         "Accompagnement": "Apéritifs, poisson, crustacés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_43760629088473",
@@ -6919,7 +6919,7 @@
         "Consommation recommandée": "À consommer jeune, dans les 3-5 ans",
         "Accompagnement": "Apéritifs, poissons, crustacés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895574544722",
@@ -7029,7 +7029,7 @@
         "Consommation recommandée": "À consommer dans les 5 ans après la vendange",
         "Accompagnement": "Apéritifs, fruits de mer, plats légers"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_39299181740204",
@@ -7067,7 +7067,7 @@
       ],
       "price": 74.12,
       "oldPrice": 89.52,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/champagne-brut-grand-brut-perrier-jouet-bottle-of-italy.jpg?v=1758625794",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_39299181740204&productname=Champagne+Brut+75cl+-+Grand+Brut+-+Perrier+Jou%C3%ABt&wgtarget=https://bottleofitaly.com/fr/products/champagne-brut-grand-brut-perrier-jouet?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-brut-grand-brut-perrier-jouet",
@@ -7091,7 +7091,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la production",
         "Accompagnement": "Apéritifs, poissons, crustacés, plats légers"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_50794940760402",
@@ -7144,7 +7144,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans suivant la production",
         "Accompagnement": "Apéritifs, poisson, crustacés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_49249152041298",
@@ -7200,7 +7200,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
         "Accompagnement": "Apéritifs, poisson, crustacés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47245073842514",
@@ -7254,7 +7254,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
         "Accompagnement": "Apéritifs, fruits de mer, plats légers"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_50794921263442",
@@ -7307,7 +7307,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
         "Accompagnement": "Apéritifs, poisson, crustacés, plats raffinés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_43760621060313",
@@ -7370,7 +7370,7 @@
         "Consommation recommandée": "À consommer jeune, dans les 3-5 ans",
         "Accompagnement": "Apéritifs, poissons, viandes blanches"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895565238610",
@@ -7400,7 +7400,7 @@
       ],
       "price": 81.53,
       "oldPrice": 90.13,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/jean-marc-seleque-champagne-quintette-chardonnay-5-terroirs-extra-brut-bottle-of-italy.jpg?v=1716908397",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895565238610&productname=Champagne+Quintette+5+Terroirs+Extra+Brut+-+J-M+Seleque&wgtarget=https://bottleofitaly.com/fr/products/champagne-quintette-5-terroirs-extra-brut-j-m-seleque?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-quintette-5-terroirs-extra-brut-j-m-seleque",
@@ -7424,7 +7424,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
         "Accompagnement": "Apéritifs, fruits de mer, plats légers"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895599907154",
@@ -7454,7 +7454,7 @@
       ],
       "price": 87.23,
       "oldPrice": 97.81,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Blanc-de-Noirs-Largillier-Brut-Jerome-Coessens-bottle-of-italy.jpg?v=1714473951",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895599907154&productname=Champagne+Blanc+de+Noirs+Largillier+Brut+-+Jerome+Coessens&wgtarget=https://bottleofitaly.com/fr/products/champagne-blanc-de-noirs-largillier-brut-jerome-coessens?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-noirs-largillier-brut-jerome-coessens",
@@ -7464,7 +7464,7 @@
         "Producteur": "Jerome Coessens",
         "Gradation": "12.5%\nFormat\n75\ncl"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895564550482",
@@ -7494,7 +7494,7 @@
       ],
       "price": 89.61,
       "oldPrice": 101.57,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Les-Meuniers-de-raoul-Extra-Brut-Wirth-Michel-bottle-of-italy.jpg?v=1714475996",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895564550482&productname=Champagne+Les+Meuniers+de+Raoul+Extra+Brut+-+Wirth+Michel&wgtarget=https://bottleofitaly.com/fr/products/champagne-les-meuniers-de-raoul-extra-brut-wirth-michel?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-les-meuniers-de-raoul-extra-brut-wirth-michel",
@@ -7504,7 +7504,7 @@
         "Producteur": "Wirth Michel",
         "Gradation": "12.5%\nFormat\n75\ncl"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895595942226",
@@ -7535,7 +7535,7 @@
       ],
       "price": 91.99,
       "oldPrice": 113.93,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Blanc-de-Blancs-Dorien-n-62-Extra-Brut-Grand-Cru-Stephane-Regnault-bottle-of-italy.jpg?v=1714393484",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895595942226&productname=Champagne+Blanc+de+Blancs+Dorien+n%C2%B080+Extra+Brut+Grand+Cru+-+Stephane+Regnault&wgtarget=https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-dorien-n-80-extra-brut-grand-cru-stephane-regnault?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-dorien-n-80-extra-brut-grand-cru-stephane-regnault",
@@ -7559,7 +7559,7 @@
         "Consommation recommandée": "À consommer jeune ou dans les 5 ans",
         "Accompagnement": "Apéritifs, fruits de mer, poisson"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895595843922",
@@ -7590,7 +7590,7 @@
       ],
       "price": 91.99,
       "oldPrice": 100.82,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/SRLY62B0-stephane-regnault-champagne-extra-brut-blanc-de-blancs-oger-grand-cru-lydien-n-62-bottle-of-italy.jpg?v=1726655228",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895595843922&productname=Champagne+Blanc+de+Blancs+Mixolydien+n%C2%B099+Extra+Brut+Grand+Cru+-+Stephane+Regnault&wgtarget=https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-mixolydien-n-99-extra-brut-grand-cru-stephane-regnault?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-mixolydien-n-99-extra-brut-grand-cru-stephane-regnault",
@@ -7614,7 +7614,7 @@
         "Consommation recommandée": "À consommer dans les 5 ans après la vendange",
         "Accompagnement": "Fruits de mer, poisson, apéritifs"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_50794911269202",
@@ -7666,7 +7666,7 @@
         "Consommation recommandée": "À consommer jeune pour la fraîcheur",
         "Accompagnement": "Fruits de mer, poisson, apéritifs légers"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895600005458",
@@ -7696,7 +7696,7 @@
       ],
       "price": 103.09,
       "oldPrice": 120.08,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Blanc-de-Noirs-Largillier-Rose-Brut-Jerome-Coessens-bottle-of-italy.jpg?v=1714474074",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895600005458&productname=Champagne+Blanc+de+Noirs+Largillier+Ros%C3%A9+Brut+-+Jerome+Coessens&wgtarget=https://bottleofitaly.com/fr/products/champagne-blanc-de-noirs-largillier-rose-brut-jerome-coessens?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-noirs-largillier-rose-brut-jerome-coessens",
@@ -7706,7 +7706,7 @@
         "Producteur": "Jerome Coessens",
         "Gradation": "12.0%\nFormat\n75\ncl"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895599972690",
@@ -7736,7 +7736,7 @@
       ],
       "price": 103.09,
       "oldPrice": 120.51,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/champagne-largiller-nature-cosses-bottle-of-italy.jpg?v=1716905792",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895599972690&productname=Champagne+Blanc+de+Noirs+Largillier+Nature+-+Jerome+Coessens&wgtarget=https://bottleofitaly.com/fr/products/champagne-blanc-de-noirs-largillier-nature-jerome-coessens?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-noirs-largillier-nature-jerome-coessens",
@@ -7746,7 +7746,7 @@
         "Producteur": "Jerome Coessens",
         "Gradation": "12.5%\nFormat\n75\ncl"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_50794921361746",
@@ -7857,7 +7857,7 @@
         "Consommation recommandée": "À consommer dans les 3-5 ans après production",
         "Accompagnement": "Apéritifs, poisson, crustacés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895571398994",
@@ -7893,7 +7893,7 @@
       ],
       "price": 110.23,
       "oldPrice": 121.36,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Rose-Bulles-de-Rose-Extra-Brut-1er-Cru-Frederic-Savart-bottle-of-italy.jpg?v=1716906796",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895571398994&productname=Champagne+Ros%C3%A9+Bulles+de+Rose+Extra+Brut+1er+Cru+-+Fr%C3%A8d%C3%A8ric+Savart&wgtarget=https://bottleofitaly.com/fr/products/champagne-rose-bulles-de-rose-extra-brut-1er-cru-frederic-savart?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-rose-bulles-de-rose-extra-brut-1er-cru-frederic-savart",
@@ -7903,7 +7903,7 @@
         "Producteur": "Frèdèric Savart",
         "Gradation": "12.5%\nFormat\n75\ncl"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_53093681004882",
@@ -7932,7 +7932,7 @@
       ],
       "price": 111.02,
       "oldPrice": 122.34,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-BlancdeBlancs-Perrier-Jouea_A_t-min_9980108c-2a01-4d94-80d9-1f377da9a183.jpg?v=1775138652",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_53093681004882&productname=Champagne+-+Blanc+de+Blancs+-+Special+Edition+Formafantasma+-+Perrier-Jou%C3%ABt&wgtarget=https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-special-edition-formafantasma-perrier-jouet?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-special-edition-formafantasma-perrier-jouet",
@@ -7956,7 +7956,7 @@
         "Consommation recommandée": "À consommer dans les 5 ans après la vendange",
         "Accompagnement": "Fruits de mer, poisson, entrées légères"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_53712153739602",
@@ -8014,7 +8014,7 @@
         "Consommation recommandée": "À consommer dans les 5-7 ans après la vendange",
         "Accompagnement": "Apéritifs, poissons, crustacés, plats raffinés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_47895594697042",
@@ -8047,7 +8047,7 @@
       ],
       "price": 125.05,
       "oldPrice": 155.61,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Blanc-de-Blancs-Msnl-Extra-Brut-Grand-Cru-J.L.-Vergon-bottle-of-italy.jpg?v=1714473129",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895594697042&productname=Champagne+Blanc+de+Blancs+Msnl+Extra+Brut+Grand+Cru+-+J.L.+Vergnon+2014&wgtarget=https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-msnl-extra-brut-grand-cru-j-l-vergon?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-msnl-extra-brut-grand-cru-j-l-vergon",
@@ -8070,7 +8070,7 @@
         "Consommation recommandée": "À consommer dans les 5 ans après la vendange",
         "Accompagnement": "Apéritifs, poisson, crustacés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_53712157737298",
@@ -8126,7 +8126,7 @@
         "Consommation recommandée": "À consommer jeune ou dans les 5 ans",
         "Accompagnement": "Apéritifs, poisson, crustacés, plats raffinés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_53712154820946",
@@ -8183,7 +8183,7 @@
         "Consommation recommandée": "Palais exigeants en quête de complexité authentique",
         "Accompagnement": "Apéritifs, poisson, crustacés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     },
     {
       "id": "shopify_FR_43760556310745",
@@ -8220,7 +8220,7 @@
       ],
       "price": 255.61,
       "oldPrice": 296.36,
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/products/Grande-Cuvee-Champagne-AOC-Brut-Krug-bottle-of-italy.jpg?v=1678300072",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_43760556310745&productname=Grande+Cuv%C3%A9e+Champagne++AOC+Brut+-+Krug&wgtarget=https://bottleofitaly.com/fr/products/grande-cuvee-champagne-aoc-brut-krug?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/grande-cuvee-champagne-aoc-brut-krug",
@@ -8244,7 +8244,7 @@
         "Consommation recommandée": "À consommer dans les 10 ans après le dégorgement",
         "Accompagnement": "Apéritifs, poissons, crustacés, plats raffinés"
       },
-      "checkedAt": "2026-09-29T11:20:37.740Z"
+      "checkedAt": "2026-09-30T11:08:48.547Z"
     }
   ]
 }
