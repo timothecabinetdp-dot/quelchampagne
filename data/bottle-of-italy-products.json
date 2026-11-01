@@ -2,7 +2,7 @@
   "version": 1,
   "merchant": "Bottle of Italy",
   "network": "Webgains",
-  "checkedAt": "2026-10-31T10:53:47.797Z",
+  "checkedAt": "2026-11-01T11:48:15.138Z",
   "count": 150,
   "records": [
     {
@@ -52,20 +52,21 @@
         "Producteur": "Jean De La Fontaine",
         "Nom": "Champagne Brut",
         "Variété": "Pinot Noir, Pinot Meunier, Chardonnay",
-        "Gradation": "12.0%\nFormat\n75\ncl",
+        "Gradation": "12.0%\nFormat 75 cl",
         "Profil aromatique": "Notes de levure, fruits blancs, agrumes",
         "Méthode de vinification": "Méthode traditionnelle avec refermentation en bouteille",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux",
         "Vieillissement": "Minimum 15 mois sur lies",
         "Type de fût": "Cuves en acier inoxydable et bouteille",
+        "Sucres résiduels": "&lt;12 g/l",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "6-8°C",
         "Consommation recommandée": "À consommer dans les 3-5 ans suivant la production",
-        "Accompagnement": "Apéritifs, poisson, crustacés"
+        "Accompagnement": "Apéritifs, poisson, crustacés",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Champagne",
+        "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_49273787482450",
@@ -109,21 +110,21 @@
         "Producteur": "Grand Tour",
         "Nom": "Champagne Grand Brut Nature",
         "Variété": "Pinot Noir, Chardonnay, Pinot Meunier",
-        "Gradation": "12.0%\nFormat\n75\ncl",
+        "Gradation": "12.0%\nFormat 75 cl",
         "Profil aromatique": "Notes de levure, agrumes, fruits secs",
         "Méthode de vinification": "Méthode traditionnelle avec fermentation en bouteille",
-        "Sucres résiduels": "0-3 g/l (Brut Nature)",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux méthode traditionnelle",
         "Vieillissement": "Minimum 3 ans sur lies",
         "Type de fût": "Cuves en acier inoxydable et bouteille pour refermentation",
+        "Sucres résiduels": "0-3 g/l (Brut Nature)",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 5 ans suivant la production",
-        "Accompagnement": "Apéritifs, fruits de mer, plats légers"
+        "Accompagnement": "Apéritifs, fruits de mer, plats légers",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Champagne",
+        "Taper": "Vin mousseux méthode traditionnelle"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_50742403072338",
@@ -165,21 +166,21 @@
         "Producteur": "Maison Labbé",
         "Nom": "Champagne Premier Cru",
         "Variété": "Pinot Noir, Pinot Meunier, Chardonnay",
-        "Gradation": "12.0%\nFormat\n75\ncl",
+        "Gradation": "12.0%\nFormat 75 cl",
         "Profil aromatique": "Notes de levure, fruits blancs, agrumes",
         "Méthode de vinification": "Méthode traditionnelle, fermentation en bouteille",
-        "Sucres résiduels": "6 g/l",
-        "Région": "Champagne\nZone de production\nPremier Cru",
-        "Pays": "France",
-        "Taper": "Vin mousseux sec",
         "Vieillissement": "Minimum 15 mois sur lies",
         "Type de fût": "Acier inoxydable",
+        "Sucres résiduels": "6 g/l",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 3-5 ans après la production",
-        "Accompagnement": "Apéritifs, poisson, crustacés"
+        "Accompagnement": "Apéritifs, poisson, crustacés",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Premier Cru",
+        "Taper": "Vin mousseux sec"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_42148320575705",
@@ -227,21 +228,21 @@
         "Producteur": "Louis Constant",
         "Nom": "Champagne AOC",
         "Variété": "Pinot Noir, Chardonnay, Pinot Meunier",
-        "Gradation": "12.5%\nFormat\n75\ncl",
+        "Gradation": "12.5%\nFormat 75 cl",
         "Profil aromatique": "Notes de levure, fruits blancs, agrumes",
         "Méthode de vinification": "Méthode traditionnelle avec refermentation en bouteille",
-        "Sucres résiduels": "Brut (0-12 g/l)",
-        "Région": "Champagne\nZone de production\nRégion Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux",
         "Vieillissement": "Minimum 15 mois sur lies",
         "Type de fût": "Cuves en acier inoxydable et bouteille pour refermentation",
+        "Sucres résiduels": "Brut (0-12 g/l)",
         "Couleur": "Vin mousseux blanc paille",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer jeune, dans les 3-5 ans",
-        "Accompagnement": "Apéritifs, fruits de mer, plats légers"
+        "Accompagnement": "Apéritifs, fruits de mer, plats légers",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Région Champagne",
+        "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_47895549903186",
@@ -284,21 +285,21 @@
         "Producteur": "Alain Mercier",
         "Nom": "Champagne",
         "Variété": "Pinot Noir, Chardonnay, Pinot Meunier",
-        "Gradation": "12.5%\nFormat\n75\ncl",
+        "Gradation": "12.5%\nFormat 75 cl",
         "Profil aromatique": "Notes de levure, fruits blancs, agrumes",
         "Méthode de vinification": "Méthode traditionnelle avec refermentation en bouteille",
-        "Sucres résiduels": "Brut (jusqu'à 12 g/l)",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux",
         "Vieillissement": "Minimum 15 mois sur lies",
         "Type de fût": "Fûts de chêne et acier",
+        "Sucres résiduels": "Brut (jusqu'à 12 g/l)",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer jeune pour la fraîcheur",
-        "Accompagnement": "Apéritifs, fruits de mer, plats légers"
+        "Accompagnement": "Apéritifs, fruits de mer, plats légers",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Champagne",
+        "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_50742404284754",
@@ -339,21 +340,21 @@
         "Producteur": "Maison Tornay",
         "Nom": "Champagne Premier Cru",
         "Variété": "Pinot Noir, Chardonnay, Pinot Meunier",
-        "Gradation": "12.5%\nFormat\n75\ncl",
+        "Gradation": "12.5%\nFormat 75 cl",
         "Profil aromatique": "Notes de levure, fruits blancs, agrumes, amande",
         "Méthode de vinification": "Méthode traditionnelle avec refermentation en bouteille",
-        "Sucres résiduels": "Environ 6-12 g/l (Brut)",
-        "Région": "Champagne\nZone de production\nPremier Cru, Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux",
         "Vieillissement": "Minimum 15 mois sur lies",
         "Type de fût": "Cuves en acier inoxydable et bouteille",
+        "Sucres résiduels": "Environ 6-12 g/l (Brut)",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 3-5 ans suivant la production",
-        "Accompagnement": "Apéritifs, poisson, crustacés, plats légers"
+        "Accompagnement": "Apéritifs, poisson, crustacés, plats légers",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Premier Cru, Champagne",
+        "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_50502043140434",
@@ -396,21 +397,21 @@
         "Producteur": "EPC Champagne",
         "Nom": "Champagne",
         "Variété": "Pinot Noir, Pinot Meunier, Chardonnay",
-        "Gradation": "12.5%\nFormat\n75\ncl",
+        "Gradation": "12.5%\nFormat 75 cl",
         "Profil aromatique": "Notes de levure, fruits blancs, agrumes",
         "Méthode de vinification": "Méthode traditionnelle avec refermentation en bouteille",
-        "Sucres résiduels": "6-12 g/l",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Mousseux",
         "Vieillissement": "Minimum 15 mois sur lies",
         "Type de fût": "Cuves en acier et bouteilles pour refermentation",
+        "Sucres résiduels": "6-12 g/l",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 3-5 ans",
-        "Accompagnement": "Apéritifs, poisson, plats légers"
+        "Accompagnement": "Apéritifs, poisson, plats légers",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Champagne",
+        "Taper": "Mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_52901515886930",
@@ -449,21 +450,21 @@
         "Producteur": "Maison Burtin",
         "Nom": "Champagne Brut",
         "Variété": "Chardonnay, Pinot Noir, Pinot Meunier",
-        "Gradation": "4.0%\nFormat\n75\ncl",
+        "Gradation": "4.0%\nFormat 75 cl",
         "Profil aromatique": "Notes de levure, fruits blancs, agrumes",
         "Méthode de vinification": "Méthode traditionnelle avec refermentation en bouteille",
-        "Sucres résiduels": "6-12 g/l",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Mousseux",
         "Vieillissement": "Minimum 15 mois sur lies",
         "Type de fût": "Fûts de chêne et acier inoxydable",
+        "Sucres résiduels": "6-12 g/l",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 3-5 ans suivant la production",
-        "Accompagnement": "Apéritifs, poissons, crustacés, plats légers"
+        "Accompagnement": "Apéritifs, poissons, crustacés, plats légers",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Champagne",
+        "Taper": "Mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_47245068697938",
@@ -508,21 +509,21 @@
         "Producteur": "Brisson-Lahaye",
         "Nom": "Champagne",
         "Variété": "Pinot Noir, Pinot Meunier",
-        "Gradation": "12.5%\nFormat\n75\ncl",
+        "Gradation": "12.5%\nFormat 75 cl",
         "Profil aromatique": "Notes de fruits rouges, croûte de pain, agrumes",
         "Méthode de vinification": "Méthode traditionnelle, fermentation en bouteille",
-        "Sucres résiduels": "Extra brut (0-6 g/l)",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux méthode traditionnelle",
         "Vieillissement": "Minimum 24 mois sur lies",
         "Type de fût": "Cuves en acier inoxydable et bouteille",
+        "Sucres résiduels": "Extra brut (0-6 g/l)",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
-        "Accompagnement": "Apéritifs, poisson, crustacés"
+        "Accompagnement": "Apéritifs, poisson, crustacés",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Champagne",
+        "Taper": "Vin mousseux méthode traditionnelle"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_50742402810194",
@@ -561,21 +562,21 @@
         "Producteur": "Jean-Claude Vallois",
         "Nom": "Champagne Blanc de Blancs Brut",
         "Variété": "Chardonnay",
-        "Gradation": "12.0%\nFormat\n75\ncl",
+        "Gradation": "12.0%\nFormat 75 cl",
         "Profil aromatique": "Notes d'agrumes, fleurs blanches, levures",
         "Méthode de vinification": "Méthode classique, fermentation en bouteille",
-        "Sucres résiduels": "Brut, max 12 g/l",
-        "Région": "Collio",
-        "Pays": "Italie",
-        "Taper": "Vin mousseux méthode classique",
         "Vieillissement": "Minimum 15 mois sur lies",
         "Type de fût": "Fûts de chêne et acier inoxydable",
+        "Sucres résiduels": "Brut, max 12 g/l",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
-        "Accompagnement": "Apéritifs, poissons, crustacés"
+        "Accompagnement": "Apéritifs, poissons, crustacés",
+        "Région": "Collio",
+        "Pays": "Italie\nZone de production Collio",
+        "Taper": "Vin mousseux méthode classique"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_50742406185298",
@@ -614,21 +615,21 @@
         "Producteur": "Daubanton",
         "Nom": "Champagne Rosé de Saignée",
         "Variété": "Pinot Noir",
-        "Gradation": "12.0%\nFormat\n75\ncl",
+        "Gradation": "12.0%\nFormat 75 cl",
         "Profil aromatique": "Fruits rouges, notes florales, levures",
         "Méthode de vinification": "Méthode traditionnelle avec macération courte",
-        "Sucres résiduels": "6 g/l",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Mousseux",
         "Vieillissement": "Minimum 15 mois sur lies",
         "Type de fût": "Fûts en bois",
+        "Sucres résiduels": "6 g/l",
         "Couleur": "Rosé",
         "Température de service": "8-10°C",
         "Consommation recommandée": "1-3 ans",
-        "Accompagnement": "Apéritifs, poissons, viandes blanches"
+        "Accompagnement": "Apéritifs, poissons, viandes blanches",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Champagne",
+        "Taper": "Mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_47895568122194",
@@ -668,21 +669,21 @@
         "Producteur": "Maxime Ponson",
         "Nom": "Champagne 1er Cru",
         "Variété": "Pinot Meunier, Pinot Noir, Chardonnay",
-        "Gradation": "12.0%\nFormat\n75\ncl",
+        "Gradation": "12.0%\nFormat 75 cl",
         "Profil aromatique": "Notes d'agrumes, levures, croûte de pain",
         "Méthode de vinification": "Méthode traditionnelle, fermentation en bouteille",
-        "Sucres résiduels": "Extra brut, moins de 6 g/l",
-        "Région": "Champagne\nZone de production\n1er Cru, Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux extra brut",
         "Vieillissement": "Minimum 15 mois sur lies",
         "Type de fût": "Cuves en acier inoxydable et bouteille",
+        "Sucres résiduels": "Extra brut, moins de 6 g/l",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
-        "Accompagnement": "Apéritifs, fruits de mer, plats légers"
+        "Accompagnement": "Apéritifs, fruits de mer, plats légers",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production 1er Cru, Champagne",
+        "Taper": "Vin mousseux extra brut"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_47245069287762",
@@ -725,21 +726,21 @@
         "Producteur": "Thenevet Delouvin",
         "Nom": "Champagne",
         "Variété": "Pinot Noir, Chardonnay, Pinot Meunier",
-        "Gradation": "12.0%\nFormat\n75\ncl",
+        "Gradation": "12.0%\nFormat 75 cl",
         "Profil aromatique": "Notes de fruits blancs, croûte de pain, levures",
         "Méthode de vinification": "Méthode traditionnelle avec refermentation en bouteille",
-        "Sucres résiduels": "Environ 8-12 g/l (Brut)",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux",
         "Vieillissement": "Minimum 15 mois sur lies",
         "Type de fût": "Cuves en acier inoxydable et bouteille pour refermentation",
+        "Sucres résiduels": "Environ 8-12 g/l (Brut)",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 3-5 ans suivant la production",
-        "Accompagnement": "Apéritifs, poisson, crustacés, plats légers"
+        "Accompagnement": "Apéritifs, poisson, crustacés, plats légers",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Champagne",
+        "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_50742403268946",
@@ -778,21 +779,21 @@
         "Producteur": "Maison Yves Loison",
         "Nom": "Champagne",
         "Variété": "Pinot Noir, Pinot Meunier, Chardonnay",
-        "Gradation": "12.0%\nFormat\n75\ncl",
+        "Gradation": "12.0%\nFormat 75 cl",
         "Profil aromatique": "Notes de levure, fruits blancs, agrumes",
         "Méthode de vinification": "Méthode traditionnelle avec refermentation en bouteille",
-        "Sucres résiduels": "Brut, environ 6-12 g/l",
-        "Région": "Champagne\nZone de production\nRégion Champagne",
-        "Pays": "France",
-        "Taper": "Mousseux",
         "Vieillissement": "Minimum 3 ans sur lies",
         "Type de fût": "Fûts de chêne et acier",
+        "Sucres résiduels": "Brut, environ 6-12 g/l",
         "Couleur": "Mousseux jaune paille",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer jeune ou dans les 5 ans",
-        "Accompagnement": "Apéritifs, poisson, crustacés"
+        "Accompagnement": "Apéritifs, poisson, crustacés",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Région Champagne",
+        "Taper": "Mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_43760601956569",
@@ -838,21 +839,21 @@
         "Producteur": "De Vilmont",
         "Nom": "Champagne AOC",
         "Variété": "Chardonnay",
-        "Gradation": "12.5%\nFormat\n75\ncl",
+        "Gradation": "12.5%\nFormat 75 cl",
         "Profil aromatique": "Notes d'agrumes, fleurs blanches, levures",
         "Méthode de vinification": "Méthode traditionnelle avec refermentation en bouteille",
-        "Sucres résiduels": "6-12 g/l",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux sec",
         "Vieillissement": "Minimum 15 mois sur lies",
         "Type de fût": "Cuves en acier inoxydable et bouteille pour refermentation",
+        "Sucres résiduels": "6-12 g/l",
         "Couleur": "Jaune paille clair",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
-        "Accompagnement": "Apéritifs, poisson, crustacés"
+        "Accompagnement": "Apéritifs, poisson, crustacés",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Champagne",
+        "Taper": "Vin mousseux sec"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_50742403793234",
@@ -893,21 +894,21 @@
         "Producteur": "M.G. Heucq",
         "Nom": "Champagne Rosé Brut",
         "Variété": "Meunier, Chardonnay, Pinot Noir",
-        "Gradation": "12.5%\nFormat\n75\ncl",
+        "Gradation": "12.5%\nFormat 75 cl",
         "Profil aromatique": "Fruits rouges, notes florales, levure",
         "Méthode de vinification": "Méthode traditionnelle avec refermentation en bouteille",
-        "Sucres résiduels": "Environ 6-12 g/l",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Mousseux",
         "Vieillissement": "Minimum 15 mois sur lies",
         "Type de fût": "Fûts de chêne et acier",
+        "Sucres résiduels": "Environ 6-12 g/l",
         "Couleur": "Rosé",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
-        "Accompagnement": "Apéritifs, poissons, viandes blanches, desserts légers"
+        "Accompagnement": "Apéritifs, poissons, viandes blanches, desserts légers",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Champagne",
+        "Taper": "Mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_50459393425746",
@@ -949,21 +950,21 @@
         "Producteur": "Harlin Père et Fils",
         "Nom": "Champagne",
         "Variété": "Pinot Noir, Chardonnay, Pinot Meunier",
-        "Gradation": "12.0%\nFormat\n75\ncl",
+        "Gradation": "12.0%\nFormat 75 cl",
         "Profil aromatique": "Notes de levure, fruits blancs, agrumes, brioche",
         "Méthode de vinification": "Méthode classique avec refermentation en bouteille",
-        "Sucres résiduels": "Sec, dosage faible",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux méthode classique",
         "Vieillissement": "Minimum 15 mois sur lies",
         "Type de fût": "Cuves en acier inoxydable et bouteille pour refermentation",
+        "Sucres résiduels": "Sec, dosage faible",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
-        "Accompagnement": "Apéritifs, poissons, crustacés, plats raffinés"
+        "Accompagnement": "Apéritifs, poissons, crustacés, plats raffinés",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Champagne",
+        "Taper": "Vin mousseux méthode classique"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_47895597515090",
@@ -1003,21 +1004,21 @@
         "Producteur": "Beltrand Brigandat",
         "Nom": "Champagne Blanc de Noirs",
         "Variété": "Pinot Noir, Pinot Meunier",
-        "Gradation": "12.0%\nFormat\n75\ncl",
+        "Gradation": "12.0%\nFormat 75 cl",
         "Profil aromatique": "Notes de fruits rouges, croûte de pain, levures",
         "Méthode de vinification": "Méthode traditionnelle avec refermentation en bouteille",
-        "Sucres résiduels": "Brut (max 12 g/l)",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux méthode traditionnelle",
         "Vieillissement": "Minimum 15 mois sur lies",
         "Type de fût": "Cuves en acier et bouteille pour refermentation",
+        "Sucres résiduels": "Brut (max 12 g/l)",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
-        "Accompagnement": "Apéritifs, poisson, crustacés"
+        "Accompagnement": "Apéritifs, poisson, crustacés",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Champagne",
+        "Taper": "Vin mousseux méthode traditionnelle"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_47245072630098",
@@ -1058,21 +1059,21 @@
         "Producteur": "Bardiaù",
         "Nom": "Champagne",
         "Variété": "Pinot Noir, Chardonnay, Pinot Meunier",
-        "Gradation": "12.0%\nFormat\n75\ncl",
+        "Gradation": "12.0%\nFormat 75 cl",
         "Profil aromatique": "Notes d'agrumes, levures, amande",
         "Méthode de vinification": "Méthode traditionnelle avec refermentation en bouteille",
-        "Sucres résiduels": "Extra brut (0-6 g/l)",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux méthode traditionnelle",
         "Vieillissement": "Minimum 24 mois sur lies",
         "Type de fût": "Cuves en acier et bouteille pour refermentation",
+        "Sucres résiduels": "Extra brut (0-6 g/l)",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
-        "Accompagnement": "Apéritifs, poisson, crustacés"
+        "Accompagnement": "Apéritifs, poisson, crustacés",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Champagne",
+        "Taper": "Vin mousseux méthode traditionnelle"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_47245071647058",
@@ -1116,21 +1117,21 @@
         "Producteur": "Pierre Legras",
         "Nom": "Champagne",
         "Variété": "Pinot Noir, Chardonnay, Pinot Meunier",
-        "Gradation": "12.0%\nFormat\n75\ncl",
+        "Gradation": "12.0%\nFormat 75 cl",
         "Profil aromatique": "Notes de fruits blancs, croûte de pain, levures",
         "Méthode de vinification": "Méthode classique avec refermentation en bouteille",
-        "Sucres résiduels": "Environ 6-12 g/l (Brut)",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux méthode classique",
         "Vieillissement": "Minimum 15 mois sur lies",
         "Type de fût": "Fûts de chêne et acier inoxydable",
+        "Sucres résiduels": "Environ 6-12 g/l (Brut)",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
-        "Accompagnement": "Apéritifs, poissons, crustacés, plats légers"
+        "Accompagnement": "Apéritifs, poissons, crustacés, plats légers",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Champagne",
+        "Taper": "Vin mousseux méthode classique"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_53712156590418",
@@ -1175,21 +1176,21 @@
         "Producteur": "Benard Pitois",
         "Nom": "Champagne Premier Cru",
         "Variété": "Pinot Noir, Chardonnay, Pinot Meunier",
-        "Gradation": "12.0%\nFormat\n75\ncl",
+        "Gradation": "12.0%\nFormat 75 cl",
         "Profil aromatique": "Notes de fruits blancs, croûte de pain, levures",
         "Méthode de vinification": "Méthode traditionnelle avec refermentation en bouteille",
-        "Sucres résiduels": "Environ 8-12 g/l (Brut)",
-        "Région": "Champagne\nZone de production\nPremier Cru, Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux",
         "Vieillissement": "Minimum 15 mois sur lies",
         "Type de fût": "Fûts de chêne et acier",
+        "Sucres résiduels": "Environ 8-12 g/l (Brut)",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
-        "Accompagnement": "Apéritifs, poisson, crustacés"
+        "Accompagnement": "Apéritifs, poisson, crustacés",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Premier Cru, Champagne",
+        "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_50794939580754",
@@ -1228,22 +1229,22 @@
         "Format": "ions techniques",
         "Producteur": "Domaine Augustin",
         "Nom": "Champagne",
-        "Variété": "Pinot Noir, Chardonnay, Pinot Meunier\nVintage\n2021",
-        "Gradation": "12.0%\nFormat\n75\ncl",
+        "Variété": "Pinot Noir, Chardonnay, Pinot Meunier\nVintage 2021",
+        "Gradation": "12.0%\nFormat 75 cl",
         "Profil aromatique": "Notes de levure, fruits blancs, agrumes",
         "Méthode de vinification": "Méthode traditionnelle (prise de mousse en bouteille)",
-        "Sucres résiduels": "Sec ou brut",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux",
         "Vieillissement": "Minimum 15 mois sur lies",
         "Type de fût": "Cuves en acier inoxydable et bouteille",
+        "Sucres résiduels": "Sec ou brut",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 3-5 ans suivant la production",
-        "Accompagnement": "Apéritifs, poisson, crustacés"
+        "Accompagnement": "Apéritifs, poisson, crustacés",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Champagne",
+        "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_48453987369298",
@@ -1282,21 +1283,21 @@
         "Producteur": "Beaumont des Crayeres",
         "Nom": "Champagne Grand Prestige Brut",
         "Variété": "Chardonnay, Pinot Noir, Pinot Meunier",
-        "Gradation": "12.0%\nFormat\n75\ncl",
+        "Gradation": "12.0%\nFormat 75 cl",
         "Profil aromatique": "Notes de fruits blancs, levures, croûte de pain",
         "Méthode de vinification": "Méthode traditionnelle, fermentation en bouteille",
-        "Sucres résiduels": "Brut, 6-12 g/l",
-        "Région": "Champagne\nZone de production\nBeaumont des Crayeres",
-        "Pays": "France",
-        "Taper": "Vin mousseux",
         "Vieillissement": "4 ans",
         "Type de fût": "Bouteille en verre",
+        "Sucres résiduels": "Brut, 6-12 g/l",
         "Couleur": "Jaune paille avec des reflets dorés",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 3-5 ans suivant la production",
-        "Accompagnement": "Apéritifs, poisson, crustacés"
+        "Accompagnement": "Apéritifs, poisson, crustacés",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Beaumont des Crayeres",
+        "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_47895554261330",
@@ -1339,21 +1340,21 @@
         "Producteur": "J.Charpentier",
         "Nom": "Champagne Rosé Réserve Brut",
         "Variété": "80% Pinot Meunier, 20% Pinot Noir",
-        "Gradation": "12.5%\nFormat\n75\ncl",
+        "Gradation": "12.5%\nFormat 75 cl",
         "Profil aromatique": "Fruits rouges, notes florales, levures",
         "Méthode de vinification": "Méthode traditionnelle, fermentation en bouteille",
-        "Sucres résiduels": "6-12 g/l",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Mousseux",
         "Vieillissement": "Minimum 15 mois sur lies",
         "Type de fût": "Cuves en acier inoxydable et bouteille",
+        "Sucres résiduels": "6-12 g/l",
         "Couleur": "Rosé",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
-        "Accompagnement": "Apéritifs, poissons, viandes blanches, desserts légers"
+        "Accompagnement": "Apéritifs, poissons, viandes blanches, desserts légers",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Champagne",
+        "Taper": "Mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_47895603151186",
@@ -1391,21 +1392,21 @@
         "Producteur": "Petit Camusat",
         "Nom": "Champagne",
         "Variété": "Pinot Blanc",
-        "Gradation": "12.0%\nFormat\n75\ncl",
+        "Gradation": "12.0%\nFormat 75 cl",
         "Profil aromatique": "Notes de fruits blancs, croûte de pain",
         "Méthode de vinification": "Méthode traditionnelle, fermentation en bouteille",
-        "Sucres résiduels": "Brut, moins de 12 g/l",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux",
         "Vieillissement": "Minimum 15 mois sur lies",
         "Type de fût": "Cuves en acier et bouteille",
+        "Sucres résiduels": "Brut, moins de 12 g/l",
         "Couleur": "Jaune paille",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 3-5 ans",
-        "Accompagnement": "Apéritifs, poisson, crustacés"
+        "Accompagnement": "Apéritifs, poisson, crustacés",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Champagne",
+        "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_50341299487058",
@@ -1449,21 +1450,21 @@
         "Producteur": "Nicolas Feuillatte",
         "Nom": "Champagne Réserve Exclusive Brut Rosé",
         "Variété": "Pinot Noir, Pinot Meunier, Chardonnay",
-        "Gradation": "12.0%\nFormat\n75\ncl",
+        "Gradation": "12.0%\nFormat 75 cl",
         "Profil aromatique": "Fruits rouges, notes florales, levures",
         "Méthode de vinification": "Méthode traditionnelle avec refermentation en bouteille",
-        "Sucres résiduels": "Environ 8-12 g/l (Brut)",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux méthode traditionnelle rosé",
         "Vieillissement": "Minimum 15 mois sur lies",
         "Type de fût": "Cuves en acier inoxydable et bouteille pour refermentation",
+        "Sucres résiduels": "Environ 8-12 g/l (Brut)",
         "Couleur": "Rosé",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
-        "Accompagnement": "Apéritifs, poissons, viandes blanches, desserts fruités"
+        "Accompagnement": "Apéritifs, poissons, viandes blanches, desserts fruités",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Champagne",
+        "Taper": "Vin mousseux méthode traditionnelle rosé"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_47895552426322",
@@ -1505,21 +1506,21 @@
         "Producteur": "Champagne Simplexité Rosé Brut",
         "Nom": "Champagne",
         "Variété": "Pinot Noir, Pinot Meunier, Chardonnay",
-        "Gradation": "12.0%\nFormat\n75\ncl",
+        "Gradation": "12.0%\nFormat 75 cl",
         "Profil aromatique": "Fruits rouges, notes florales, levures",
         "Méthode de vinification": "Méthode traditionnelle, fermentation en bouteille",
-        "Sucres résiduels": "Brut, moins de 12 g/l",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Mousseux",
         "Vieillissement": "Minimum 15 mois sur lies",
         "Type de fût": "Fûts de chêne et acier",
+        "Sucres résiduels": "Brut, moins de 12 g/l",
         "Couleur": "Rosé",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 3-5 ans",
-        "Accompagnement": "Apéritifs, poisson, viandes blanches"
+        "Accompagnement": "Apéritifs, poisson, viandes blanches",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Champagne",
+        "Taper": "Mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_47895593419090",
@@ -1559,21 +1560,21 @@
         "Producteur": "Bonnet Gilmert",
         "Nom": "Champagne Grand Cru",
         "Variété": "Chardonnay",
-        "Gradation": "12.5%\nFormat\n75\ncl",
+        "Gradation": "12.5%\nFormat 75 cl",
         "Profil aromatique": "Notes d'agrumes, fleurs blanches, levures",
         "Méthode de vinification": "Méthode traditionnelle, fermentation en bouteille",
-        "Sucres résiduels": "Brut, 6-12 g/l",
-        "Région": "Champagne\nZone de production\nGrand Cru",
-        "Pays": "France",
-        "Taper": "Vin mousseux",
         "Vieillissement": "Minimum 3 ans sur lies",
         "Type de fût": "Cuves en acier inoxydable et bouteille",
+        "Sucres résiduels": "Brut, 6-12 g/l",
         "Couleur": "Jaune paille clair",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 5 ans après la vendange",
-        "Accompagnement": "Apéritifs, poisson, crustacés"
+        "Accompagnement": "Apéritifs, poisson, crustacés",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Grand Cru",
+        "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_47245069091154",
@@ -1613,21 +1614,21 @@
         "Format": "ions techniques",
         "Producteur": "Solemme",
         "Nom": "Champagne",
-        "Gradation": "12.5%\nFormat\n75\ncl",
+        "Gradation": "12.5%\nFormat 75 cl",
         "Profil aromatique": "Notes de levure, fruits blancs, agrumes, brioche",
         "Méthode de vinification": "Méthode traditionnelle, fermentation en bouteille",
-        "Sucres résiduels": "Brut, moins de 12 g/l",
-        "Région": "Champagne\nZone de production\nRégion Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux",
         "Vieillissement": "Minimum 15 mois sur lies",
         "Type de fût": "Cuves en acier et bouteille pour refermentation",
+        "Sucres résiduels": "Brut, moins de 12 g/l",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer jeune, dans les 3-5 ans",
-        "Accompagnement": "Apéritifs, poisson, crustacés, plats raffinés"
+        "Accompagnement": "Apéritifs, poisson, crustacés, plats raffinés",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Région Champagne",
+        "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_47245072531794",
@@ -1669,21 +1670,21 @@
         "Producteur": "Deheurles",
         "Nom": "Champagne Blanc de Blancs Extra Brut",
         "Variété": "Chardonnay",
-        "Gradation": "12.5%\nFormat\n75\ncl",
+        "Gradation": "12.5%\nFormat 75 cl",
         "Profil aromatique": "Notes d'agrumes, fleurs blanches, levures",
         "Méthode de vinification": "Méthode traditionnelle avec refermentation en bouteille",
-        "Sucres résiduels": "Extra brut (0-6 g/l)",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux",
         "Vieillissement": "Minimum 3 ans sur lies",
         "Type de fût": "Cuves en acier et bouteille pour refermentation",
+        "Sucres résiduels": "Extra brut (0-6 g/l)",
         "Couleur": "Jaune paille clair",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
-        "Accompagnement": "Fruits de mer, poisson, apéritifs légers"
+        "Accompagnement": "Fruits de mer, poisson, apéritifs légers",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Champagne",
+        "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_53712154100050",
@@ -1728,21 +1729,21 @@
         "Producteur": "Vilmart",
         "Nom": "Champagne Grande Reserve Premier Cru Brut",
         "Variété": "Chardonnay, Pinot Noir",
-        "Gradation": "12.5%\nFormat\n75\ncl",
+        "Gradation": "12.5%\nFormat 75 cl",
         "Profil aromatique": "Notes de fruits blancs, brioche, amande",
         "Méthode de vinification": "Méthode traditionnelle, fermentation en bouteille",
-        "Sucres résiduels": "Brut, 6-12 g/l",
-        "Région": "Champagne\nZone de production\nPremier Cru, Champagne",
-        "Pays": "France",
-        "Taper": "Mousseux",
         "Vieillissement": "Minimum 3 ans sur lies",
         "Type de fût": "Fûts de chêne et acier",
+        "Sucres résiduels": "Brut, 6-12 g/l",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 5 ans suivant la production",
-        "Accompagnement": "Apéritifs, poisson, crustacés"
+        "Accompagnement": "Apéritifs, poisson, crustacés",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Premier Cru, Champagne",
+        "Taper": "Mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_43760854302937",
@@ -1789,21 +1790,21 @@
         "Producteur": "Cattier",
         "Nom": "Champagne AOC",
         "Variété": "Pinot Noir, Pinot Meunier, Chardonnay",
-        "Gradation": "12.5%\nFormat\n75\ncl",
+        "Gradation": "12.5%\nFormat 75 cl",
         "Profil aromatique": "Notes de fruits blancs, croûte de pain, amande",
         "Méthode de vinification": "Méthode traditionnelle (prise de mousse en bouteille)",
-        "Sucres résiduels": "Brut (jusqu'à 12 g/l)",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux",
         "Vieillissement": "Minimum 15 mois",
         "Type de fût": "Fûts de chêne et acier inoxydable",
+        "Sucres résiduels": "Brut (jusqu'à 12 g/l)",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer jeune, dans les 3-5 ans",
-        "Accompagnement": "Apéritifs, poisson, plats légers"
+        "Accompagnement": "Apéritifs, poisson, plats légers",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Champagne",
+        "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_42029373063385",
@@ -1854,21 +1855,21 @@
         "Producteur": "Paul Bara",
         "Nom": "Champagne Grand Cru",
         "Variété": "Pinot Noir, Pinot Meunier, Chardonnay",
-        "Gradation": "12.5%\nFormat\n75\ncl",
+        "Gradation": "12.5%\nFormat 75 cl",
         "Profil aromatique": "Fruits rouges, notes florales, levures",
         "Méthode de vinification": "Méthode traditionnelle avec refermentation en bouteille",
-        "Sucres résiduels": "6-12 g/l",
-        "Région": "Champagne\nZone de production\nMontagne de Reims",
-        "Pays": "France",
-        "Taper": "Vin mousseux",
         "Vieillissement": "Minimum 3 ans sur lies",
         "Type de fût": "Fûts de chêne pour une partie de la fermentation",
+        "Sucres résiduels": "6-12 g/l",
         "Couleur": "Rosé brillant",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 5 ans après la vendange",
-        "Accompagnement": "Apéritifs, poissons, viandes blanches, desserts fruités"
+        "Accompagnement": "Apéritifs, poissons, viandes blanches, desserts fruités",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Montagne de Reims",
+        "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_47895587815762",
@@ -1910,22 +1911,22 @@
         "Format": "ions techniques",
         "Producteur": "Lamiable",
         "Nom": "Champagne Grand Cru",
-        "Variété": "65% Pinot Noir, 35% Chardonnay\nVintage\n2014",
-        "Gradation": "12.5%\nFormat\n75\ncl",
+        "Variété": "65% Pinot Noir, 35% Chardonnay\nVintage 2014",
+        "Gradation": "12.5%\nFormat 75 cl",
         "Profil aromatique": "Notes de fruits rouges, levures, fraîcheur",
         "Méthode de vinification": "Méthode traditionnelle, fermentation en bouteille",
-        "Sucres résiduels": "Brut, 6-12 g/l",
-        "Région": "Champagne\nZone de production\nGrand Cru",
-        "Pays": "France",
-        "Taper": "Mousseux",
         "Vieillissement": "Minimum 15 mois sur lies",
         "Type de fût": "Cuves en acier et bouteille pour refermentation",
+        "Sucres résiduels": "Brut, 6-12 g/l",
         "Couleur": "Rosé",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
-        "Accompagnement": "Apéritifs, poissons, viandes blanches, desserts légers"
+        "Accompagnement": "Apéritifs, poissons, viandes blanches, desserts légers",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Grand Cru",
+        "Taper": "Mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_47245071843666",
@@ -1968,21 +1969,21 @@
         "Producteur": "Guy Charlemagne",
         "Nom": "Champagne Grand Cru",
         "Variété": "Chardonnay",
-        "Gradation": "12.5%\nFormat\n75\ncl",
+        "Gradation": "12.5%\nFormat 75 cl",
         "Profil aromatique": "Notes d'agrumes, fleurs blanches, levures",
         "Méthode de vinification": "Méthode traditionnelle, fermentation en bouteille",
-        "Sucres résiduels": "Brut, moins de 12 g/l",
-        "Région": "Champagne\nZone de production\nCôte des Blancs",
-        "Pays": "France",
-        "Taper": "Vin mousseux",
         "Vieillissement": "Minimum 3 ans sur lies",
         "Type de fût": "Cuves en acier inoxydable et bouteille",
+        "Sucres résiduels": "Brut, moins de 12 g/l",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 5 ans après la vendange",
-        "Accompagnement": "Fruits de mer, apéritifs, poisson"
+        "Accompagnement": "Fruits de mer, apéritifs, poisson",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Côte des Blancs",
+        "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_47895579525458",
@@ -2022,21 +2023,21 @@
         "Producteur": "Sadi Malot",
         "Nom": "Champagne 1er Cru Brut Nature",
         "Variété": "100% Chardonnay",
-        "Gradation": "12.5%\nFormat\n75\ncl",
+        "Gradation": "12.5%\nFormat 75 cl",
         "Profil aromatique": "Notes d'agrumes, levure, amande",
         "Méthode de vinification": "Méthode traditionnelle, fermentation en bouteille",
-        "Sucres résiduels": "0-3 g/l",
-        "Région": "Champagne\nZone de production\n1er Cru, Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux",
         "Vieillissement": "Minimum 3 ans sur lies",
         "Type de fût": "Fûts de chêne et acier",
+        "Sucres résiduels": "0-3 g/l",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
-        "Accompagnement": "Apéritifs, fruits de mer, plats légers"
+        "Accompagnement": "Apéritifs, fruits de mer, plats légers",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production 1er Cru, Champagne",
+        "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_47895586210130",
@@ -2078,21 +2079,21 @@
         "Producteur": "Jean Vesselle",
         "Nom": "Champagne Rosé de Saignée Demi-Sec",
         "Variété": "Pinot Noir, Pinot Meunier, Chardonnay",
-        "Gradation": "12.0%\nFormat\n75\ncl",
+        "Gradation": "12.0%\nFormat 75 cl",
         "Profil aromatique": "Fruits rouges, notes florales, douceur équilibrée",
         "Méthode de vinification": "Méthode traditionnelle avec macération courte",
-        "Sucres résiduels": "De 32 à 50 g/l",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux rosé demi-sec",
         "Vieillissement": "Minimum 15 mois sur lies",
         "Type de fût": "Cuves en acier et bouteille",
+        "Sucres résiduels": "De 32 à 50 g/l",
         "Couleur": "Rosé brillant",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 3-5 ans",
-        "Accompagnement": "Desserts, fruits rouges, pâtisserie"
+        "Accompagnement": "Desserts, fruits rouges, pâtisserie",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Champagne",
+        "Taper": "Vin mousseux rosé demi-sec"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_43760860201177",
@@ -2141,21 +2142,21 @@
         "Producteur": "Veuve Clicquot",
         "Nom": "Champagne AOC",
         "Variété": "Pinot Noir, Pinot Meunier, Chardonnay",
-        "Gradation": "12.5%\nFormat\n75\ncl",
+        "Gradation": "12.5%\nFormat 75 cl",
         "Profil aromatique": "Notes de fruits blancs, brioche, levure",
         "Méthode de vinification": "Méthode traditionnelle, fermentation en bouteille",
-        "Sucres résiduels": "Environ 9-12 g/l (dosage)",
-        "Région": "Champagne\nZone de production\nReims, Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux méthode traditionnelle",
         "Vieillissement": "Minimum 3 ans sur lies",
         "Type de fût": "Fûts de chêne pour fermentation, bouteille pour affinage",
+        "Sucres résiduels": "Environ 9-12 g/l (dosage)",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 5 ans suivant la production",
-        "Accompagnement": "Apéritifs, poisson, crustacés, plats raffinés"
+        "Accompagnement": "Apéritifs, poisson, crustacés, plats raffinés",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Reims, Champagne",
+        "Taper": "Vin mousseux méthode traditionnelle"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_50742399205714",
@@ -2195,21 +2196,21 @@
         "Producteur": "Jacquart",
         "Nom": "Champagne Brut",
         "Variété": "40% Chardonnay, 35% Pinot Noir, 25% Pinot Meunier",
-        "Gradation": "12.5%\nFormat\n75\ncl",
+        "Gradation": "12.5%\nFormat 75 cl",
         "Profil aromatique": "Notes de fruits blancs, croûte de pain, levure",
         "Méthode de vinification": "Méthode traditionnelle, fermentation en bouteille",
-        "Sucres résiduels": "6-12 g/l",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux",
         "Vieillissement": "Minimum 15 mois sur lies",
         "Type de fût": "Cuves en acier inoxydable et bouteille",
+        "Sucres résiduels": "6-12 g/l",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 3-5 ans suivant la production",
-        "Accompagnement": "Apéritifs, poisson, crustacés, plats légers"
+        "Accompagnement": "Apéritifs, poisson, crustacés, plats légers",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Champagne",
+        "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_47895594041682",
@@ -2249,21 +2250,21 @@
         "Producteur": "J.L. Vergnon",
         "Nom": "Champagne Blanc de Blancs 1er Cru",
         "Variété": "Chardonnay",
-        "Gradation": "12.5%\nFormat\n75\ncl",
+        "Gradation": "12.5%\nFormat 75 cl",
         "Profil aromatique": "Notes d'agrumes, fleurs blanches, minéral",
         "Méthode de vinification": "Méthode traditionnelle, fermentation en acier",
-        "Sucres résiduels": "Nature (zéro dosage)",
-        "Région": "Champagne\nZone de production\nCôte des Blancs",
-        "Pays": "France",
-        "Taper": "Mousseux",
         "Vieillissement": "Minimum 36 mois sur lies",
         "Type de fût": "Fûts de 400L",
+        "Sucres résiduels": "Nature (zéro dosage)",
         "Couleur": "Blanc paille",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 5 ans",
-        "Accompagnement": "Fruits de mer, poisson, apéritifs"
+        "Accompagnement": "Fruits de mer, poisson, apéritifs",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Côte des Blancs",
+        "Taper": "Mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_47895596826962",
@@ -2302,21 +2303,21 @@
         "Producteur": "Marie Copinet",
         "Nom": "Champagne",
         "Variété": "Pinot Meunier 100%",
-        "Gradation": "12.5%\nFormat\n75\ncl",
+        "Gradation": "12.5%\nFormat 75 cl",
         "Profil aromatique": "Notes de levures, agrumes, minéral",
         "Méthode de vinification": "Méthode traditionnelle, fermentation naturelle",
-        "Sucres résiduels": "Nature, zéro dosage",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux",
         "Vieillissement": "Minimum 3 ans sur lies",
         "Type de fût": "Acier inoxydable",
+        "Sucres résiduels": "Nature, zéro dosage",
         "Couleur": "Jaune paille",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 3-5 ans",
-        "Accompagnement": "Apéritifs, poisson, crustacés"
+        "Accompagnement": "Apéritifs, poisson, crustacés",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Champagne",
+        "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_47895590011218",
@@ -2356,21 +2357,21 @@
         "Producteur": "Vazart-Coquart",
         "Nom": "Champagne Blanc de Blancs Grand Cru",
         "Variété": "Chardonnay",
-        "Gradation": "12.0%\nFormat\n75\ncl",
+        "Gradation": "12.0%\nFormat 75 cl",
         "Profil aromatique": "Notes d'agrumes, fleurs blanches, minéralité",
         "Méthode de vinification": "Méthode traditionnelle, fermentation en bouteille",
-        "Sucres résiduels": "Zéro (brut nature)",
-        "Région": "Champagne\nZone de production\nGrand Cru",
-        "Pays": "France",
-        "Taper": "Vin mousseux méthode traditionnelle",
         "Vieillissement": "Minimum 3 ans sur lies",
         "Type de fût": "Cuves en acier inoxydable et bouteille",
+        "Sucres résiduels": "Zéro (brut nature)",
         "Couleur": "Jaune paille clair",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 5 ans après la vendange",
-        "Accompagnement": "Fruits de mer, poisson, apéritifs légers"
+        "Accompagnement": "Fruits de mer, poisson, apéritifs légers",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Grand Cru",
+        "Taper": "Vin mousseux méthode traditionnelle"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_47895579165010",
@@ -2411,22 +2412,22 @@
         "Format": "ions techniques",
         "Producteur": "Mouzon Leroux",
         "Nom": "Champagne Grand Cru",
-        "Variété": "Pinot Noir, Chardonnay, Pinot Meunier\nVintage\n2017",
-        "Gradation": "12.0%\nFormat\n75\ncl",
+        "Variété": "Pinot Noir, Chardonnay, Pinot Meunier\nVintage 2017",
+        "Gradation": "12.0%\nFormat 75 cl",
         "Profil aromatique": "Notes d'agrumes, levures, fruits blancs, minéral",
         "Méthode de vinification": "Méthode classique avec refermentation en bouteille",
-        "Sucres résiduels": "Extra Brut (0-6 g/l)",
-        "Région": "Champagne\nZone de production\nMouzon, Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux méthode classique",
         "Vieillissement": "Minimum 36 mois sur lies",
         "Type de fût": "Cuves en acier inoxydable et bouteille pour refermentation",
+        "Sucres résiduels": "Extra Brut (0-6 g/l)",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer jeune ou dans les 5 ans",
-        "Accompagnement": "Apéritifs, fruits de mer, plats légers"
+        "Accompagnement": "Apéritifs, fruits de mer, plats légers",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Mouzon, Champagne",
+        "Taper": "Vin mousseux méthode classique"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_47895561797970",
@@ -2465,10 +2466,10 @@
       "merchantDescription": "Lo Champagne Les Grandes Crayères Extra Brut di Laherte Frères è un prestigioso esempio della maestria enologica della Maison Laherte, situata nella rinomata regione della Champagne. Questo champagne è un connubio di eleganza e complessità, perfetto per gli intenditori più raffinati.\nProdotto principalmente da uve Chardonnay e Pinot Noir, Les Grandes Crayères offre un bouquet aromatico ricco e variegato, con note floreali, agrumate e di frutta secca che si intrecciano armoniosamente. Al naso si percepiscono subito delicate sfumature di fiori bianchi, limone e mela verde, seguite da sentori più evoluti di mandorla tostata e brioche.\nAl palato, questo champagne si distingue per la sua freschezza e mineralità, caratteristiche tipiche dei terreni calcarei da cui provengono le uve. La bollicina fine e persistente aggiunge un ulteriore tocco di raffinatezza, mentre la struttura ben equilibrata e l'acidità vivace conducono a un finale pulito e prolungato.\nLaherte Frères ha scelto un dosaggio Extra Brut per esaltare la purezza e la naturalezza delle sue uve, riducendo al minimo l'aggiunta di zuccheri. Questo rende Les Grandes Crayères un vino versatile, ideale tanto per un aperitivo chic quanto per accompagnare piatti a base di pesce, crostacei o formaggi freschi.\nLes Grandes Crayères Extra Brut è una scelta eccellente per chi cerca uno champagne che esprima l'essenza del terroir champenoise con eleganza e precisione. Perfetto per celebrare momenti speciali con un tocco di classe in più.",
       "technicalData": {
         "Format": "ions techniques",
-        "Producteur": "Laherte Frères\nVintage\n2021",
-        "Gradation": "12.5%\nFormat\n75\ncl"
+        "Producteur": "Laherte Frères\nVintage 2021",
+        "Gradation": "12.5%\nFormat 75 cl"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_42150252085465",
@@ -2514,21 +2515,21 @@
         "Producteur": "Drappier",
         "Nom": "Champagne AOC",
         "Variété": "Pinot Noir, Pinot Meunier, Chardonnay",
-        "Gradation": "12.0%\nFormat\n75\ncl",
+        "Gradation": "12.0%\nFormat 75 cl",
         "Profil aromatique": "Notes de fruits blancs, croûte de pain, levures",
         "Méthode de vinification": "Méthode traditionnelle avec refermentation en bouteille",
-        "Sucres résiduels": "6-12 g/l",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux",
         "Vieillissement": "Minimum 15 mois sur lies",
         "Type de fût": "Fûts de chêne et acier",
+        "Sucres résiduels": "6-12 g/l",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
-        "Accompagnement": "Apéritifs, poissons, crustacés, plats raffinés"
+        "Accompagnement": "Apéritifs, poissons, crustacés, plats raffinés",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Champagne",
+        "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_47895567106386",
@@ -2567,22 +2568,22 @@
         "Format": "ions techniques",
         "Producteur": "J-M Seleque",
         "Nom": "Champagne 1er Cru",
-        "Variété": "Pinot Noir, Chardonnay, Pinot Meunier\nVintage\n2019",
-        "Gradation": "12.5%\nFormat\n75\ncl",
+        "Variété": "Pinot Noir, Chardonnay, Pinot Meunier\nVintage 2019",
+        "Gradation": "12.5%\nFormat 75 cl",
         "Profil aromatique": "Notes de fruits rouges, croûte de pain",
         "Méthode de vinification": "Méthode traditionnelle, fermentation en bouteille",
-        "Sucres résiduels": "Extra brut (0-6 g/l)",
-        "Région": "Champagne\nZone de production\nLes Charmiers, Premier Cru",
-        "Pays": "France",
-        "Taper": "Mousseux",
         "Vieillissement": "Minimum 3 ans sur lies",
         "Type de fût": "Fûts de chêne et acier",
+        "Sucres résiduels": "Extra brut (0-6 g/l)",
         "Couleur": "Rosé",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 5 ans après la vendange",
-        "Accompagnement": "Apéritifs, poisson, crustacés"
+        "Accompagnement": "Apéritifs, poisson, crustacés",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Les Charmiers, Premier Cru",
+        "Taper": "Mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_50794913464658",
@@ -2623,22 +2624,22 @@
         "Format": "ions techniques",
         "Producteur": "Billecart-Salmon",
         "Nom": "Champagne",
-        "Variété": "Pinot Noir, Chardonnay, Pinot Meunier\nVintage\n2009",
-        "Gradation": "12.0%\nFormat\n75\ncl",
+        "Variété": "Pinot Noir, Chardonnay, Pinot Meunier\nVintage 2009",
+        "Gradation": "12.0%\nFormat 75 cl",
         "Profil aromatique": "Notes d'agrumes, levures, fruits blancs",
         "Méthode de vinification": "Méthode traditionnelle avec refermentation en bouteille",
-        "Sucres résiduels": "Environ 6-12 g/l",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux",
         "Vieillissement": "Minimum 15 mois sur lies",
         "Type de fût": "Cuves en acier et bouteille pour refermentation",
+        "Sucres résiduels": "Environ 6-12 g/l",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
-        "Accompagnement": "Apéritifs, poisson, crustacés"
+        "Accompagnement": "Apéritifs, poisson, crustacés",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Champagne",
+        "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_53093687427410",
@@ -2678,22 +2679,22 @@
         "Format": "ions techniques",
         "Producteur": "Perrier-Jouët",
         "Nom": "Champagne",
-        "Variété": "Chardonnay, Pinot Noir, Pinot Meunier\nVintage\n2016",
-        "Gradation": "12.5%\nFormat\n75\ncl",
+        "Variété": "Chardonnay, Pinot Noir, Pinot Meunier\nVintage 2016",
+        "Gradation": "12.5%\nFormat 75 cl",
         "Profil aromatique": "Fleurs blanches, fruits mûrs, notes de miel",
         "Méthode de vinification": "Méthode traditionnelle",
-        "Sucres résiduels": "Non spécifié",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux",
         "Vieillissement": "Minimum 3 ans sur lies",
         "Type de fût": "Non spécifié",
+        "Sucres résiduels": "Non spécifié",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 5 ans suivant la production",
-        "Accompagnement": "Apéritifs, poisson, crustacés"
+        "Accompagnement": "Apéritifs, poisson, crustacés",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Champagne",
+        "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_50742402384210",
@@ -2734,21 +2735,21 @@
         "Producteur": "Jacquart",
         "Nom": "Champagne Brut",
         "Variété": "Chardonnay, Pinot Noir, Pinot Meunier",
-        "Gradation": "12.0%\nFormat\n75\ncl",
+        "Gradation": "12.0%\nFormat 75 cl",
         "Profil aromatique": "Notes de levure, fruits blancs, agrumes",
         "Méthode de vinification": "Méthode traditionnelle, fermentation en bouteille",
-        "Sucres résiduels": "6-12 g/l",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux",
         "Vieillissement": "Minimum 15 mois sur lies",
         "Type de fût": "Fûts de chêne et acier inoxydable",
+        "Sucres résiduels": "6-12 g/l",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 3-5 ans suivant la production",
-        "Accompagnement": "Apéritifs, poisson, crustacés, plats légers"
+        "Accompagnement": "Apéritifs, poisson, crustacés, plats légers",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Champagne",
+        "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_49273787416914",
@@ -2791,21 +2792,21 @@
         "Producteur": "Grand Tour",
         "Nom": "Champagne Grand Cru",
         "Variété": "Pinot Noir, Chardonnay, Pinot Meunier",
-        "Gradation": "12.5%\nFormat\n75\ncl",
+        "Gradation": "12.5%\nFormat 75 cl",
         "Profil aromatique": "Notes de fruits blancs, croûte de pain, levure",
         "Méthode de vinification": "Méthode traditionnelle avec refermentation en bouteille",
-        "Sucres résiduels": "Environ 9 g/l",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux brut",
         "Vieillissement": "Minimum 15 mois sur lies",
         "Type de fût": "Cuves en acier inoxydable et bouteille",
+        "Sucres résiduels": "Environ 9 g/l",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 3-5 ans suivant la production",
-        "Accompagnement": "Apéritifs, poissons, crustacés, plats légers"
+        "Accompagnement": "Apéritifs, poissons, crustacés, plats légers",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Champagne",
+        "Taper": "Vin mousseux brut"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_50742404874578",
@@ -2845,21 +2846,21 @@
         "Producteur": "Daubanton",
         "Nom": "Champagne",
         "Variété": "Pinot Noir, Chardonnay, Pinot Meunier",
-        "Gradation": "12.0%\nFormat\n75\ncl",
+        "Gradation": "12.0%\nFormat 75 cl",
         "Profil aromatique": "Notes de levure, fruits blancs, agrumes, croûte de pain",
         "Méthode de vinification": "Méthode classique avec refermentation en bouteille",
-        "Sucres résiduels": "Extra Brut (0-6 g/l)",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux méthode classique",
         "Vieillissement": "Minimum 15 mois sur lies",
         "Type de fût": "Cuves en acier et bouteille pour refermentation",
+        "Sucres résiduels": "Extra Brut (0-6 g/l)",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer jeune pour fraîcheur et vivacité",
-        "Accompagnement": "Apéritifs, poissons, crustacés, plats raffinés"
+        "Accompagnement": "Apéritifs, poissons, crustacés, plats raffinés",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Champagne",
+        "Taper": "Vin mousseux méthode classique"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_50742403596626",
@@ -2899,21 +2900,21 @@
         "Format": "ions techniques",
         "Producteur": "M.G. Heucq",
         "Nom": "Champagne Brut",
-        "Gradation": "12.5%\nFormat\n75\ncl",
+        "Gradation": "12.5%\nFormat 75 cl",
         "Profil aromatique": "Notes de levure, fruits blancs, agrumes",
         "Méthode de vinification": "Méthode traditionnelle, fermentation en bouteille",
-        "Sucres résiduels": "6-12 g/l",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Mousseux",
         "Vieillissement": "Minimum 15 mois sur lies",
         "Type de fût": "Fûts de chêne et acier",
+        "Sucres résiduels": "6-12 g/l",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 3-5 ans",
-        "Accompagnement": "Apéritifs, poisson, crustacés"
+        "Accompagnement": "Apéritifs, poisson, crustacés",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Champagne",
+        "Taper": "Mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_47895551279442",
@@ -2957,21 +2958,21 @@
         "Producteur": "Alain Mercier",
         "Nom": "Champagne",
         "Variété": "Pinot Noir 40%, Pinot Meunier 40%, Chardonnay 20%",
-        "Gradation": "12.0%\nFormat\n75\ncl",
+        "Gradation": "12.0%\nFormat 75 cl",
         "Profil aromatique": "Notes de levure, fruits blancs, agrumes",
         "Méthode de vinification": "Méthode traditionnelle (prise de mousse en bouteille)",
-        "Sucres résiduels": "Brut (jusqu'à 12 g/l)",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux",
         "Vieillissement": "Minimum 15 mois sur lies",
         "Type de fût": "Cuves en acier inoxydable",
+        "Sucres résiduels": "Brut (jusqu'à 12 g/l)",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
-        "Accompagnement": "Apéritifs, poisson, crustacés"
+        "Accompagnement": "Apéritifs, poisson, crustacés",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Champagne",
+        "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_47895552524626",
@@ -3011,21 +3012,21 @@
         "Producteur": "J.Charpentier",
         "Nom": "Champagne",
         "Variété": "Pinot Noir, Chardonnay, Pinot Meunier",
-        "Gradation": "12.0%\nFormat\n75\ncl",
+        "Gradation": "12.0%\nFormat 75 cl",
         "Profil aromatique": "Notes de levure, fruits blancs, agrumes, croûte de pain",
         "Méthode de vinification": "Méthode traditionnelle (prise de mousse en bouteille)",
-        "Sucres résiduels": "Environ 6-12 g/l (Brut)",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux",
         "Vieillissement": "Minimum 15 mois sur lies",
         "Type de fût": "Cuves en acier inoxydable et bouteille pour prise de mousse",
+        "Sucres résiduels": "Environ 6-12 g/l (Brut)",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 3-5 ans après la production",
-        "Accompagnement": "Apéritifs, poissons, crustacés, plats légers"
+        "Accompagnement": "Apéritifs, poissons, crustacés, plats légers",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Champagne",
+        "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_43760858333401",
@@ -3071,21 +3072,21 @@
         "Producteur": "Cattier",
         "Nom": "Champagne AOC",
         "Variété": "Pinot Noir, Chardonnay, Pinot Meunier",
-        "Gradation": "12.5%\nFormat\n75\ncl",
+        "Gradation": "12.5%\nFormat 75 cl",
         "Profil aromatique": "Notes d'agrumes, levure, fruits blancs",
         "Méthode de vinification": "Méthode traditionnelle avec refermentation en bouteille",
-        "Sucres résiduels": "Brut, moins de 12 g/l",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux",
         "Vieillissement": "Minimum 15 mois sur lies",
         "Type de fût": "Cuves en acier inoxydable et bouteille",
+        "Sucres résiduels": "Brut, moins de 12 g/l",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
-        "Accompagnement": "Apéritifs, poisson, crustacés"
+        "Accompagnement": "Apéritifs, poisson, crustacés",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Champagne",
+        "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_50742405759314",
@@ -3123,21 +3124,21 @@
         "Producteur": "Daubanton",
         "Nom": "Champagne Blanc de Noir",
         "Variété": "Pinot Noir, Pinot Meunier",
-        "Gradation": "12.0%\nFormat\n75\ncl",
+        "Gradation": "12.0%\nFormat 75 cl",
         "Profil aromatique": "Notes de fruits rouges, croûte de pain, agrumes",
         "Méthode de vinification": "Méthode traditionnelle avec refermentation en bouteille",
-        "Sucres résiduels": "Brut, moins de 12 g/l",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux",
         "Vieillissement": "Minimum 15 mois sur lies",
         "Type de fût": "Cuves en acier et bouteille pour refermentation",
+        "Sucres résiduels": "Brut, moins de 12 g/l",
         "Couleur": "Blanc paille",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
-        "Accompagnement": "Apéritifs, poisson, crustacés"
+        "Accompagnement": "Apéritifs, poisson, crustacés",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Champagne",
+        "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_43760591864025",
@@ -3185,21 +3186,21 @@
         "Producteur": "De Vilmont",
         "Nom": "Champagne AOC",
         "Variété": "Pinot Noir, Chardonnay, Pinot Meunier",
-        "Gradation": "12.5%\nFormat\n75\ncl",
+        "Gradation": "12.5%\nFormat 75 cl",
         "Profil aromatique": "Notes de levure, fruits blancs, agrumes, amande",
         "Méthode de vinification": "Méthode traditionnelle avec refermentation en bouteille",
-        "Sucres résiduels": "Environ 6-12 g/l (Brut)",
-        "Région": "Champagne\nZone de production\nPremier Cru, Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux",
         "Vieillissement": "Minimum 3 ans sur lies",
         "Type de fût": "Fûts de chêne et acier inoxydable",
+        "Sucres résiduels": "Environ 6-12 g/l (Brut)",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 3-5 ans suivant la production",
-        "Accompagnement": "Apéritifs, poisson, crustacés, plats raffinés"
+        "Accompagnement": "Apéritifs, poisson, crustacés, plats raffinés",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Premier Cru, Champagne",
+        "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_48453987238226",
@@ -3237,20 +3238,20 @@
         "Format": "ions techniques",
         "Producteur": "Beaumont des Crayeres",
         "Nom": "Champagne Grand Reserve Brut",
-        "Gradation": "12.5%\nFormat\n75\ncl",
+        "Gradation": "12.5%\nFormat 75 cl",
         "Profil aromatique": "Notes de levure, fruits blancs, agrumes",
         "Méthode de vinification": "Méthode traditionnelle (prise de mousse en bouteille)",
-        "Sucres résiduels": "Brut (jusqu'à 12 g/l)",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux",
         "Vieillissement": "Minimum 3 ans",
+        "Sucres résiduels": "Brut (jusqu'à 12 g/l)",
         "Couleur": "Vin mousseux blanc",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 5 ans",
-        "Accompagnement": "Apéritifs, poisson, crustacés"
+        "Accompagnement": "Apéritifs, poisson, crustacés",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Champagne",
+        "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_47895586308434",
@@ -3292,20 +3293,20 @@
         "Producteur": "Lamiable",
         "Nom": "Champagne",
         "Variété": "30% Pinot Noir, 40% Pinot Meunier, 30% Chardonnay",
-        "Gradation": "12.0%\nFormat\n75\ncl",
+        "Gradation": "12.0%\nFormat 75 cl",
         "Profil aromatique": "Notes de levure, fruits blancs, agrumes",
         "Méthode de vinification": "Méthode traditionnelle, refermentation en bouteille",
-        "Sucres résiduels": "9 g/l",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux",
         "Vieillissement": "Minimum 15 mois sur lies",
+        "Sucres résiduels": "9 g/l",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
-        "Accompagnement": "Apéritifs, poisson, crustacés"
+        "Accompagnement": "Apéritifs, poisson, crustacés",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Champagne",
+        "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_50385379819858",
@@ -3349,21 +3350,21 @@
         "Producteur": "Maison Burtin",
         "Nom": "Champagne Extra Brut",
         "Variété": "Chardonnay, Pinot Noir, Pinot Meunier",
-        "Gradation": "12.5%\nFormat\n75\ncl",
+        "Gradation": "12.5%\nFormat 75 cl",
         "Profil aromatique": "Notes d'agrumes, levure, amande, fraîcheur",
         "Méthode de vinification": "Méthode traditionnelle, fermentation en bouteille",
-        "Sucres résiduels": "Extra brut (0-6 g/l)",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux",
         "Vieillissement": "Minimum 15 mois sur lies",
         "Type de fût": "Fûts de chêne et acier inoxydable",
+        "Sucres résiduels": "Extra brut (0-6 g/l)",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
-        "Accompagnement": "Apéritifs, fruits de mer, plats légers"
+        "Accompagnement": "Apéritifs, fruits de mer, plats légers",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Champagne",
+        "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_47895586242898",
@@ -5735,21 +5736,21 @@
         "Producteur": "Waris Larmandier",
         "Nom": "Champagne",
         "Variété": "Pinot Noir, Chardonnay, Pinot Meunier",
-        "Gradation": "12.0%\nFormat\n75\ncl",
+        "Gradation": "12.0%\nFormat 75 cl",
         "Profil aromatique": "Fruits rouges, notes florales, fraîcheur vibrante",
         "Méthode de vinification": "Méthode traditionnelle avec refermentation en bouteille",
-        "Sucres résiduels": "Extra brut (0-6 g/l)",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Mousseux",
         "Vieillissement": "Minimum 24 mois sur lies",
         "Type de fût": "Fûts de chêne et acier",
+        "Sucres résiduels": "Extra brut (0-6 g/l)",
         "Couleur": "Rosé",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
-        "Accompagnement": "Apéritifs, poissons, crustacés, plats légers"
+        "Accompagnement": "Apéritifs, poissons, crustacés, plats légers",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Champagne",
+        "Taper": "Mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_47895591485778",
@@ -5790,21 +5791,21 @@
         "Producteur": "Waris Larmandier",
         "Nom": "Champagne Grand Cru",
         "Variété": "Chardonnay",
-        "Gradation": "12.0%\nFormat\n75\ncl",
+        "Gradation": "12.0%\nFormat 75 cl",
         "Profil aromatique": "Notes d'agrumes, fleurs blanches, minéral",
         "Méthode de vinification": "Méthode classique, fermentation en bouteille",
-        "Sucres résiduels": "Extra brut (0-6 g/l)",
-        "Région": "Collio\nZone de production\nCollio Goriziano",
-        "Pays": "Italie",
-        "Taper": "Vin mousseux",
         "Vieillissement": "Minimum 36 mois sur lies",
         "Type de fût": "Fûts de chêne et acier",
+        "Sucres résiduels": "Extra brut (0-6 g/l)",
         "Couleur": "Jaune paille clair",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 5 ans après la vendange",
-        "Accompagnement": "Fruits de mer, poisson, apéritifs"
+        "Accompagnement": "Fruits de mer, poisson, apéritifs",
+        "Région": "Collio",
+        "Pays": "Italie\nZone de production Collio Goriziano",
+        "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_49249111834962",
@@ -5846,21 +5847,21 @@
         "Producteur": "Chateau De Bligny",
         "Nom": "Champagne Vintage Brut",
         "Variété": "Pinot Noir, Chardonnay, Pinot Meunier",
-        "Gradation": "12.5%\nFormat\n75\ncl",
+        "Gradation": "12.5%\nFormat 75 cl",
         "Profil aromatique": "Notes de levure, fruits blancs, agrumes, amande",
         "Méthode de vinification": "Méthode traditionnelle avec refermentation en bouteille",
-        "Sucres résiduels": "Brut (max 12 g/l)",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux",
         "Vieillissement": "Minimum 3 ans sur lies",
         "Type de fût": "Cuves en acier inoxydable et bouteille pour refermentation",
+        "Sucres résiduels": "Brut (max 12 g/l)",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer jeune ou dans les 5 ans",
-        "Accompagnement": "Apéritifs, poissons, crustacés, plats raffinés"
+        "Accompagnement": "Apéritifs, poissons, crustacés, plats raffinés",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Champagne",
+        "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_53712154558802",
@@ -5905,21 +5906,21 @@
         "Producteur": "Vilmart",
         "Nom": "Champagne Premier Cru",
         "Variété": "Pinot Noir, Chardonnay, Pinot Meunier",
-        "Gradation": "12.5%\nFormat\n75\ncl",
+        "Gradation": "12.5%\nFormat 75 cl",
         "Profil aromatique": "Notes de fruits blancs, levures, amande",
         "Méthode de vinification": "Méthode traditionnelle avec refermentation en bouteille",
-        "Sucres résiduels": "Brut (≤12 g/l)",
-        "Région": "Champagne\nZone de production\nReims, Épernay",
-        "Pays": "France",
-        "Taper": "Vin mousseux",
         "Vieillissement": "Minimum 3 ans sur lies",
         "Type de fût": "Fûts de chêne et acier inoxydable",
+        "Sucres résiduels": "Brut (≤12 g/l)",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
-        "Accompagnement": "Apéritifs, poisson, crustacés"
+        "Accompagnement": "Apéritifs, poisson, crustacés",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Reims, Épernay",
+        "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_47895559799122",
@@ -5962,21 +5963,21 @@
         "Producteur": "Le Guèdard",
         "Nom": "Champagne",
         "Variété": "Pinot Noir 60%, Pinot Meunier 20%, Chardonnay 20%",
-        "Gradation": "12.5%\nFormat\n75\ncl",
+        "Gradation": "12.5%\nFormat 75 cl",
         "Profil aromatique": "Notes de levure, agrumes, fruits secs",
         "Méthode de vinification": "Méthode classique avec fermentation en bouteille",
-        "Sucres résiduels": "6 g/L",
-        "Région": "Champagne\nZone de production\nRégion Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux Méthode Classique",
         "Vieillissement": "36 mois sur lies",
         "Type de fût": "Acier inoxydable",
+        "Sucres résiduels": "6 g/L",
         "Couleur": "Vin mousseux blanc",
         "Température de service": "8-10°C",
         "Consommation recommandée": "Vin parfait à boire immédiatement, mais peut bien évoluer s'il est conservé en cave",
-        "Accompagnement": "Apéritifs, poisson, crustacés, plats raffinés"
+        "Accompagnement": "Apéritifs, poisson, crustacés, plats raffinés",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Région Champagne",
+        "Taper": "Vin mousseux Méthode Classique"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_47245068599634",
@@ -6017,21 +6018,21 @@
         "Producteur": "Vincent Brochet",
         "Nom": "Champagne",
         "Variété": "Chardonnay",
-        "Gradation": "12.0%\nFormat\n75\ncl",
+        "Gradation": "12.0%\nFormat 75 cl",
         "Profil aromatique": "Notes d'agrumes, levures, croûte de pain",
         "Méthode de vinification": "Méthode traditionnelle, fermentation en bouteille",
-        "Sucres résiduels": "Brut, moins de 12 g/l",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux",
         "Vieillissement": "Minimum 15 mois sur lies",
         "Type de fût": "Cuves en acier inoxydable",
+        "Sucres résiduels": "Brut, moins de 12 g/l",
         "Couleur": "Jaune paille",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 3-5 ans",
-        "Accompagnement": "Apéritifs, poisson, crustacés"
+        "Accompagnement": "Apéritifs, poisson, crustacés",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Champagne",
+        "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_47895564583250",
@@ -6736,21 +6737,21 @@
         "Producteur": "Le Guèdard",
         "Nom": "Champagne",
         "Variété": "Pinot Noir",
-        "Gradation": "12.5%\nFormat\n75\ncl",
+        "Gradation": "12.5%\nFormat 75 cl",
         "Profil aromatique": "Fruits rouges, notes florales, levures",
         "Méthode de vinification": "Méthode traditionnelle, refermentation en bouteille",
-        "Sucres résiduels": "Brut (0-12 g/l)",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Mousseux",
         "Vieillissement": "Minimum 15 mois sur lies",
         "Type de fût": "Fûts de chêne et acier",
+        "Sucres résiduels": "Brut (0-12 g/l)",
         "Couleur": "Rosé",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 3-5 ans",
-        "Accompagnement": "Apéritifs, poissons, viandes blanches"
+        "Accompagnement": "Apéritifs, poissons, viandes blanches",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Champagne",
+        "Taper": "Mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_47895579296082",
@@ -6792,21 +6793,21 @@
         "Producteur": "Mouzon Leroux",
         "Nom": "Champagne Grand Cru Extra Brut Rosé",
         "Variété": "Pinot Noir, Pinot Meunier, Chardonnay",
-        "Gradation": "12.0%\nFormat\n75\ncl",
+        "Gradation": "12.0%\nFormat 75 cl",
         "Profil aromatique": "Fruits rouges, notes florales, levures",
         "Méthode de vinification": "Méthode traditionnelle avec saignée",
-        "Sucres résiduels": "Extra brut (0-6 g/l)",
-        "Région": "Champagne\nZone de production\nGrand Cru, Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux méthode traditionnelle rosé extra brut",
         "Vieillissement": "Minimum 36 mois sur lies",
         "Type de fût": "Fûts en acier et bouteille",
+        "Sucres résiduels": "Extra brut (0-6 g/l)",
         "Couleur": "Rosé brillant",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 5 ans après la vendange",
-        "Accompagnement": "Viandes blanches, poisson, apéritifs, desserts aux fruits rouges"
+        "Accompagnement": "Viandes blanches, poisson, apéritifs, desserts aux fruits rouges",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Grand Cru, Champagne",
+        "Taper": "Vin mousseux méthode traditionnelle rosé extra brut"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_50742403039570",
@@ -6848,22 +6849,22 @@
         "Format": "ions techniques",
         "Producteur": "Jean-Claude Vallois",
         "Nom": "Champagne Blanc de Blancs Millésimé",
-        "Variété": "Chardonnay\nVintage\n2018",
-        "Gradation": "12.0%\nFormat\n75\ncl",
+        "Variété": "Chardonnay\nVintage 2018",
+        "Gradation": "12.0%\nFormat 75 cl",
         "Profil aromatique": "Notes d'agrumes, fleurs blanches, levures",
         "Méthode de vinification": "Fermentation en acier, refermentation en bouteille",
-        "Sucres résiduels": "Extra brut (0-6 g/l)",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Mousseux",
         "Vieillissement": "Minimum 3 ans sur lies",
         "Type de fût": "Cuves en acier et bouteille",
+        "Sucres résiduels": "Extra brut (0-6 g/l)",
         "Couleur": "Jaune paille",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 5-7 ans",
-        "Accompagnement": "Fruits de mer, poisson, apéritifs légers"
+        "Accompagnement": "Fruits de mer, poisson, apéritifs légers",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Champagne",
+        "Taper": "Mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_48534936224082",
@@ -6903,21 +6904,21 @@
         "Producteur": "Corbon",
         "Nom": "Champagne",
         "Variété": "Pinot Noir, Chardonnay, Pinot Meunier",
-        "Gradation": "12.0%\nFormat\n75\ncl",
+        "Gradation": "12.0%\nFormat 75 cl",
         "Profil aromatique": "Notes de levure, fruits blancs, agrumes",
         "Méthode de vinification": "Méthode traditionnelle avec refermentation en bouteille",
-        "Sucres résiduels": "Brut (max 12 g/l)",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux",
         "Vieillissement": "Minimum 15 mois sur lies",
         "Type de fût": "Fûts de chêne et acier",
+        "Sucres résiduels": "Brut (max 12 g/l)",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
-        "Accompagnement": "Apéritifs, poisson, crustacés"
+        "Accompagnement": "Apéritifs, poisson, crustacés",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Champagne",
+        "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_43760629088473",
@@ -6969,21 +6970,21 @@
         "Producteur": "Mumm",
         "Nom": "Champagne AOC",
         "Variété": "Pinot Noir, Chardonnay, Pinot Meunier",
-        "Gradation": "12.0%\nFormat\n75\ncl",
+        "Gradation": "12.0%\nFormat 75 cl",
         "Profil aromatique": "Notes de fruits blancs, croûte de pain, levures",
         "Méthode de vinification": "Méthode traditionnelle avec refermentation en bouteille",
-        "Sucres résiduels": "Brut (max 12 g/l)",
-        "Région": "Champagne\nZone de production\nRégion Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux méthode traditionnelle",
         "Vieillissement": "Minimum 15 mois sur lies",
         "Type de fût": "Fûts de chêne et acier",
+        "Sucres résiduels": "Brut (max 12 g/l)",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer jeune, dans les 3-5 ans",
-        "Accompagnement": "Apéritifs, poissons, crustacés"
+        "Accompagnement": "Apéritifs, poissons, crustacés",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Région Champagne",
+        "Taper": "Vin mousseux méthode traditionnelle"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_47895574544722",
@@ -7025,20 +7026,20 @@
         "Producteur": "Bèreche Et Fils",
         "Nom": "Champagne",
         "Variété": "Pinot Noir, Chardonnay, Pinot Meunier",
-        "Gradation": "12.5%\nFormat\n75\ncl",
+        "Gradation": "12.5%\nFormat 75 cl",
         "Profil aromatique": "Notes de pomme, agrumes, levure, amande",
         "Méthode de vinification": "Méthode traditionnelle (fermentation en bouteille)",
-        "Sucres résiduels": "Brut (faible teneur en sucres)",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux",
         "Vieillissement": "Minimum 3 ans sur lies",
         "Type de fût": "Fûts en bois et bouteille pour refermentation",
+        "Sucres résiduels": "Brut (faible teneur en sucres)",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "8-10°C",
-        "Accompagnement": "Apéritifs, fruits de mer, plats légers"
+        "Accompagnement": "Apéritifs, fruits de mer, plats légers",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Champagne",
+        "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_47895578673490",
@@ -7722,21 +7723,21 @@
         "Producteur": "Billecart-Salmon",
         "Nom": "Champagne Le Blanc de Blancs",
         "Variété": "Chardonnay",
-        "Gradation": "13.0%\nFormat\n75\ncl",
+        "Gradation": "13.0%\nFormat 75 cl",
         "Profil aromatique": "Notes d'agrumes, fleurs blanches, levure",
         "Méthode de vinification": "Méthode traditionnelle, fermentation en bouteille",
-        "Sucres résiduels": "Extra brut ou brut, faible teneur en sucre résiduel",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux méthode traditionnelle",
         "Vieillissement": "Minimum 3 ans sur lies",
         "Type de fût": "Cuves en acier inoxydable et bouteille",
+        "Sucres résiduels": "Extra brut ou brut, faible teneur en sucre résiduel",
         "Couleur": "Jaune paille clair",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer jeune pour la fraîcheur",
-        "Accompagnement": "Fruits de mer, poisson, apéritifs légers"
+        "Accompagnement": "Fruits de mer, poisson, apéritifs légers",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Champagne",
+        "Taper": "Vin mousseux méthode traditionnelle"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_47895600005458",
@@ -7774,9 +7775,9 @@
       "technicalData": {
         "Format": "ions techniques",
         "Producteur": "Jerome Coessens",
-        "Gradation": "12.0%\nFormat\n75\ncl"
+        "Gradation": "12.0%\nFormat 75 cl"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_47895599972690",
@@ -7814,9 +7815,9 @@
       "technicalData": {
         "Format": "ions techniques",
         "Producteur": "Jerome Coessens",
-        "Gradation": "12.5%\nFormat\n75\ncl"
+        "Gradation": "12.5%\nFormat 75 cl"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_50794921361746",
@@ -7913,21 +7914,21 @@
         "Producteur": "Alexandre Filaine",
         "Nom": "Champagne",
         "Variété": "Pinot Noir 45%, Chardonnay 30%, Pinot Meunier 25%",
-        "Gradation": "12.0%\nFormat\n75\ncl",
+        "Gradation": "12.0%\nFormat 75 cl",
         "Profil aromatique": "Notes de levure, fruits blancs, agrumes",
         "Méthode de vinification": "Méthode traditionnelle, fermentation en bouteille",
-        "Sucres résiduels": "Brut, 6-12 g/l",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux",
         "Vieillissement": "Minimum 15 mois sur lies",
         "Type de fût": "Cuves en acier inoxydable et bouteille",
+        "Sucres résiduels": "Brut, 6-12 g/l",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 3-5 ans après production",
-        "Accompagnement": "Apéritifs, poisson, crustacés"
+        "Accompagnement": "Apéritifs, poisson, crustacés",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Champagne",
+        "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_47895571398994",
@@ -7971,9 +7972,9 @@
       "technicalData": {
         "Format": "ions techniques",
         "Producteur": "Frèdèric Savart",
-        "Gradation": "12.5%\nFormat\n75\ncl"
+        "Gradation": "12.5%\nFormat 75 cl"
       },
-      "checkedAt": "2026-10-31T10:53:47.797Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_53093681004882",
@@ -8012,21 +8013,21 @@
         "Producteur": "Perrier-Jouët",
         "Nom": "Champagne Blanc de Blancs",
         "Variété": "Chardonnay",
-        "Gradation": "12.5%\nFormat\n75\ncl",
+        "Gradation": "12.5%\nFormat 75 cl",
         "Profil aromatique": "Notes florales, agrumes, levures",
         "Méthode de vinification": "Méthode traditionnelle avec refermentation en bouteille",
-        "Sucres résiduels": "Brut, moins de 12 g/l",
-        "Région": "Champagne\nZone de production\nCôte des Blancs",
-        "Pays": "France",
-        "Taper": "Vin mousseux",
         "Vieillissement": "Minimum 3 ans sur lies",
         "Type de fût": "Fûts de chêne et acier",
+        "Sucres résiduels": "Brut, moins de 12 g/l",
         "Couleur": "Jaune paille clair",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 5 ans après la vendange",
-        "Accompagnement": "Fruits de mer, poisson, entrées légères"
+        "Accompagnement": "Fruits de mer, poisson, entrées légères",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Côte des Blancs",
+        "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-10-30T11:22:20.911Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_53712153739602",
@@ -8070,21 +8071,21 @@
         "Producteur": "Egly-Ouriet",
         "Nom": "Champagne Grand Cru",
         "Variété": "Pinot Noir, Chardonnay, Pinot Meunier",
-        "Gradation": "12.5%\nFormat\n75\ncl",
+        "Gradation": "12.5%\nFormat 75 cl",
         "Profil aromatique": "Notes de fruits blancs, levures, croûte de pain",
         "Méthode de vinification": "Méthode classique avec refermentation en bouteille",
-        "Sucres résiduels": "Brut, moins de 12 g/l",
-        "Région": "Collio\nZone de production\nCollio, Friuli-Venezia Giulia",
-        "Pays": "Italie",
-        "Taper": "Vin mousseux",
         "Vieillissement": "Minimum 3 ans sur lies",
         "Type de fût": "Fûts de chêne et acier inoxydable",
+        "Sucres résiduels": "Brut, moins de 12 g/l",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 5-7 ans après la vendange",
-        "Accompagnement": "Apéritifs, poissons, crustacés, plats raffinés"
+        "Accompagnement": "Apéritifs, poissons, crustacés, plats raffinés",
+        "Région": "Collio",
+        "Pays": "Italie\nZone de production Collio, Friuli-Venezia Giulia",
+        "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-10-30T11:22:20.911Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_47895594697042",
@@ -8126,21 +8127,21 @@
         "Format": "ions techniques",
         "Producteur": "J.L. Vergnon",
         "Nom": "Champagne Grand Cru",
-        "Variété": "Chardonnay\nVintage\n2014",
-        "Gradation": "12.5%\nFormat\n75\ncl",
+        "Variété": "Chardonnay\nVintage 2014",
+        "Gradation": "12.5%\nFormat 75 cl",
         "Profil aromatique": "Notes d'agrumes, fleurs blanches, levures",
         "Méthode de vinification": "Méthode traditionnelle, fermentation en bouteille",
-        "Sucres résiduels": "Extra brut (0-6 g/l)",
-        "Région": "Champagne\nZone de production\nGrand Cru",
-        "Pays": "France",
-        "Taper": "Mousseux",
         "Vieillissement": "Minimum 36 mois sur lies",
+        "Sucres résiduels": "Extra brut (0-6 g/l)",
         "Couleur": "Blanc paille",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 5 ans après la vendange",
-        "Accompagnement": "Apéritifs, poisson, crustacés"
+        "Accompagnement": "Apéritifs, poisson, crustacés",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Grand Cru",
+        "Taper": "Mousseux"
       },
-      "checkedAt": "2026-10-30T11:22:20.911Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_53712157737298",
@@ -8182,22 +8183,22 @@
         "Format": "ions techniques",
         "Producteur": "Thomas Perseval",
         "Nom": "Champagne Millesimato Brut",
-        "Variété": "Pinot Noir, Chardonnay, Pinot Meunier\nVintage\n2021",
-        "Gradation": "12.0%\nFormat\n75\ncl",
+        "Variété": "Pinot Noir, Chardonnay, Pinot Meunier\nVintage 2021",
+        "Gradation": "12.0%\nFormat 75 cl",
         "Profil aromatique": "Notes de levure, fruits blancs, agrumes, brioche",
         "Méthode de vinification": "Méthode classique avec refermentation en bouteille",
-        "Sucres résiduels": "Brut, 6-12 g/l",
-        "Région": "Champagne\nZone de production\nReims, Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux Méthode Classique",
         "Vieillissement": "Minimum 3 ans sur lies",
         "Type de fût": "Cuves en acier et bouteille pour refermentation",
+        "Sucres résiduels": "Brut, 6-12 g/l",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer jeune ou dans les 5 ans",
-        "Accompagnement": "Apéritifs, poisson, crustacés, plats raffinés"
+        "Accompagnement": "Apéritifs, poisson, crustacés, plats raffinés",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Reims, Champagne",
+        "Taper": "Vin mousseux Méthode Classique"
       },
-      "checkedAt": "2026-10-30T11:22:20.911Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_53712154820946",
@@ -8240,21 +8241,21 @@
         "Producteur": "Alexandre Filaine",
         "Nom": "Champagne",
         "Variété": "Pinot Noir, Chardonnay, Pinot Meunier",
-        "Gradation": "12.0%\nFormat\n75\ncl",
+        "Gradation": "12.0%\nFormat 75 cl",
         "Profil aromatique": "Notes d'agrumes, levure, fruits blancs",
         "Méthode de vinification": "Méthode traditionnelle (prise de mousse en bouteille)",
-        "Sucres résiduels": "Brut (faible)",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Mousseux",
         "Vieillissement": "Au moins 15 mois sur lies",
         "Type de fût": "Fûts de 1937",
+        "Sucres résiduels": "Brut (faible)",
         "Couleur": "Jaune paille",
         "Température de service": "8-10°C",
         "Consommation recommandée": "Palais exigeants en quête de complexité authentique",
-        "Accompagnement": "Apéritifs, poisson, crustacés"
+        "Accompagnement": "Apéritifs, poisson, crustacés",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Champagne",
+        "Taper": "Mousseux"
       },
-      "checkedAt": "2026-10-30T11:22:20.911Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     },
     {
       "id": "shopify_FR_43760556310745",
@@ -8301,21 +8302,21 @@
         "Producteur": "Krug",
         "Nom": "Champagne AOC",
         "Variété": "Pinot Noir, Chardonnay, Pinot Meunier",
-        "Gradation": "12.5%\nFormat\n75\ncl",
+        "Gradation": "12.5%\nFormat 75 cl",
         "Profil aromatique": "Notes de fruits mûrs, noisette, brioche",
         "Méthode de vinification": "Méthode traditionnelle avec fermentation en bouteille",
-        "Sucres résiduels": "Environ 9 g/l",
-        "Région": "Champagne\nZone de production\nReims et Épernay",
-        "Pays": "France",
-        "Taper": "Vin mousseux brut",
         "Vieillissement": "Minimum 6 ans en cave",
         "Type de fût": "Fûts de chêne et bouteille pour refermentation",
+        "Sucres résiduels": "Environ 9 g/l",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 10 ans après le dégorgement",
-        "Accompagnement": "Apéritifs, poissons, crustacés, plats raffinés"
+        "Accompagnement": "Apéritifs, poissons, crustacés, plats raffinés",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Reims et Épernay",
+        "Taper": "Vin mousseux brut"
       },
-      "checkedAt": "2026-10-30T11:22:20.911Z"
+      "checkedAt": "2026-11-01T11:48:15.138Z"
     }
   ]
 }
