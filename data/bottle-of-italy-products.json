@@ -2,7 +2,7 @@
   "version": 1,
   "merchant": "Bottle of Italy",
   "network": "Webgains",
-  "checkedAt": "2026-11-02T13:26:57.902Z",
+  "checkedAt": "2026-11-03T12:44:56.136Z",
   "count": 150,
   "records": [
     {
@@ -40,8 +40,8 @@
         "vini",
         "vini-francia"
       ],
-      "price": 28.16,
-      "oldPrice": 32.04,
+      "price": 28.2,
+      "oldPrice": 32,
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/products/Champagne-Brut-Jean-De-La-Fontaine-75-cl-bottle-of-italy.jpg?v=1658248962",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_42716336685273&productname=Eloquente+Champagne+Brut+-+Jean+De+La+Fontaine&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Feloquente-champagne-brut-75cl-jean-de-la-fontaine%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
@@ -66,7 +66,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_49273787482450",
@@ -98,8 +98,8 @@
         "vini",
         "vini-francia"
       ],
-      "price": 34.26,
-      "oldPrice": 38.56,
+      "price": 34.3,
+      "oldPrice": 38.6,
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/champagne-brut-nature-grand-tour-bottle-of-italy.jpg?v=1726214878",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_49273787482450&productname=Champagne+Grand+Brut+Nature+-+Grand+Tour&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-grand-brut-nature-grand-tour%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
@@ -124,7 +124,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux méthode traditionnelle"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_50742403072338",
@@ -154,8 +154,8 @@
         "tavola-ferragosto",
         "vini"
       ],
-      "price": 35.46,
-      "oldPrice": 38.64,
+      "price": 35.5,
+      "oldPrice": 38.6,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/57550-maison-labbe-tradition-brut-premier-cru-1002x1536-min.jpg?v=1747380388",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50742403072338&productname=Champagne+Brut+Premier+Cru+-+Tradition+-+Maison+Labb%C3%A9&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-brut-premier-cru-tradition-maison-labbe%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
@@ -180,7 +180,7 @@
         "Pays": "France\nZone de production Premier Cru",
         "Taper": "Vin mousseux sec"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_42148320575705",
@@ -217,7 +217,7 @@
         "vini-francia"
       ],
       "price": 36.5,
-      "oldPrice": 41.72,
+      "oldPrice": 41.7,
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/products/Champagne-Brut-AOC-75-cl-Cantina-Louis-Constant-bottle-of-italy.jpg?v=1643622967",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_42148320575705&productname=Champagne+Brut+AOC+-+Louis+Constant&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fcampagne-brut-aoc-louis-constant%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
@@ -242,7 +242,7 @@
         "Pays": "France\nZone de production Région Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_47895549903186",
@@ -273,7 +273,7 @@
         "vini",
         "vini-francia"
       ],
-      "price": 37.06,
+      "price": 37.1,
       "oldPrice": 41.3,
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Cuvee-Louis-Hurtebisse-Brut-Alain-Mercier-bottle-of-italy.jpg?v=1714475533",
@@ -299,7 +299,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_50742404284754",
@@ -328,7 +328,7 @@
         "tavola-ferragosto",
         "vini"
       ],
-      "price": 38.18,
+      "price": 38.2,
       "oldPrice": 46.2,
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/57700-maison-tornay-brut-tradition-premier-cru-1002x1536-min.jpg?v=1747325023",
@@ -354,7 +354,7 @@
         "Pays": "France\nZone de production Premier Cru, Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_50502043140434",
@@ -385,8 +385,8 @@
         "vini",
         "vini-francia"
       ],
-      "price": 39.79,
-      "oldPrice": 48.61,
+      "price": 39.8,
+      "oldPrice": 48.6,
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/cuvee-brut-epc-champagne-bottle-of-italy-min.jpg?v=1742978760",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50502043140434&productname=Champagne+Cuv%C3%A9e+Brut+-+EPC+Champagne&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-cuvee-brut-epc-champagne%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
@@ -411,7 +411,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Mousseux"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_52901515886930",
@@ -438,8 +438,8 @@
         "tavola-ferragosto",
         "vini"
       ],
-      "price": 40.85,
-      "oldPrice": 49.76,
+      "price": 40.9,
+      "oldPrice": 49.8,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/ChampagneBrut-MaisonBurtin-min.jpg?v=1774007744",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_52901515886930&productname=Champagne+Brut+-+Maison+Burtin&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-brut-maison-burtin%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
@@ -464,7 +464,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Mousseux"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_47245068697938",
@@ -497,8 +497,8 @@
         "vini",
         "vini-francia"
       ],
-      "price": 40.85,
-      "oldPrice": 49.66,
+      "price": 40.9,
+      "oldPrice": 49.7,
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-La-Passionnee-Blanc-de-Noirs-Extra-Brut-Brisson-Lahaye-bottle-of-Italy.jpg?v=1699611236",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47245068697938&productname=Champagne+La+Passionnee+Blanc+de+Noirs+Extra+Brut+-+Brisson-Lahaye&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-la-passionnee-blanc-de-noirs-extra-brut-brisson-lahaye%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
@@ -523,7 +523,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux méthode traditionnelle"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_50742402810194",
@@ -551,7 +551,7 @@
         "vini"
       ],
       "price": 42,
-      "oldPrice": 48.39,
+      "oldPrice": 48.4,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/57500-jean-claude-vallois-blanc-de-blancs-brut-assemblage-noble-1002x1536-min_cd1c422c-139d-48c6-b874-079543a84ef1.jpg?v=1747380565",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50742402810194&productname=Champagne+Blanc+de+Blancs+Brut+Assemblage+Noble+-+Jean-Claude+Vallois&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-blanc-de-blancs-brut-assemblage-noble-jean-claude-vallois%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
@@ -576,7 +576,7 @@
         "Pays": "Italie\nZone de production Collio",
         "Taper": "Vin mousseux méthode classique"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_50742406185298",
@@ -603,8 +603,8 @@
         "vini",
         "vini-rosati"
       ],
-      "price": 42.28,
-      "oldPrice": 48.99,
+      "price": 42.3,
+      "oldPrice": 49,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/57757-daubanton-rose-de-saignee-en-futs-les-vignes-derriere-1002x1536-min.jpg?v=1747324385",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50742406185298&productname=Champagne+Ros%C3%A9+de+Saign%C3%A9e+-+En+F%C3%BBts+Les+Vignes+Derri%C3%A8re+-+Daubanton&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-rose-de-saignee-en-futs-les-vignes-derriere-daubanton%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
@@ -629,7 +629,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Mousseux"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_47895568122194",
@@ -657,7 +657,7 @@
         "vini",
         "vini-francia"
       ],
-      "price": 42.49,
+      "price": 42.5,
       "oldPrice": 54.2,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/maxime-ponson-champagne-1er-cru-bottle-of-italy.jpg?v=1726846260",
@@ -683,7 +683,7 @@
         "Pays": "France\nZone de production 1er Cru, Champagne",
         "Taper": "Vin mousseux extra brut"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_47245069287762",
@@ -714,8 +714,8 @@
         "vini",
         "vini-francia"
       ],
-      "price": 42.66,
-      "oldPrice": 52.92,
+      "price": 42.7,
+      "oldPrice": 52.9,
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Carte-Noir-Brut-Thenevet-Delouvin-bottle-of-Italy.jpg?v=1699610719",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47245069287762&productname=Champagne+Carte+Noir+Brut+-+Thenevet+Delouvin&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-carte-noir-brut-thenevet-delouvin%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
@@ -740,7 +740,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_50742403268946",
@@ -767,7 +767,7 @@
         "tavola-ferragosto",
         "vini"
       ],
-      "price": 42.82,
+      "price": 42.8,
       "oldPrice": 50.2,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/57600-maison-yves-loison-cuvee-reserve-clovis-1002x1536-min_bc0c3e03-1372-45bd-8985-00775695307b.jpg?v=1747380242",
@@ -793,7 +793,7 @@
         "Pays": "France\nZone de production Région Champagne",
         "Taper": "Mousseux"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_43760601956569",
@@ -827,8 +827,8 @@
         "vini",
         "vini-francia"
       ],
-      "price": 43.55,
-      "oldPrice": 52.63,
+      "price": 43.6,
+      "oldPrice": 52.6,
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/products/Champagne-AOC-Brut-Blanc-de-Blancs-De-Vilmont-bottle-of-italy.jpg?v=1676282595",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_43760601956569&productname=Champagne+AOC+Brut+-+Blanc+de+Blancs+-+De+Vilmont&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-aoc-brut-blanc-de-blancs-de-vilmont%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
@@ -853,7 +853,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux sec"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_50742403793234",
@@ -882,8 +882,8 @@
         "vini",
         "vini-rosati"
       ],
-      "price": 43.64,
-      "oldPrice": 48.27,
+      "price": 43.6,
+      "oldPrice": 48.3,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/57652-mg-heucq-fossile-rose-brut-1002x1536-min.jpg?v=1747326153",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50742403793234&productname=Champagne+Ros%C3%A9+Brut+-+Fossile+-+M.G.+Heucq&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-rose-brut-fossile-m-g-heucq%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
@@ -908,7 +908,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Mousseux"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_50459393425746",
@@ -938,8 +938,8 @@
         "vini",
         "vini-francia"
       ],
-      "price": 43.65,
-      "oldPrice": 48.19,
+      "price": 43.7,
+      "oldPrice": 48.2,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/champagne-harlin-l-escapade-bottle-of-italy-min.jpg?v=1742207278",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50459393425746&productname=Champagne+L%27Escapade+-+Harlin+P%C3%A8re+et+Fils&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-lescapade-harlin-pere-et-fils%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
@@ -964,7 +964,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux méthode classique"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_47895597515090",
@@ -992,7 +992,7 @@
         "vini",
         "vini-francia"
       ],
-      "price": 43.65,
+      "price": 43.7,
       "oldPrice": 49.1,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Blanc-de-Noirs-Brut-Beltrand-Brigandat-bottle-of-italy.jpg?v=1714473768",
@@ -1018,7 +1018,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux méthode traditionnelle"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_47245072630098",
@@ -1047,8 +1047,8 @@
         "vini",
         "vini-francia"
       ],
-      "price": 43.97,
-      "oldPrice": 48.04,
+      "price": 43.9,
+      "oldPrice": 48,
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Cuvee-Preface-Extra-Brut-Bardiau-Bottle-of-Italy.jpg?v=1699610896",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47245072630098&productname=Champagne+Cuve%CC%80e+Preface+Extra+Brut+-+Bardia%C3%B9&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-cuvee-preface-extra-brut-bardiau%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
@@ -1073,7 +1073,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux méthode traditionnelle"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_47245071647058",
@@ -1106,7 +1106,7 @@
         "vini-francia"
       ],
       "price": 44.3,
-      "oldPrice": 51.14,
+      "oldPrice": 51.1,
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Orior-Brut-Pierre-Legras-Bottle-of-Italy.jpg?v=1699612218",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47245071647058&productname=Champagne+Orior+Brut+-+Pierre+Legras&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-orior-brut-pierre-legras%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
@@ -1131,7 +1131,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux méthode classique"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_53712156590418",
@@ -1164,8 +1164,8 @@
         "tavola-ferragosto",
         "vini"
       ],
-      "price": 45.46,
-      "oldPrice": 54.07,
+      "price": 45.5,
+      "oldPrice": 54.1,
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/brut-carte-blanche-benard-pitois-Bottle-of-Italy-min.jpg?v=1781262252",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_53712156590418&productname=Champagne+Carte+Blanche+Premier+Cru+Brut+-+Benard+Pitois&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-carte-blanche-premier-cru-brut-benard-pitois%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
@@ -1190,7 +1190,7 @@
         "Pays": "France\nZone de production Premier Cru, Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_50794939580754",
@@ -1219,7 +1219,7 @@
         "vini"
       ],
       "price": 46,
-      "oldPrice": 50.83,
+      "oldPrice": 50.8,
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/champagne-cuveI_e-terre-min.jpg?v=1747664216",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50794939580754&productname=Champagne+Terre+-+Domaine+Augustin+2021&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-terre-domaine-augustin%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
@@ -1244,7 +1244,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_48453987369298",
@@ -1271,8 +1271,8 @@
         "vini",
         "vini-francia"
       ],
-      "price": 46.23,
-      "oldPrice": 52.51,
+      "price": 46.2,
+      "oldPrice": 52.5,
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Beaumont-des-Crayeres-grand-Prestige-Brut-bottle-of-italy.jpg?v=1719570785",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_48453987369298&productname=Champagne+Grand+Prestige+Brut+-+4+anni+-+Beaumont+des+Crayeres&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-grand-prestige-brut-4-anni-beaumont-des-crayeres%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
@@ -1297,7 +1297,7 @@
         "Pays": "France\nZone de production Beaumont des Crayeres",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_47895554261330",
@@ -1328,8 +1328,8 @@
         "vini-francia",
         "vini-rosati"
       ],
-      "price": 46.94,
-      "oldPrice": 52.58,
+      "price": 46.9,
+      "oldPrice": 52.6,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Rose-Reserve-Brut-J.Charpentier-bottle-of-italy.jpg?v=1716907244",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895554261330&productname=Champagne+Ros%C3%A9+R%C3%A9serve+Brut+-+J.Charpentier&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-rose-reserve-brut-j-charpentier%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
@@ -1354,7 +1354,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Mousseux"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_47895603151186",
@@ -1380,8 +1380,8 @@
         "vini",
         "vini-francia"
       ],
-      "price": 46.94,
-      "oldPrice": 53.36,
+      "price": 46.9,
+      "oldPrice": 53.4,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/CHAMPAGNE_PETIT_CAMUSCAT-pinot-blanc-bottle-of-italy.jpg?v=1716905041",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895603151186&productname=Champagne+Pinot+Blanc+de+Blancs+Brut+-+Petit+Camusat&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-pinot-blanc-de-blancs-brut-petit-camusat%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
@@ -1406,7 +1406,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_50341299487058",
@@ -1438,8 +1438,8 @@
         "vini-francia",
         "vini-rosati"
       ],
-      "price": 47.09,
-      "oldPrice": 59.39,
+      "price": 47.1,
+      "oldPrice": 59.4,
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/nicolas-feuillatte-champagne-rose-reserve-exclusive-bottle-of-italy.jpg?v=1740387462",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50341299487058&productname=Champagne+R%C3%A9serve+Exclusive+Brut+Ros%C3%A9+-+Nicolas+Feuillatte&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-reserve-exclusive-rose-nicolas-feuillatte%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
@@ -1464,7 +1464,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux méthode traditionnelle rosé"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_47895552426322",
@@ -1494,8 +1494,8 @@
         "vini-francia",
         "vini-rosati"
       ],
-      "price": 47.43,
-      "oldPrice": 59.17,
+      "price": 47.4,
+      "oldPrice": 59.2,
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Simplexite-Rose-Brut-bottle-of-italy.jpg?v=1716907337",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895552426322&productname=Champagne+Simplexit%C3%A9+Ros%C3%A9+Brut&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-simplexite-rose-brut%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
@@ -1520,7 +1520,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Mousseux"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_47895593419090",
@@ -1548,8 +1548,8 @@
         "vini",
         "vini-francia"
       ],
-      "price": 47.76,
-      "oldPrice": 57.66,
+      "price": 47.8,
+      "oldPrice": 57.7,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Blanc-de-Blancs-Cuvee-de-Reserve-Brut-Grand-Cru-Bonnet-Gilmert-bottle-of-italy.jpg?v=1714393311",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895593419090&productname=Champagne+Blanc+de+Blancs+Cuv%C3%A9e+de+R%C3%A9serve+Brut+Grand+Cru+-+Bonnet+Gilmert&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-blanc-de-blancs-cuvee-de-reserve-brut-grand-cru-bonnet-gilmert%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
@@ -1574,7 +1574,7 @@
         "Pays": "France\nZone de production Grand Cru",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_47245069091154",
@@ -1603,7 +1603,7 @@
         "vini",
         "vini-francia"
       ],
-      "price": 47.93,
+      "price": 47.9,
       "oldPrice": 54.4,
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Terre-cuvee-assemblage-Brut-Solemme-Bottle-of-Italy.jpg?v=1700037523",
@@ -1628,7 +1628,7 @@
         "Pays": "France\nZone de production Région Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_47245072531794",
@@ -1658,8 +1658,8 @@
         "vini",
         "vini-francia"
       ],
-      "price": 48.26,
-      "oldPrice": 59.53,
+      "price": 48.3,
+      "oldPrice": 59.5,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-White-Pearl-Blanc-de-Blancs-Extra-Brut-Deheurles-Bottle-of-Italy.jpg?v=1699612920",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47245072531794&productname=Champagne+White+Pearl+Blanc+de+Blancs+Extra+Brut+-+Deheurles&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-white-pearl-blanc-de-blancs-extra-brut-deheurles%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
@@ -1684,7 +1684,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_53712154100050",
@@ -1717,8 +1717,8 @@
         "tavola-ferragosto",
         "vini"
       ],
-      "price": 48.59,
-      "oldPrice": 59.29,
+      "price": 48.6,
+      "oldPrice": 59.3,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/ChampagneGrandeReservePremierCruBrut-Vilmart-min.jpg?v=1781280895",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_53712154100050&productname=Champagne+Grande+Reserve+Premier+Cru+Brut+-+Vilmart&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-grande-reserve-premier-cru-brut-vilmart%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
@@ -1743,7 +1743,7 @@
         "Pays": "France\nZone de production Premier Cru, Champagne",
         "Taper": "Mousseux"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_43760854302937",
@@ -1778,8 +1778,8 @@
         "vini",
         "vini-francia"
       ],
-      "price": 48.89,
-      "oldPrice": 58.98,
+      "price": 48.9,
+      "oldPrice": 59,
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/products/Champagne-AOC-Brut-Premier-Cru-Cattier-bottle-of-italy.jpg?v=1676283052",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_43760854302937&productname=Champagne+AOC+-+Brut+Premier+Cru+-+Cattier&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-aoc-brut-premier-cru-cattier%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
@@ -1804,7 +1804,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_42029373063385",
@@ -1843,8 +1843,8 @@
         "vini-francia",
         "vini-rosati"
       ],
-      "price": 51.35,
-      "oldPrice": 63.87,
+      "price": 51.4,
+      "oldPrice": 63.9,
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/products/Champagne-Brut-Rose-Grand-Cru-Grand-Rose-75-cl-Cantina-Paul-Bara-bottle-of-italy.jpg?v=1638459467",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_42029373063385&productname=Champagne+Brut+Ros%C3%A8+-+Grand+Cru+Grand+Ros%C3%A9+-+Paul+Bara&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fpaul-bara-champagne-brut-grand-cru-grand-rose%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
@@ -1869,7 +1869,7 @@
         "Pays": "France\nZone de production Montagne de Reims",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_47895587815762",
@@ -1900,8 +1900,8 @@
         "vini",
         "vini-francia"
       ],
-      "price": 51.88,
-      "oldPrice": 57.86,
+      "price": 51.9,
+      "oldPrice": 57.9,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Eclat-d_Etoiles-Rose-Brut-Grand-Cru-Lamiable-bottle-of-italy.jpg?v=1716905320",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895587815762&productname=Champagne+%C3%89clat+d%E2%80%99%C3%89toiles+Ros%C3%A9+Brut+Grand+Cru+Astucciato+-+Lamiable+2014&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-eclat-d-etoiles-rose-brut-grand-cru-lamiable%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
@@ -1926,7 +1926,7 @@
         "Pays": "France\nZone de production Grand Cru",
         "Taper": "Mousseux"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_47245071843666",
@@ -1957,8 +1957,8 @@
         "vini",
         "vini-francia"
       ],
-      "price": 52.54,
-      "oldPrice": 57.94,
+      "price": 52.5,
+      "oldPrice": 57.9,
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Reserve-Blanc-de-Blancs-Grand-Cru-Brut-Guy-Charlemagne-Bottle-of-Italy.jpg?v=1699612261",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47245071843666&productname=Champagne+Reserve+Blanc+de+Blancs+Grand+Cru+Brut+-+Guy+Charlemagne&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-reserve-blanc-de-blancs-grand-cru-brut-guy-charlemagne%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
@@ -1983,7 +1983,7 @@
         "Pays": "France\nZone de production Côte des Blancs",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_47895579525458",
@@ -2012,7 +2012,7 @@
         "vini-francia"
       ],
       "price": 52.7,
-      "oldPrice": 60.29,
+      "oldPrice": 60.3,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Brut-Nature-1er-Cru-Sadi-Malot-bottle-of-italy.jpg?v=1714467673",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895579525458&productname=Champagne+Brut+Nature+1er+Cru+-+Sadi+Malot&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-brut-nature-1er-cru-sadi-malot%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
@@ -2037,7 +2037,7 @@
         "Pays": "France\nZone de production 1er Cru, Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_47895586210130",
@@ -2067,8 +2067,8 @@
         "vini",
         "vini-francia"
       ],
-      "price": 58.96,
-      "oldPrice": 67.53,
+      "price": 58.9,
+      "oldPrice": 67.5,
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Rose-de-Saignee-Friandise-Demi-Sec-Jean-Vesselle-bottle-of-italy.jpg?v=1716907032",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895586210130&productname=Champagne+Ros%C3%A9+de+Saign%C3%A9e+Friandise+Demi-Sec+-+Jean+Vesselle&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-rose-de-saignee-friandise-demi-sec-jean-vesselle%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
@@ -2093,7 +2093,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux rosé demi-sec"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_43760860201177",
@@ -2130,8 +2130,8 @@
         "vini",
         "vini-francia"
       ],
-      "price": 59.13,
-      "oldPrice": 65.12,
+      "price": 59.1,
+      "oldPrice": 65.1,
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/cuvee-saint-petersbourg-veuve-cliquot-min.jpg?v=1770725073",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_43760860201177&productname=Champagne+AOC+-+Cuv%C3%A9e+Saint+Petersbourg+-+Veuve+Clicquot&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-aoc-cuvee-saint-petersbourg-veuve-clicquot%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
@@ -2156,7 +2156,7 @@
         "Pays": "France\nZone de production Reims, Champagne",
         "Taper": "Vin mousseux méthode traditionnelle"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_50742399205714",
@@ -2184,8 +2184,8 @@
         "tavola-ferragosto",
         "vini"
       ],
-      "price": 62.73,
-      "oldPrice": 72.19,
+      "price": 62.7,
+      "oldPrice": 72.2,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/57109-jacquart-signature-brut-1002x1536-min_a2cbae12-13e0-4992-a4a9-1143a225063e.jpg?v=1747381917",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50742399205714&productname=Champagne+Brut+-+Signature+-+Astucciato+-+Jacquart&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-brut-signature-astucciato-jacquart%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
@@ -2210,7 +2210,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_47895594041682",
@@ -2238,8 +2238,8 @@
         "vini",
         "vini-francia"
       ],
-      "price": 64.23,
-      "oldPrice": 72.86,
+      "price": 64.2,
+      "oldPrice": 72.9,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Blanc-de-Blancs-Murmure-Nature-1er-Cru-J.L.-Vergon-bottle-of-italy.jpg?v=1714473145",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895594041682&productname=Champagne+Blanc+de+Blancs+Murmure+Nature+1er+Cru+-+J.L.+Vergnon&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-blanc-de-blancs-murmure-nature-1er-cru-j-l-vergon%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
@@ -2264,7 +2264,7 @@
         "Pays": "France\nZone de production Côte des Blancs",
         "Taper": "Mousseux"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_47895596826962",
@@ -2291,8 +2291,8 @@
         "vini",
         "vini-francia"
       ],
-      "price": 65.72,
-      "oldPrice": 79.36,
+      "price": 65.7,
+      "oldPrice": 79.4,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/champagne-marie-copinet-nos-pas-dans-l-argile-bouteille-75-cl-bottle-of-italy.jpg?v=1716906061",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895596826962&productname=Champagne+Nos+Pas+Dans+l%E2%80%99Argile+Nature+-+Marie+Copinet&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-nos-pas-dans-l-argile-nature-marie-copinet%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
@@ -2317,7 +2317,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_47895590011218",
@@ -2345,7 +2345,7 @@
         "vini",
         "vini-francia"
       ],
-      "price": 71.64,
+      "price": 71.6,
       "oldPrice": 90.2,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Blanc-de-Blancs-Zero-Grand-Cru-Vazarat-Coquart-bottle-of-italy.jpg?v=1714473646",
@@ -2371,7 +2371,7 @@
         "Pays": "France\nZone de production Grand Cru",
         "Taper": "Vin mousseux méthode traditionnelle"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_47895579165010",
@@ -2401,8 +2401,8 @@
         "vini",
         "vini-francia"
       ],
-      "price": 88.82,
-      "oldPrice": 112.65,
+      "price": 88.8,
+      "oldPrice": 112.7,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/champagne-extra-brut-blanc-de-noirs-grand-cru-lineffable-mouzon-leroux-2bottle-of-italy.jpg?v=1716905389",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895579165010&productname=Champagne+L%E2%80%99Ineffable+Extra+Brut+Grand+Cru+-+Mouzon+Leroux+2017&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-l-ineffable-extra-brut-grand-cru-mouzon-leroux%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
@@ -2427,7 +2427,7 @@
         "Pays": "France\nZone de production Mouzon, Champagne",
         "Taper": "Vin mousseux méthode classique"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_47895561797970",
@@ -2457,8 +2457,8 @@
         "vini",
         "vini-francia"
       ],
-      "price": 100.71,
-      "oldPrice": 120.05,
+      "price": 100.7,
+      "oldPrice": 120.1,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Les-Grandes-Crayeres-Extra-Brut-Laherte-Freres-bottle-of-italy.jpg?v=1726586784",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895561797970&productname=Champagne+Les+Grandes+Cray%C3%A8res+Extra+Brut+-+Laherte+Fr%C3%A8res+2021&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-les-grandes-crayeres-extra-brut-laherte-freres%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
@@ -2468,7 +2468,7 @@
         "Format": "ions techniques",
         "Producteur": "Laherte Frères\nVintage 2021"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_42150252085465",
@@ -2502,8 +2502,8 @@
         "vini",
         "vini-francia"
       ],
-      "price": 105.09,
-      "oldPrice": 113.76,
+      "price": 105.1,
+      "oldPrice": 113.8,
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/products/Champagne-Quattuor-AOC-75-cl-Cantina-Drappier-bottle-of-italy.jpg?v=1638703294",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_42150252085465&productname=Champagne+Quattuor+AOC+-+Drappier&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-quattuor-aoc-drappier%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
@@ -2528,7 +2528,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_47895567106386",
@@ -2556,8 +2556,8 @@
         "vini",
         "vini-francia"
       ],
-      "price": 125.05,
-      "oldPrice": 143.08,
+      "price": 125.1,
+      "oldPrice": 143.1,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Soliste-Les-Charmiers-Rose-Extra-Brut-1er-Cru-J-M-Seleque-bottle-of-italy.jpg?v=1714467700",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895567106386&productname=Champagne+Soliste+Les+Charmiers+Ros%C3%A9+Extra+Brut+1er+Cru+-+J-M+Seleque+2019&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-soliste-les-charmiers-rose-extra-brut-1er-cru-j-m-seleque%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
@@ -2582,7 +2582,7 @@
         "Pays": "France\nZone de production Les Charmiers, Premier Cru",
         "Taper": "Mousseux"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_50794913464658",
@@ -2612,8 +2612,8 @@
         "velier",
         "vini"
       ],
-      "price": 203.41,
-      "oldPrice": 249.35,
+      "price": 203.4,
+      "oldPrice": 249.4,
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/ChampagneLouisSalmon-Billecart-Salmon-Bottle-of-Italy-Copia-min.jpg?v=1747663344",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50794913464658&productname=Champagne+Louis+Salmon+-+Billecart-Salmon+2009&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-louis-salmon-billecart-salmon%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
@@ -2638,7 +2638,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_53093687427410",
@@ -2667,8 +2667,8 @@
         "tavola-ferragosto",
         "vini"
       ],
-      "price": 223.99,
-      "oldPrice": 286.08,
+      "price": 223.9,
+      "oldPrice": 286.1,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-BelleEpoque-Astucciato-Perrier-Jouea_A_t-min_06c3cec4-3ca2-4ec1-960e-f01a00e20602.jpg?v=1775138181",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_53093687427410&productname=Champagne+-+Belle+Epoque+-+Astucciato+-+Perrier-Jou%C3%ABt+2016&wgtarget=https%3A%2F%2Fbottleofitaly.com%2Ffr%2Fproducts%2Fchampagne-belle-epoque-astucciato-perrier-jouet%3F&country=FR&siteid=1749318&clickref=quelchampagne-boutique&utm_source=webgains",
@@ -2693,7 +2693,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_50742402384210",
@@ -2722,8 +2722,8 @@
         "tavola-ferragosto",
         "vini"
       ],
-      "price": 34.09,
-      "oldPrice": 38.36,
+      "price": 34.1,
+      "oldPrice": 38.4,
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/la-motte-min.jpg?v=1747380762",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50742402384210&productname=Champagne+Brut++-+LaMotte+-+Jacquart&wgtarget=https://bottleofitaly.com/fr/products/champagne-brut-lamotte-jacquart?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
@@ -2748,7 +2748,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_49273787416914",
@@ -2779,8 +2779,8 @@
         "vini",
         "vini-francia"
       ],
-      "price": 34.26,
-      "oldPrice": 39.09,
+      "price": 34.3,
+      "oldPrice": 39.1,
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Grand-Tour-cuvee-reserve.jpg?v=1726236680",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_49273787416914&productname=Champagne+Grand+Cuvee+Reserve+Brut+-+Grand+Tour&wgtarget=https://bottleofitaly.com/fr/products/champagne-grand-cuvee-reserve-brut-grand-tour?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
@@ -2805,7 +2805,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux brut"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_50742404874578",
@@ -2833,7 +2833,7 @@
         "tavola-ferragosto",
         "vini"
       ],
-      "price": 37.77,
+      "price": 37.8,
       "oldPrice": 42.3,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/57750-daubanton-assemblage-extra-brut-1002x1536-min.jpg?v=1747324581",
@@ -2859,7 +2859,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux méthode classique"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_50742403596626",
@@ -2888,8 +2888,8 @@
         "tavola-ferragosto",
         "vini"
       ],
-      "price": 38.05,
-      "oldPrice": 47.16,
+      "price": 38.1,
+      "oldPrice": 47.2,
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/57650-mg-heucq-fossile-brut-1002x1536-min_abab12e3-b5dd-4510-ad6b-705d9e4a0f5c.jpg?v=1747326202",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50742403596626&productname=Champagne+Brut+-+Fossile+-+M.G.+Heucq&wgtarget=https://bottleofitaly.com/fr/products/champagne-brut-fossile-m-g-heucq?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
@@ -2913,7 +2913,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Mousseux"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_47895551279442",
@@ -2971,7 +2971,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_47895552524626",
@@ -3000,7 +3000,7 @@
         "vini-francia"
       ],
       "price": 39.2,
-      "oldPrice": 47.22,
+      "oldPrice": 47.2,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/J.-Charpentier-Champagne-Tradition-Brut-bottle-of-italy.jpg?v=1726835835",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895552524626&productname=Champagne+Tradition+Brut+-+J.Charpentier&wgtarget=https://bottleofitaly.com/fr/products/champagne-tradition-brut-j-charpentier?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
@@ -3025,7 +3025,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_43760858333401",
@@ -3059,8 +3059,8 @@
         "vini",
         "vini-francia"
       ],
-      "price": 39.65,
-      "oldPrice": 44.81,
+      "price": 39.7,
+      "oldPrice": 44.8,
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/products/Champagne-AOC-Quarz-Brut-Tradition-Cattier-bottle-of-italy.jpg?v=1676283122",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_43760858333401&productname=Champagne+AOC+-+Quarz+Brut+Tradition+-+Cattier&wgtarget=https://bottleofitaly.com/fr/products/champagne-aoc-quarz-brut-tradition-cattier?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
@@ -3085,7 +3085,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_50742405759314",
@@ -3112,7 +3112,7 @@
         "vini"
       ],
       "price": 40.5,
-      "oldPrice": 46.54,
+      "oldPrice": 46.5,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/57753-daubanton-blanc-de-noir-1002x1536-min.jpg?v=1747324495",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50742405759314&productname=Champagne+Blanc+de+Noir+-+Daubanton&wgtarget=https://bottleofitaly.com/fr/products/champagne-blanc-de-noir-daubanton?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
@@ -3137,7 +3137,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_43760591864025",
@@ -3173,8 +3173,8 @@
         "vini",
         "vini-francia"
       ],
-      "price": 41.91,
-      "oldPrice": 52.03,
+      "price": 41.9,
+      "oldPrice": 52,
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/products/Champagne-AOC-Brut-Grand-Reserve-Premier-Cru-De-Vilmont-bottle-of-italy.jpg?v=1676282904",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_43760591864025&productname=Champagne+AOC+Brut+Grand+R%C3%A9serve+Premier+Cru+-++De+Vilmont&wgtarget=https://bottleofitaly.com/fr/products/champagne-aoc-brut-grand-reserve-premier-cru-de-vilmont?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
@@ -3199,7 +3199,7 @@
         "Pays": "France\nZone de production Premier Cru, Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_48453987238226",
@@ -3226,8 +3226,8 @@
         "vini",
         "vini-francia"
       ],
-      "price": 41.71,
-      "oldPrice": 49.37,
+      "price": 41.7,
+      "oldPrice": 49.4,
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Beaumont-des-Crayeres-GrandReserve-Brut-bottle-of-italy.jpg?v=1719570802",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_48453987238226&productname=Champagne+Grand+Reserve+Brut+-+3+anni+-+Beaumont+des+Crayeres&wgtarget=https://bottleofitaly.com/fr/products/champagne-grand-reserve-brut-3-anni-beaumont-des-crayeres?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
@@ -3250,7 +3250,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_47895586308434",
@@ -3280,8 +3280,8 @@
         "vini",
         "vini-francia"
       ],
-      "price": 42.82,
-      "oldPrice": 53.24,
+      "price": 42.8,
+      "oldPrice": 53.2,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Lapie-Lamiable-Brut-Lamiable-bottle-of-italy.jpg?v=1716905747",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895586308434&productname=Champagne+Lapie-Lamiable+Brut+-+Lamiable&wgtarget=https://bottleofitaly.com/fr/products/champagne-lapie-lamiable-brut-lamiable?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
@@ -3305,7 +3305,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_50385379819858",
@@ -3337,8 +3337,8 @@
         "vini",
         "vini-francia"
       ],
-      "price": 42.82,
-      "oldPrice": 51.41,
+      "price": 42.8,
+      "oldPrice": 51.4,
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/champagne-extra-brut-burtin-bottle-of-italy-min.jpg?v=1741186231",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50385379819858&productname=Champagne+Extra+Brut+-+Maison+Burtin&wgtarget=https://bottleofitaly.com/fr/products/champagne-extra-brut-maison-burtin?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
@@ -3363,7 +3363,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_47895586242898",
@@ -3393,8 +3393,8 @@
         "vini",
         "vini-francia"
       ],
-      "price": 43.65,
-      "oldPrice": 53.48,
+      "price": 43.7,
+      "oldPrice": 53.5,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Coteaux-Champenois-Bouzy-Blanc-Jean-Vesselle-bottle-of-italy.jpg?v=1714474772",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895586242898&productname=Champagne+Coteaux+Champenois+Bouzy+Blanc+-+Jean+Vesselle+2022&wgtarget=https://bottleofitaly.com/fr/products/champagne-coteaux-champenois-bouzy-blanc-jean-vesselle?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
@@ -3417,7 +3417,7 @@
         "Pays": "Italie\nZone de production Montalcino",
         "Taper": "Vin rouge"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_50742402318674",
@@ -3448,7 +3448,7 @@
         "vini"
       ],
       "price": 45,
-      "oldPrice": 49.52,
+      "oldPrice": 49.5,
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/57025-jacquart-demi-sec-1002x1536-min.jpg?v=1747380813",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50742402318674&productname=Champagne+Mosa%C3%AFque+Demi+Sec+-+Jacquart&wgtarget=https://bottleofitaly.com/fr/products/champagne-mosaique-demi-sec-jacquart?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
@@ -3473,7 +3473,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux demi-sec"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_50742399598930",
@@ -3503,7 +3503,7 @@
         "vini"
       ],
       "price": 45,
-      "oldPrice": 55.04,
+      "oldPrice": 55,
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/57000-jacquart-brut-mosaique-1002x1536-min_1_0ccbd704-16f1-4f93-a581-98d889b53ab3.jpg?v=1747381567",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50742399598930&productname=Champagne+Brut+Mosa%C3%AFque+-+Jacquart&wgtarget=https://bottleofitaly.com/fr/products/champagne-brut-mosaique-jacquart?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
@@ -3528,7 +3528,7 @@
         "Pays": "France\nZone de production Région Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_47895579361618",
@@ -3558,8 +3558,8 @@
         "vini",
         "vini-francia"
       ],
-      "price": 45.29,
-      "oldPrice": 56.77,
+      "price": 45.3,
+      "oldPrice": 56.8,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-L_Equilibre-Brut-1er-Cru-Sadi-Malot-bottle-of-italy.jpg?v=1716905560",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895579361618&productname=Champagne+L%E2%80%99%C3%89quilibre+Brut+1er+Cru+-+Sadi+Malot&wgtarget=https://bottleofitaly.com/fr/products/champagne-l-equilibre-brut-1er-cru-sadi-malot?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
@@ -3584,7 +3584,7 @@
         "Pays": "France\nZone de production 1er Cru, Champagne",
         "Taper": "Vin mousseux méthode classique"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_50794910253394",
@@ -3612,8 +3612,8 @@
         "velier",
         "vini"
       ],
-      "price": 45.85,
-      "oldPrice": 52.22,
+      "price": 45.9,
+      "oldPrice": 52.2,
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/ChampagneInspiration1818-Billecart-Salmon-Bottle-of-Italy-min.jpg?v=1747662968",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50794910253394&productname=Champagne+Inspiration+1818+-+Billecart-Salmon&wgtarget=https://bottleofitaly.com/fr/products/champagne-inspiration-1818-billecart-salmon?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
@@ -3638,7 +3638,7 @@
         "Pays": "France\nZone de production Reims, Champagne",
         "Taper": "Vin mousseux méthode classique"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_53271237001554",
@@ -3665,8 +3665,8 @@
         "sped-2-5",
         "vini"
       ],
-      "price": 46.25,
-      "oldPrice": 52.75,
+      "price": 46.3,
+      "oldPrice": 52.8,
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/ChampagneArtdecoBrut-Fontanafredda-min.jpg?v=1776958724",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_53271237001554&productname=Champagne+Art+Deco+Brut+-+Collet&wgtarget=https://bottleofitaly.com/fr/products/champagne-art-deco-brut-fontanafredda?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
@@ -3690,7 +3690,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_42029373030617",
@@ -4389,8 +4389,8 @@
         "vini",
         "vini-francia"
       ],
-      "price": 49.08,
-      "oldPrice": 61.24,
+      "price": 49.1,
+      "oldPrice": 61.2,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/maxime-ponson-champagne-premier-cru-la-petite-montagne-extra-brut-ml-750-bottle-of-italy.jpg?v=1726587569",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895568187730&productname=Champagne+La+Petite+Montagne+Extra+Brut+1er+Cru+-+Maxime+Ponson&wgtarget=https://bottleofitaly.com/fr/products/champagne-la-petite-montagne-extra-brut-1er-cru-maxime-ponson?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
@@ -4401,21 +4401,21 @@
         "Producteur": "Maxime Ponson",
         "Nom": "Champagne 1er Cru",
         "Variété": "40% Pinot Meunier, 35% Chardonnay, 25% Pinot Noir",
-        "Gradation": "12.0%\nFormat\n75\ncl",
+        "Gradation": "12.0%\nFormat 75 cl",
         "Profil aromatique": "Notes d'agrumes, levures, croûte de pain",
         "Méthode de vinification": "Méthode traditionnelle avec refermentation en bouteille",
-        "Sucres résiduels": "Extra brut (0-6 g/l)",
-        "Région": "Champagne\nZone de production\nMontagne de Reims",
-        "Pays": "France",
-        "Taper": "Vin mousseux méthode traditionnelle",
         "Vieillissement": "Minimum 24 mois sur lies",
         "Type de fût": "Cuves en acier inoxydable et bouteille",
+        "Sucres résiduels": "Extra brut (0-6 g/l)",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
-        "Accompagnement": "Apéritifs, fruits de mer, plats légers"
+        "Accompagnement": "Apéritifs, fruits de mer, plats légers",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Montagne de Reims",
+        "Taper": "Vin mousseux méthode traditionnelle"
       },
-      "checkedAt": "2026-10-25T09:46:38.344Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_47895586144594",
@@ -4445,8 +4445,8 @@
         "vini",
         "vini-francia"
       ],
-      "price": 49.25,
-      "oldPrice": 58.57,
+      "price": 49.3,
+      "oldPrice": 58.6,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Reserve-Demi-Sec-Jean-Vesselle-bottle-of-italy.jpg?v=1716906768",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895586144594&productname=Champagne+R%C3%A9serve+Demi-Sec+-+Jean+Vesselle&wgtarget=https://bottleofitaly.com/fr/products/champagne-reserve-demi-sec-jean-vesselle?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
@@ -4457,21 +4457,21 @@
         "Producteur": "Jean Vesselle",
         "Nom": "Champagne Réserve Demi-Sec",
         "Variété": "Pinot Noir, Pinot Meunier, Chardonnay",
-        "Gradation": "12.0%\nFormat\n75\ncl",
+        "Gradation": "12.0%\nFormat 75 cl",
         "Profil aromatique": "Notes de fruits mûrs, miel, brioche",
         "Méthode de vinification": "Méthode traditionnelle avec refermentation en bouteille",
-        "Sucres résiduels": "32-50 g/l",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Mousseux",
         "Vieillissement": "Minimum 15 mois sur lies",
         "Type de fût": "Cuves en acier et bouteille pour refermentation",
+        "Sucres résiduels": "32-50 g/l",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 3-5 ans après la production",
-        "Accompagnement": "Desserts, fromages affinés, foie gras"
+        "Accompagnement": "Desserts, fromages affinés, foie gras",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Champagne",
+        "Taper": "Mousseux"
       },
-      "checkedAt": "2026-10-25T09:46:38.344Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_50742403531090",
@@ -4496,8 +4496,8 @@
         "tavola-ferragosto",
         "vini"
       ],
-      "price": 50.46,
-      "oldPrice": 60.94,
+      "price": 50.5,
+      "oldPrice": 60.9,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/57603-maison-yves-loison-cuvee-senlis-1002x1536-min.jpg?v=1747380143",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50742403531090&productname=Champagne+Cuv%C3%A9e+-+Senlis+-+Maison+Yves+Loison&wgtarget=https://bottleofitaly.com/fr/products/champagne-cuvee-senlis-maison-yves-loison?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
@@ -4508,19 +4508,19 @@
         "Producteur": "Maison Yves Loison",
         "Nom": "Champagne",
         "Variété": "Pinot Meunier",
-        "Gradation": "12.0%\nFormat\n75\ncl",
+        "Gradation": "12.0%\nFormat 75 cl",
         "Profil aromatique": "Notes d'agrumes, levure, fruits blancs",
         "Méthode de vinification": "Méthode traditionnelle",
         "Sucres résiduels": "7 g/L",
-        "Région": "Champagne\nZone de production\nSenlis",
-        "Pays": "France",
-        "Taper": "Vin mousseux",
         "Couleur": "Vin mousseux blanc",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 3-5 ans",
-        "Accompagnement": "Apéritifs, poisson, crustacés"
+        "Accompagnement": "Apéritifs, poisson, crustacés",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Senlis",
+        "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-10-25T09:46:38.344Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_50502043533650",
@@ -4550,8 +4550,8 @@
         "vini",
         "vini-francia"
       ],
-      "price": 51.45,
-      "oldPrice": 59.62,
+      "price": 51.5,
+      "oldPrice": 59.6,
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/blanc-de-blancs-brut-epc-bottle-of-italy-min.jpg?v=1742978481",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50502043533650&productname=Champagne+Blanc+de+Blancs+Brut+-+30+Mesi+-+EPC+Champagne&wgtarget=https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-brut-30-mesi-epc-champagne?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
@@ -4562,20 +4562,20 @@
         "Producteur": "EPC Champagne",
         "Nom": "Champagne Blanc de Blancs Brut",
         "Variété": "Chardonnay",
-        "Gradation": "12.5%\nFormat\n75\ncl",
+        "Gradation": "12.5%\nFormat 75 cl",
         "Profil aromatique": "Notes d'agrumes, fleurs blanches, levures",
         "Méthode de vinification": "Méthode traditionnelle avec refermentation en bouteille",
-        "Sucres résiduels": "Brut (jusqu'à 12 g/l)",
-        "Région": "Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux",
         "Vieillissement": "Minimum 30 mois sur lies",
+        "Sucres résiduels": "Brut (jusqu'à 12 g/l)",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer jeune ou dans les 5 ans",
-        "Accompagnement": "Apéritifs, poisson, crustacés"
+        "Accompagnement": "Apéritifs, poisson, crustacés",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Champagne",
+        "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-10-25T09:46:38.344Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_50742403137874",
@@ -4604,8 +4604,8 @@
         "tavola-ferragosto",
         "vini"
       ],
-      "price": 51.82,
-      "oldPrice": 66.19,
+      "price": 51.8,
+      "oldPrice": 66.2,
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/57552-maison-labbe-prestige-brut-premier-cru-1002x1536-min.jpg?v=1747380350",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50742403137874&productname=Champagne+Brut+Premier+Cru+-+Prestige+-+Maison+Labb%C3%A9&wgtarget=https://bottleofitaly.com/fr/products/champagne-brut-premier-cru-prestige-maison-labbe?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
@@ -4616,21 +4616,21 @@
         "Producteur": "Maison Labbé",
         "Nom": "Champagne Premier Cru",
         "Variété": "Pinot Noir, Chardonnay, Pinot Meunier",
-        "Gradation": "12.0%\nFormat\n75\ncl",
+        "Gradation": "12.0%\nFormat 75 cl",
         "Profil aromatique": "Notes de levure, fruits blancs, agrumes, brioche",
         "Méthode de vinification": "Méthode traditionnelle avec refermentation en bouteille",
-        "Sucres résiduels": "Environ 6-12 g/l (Brut)",
-        "Région": "Champagne\nZone de production\nPremier Cru, Champagne",
-        "Pays": "France",
-        "Taper": "Vin mousseux méthode traditionnelle",
         "Vieillissement": "Minimum 15 mois sur lies",
         "Type de fût": "Cuves en acier inoxydable et bouteille",
+        "Sucres résiduels": "Environ 6-12 g/l (Brut)",
         "Couleur": "Jaune paille avec reflets dorés",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 3-5 ans après la vendange",
-        "Accompagnement": "Apéritifs, poisson, crustacés, plats raffinés"
+        "Accompagnement": "Apéritifs, poisson, crustacés, plats raffinés",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Premier Cru, Champagne",
+        "Taper": "Vin mousseux méthode traditionnelle"
       },
-      "checkedAt": "2026-10-25T09:46:38.344Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_47895592698194",
@@ -4659,8 +4659,8 @@
         "vini",
         "vini-francia"
       ],
-      "price": 51.88,
-      "oldPrice": 62.21,
+      "price": 51.9,
+      "oldPrice": 62.2,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Blanc-de-Blancs-Extra-Brut-Grand-Cru-Bonnet-Gilmert-bottle-of-italy.jpg?v=1714472843",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895592698194&productname=Champagne+Blanc+de+Blancs+Extra+Brut+Grand+Cru+-+Bonnet+Gilmert&wgtarget=https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-extra-brut-grand-cru-bonnet-gilmert?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
@@ -4671,21 +4671,21 @@
         "Producteur": "Bonnet Gilmert",
         "Nom": "Champagne Grand Cru",
         "Variété": "Chardonnay",
-        "Gradation": "12.0%\nFormat\n75\ncl",
+        "Gradation": "12.0%\nFormat 75 cl",
         "Profil aromatique": "Notes d'agrumes, fleurs blanches, levures",
         "Méthode de vinification": "Méthode traditionnelle, fermentation en bouteille",
-        "Sucres résiduels": "Extra brut (0-6 g/l)",
-        "Région": "Champagne\nZone de production\nGrand Cru",
-        "Pays": "France",
-        "Taper": "Vin mousseux",
         "Vieillissement": "Minimum 36 mois sur lies",
         "Type de fût": "Cuves en acier inoxydable et bouteille",
+        "Sucres résiduels": "Extra brut (0-6 g/l)",
         "Couleur": "Jaune paille clair",
         "Température de service": "8-10°C",
         "Consommation recommandée": "À consommer dans les 5 ans après la vendange",
-        "Accompagnement": "Fruits de mer, poisson, apéritifs"
+        "Accompagnement": "Fruits de mer, poisson, apéritifs",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Grand Cru",
+        "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-10-25T09:46:38.344Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_47895559733586",
@@ -7413,8 +7413,8 @@
         "wine-spectator-90",
         "wine-spectator-90-na"
       ],
-      "price": 82.15,
-      "oldPrice": 97.66,
+      "price": 82.2,
+      "oldPrice": 97.7,
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/products/Champagne-AOC-Brut-Gran-Cordon-Rose-Mumm-bottle-of-italy.jpg?v=1676282751",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_43760621060313&productname=Champagne+AOC+Brut+-+Gran+Cordon+Ros%C3%A9+-+Mumm&wgtarget=https://bottleofitaly.com/fr/products/champagne-aoc-brut-gran-cordon-rose-mumm?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
@@ -7439,7 +7439,7 @@
         "Pays": "France\nZone de production Région Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_47895565238610",
@@ -7467,8 +7467,8 @@
         "vini",
         "vini-francia"
       ],
-      "price": 81.53,
-      "oldPrice": 90.13,
+      "price": 81.5,
+      "oldPrice": 90.1,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/jean-marc-seleque-champagne-quintette-chardonnay-5-terroirs-extra-brut-bottle-of-italy.jpg?v=1716908397",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895565238610&productname=Champagne+Quintette+5+Terroirs+Extra+Brut+-+J-M+Seleque&wgtarget=https://bottleofitaly.com/fr/products/champagne-quintette-5-terroirs-extra-brut-j-m-seleque?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
@@ -7493,7 +7493,7 @@
         "Pays": "France\nZone de production Région Champagne",
         "Taper": "Vin mousseux méthode traditionnelle"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_47895599907154",
@@ -7521,8 +7521,8 @@
         "vini",
         "vini-francia"
       ],
-      "price": 87.23,
-      "oldPrice": 97.81,
+      "price": 87.2,
+      "oldPrice": 97.8,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Blanc-de-Noirs-Largillier-Brut-Jerome-Coessens-bottle-of-italy.jpg?v=1714473951",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895599907154&productname=Champagne+Blanc+de+Noirs+Largillier+Brut+-+Jerome+Coessens&wgtarget=https://bottleofitaly.com/fr/products/champagne-blanc-de-noirs-largillier-brut-jerome-coessens?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
@@ -7532,7 +7532,7 @@
         "Format": "ions techniques",
         "Producteur": "Jerome Coessens"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_47895564550482",
@@ -7560,8 +7560,8 @@
         "vini",
         "vini-francia"
       ],
-      "price": 89.61,
-      "oldPrice": 101.57,
+      "price": 89.6,
+      "oldPrice": 101.6,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Les-Meuniers-de-raoul-Extra-Brut-Wirth-Michel-bottle-of-italy.jpg?v=1714475996",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895564550482&productname=Champagne+Les+Meuniers+de+Raoul+Extra+Brut+-+Wirth+Michel&wgtarget=https://bottleofitaly.com/fr/products/champagne-les-meuniers-de-raoul-extra-brut-wirth-michel?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
@@ -7571,7 +7571,7 @@
         "Format": "ions techniques",
         "Producteur": "Wirth Michel"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_47895595942226",
@@ -7600,8 +7600,8 @@
         "vini",
         "vini-francia"
       ],
-      "price": 91.99,
-      "oldPrice": 113.93,
+      "price": 91.9,
+      "oldPrice": 113.9,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Blanc-de-Blancs-Dorien-n-62-Extra-Brut-Grand-Cru-Stephane-Regnault-bottle-of-italy.jpg?v=1714393484",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895595942226&productname=Champagne+Blanc+de+Blancs+Dorien+n%C2%B080+Extra+Brut+Grand+Cru+-+Stephane+Regnault&wgtarget=https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-dorien-n-80-extra-brut-grand-cru-stephane-regnault?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
@@ -7626,7 +7626,7 @@
         "Pays": "France\nZone de production Grand Cru",
         "Taper": "Vin mousseux Méthode Classique"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_47895595843922",
@@ -7655,8 +7655,8 @@
         "vini",
         "vini-francia"
       ],
-      "price": 91.99,
-      "oldPrice": 100.82,
+      "price": 91.9,
+      "oldPrice": 100.8,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/SRLY62B0-stephane-regnault-champagne-extra-brut-blanc-de-blancs-oger-grand-cru-lydien-n-62-bottle-of-italy.jpg?v=1726655228",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895595843922&productname=Champagne+Blanc+de+Blancs+Mixolydien+n%C2%B099+Extra+Brut+Grand+Cru+-+Stephane+Regnault&wgtarget=https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-mixolydien-n-99-extra-brut-grand-cru-stephane-regnault?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
@@ -7681,7 +7681,7 @@
         "Pays": "France\nZone de production Grand Cru",
         "Taper": "Vin mousseux méthode traditionnelle"
       },
-      "checkedAt": "2026-11-02T13:26:57.902Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_50794911269202",
@@ -7708,8 +7708,8 @@
         "velier",
         "vini"
       ],
-      "price": 99.91,
-      "oldPrice": 113.97,
+      "price": 99.9,
+      "oldPrice": 114,
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/ChampagneLeBlancdeBlancs-Billecart-Salmon-Bottle-of-Italy-min-min.jpg?v=1764759213",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50794911269202&productname=Champagne+Le+Blanc+de+Blancs+-+Billecart-Salmon&wgtarget=https://bottleofitaly.com/fr/products/champagne-le-blanc-de-blancs-billecart-salmon?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
@@ -7734,7 +7734,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux méthode traditionnelle"
       },
-      "checkedAt": "2026-11-01T11:48:15.138Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_47895600005458",
@@ -7762,8 +7762,8 @@
         "vini",
         "vini-francia"
       ],
-      "price": 103.09,
-      "oldPrice": 120.08,
+      "price": 103.1,
+      "oldPrice": 120.1,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Blanc-de-Noirs-Largillier-Rose-Brut-Jerome-Coessens-bottle-of-italy.jpg?v=1714474074",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895600005458&productname=Champagne+Blanc+de+Noirs+Largillier+Ros%C3%A9+Brut+-+Jerome+Coessens&wgtarget=https://bottleofitaly.com/fr/products/champagne-blanc-de-noirs-largillier-rose-brut-jerome-coessens?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
@@ -7771,10 +7771,9 @@
       "merchantDescription": "Il Champagne Blanc de Noirs Largillier Rosé Brut di Jerome Coessens è un’indimenticabile espressione del terroir della Champagne, capace di affascinare sia gli intenditori che i neofiti. Prodotto esclusivamente con uve Pinot Noir coltivate nel prestigioso vigneto Largillier, questo champagne rosé si distingue per la sua eleganza e complessità.\nNel calice, si presenta con un affascinante colore rosa salmone, arricchito da un perlage fine e persistente. Al naso, offre un bouquet intenso e raffinato, con note di piccoli frutti rossi come fragoline di bosco e lampone, seguite da sentori di agrumi e una sottile vena floreale. Le complesse sfumature olfattive includono anche accenni di mandorla e crosta di pane, segno di un lungo periodo di affinamento sui lieviti.\nAl palato, il Largillier Rosé Brut è fresco e vibrante, con una struttura ben bilanciata e una sorprendente profondità. L’acidità vivace si armonizza perfettamente con la dolcezza fruttata, creando un equilibrio perfetto. La persistenza è notevole, con un finale lungo e avvolgente che lascia un retrogusto di frutta matura e una leggera mineralità.\nIdeale come aperitivo raffinato, si abbina meravigliosamente anche a piatti di pesce crudo, crostacei e formaggi delicati. Questo Champagne rappresenta un’opera d’arte enologica, firmata da Jerome Coessens, capace di elevare ogni occasione a un’esperienza unica e indimenticabile.",
       "technicalData": {
         "Format": "ions techniques",
-        "Producteur": "Jerome Coessens",
-        "Gradation": "12.0%\nFormat 75 cl"
+        "Producteur": "Jerome Coessens"
       },
-      "checkedAt": "2026-11-01T11:48:15.138Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_47895599972690",
@@ -7802,8 +7801,8 @@
         "vini",
         "vini-francia"
       ],
-      "price": 103.09,
-      "oldPrice": 120.51,
+      "price": 103.1,
+      "oldPrice": 120.5,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/champagne-largiller-nature-cosses-bottle-of-italy.jpg?v=1716905792",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895599972690&productname=Champagne+Blanc+de+Noirs+Largillier+Nature+-+Jerome+Coessens&wgtarget=https://bottleofitaly.com/fr/products/champagne-blanc-de-noirs-largillier-nature-jerome-coessens?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
@@ -7811,10 +7810,9 @@
       "merchantDescription": "Il Champagne Blanc de Noirs Largillier Nature di Jerome Coessens è una celebrazione dell'eleganza e della purezza del pinot nero. Ottenuto da un singolo vigneto, il Largillier, questo champagne rispecchia l'anima del terroir da cui proviene, caratterizzato da suoli ricchi di marne e calcare.\nAlla vista si presenta con un colore dorato intenso e brillante, accompagnato da una finissima effervescenza che parla della mia maestria nel metodo champenoise. Al naso, il bouquet è complesso e affascinante, dominato da note di frutti rossi maturi come ciliegie e lamponi, arricchite da un sentore minerale e nuances di spezie dolci.\nIn bocca, il Champagne Blanc de Noirs Largillier Nature rivela una struttura robusta e vibrante, bilanciata da una freschezza che perdura nel finale. Il dosaggio zero esalta la sincerità del frutto e la mineralità del terreno, lasciando spazio ad un'esperienza sensoriale pura e autentica.\nPerfetto per accompagnare piatti di pesce crudo, crostacei o formaggi a media stagionatura, questo champagne rappresenta l'espressione più raffinata della filosofia di Jerome Coessens: rispetto per la natura, maestria artigianale e passione per il pinot nero. Un vino che trasmette emozioni ad ogni sorso e che rappresenta una scelta eccellente per le celebrazioni più esclusive.",
       "technicalData": {
         "Format": "ions techniques",
-        "Producteur": "Jerome Coessens",
-        "Gradation": "12.5%\nFormat 75 cl"
+        "Producteur": "Jerome Coessens"
       },
-      "checkedAt": "2026-11-01T11:48:15.138Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_50794921361746",
@@ -7899,8 +7897,8 @@
         "tavola-ferragosto",
         "vini"
       ],
-      "price": 105.79,
-      "oldPrice": 127.35,
+      "price": 105.8,
+      "oldPrice": 127.4,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/cuvee-special-filaine-Bottle-of-Italy-min.jpg?v=1781260696",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_53712154788178&productname=Champagne+Cuvee+Speciale+Brut+-+Alexandre+Filaine&wgtarget=https://bottleofitaly.com/fr/products/champagne-cuvee-speciale-brut-alexandre-filaine?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
@@ -7925,7 +7923,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-01T11:48:15.138Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_47895571398994",
@@ -7959,8 +7957,8 @@
         "vini",
         "vini-francia"
       ],
-      "price": 110.23,
-      "oldPrice": 121.36,
+      "price": 110.2,
+      "oldPrice": 121.4,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Rose-Bulles-de-Rose-Extra-Brut-1er-Cru-Frederic-Savart-bottle-of-italy.jpg?v=1716906796",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895571398994&productname=Champagne+Ros%C3%A9+Bulles+de+Rose+Extra+Brut+1er+Cru+-+Fr%C3%A8d%C3%A8ric+Savart&wgtarget=https://bottleofitaly.com/fr/products/champagne-rose-bulles-de-rose-extra-brut-1er-cru-frederic-savart?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
@@ -7968,10 +7966,9 @@
       "merchantDescription": "Il Champagne Rosé Bulles de Rose Extra Brut 1er Cru di Frèdèric Savart rappresenta un'eccellenza dell'arte spumantistica di questa rinomata maison. Questo rosé d'alta gamma incarna la perfetta combinazione tra eleganza e profondità, distinguendosi per la sua freschezza e complessità. Al naso, si possono percepire note delicate di frutti di bosco rossi, come fragola e lampone, accompagnate da un tocco di scorza di agrumi e una leggera sfumatura floreale. In bocca, il Bulles de Rose Extra Brut si rivela vibrante e raffinato, con bolle finissime che esaltano il gusto strutturato e ben equilibrato. La sua acidità vivace è bilanciata da una leggera mineralità, retaggio dei suoli gessosi del terroir di Premier Cru della Montagne de Reims da cui provengono le uve. Un finale lungo e preciso chiude l'esperienza degustativa, rendendolo un compagno ideale per piatti di pesce, crostacei, e formaggi freschi. Questo Champagne è perfetto per chi cerca un rosé che unisca raffinatezza e carattere, in una celebrazione del savoir-faire di Frèdèric Savart.",
       "technicalData": {
         "Format": "ions techniques",
-        "Producteur": "Frèdèric Savart",
-        "Gradation": "12.5%\nFormat 75 cl"
+        "Producteur": "Frèdèric Savart"
       },
-      "checkedAt": "2026-11-01T11:48:15.138Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_53093681004882",
@@ -7998,8 +7995,8 @@
         "tavola-ferragosto",
         "vini"
       ],
-      "price": 111.02,
-      "oldPrice": 122.34,
+      "price": 111,
+      "oldPrice": 122.3,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-BlancdeBlancs-Perrier-Jouea_A_t-min_9980108c-2a01-4d94-80d9-1f377da9a183.jpg?v=1775138652",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_53093681004882&productname=Champagne+-+Blanc+de+Blancs+-+Special+Edition+Formafantasma+-+Perrier-Jou%C3%ABt&wgtarget=https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-special-edition-formafantasma-perrier-jouet?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
@@ -8024,7 +8021,7 @@
         "Pays": "France\nZone de production Côte des Blancs",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-01T11:48:15.138Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_53712153739602",
@@ -8056,8 +8053,8 @@
         "tavola-ferragosto",
         "vini"
       ],
-      "price": 114.99,
-      "oldPrice": 126.32,
+      "price": 114.9,
+      "oldPrice": 126.3,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/grand-cru-champagne-egly-ouriet-Bottle-of-Italy-min.jpg?v=1781255394",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_53712153739602&productname=Champagne+Grand+Cru+Brut+-+Egly-Ouriet&wgtarget=https://bottleofitaly.com/fr/products/champagne-grand-cru-brut-egly-ouriet?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
@@ -8082,7 +8079,7 @@
         "Pays": "Italie\nZone de production Collio, Friuli-Venezia Giulia",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-01T11:48:15.138Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_47895594697042",
@@ -8113,8 +8110,8 @@
         "vini",
         "vini-francia"
       ],
-      "price": 125.05,
-      "oldPrice": 155.61,
+      "price": 125.1,
+      "oldPrice": 155.6,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Blanc-de-Blancs-Msnl-Extra-Brut-Grand-Cru-J.L.-Vergon-bottle-of-italy.jpg?v=1714473129",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895594697042&productname=Champagne+Blanc+de+Blancs+Msnl+Extra+Brut+Grand+Cru+-+J.L.+Vergnon+2014&wgtarget=https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-msnl-extra-brut-grand-cru-j-l-vergon?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
@@ -8138,7 +8135,7 @@
         "Pays": "France\nZone de production Grand Cru",
         "Taper": "Mousseux"
       },
-      "checkedAt": "2026-11-01T11:48:15.138Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_53712157737298",
@@ -8169,8 +8166,8 @@
         "tavola-ferragosto",
         "vini"
       ],
-      "price": 130.08,
-      "oldPrice": 156.21,
+      "price": 130.1,
+      "oldPrice": 156.2,
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/thomas-perseval-la-pucelle-blanc-de-noirs-Bottle-of-Italy-min.jpg?v=1781191622",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_53712157737298&productname=Champagne+La+Pucelle+Millesime%E2%80%99+Brut+-+Thomas+Perseval+2021&wgtarget=https://bottleofitaly.com/fr/products/champagne-la-pucelle-millesime-brut-thomas-perseval?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
@@ -8195,7 +8192,7 @@
         "Pays": "France\nZone de production Reims, Champagne",
         "Taper": "Vin mousseux Méthode Classique"
       },
-      "checkedAt": "2026-11-01T11:48:15.138Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_53712154820946",
@@ -8227,7 +8224,7 @@
         "vini"
       ],
       "price": 131.3,
-      "oldPrice": 154.77,
+      "oldPrice": 154.8,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/alexandre-filaine-cuvee-dmy-Bottle-of-Italy-min.jpg?v=1781193803",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_53712154820946&productname=Champagne+Cuvee+DMY+Brut+-+Alexandre+Filaine&wgtarget=https://bottleofitaly.com/fr/products/champagne-cuvee-dmy-brut-alexandre-filaine?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
@@ -8252,7 +8249,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Mousseux"
       },
-      "checkedAt": "2026-11-01T11:48:15.138Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     },
     {
       "id": "shopify_FR_43760556310745",
@@ -8287,8 +8284,8 @@
         "vini-francia",
         "wine-spectator-90"
       ],
-      "price": 255.61,
-      "oldPrice": 293.97,
+      "price": 255.6,
+      "oldPrice": 294,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/products/Grande-Cuvee-Champagne-AOC-Brut-Krug-bottle-of-italy.jpg?v=1678300072",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_43760556310745&productname=Grande+Cuv%C3%A9e+Champagne++AOC+Brut+-+Krug&wgtarget=https://bottleofitaly.com/fr/products/grande-cuvee-champagne-aoc-brut-krug?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
@@ -8313,7 +8310,7 @@
         "Pays": "France\nZone de production Reims et Épernay",
         "Taper": "Vin mousseux brut"
       },
-      "checkedAt": "2026-11-01T11:48:15.138Z"
+      "checkedAt": "2026-11-03T12:44:56.136Z"
     }
   ]
 }
