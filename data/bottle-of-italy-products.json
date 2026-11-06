@@ -2,7 +2,7 @@
   "version": 1,
   "merchant": "Bottle of Italy",
   "network": "Webgains",
-  "checkedAt": "2026-11-05T13:08:40.196Z",
+  "checkedAt": "2026-11-06T12:54:40.042Z",
   "count": 150,
   "records": [
     {
@@ -19,6 +19,7 @@
         "20-50",
         "95",
         "baio-",
+        "black-friday",
         "bollicine",
         "brut",
         "champagne",
@@ -65,7 +66,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_49273787482450",
@@ -79,6 +80,7 @@
       "merchantTags": [
         "20-40",
         "acini",
+        "black-friday",
         "bollicine",
         "brut",
         "champagne",
@@ -122,7 +124,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux méthode traditionnelle"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_50742403072338",
@@ -177,7 +179,7 @@
         "Pays": "France\nZone de production Premier Cru",
         "Taper": "Vin mousseux sec"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_42148320575705",
@@ -193,6 +195,7 @@
         "20-50",
         "95",
         "aoc",
+        "black-friday",
         "bollicine",
         "brut",
         "champagne",
@@ -238,7 +241,7 @@
         "Pays": "France\nZone de production Région Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47895549903186",
@@ -251,6 +254,7 @@
       ],
       "merchantTags": [
         "20-40",
+        "black-friday",
         "bollicine",
         "brut",
         "cavalli",
@@ -294,7 +298,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_50742404284754",
@@ -308,6 +312,7 @@
       ],
       "merchantTags": [
         "20-40",
+        "black-friday",
         "bollicine",
         "brut",
         "champagne",
@@ -348,7 +353,7 @@
         "Pays": "France\nZone de production Premier Cru, Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_50502043140434",
@@ -361,6 +366,7 @@
       ],
       "merchantTags": [
         "40-50",
+        "black-friday",
         "bollicine",
         "brut",
         "champagne",
@@ -404,7 +410,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_52901515886930",
@@ -457,7 +463,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47245068697938",
@@ -473,6 +479,7 @@
         "35",
         "40-50",
         "acini",
+        "black-friday",
         "blanc-de-noirs",
         "bollicine",
         "champagne",
@@ -515,7 +522,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux méthode traditionnelle"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_50742402810194",
@@ -568,7 +575,7 @@
         "Pays": "Italie\nZone de production Collio",
         "Taper": "Vin mousseux méthode classique"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_50742406185298",
@@ -621,7 +628,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47895568122194",
@@ -675,7 +682,7 @@
         "Pays": "France\nZone de production 1er Cru, Champagne",
         "Taper": "Vin mousseux extra brut"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47245069287762",
@@ -690,6 +697,7 @@
         "35",
         "40-50",
         "acini",
+        "black-friday",
         "bollicine",
         "brut",
         "champagne",
@@ -731,7 +739,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_50742403268946",
@@ -784,7 +792,7 @@
         "Pays": "France\nZone de production Région Champagne",
         "Taper": "Mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_43760601956569",
@@ -799,6 +807,7 @@
         "40-50",
         "95",
         "aoc",
+        "black-friday",
         "blanc-de-blancs",
         "blu-",
         "bollicine",
@@ -843,7 +852,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux sec"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_50742403793234",
@@ -898,7 +907,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_50459393425746",
@@ -954,7 +963,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux méthode classique"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47895597515090",
@@ -1008,7 +1017,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux méthode traditionnelle"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47245072630098",
@@ -1023,6 +1032,7 @@
         "35",
         "40-50",
         "acini",
+        "black-friday",
         "bollicine",
         "champagne",
         "custom-gradazione-12-0",
@@ -1062,7 +1072,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux méthode traditionnelle"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47245071647058",
@@ -1077,6 +1087,7 @@
         "35",
         "40-50",
         "acini",
+        "black-friday",
         "bollicine",
         "brut",
         "champagne",
@@ -1119,7 +1130,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux méthode classique"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_53712156590418",
@@ -1134,6 +1145,7 @@
       "merchantTags": [
         "40-50",
         "acini",
+        "black-friday",
         "bollicine",
         "brut",
         "champagne",
@@ -1177,7 +1189,7 @@
         "Pays": "France\nZone de production Premier Cru, Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_50794939580754",
@@ -1191,6 +1203,7 @@
       ],
       "merchantTags": [
         "2021",
+        "black-friday",
         "bollicine",
         "champagne",
         "custom-gradazione-12-0",
@@ -1230,7 +1243,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_48453987369298",
@@ -1243,6 +1256,7 @@
       ],
       "merchantTags": [
         "40-50",
+        "black-friday",
         "bollicine",
         "brut",
         "champagne",
@@ -1282,7 +1296,7 @@
         "Pays": "France\nZone de production Beaumont des Crayeres",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47895554261330",
@@ -1339,7 +1353,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47895603151186",
@@ -1391,7 +1405,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_50341299487058",
@@ -1404,6 +1418,7 @@
       ],
       "merchantTags": [
         "40-50",
+        "black-friday",
         "bollicine",
         "brut",
         "champagne",
@@ -1448,7 +1463,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux méthode traditionnelle rosé"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47895552426322",
@@ -1461,6 +1476,7 @@
       ],
       "merchantTags": [
         "40-50",
+        "black-friday",
         "bollicine",
         "brut",
         "cavalli",
@@ -1503,7 +1519,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47895593419090",
@@ -1557,7 +1573,7 @@
         "Pays": "France\nZone de production Grand Cru",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47245069091154",
@@ -1572,6 +1588,7 @@
         "35",
         "40-50",
         "acini",
+        "black-friday",
         "bollicine",
         "brut",
         "champagne",
@@ -1610,7 +1627,7 @@
         "Pays": "France\nZone de production Région Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47245072531794",
@@ -1666,7 +1683,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_53712154100050",
@@ -1724,7 +1741,7 @@
         "Pays": "France\nZone de production Premier Cru, Champagne",
         "Taper": "Mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_43760854302937",
@@ -1739,6 +1756,7 @@
       "merchantTags": [
         "95",
         "aoc",
+        "black-friday",
         "blu-",
         "bollicine",
         "brut",
@@ -1784,7 +1802,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_42029373063385",
@@ -1799,6 +1817,7 @@
       "merchantTags": [
         "20-50",
         "95",
+        "black-friday",
         "bollicine",
         "bouzy-rouge",
         "brut",
@@ -1848,7 +1867,7 @@
         "Pays": "France\nZone de production Montagne de Reims",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47895587815762",
@@ -1905,7 +1924,7 @@
         "Pays": "France\nZone de production Grand Cru",
         "Taper": "Mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47245071843666",
@@ -1920,6 +1939,7 @@
       "merchantTags": [
         "35",
         "acini",
+        "black-friday",
         "blanc-de-blancs",
         "bollicine",
         "champagne",
@@ -1961,7 +1981,7 @@
         "Pays": "France\nZone de production Côte des Blancs",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47895579525458",
@@ -2015,7 +2035,7 @@
         "Pays": "France\nZone de production 1er Cru, Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47895586210130",
@@ -2028,6 +2048,7 @@
         "Demi-sec"
       ],
       "merchantTags": [
+        "black-friday",
         "bollicine",
         "cavalli",
         "champagne",
@@ -2070,7 +2091,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux rosé demi-sec"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_43760860201177",
@@ -2087,6 +2108,7 @@
         "95",
         "aoc",
         "baio-",
+        "black-friday",
         "bollicine",
         "brut",
         "champagne",
@@ -2132,7 +2154,7 @@
         "Pays": "France\nZone de production Reims, Champagne",
         "Taper": "Vin mousseux méthode traditionnelle"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_50742399205714",
@@ -2186,7 +2208,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47895594041682",
@@ -2240,7 +2262,7 @@
         "Pays": "France\nZone de production Côte des Blancs",
         "Taper": "Mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47895596826962",
@@ -2293,7 +2315,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47895590011218",
@@ -2347,7 +2369,7 @@
         "Pays": "France\nZone de production Grand Cru",
         "Taper": "Vin mousseux méthode traditionnelle"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47895579165010",
@@ -2403,7 +2425,7 @@
         "Pays": "France\nZone de production Mouzon, Champagne",
         "Taper": "Vin mousseux méthode classique"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47895561797970",
@@ -2444,7 +2466,7 @@
         "Format": "ions techniques",
         "Producteur": "Laherte Frères\nVintage 2021"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_42150252085465",
@@ -2459,6 +2481,7 @@
         "95",
         "aoc",
         "arbanne",
+        "black-friday",
         "blanc-vrai",
         "bollicine",
         "champagne",
@@ -2503,7 +2526,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47895567106386",
@@ -2557,7 +2580,7 @@
         "Pays": "France\nZone de production Les Charmiers, Premier Cru",
         "Taper": "Mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_50794913464658",
@@ -2571,6 +2594,7 @@
       ],
       "merchantTags": [
         "2009",
+        "black-friday",
         "bollicine",
         "champagne",
         "chardonnay",
@@ -2612,7 +2636,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_53093687427410",
@@ -2667,7 +2691,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_50742402384210",
@@ -2679,6 +2703,7 @@
         "Brut"
       ],
       "merchantTags": [
+        "black-friday",
         "bollicine",
         "brut",
         "champagne",
@@ -2721,7 +2746,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_49273787416914",
@@ -2735,6 +2760,7 @@
       "merchantTags": [
         "20-40",
         "acini",
+        "black-friday",
         "bollicine",
         "brut",
         "champagne",
@@ -2777,7 +2803,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux brut"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_50742404874578",
@@ -2831,7 +2857,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux méthode classique"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_50742403596626",
@@ -2844,6 +2870,7 @@
       ],
       "merchantTags": [
         "20-40",
+        "black-friday",
         "bollicine",
         "brut",
         "champagne",
@@ -2884,7 +2911,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47895551279442",
@@ -2897,6 +2924,7 @@
       ],
       "merchantTags": [
         "40-50",
+        "black-friday",
         "bollicine",
         "brut",
         "cavalli",
@@ -2941,7 +2969,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47895552524626",
@@ -2995,7 +3023,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_43760858333401",
@@ -3010,6 +3038,7 @@
         "40-50",
         "95",
         "aoc",
+        "black-friday",
         "blu-",
         "bollicine",
         "brut",
@@ -3054,7 +3083,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_50742405759314",
@@ -3106,7 +3135,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_43760591864025",
@@ -3122,6 +3151,7 @@
         "40-50",
         "95",
         "aoc",
+        "black-friday",
         "blu-",
         "bollicine",
         "brut",
@@ -3167,7 +3197,7 @@
         "Pays": "France\nZone de production Premier Cru, Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_48453987238226",
@@ -3180,6 +3210,7 @@
       ],
       "merchantTags": [
         "40-50",
+        "black-friday",
         "bollicine",
         "brut",
         "champagne",
@@ -3217,7 +3248,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47895586308434",
@@ -3272,7 +3303,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_50385379819858",
@@ -3285,6 +3316,7 @@
       ],
       "merchantTags": [
         "40-50",
+        "black-friday",
         "bollicine",
         "champagne",
         "chardonnay",
@@ -3329,7 +3361,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47895586242898",
@@ -4374,7 +4406,7 @@
         "Pays": "France\nZone de production Montagne de Reims",
         "Taper": "Vin mousseux méthode traditionnelle"
       },
-      "checkedAt": "2026-11-03T12:44:56.136Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47895586144594",
@@ -4430,7 +4462,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Mousseux"
       },
-      "checkedAt": "2026-11-03T12:44:56.136Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_50742403531090",
@@ -4479,7 +4511,7 @@
         "Pays": "France\nZone de production Senlis",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-03T12:44:56.136Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_50502043533650",
@@ -4491,9 +4523,9 @@
         "Blanc de blancs"
       ],
       "merchantTags": [
+        "black-friday",
         "blanc-de-blancs",
         "bollicine",
-        "bottle-day",
         "brut",
         "champagne",
         "chardonnay",
@@ -4534,7 +4566,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-03T12:44:56.136Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_50742403137874",
@@ -4547,8 +4579,8 @@
         "Premier Cru"
       ],
       "merchantTags": [
+        "black-friday",
         "bollicine",
-        "bottle-day",
         "brut",
         "champagne",
         "chardonnay",
@@ -4589,7 +4621,7 @@
         "Pays": "France\nZone de production Premier Cru, Champagne",
         "Taper": "Vin mousseux méthode traditionnelle"
       },
-      "checkedAt": "2026-11-03T12:44:56.136Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47895592698194",
@@ -4644,7 +4676,7 @@
         "Pays": "France\nZone de production Grand Cru",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-03T12:44:56.136Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47895559733586",
@@ -5329,6 +5361,7 @@
       ],
       "merchantTags": [
         "acini",
+        "black-friday",
         "bollicine",
         "brut",
         "champagne",
@@ -5374,7 +5407,7 @@
         "Pays": "France\nZone de production Premier Cru, Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_50459393720658",
@@ -5429,7 +5462,7 @@
         "Pays": "France\nZone de production Mareuil-sur-Aÿ",
         "Taper": "Mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47245073285458",
@@ -5443,6 +5476,7 @@
       "merchantTags": [
         "35",
         "acini",
+        "black-friday",
         "bollicine",
         "champagne",
         "custom-gradazione-12-0",
@@ -5482,7 +5516,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47895578313042",
@@ -5595,7 +5629,7 @@
         "Pays": "France\nZone de production Réserve d’Aÿ",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_52901514117458",
@@ -5650,7 +5684,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47895592599890",
@@ -6044,7 +6078,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_49249112326482",
@@ -6100,7 +6134,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux méthode traditionnelle extra brut"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47895564026194",
@@ -6142,7 +6176,7 @@
         "Format": "ions techniques",
         "Producteur": "Laherte Frères"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_49249109508434",
@@ -6204,7 +6238,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47895594107218",
@@ -6258,7 +6292,7 @@
         "Pays": "France\nZone de production Côte des Blancs",
         "Taper": "Mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47895596040530",
@@ -6313,7 +6347,7 @@
         "Pays": "France\nZone de production Grand Cru, Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_50742403006802",
@@ -6384,6 +6418,7 @@
         "Grand Cru"
       ],
       "merchantTags": [
+        "black-friday",
         "bollicine",
         "cavalli",
         "champagne",
@@ -6425,7 +6460,7 @@
         "Pays": "France\nZone de production Côte des Blancs",
         "Taper": "Vin mousseux méthode traditionnelle"
       },
-      "checkedAt": "2026-11-04T12:57:27.304Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47895589945682",
@@ -6482,7 +6517,7 @@
         "Pays": "France\nZone de production Grand Cru",
         "Taper": "Vin mousseux méthode traditionnelle"
       },
-      "checkedAt": "2026-11-04T12:57:27.304Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47895597056338",
@@ -6536,7 +6571,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux méthode traditionnelle"
       },
-      "checkedAt": "2026-11-04T12:57:27.304Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_50742404153682",
@@ -6589,7 +6624,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux rosé méthode classique"
       },
-      "checkedAt": "2026-11-04T12:57:27.304Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47245073023314",
@@ -6604,6 +6639,7 @@
       "merchantTags": [
         "35",
         "acini",
+        "black-friday",
         "blanc-de-blancs",
         "bollicine",
         "brut",
@@ -6646,7 +6682,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-04T12:57:27.304Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47895559995730",
@@ -6677,33 +6713,15 @@
         "vini-francia",
         "vini-rosati"
       ],
-      "price": 67.53,
-      "oldPrice": 75.02,
+      "price": 67.5,
+      "oldPrice": 75,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Mon-Rose-de-Saignee-Brut-Le-Guedard-bottle-of-italy.jpg?v=1716906218",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895559995730&productname=Champagne+Mon+Ros%C3%A9+de+Saign%C3%A9e+Brut+-+Le+Gu%C3%A8dard&wgtarget=https://bottleofitaly.com/fr/products/champagne-mon-rose-de-saignee-brut-le-guedard?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-mon-rose-de-saignee-brut-le-guedard",
       "merchantDescription": "Lo Champagne Mon Rosé de Saignée Brut di Le Guèdard è un autentico capolavoro dell'enologia francese, un vino che nasce dal cuore della rinomata regione dello Champagne. Questo rosé è prodotto attraverso il metodo saignée, che conferisce al vino un colore rosato intenso grazie alla breve macerazione delle bucce di uva nera.\nAll'olfatto, il Mon Rosé de Saignée Brut si apre con un bouquet intrigante e complesso, dominato da note di fragoline di bosco, ciliegie mature e una sfumatura di agrumi che dona freschezza. Sul palato, questo Champagne si distingue per la sua vivacità e la finezza delle bollicine che accarezzano la lingua, esprimendo al contempo una struttura armoniosa e ben bilanciata.\nLa scelta del dosaggio Brut esalta la purezza del frutto, mantenendo un equilibrio perfetto tra acidità e dolcezza residua. Ideale come aperitivo, questo rosé è anche un compagno eccellente per piatti a base di pesce, carpacci di carne e dolci a base di frutti rossi.\nProdotto con dedizione meticolosa da Le Guèdard, Mon Rosé de Saignée Brut rappresenta la quintessenza dell'eleganza e della raffinatezza champenoise, un vino che sa emozionare ed incantare, perfetto per le grandi occasioni e per momenti di puro piacere.",
-      "technicalData": {
-        "Format": "ions techniques",
-        "Producteur": "Le Guèdard",
-        "Nom": "Champagne",
-        "Variété": "Pinot Noir",
-        "Gradation": "12.5%\nFormat 75 cl",
-        "Profil aromatique": "Fruits rouges, notes florales, levures",
-        "Méthode de vinification": "Méthode traditionnelle, refermentation en bouteille",
-        "Vieillissement": "Minimum 15 mois sur lies",
-        "Type de fût": "Fûts de chêne et acier",
-        "Sucres résiduels": "Brut (0-12 g/l)",
-        "Couleur": "Rosé",
-        "Température de service": "8-10°C",
-        "Consommation recommandée": "À consommer dans les 3-5 ans",
-        "Accompagnement": "Apéritifs, poissons, viandes blanches",
-        "Région": "Champagne",
-        "Pays": "France\nZone de production Champagne",
-        "Taper": "Mousseux"
-      },
-      "checkedAt": "2026-11-01T11:48:15.138Z"
+      "technicalData": {},
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47895579296082",
@@ -6734,7 +6752,7 @@
         "vini-francia"
       ],
       "price": 70,
-      "oldPrice": 87.71,
+      "oldPrice": 87.7,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Rose-Saignee-Incandescent-Extra-Brut-Grand-Cru-Mouzon-Leroux-bottle-of-italy.jpg?v=1716907312",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895579296082&productname=Champagne+Ros%C3%A9+Saign%C3%A9e+Incandescent+Extra+Brut+Grand+Cru+-+Mouzon+Leroux&wgtarget=https://bottleofitaly.com/fr/products/champagne-rose-saignee-incandescent-extra-brut-grand-cru-mouzon-leroux?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
@@ -6759,7 +6777,7 @@
         "Pays": "France\nZone de production Grand Cru, Champagne",
         "Taper": "Vin mousseux méthode traditionnelle rosé extra brut"
       },
-      "checkedAt": "2026-11-01T11:48:15.138Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_50742403039570",
@@ -6790,8 +6808,8 @@
         "tavola-ferragosto",
         "vini"
       ],
-      "price": 70.37,
-      "oldPrice": 78.64,
+      "price": 70.4,
+      "oldPrice": 78.6,
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/57504-jean-claude-vallois-blanc-de-blancs-millesime-2018-extra-brut-1002x1536-min.jpg?v=1747380497",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_50742403039570&productname=Champagne+Blanc+de+Blancs+Mill%C3%A9sim%C3%A9+Extra+Brut+2018+-+Jean-Claude+Vallois+2018&wgtarget=https://bottleofitaly.com/fr/products/champagne-blanc-de-blancs-millesime-extra-brut-2018-jean-claude-vallois?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
@@ -6816,7 +6834,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Mousseux"
       },
-      "checkedAt": "2026-11-01T11:48:15.138Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_48534936224082",
@@ -6844,8 +6862,8 @@
         "vini",
         "vini-francia"
       ],
-      "price": 70.82,
-      "oldPrice": 81.62,
+      "price": 70.8,
+      "oldPrice": 81.6,
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/champagne-aoc-brut-anthracite-min.jpg?v=1766574015",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_48534936224082&productname=Champagne+Anthracite+Brut+-+Corbon&wgtarget=https://bottleofitaly.com/fr/products/anthracite-brut-corbon?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
@@ -6870,7 +6888,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-01T11:48:15.138Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_43760629088473",
@@ -6884,6 +6902,7 @@
       "merchantTags": [
         "95",
         "aoc",
+        "black-friday",
         "blu-",
         "bollicine",
         "brut",
@@ -6916,8 +6935,26 @@
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_43760629088473&productname=Champagne+AOC+Brut+-+RSRV+Cuv%C3%A9e+4.5+-+Mumm&wgtarget=https://bottleofitaly.com/fr/products/champagne-aoc-brut-rsrv-cuvee-4-5-mumm?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
       "productUrl": "https://bottleofitaly.com/fr/products/champagne-aoc-brut-rsrv-cuvee-4-5-mumm",
       "merchantDescription": "Le Champagne AOC Brut RSRV Cuvée 4.5 élégant produit par la renommée Maison Mumm est un choix prestigieux pour les amateurs de vins pétillants de haute qualité. Ce champagne exclusif fait partie de la collection RSRV, une ligne dédiée aux œnophiles les plus exigeants, qui recherchent dans leur coupe une histoire d'excellence et de tradition.\nLa Cuvée 4.5 de Mumm est créée à partir d'une sélection méticuleuse des meilleures raisins, principalement Pinot Noir et une minorité de Chardonnay, provenant des vignobles classés Grand Cru dans la prestigieuse région de Champagne. La fermentation et la maturation se font de manière traditionnelle, suivant des normes rigoureuses garantissant la conservation des caractéristiques variétales et de terroir.\nÀ l'examen visuel, il se présente avec une effervescence fine et persistante, symbole de haute qualité de la carbonatation et de la maturation prolongée en cave. La couleur est d'un doré délicat avec des reflets brillants qui annoncent la complexité olfactive. Au nez, RSRV Cuvée 4.5 offre un bouquet élégant et profond, avec des notes de fruits blancs mûrs, des touches d’agrumes et des nuances de levures et brioche, typiques des longues durées sur lies.\nEn bouche, sa structure est imposante mais harmonieuse, équilibrée par une fraîcheur vive qui prolonge la persistance gustative. Les sensations de crémeux se marient avec une minéralité marquée, qui renvoie à la pure expression du terroir de Champagne.\nCe champagne est idéal pour accompagner des moments spéciaux ou des plats raffinés comme des huîtres, des poissons crus ou des entrées à base d'ingrédients nobles. Sa raffinement est capable de transformer chaque gorgée en une occasion mémorable, le rendant parfait pour célébrer des événements significatifs ou comme cadeau exclusif pour de véritables connaisseurs.",
-      "technicalData": {},
-      "checkedAt": "2026-11-04T12:57:27.304Z"
+      "technicalData": {
+        "Format": "ions techniques",
+        "Producteur": "Mumm",
+        "Nom": "Champagne AOC",
+        "Variété": "Pinot Noir, Chardonnay, Pinot Meunier",
+        "Gradation": "12.0%\nFormat 75 cl",
+        "Profil aromatique": "Notes de fruits blancs, croûte de pain, levures",
+        "Méthode de vinification": "Méthode traditionnelle avec refermentation en bouteille",
+        "Vieillissement": "Minimum 15 mois sur lies",
+        "Type de fût": "Fûts de chêne et acier",
+        "Sucres résiduels": "Brut (max 12 g/l)",
+        "Couleur": "Jaune paille avec reflets dorés",
+        "Température de service": "8-10°C",
+        "Consommation recommandée": "À consommer jeune, dans les 3-5 ans",
+        "Accompagnement": "Apéritifs, poissons, crustacés",
+        "Région": "Champagne",
+        "Pays": "France\nZone de production Région Champagne",
+        "Taper": "Vin mousseux méthode traditionnelle"
+      },
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47895574544722",
@@ -6929,8 +6966,8 @@
         "Brut"
       ],
       "merchantTags": [
+        "black-friday",
         "bollicine",
-        "bottle-day",
         "cavalli",
         "champagne",
         "chardonnay",
@@ -6947,8 +6984,8 @@
         "vini",
         "vini-francia"
       ],
-      "price": 74.12,
-      "oldPrice": 88.47,
+      "price": 74.1,
+      "oldPrice": 88.5,
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0538/2268/5356/files/Champagne-Reserve-Brut-Bereche-Et-Fils-bottle-of-italy.jpg?v=1716906565",
       "buyUrl": "https://assets.ikhnaie.link/click.html?wgcampaignid=1749318&wgprogramid=311346&product=1&wglinkid=6140840&productid=shopify_FR_47895574544722&productname=Champagne+R%C3%A9serve+Brut+-+B%C3%A8reche+Et+Fils&wgtarget=https://bottleofitaly.com/fr/products/champagne-reserve-brut-bereche-et-fils?&country=FR&utm_source=webgains&siteid=1749318&clickref=quelchampagne-boutique",
@@ -6972,7 +7009,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-01T11:48:15.138Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47895578673490",
@@ -7319,6 +7356,7 @@
       "merchantTags": [
         "95",
         "aoc",
+        "black-friday",
         "blu-",
         "bollicine",
         "brut",
@@ -7368,7 +7406,7 @@
         "Pays": "France\nZone de production Région Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47895565238610",
@@ -7422,7 +7460,7 @@
         "Pays": "France\nZone de production Région Champagne",
         "Taper": "Vin mousseux méthode traditionnelle"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47895599907154",
@@ -7461,7 +7499,7 @@
         "Format": "ions techniques",
         "Producteur": "Jerome Coessens"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47895564550482",
@@ -7500,7 +7538,7 @@
         "Format": "ions techniques",
         "Producteur": "Wirth Michel"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47895595942226",
@@ -7555,7 +7593,7 @@
         "Pays": "France\nZone de production Grand Cru",
         "Taper": "Vin mousseux Méthode Classique"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47895595843922",
@@ -7610,7 +7648,7 @@
         "Pays": "France\nZone de production Grand Cru",
         "Taper": "Vin mousseux méthode traditionnelle"
       },
-      "checkedAt": "2026-11-05T13:08:40.196Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_50794911269202",
@@ -7622,9 +7660,9 @@
         "Blanc de blancs"
       ],
       "merchantTags": [
+        "black-friday",
         "blanc-de-blancs",
         "bollicine",
-        "bottle-day",
         "champagne",
         "chardonnay",
         "custom-gradazione-13-0",
@@ -7663,7 +7701,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux méthode traditionnelle"
       },
-      "checkedAt": "2026-11-03T12:44:56.136Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47895600005458",
@@ -7702,7 +7740,7 @@
         "Format": "ions techniques",
         "Producteur": "Jerome Coessens"
       },
-      "checkedAt": "2026-11-03T12:44:56.136Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47895599972690",
@@ -7741,7 +7779,7 @@
         "Format": "ions techniques",
         "Producteur": "Jerome Coessens"
       },
-      "checkedAt": "2026-11-03T12:44:56.136Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_50794921361746",
@@ -7852,7 +7890,7 @@
         "Pays": "France\nZone de production Champagne",
         "Taper": "Vin mousseux"
       },
-      "checkedAt": "2026-11-03T12:44:56.136Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_47895571398994",
@@ -7897,7 +7935,7 @@
         "Format": "ions techniques",
         "Producteur": "Frèdèric Savart"
       },
-      "checkedAt": "2026-11-03T12:44:56.136Z"
+      "checkedAt": "2026-11-06T12:54:40.042Z"
     },
     {
       "id": "shopify_FR_53093681004882",
